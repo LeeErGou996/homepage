@@ -110,14 +110,13 @@
             <li id="homeLink">Overview</li>
             <li id="japanTravelLink">Japan Travel</li>
             <li id="hongKongTravelLink">Hong Kong Travel</li> <!-- 新增香港旅行链接 -->
-
+            <li id="germanTravelLink">German Travel</li> <!-- 新增德国旅行链接 -->
         </ul>
     </div>
 
     <div class="content">
-<!--         <h1>Travel</h1> -->
         <div class="gallery" id="galleryContainer">
-            <!-- Japan Travel photos will be displayed here -->
+            <!-- Travel photos will be displayed here -->
         </div>
         <div id="travelThoughts" style="display: block;">
             <h2>Japan 2024.4.28-2024.5.7</h2>
@@ -128,7 +127,11 @@
             I went to many landmarks (famous in the real world and anime). I shall keep the memory in my mind for a long time. 
             I am positively looking forward to my second travel to Japan. 
             
-            <br>I include the plan, schedule, and cost in this <a href="https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/japan_travel.pdf" target="_blank">file</a> (Chinese)</br>
+            <p>I include the plan, schedule, and cost in this <a href="https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/japan_travel.pdf" target="_blank">file</a> (Chinese)</p>
+            
+			<h2>Germany 2024.9.26-Now</h2>
+  				<p>Currently, I am studying in Munich, Germany. Although the studies are not easy, I explore the city and the country during my free time.</p>
+				<p>Munich is a big city, and the weather is often cloudy. When it is sunny, my mood feels better.</p>
         </div>
 
         <div class="slideshow">
@@ -149,6 +152,7 @@
         const japanTravelLink = document.getElementById('japanTravelLink');
         const homeLink = document.getElementById('homeLink');
         const hongKongTravelLink = document.getElementById('hongKongTravelLink');
+        const germanTravelLink = document.getElementById('germanTravelLink');
 
         // 将图片 URL 转换为 blob 对象
         function urlToBlob(url) {
@@ -268,6 +272,40 @@
             });
         }
 
+        // 显示 German Travel 照片
+        function showGermanTravelPhotos() {
+            galleryContainer.innerHTML = '';
+            thumbnailContainer.innerHTML = '';
+            travelThoughts.style.display = 'none';
+
+            const germanTravelPhotos = [
+                'https://example.com/germany_photo1.jpg', // 替换为你的德国图片 URL
+                'https://example.com/germany_photo2.jpg',
+                'https://example.com/germany_photo3.jpg'
+            ];
+
+            germanTravelPhotos.forEach((photoUrl, index) => {
+                const img = document.createElement('img');
+                img.src = photoUrl;
+                img.alt = `German Travel Photo ${index + 1}`;
+                galleryContainer.appendChild(img);
+
+                img.addEventListener('click', () => {
+                    slideshow.style.display = 'flex';
+                    slideshowImage.src = photoUrl;
+                });
+
+                const thumbnail = document.createElement('img');
+                thumbnail.src = photoUrl;
+                thumbnail.alt = `Thumbnail ${index + 1}`;
+                thumbnail.addEventListener('click', () => {
+                    slideshow.style.display = 'flex';
+                    slideshowImage.src = photoUrl;
+                });
+                thumbnailContainer.appendChild(thumbnail);
+            });
+        }
+
         // 显示 travel 感悟
         function showTravelThoughts() {
             galleryContainer.innerHTML = '';
@@ -277,6 +315,7 @@
 
         hongKongTravelLink.addEventListener('click', showHongKongTravelPhotos);
         japanTravelLink.addEventListener('click', showJapanTravelPhotos);
+        germanTravelLink.addEventListener('click', showGermanTravelPhotos); // 添加事件监听器
         homeLink.addEventListener('click', showTravelThoughts);
         slideshow.addEventListener('click', () => {
             slideshow.style.display = 'none';
