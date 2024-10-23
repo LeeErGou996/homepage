@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Display</title>
+</head>
+<body>
+    <div id="grammarDisplay">
+        <p id="grammarExample"></p>
+        <div class="grammar-button-row">
+            <button onclick="prevGrammarExample()">Last</button>
+            <button onclick="nextGrammarExample()">Next</button>
+            <button onclick="randomGrammarExample()">Random</button>
+        </div>
+    </div>
+
+    <script>
+var grammarExamples = {'example1': 'Course 1 ～は～です', 'example2': 'Course 1 ～は～ではありません', 'example3': 'Course 1 ～は～ですか', 'example4': 'Course 1 ～も～です', 'example5': 'Course 2 これ、それ、あれ～は～です', 'example6': 'Course 2 この、その、たの～は～です', 'example7': 'Course 2 どれ、どの～ですか', 'example8': 'Course 3 ここ、そこ、あそこは～です', 'example9': 'Course 3 ～は～(場所)です', 'example10': 'Course 3 ～はど こですか：トイレはどこですか', 'example11': 'Course 3 ～も～です', 'example12': 'Course 3 ～はいくらです か：その服(ふく)はいくらすか', 'example13': 'Course 3 先生の本は古いです', 'example14': 'Course 3 明日は 暑いです', 'example15': 'Course 3 毎日は忙しいです', 'example16': 'Course 3 これは広い教室です', 'example17': 'Course 3 先生の本はあの古い本です', 'example18': 'Course 3 それは美味しい日本料理です', 'example19': 'Course 3 あの教室は静かです', 'example20': 'Course 3 学校のビルは立派です', 'example21': 'Course 3 日 本語の教室はあのきれいな教室です', 'example22': 'Course 3 その丈夫なかばんは先生のです(丈夫：じょうぶ；結實的)', 'example23': 'Course 4 机の上にパンやノートなどあります', 'example24': 'Course 4 行きます、きます、帰ります、出かけます、案内します', 'example25': 'Course 4 これからは北京へ案内します', 'example26': 'Course 4 来週は私たちは広州へ行きます', 'example27': 'Course 4 午後はスーぱーへ出かけます', 'example28': 'Course 4 教室にだれもいません', 'example29': 'Course 4 冷蔵庫に何もありません', 'example30': 'Course 4 机 の上に猫がいます', 'example31': 'Course 4 猫は箱の中にいます', 'example32': 'Course 4 教室にだれもいませ ん', 'example33': 'Course 4 冷蔵庫に何もありません', 'example34': 'Course 5 私は    ９から ５時まで    働きます', 'example35': 'Course 5 私は    ９時から    働きます', 'example36': 'Course 5 森さんは ２時まで    勉強します', 'example37': 'Course 5 仕事は   何時に 終わりますか', 'example38': 'Course 5 試験は   いつ 始まりますか', 'example39': 'Course 5 展覧会は  いつから    始まりますか', 'example40': 'Course 5 張さんは  何曜日まで   休みますか', 'example41': 'Course 5 森さんは毎日働きます', 'example42': 'Course 5 田中さんは明日休みます', 'example43': 'Course 5 森さんは先週休みはした', 'example44': 'Course 5 私は昨日働きま せんでした', 'example45': 'Course 5 森さんは七時に起きます', 'example46': 'Course 5 今、昨日、明日、毎日 、去年、来年の後には“に”を追加することはできません', 'example47': 'Course 6 吉田さんは中国へ行きます', 'example48': 'Course 6 森さんは日本へ帰ります', 'example49': 'Course 6 李さんはどこへ行きましたか', 'example50': 'Course 6 李さんは先月北京から来ました', 'example51': 'Course 6 あの方はどこから来ましたか', 'example52': 'Course 6 小野さんは友達と帰りました', 'example53': 'Course 6 李さんは誰と日本へ来ましたが', 'example54': 'Course 6 上海まで飛行機で行きます', 'example55': 'Course 6 李さんは歩いで   アパートへ   帰りま した', 'example56': 'Course 6 京都へ   何で  来ましたか', 'example57': 'Course 6 森さんは東京から広島まで新幹線でいきます', 'example58': 'Course 6 李さんは駅から   アパートまで  歩いで 帰りました', 'example59': 'Course 6 韓国へは  行きましたか。中国へは 行きませんでした', 'example60': 'Course 7 李さんは毎日コーヒ ーを飲みます', 'example61': 'Course 7 私は新聞を読みません', 'example62': 'Course 7 李さんは毎朝何を食べ ますか', 'example63': 'Course 7 李さんは図書館で勉強します', 'example64': 'Course 7 李さんは図書館にいま す', 'example65': 'Course 7 今日どこで新聞を読みましたか', 'example66': 'Course 7 私はコンビニでお弁当を 買います', 'example67': 'Course 7 私は毎朝パンかお粥を食べます', 'example68': 'Course 7 休みは何曜日です か。休みは月曜日か火曜日です', 'example69': 'Course 7 申込書をください', 'example70': 'Course 7 この本を ください', 'example71': 'Course 8 李さんは日本語で手紙を書きます', 'example72': 'Course 8 手紙を速達で送 りました', 'example73': 'Course 8 新聞紙で紙飛行機を作りました', 'example74': 'Course 8 私は小野さんにお 土産をあげます', 'example75': 'Course 8 小野さんはもりさんにチョコレートをあげました', 'example76': 'Course 8 弟は小野さんに花をあげます', 'example77': 'Course 8 母は長島さんにワインをあげました', 'example78': 'Course 8 私は小野さんに辞書をもらいました', 'example79': 'Course 8 私は長島さんから写真をもらいました', 'example80': 'Course 8 森さんは長島さんにパンフレットをもらいました', 'example81': 'Course 8 母は小野さんにハンカチをもらいました', 'example82': 'Course 8 弟は長島さんから本をもらいました', 'example83': 'Course 8 李さんは明日長島さんに会います', 'example84': 'Course 8 私は駅で森さんに会いました', 'example85': 'Course 8 すみません、李さんはいますか。もうかえりましたよ', 'example86': 'Course 8 私は毎日アイスクリームを 食べます。ふとりますよ', 'example87': 'Course 8 昼ご飯を食べましたか。ええ、もう食べましたか', 'example88': 'Course 9 四川料理は辛いです', 'example89': 'Course 9 あのスープは冷たいです', 'example90': 'Course 9 このお茶は熱いです', 'example91': 'Course 9 このスープは熱くないです', 'example92': 'Course 9 今日は寒く ないです', 'example93': 'Course 9 この本は高くありません; いいですの否定形：よくないです/よくありません', 'example94': 'Course 9 旅行は楽しかったです', 'example95': 'Course 9 昨日は寒くなかったです', 'example96': 'Course 9 昨日は寒くありませんでした', 'example97': 'Course 9 いいですの過去形：よかったですね', 'example98': 'Course 9 いいですの過去否定形：よくありませんでした', 'example99': 'Course 9 「を」の前の名詞が トピックまたは比較として使用される場合は、「を」を「は」に置き換えます。', 'example100': 'Course 9 この本は李さんにもらいました', 'example101': 'Course 9 わたしはコーヒーは飲みません', 'example102': 'Course 9  あまり＋い形容詞/動詞の否定形', 'example103': 'Course 9 このスープはあまり熱くないです', 'example104': 'Course 9 試験はあまり難しくありませんでした ', 'example105': 'Course 9 とても/たいへん＞少し/ちょっと＞あ まり～ません＞全然～ません', 'example106': 'Course 9 この料理はとても美味しです', 'example107': 'Course 9 このスープは少し辛いです', 'example108': 'Course 9 試験は全然難しくありませんでした', 'example109': 'Course 10 京都の紅葉は有名です', 'example110': 'Course 10 この通りは静かです', 'example111': 'Course 10 この町はにぎやかでシア', 'example112': 'Course 10 この通りはにぎやかではありません', 'example113': 'Course 10 昨日は暇じゃありませんでした', 'example114': 'Course 10 奈良は静かな町です', 'example115': 'Course 10 奈良はにぎやかな町ではありません', 'example116': 'Course 10 昨日は日曜日でした', 'example117': 'Course 10  おとといは休みでした', 'example118': 'Course 10 きのうは雲りじゃありませんでした', 'example119': 'Course 10 横浜はどんな町ですか。とでもにぎやかな街です', 'example120': 'Course 10 張さんはどんな人ですか。親切な人です', 'example121': 'Course 10 なんのほんですか。自動車の本です', 'example122': 'Course 10 なんのりょ うりですか。魚の料理です', 'example123': 'Course 10 どうなほんですか。面白い本です', 'example124': 'Course 10 どんなりょうりですか。ちょっと辛い料理です', 'example125': 'Course 10 この料理はどうですか', 'example126': 'Course 10 京都はどうでしたか', 'example127': 'Course 10 お茶、どうですか。ありがろうございます', 'example128': 'Course 11 小野さんに歌が好きです', 'example129': 'Course 11 王さんは肉が嫌いです', 'example130': 'Course 11 林さんは犬怖いです', 'example131': 'Course 11 スミスさんは韓国語が分かります', 'example132': 'Course 11 私はコンピュータができません', 'example133': 'Course 11 小野さんは料理が上手です', 'example134': 'Course 11 吉田さんは時々中国や韓国へ行きます', 'example135': 'Course 11 森さんは長島サッカーや 野球が好きです', 'example136': 'Course 11 私はお店で野菜や果物などを買いました', 'example137': 'Course 11 森さんはお酒が好きですから、毎日飲みます', 'example138': 'Course 11 寒いですから、窓を閉めます', 'example139': 'Course 11 窓を閉めます、さむいですから', 'example140': 'Course 11 キムさんは野菜が嫌いです。だか ら、あまり野菜を食べません', 'example141': 'Course 11 明日は休みです。ですから、子供と動物園へ行きます', 'example142': 'Course 11 わたしはたまにコンサートへ行きます', 'example143': 'Course 11 李さんは時々映画を見さす', 'example144': 'Course 11 田中さんはあまり横浜へは行きません', 'example145': 'Course 11 いつも＞ よく＞時々＞たまに＞あまり～ません＞全然～ません', 'example146': 'Course 11 僕は来月またここへ行きますよ 。', 'example147': 'Course 11 どうしてですか。', 'example148': 'Course 12 李さんは森さんより若いです。', 'example149': 'Course 12 中国は日本より広いです。', 'example150': 'Course 12 上海は北京よりにぎやかですか。', 'example151': 'Course 12 日本より中国のほうがひろいです。', 'example152': 'Course 12 北京より東京の ほうが暖かいです。', 'example153': 'Course 12 大阪より東京のほうがにぎやかですか。', 'example154': 'Course 12 東京の冬は北京の冬ほど寒くないです ', 'example155': 'Course 12 神戸は大阪ほどにぎやかではありません 。', 'example156': 'Course 12 私の部屋は王さんの部屋ほどきれいではありません。', 'example157': 'Course 12 スポーツの中でサッカーが一番面白いです', 'example158': 'Course 12 日本料理の中で寿司が一番美味しいです。', 'example159': 'Course 12 日本で一番高い山は富士山です。', 'example160': 'Course 12 1年で一番寒い月は2 月です。', 'example161': 'Course 12 日本語と英語とどちらが難しいですか。    日本語のほうが難しいです。', 'example162': 'Course 12 コーヒーと紅茶とどっちが好きですか。    とちらもすきです。', 'example163': 'Course 12 この中でどの料理が一番美味しいですが。   この料理が一番美味しいです。', 'example164': 'Course 12 季節の中でいつが一番好きですか。  わたしははるがいちばんすきです。', 'example165': 'Course 12 林檎とナシと バナナのなかでどれがいちばん好きですか。', 'example166': 'Course 12 果物の中で何が一番好きですか'};
+        var currentExampleIndex = 0;
+        var grammarExampleKeys = Object.keys(grammarExamples);
+
+        function updateGrammarExample() {
+            var example = grammarExamples[grammarExampleKeys[currentExampleIndex]];
+            document.getElementById("grammarExample").innerText = example;
+        }
+
+        function nextGrammarExample() {
+            currentExampleIndex = (currentExampleIndex + 1) % grammarExampleKeys.length;
+            updateGrammarExample();
+        }
+
+        function prevGrammarExample() {
+            currentExampleIndex = (currentExampleIndex - 1 + grammarExampleKeys.length) % grammarExampleKeys.length;
+            updateGrammarExample();
+        }
+
+        function randomGrammarExample() {
+            currentExampleIndex = Math.floor(Math.random() * grammarExampleKeys.length);
+            updateGrammarExample();
+        }
+
+        // Initially update grammar example when page loads
+        window.onload = updateGrammarExample;
+    </script>
+</body>
+</html>
