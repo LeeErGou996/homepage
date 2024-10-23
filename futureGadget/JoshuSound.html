@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshu Sound Player</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            color: black;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/futureGadget/joshuBackground.jpg") no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.45;
+            z-index: -2;
+            pointer-events: none;
+        }
+
+        body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, transparent, rgb(255, 255, 255) 20%),
+                        linear-gradient(to bottom, transparent, rgb(255, 255, 255) 20%),
+                        linear-gradient(to left, transparent, rgb(255, 255, 255) 20%),
+                        linear-gradient(to right, transparent, rgb(255, 255, 255) 20%);
+            background-size: cover;
+            opacity: 0.3;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .search-container {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .search-results {
+            max-height: 200px;
+            overflow-y: auto;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.5);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        audio {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 400px;
+            background: rgba(240, 240, 240, 0.5);
+        }
+        button, input {
+            padding: 10px;
+            font-size: 16px;
+            background: rgba(240, 240, 240, 0.5);
+            border: 1px solid rgba(240, 240, 240, 0.5);
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .search-result {
+            cursor: pointer;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+            background: rgba(240, 240, 240, 0.5);
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .search-result:hover {
+            background-color: rgba(240, 240, 240, 0.5);
+        }
+        h1, p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Joshu Sound Player</h1>
+    <div class="button-container">
+        <button onclick="playRandom()">Random Sound</button>
+        <button onclick="playNext()">Next Sound</button>
+        <button onclick="playLast()">Last Sound</button>
+        <button onclick="toggleLoop()">Toggle Loop</button>
+        <button onclick="startAutoPlay()">Start Auto Play</button>
+        <button onclick="stopAutoPlay()">Stop Auto Play</button>
+    </div>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search in Japaneseヽ(*ﾟдﾟ)ノ" oninput="searchSubtitles()">
+        <div class="search-results" id="searchResults"></div>
+    </div>
+    <p id="mp3Name"></p>
+    <audio id="audioPlayer" controls>
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        const baseURL = "https://github.com/LeeErGou711/SteinsGate/raw/main/src/files/voice/CRS_voice/CRS_";
+        const mp3Files = [];
+        const subtitles = {};
+        let currentIndex = -1;
+
+        let isLooping = false;
+        let isAutoPlaying = false;
+
+        for (let i = 0; i <= 2888; i++) {
+            const numStr = i.toString().padStart(4, '0');
+            mp3Files.push(`${baseURL}${numStr}_converted.mp3`);
+        }
+
+        fetch('https://raw.githubusercontent.com/LeeErGou711/LeeErGou711.github.io/main/futureGadget/joshuTaici.txt')
+            .then(response => response.text())
+            .then(data => {
+                const lines = data.split('\n');
+                lines.forEach(line => {
+                    const [index, subtitle] = line.split(':');
+                    if (index && subtitle) {
+                        subtitles[index.trim()] = subtitle.trim();
+                    }
+                });
+            })
+            .catch(error => console.error('Error loading subtitles:', error));
+
+        function playRandom() {
+            currentIndex = Math.floor(Math.random() * mp3Files.length);
+            playCurrent();
+        }
+
+        function playNext() {
+            currentIndex = (currentIndex + 1) % mp3Files.length;
+            console.log("Playing next sound, index: ", currentIndex); // 调试信息
+            playCurrent();
+        }
+
+        function playLast() {
+            currentIndex = (currentIndex - 1 + mp3Files.length) % mp3Files.length;
+            console.log("Playing last sound, index: ", currentIndex); // 调试信息
+            playCurrent();
+        }
+
+        function toggleLoop() {
+            isLooping = !isLooping;
+            document.getElementById('audioPlayer').loop = isLooping;
+            alert(`Looping is now ${isLooping ? 'enabled' : 'disabled'}`);
+        }
+
+        function playCurrent() {
+            if (currentIndex >= 0) {
+                const selectedMP3 = mp3Files[currentIndex];
+                const fileNumber = selectedMP3.match(/CRS_(\d+)_converted\.mp3/)[1];
+                const subtitle = subtitles[parseInt(fileNumber)] || ' ';
+                console.log("Playing current sound, file number: ", fileNumber, " subtitle: ", subtitle); // 调试信息
+
+                document.getElementById('audioPlayer').src = selectedMP3;
+                document.getElementById('audioPlayer').play();
+                document.getElementById('mp3Name').innerText = `${subtitle}`;
+            }
+        }
+
+        function startAutoPlay() {
+            isAutoPlaying = true;
+            document.getElementById('audioPlayer').addEventListener('ended', handleAudioEnded);
+            alert('Auto play is now enabled');
+        }
+
+        function stopAutoPlay() {
+            isAutoPlaying = false;
+            document.getElementById('audioPlayer').removeEventListener('ended', handleAudioEnded);
+            alert('Auto play is now disabled');
+        }
+
+        function handleAudioEnded() {
+            if (isAutoPlaying) {
+                playNext();
+            }
+        }
+
+        function searchSubtitles() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = '';
+
+            if (query) {
+                for (const [index, subtitle] of Object.entries(subtitles)) {
+                    if (subtitle.toLowerCase().includes(query)) {
+                        const resultItem = document.createElement('div');
+                        resultItem.className = 'search-result';
+                        resultItem.innerText = subtitle;
+                        resultItem.onclick = () => playSearchedSubtitle(index);
+                        resultsContainer.appendChild(resultItem);
+                    }
+                }
+            }
+        }
+
+        function playSearchedSubtitle(index) {
+            currentIndex = parseInt(index);
+            const audioPlayer = document.getElementById('audioPlayer');
+            audioPlayer.pause();
+            playCurrent();
+        }
+    </script>
+</body>
+</html>
