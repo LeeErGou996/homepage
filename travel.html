@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Album</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: blue; /* 设置标题颜色为蓝色 */
+        }
+        h2 {
+            color: blue; /* 设置标题颜色为蓝色 */
+        }
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #f1f1f1;
+            position: fixed;
+            padding: 20px;
+            box-sizing: border-box;
+            color: blue; /* 设置标题颜色为蓝色 */
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            color: blue; /* 设置标题颜色为蓝色 */
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: blue; /* 设置标题颜色为蓝色 */
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border: 1px solid #ddd;
+            padding: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+
+        .slideshow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        .slideshow img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .thumbnail-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .thumbnail-container img {
+            width: 100px;
+            height: 75px;
+            object-fit: cover;
+            margin: 5px;
+            border: 1px solid #ddd;
+            padding: 2px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+    </style>
+    <!-- 引入 heic2any 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/heic2any@0.0.3/bundled/heic2any.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Travel</h2>
+        <ul>
+            <li><a href="https://leeergou711.github.io/" target="_blank" style="color: blue; text-decoration: none;">My Homepage</a></li> <!-- 新增主页链接 -->
+
+            <li id="homeLink">Overview</li>
+            <li id="japanTravelLink">Japan Travel</li>
+            <li id="hongKongTravelLink">Hong Kong Travel</li> <!-- 新增香港旅行链接 -->
+
+        </ul>
+    </div>
+
+    <div class="content">
+<!--         <h1>Travel</h1> -->
+        <div class="gallery" id="galleryContainer">
+            <!-- Japan Travel photos will be displayed here -->
+        </div>
+        <div id="travelThoughts" style="display: block;">
+            <h2>Japan 2024.4.28-2024.5.7</h2>
+            It was my first abroad travel and also my first travel to Japan. 
+            I have been to Tokyo, Kyoto, Uji, Osaka, and Kamakura (Fujisawa) within one week. 
+            I met my alumnus, my professor, and my fellow countryman in Tokyo. 
+            The travel was smooth and wonderful. I bought many souvenirs and many anime goods. 
+            I went to many landmarks (famous in the real world and anime). I shall keep the memory in my mind for a long time. 
+            I am positively looking forward to my second travel to Japan. 
+            
+            <br>I include the plan, schedule, and cost in this <a href="https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/japan_travel.pdf" target="_blank">file</a> (Chinese)</br>
+        </div>
+
+        <div class="slideshow">
+            <img src="" alt="Slideshow Image">
+        </div>
+
+        <div class="thumbnail-container">
+            <!-- Thumbnails will be added here -->
+        </div>
+    </div>
+
+    <script>
+        const galleryContainer = document.getElementById('galleryContainer');
+        const travelThoughts = document.getElementById('travelThoughts');
+        const slideshow = document.querySelector('.slideshow');
+        const slideshowImage = slideshow.querySelector('img');
+        const thumbnailContainer = document.querySelector('.thumbnail-container');
+        const japanTravelLink = document.getElementById('japanTravelLink');
+        const homeLink = document.getElementById('homeLink');
+        const hongKongTravelLink = document.getElementById('hongKongTravelLink');
+
+        // 将图片 URL 转换为 blob 对象
+        function urlToBlob(url) {
+            return fetch(url, { mode: 'cors' })
+                .then(response => response.blob())
+                .catch(error => console.error(error));
+        }
+
+        // 解码 HEIC 图像
+        function decodeHEICImage(imageBlob, callback) {
+            const heic2any = new HeicConvert({
+                to: 'image/jpeg',
+                quality: 1
+            });
+            heic2any.convert(imageBlob)
+                .then(result => callback(result))
+                .catch(error => console.error(error));
+        }
+
+        // 将 blob 对象转换为 img 支持的格式
+        function blobToImageUrl(blob) {
+            return URL.createObjectURL(blob);
+        }
+
+        // 显示 Hong Kong Travel 照片
+        function showHongKongTravelPhotos() {
+            galleryContainer.innerHTML = '';
+            thumbnailContainer.innerHTML = '';
+            travelThoughts.style.display = 'none';
+
+            const hongKongTravelPhotos = [
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/hongkong_travel/20240515215903.jpg', // 替换为你的香港图片 URL
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/hongkong_travel/20240515215929.jpg', 
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/hongkong_travel/20240515215938.jpg', 
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/hongkong_travel/20240515215946.jpg', 
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/hongkong_travel/20240515215953.jpg', 
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/hongkong_travel/20240515220008.jpg', 
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/hongkong_travel/20240515220014.jpg', 
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/hongkong_travel/20240515220020.jpg', 
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/hongkong_travel/20240515220027.jpg', 
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/hongkong_travel/20240515220033.jpg', 
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/hongkong_travel/20240515220041.jpg', 
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/hongkong_travel/20240515220045.jpg'
+            ];
+
+            hongKongTravelPhotos.forEach((photoUrl, index) => {
+                const img = document.createElement('img');
+                img.src = photoUrl;
+                img.alt = `Hong Kong Travel Photo ${index + 1}`;
+                galleryContainer.appendChild(img);
+
+                img.addEventListener('click', () => {
+                    slideshow.style.display = 'flex';
+                    slideshowImage.src = photoUrl;
+                });
+
+                const thumbnail = document.createElement('img');
+                thumbnail.src = photoUrl;
+                thumbnail.alt = `Thumbnail ${index + 1}`;
+                thumbnail.addEventListener('click', () => {
+                    slideshow.style.display = 'flex';
+                    slideshowImage.src = photoUrl;
+                });
+                thumbnailContainer.appendChild(thumbnail);
+            });
+        }
+
+        // 显示 Japan Travel 照片
+        function showJapanTravelPhotos() {
+            galleryContainer.innerHTML = '';
+            thumbnailContainer.innerHTML = '';
+            travelThoughts.style.display = 'none';
+
+            const japanTravelPhotos = [
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240429_091929.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240501_142522.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240502_110551.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240502_140502.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240504_170611.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240505_103139.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240429_043048.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240429_100001.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240429_115458.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240429_163029.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240430_080639.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240501_185346.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240502_090008.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240502_134257.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240503_114706.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240505_103022.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240505_111724.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/IMG_20240506_151454.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/kitauji.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/kitauji2.jpg',
+                'https://github.com/LeeErGou711/LeeErGou711.github.io/raw/main/travel/japan_travel/kitauji3.jpg'
+            ];
+
+            japanTravelPhotos.forEach((photoUrl, index) => {
+                const img = document.createElement('img');
+                img.src = photoUrl;
+                img.alt = `Travel Photo ${index + 1}`;
+                galleryContainer.appendChild(img);
+
+                img.addEventListener('click', () => {
+                    slideshow.style.display = 'flex';
+                    slideshowImage.src = photoUrl;
+                });
+
+                const thumbnail = document.createElement('img');
+                thumbnail.src = photoUrl;
+                thumbnail.alt = `Thumbnail ${index + 1}`;
+                thumbnail.addEventListener('click', () => {
+                    slideshow.style.display = 'flex';
+                    slideshowImage.src = photoUrl;
+                });
+                thumbnailContainer.appendChild(thumbnail);
+            });
+        }
+
+        // 显示 travel 感悟
+        function showTravelThoughts() {
+            galleryContainer.innerHTML = '';
+            thumbnailContainer.innerHTML = '';
+            travelThoughts.style.display = 'block';
+        }
+
+        hongKongTravelLink.addEventListener('click', showHongKongTravelPhotos);
+        japanTravelLink.addEventListener('click', showJapanTravelPhotos);
+        homeLink.addEventListener('click', showTravelThoughts);
+        slideshow.addEventListener('click', () => {
+            slideshow.style.display = 'none';
+        });
+
+        // 初始显示 travel 感悟
+        showTravelThoughts();
+    </script>
+</body>
+</html>
