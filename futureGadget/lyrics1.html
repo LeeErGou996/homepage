@@ -172,21 +172,54 @@
             });
         });
 
+         // 函数加载歌词并设置背景图片
+         function loadLyrics(filename, title) {
+            const backgroundImages = {
+                'powder-snow.txt': './images/powder-snow-bg.jpg',
+                'tsukiga.txt': './images/tsukiga-bg.jpg',
+                'sayonara.txt': './images/sayonara-bg.jpg'
+            };
+
+            fetch(filename)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    contentDiv.innerHTML = `<h1>${title} 歌詞</h1><div class="lyrics">${text.replace(/\n/g, '<br>')}</div>`;
+                    if (backgroundImages[filename]) {
+                        document.body.style.backgroundImage = `url('${backgroundImages[filename]}')`;
+                        document.body.style.backgroundSize = 'cover';
+                        document.body.style.backgroundPosition = 'center';
+                        document.body.style.backgroundRepeat = 'no-repeat';
+                    } else {
+                        document.body.style.backgroundImage = 'none';
+                        document.body.style.backgroundColor = '#f0f0f0';
+                    }
+                })
+                .catch(error => {
+                    contentDiv.innerHTML = `<h1>エラー</h1><p>歌詞の読み込みに失敗しました。</p>`;
+                    console.error('Error loading lyrics:', error);
+                });
+        }
+
         // 为不同歌曲绑定点击事件
         homeLink.addEventListener('click', () => {
             contentDiv.innerHTML = '<h1>概要</h1><p>これは私が好きな日本語の歌の歌詞です。私は歌を練習しながら日本語を勉強することができて、とても楽しいと思います。このサイトがあなたのお役に立てば嬉しいです。</p>';
         });
 
         song1Link.addEventListener('click', () => {
-            contentDiv.innerHTML = `<h1>Powder Snow 歌詞</h1><div class="lyrics">Powder Snowの歌詞がここに表示されます。</div>`;
+            loadLyrics('powder-snow.txt', 'Powder Snow');
         });
 
         song2Link.addEventListener('click', () => {
-            contentDiv.innerHTML = `<h1>月がきれい 歌詞</h1><div class="lyrics">月がきれいの歌詞がここに表示されます。</div>`;
+            loadLyrics('tsukiga.txt', '月がきれい');
         });
 
         song3Link.addEventListener('click', () => {
-            contentDiv.innerHTML = `<h1>さよならのこと 歌詞</h1><div class="lyrics">さよならのことの歌詞がここに表示されます。</div>`;
+            loadLyrics('sayonara.txt', 'さよならのこと');
         });
 
         // 点击第一个Spotify条目时展示第一个Spotify的嵌入代码
