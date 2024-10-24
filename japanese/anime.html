@@ -97,6 +97,17 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
             cursor: pointer;
         }
+
+        /* 添加滚动条样式 */
+        .scrollable-textarea {
+            width: 100%;
+            height: 150px;
+            resize: none; /* 禁止用户改变大小 */
+            overflow-y: scroll; /* 仅允许垂直滚动 */
+            padding: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
     </style>
 </head>
 <body>
@@ -111,8 +122,6 @@
             <li id="mygoLink">BanG Dream! It's MyGO!!!!!</li>
             <li id="tsukigaLink">月がきれい</li>
             <li id="garasuLink">烏は主を選ばない</li>
-            
-
         </ul>
     </div>
 
@@ -131,26 +140,36 @@
         const contentDiv = document.querySelector('.content');
 
         homeLink.addEventListener('click', () => {
-            contentDiv.innerHTML = '<h1>概要</h1>';
+            contentDiv.innerHTML = `
+                <h1>概要</h1>
+                <div class="scrollable-textarea readonly">
+                <p>📺 2024.10: アニメ「烏は主を選ばない」を追加する </p>
+                <p>📺 2024.6: アニメ「シュタインズゲート」「響け！ユーフォニアムを追加する」「BanG Dream! It's MyGO!!!!!」「月がきれい」</p>
+                </div>
+
+            `;
         });
+
         steingateLink.addEventListener('click', () => {
             contentDiv.innerHTML = `
             <h1>シュタインズゲート</h1><p><a href="https://leeergou996.github.io/leeergou.github.io/SteinsGate/" target="_blank" style="color: blue; text-decoration: none;">未来ガジェット研究所</a></p>
             <p><a href="https://leeergou996.github.io/leeergou.github.io/futureGadget/JoshuSound.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.1</a></p>
             <p><a href="https://leeergou996.github.io/leeergou.github.io/futureGadget/lyrics.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.3</a></p>
-            
             `;
-            
         });
+
         euphoniumLink.addEventListener('click', () => {
             contentDiv.innerHTML = '<h1>響け！ユーフォニアム</h1>';
         });
+
         mygoLink.addEventListener('click', () => {
             contentDiv.innerHTML = '<h1>BanG Dream! It\'s MyGO!!!!!</h1>';
        });
+
         tsukigaLink.addEventListener('click', () => {
             contentDiv.innerHTML = '<h1>月がきれい</h1>';
         });
+
         garasuLink.addEventListener('click', () => {
             contentDiv.innerHTML = '<h1>烏は主を選ばない</h1>';
         });
