@@ -115,8 +115,8 @@
             <li id="song1Link">Powder Snow</li>
             <li id="song2Link">月がきれい</li>
             <li id="song3Link">さよならのこと</li>
-            <li id="spotifyLink1">Spotify Playlist 1</li>
-            <li id="spotifyLink2">Spotify Playlist 2</li>
+            <li id="spotifyLink1">Spotify Playlist 1: Instrumental Music</li>
+            <li id="spotifyLink2">Spotify Playlist 2: 日本語の歌</li>
         </ul>
         <div class="toggle-container">
             <label>
@@ -225,7 +225,7 @@
         // 点击第一个Spotify条目时展示第一个Spotify的嵌入代码
         spotifyLink1.addEventListener('click', () => {
             contentDiv.innerHTML = `
-                <h1>Spotify Playlist 1</h1>
+                <h1>Spotify Playlist 1: Instrumental Music</h1>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6rvWkIttKpCLhWMUx3d2iP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             `;
         });
@@ -233,7 +233,7 @@
         // 点击第二个Spotify条目时展示第二个Spotify的嵌入代码
         spotifyLink2.addEventListener('click', () => {
             contentDiv.innerHTML = `
-                <h1>Spotify Playlist 2</h1>
+                <h1>Spotify Playlist 2: 日本語の歌</h1>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5ni4Agotx6uIXYdWFS0ERM?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             `;
         });
