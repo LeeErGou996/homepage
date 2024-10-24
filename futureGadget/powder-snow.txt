@@ -1,0 +1,20 @@
+                    <p><strong>作曲：</strong>下川直哉</p>
+                    <p><strong>作詞：</strong>須谷尚子</p>
+                    <p><strong>編曲：</strong>下川直哉 他</p>
+                    
+                    <p>粉雪<span class="furigana">こなゆき</span>が空<span class="furigana">そら</span>から<br>優<span class="furigana">やさ</span>しく降<span class="furigana">お</span>りてくる</p>
+                    <p>手<span class="furigana">て</span>のひらで受<span class="furigana">う</span>け止<span class="furigana">と</span>めた<br>雪<span class="furigana">ゆき</span>が切<span class="furigana">せつ</span>ない</p>
+                    <p>どこかで見<span class="furigana">み</span>てますか<br>あなたは立<span class="furigana">た</span>ち止<span class="furigana">ど</span>まり</p>
+                    <p>思<span class="furigana">おも</span>い出<span class="furigana">だ</span>していますか<br>空<span class="furigana">そら</span>を見上<span class="furigana">みあ</span>げながら</p>
+                    <p>嬉<span class="furigana">うれ</span>しそうに雪<span class="furigana">ゆき</span>の上<span class="furigana">うえ</span>を歩<span class="furigana">ある</span>くあなたが</p>
+                    <p>私<span class="furigana">わたし</span>には本当<span class="furigana">ほんとう</span>に<br>いとおしく見<span class="furigana">み</span>えた</p>
+                    <p>今<span class="furigana">いま</span>でも覚<span class="furigana">おぼ</span>えている<br>あの日<span class="furigana">ひ</span>見<span class="furigana">み</span>た雪<span class="furigana">ゆき</span>の白<span class="furigana">しろ</span>さ</p>
+                    <p>初<span class="furigana">はじ</span>めて触<span class="furigana">ふ</span>れた唇<span class="furigana">くちびる</span>の<br>温<span class="furigana">ぬく</span>もりも忘<span class="furigana">わす</span>れない</p>
+                    <p>I still love you</p>
+                    <p>粉雪<span class="furigana">こなゆき</span>が私<span class="furigana">わたし</span>に<br>いくつも降<span class="furigana">お</span>りかかる</p>
+                    <p>暖<span class="furigana">あたた</span>かいあなたの<br>優<span class="furigana">やさ</span>しさに似<span class="furigana">に</span>ている</p>
+                    <p>楽<span class="furigana">たの</span>しそうに話<span class="furigana">はな</span>をしてくれたあなたが</p>
+                    <p>私<span class="furigana">わたし</span>には心<span class="furigana">こころ</span>から<br>恋<span class="furigana">こい</span>しく思<span class="furigana">おも</span>えた</p>
+                    <p>今<span class="furigana">いま</span>でも夢<span class="furigana">ゆめ</span>を見<span class="furigana">み</span>るの<br>あの日<span class="furigana">ひ</span>見<span class="furigana">み</span>た白<span class="furigana">しろ</span>い世界<span class="furigana">せかい</span></p>
+                    <p>あの時<span class="furigana">とき</span>触<span class="furigana">ふ</span>れた指先<span class="furigana">ゆびさき</span>の<br>冷<span class="furigana">つめ</span>たさも忘<span class="furigana">わす</span>れない</p>
+                    <p>I still love you</p>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歌いたい</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1, h2 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #f9f9f9;
+            position: fixed;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            color: darkblue;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            color: darkblue;
+        }
+
+        .sidebar li:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .lyrics {
+            font-size: 16px;
+            line-height: 1;
+            color: #333;
+            position: relative;
+            z-index: 2;
+        }
+
+        p {
+            margin: 0;
+        }
+
+
+        .furigana {
+            display: none; /* Initially hide furigana */
+            font-size: 12px;
+            color: #999;
+        }
+
+        .toggle-container {
+            margin-top: 10px;
+            color: darkblue;
+        }
+
+        .toggle-container label {
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .powder-snow-bg {
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .powder-snow-bg::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./images/powder-snow-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.4;
+            z-index: -1;
+        }
+
+        .tsukiga-bg {
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .tsukiga-bg::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./images/tsukiga-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.3;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>歌いたい</h2>
+        <ul>
+            <li id="homeLink">概要</li>
+            <li id="song1Link">Powder Snow</li>
+            <li id="song2Link">月がきれい</li>
+            <li id="song3Link">Song 3</li>
+        </ul>
+        <div class="toggle-container">
+            <label>
+                <input type="checkbox" id="toggleFurigana"> 假名拼写を表示
+            </label>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- 歌词或内容显示在这里 -->
+    </div>
+
+    <script>
+        const homeLink = document.getElementById('homeLink');
+        const song1Link = document.getElementById('song1Link');
+        const song2Link = document.getElementById('song2Link');
+        const song3Link = document.getElementById('song3Link');
+        const contentDiv = document.querySelector('.content');
+        const toggleFurigana = document.getElementById('toggleFurigana');
+
+        // 初始内容显示为 "概要"
+        contentDiv.innerHTML = '<h1>概要</h1><p>これは私が好きな日本語の歌の歌詞です。私は歌を練習しながら日本語を勉強することができて、とても楽しいと思います。このサイトがあなたのお役に立てば嬉しいです。</p>';
+
+        // 切换假名显示
+        toggleFurigana.addEventListener('change', function () {
+            const furiganaElements = document.querySelectorAll('.furigana');
+            furiganaElements.forEach(el => {
+                if (toggleFurigana.checked) {
+                    el.style.display = 'inline'; // 显示假名
+                } else {
+                    el.style.display = 'none'; // 隐藏假名
+                }
+            });
+        });
+
+        // 函数加载歌词
+        function loadLyrics(filename, title) {
+            fetch(filename)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    contentDiv.innerHTML = `<h1>${title} 歌詞</h1><div class="lyrics">${text.replace(/\n/g, '<br>')}</div>`;
+                })
+                .catch(error => {
+                    contentDiv.innerHTML = `<h1>エラー</h1><p>歌詞の読み込みに失敗しました。</p>`;
+                    console.error('Error loading lyrics:', error);
+                });
+        }
+
+        // 为不同歌曲绑定点击事件
+        homeLink.addEventListener('click', () => {
+            contentDiv.innerHTML = '<h1>概要</h1><p>これは私が好きな日本語の歌の歌詞です。私は歌を練習しながら日本語を勉強することができて、とても楽しいと思います。このサイトがあなたのお役に立てば嬉しいです。</p>';
+        });
+
+        song1Link.addEventListener('click', () => {
+            loadLyrics('powder-snow.txt', 'Powder Snow');
+        });
+
+        song2Link.addEventListener('click', () => {
+            loadLyrics('tsukiga.txt', '月がきれい');
+        });
+
+        song3Link.addEventListener('click', () => {
+            contentDiv.innerHTML = '<h1>Song 3 歌詞</h1><div class="lyrics"><p>ここにSong 3の歌詞が表示されます。</p></div>';
+        });
+    </script>
+</body>
+</html>

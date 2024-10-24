@@ -110,7 +110,7 @@
             <li id="euphoniumLink">響け！ユーフォニアム</li>
             <li id="mygoLink">BanG Dream! It's MyGO!!!!!</li>
             <li id="tsukigaLink">月がきれい</li>
-            <li id="tsukigaLink">烏は主を選ばない</li>
+            <li id="garasuLink">烏は主を選ばない</li>
             
 
         </ul>
@@ -127,13 +127,19 @@
         const euphoniumLink = document.getElementById('euphoniumLink');
         const mygoLink = document.getElementById('mygoLink');
         const tsukigaLink = document.getElementById('tsukigaLink');
+        const garasuLink = document.getElementById('garasuLink');
         const contentDiv = document.querySelector('.content');
 
         homeLink.addEventListener('click', () => {
             contentDiv.innerHTML = '<h1>概要</h1>';
         });
         steingateLink.addEventListener('click', () => {
-            contentDiv.innerHTML = '<h1>シュタインズゲート</h1><p><a href="https://leeergou996.github.io/leeergou.github.io/SteinsGate/" target="_blank" style="color: blue; text-decoration: none;">未来ガジェット研究所</a></p><p><a href="https://leeergou996.github.io/leeergou.github.io/futureGadget/JoshuSound.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.1</a></p><p><a href="https://leeergou996.github.io/leeergou.github.io/futureGadget/diary.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.2</a></p>';
+            contentDiv.innerHTML = `
+            <h1>シュタインズゲート</h1><p><a href="https://leeergou996.github.io/leeergou.github.io/SteinsGate/" target="_blank" style="color: blue; text-decoration: none;">未来ガジェット研究所</a></p>
+            <p><a href="https://leeergou996.github.io/leeergou.github.io/futureGadget/JoshuSound.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.1</a></p>
+            <p><a href="https://leeergou996.github.io/leeergou.github.io/futureGadget/lyrics.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.2</a></p>
+            <p><a href="../futureGadget/lyrics1.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.3</a></p>
+            `;
             
         });
         euphoniumLink.addEventListener('click', () => {
@@ -144,6 +150,9 @@
        });
         tsukigaLink.addEventListener('click', () => {
             contentDiv.innerHTML = '<h1>月がきれい</h1>';
+        });
+        garasuLink.addEventListener('click', () => {
+            contentDiv.innerHTML = '<h1>烏は主を選ばない</h1>';
         });
     </script>
 </body>
