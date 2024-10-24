@@ -126,6 +126,26 @@
             opacity: 0.3;
             z-index: -1;
         }
+
+        .sayonara-bg {
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .sayonara-bg::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./images/sayonara-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.3;
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
