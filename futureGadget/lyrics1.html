@@ -6,96 +6,96 @@
     <title>歌いたい</title>
     <style>
         body {
-    font-family: 'Times New Roman', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
 
-h1, h2 {
-    color: darkblue;
-    text-align: center;
-}
+        h1, h2 {
+            color: darkblue;
+            text-align: center;
+        }
 
-.sidebar {
-    width: 200px;
-    height: 100vh;
-    background-color: #f9f9f9;
-    position: fixed;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-}
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #f9f9f9;
+            position: fixed;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
 
-.sidebar h2 {
-    margin-top: 0;
-}
+        .sidebar h2 {
+            margin-top: 0;
+        }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
 
-.sidebar li {
-    margin-bottom: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    color: darkblue;
-}
+        .sidebar li {
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            color: darkblue;
+        }
 
-.sidebar li:hover {
-    text-decoration: underline;
-}
+        .sidebar li:hover {
+            text-decoration: underline;
+        }
 
-.content {
-    margin-left: 220px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-.lyrics {
-    font-size: 16px;
-    color: #333;
-}
+        .lyrics {
+            font-size: 16px;
+            color: #333;
+        }
 
-.furigana {
-    display: none;
-    font-size: 12px;
-    color: #999;
-}
+        .furigana {
+            display: none;
+            font-size: 12px;
+            color: #999;
+        }
 
-.toggle-container {
-    margin-top: 10px;
-    color: darkblue;
-}
+        .toggle-container {
+            margin-top: 10px;
+            color: darkblue;
+        }
 
-.powder-snow-bg::before,
-.tsukiga-bg::before,
-.sayonara-bg::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-    z-index: -1;
-}
+        .powder-snow-bg::before,
+        .tsukiga-bg::before,
+        .sayonara-bg::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.3;
+            z-index: -1;
+        }
 
-.powder-snow-bg::before {
-    background-image: url('./images/powder-snow-bg.jpg');
-}
+        .powder-snow-bg::before {
+            background-image: url('./images/powder-snow-bg.jpg');
+        }
 
-.tsukiga-bg::before {
-    background-image: url('./images/tsukiga-bg.jpg');
-}
+        .tsukiga-bg::before {
+            background-image: url('./images/tsukiga-bg.jpg');
+        }
 
-.sayonara-bg::before {
-    background-image: url('./images/sayonara-bg.jpg');
-}
+        .sayonara-bg::before {
+            background-image: url('./images/sayonara-bg.jpg');
+        }
 
     </style>
 </head>
@@ -107,6 +107,8 @@ h1, h2 {
             <li id="song1Link">Powder Snow</li>
             <li id="song2Link">月がきれい</li>
             <li id="song3Link">さよならのこと</li>
+            <li id="spotifyLink1">Spotify Playlist: Instrumental Music</li> <!-- 第一个Spotify条目 -->
+            <li id="spotifyLink2">Spotify Playlist: 日本語の歌 </li> <!-- 第二个Spotify条目 -->
         </ul>
         <div class="toggle-container">
             <label>
@@ -124,6 +126,8 @@ h1, h2 {
         const song1Link = document.getElementById('song1Link');
         const song2Link = document.getElementById('song2Link');
         const song3Link = document.getElementById('song3Link');
+        const spotifyLink1 = document.getElementById('spotifyLink1'); // 第一个Spotify条目
+        const spotifyLink2 = document.getElementById('spotifyLink2'); // 第二个Spotify条目
         const contentDiv = document.querySelector('.content');
         const toggleFurigana = document.getElementById('toggleFurigana');
 
@@ -142,44 +146,38 @@ h1, h2 {
             });
         });
 
-// 函数加载歌词并设置背景图片
-function loadLyrics(filename, title) {
-    // 映射歌曲文件名或标题到对应的背景图片路径
-    const backgroundImages = {
-        'powder-snow.txt': './images/powder-snow-bg.jpg',
-        'tsukiga.txt': './images/tsukiga-bg.jpg',
-        'sayonara.txt': './images/sayonara-bg.jpg'
-    };
+        // 函数加载歌词并设置背景图片
+        function loadLyrics(filename, title) {
+            const backgroundImages = {
+                'powder-snow.txt': './images/powder-snow-bg.jpg',
+                'tsukiga.txt': './images/tsukiga-bg.jpg',
+                'sayonara.txt': './images/sayonara-bg.jpg'
+            };
 
-    fetch(filename)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.text();
-        })
-        .then(text => {
-            // 更新歌词内容
-            contentDiv.innerHTML = `<h1>${title} 歌詞</h1><div class="lyrics">${text.replace(/\n/g, '<br>')}</div>`;
-
-            // 检查是否有对应的背景图片
-            if (backgroundImages[filename]) {
-                document.body.style.backgroundImage = `url('${backgroundImages[filename]}')`;
-                document.body.style.backgroundSize = 'cover';
-                document.body.style.backgroundPosition = 'center';
-                document.body.style.backgroundRepeat = 'no-repeat';
-            } else {
-                // 如果没有对应的背景图片，可以设置一个默认的背景颜色
-                document.body.style.backgroundImage = 'none';
-                document.body.style.backgroundColor = '#f0f0f0'; // 设置默认背景颜色
-            }
-        })
-        .catch(error => {
-            contentDiv.innerHTML = `<h1>エラー</h1><p>歌詞の読み込みに失敗しました。</p>`;
-            console.error('Error loading lyrics:', error);
-        });
-}
-
+            fetch(filename)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    contentDiv.innerHTML = `<h1>${title} 歌詞</h1><div class="lyrics">${text.replace(/\n/g, '<br>')}</div>`;
+                    if (backgroundImages[filename]) {
+                        document.body.style.backgroundImage = `url('${backgroundImages[filename]}')`;
+                        document.body.style.backgroundSize = 'cover';
+                        document.body.style.backgroundPosition = 'center';
+                        document.body.style.backgroundRepeat = 'no-repeat';
+                    } else {
+                        document.body.style.backgroundImage = 'none';
+                        document.body.style.backgroundColor = '#f0f0f0';
+                    }
+                })
+                .catch(error => {
+                    contentDiv.innerHTML = `<h1>エラー</h1><p>歌詞の読み込みに失敗しました。</p>`;
+                    console.error('Error loading lyrics:', error);
+                });
+        }
 
         // 为不同歌曲绑定点击事件
         homeLink.addEventListener('click', () => {
@@ -197,6 +195,23 @@ function loadLyrics(filename, title) {
         song3Link.addEventListener('click', () => {
             loadLyrics('sayonara.txt', 'さよならのこと');
         });
+
+        // 点击第一个Spotify条目时展示第一个Spotify的嵌入代码
+        spotifyLink1.addEventListener('click', () => {
+            contentDiv.innerHTML = `
+                <h1>My Spotify Playlist: Instrumental Music</h1>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6rvWkIttKpCLhWMUx3d2iP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            `;
+        });
+
+        // 点击第二个Spotify条目时展示第二个Spotify的嵌入代码
+        spotifyLink2.addEventListener('click', () => {
+            contentDiv.innerHTML = `
+                <h1>My Spotify Playlist: 日本語の歌</h1>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5ni4Agotx6uIXYdWFS0ERM?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            `;
+        });
+
     </script>
 </body>
 </html>
