@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
+            transition: margin-left 0.3s;
         }
 
         h1, h2 {
@@ -24,15 +25,33 @@
             position: fixed;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            transition: width 0.3s;
+            overflow-x: hidden;
+        }
+
+        .sidebar.collapsed {
+            width: 20px;
+            padding: 10px 0; /* Padding 调整为更小的数值 */
         }
 
         .sidebar h2 {
             margin-top: 0;
+            font-size: 20px;
+            transition: opacity 0.3s;
+        }
+
+        .sidebar.collapsed h2 {
+            display: none; /* 折叠时隐藏标题 */
         }
 
         .sidebar ul {
             list-style: none;
             padding: 0;
+            transition: opacity 0.3s;
+        }
+
+        .sidebar.collapsed ul {
+            display: none; /* 折叠时隐藏整个列表 */
         }
 
         .sidebar li {
@@ -42,15 +61,32 @@
             color: darkblue;
         }
 
-        .sidebar li:hover {
-            text-decoration: underline;
-        }
-
         .content {
             margin-left: 220px;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.9);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: margin-left 0.3s;
+        }
+
+        .content.collapsed {
+            margin-left: 40px; /* 留出折叠后的空间 */
+        }
+
+        .toggle-sidebar {
+            position: absolute;
+            top: 10px;
+            left: 210px;
+            background-color: darkblue;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            border: none;
+            transition: left 0.3s;
+        }
+
+        .sidebar.collapsed + .toggle-sidebar {
+            left: 20px; /* 调整按钮的位置与折叠后的侧栏对齐 */
         }
 
         .lyrics {
@@ -69,46 +105,18 @@
             color: darkblue;
         }
 
-        .powder-snow-bg::before,
-        .tsukiga-bg::before,
-        .sayonara-bg::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            opacity: 0.3;
-            z-index: -1;
-        }
-
-        .powder-snow-bg::before {
-            background-image: url('./images/powder-snow-bg.jpg');
-        }
-
-        .tsukiga-bg::before {
-            background-image: url('./images/tsukiga-bg.jpg');
-        }
-
-        .sayonara-bg::before {
-            background-image: url('./images/sayonara-bg.jpg');
-        }
-
     </style>
 </head>
 <body>
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <h2>歌いたい</h2>
         <ul>
             <li id="homeLink">概要</li>
             <li id="song1Link">Powder Snow</li>
             <li id="song2Link">月がきれい</li>
             <li id="song3Link">さよならのこと</li>
-            <li id="spotifyLink1">Spotify Playlist: Instrumental Music</li> <!-- 第一个Spotify条目 -->
-            <li id="spotifyLink2">Spotify Playlist: 日本語の歌 </li> <!-- 第二个Spotify条目 -->
+            <li id="spotifyLink1">Spotify Playlist 1</li>
+            <li id="spotifyLink2">Spotify Playlist 2</li>
         </ul>
         <div class="toggle-container">
             <label>
@@ -116,19 +124,37 @@
             </label>
         </div>
     </div>
+    
+    <!-- 折叠/展开按钮 -->
+    <button class="toggle-sidebar" id="toggleButton">折叠</button>
 
-    <div class="content">
+    <div class="content" id="content">
         <!-- 歌词或内容显示在这里 -->
     </div>
 
     <script>
+        const sidebar = document.getElementById('sidebar');
+        const toggleButton = document.getElementById('toggleButton');
+        const contentDiv = document.getElementById('content');
+        
+        toggleButton.addEventListener('click', function() {
+            sidebar.classList.toggle('collapsed');
+            contentDiv.classList.toggle('collapsed');
+            
+            if (sidebar.classList.contains('collapsed')) {
+                toggleButton.textContent = '展开';
+            } else {
+                toggleButton.textContent = '折叠';
+            }
+        });
+
+        // 其他功能代码
         const homeLink = document.getElementById('homeLink');
         const song1Link = document.getElementById('song1Link');
         const song2Link = document.getElementById('song2Link');
         const song3Link = document.getElementById('song3Link');
-        const spotifyLink1 = document.getElementById('spotifyLink1'); // 第一个Spotify条目
-        const spotifyLink2 = document.getElementById('spotifyLink2'); // 第二个Spotify条目
-        const contentDiv = document.querySelector('.content');
+        const spotifyLink1 = document.getElementById('spotifyLink1');
+        const spotifyLink2 = document.getElementById('spotifyLink2');
         const toggleFurigana = document.getElementById('toggleFurigana');
 
         // 初始内容显示为 "概要"
@@ -139,45 +165,12 @@
             const furiganaElements = document.querySelectorAll('.furigana');
             furiganaElements.forEach(el => {
                 if (toggleFurigana.checked) {
-                    el.style.display = 'inline'; // 显示假名
+                    el.style.display = 'inline';
                 } else {
-                    el.style.display = 'none'; // 隐藏假名
+                    el.style.display = 'none';
                 }
             });
         });
-
-        // 函数加载歌词并设置背景图片
-        function loadLyrics(filename, title) {
-            const backgroundImages = {
-                'powder-snow.txt': './images/powder-snow-bg.jpg',
-                'tsukiga.txt': './images/tsukiga-bg.jpg',
-                'sayonara.txt': './images/sayonara-bg.jpg'
-            };
-
-            fetch(filename)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    return response.text();
-                })
-                .then(text => {
-                    contentDiv.innerHTML = `<h1>${title} 歌詞</h1><div class="lyrics">${text.replace(/\n/g, '<br>')}</div>`;
-                    if (backgroundImages[filename]) {
-                        document.body.style.backgroundImage = `url('${backgroundImages[filename]}')`;
-                        document.body.style.backgroundSize = 'cover';
-                        document.body.style.backgroundPosition = 'center';
-                        document.body.style.backgroundRepeat = 'no-repeat';
-                    } else {
-                        document.body.style.backgroundImage = 'none';
-                        document.body.style.backgroundColor = '#f0f0f0';
-                    }
-                })
-                .catch(error => {
-                    contentDiv.innerHTML = `<h1>エラー</h1><p>歌詞の読み込みに失敗しました。</p>`;
-                    console.error('Error loading lyrics:', error);
-                });
-        }
 
         // 为不同歌曲绑定点击事件
         homeLink.addEventListener('click', () => {
@@ -185,21 +178,21 @@
         });
 
         song1Link.addEventListener('click', () => {
-            loadLyrics('powder-snow.txt', 'Powder Snow');
+            contentDiv.innerHTML = `<h1>Powder Snow 歌詞</h1><div class="lyrics">Powder Snowの歌詞がここに表示されます。</div>`;
         });
 
         song2Link.addEventListener('click', () => {
-            loadLyrics('tsukiga.txt', '月がきれい');
+            contentDiv.innerHTML = `<h1>月がきれい 歌詞</h1><div class="lyrics">月がきれいの歌詞がここに表示されます。</div>`;
         });
 
         song3Link.addEventListener('click', () => {
-            loadLyrics('sayonara.txt', 'さよならのこと');
+            contentDiv.innerHTML = `<h1>さよならのこと 歌詞</h1><div class="lyrics">さよならのことの歌詞がここに表示されます。</div>`;
         });
 
         // 点击第一个Spotify条目时展示第一个Spotify的嵌入代码
         spotifyLink1.addEventListener('click', () => {
             contentDiv.innerHTML = `
-                <h1>My Spotify Playlist: Instrumental Music</h1>
+                <h1>Spotify Playlist 1</h1>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6rvWkIttKpCLhWMUx3d2iP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             `;
         });
@@ -207,7 +200,7 @@
         // 点击第二个Spotify条目时展示第二个Spotify的嵌入代码
         spotifyLink2.addEventListener('click', () => {
             contentDiv.innerHTML = `
-                <h1>My Spotify Playlist: 日本語の歌</h1>
+                <h1>Spotify Playlist 2</h1>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5ni4Agotx6uIXYdWFS0ERM?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             `;
         });
