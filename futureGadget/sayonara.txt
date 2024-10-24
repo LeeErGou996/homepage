@@ -1,6 +1,7 @@
 <p><strong>作詞：</strong>下川直哉</p>
 <p><strong>作曲：</strong>下川直哉</p>
 <p><strong>編曲：</strong>小林俊太郎</p>
+
 <p>忘<span class="furigana">わす</span>れられない 無邪気<span class="furigana">むじゃき</span>な声<span class="furigana">こえ</span> 今<span class="furigana">いま</span>も色褪<span class="furigana">いろあ</span>せずに</p>
 <p>楽<span class="furigana">たの</span>しい日々<span class="furigana">ひび</span>が 隠<span class="furigana">かく</span>していた 小<span class="furigana">ちい</span>さな想<span class="furigana">おも</span>いを</p>
 <p>でもね このしあわせ 疑<span class="furigana">うたが</span>いもしないで</p>
