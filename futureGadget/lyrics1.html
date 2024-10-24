@@ -135,7 +135,7 @@
             <li id="homeLink">概要</li>
             <li id="song1Link">Powder Snow</li>
             <li id="song2Link">月がきれい</li>
-            <li id="song3Link">Song 3</li>
+            <li id="song3Link">さよならのこと</li>
         </ul>
         <div class="toggle-container">
             <label>
@@ -171,23 +171,44 @@
             });
         });
 
-        // 函数加载歌词
-        function loadLyrics(filename, title) {
-            fetch(filename)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    return response.text();
-                })
-                .then(text => {
-                    contentDiv.innerHTML = `<h1>${title} 歌詞</h1><div class="lyrics">${text.replace(/\n/g, '<br>')}</div>`;
-                })
-                .catch(error => {
-                    contentDiv.innerHTML = `<h1>エラー</h1><p>歌詞の読み込みに失敗しました。</p>`;
-                    console.error('Error loading lyrics:', error);
-                });
-        }
+// 函数加载歌词并设置背景图片
+function loadLyrics(filename, title) {
+    // 映射歌曲文件名或标题到对应的背景图片路径
+    const backgroundImages = {
+        'powder-snow.txt': './images/powder-snow-bg.jpg',
+        'tsukiga.txt': './images/tsukiga-bg.jpg',
+        'song3.txt': './images/song3-bg.jpg'
+    };
+
+    fetch(filename)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(text => {
+            // 更新歌词内容
+            contentDiv.innerHTML = `<h1>${title} 歌詞</h1><div class="lyrics">${text.replace(/\n/g, '<br>')}</div>`;
+
+            // 检查是否有对应的背景图片
+            if (backgroundImages[filename]) {
+                document.body.style.backgroundImage = `url('${backgroundImages[filename]}')`;
+                document.body.style.backgroundSize = 'cover';
+                document.body.style.backgroundPosition = 'center';
+                document.body.style.backgroundRepeat = 'no-repeat';
+            } else {
+                // 如果没有对应的背景图片，可以设置一个默认的背景颜色
+                document.body.style.backgroundImage = 'none';
+                document.body.style.backgroundColor = '#f0f0f0'; // 设置默认背景颜色
+            }
+        })
+        .catch(error => {
+            contentDiv.innerHTML = `<h1>エラー</h1><p>歌詞の読み込みに失敗しました。</p>`;
+            console.error('Error loading lyrics:', error);
+        });
+}
+
 
         // 为不同歌曲绑定点击事件
         homeLink.addEventListener('click', () => {
@@ -203,7 +224,7 @@
         });
 
         song3Link.addEventListener('click', () => {
-            contentDiv.innerHTML = '<h1>Song 3 歌詞</h1><div class="lyrics"><p>ここにSong 3の歌詞が表示されます。</p></div>';
+            loadLyrics('sayonara.txt', 'さよならのこと');
         });
     </script>
 </body>
