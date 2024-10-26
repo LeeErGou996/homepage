@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsch A1 Wort Lernseite</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            transition: margin-left 0.3s;
+        }
+
+        h1, h2 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #f9f9f9;
+            position: fixed;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            transition: width 0.3s;
+            overflow-x: hidden;
+        }
+
+        .sidebar.collapsed {
+            width: 20px;
+            padding: 10px 0;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            font-size: 20px;
+            transition: opacity 0.3s;
+        }
+
+        .sidebar.collapsed h2 {
+            display: none;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            transition: opacity 0.3s;
+        }
+
+        .sidebar.collapsed ul {
+            display: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            color: darkblue;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: margin-left 0.3s;
+        }
+
+        .content.collapsed {
+            margin-left: 40px;
+        }
+
+        .toggle-sidebar {
+            position: absolute;
+            top: 10px;
+            left: 210px;
+            background-color: darkblue;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            border: none;
+            transition: left 0.3s;
+        }
+
+        .sidebar.collapsed + .toggle-sidebar {
+            left: 20px;
+        }
+
+        #wordDetail {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .word-list {
+            margin-top: 20px;
+            max-height: 200px; /* 限制高度 */
+            overflow-y: auto; /* 使列表可以滚动 */
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+
+        .word-item {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .word-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        .category-buttons,
+        .theme-buttons {
+            display: none;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .category-buttons button,
+        .theme-buttons button {
+            margin: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 侧边栏 -->
+    <div class="sidebar" id="sidebar">
+        <h2>Funktionen Auswahl</h2>
+        <ul>
+            <li onclick="showByCategory('词性')">Nach Wortart sortieren</li>
+            <li onclick="showByCategory('主题')">Nach Wortthema sortieren</li>
+            <li onclick="showRandomWord()">Zufälliges Wort</li>
+            <li onclick="showRandomWordsInput()">Zufällige Wörter nach Anzahl auswählen</li> <!-- 新增的功能项 -->
+            <li onclick="showSearchBox()">Wort suchen</li>
+
+
+        </ul>
+    </div>
+
+ 
+    <!-- 侧边栏折叠按钮 -->
+    <button class="toggle-sidebar" onclick="toggleSidebar()">Seitenleiste einklappen</button>
+
+    <!-- 主内容区 -->
+    <div class="content" id="content">
+        <h1>Deutsch A1 Wort Lernseite</h1>
+
+        <!-- 词性按钮 -->
+        <div class="category-buttons" id="categoryButtons">
+            <button onclick="filterByType('名词')">名词</button>
+            <button onclick="filterByType('动词')">动词</button>
+            <button onclick="filterByType('形容词')">形容词</button>
+            <button onclick="filterByType('副词')">副词</button>
+            <button onclick="filterByType('代词')">代词</button>
+            <button onclick="filterByType('介词')">介词</button>
+            <button onclick="filterByType('连词')">连词</button>
+            <button onclick="filterByType('感叹词')">感叹词</button>
+            <button onclick="filterByType('冠词')">冠词</button>
+            <button onclick="filterByType('情态动词')">情态动词</button>
+            <button onclick="filterByType('指示代词')">指示代词</button>
+            <button onclick="filterByTheme('动词短语')">动词短语</button>
+        </div>
+
+        <!-- 主题按钮 -->
+        <div class="theme-buttons" id="themeButtons">
+            <button onclick="filterByTheme('个人信息')">个人信息</button>
+            <button onclick="filterByTheme('交通')">交通</button>
+            <button onclick="filterByTheme('人物')">人物</button>
+            <button onclick="filterByTheme('住宿')">住宿</button>
+            <button onclick="filterByTheme('信息')">信息</button>
+            <button onclick="filterByTheme('健康')">健康</button>
+
+            <button onclick="filterByTheme('商业')">商业</button>
+            <button onclick="filterByTheme('地理')">地理</button>
+            <button onclick="filterByTheme('天气')">天气</button>
+            <button onclick="filterByTheme('娱乐')">娱乐</button>
+            <button onclick="filterByTheme('学习')">学习</button>
+            <button onclick="filterByTheme('家居')">家居</button>
+            <button onclick="filterByTheme('家庭')">家庭</button>
+            <button onclick="filterByTheme('建筑')">建筑</button>
+
+            <button onclick="filterByTheme('情感')">情感</button>
+            <button onclick="filterByTheme('教育')">教育</button>
+            <button onclick="filterByTheme('文具')">文具</button>
+
+            <button onclick="filterByTheme('旅游')">旅游</button>
+            <button onclick="filterByTheme('时间')">时间</button>
+            <button onclick="filterByTheme('服务')">服务</button>
+            <button onclick="filterByTheme('沟通')">沟通</button>
+            <button onclick="filterByTheme('活动')">活动</button>
+
+            <button onclick="filterByTheme('物品')">物品</button>
+
+            <button onclick="filterByTheme('电子设备')">电子设备</button>
+
+            <button onclick="filterByTheme('社交')">社交</button>
+            <button onclick="filterByTheme('社会')">社会</button>
+
+            <button onclick="filterByTheme('职业')">职业</button>
+            <button onclick="filterByTheme('自然')">自然</button>
+            <button onclick="filterByTheme('衣物')">衣物</button>
+            <button onclick="filterByTheme('语言')">语言</button>
+            <button onclick="filterByTheme('财务')">财务</button>
+            <button onclick="filterByTheme('购物')">购物</button>
+            <button onclick="filterByTheme('身体状况')">身体状况</button>
+            <button onclick="filterByTheme('身体部位')">身体部位</button>
+            <button onclick="filterByTheme('运动')">运动</button>
+
+            <button onclick="filterByTheme('通讯')">通讯</button>
+            <button onclick="filterByTheme('邮寄')">邮寄</button>
+            <button onclick="filterByTheme('问候')">问候</button>
+            <button onclick="filterByTheme('音乐')">音乐</button>
+
+            <button onclick="filterByTheme('餐饮')">餐饮</button>
+        </div>
+
+        <!-- 搜索框 -->
+        <div id="searchContainer" style="display: none; margin-top: 20px;">
+            <input type="text" id="searchInput" placeholder="输入单词或汉语意思" oninput="searchWords()" />
+            <div id="searchResults" class="word-list"></div>
+        </div>
+
+        <!-- 单词列表 -->
+        <div class="word-list" id="wordList"></div>
+
+        <!-- 单词详情页 -->
+        <div id="wordDetail">
+            <h3 id="wordTitle"></h3>
+            <p><strong>例句:</strong> <span id="wordExample"></span></p>
+            <p><strong>中文释义:</strong> <span id="wordMeaning"></span></p>
+            <button onclick="closeDetail()">关闭</button>
+        </div>
+
+        <!-- 随机单词数量输入框 -->
+        <div id="randomWordsInput" style="display: none;">
+            <input type="number" id="randomCount" placeholder="请输入数字">
+            <button onclick="selectRandomWords()">确认</button>
+        </div>
+
+    <!-- 用于显示链接单词的详细信息 -->
+    <div id="linkedWordDetail" style="display: none; border: 1px solid #ccc; padding: 10px; margin-top: 20px;"></div>
+
+
+    </div>
+
+    <script>
+        let words = []; // 全局变量，用于存储加载的单词数据
+
+        // 使用 fetch 加载单词数据
+        fetch('words.json')
+            .then(response => response.json())
+            .then(data => {
+                words = data; // 将加载的数据赋值给全局变量
+            })
+            .catch(error => console.error('加载单词数据失败:', error));
+
+        // 显示词性或主题选项
+        function showByCategory(categoryType) {
+            clearSearch();
+            const categoryButtons = document.getElementById('categoryButtons');
+            const themeButtons = document.getElementById('themeButtons');
+            const wordList = document.getElementById('wordList');
+            const wordDetail = document.getElementById('wordDetail');
+
+            if (categoryType === '词性') {
+                categoryButtons.style.display = 'block';
+                themeButtons.style.display = 'none';
+                wordList.innerHTML = '';
+                wordDetail.style.display = 'none';
+            } else if (categoryType === '主题') {
+                categoryButtons.style.display = 'none';
+                themeButtons.style.display = 'block';
+                wordList.innerHTML = '';
+                wordDetail.style.display = 'none';
+            }
+        }
+
+        // 显示随机单词
+        function showRandomWord() {
+            clearSearch();
+            document.getElementById('randomWordsInput').style.display = 'none'; // 隐藏随机单词输入框
+            if (words.length > 0) {
+                const randomWord = words[Math.floor(Math.random() * words.length)];
+                displayWordDetail(randomWord);
+            } else {
+                console.error('单词数据尚未加载');
+            }
+        }
+
+        // 按词性过滤单词
+        function filterByType(type) {
+            const filteredWords = words.filter(word => word.type === type);
+            displayWords(filteredWords);
+        }
+
+        // 按主题过滤单词
+        function filterByTheme(theme) {
+            const filteredWords = words.filter(word => word.subCategory === theme);
+            displayWords(filteredWords);
+        }
+
+        // 显示单词列表
+        function displayWords(wordList) {
+            const wordListDiv = document.getElementById('wordList');
+            wordListDiv.innerHTML = ''; // 清空列表
+            wordList.forEach((wordObj) => {
+                const wordItem = document.createElement('div');
+                wordItem.className = 'word-item';
+                wordItem.innerText = `${wordObj.word} (${wordObj.type}) - ${wordObj.subCategory}`;
+                wordItem.onclick = () => showWordDetail(wordObj);
+                wordListDiv.appendChild(wordItem);
+            });
+        }
+
+        // 显示单词详细信息
+        function displayWordDetail(wordObj) {
+            const categoryButtons = document.getElementById('categoryButtons');
+            const themeButtons = document.getElementById('themeButtons');
+            const wordList = document.getElementById('wordList');
+
+            categoryButtons.style.display = 'none';
+            themeButtons.style.display = 'none';
+            wordList.innerHTML = '';
+
+            showWordDetail(wordObj);
+        }
+
+        // 显示单词详情
+        function showWordDetail(wordObj) {
+            document.getElementById('wordDetail').style.display = 'block';
+            document.getElementById('wordTitle').innerText = wordObj.word;
+            document.getElementById('wordExample').innerText = wordObj.example;
+            document.getElementById('wordMeaning').innerText = wordObj.meaning;
+        }
+
+        // 关闭单词详情
+        function closeDetail() {
+            document.getElementById('wordDetail').style.display = 'none';
+        }
+
+        // 折叠侧边栏
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const content = document.getElementById('content');
+            sidebar.classList.toggle('collapsed');
+            content.classList.toggle('collapsed');
+        }
+
+
+
+        // 从单词表中随机挑选指定数量的单词并展示汉语释义
+        function selectRandomWords() {
+            const count = parseInt(document.getElementById('randomCount').value);
+            const randomWords = [];
+            if (words.length > 0 && count > 0) {
+                for (let i = 0; i < count && i < words.length; i++) {
+                    const randomIndex = Math.floor(Math.random() * words.length);
+                    randomWords.push(words[randomIndex]);
+                }
+                displayRandomWords(randomWords);
+            } else {
+                alert("请输入有效的数字");
+            }
+        }
+
+        // 显示随机选中的单词的汉语释义，点击汉语查看拼写和例句
+        function displayRandomWords(wordList) {
+            const wordListDiv = document.getElementById('wordList');
+            wordListDiv.innerHTML = ''; // 清空列表
+            wordList.forEach((wordObj) => {
+                const wordItem = document.createElement('div');
+                wordItem.className = 'word-item';
+                wordItem.innerText = wordObj.meaning;
+                wordItem.onclick = () => showWordDetail(wordObj);
+                wordListDiv.appendChild(wordItem);
+            });
+        }
+        
+        // 显示单词详细信息并链接相关例句中的单词
+        function showWordDetail(wordObj) {
+            const wordDetailDiv = document.getElementById('wordDetail');
+            wordDetailDiv.style.display = 'block';
+            document.getElementById('wordTitle').innerText = wordObj.word;
+            document.getElementById('wordExample').innerHTML = linkifyExample(wordObj.example);
+            document.getElementById('wordMeaning').innerText = wordObj.meaning;
+        }
+
+        // 链接化例句中的单词，模糊匹配
+        function linkifyExample(exampleText) {
+            const wordsInExample = exampleText.split(' ');
+            return wordsInExample.map(word => {
+                const cleanWord = word.replace(/[.,!?;:]/g, ''); // 去掉标点符号
+
+                // 使用正则表达式匹配单词的不同形式（忽略大小写）
+                const matchedWord = words.find(item => {
+                    // 检查长度：匹配单词的长度必须大于或等于原单词的长度
+                    if (item.word.length < cleanWord.length) {
+                        return false;
+                    }
+                    return new RegExp(`^${item.word}`, 'i').test(cleanWord); // 正则表达式匹配
+                });
+
+                if (matchedWord) {
+                    return `<a href="#" onclick="showLinkedWordDetail('${matchedWord.word}')" style="color: blue; text-decoration: underline;">${word}</a>`;
+                }
+                return word;
+            }).join(' ');
+        }
+
+
+        // 显示链接单词的详细信息
+        function showLinkedWordDetail(word) {
+            const matchedWord = words.find(item => item.word.toLowerCase() === word.toLowerCase());
+            if (matchedWord) {
+                const linkedDetailDiv = document.getElementById('linkedWordDetail');
+                linkedDetailDiv.innerHTML = `
+                    <strong>${matchedWord.word}</strong><br>
+                    例句: ${linkifyExample(matchedWord.example)}<br>
+                    释义: ${matchedWord.meaning}<br>
+                    <button onclick="closeLinkedWordDetail()" style="margin-top: 10px; cursor: pointer;">关闭</button>
+                `;
+                linkedDetailDiv.style.display = 'block'; // 显示详细信息
+            }
+        }
+
+        // 显示链接单词的详细信息
+        function showLinkedWordDetail(word) {
+            const matchedWord = words.find(item => item.word.toLowerCase() === word.toLowerCase());
+            if (matchedWord) {
+                const linkedDetailDiv = document.getElementById('linkedWordDetail');
+                linkedDetailDiv.innerHTML = `
+                    <strong>${matchedWord.word}</strong><br>
+                    例句: ${linkifyExample(matchedWord.example)}<br>
+                    释义: ${matchedWord.meaning}<br>
+                    <button onclick="closeLinkedWordDetail()" style="margin-top: 10px; cursor: pointer;">关闭</button>
+                `;
+                linkedDetailDiv.style.display = 'block'; // 显示详细信息
+            }
+        }
+        // 显示词性或主题选项
+        function showByCategory(categoryType) {
+            clearSearch();
+            const categoryButtons = document.getElementById('categoryButtons');
+            const themeButtons = document.getElementById('themeButtons');
+            const wordList = document.getElementById('wordList');
+            const wordDetail = document.getElementById('wordDetail');
+            const linkedDetailDiv = document.getElementById('linkedWordDetail');
+            const randomWordsInput = document.getElementById('randomWordsInput');
+
+            // 清空其他内容
+            categoryButtons.style.display = 'none';
+            themeButtons.style.display = 'none';
+            wordList.innerHTML = '';
+            wordDetail.style.display = 'none';
+            linkedDetailDiv.style.display = 'none'; // 隐藏链接单词的详细信息
+            randomWordsInput.style.display = 'none'; // 隐藏随机单词输入框
+
+            // 根据选择显示对应的按钮和内容
+            if (categoryType === '词性') {
+                categoryButtons.style.display = 'block';
+            } else if (categoryType === '主题') {
+                themeButtons.style.display = 'block';
+            }
+        }
+
+        // 显示随机单词数量输入框
+        function showRandomWordsInput() {
+            clearSearch();
+            const categoryButtons = document.getElementById('categoryButtons');
+            const themeButtons = document.getElementById('themeButtons');
+            const wordList = document.getElementById('wordList');
+            const wordDetail = document.getElementById('wordDetail');
+            const linkedDetailDiv = document.getElementById('linkedWordDetail');
+
+            // 清空其他内容
+            categoryButtons.style.display = 'none';
+            themeButtons.style.display = 'none';
+            wordList.innerHTML = '';
+            wordDetail.style.display = 'none';
+            linkedDetailDiv.style.display = 'none'; // 隐藏链接单词的详细信息
+
+            // 显示随机单词输入框
+            document.getElementById('randomWordsInput').style.display = 'block';
+        }
+
+        // 其他相关函数可以保持不变...
+
+
+        // 链接化例句中的单词，模糊匹配
+        function linkifyExample(exampleText) {
+            const wordsInExample = exampleText.split(' ');
+            return wordsInExample.map(word => {
+                const cleanWord = word.replace(/[.,!?;:]/g, ''); // 去掉标点符号
+
+                // 使用正则表达式匹配单词的不同形式（忽略大小写）
+                const matchedWord = words.find(item => {
+                    // 检查长度：匹配单词的长度必须大于或等于原单词的长度
+                    if (item.word.length < cleanWord.length) {
+                        return false;
+                    }
+                    return new RegExp(`^${item.word}`, 'i').test(cleanWord); // 正则表达式匹配
+                });
+
+                if (matchedWord) {
+                    return `
+                        <a href="#" onclick="showLinkedWordDetail('${matchedWord.word}')" style="color: blue; text-decoration: underline;">
+                            ${word}
+                        </a>
+                    `;
+                }
+                return word; // 如果没有匹配，返回原单词
+            }).join(' ');
+        }
+
+        // 关闭链接单词的详细信息
+        function closeLinkedWordDetail() {
+            const linkedDetailDiv = document.getElementById('linkedWordDetail');
+            linkedDetailDiv.style.display = 'none'; // 隐藏详细信息
+        }
+
+        function showSearchBox() {
+            clearSearch();
+            document.getElementById('searchContainer').style.display = 'block';
+            document.getElementById('wordList').innerHTML = ''; // 清空单词列表
+        }
+
+        function searchWords() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const results = words.filter(word => 
+                word.word.toLowerCase().includes(input) || 
+                word.meaning.toLowerCase().includes(input)
+            );
+            displaySearchResults(results);
+        }
+
+        function displaySearchResults(results) {
+            const resultsDiv = document.getElementById('searchResults');
+            resultsDiv.innerHTML = ''; // 清空结果
+            results.forEach((wordObj) => {
+                const resultItem = document.createElement('div');
+                resultItem.className = 'word-item';
+                resultItem.innerText = `${wordObj.word} (${wordObj.type}) - ${wordObj.meaning}`;
+                resultItem.onclick = () => showWordDetail(wordObj);
+                resultsDiv.appendChild(resultItem);
+            });
+        }
+
+        // 清除搜索框和结果的通用函数
+        function clearSearch() {
+            const searchContainer = document.getElementById('searchContainer');
+            const searchInput = document.getElementById('searchInput');
+            const searchResults = document.getElementById('searchResults');
+            const wordList = document.getElementById('wordList');
+            const wordDetail = document.getElementById('wordDetail');
+            const linkedDetailDiv = document.getElementById('linkedWordDetail');
+            const randomWordsInput = document.getElementById('randomWordsInput');
+
+            // 隐藏搜索框及其内容
+            searchContainer.style.display = 'none';
+            searchInput.value = '';
+            searchResults.innerHTML = '';
+
+            // 清空和隐藏其他内容
+            wordList.innerHTML = ''; // 清空单词列表
+            wordDetail.style.display = 'none'; // 隐藏单词详细信息
+            linkedDetailDiv.style.display = 'none'; // 隐藏链接单词的详细信息
+            randomWordsInput.style.display = 'none'; // 隐藏随机单词输入框
+        }
+
+
+        
+    </script>
+</body>
+</html>

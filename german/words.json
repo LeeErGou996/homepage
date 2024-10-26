@@ -1,0 +1,4787 @@
+[
+    {
+        "word": "der Ab",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ab morgen muss ich arbeiten.",
+        "meaning": "从"
+    },
+    {
+        "word": "aber",
+        "category": "词性",
+        "subCategory": "连词",
+        "type": "连词",
+        "example": "Ich bin oft im Büro, aber nur für wenige Stunden.",
+        "meaning": "但是"
+    },
+    {
+        "word": "abfahren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir fahren um zwölf Uhr ab.",
+        "meaning": "出发"
+    },
+    {
+        "word": "die Abfahrt",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Vor der Abfahrt rufe ich an.",
+        "meaning": "出发"
+    },
+    {
+        "word": "abgeben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich muss meine Schlüssel abgeben.",
+        "meaning": "交出"
+    },
+    {
+        "word": "abholen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wann kann ich den Schrank bei dir abholen?",
+        "meaning": "取，接"
+    },
+    {
+        "word": "der Absender",
+        "category": "主题",
+        "subCategory": "邮寄",
+        "type": "名词",
+        "example": "Da ist ein Brief für dich ohne Absender.",
+        "meaning": "寄件人"
+    },
+    {
+        "word": "die Achtung",
+        "category": "主题",
+        "subCategory": "警告",
+        "type": "名词",
+        "example": "Achtung! Das dürfen Sie nicht tun.",
+        "meaning": "注意"
+    },
+    {
+        "word": "die Adresse",
+        "category": "主题",
+        "subCategory": "个人信息",
+        "type": "名词",
+        "example": "Können Sie mir seine Adresse sagen?",
+        "meaning": "交通"
+    },
+    {
+        "word": "allein",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Er kommt allein.",
+        "meaning": "独自"
+    },
+    {
+        "word": "alt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Mein Auto ist schon sehr alt.",
+        "meaning": "旧的"
+    },
+    {
+        "word": "das Alter",
+        "category": "主题",
+        "subCategory": "个人信息",
+        "type": "名词",
+        "example": "Alter: 26 Jahre.",
+        "meaning": "年龄"
+    },
+    {
+        "word": "an",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Fahren Sie an der nächsten Straße nach rechts.",
+        "meaning": "在"
+    },
+    {
+        "word": "anbieten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Was darf ich dir anbieten?",
+        "meaning": "提供"
+    },
+    {
+        "word": "das Angebot",
+        "category": "主题",
+        "subCategory": "购物",
+        "type": "名词",
+        "example": "Heute sind Sportschuhe im Angebot.",
+        "meaning": "优惠"
+    },
+    {
+        "word": "anfangen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Unterricht fängt gleich an.",
+        "meaning": "开始"
+    },
+    {
+        "word": "die Ankunft",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Auf diesem Plan steht nur die Ankunft(-szeit) der Züge.",
+        "meaning": "到达"
+    },
+    {
+        "word": "die Arbeit",
+        "category": "主题",
+        "subCategory": "职业",
+        "type": "名词",
+        "example": "Mein Bruder sucht Arbeit.",
+        "meaning": "工作"
+    },
+    {
+        "word": "arbeiten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wo arbeiten Sie?",
+        "meaning": "工作"
+    },
+    {
+        "word": "das Auto",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Er kommt mit dem Auto.",
+        "meaning": "汽车"
+    },
+    {
+        "word": "die Bäckerei",
+        "category": "主题",
+        "subCategory": "购物",
+        "type": "名词",
+        "example": "Ich geh mal schnell zur Bäckerei.",
+        "meaning": "面包店"
+    },
+    {
+        "word": "die Bahn",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Wir fahren lieber mit der Bahn.",
+        "meaning": "火车"
+    },
+    {
+        "word": "das Baby",
+        "category": "主题",
+        "subCategory": "家庭",
+        "type": "名词",
+        "example": "Mein Kind ist noch ein Baby.",
+        "meaning": "婴儿"
+    },
+    {
+        "word": "bald",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich komme bald.",
+        "meaning": "很快"
+    },
+    {
+        "word": "die Banane",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Drei Bananen, bitte!",
+        "meaning": "香蕉"
+    },
+    {
+        "word": "die Bar",
+        "category": "主题",
+        "subCategory": "支付方式",
+        "type": "名词",
+        "example": "Muss ich bar zahlen oder geht’s auch mit Karte?",
+        "meaning": "现金"
+    },
+    {
+        "word": "bedeuten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Was bedeutet das Wort?",
+        "meaning": "意思是"
+    },
+    {
+        "word": "beginnen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das Spiel beginnt um 15.30 Uhr.",
+        "meaning": "开始"
+    },
+    {
+        "word": "bekommen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Haben Sie meinen Brief bekommen?",
+        "meaning": "收到"
+    },
+    {
+        "word": "besichtigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich möchte gern den Dom besichtigen.",
+        "meaning": "参观"
+    },
+    {
+        "word": "bestellen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir möchten bestellen, bitte.",
+        "meaning": "点单"
+    },
+    {
+        "word": "besuchen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Darf ich dich besuchen?",
+        "meaning": "拜访"
+    },
+    {
+        "word": "das Bett",
+        "category": "主题",
+        "subCategory": "家居",
+        "type": "名词",
+        "example": "Wir brauchen noch ein Kinderbett.",
+        "meaning": "床"
+    },
+    {
+        "word": "das Bier",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Noch ein Bier bitte.",
+        "meaning": "啤酒"
+    },
+    {
+        "word": "das Bild",
+        "category": "主题",
+        "subCategory": "艺术",
+        "type": "名词",
+        "example": "Hast du ein Bild von deinem Sohn?",
+        "meaning": "图片"
+    },
+    {
+        "word": "billig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Jacke kostet nur 10 Euro! Die ist aber billig!",
+        "meaning": "便宜的"
+    },
+    {
+        "word": "die Birne",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Ein Kilo Birnen, bitte!",
+        "meaning": "梨"
+    },
+    {
+        "word": "bis",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Ich fahre nur bis Stuttgart.",
+        "meaning": "直到"
+    },
+    {
+        "word": "bisschen",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich spreche Englisch, Französisch und ein bisschen Deutsch.",
+        "meaning": "一点"
+    },
+    {
+        "word": "bitte",
+        "category": "词性",
+        "subCategory": "感叹词",
+        "type": "感叹词",
+        "example": "Eine Tasse Kaffee, bitte!",
+        "meaning": "请"
+    },
+    {
+        "word": "bleiben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich bleibe heute zu Hause.",
+        "meaning": "停留"
+    },
+    {
+        "word": "der Bleistift",
+        "category": "主题",
+        "subCategory": "文具",
+        "type": "名词",
+        "example": "Hast du einen Bleistift?",
+        "meaning": "铅笔"
+    },
+    {
+        "word": "der Blick",
+        "category": "主题",
+        "subCategory": "自然",
+        "type": "名词",
+        "example": "Von diesem Hotel hat man einen guten Blick auf den Rhein.",
+        "meaning": "景色"
+    },
+    {
+        "word": "die Blume",
+        "category": "主题",
+        "subCategory": "自然",
+        "type": "名词",
+        "example": "Gefallen dir die Blumen?",
+        "meaning": "花"
+    },
+    {
+        "word": "der Bogen",
+        "category": "主题",
+        "subCategory": "纸张",
+        "type": "名词",
+        "example": "Schreiben Sie Ihre Lösungen bitte auf den Antwortbogen.",
+        "meaning": "表格"
+    },
+    {
+        "word": "böse",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie ist böse auf mich.",
+        "meaning": "生气的"
+    },
+    {
+        "word": "brauchen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Brauchst du die Zeitung noch?",
+        "meaning": "需要"
+    },
+    {
+        "word": "breit",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Wie breit ist der Schrank?",
+        "meaning": "宽的"
+    },
+    {
+        "word": "der Brief",
+        "category": "主题",
+        "subCategory": "通讯",
+        "type": "名词",
+        "example": "Haben Sie einen Brief für mich?",
+        "meaning": "信件"
+    },
+    {
+        "word": "die Briefmarke",
+        "category": "主题",
+        "subCategory": "邮寄",
+        "type": "名词",
+        "example": "Kaufst du bitte Briefmarken bei der Post?",
+        "meaning": "邮票"
+    },
+    {
+        "word": "bringen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bringen Sie mir bitte noch einen Kaffee!",
+        "meaning": "带来"
+    },
+    {
+        "word": "das Brot",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Haben Sie auch Weißbrot?",
+        "meaning": "面包"
+    },
+    {
+        "word": "das Brötchen",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Möchtest du Brötchen zum Frühstück?",
+        "meaning": "小面包"
+    },
+    {
+        "word": "der Bruder",
+        "category": "主题",
+        "subCategory": "家庭",
+        "type": "名词",
+        "example": "Sein Bruder arbeitet auch hier.",
+        "meaning": "兄弟"
+    },
+    {
+        "word": "das Buch",
+        "category": "主题",
+        "subCategory": "学习",
+        "type": "名词",
+        "example": "In diesem Wörterbuch finden Sie mehr als 20.000 Wörter.",
+        "meaning": "书"
+    },
+    {
+        "word": "der Bus",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Wann kommt der nächste Bus?",
+        "meaning": "公共汽车"
+    },
+    {
+        "word": "die Butter",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Für mich bitte ein Brötchen mit Butter und Käse.",
+        "meaning": "黄油"
+    },
+    {
+        "word": "das Café",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Sollen wir uns im Café treffen?",
+        "meaning": "咖啡馆"
+    },
+    {
+        "word": "die CD",
+        "category": "主题",
+        "subCategory": "音乐",
+        "type": "名词",
+        "example": "Bring bitte deine Lieblings-CD mit.",
+        "meaning": "光盘"
+    },
+    {
+        "word": "der Chef",
+        "category": "主题",
+        "subCategory": "职业",
+        "type": "名词",
+        "example": "Wir haben eine neue Chefin.",
+        "meaning": "老板"
+    },
+    {
+        "word": "circa",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Von Mainz nach Frankfurt sind es circa fünfzig Kilometer.",
+        "meaning": "大约"
+    },
+    {
+        "word": "der Computer",
+        "category": "主题",
+        "subCategory": "电子设备",
+        "type": "名词",
+        "example": "Wann bekommst du deinen neuen Computer?",
+        "meaning": "电脑"
+    },
+    {
+        "word": "da",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Da hinten ist er ja.",
+        "meaning": "那里"
+    },
+    {
+        "word": "die Dame",
+        "category": "主题",
+        "subCategory": "人物",
+        "type": "名词",
+        "example": "Sehr geehrte Damen und Herren!",
+        "meaning": "女士"
+    },
+    {
+        "word": "danken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich danke Ihnen für die Einladung.",
+        "meaning": "感谢"
+    },
+    {
+        "word": "das Datum",
+        "category": "主题",
+        "subCategory": "时间",
+        "type": "名词",
+        "example": "Bitte schreiben Sie noch das Datum auf das Formular.",
+        "meaning": "日期"
+    },
+    {
+        "word": "dauern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wie lange dauert der Film?",
+        "meaning": "持续"
+    },
+    {
+        "word": "dein",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Ist das dein Auto?",
+        "meaning": "你的"
+    },
+    {
+        "word": "denn",
+        "category": "词性",
+        "subCategory": "连词",
+        "type": "连词",
+        "example": "Ich kann nicht kommen, denn ich bin krank.",
+        "meaning": "因为"
+    },
+    {
+        "word": "der, die, das",
+        "category": "词性",
+        "subCategory": "冠词",
+        "type": "冠词",
+        "example": "Die Fahrkarte bekommst du am Bahnhof.",
+        "meaning": "这个（定冠词）"
+    },
+    {
+        "word": "dich",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Die Blumen sind für dich.",
+        "meaning": "你"
+    },
+    {
+        "word": "dies-",
+        "category": "词性",
+        "subCategory": "指示代词",
+        "type": "指示代词",
+        "example": "Ich nehme lieber diesen Kuchen.",
+        "meaning": "这个"
+    },
+    {
+        "word": "dir",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Gefallen dir die Blumen?",
+        "meaning": "你（与格）"
+    },
+    {
+        "word": "die Disco",
+        "category": "主题",
+        "subCategory": "娱乐",
+        "type": "名词",
+        "example": "Heute Abend gehen wir in die Disco tanzen.",
+        "meaning": "迪斯科"
+    },
+    {
+        "word": "der Doktor",
+        "category": "主题",
+        "subCategory": "健康",
+        "type": "名词",
+        "example": "Meine Tochter ist krank. Wir gehen zum Doktor.",
+        "meaning": "医生"
+    },
+    {
+        "word": "das Doppelzimmer",
+        "category": "主题",
+        "subCategory": "住宿",
+        "type": "名词",
+        "example": "Wollen Sie ein Doppelzimmer oder ein Einzelzimmer?",
+        "meaning": "双人房"
+    },
+    {
+        "word": "das Dorf",
+        "category": "主题",
+        "subCategory": "地理",
+        "type": "名词",
+        "example": "Meine Familie lebt in einem Dorf.",
+        "meaning": "村庄"
+    },
+    {
+        "word": "dort, -her, -hin",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Dort ist unser Haus.",
+        "meaning": "那里"
+    },
+    {
+        "word": "draußen",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Wollen wir draußen sitzen?",
+        "meaning": "在外面"
+    },
+    {
+        "word": "drucken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bitte drucke das Formular für mich.",
+        "meaning": "打印"
+    },
+    {
+        "word": "der Drucker",
+        "category": "主题",
+        "subCategory": "电子设备",
+        "type": "名词",
+        "example": "Mein Drucker ist kaputt.",
+        "meaning": "打印机"
+    },
+    {
+        "word": "drücken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Drück hier, dann geht der Computer an.",
+        "meaning": "按"
+    },
+    {
+        "word": "durch",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Am besten gehen Sie durch die Breite Straße.",
+        "meaning": "通过"
+    },
+    {
+        "word": "die Durchsage",
+        "category": "主题",
+        "subCategory": "信息",
+        "type": "名词",
+        "example": "Ich habe die Durchsage nicht verstanden.",
+        "meaning": "广播通知"
+    },
+    {
+        "word": "dürfen",
+        "category": "词性",
+        "subCategory": "情态动词",
+        "type": "情态动词",
+        "example": "Darf ich Sie zu einem Kaffee einladen?",
+        "meaning": "可以，允许"
+    },
+    {
+        "word": "der Durst",
+        "category": "主题",
+        "subCategory": "身体状况",
+        "type": "名词",
+        "example": "Hast du etwas zu trinken? Ich habe großen Durst.",
+        "meaning": "口渴"
+    },
+    {
+        "word": "duschen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich bade nicht so gern, ich dusche lieber.",
+        "meaning": "淋浴"
+    },
+    {
+        "word": "die Dusche",
+        "category": "主题",
+        "subCategory": "家居",
+        "type": "名词",
+        "example": "Unsere Wohnung hat nur eine Dusche.",
+        "meaning": "淋浴房"
+    },
+    {
+        "word": "die Ecke",
+        "category": "主题",
+        "subCategory": "地理",
+        "type": "名词",
+        "example": "An der nächsten Ecke links.",
+        "meaning": "角落"
+    },
+    {
+        "word": "die Ehefrau",
+        "category": "主题",
+        "subCategory": "家庭",
+        "type": "名词",
+        "example": "Das ist meine Ehefrau.",
+        "meaning": "妻子"
+    },
+    {
+        "word": "der Ehemann",
+        "category": "主题",
+        "subCategory": "家庭",
+        "type": "名词",
+        "example": "Das是mein Ehemann.",
+        "meaning": "丈夫"
+    }
+,
+    {
+        "word": "das Ei",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Möchtest du ein Ei zum Frühstück?",
+        "meaning": "鸡蛋"
+    },
+    {
+        "word": "eilig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Hast du es eilig?",
+        "meaning": "着急的"
+    },
+    {
+        "word": "ein-",
+        "category": "词性",
+        "subCategory": "冠词",
+        "type": "冠词",
+        "example": "Ich nehme ein Bier.",
+        "meaning": "一个"
+    },
+    {
+        "word": "einfach",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Prüfung ist ganz einfach.",
+        "meaning": "简单的"
+    },
+    {
+        "word": "der Eingang",
+        "category": "主题",
+        "subCategory": "建筑",
+        "type": "名词",
+        "example": "Der Eingang ist um die Ecke.",
+        "meaning": "入口"
+    },
+    {
+        "word": "einkaufen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich muss noch für morgen einkaufen.",
+        "meaning": "购物"
+    },
+    {
+        "word": "einladen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Darf ich Sie zu einem Kaffee einladen?",
+        "meaning": "邀请"
+    },
+    {
+        "word": "die Einladung",
+        "category": "主题",
+        "subCategory": "社交",
+        "type": "名词",
+        "example": "Danke für die Einladung!",
+        "meaning": "邀请"
+    },
+    {
+        "word": "einmal",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Diese Prüfung mache ich nicht noch einmal.",
+        "meaning": "一次"
+    },
+    {
+        "word": "einsteigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Schnell, steig ein, der Zug fährt gleich.",
+        "meaning": "上车"
+    },
+    {
+        "word": "der Eintritt",
+        "category": "主题",
+        "subCategory": "费用",
+        "type": "名词",
+        "example": "Der Preis für den Eintritt ist 5 Euro.",
+        "meaning": "入场费"
+    },
+    {
+        "word": "das Einzelzimmer",
+        "category": "主题",
+        "subCategory": "住宿",
+        "type": "名词",
+        "example": "Haben Sie noch ein Einzelzimmer?",
+        "meaning": "单人间"
+    },
+    {
+        "word": "die Eltern",
+        "category": "主题",
+        "subCategory": "家庭",
+        "type": "名词",
+        "example": "Meine Eltern leben in Spanien.",
+        "meaning": "父母"
+    },
+    {
+        "word": "die E-Mail",
+        "category": "主题",
+        "subCategory": "通讯",
+        "type": "名词",
+        "example": "Ich habe Ihre E-Mail nicht bekommen.",
+        "meaning": "电子邮件"
+    },
+    {
+        "word": "der Empfänger",
+        "category": "主题",
+        "subCategory": "通讯",
+        "type": "名词",
+        "example": "Auf dem Brief steht dein Name, also bist du der Empfänger.",
+        "meaning": "收件人"
+    },
+    {
+        "word": "empfehlen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Welchen Wein können Sie mir empfehlen?",
+        "meaning": "推荐"
+    },
+    {
+        "word": "enden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Straße endet hier.",
+        "meaning": "结束"
+    },
+    {
+        "word": "das Ende",
+        "category": "主题",
+        "subCategory": "时间",
+        "type": "名词",
+        "example": "Er bekommt sein Geld am Ende des Monats.",
+        "meaning": "结束"
+    },
+    {
+        "word": "entschuldigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Entschuldigen Sie bitte!",
+        "meaning": "道歉"
+    },
+    {
+        "word": "die Entschuldigung",
+        "category": "主题",
+        "subCategory": "社交",
+        "type": "名词",
+        "example": "Entschuldigung! – Bitte.",
+        "meaning": "抱歉"
+    },
+    {
+        "word": "er",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Er heißt Ali.",
+        "meaning": "他"
+    },
+    {
+        "word": "das Ergebnis",
+        "category": "主题",
+        "subCategory": "结果",
+        "type": "名词",
+        "example": "Das Ergebnis des Tests bekommen Sie in zwei Wochen.",
+        "meaning": "结果"
+    },
+    {
+        "word": "erklären",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kannst du mir das erklären?",
+        "meaning": "解释"
+    },
+    {
+        "word": "erlauben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Rauchen ist hier nicht erlaubt.",
+        "meaning": "允许"
+    },
+    {
+        "word": "der Erwachsene",
+        "category": "主题",
+        "subCategory": "人物",
+        "type": "名词",
+        "example": "Dieser Film ist nur für Erwachsene.",
+        "meaning": "成人"
+    },
+    {
+        "word": "erzählen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir müssen euch etwas erzählen!",
+        "meaning": "讲述"
+    },
+    {
+        "word": "es",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Es regnet.",
+        "meaning": "它"
+    },
+    {
+        "word": "essen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Was gibt es zu essen?",
+        "meaning": "吃"
+    },
+    {
+        "word": "das Essen",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Das Essen ist heute sehr gut.",
+        "meaning": "餐饮"
+    },
+    {
+        "word": "euer",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Euer Kurs beginnt heute.",
+        "meaning": "你们的"
+    },
+    {
+        "word": "fahren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich fahre mit dem Auto zur Arbeit.",
+        "meaning": "驾驶"
+    },
+    {
+        "word": "der Fahrer",
+        "category": "主题",
+        "subCategory": "职业",
+        "type": "名词",
+        "example": "Bitte nicht mit dem Fahrer sprechen!",
+        "meaning": "司机"
+    },
+    {
+        "word": "die Fahrkarte",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Hast du schon eine Fahrkarte?",
+        "meaning": "车票"
+    },
+    {
+        "word": "das Fahrrad",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Fährst du mit dem Fahrrad oder mit dem Auto?",
+        "meaning": "自行车"
+    },
+    {
+        "word": "falsch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist falsch.",
+        "meaning": "错误的"
+    },
+    {
+        "word": "die Familie",
+        "category": "主题",
+        "subCategory": "家庭",
+        "type": "名词",
+        "example": "Meine Familie lebt in Spanien.",
+        "meaning": "家庭"
+    },
+    {
+        "word": "der Familienname",
+        "category": "主题",
+        "subCategory": "个人信息",
+        "type": "名词",
+        "example": "Meine Familiennamen sind García González.",
+        "meaning": "姓"
+    },
+    {
+        "word": "der Familienstand",
+        "category": "主题",
+        "subCategory": "个人信息",
+        "type": "名词",
+        "example": "Bei 'Familienstand' musst du 'ledig' ankreuzen.",
+        "meaning": "婚姻状况"
+    },
+    {
+        "word": "die Farbe",
+        "category": "主题",
+        "subCategory": "物品特性",
+        "type": "名词",
+        "example": "Die Farbe gefällt mir gut.",
+        "meaning": "颜色"
+    },
+    {
+        "word": "das Fax",
+        "category": "主题",
+        "subCategory": "通讯",
+        "type": "名词",
+        "example": "Schicken Sie uns einfach ein Fax!",
+        "meaning": "传真"
+    },
+    {
+        "word": "die Feier",
+        "category": "主题",
+        "subCategory": "节日",
+        "type": "名词",
+        "example": "Am Montag ist Feiertag.",
+        "meaning": "庆祝"
+    },
+    {
+        "word": "feiern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir feiern heute meinen Geburtstag.",
+        "meaning": "庆祝"
+    },
+    {
+        "word": "fehlen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Herr Müller ist nicht da, er fehlt schon seit drei Tagen.",
+        "meaning": "缺席"
+    },
+    {
+        "word": "der Fehler",
+        "category": "主题",
+        "subCategory": "学习",
+        "type": "名词",
+        "example": "Diesen Fehler mache ich immer.",
+        "meaning": "错误"
+    },
+    {
+        "word": "fernsehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wollen wir heute Abend mal fernsehen?",
+        "meaning": "看电视"
+    },
+    {
+        "word": "fertig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Bist du fertig?",
+        "meaning": "完成的"
+    },
+    {
+        "word": "das Feuer",
+        "category": "主题",
+        "subCategory": "自然",
+        "type": "名词",
+        "example": "Haben Sie Feuer?",
+        "meaning": "火"
+    },
+    {
+        "word": "das Fieber",
+        "category": "主题",
+        "subCategory": "健康",
+        "type": "名词",
+        "example": "Mein Mann hat noch immer Fieber.",
+        "meaning": "发烧"
+    },
+    {
+        "word": "der Film",
+        "category": "主题",
+        "subCategory": "娱乐",
+        "type": "名词",
+        "example": "Ich möchte gern diesen Film sehen.",
+        "meaning": "电影"
+    },
+    {
+        "word": "finden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir müssen den Schlüssel finden.",
+        "meaning": "找到"
+    },
+    {
+        "word": "die Firma",
+        "category": "主题",
+        "subCategory": "职业",
+        "type": "名词",
+        "example": "Er arbeitet jetzt bei einer anderen Firma.",
+        "meaning": "公司"
+    },
+    {
+        "word": "der Fisch",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Ich esse gern Fisch. Fleisch mag ich nicht.",
+        "meaning": "鱼"
+    },
+    {
+        "word": "die Flasche",
+        "category": "主题",
+        "subCategory": "物品",
+        "type": "名词",
+        "example": "Eine Flasche Bier, bitte.",
+        "meaning": "瓶子"
+    },
+    {
+        "word": "das Fleisch",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Fleisch mag ich nicht.",
+        "meaning": "肉"
+    },
+    {
+        "word": "fliegen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich fliege nicht gern. Deshalb fahre ich mit dem Zug.",
+        "meaning": "飞行"
+    },
+    {
+        "word": "abfliegen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wann fliegst du ab?",
+        "meaning": "起飞"
+    },
+    {
+        "word": "der Abflug",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Der Abflug ist um 11.20 Uhr.",
+        "meaning": "起飞"
+    },
+    {
+        "word": "der Flughafen",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Kannst du mich zum Flughafen bringen?",
+        "meaning": "机场"
+    },
+    {
+        "word": "das Flugzeug",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Das Flugzeug aus Berlin kommt heute später an.",
+        "meaning": "飞机"
+    },
+    {
+        "word": "das Formular",
+        "category": "主题",
+        "subCategory": "文档",
+        "type": "名词",
+        "example": "Sie müssen dieses Formular ausfüllen.",
+        "meaning": "表格"
+    },
+    {
+        "word": "das Foto",
+        "category": "主题",
+        "subCategory": "摄影",
+        "type": "名词",
+        "example": "Darf ich ein Foto machen?",
+        "meaning": "照片"
+    },
+    {
+        "word": "fragen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er möchte Sie etwas fragen.",
+        "meaning": "问"
+    },
+    {
+        "word": "die Frage",
+        "category": "主题",
+        "subCategory": "沟通",
+        "type": "名词",
+        "example": "Ich habe eine Frage.",
+        "meaning": "问题"
+    },
+    {
+        "word": "die Frau",
+        "category": "主题",
+        "subCategory": "人物",
+        "type": "名词",
+        "example": "Das ist Frau Becker.",
+        "meaning": "女士"
+    },
+    {
+        "word": "frei",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ist der Platz noch frei?",
+        "meaning": "空闲的"
+    },
+    {
+        "word": "die Freizeit",
+        "category": "主题",
+        "subCategory": "时间",
+        "type": "名词",
+        "example": "In meiner Freizeit spiele ich oft Fußball.",
+        "meaning": "空闲时间"
+    }
+,
+        {
+            "word": "fremd",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Das weiß ich nicht; ich bin fremd hier.",
+            "meaning": "陌生的"
+        },
+        {
+            "word": "sich freuen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Ich freue mich auf den Urlaub.",
+            "meaning": "感到高兴"
+        },
+        {
+            "word": "der Freund",
+            "category": "主题",
+            "subCategory": "人物",
+            "type": "名词",
+            "example": "Das ist ein Freund von mir.",
+            "meaning": "朋友"
+        },
+        {
+            "word": "früher",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Früher waren wir oft zusammen im Kino.",
+            "meaning": "以前"
+        },
+        {
+            "word": "frühstücken",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Am Sonntag frühstücke ich gern im Bett.",
+            "meaning": "吃早餐"
+        },
+        {
+            "word": "das Frühstück",
+            "category": "主题",
+            "subCategory": "餐饮",
+            "type": "名词",
+            "example": "Möchtest du ein Ei zum Frühstück?",
+            "meaning": "早餐"
+        },
+        {
+            "word": "die Führung",
+            "category": "主题",
+            "subCategory": "活动",
+            "type": "名词",
+            "example": "Die Führung durch das Haus beginnt in 3 Minuten.",
+            "meaning": "导览"
+        },
+        {
+            "word": "für",
+            "category": "词性",
+            "subCategory": "介词",
+            "type": "介词",
+            "example": "Das ist für Sie.",
+            "meaning": "为了"
+        },
+        {
+            "word": "der Fuß",
+            "category": "主题",
+            "subCategory": "身体部位",
+            "type": "名词",
+            "example": "Der linke Fuß tut mir weh.",
+            "meaning": "脚"
+        },
+        {
+            "word": "der Fußball",
+            "category": "主题",
+            "subCategory": "运动",
+            "type": "名词",
+            "example": "Spielt ihr gerne Fußball?",
+            "meaning": "足球"
+        },
+        {
+            "word": "der Garten",
+            "category": "主题",
+            "subCategory": "家居",
+            "type": "名词",
+            "example": "Wir haben leider keinen Garten.",
+            "meaning": "花园"
+        },
+        {
+            "word": "der Gast",
+            "category": "主题",
+            "subCategory": "社交",
+            "type": "名词",
+            "example": "Am Wochenende haben wir mehrere Gäste.",
+            "meaning": "客人"
+        },
+        {
+            "word": "geben",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Kannst du mir bitte deinen Kugelschreiber geben?",
+            "meaning": "给"
+        },
+        {
+            "word": "geboren",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Ich bin in Zagreb geboren.",
+            "meaning": "出生的"
+        },
+        {
+            "word": "das Geburtsjahr",
+            "category": "主题",
+            "subCategory": "个人信息",
+            "type": "名词",
+            "example": "Das Geburtsjahr Ihres Sohnes, bitte?",
+            "meaning": "出生年份"
+        },
+        {
+            "word": "der Geburtsort",
+            "category": "主题",
+            "subCategory": "个人信息",
+            "type": "名词",
+            "example": "Bitte schreiben Sie Ihren Geburtsort auf das Formular.",
+            "meaning": "出生地"
+        },
+        {
+            "word": "der Geburtstag",
+            "category": "主题",
+            "subCategory": "时间",
+            "type": "名词",
+            "example": "Herzlichen Glückwunsch zum Geburtstag!",
+            "meaning": "生日"
+        },
+        {
+            "word": "gefallen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Das gefällt mir.",
+            "meaning": "喜欢"
+        },
+        {
+            "word": "gegen",
+            "category": "词性",
+            "subCategory": "介词",
+            "type": "介词",
+            "example": "Ich bin gegen diese Lösung.",
+            "meaning": "反对"
+        },
+        {
+            "word": "gehen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Jetzt muss ich (aber) leider gehen.",
+            "meaning": "走"
+        },
+        {
+            "word": "gehören",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Wem gehört das?",
+            "meaning": "属于"
+        },
+        {
+            "word": "das Geld",
+            "category": "主题",
+            "subCategory": "财务",
+            "type": "名词",
+            "example": "Hast du noch Geld?",
+            "meaning": "钱"
+        },
+        {
+            "word": "das Gemüse",
+            "category": "主题",
+            "subCategory": "餐饮",
+            "type": "名词",
+            "example": "Gemüse brauchen wir auch noch.",
+            "meaning": "蔬菜"
+        },
+        {
+            "word": "das Gepäck",
+            "category": "主题",
+            "subCategory": "旅游",
+            "type": "名词",
+            "example": "Wollen Sie Ihr Gepäck mitnehmen?",
+            "meaning": "行李"
+        },
+        {
+            "word": "gerade",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Da kommt er ja gerade.",
+            "meaning": "刚刚"
+        },
+        {
+            "word": "geradeaus",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Gehen Sie immer geradeaus!",
+            "meaning": "直行"
+        },
+        {
+            "word": "gern(e)",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Ich gehe gerne einkaufen.",
+            "meaning": "喜欢"
+        },
+        {
+            "word": "das Geschäft",
+            "category": "主题",
+            "subCategory": "商业",
+            "type": "名词",
+            "example": "Die Geschäfte schließen um 18.30 Uhr.",
+            "meaning": "商店"
+        },
+        {
+            "word": "das Geschenk",
+            "category": "主题",
+            "subCategory": "物品",
+            "type": "名词",
+            "example": "Danke für das schöne Geschenk.",
+            "meaning": "礼物"
+        },
+        {
+            "word": "die Geschwister",
+            "category": "主题",
+            "subCategory": "家庭",
+            "type": "名词",
+            "example": "Ich habe leider keine Geschwister.",
+            "meaning": "兄弟姐妹"
+        },
+        {
+            "word": "das Gespräch",
+            "category": "主题",
+            "subCategory": "沟通",
+            "type": "名词",
+            "example": "Das Gespräch mit Frau Kunz ist um 14 Uhr.",
+            "meaning": "谈话"
+        },
+        {
+            "word": "gestern",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Gestern war ich krank.",
+            "meaning": "昨天"
+        },
+        {
+            "word": "gestorben",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Meine Frau ist gestern gestorben.",
+            "meaning": "去世的"
+        },
+        {
+            "word": "das Getränk",
+            "category": "主题",
+            "subCategory": "餐饮",
+            "type": "名词",
+            "example": "Mein Lieblingsgetränk ist Tomatensaft.",
+            "meaning": "饮料"
+        },
+        {
+            "word": "das Gewicht",
+            "category": "主题",
+            "subCategory": "身体状况",
+            "type": "名词",
+            "example": "Bei 'Gewicht' schreibst du: 62 Kilo.",
+            "meaning": "重量"
+        },
+        {
+            "word": "gewinnen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Wer gewinnt das Spiel?",
+            "meaning": "赢"
+        },
+        {
+            "word": "das Glas",
+            "category": "主题",
+            "subCategory": "餐饮",
+            "type": "名词",
+            "example": "Bitte noch ein Glas Wein!",
+            "meaning": "玻璃杯"
+        },
+        {
+            "word": "glauben",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Ich glaube, er kommt gleich.",
+            "meaning": "相信"
+        },
+        {
+            "word": "gleich",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Ich komme gleich.",
+            "meaning": "马上"
+        },
+        {
+            "word": "das Gleis",
+            "category": "主题",
+            "subCategory": "交通",
+            "type": "名词",
+            "example": "Der ICE nach Berlin hält heute an Gleis 12.",
+            "meaning": "站台"
+        },
+        {
+            "word": "das Glück",
+            "category": "主题",
+            "subCategory": "情感",
+            "type": "名词",
+            "example": "Viel Glück!",
+            "meaning": "好运"
+        },
+        {
+            "word": "glücklich",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Meine Kinder sind glücklich verheiratet.",
+            "meaning": "幸福的"
+        },
+        {
+            "word": "der Glückwunsch",
+            "category": "主题",
+            "subCategory": "祝福",
+            "type": "名词",
+            "example": "Herzlichen Glückwunsch zum Geburtstag!",
+            "meaning": "祝贺"
+        },
+        {
+            "word": "der Grad",
+            "category": "主题",
+            "subCategory": "天气",
+            "type": "名词",
+            "example": "Heute haben wir dreißig Grad.",
+            "meaning": "度（温度）"
+        },
+        {
+            "word": "gratulieren",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Ich gratuliere dir!",
+            "meaning": "祝贺"
+        },
+        {
+            "word": "grillen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Heute grillen wir im Garten.",
+            "meaning": "烧烤"
+        },
+        {
+            "word": "groß",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Frankfurt ist eine große Stadt.",
+            "meaning": "大的"
+        },
+        {
+            "word": "die Größe",
+            "category": "主题",
+            "subCategory": "尺寸",
+            "type": "名词",
+            "example": "Haben Sie das auch in Größe 40?",
+            "meaning": "尺寸"
+        },
+        {
+            "word": "die Großeltern",
+            "category": "主题",
+            "subCategory": "家庭",
+            "type": "名词",
+            "example": "Meine Großeltern leben in Japan.",
+            "meaning": "祖父母"
+        },
+        {
+            "word": "die Großmutter",
+            "category": "主题",
+            "subCategory": "家庭",
+            "type": "名词",
+            "example": "Meine Großmutter heißt Eva.",
+            "meaning": "祖母"
+        },
+        {
+            "word": "der Großvater",
+            "category": "主题",
+            "subCategory": "家庭",
+            "type": "名词",
+            "example": "Mein Großvater ist schon 80.",
+            "meaning": "祖父"
+        },
+        {
+            "word": "die Gruppe",
+            "category": "主题",
+            "subCategory": "社交",
+            "type": "名词",
+            "example": "Die erste Gruppe beginnt um 16 Uhr.",
+            "meaning": "小组"
+        },
+        {
+            "word": "der Gruß",
+            "category": "主题",
+            "subCategory": "问候",
+            "type": "名词",
+            "example": "Viele Grüße an Ihre Frau.",
+            "meaning": "问候"
+        },
+        {
+            "word": "gültig",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Der Pass ist nicht mehr gültig.",
+            "meaning": "有效的"
+        },
+        {
+            "word": "günstig",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Dort gibt es günstige Angebote.",
+            "meaning": "便宜的，实惠的"
+        },
+        {
+            "word": "gut",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Das finde ich gut.",
+            "meaning": "好的"
+        },
+        {
+            "word": "Guten Morgen",
+            "category": "主题",
+            "subCategory": "问候",
+            "type": "表达",
+            "example": "Guten Morgen!",
+            "meaning": "早上好"
+        },
+        {
+            "word": "Guten Appetit",
+            "category": "主题",
+            "subCategory": "用餐",
+            "type": "表达",
+            "example": "Guten Appetit!",
+            "meaning": "祝您好胃口"
+        },
+        {
+            "word": "haben",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Ich habe keine Zeit.",
+            "meaning": "有"
+        }
+,
+        {
+            "word": "das Haar",
+            "category": "主题",
+            "subCategory": "身体部位",
+            "type": "名词",
+            "example": "Sie hat lange Haare.",
+            "meaning": "头发"
+        },
+        {
+            "word": "das Hähnchen",
+            "category": "主题",
+            "subCategory": "餐饮",
+            "type": "名词",
+            "example": "Ein Hähnchen mit Pommes bitte!",
+            "meaning": "烤鸡"
+        },
+        {
+            "word": "die Halbpension",
+            "category": "主题",
+            "subCategory": "住宿",
+            "type": "名词",
+            "example": "Möchten Sie Vollpension oder Halbpension?",
+            "meaning": "半食宿"
+        },
+        {
+            "word": "die Halle",
+            "category": "主题",
+            "subCategory": "建筑",
+            "type": "名词",
+            "example": "Wir treffen uns in Halle B.",
+            "meaning": "大厅"
+        },
+        {
+            "word": "Hallo",
+            "category": "主题",
+            "subCategory": "问候",
+            "type": "表达",
+            "example": "Hallo Inge! Wie geht’s?",
+            "meaning": "你好"
+        },
+        {
+            "word": "halten",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Dieser Zug hält nicht in Rüdesheim.",
+            "meaning": "停下"
+        },
+        {
+            "word": "die Haltestelle",
+            "category": "主题",
+            "subCategory": "交通",
+            "type": "名词",
+            "example": "An der nächsten Haltestelle müssen Sie aussteigen.",
+            "meaning": "车站"
+        },
+        {
+            "word": "die Hand",
+            "category": "主题",
+            "subCategory": "身体部位",
+            "type": "名词",
+            "example": "Er gibt mir die Hand.",
+            "meaning": "手"
+        },
+        {
+            "word": "das Handy",
+            "category": "主题",
+            "subCategory": "电子设备",
+            "type": "名词",
+            "example": "In der Schule bitte die Handys ausmachen!",
+            "meaning": "手机"
+        },
+        {
+            "word": "das Haus",
+            "category": "主题",
+            "subCategory": "建筑",
+            "type": "名词",
+            "example": "In welchem Haus wohnst du?",
+            "meaning": "房子"
+        },
+        {
+            "word": "die Hausaufgabe",
+            "category": "主题",
+            "subCategory": "学习",
+            "type": "名词",
+            "example": "Kannst du mir bei den Hausaufgaben helfen?",
+            "meaning": "家庭作业"
+        },
+        {
+            "word": "der Hausmann / die Hausfrau",
+            "category": "主题",
+            "subCategory": "职业",
+            "type": "名词",
+            "example": "Die Hausfrau/der Hausmann wäscht, kocht und kauft ein.",
+            "meaning": "家庭主妇/家庭主夫"
+        },
+        {
+            "word": "die Heimat",
+            "category": "主题",
+            "subCategory": "地理",
+            "type": "名词",
+            "example": "Ich komme aus der Schweiz. Das ist meine Heimat.",
+            "meaning": "家乡"
+        },
+        {
+            "word": "heiraten",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Meine Schwester heiratet einen Japaner.",
+            "meaning": "结婚"
+        },
+        {
+            "word": "heißen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Ich heiße Charlotte Meier.",
+            "meaning": "叫做"
+        },
+        {
+            "word": "helfen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Können Sie mir helfen, bitte?",
+            "meaning": "帮助"
+        },
+        {
+            "word": "hell",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Im Sommer ist es bis 21 Uhr hell.",
+            "meaning": "明亮的"
+        },
+        {
+            "word": "der Herd",
+            "category": "主题",
+            "subCategory": "家居",
+            "type": "名词",
+            "example": "In der neuen Küche fehlt noch der Herd.",
+            "meaning": "炉灶"
+        },
+        {
+            "word": "der Herr",
+            "category": "主题",
+            "subCategory": "人物",
+            "type": "名词",
+            "example": "Guten Tag, Herr Sommer!",
+            "meaning": "先生"
+        },
+        {
+            "word": "herzlich",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Herzlichen Glückwunsch!",
+            "meaning": "真诚的"
+        },
+        {
+            "word": "heute",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Heute ist ein schöner Tag.",
+            "meaning": "今天"
+        },
+        {
+            "word": "hier",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Hier wohne ich.",
+            "meaning": "这里"
+        },
+        {
+            "word": "die Hilfe",
+            "category": "主题",
+            "subCategory": "沟通",
+            "type": "名词",
+            "example": "Brauchen Sie meine Hilfe?",
+            "meaning": "帮助"
+        },
+        {
+            "word": "hinten",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Die Tür zum Aussteigen ist hinten.",
+            "meaning": "在后面"
+        },
+        {
+            "word": "das Hobby",
+            "category": "主题",
+            "subCategory": "爱好",
+            "type": "名词",
+            "example": "Meine Hobbys sind Wandern und Schwimmen.",
+            "meaning": "爱好"
+        },
+        {
+            "word": "hoch",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Der Mount Everest ist 8.880 Meter hoch.",
+            "meaning": "高的"
+        },
+        {
+            "word": "die Hochzeit",
+            "category": "主题",
+            "subCategory": "活动",
+            "type": "名词",
+            "example": "Zur dieser Hochzeit kommen mehr als fünfzig Gäste.",
+            "meaning": "婚礼"
+        },
+        {
+            "word": "holen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Ich hole zwei Flaschen Wasser aus der Küche.",
+            "meaning": "取来"
+        },
+        {
+            "word": "hören",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Ich habe das Lied schon mal gehört.",
+            "meaning": "听"
+        },
+        {
+            "word": "das Hotel",
+            "category": "主题",
+            "subCategory": "住宿",
+            "type": "名词",
+            "example": "Im Urlaub sind wir in einem Hotel am Meer.",
+            "meaning": "酒店"
+        },
+        {
+            "word": "der Hund",
+            "category": "主题",
+            "subCategory": "动物",
+            "type": "名词",
+            "example": "Der Hund ist noch jung.",
+            "meaning": "狗"
+        },
+        {
+            "word": "der Hunger",
+            "category": "主题",
+            "subCategory": "身体状况",
+            "type": "名词",
+            "example": "Ich habe Hunger! Wann ist das Essen fertig?",
+            "meaning": "饥饿"
+        }
+,
+        {
+            "word": "ich",
+            "category": "词性",
+            "subCategory": "代词",
+            "type": "代词",
+            "example": "Ich heiße Veronika.",
+            "meaning": "我"
+        },
+        {
+            "word": "ihr/ihm/ihn",
+            "category": "词性",
+            "subCategory": "代词",
+            "type": "代词",
+            "example": "Gib ihr/ihm bitte das Buch. Ruf ihn bitte an.",
+            "meaning": "她/他/他（第三人称单数宾格）"
+        },
+        {
+            "word": "immer",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Frau Bast kommt immer zu spät.",
+            "meaning": "总是"
+        },
+        {
+            "word": "in",
+            "category": "词性",
+            "subCategory": "介词",
+            "type": "介词",
+            "example": "Ich wohne in Wiesbaden. Der Zug kommt in fünf Minuten.",
+            "meaning": "在...里面"
+        },
+        {
+            "word": "die Information",
+            "category": "主题",
+            "subCategory": "信息",
+            "type": "名词",
+            "example": "Wenn Sie Fragen haben, gehen Sie zur Information.",
+            "meaning": "信息"
+        },
+        {
+            "word": "das Internet",
+            "category": "主题",
+            "subCategory": "电子设备",
+            "type": "名词",
+            "example": "Das findest du im Internet.",
+            "meaning": "互联网"
+        },
+        {
+            "word": "ja",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Sind Sie Herr Watanabe? – Ja.",
+            "meaning": "是"
+        },
+        {
+            "word": "die Jacke",
+            "category": "主题",
+            "subCategory": "衣物",
+            "type": "名词",
+            "example": "Zieh dir eine Jacke an. Es ist kalt.",
+            "meaning": "夹克"
+        },
+        {
+            "word": "jed-",
+            "category": "词性",
+            "subCategory": "代词",
+            "type": "代词",
+            "example": "Blumen kannst du in jedem Bahnhof kaufen.",
+            "meaning": "每一个"
+        },
+        {
+            "word": "jetzt",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Jetzt machen wir eine Pause.",
+            "meaning": "现在"
+        },
+        {
+            "word": "der Job",
+            "category": "主题",
+            "subCategory": "职业",
+            "type": "名词",
+            "example": "Jenny hat einen neuen Job bei der Post.",
+            "meaning": "工作"
+        },
+        {
+            "word": "der Jugendliche",
+            "category": "主题",
+            "subCategory": "人物",
+            "type": "名词",
+            "example": "Viele Jugendliche kaufen gern ein.",
+            "meaning": "青少年"
+        },
+        {
+            "word": "jung",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Claudia ist 21. – Was? Noch so jung?",
+            "meaning": "年轻的"
+        },
+        {
+            "word": "der Junge",
+            "category": "主题",
+            "subCategory": "人物",
+            "type": "名词",
+            "example": "Ich habe zwei Kinder. Einen Jungen und ein Mädchen.",
+            "meaning": "男孩"
+        },
+        {
+            "word": "der Kaffee",
+            "category": "主题",
+            "subCategory": "餐饮",
+            "type": "名词",
+            "example": "Zum Frühstück trinke ich immer Kaffee.",
+            "meaning": "咖啡"
+        },
+        {
+            "word": "kaputt",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Das Glas war teuer. Es geht sehr leicht kaputt.",
+            "meaning": "破碎的"
+        },
+        {
+            "word": "die Karte",
+            "category": "主题",
+            "subCategory": "旅游",
+            "type": "名词",
+            "example": "Ich schreibe meinen Bekannten eine Karte aus dem Urlaub.",
+            "meaning": "卡片，地图"
+        },
+        {
+            "word": "die Kartoffel",
+            "category": "主题",
+            "subCategory": "餐饮",
+            "type": "名词",
+            "example": "Für Pommes frites braucht man Kartoffeln.",
+            "meaning": "土豆"
+        },
+        {
+            "word": "die Kasse",
+            "category": "主题",
+            "subCategory": "财务",
+            "type": "名词",
+            "example": "Zahlen Sie bitte an der Kasse.",
+            "meaning": "收银台"
+        },
+        {
+            "word": "kaufen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Tim kauft sich ein neues Auto.",
+            "meaning": "购买"
+        },
+        {
+            "word": "kein",
+            "category": "词性",
+            "subCategory": "代词",
+            "type": "代词",
+            "example": "Es gibt keine Eintrittskarten mehr.",
+            "meaning": "没有"
+        },
+        {
+            "word": "kennen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Kennen Sie diese Frau? – Nein, leider nicht.",
+            "meaning": "认识"
+        },
+        {
+            "word": "kennenlernen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Wir sind neu hier. Wir möchten Sie kennenlernen.",
+            "meaning": "认识，了解"
+        },
+        {
+            "word": "das Kind",
+            "category": "主题",
+            "subCategory": "家庭",
+            "type": "名词",
+            "example": "Wie viele Kinder haben Sie?",
+            "meaning": "孩子"
+        },
+        {
+            "word": "der Kindergarten",
+            "category": "主题",
+            "subCategory": "教育",
+            "type": "名词",
+            "example": "Die kleine Laura geht schon in den Kindergarten.",
+            "meaning": "幼儿园"
+        },
+        {
+            "word": "das Kino",
+            "category": "主题",
+            "subCategory": "娱乐",
+            "type": "名词",
+            "example": "Wir sehen heute Abend im Kino einen schönen Film.",
+            "meaning": "电影院"
+        },
+        {
+            "word": "der Kiosk",
+            "category": "主题",
+            "subCategory": "购物",
+            "type": "名词",
+            "example": "Am Kiosk bekommen Sie Getränke, Zigaretten und Zeitungen.",
+            "meaning": "报刊亭"
+        },
+        {
+            "word": "klar",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Kommst du mit? – Klar!",
+            "meaning": "清楚的"
+        },
+        {
+            "word": "die Klasse",
+            "category": "主题",
+            "subCategory": "教育",
+            "type": "名词",
+            "example": "In unserer Klasse sind fünfundzwanzig Schüler.",
+            "meaning": "班级"
+        },
+        {
+            "word": "die Kleidung",
+            "category": "主题",
+            "subCategory": "衣物",
+            "type": "名词",
+            "example": "Wo finde ich Kleidung? – Jacken im ersten, Jeans im zweiten Stock.",
+            "meaning": "衣物"
+        },
+        {
+            "word": "klein",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Eltville ist eine kleine Stadt am Rhein.",
+            "meaning": "小的"
+        },
+        {
+            "word": "kochen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Herr Georgi kann gut kochen.",
+            "meaning": "烹饪"
+        },
+        {
+            "word": "der Koffer",
+            "category": "主题",
+            "subCategory": "旅游",
+            "type": "名词",
+            "example": "Ist das Ihr Koffer?",
+            "meaning": "行李箱"
+        },
+        {
+            "word": "der Kollege",
+            "category": "主题",
+            "subCategory": "职业",
+            "type": "名词",
+            "example": "Wie heißt die neue Kollegin?",
+            "meaning": "同事"
+        },
+        {
+            "word": "kommen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Woher kommen Sie? – Aus Frankreich.",
+            "meaning": "来"
+        },
+        {
+            "word": "können",
+            "category": "词性",
+            "subCategory": "情态动词",
+            "type": "情态动词",
+            "example": "Ich kann Deutsch und Russisch.",
+            "meaning": "能够"
+        },
+        {
+            "word": "das Konto",
+            "category": "主题",
+            "subCategory": "财务",
+            "type": "名词",
+            "example": "Das Geld überweisen wir am ersten März auf Ihr Konto.",
+            "meaning": "账户"
+        },
+        {
+            "word": "der Kopf",
+            "category": "主题",
+            "subCategory": "身体部位",
+            "type": "名词",
+            "example": "Mein Kopf tut weh!",
+            "meaning": "头"
+        },
+        {
+            "word": "kosten",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Wie viel kostet das? – 10 Euro.",
+            "meaning": "花费"
+        },
+        {
+            "word": "krank",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Ich kann heute nicht zur Arbeit kommen, ich bin krank und liege im Bett.",
+            "meaning": "生病的"
+        },
+        {
+            "word": "kriegen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Ich kriege 15 Euro in der Stunde für meine Arbeit.",
+            "meaning": "得到"
+        },
+        {
+            "word": "die Küche",
+            "category": "主题",
+            "subCategory": "家居",
+            "type": "名词",
+            "example": "Der neue Herd kommt in die Küche.",
+            "meaning": "厨房"
+        },
+        {
+            "word": "der Kuchen",
+            "category": "主题",
+            "subCategory": "餐饮",
+            "type": "名词",
+            "example": "Ich nehme ein Stück Kuchen.",
+            "meaning": "蛋糕"
+        },
+        {
+            "word": "der Kugelschreiber",
+            "category": "主题",
+            "subCategory": "文具",
+            "type": "名词",
+            "example": "Hast du einen Kugelschreiber für mich?",
+            "meaning": "圆珠笔"
+        },
+        {
+            "word": "der Kühlschrank",
+            "category": "主题",
+            "subCategory": "家居",
+            "type": "名词",
+            "example": "Haben wir noch Milch? – Ja, im Kühlschrank.",
+            "meaning": "冰箱"
+        },
+        {
+            "word": "kulturell",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Ich bin kulturell interessiert. Ich gehe oft ins Museum.",
+            "meaning": "文化的"
+        },
+        {
+            "word": "sich kümmern",
+            "category": "词性",
+            "subCategory": "动词短语",
+            "type": "动词短语",
+            "example": "Jede Mutter kümmert sich um ihre kleinen Kinder.",
+            "meaning": "照顾"
+        },
+        {
+            "word": "der Kunde",
+            "category": "主题",
+            "subCategory": "商业",
+            "type": "名词",
+            "example": "Einen Moment, bitte. Ich habe eine Kundin.",
+            "meaning": "顾客"
+        },
+        {
+            "word": "der Kurs",
+            "category": "主题",
+            "subCategory": "教育",
+            "type": "名词",
+            "example": "Der Deutschkurs geht bis zum Sommer.",
+            "meaning": "课程"
+        },
+        {
+            "word": "kurz",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Ricardo hat kurzes Haar.",
+            "meaning": "短的"
+        }
+,
+        {
+            "word": "lachen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Die Kinder lachen viel.",
+            "meaning": "笑"
+        },
+        {
+            "word": "der Laden",
+            "category": "主题",
+            "subCategory": "商业",
+            "type": "名词",
+            "example": "Im Buchladen können Sie Bücher kaufen.",
+            "meaning": "商店"
+        },
+        {
+            "word": "das Land",
+            "category": "主题",
+            "subCategory": "地理",
+            "type": "名词",
+            "example": "Italien ist ein schönes Land.",
+            "meaning": "国家，土地"
+        },
+        {
+            "word": "lang",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Die Jeans ist zu lang.",
+            "meaning": "长的"
+        },
+        {
+            "word": "lange",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Wie lange fährt der Zug von Hamburg nach Berlin?",
+            "meaning": "多久"
+        },
+        {
+            "word": "langsam",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Könnten Sie bitte etwas langsamer sprechen?",
+            "meaning": "慢的"
+        },
+        {
+            "word": "laufen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Ich möchte nicht Auto fahren, ich möchte laufen.",
+            "meaning": "跑，步行"
+        },
+        {
+            "word": "laut",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Nicht so laut! Das Baby schläft.",
+            "meaning": "响的，大声的"
+        },
+        {
+            "word": "leben",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Sie lebt bei ihrer Schwester.",
+            "meaning": "生活"
+        },
+        {
+            "word": "das Leben",
+            "category": "主题",
+            "subCategory": "社会",
+            "type": "名词",
+            "example": "Das Leben in diesem Land ist teuer.",
+            "meaning": "生活，生命"
+        },
+        {
+            "word": "die Lebensmittel",
+            "category": "主题",
+            "subCategory": "餐饮",
+            "type": "名词",
+            "example": "Lebensmittel bekommen Sie im Supermarkt.",
+            "meaning": "食品"
+        },
+        {
+            "word": "ledig",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Sind Sie verheiratet? – Nein. Ledig.",
+            "meaning": "单身的"
+        },
+        {
+            "word": "legen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Legen Sie das Buch auf den Tisch.",
+            "meaning": "放置"
+        },
+        {
+            "word": "der Lehrer",
+            "category": "主题",
+            "subCategory": "职业",
+            "type": "名词",
+            "example": "Unsere Deutschlehrerin heißt Frau Müller.",
+            "meaning": "教师"
+        },
+        {
+            "word": "leicht",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Der Koffer ist leicht. Deutsch ist nicht leicht.",
+            "meaning": "轻的，容易的"
+        },
+        {
+            "word": "leider",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Leider kann ich nicht kommen. Ich muss zum Arzt.",
+            "meaning": "遗憾地"
+        },
+        {
+            "word": "leise",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Seid leise. Die anderen schlafen schon.",
+            "meaning": "轻声的，安静的"
+        },
+        {
+            "word": "lernen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Wie lange lernen Sie schon Deutsch?",
+            "meaning": "学习"
+        },
+        {
+            "word": "lesen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Ich lese ein Buch von García Márquez.",
+            "meaning": "阅读"
+        },
+        {
+            "word": "letzt-",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Morgen ist der letzte Kurstag.",
+            "meaning": "最后的"
+        },
+        {
+            "word": "die Leute",
+            "category": "主题",
+            "subCategory": "社会",
+            "type": "名词",
+            "example": "In der Disko sind viele Leute.",
+            "meaning": "人们"
+        },
+        {
+            "word": "das Licht",
+            "category": "主题",
+            "subCategory": "家居",
+            "type": "名词",
+            "example": "Wo macht man hier das Licht an?",
+            "meaning": "灯光"
+        },
+        {
+            "word": "lieb-",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Liebe Susanne, lieber Hans.",
+            "meaning": "亲爱的"
+        },
+        {
+            "word": "lieben",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Ich liebe dich!",
+            "meaning": "爱"
+        },
+        {
+            "word": "lieber",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Sie fährt lieber mit der Bahn.",
+            "meaning": "宁愿，更喜欢"
+        },
+        {
+            "word": "das Lieblings-",
+            "category": "主题",
+            "subCategory": "偏好",
+            "type": "形容词",
+            "example": "Mein Lieblingsfilm ist „Schwarze Augen“.",
+            "meaning": "最喜欢的"
+        },
+        {
+            "word": "das Lied",
+            "category": "主题",
+            "subCategory": "音乐",
+            "type": "名词",
+            "example": "Welches ist dein Lieblingslied?",
+            "meaning": "歌曲"
+        },
+        {
+            "word": "liegen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Um neun Uhr liegt Judith noch im Bett. Frankfurt liegt am Main.",
+            "meaning": "躺，位于"
+        },
+        {
+            "word": "links",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Gehen Sie die nächste Straße links.",
+            "meaning": "左边"
+        },
+        {
+            "word": "der Lkw",
+            "category": "主题",
+            "subCategory": "交通",
+            "type": "名词",
+            "example": "Dieser Lastkraftwagen ist sehr groß.",
+            "meaning": "卡车"
+        },
+        {
+            "word": "das Lokal",
+            "category": "主题",
+            "subCategory": "餐饮",
+            "type": "名词",
+            "example": "In unserer Straße gibt es ein neues Lokal.",
+            "meaning": "餐馆"
+        },
+        {
+            "word": "die Lösung",
+            "category": "主题",
+            "subCategory": "问题解决",
+            "type": "名词",
+            "example": "Die Lösung ist ganz einfach.",
+            "meaning": "解决方法"
+        },
+        {
+            "word": "lustig",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Frau Mertens ist lustig. Sie lacht immer.",
+            "meaning": "有趣的，搞笑的"
+        }
+    ,
+    
+        {
+            "word": "machen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Was machst du heute Abend? Ich muss jetzt das Essen machen.",
+            "meaning": "做"
+        },
+        {
+            "word": "das Mädchen",
+            "category": "主题",
+            "subCategory": "人物",
+            "type": "名词",
+            "example": "Familie Kurz bekommt ein Baby. – Junge oder Mädchen?",
+            "meaning": "女孩"
+        },
+        {
+            "word": "man",
+            "category": "词性",
+            "subCategory": "代词",
+            "type": "代词",
+            "example": "Hier darf man nicht rauchen.",
+            "meaning": "人，人们"
+        },
+        {
+            "word": "der Mann",
+            "category": "主题",
+            "subCategory": "人物",
+            "type": "名词",
+            "example": "Mein Mann arbeitet bei der Polizei.",
+            "meaning": "男人，丈夫"
+        },
+        {
+            "word": "männlich",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Kreuzen Sie bitte an: 'weiblich' oder 'männlich'.",
+            "meaning": "男性的"
+        },
+        {
+            "word": "die Maschine",
+            "category": "主题",
+            "subCategory": "设备",
+            "type": "名词",
+            "example": "Die Waschmaschine ist günstig.",
+            "meaning": "机器"
+        },
+        {
+            "word": "das Meer",
+            "category": "主题",
+            "subCategory": "自然",
+            "type": "名词",
+            "example": "Wir machen Urlaub am Meer.",
+            "meaning": "海"
+        },
+        {
+            "word": "mehr",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Dieses Auto kostet 1.000 Euro mehr als das andere.",
+            "meaning": "更多"
+        },
+        {
+            "word": "mein",
+            "category": "词性",
+            "subCategory": "代词",
+            "type": "代词",
+            "example": "Mein Vater ist Arzt.",
+            "meaning": "我的"
+        },
+        {
+            "word": "meist-",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Die meisten Norddeutschen sind sehr groß.",
+            "meaning": "大多数的"
+        },
+        {
+            "word": "der Mensch",
+            "category": "主题",
+            "subCategory": "社会",
+            "type": "名词",
+            "example": "Die Menschen sind hier anders als bei uns.",
+            "meaning": "人类"
+        },
+        {
+            "word": "mieten",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Ich möchte ein Auto mieten.",
+            "meaning": "租"
+        },
+        {
+            "word": "die Miete",
+            "category": "主题",
+            "subCategory": "财务",
+            "type": "名词",
+            "example": "Die Miete für diese Wohnung ist 600 Euro.",
+            "meaning": "租金"
+        },
+        {
+            "word": "die Milch",
+            "category": "主题",
+            "subCategory": "餐饮",
+            "type": "名词",
+            "example": "Die Milch steht im Kühlschrank.",
+            "meaning": "牛奶"
+        },
+        {
+            "word": "mit",
+            "category": "词性",
+            "subCategory": "介词",
+            "type": "介词",
+            "example": "Trinken Sie den Kaffee mit Milch?",
+            "meaning": "和...一起，带有"
+        },
+        {
+            "word": "mitbringen",
+            "category": "词性",
+            "subCategory": "动词短语",
+            "type": "动词短语",
+            "example": "Ich gehe einkaufen. Soll ich dir was mitbringen?",
+            "meaning": "带来"
+        },
+        {
+            "word": "mitkommen",
+            "category": "词性",
+            "subCategory": "动词短语",
+            "type": "动词短语",
+            "example": "Ich gehe ins Kino. Kommst du mit?",
+            "meaning": "一起去"
+        },
+        {
+            "word": "mitmachen",
+            "category": "词性",
+            "subCategory": "动词短语",
+            "type": "动词短语",
+            "example": "Warum macht ihr nicht mit?",
+            "meaning": "参加"
+        },
+        {
+            "word": "mitnehmen",
+            "category": "词性",
+            "subCategory": "动词短语",
+            "type": "动词短语",
+            "example": "Nehmen wir meine Schwester ins Kino mit?",
+            "meaning": "带走"
+        },
+        {
+            "word": "die Mitte",
+            "category": "主题",
+            "subCategory": "位置",
+            "type": "名词",
+            "example": "Der Lehrer steht in der Mitte des Klassenzimmers.",
+            "meaning": "中间"
+        },
+        {
+            "word": "die Möbel",
+            "category": "主题",
+            "subCategory": "家居",
+            "type": "名词",
+            "example": "Sind die Möbel neu?",
+            "meaning": "家居"
+        },
+        {
+            "word": "möchten",
+            "category": "词性",
+            "subCategory": "情态动词",
+            "type": "情态动词",
+            "example": "Was möchten Sie trinken?",
+            "meaning": "想要"
+        },
+        {
+            "word": "mögen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Magst du Kaffee oder Tee?",
+            "meaning": "喜欢"
+        },
+        {
+            "word": "möglich",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Mit dieser Fahrkarte ist die Fahrt ab 9 Uhr möglich.",
+            "meaning": "可能的"
+        },
+        {
+            "word": "der Moment",
+            "category": "主题",
+            "subCategory": "时间",
+            "type": "名词",
+            "example": "Moment mal bitte! Einen Moment bitte.",
+            "meaning": "片刻，瞬间"
+        },
+        {
+            "word": "morgen",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Morgen beginnt die Schule um 10 Uhr.",
+            "meaning": "明天"
+        },
+        {
+            "word": "müde",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Ich bin müde. Ich gehe schlafen.",
+            "meaning": "疲倦的"
+        },
+        {
+            "word": "der Mund",
+            "category": "主题",
+            "subCategory": "身体部位",
+            "type": "名词",
+            "example": "Öffnen Sie den Mund.",
+            "meaning": "嘴巴"
+        },
+        {
+            "word": "müssen",
+            "category": "词性",
+            "subCategory": "情态动词",
+            "type": "情态动词",
+            "example": "Ich muss jeden Tag von 8 Uhr bis 18 Uhr arbeiten.",
+            "meaning": "必须"
+        },
+        {
+            "word": "die Mutter",
+            "category": "主题",
+            "subCategory": "家庭",
+            "type": "名词",
+            "example": "Frau Berghäuser ist die Mutter von Michaela.",
+            "meaning": "母亲"
+        },
+
+
+    {
+        "word": "nach",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Ich gehe jetzt nach Hause. Ich fliege nach München. Es ist schon 5 nach 12.",
+        "meaning": "向，往，在...之后"
+    },
+    {
+        "word": "nächst-",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sehen wir uns nächste Woche?",
+        "meaning": "下一个的"
+    },
+    {
+        "word": "der Name",
+        "category": "主题",
+        "subCategory": "个人信息",
+        "type": "名词",
+        "example": "Mein Name ist Thomas Schmidt. Mein Vorname ist Thomas; Schmidt ist der Familienname.",
+        "meaning": "名字"
+    },
+    {
+        "word": "nehmen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Heute gibt es Hähnchen. Das nehme ich. Ich nehme den Bus.",
+        "meaning": "拿，选择"
+    },
+    {
+        "word": "nein",
+        "category": "词性",
+        "subCategory": "感叹词",
+        "type": "感叹词",
+        "example": "Fährst du auch nach München? – Nein, ich habe keine Zeit.",
+        "meaning": "不"
+    },
+    {
+        "word": "neu",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin der neue Kollege. Wir haben eine neue Wohnung.",
+        "meaning": "新的"
+    },
+    {
+        "word": "nicht",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Das stimmt nicht. Das ist doch schön, nicht?",
+        "meaning": "不"
+    },
+    {
+        "word": "nichts",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Das macht nichts. Hier kaufe ich nichts. Der Laden gefällt mir nicht.",
+        "meaning": "没有东西，没有"
+    },
+    {
+        "word": "nie",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Er kommt nie pünktlich.",
+        "meaning": "从不"
+    },
+    {
+        "word": "noch",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Vielleicht kommt er noch. Wir warten noch fünf Minuten. Ich habe noch 20 Euro.",
+        "meaning": "还，仍然"
+    },
+    {
+        "word": "normal",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "75 kg. Sein Gewicht ist normal.",
+        "meaning": "正常的"
+    },
+    {
+        "word": "die Nummer",
+        "category": "主题",
+        "subCategory": "信息",
+        "type": "名词",
+        "example": "Sie haben Zimmer Nummer zwölf. Welche Hausnummer haben Sie? Können Sie mir Ihre Nummer geben?",
+        "meaning": "号码"
+    },
+    {
+        "word": "nur",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich möchte nur ein Glas Wasser.",
+        "meaning": "仅仅，只"
+    },
+    {
+        "word": "oben",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich wohne oben.",
+        "meaning": "在上面"
+    },
+    {
+        "word": "das Obst",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Im Sommer ist das Obst billig.",
+        "meaning": "水果"
+    },
+    {
+        "word": "oder",
+        "category": "词性",
+        "subCategory": "连词",
+        "type": "连词",
+        "example": "Wann können Sie kommen – heute oder morgen?",
+        "meaning": "或者"
+    },
+    {
+        "word": "öffnen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich öffne die Tür.",
+        "meaning": "打开"
+    },
+    {
+        "word": "geöffnet",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Laden ist samstags bis 16.00 Uhr geöffnet.",
+        "meaning": "开放的"
+    },
+    {
+        "word": "oft",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Petra treffe ich oft.",
+        "meaning": "经常"
+    },
+    {
+        "word": "ohne",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Ohne Geld kann er nichts kaufen.",
+        "meaning": "没有"
+    },
+    {
+        "word": "das Öl",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Den Salat machen wir ohne Öl.",
+        "meaning": "油"
+    },
+    {
+        "word": "die Oma",
+        "category": "主题",
+        "subCategory": "家庭",
+        "type": "名词",
+        "example": "Meine Oma ist schon tot.",
+        "meaning": "奶奶，外婆"
+    },
+    {
+        "word": "der Opa",
+        "category": "主题",
+        "subCategory": "家庭",
+        "type": "名词",
+        "example": "Mein Opa heißt Hans.",
+        "meaning": "爷爷，外公"
+    },
+    {
+        "word": "die Ordnung",
+        "category": "主题",
+        "subCategory": "状态",
+        "type": "名词",
+        "example": "Das ist in Ordnung.",
+        "meaning": "秩序，正常"
+    },
+    {
+        "word": "der Ort",
+        "category": "主题",
+        "subCategory": "地理",
+        "type": "名词",
+        "example": "Der Ort liegt am Meer.",
+        "meaning": "地方"
+    }
+,
+
+    {
+        "word": "das Papier",
+        "category": "主题",
+        "subCategory": "文具",
+        "type": "名词",
+        "example": "Hier sind Papier und Bleistift.",
+        "meaning": "纸"
+    },
+    {
+        "word": "die Papiere",
+        "category": "主题",
+        "subCategory": "证件",
+        "type": "名词",
+        "example": "Haben Sie Ihre Papiere dabei?",
+        "meaning": "证件，文件"
+    },
+    {
+        "word": "der Partner",
+        "category": "主题",
+        "subCategory": "人物",
+        "type": "名词",
+        "example": "Sie ist meine Partnerin.",
+        "meaning": "伙伴（男性）"
+    },
+    {
+        "word": "die Partnerin",
+        "category": "主题",
+        "subCategory": "人物",
+        "type": "名词",
+        "example": "Sie ist meine Partnerin.",
+        "meaning": "伙伴（女性）"
+    },
+    {
+        "word": "die Party",
+        "category": "主题",
+        "subCategory": "社交",
+        "type": "名词",
+        "example": "Heute Abend machen wir eine Party.",
+        "meaning": "聚会"
+    },
+    {
+        "word": "der Pass",
+        "category": "主题",
+        "subCategory": "旅行",
+        "type": "名词",
+        "example": "Im Hotel brauchst du deinen Pass.",
+        "meaning": "护照"
+    },
+    {
+        "word": "die Pause",
+        "category": "主题",
+        "subCategory": "时间",
+        "type": "名词",
+        "example": "Von 12.00 bis 12.30 Uhr haben wir Mittagspause.",
+        "meaning": "休息"
+    },
+    {
+        "word": "der Plan",
+        "category": "主题",
+        "subCategory": "时间",
+        "type": "名词",
+        "example": "Ich kaufe mir einen Stadtplan.",
+        "meaning": "计划，地图"
+    },
+    {
+        "word": "der Platz",
+        "category": "主题",
+        "subCategory": "地理",
+        "type": "名词",
+        "example": "Tut mir leid, der Platz ist besetzt. Bitte nehmen Sie Platz! Ich wohne Messeplatz 5.",
+        "meaning": "位置，广场"
+    },
+    {
+        "word": "die Polizei",
+        "category": "主题",
+        "subCategory": "服务",
+        "type": "名词",
+        "example": "Holen Sie die Polizei!",
+        "meaning": "警察"
+    },
+    {
+        "word": "die Pommes frites",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Die Kinder essen Hähnchen mit Pommes frites.",
+        "meaning": "薯条"
+    },
+    {
+        "word": "die Post",
+        "category": "主题",
+        "subCategory": "通讯",
+        "type": "名词",
+        "example": "Wo ist die Post, bitte? Ist Post da?",
+        "meaning": "邮局，邮件"
+    },
+    {
+        "word": "die Postleitzahl",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Wie ist Ihre Postleitzahl?",
+        "meaning": "邮政编码"
+    },
+    {
+        "word": "das Praktikum",
+        "category": "主题",
+        "subCategory": "职业",
+        "type": "名词",
+        "example": "Ich mache ein Praktikum bei Siemens.",
+        "meaning": "实习"
+    },
+    {
+        "word": "die Praxis",
+        "category": "主题",
+        "subCategory": "健康",
+        "type": "名词",
+        "example": "Die Praxis ist ab acht Uhr geöffnet.",
+        "meaning": "诊所"
+    },
+    {
+        "word": "der Preis",
+        "category": "主题",
+        "subCategory": "财务",
+        "type": "名词",
+        "example": "Die Preise sind hoch.",
+        "meaning": "价格"
+    },
+    {
+        "word": "das Problem",
+        "category": "主题",
+        "subCategory": "困难",
+        "type": "名词",
+        "example": "Mein Problem ist die Sprache.",
+        "meaning": "问题，困难"
+    },
+    {
+        "word": "der Prospekt",
+        "category": "主题",
+        "subCategory": "广告",
+        "type": "名词",
+        "example": "Bitte schicken Sie mir einen Prospekt von Ihrem Hotel.",
+        "meaning": "宣传册"
+    },
+    {
+        "word": "die Prüfung",
+        "category": "主题",
+        "subCategory": "学习",
+        "type": "名词",
+        "example": "Die Prüfung ist am Montag um 8.00 Uhr.",
+        "meaning": "考试"
+    },
+    {
+        "word": "pünktlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Bus fährt pünktlich um acht Uhr. Herr Müller ist immer pünktlich.",
+        "meaning": "准时的"
+    }
+,
+
+    {
+        "word": "Rad fahren",
+        "category": "词性",
+        "subCategory": "动词短语",
+        "type": "动词短语",
+        "example": "Das Kind kann schon Rad fahren.",
+        "meaning": "骑自行车"
+    },
+    {
+        "word": "rauchen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich rauche nicht.",
+        "meaning": "抽烟"
+    },
+    {
+        "word": "der Raum",
+        "category": "主题",
+        "subCategory": "建筑",
+        "type": "名词",
+        "example": "Der Unterricht ist in Raum 332.",
+        "meaning": "房间"
+    },
+    {
+        "word": "die Rechnung",
+        "category": "主题",
+        "subCategory": "财务",
+        "type": "名词",
+        "example": "Die Rechnung, bitte.",
+        "meaning": "账单"
+    },
+    {
+        "word": "rechts",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Die Schillerstraße ist hier rechts.",
+        "meaning": "在右边"
+    },
+    {
+        "word": "regnen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Heute regnet es.",
+        "meaning": "下雨"
+    },
+    {
+        "word": "der Regen",
+        "category": "主题",
+        "subCategory": "天气",
+        "type": "名词",
+        "example": "Bei diesem Regen gehe ich nicht raus.",
+        "meaning": "雨"
+    },
+    {
+        "word": "der Reis",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Ich esse gern Reis.",
+        "meaning": "米饭"
+    },
+    {
+        "word": "reisen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich reise gern.",
+        "meaning": "旅行"
+    },
+    {
+        "word": "die Reise",
+        "category": "主题",
+        "subCategory": "旅游",
+        "type": "名词",
+        "example": "Wir machen eine Reise nach Österreich.",
+        "meaning": "旅行"
+    },
+    {
+        "word": "das Reisebüro",
+        "category": "主题",
+        "subCategory": "旅游",
+        "type": "名词",
+        "example": "Mein Mann arbeitet im Reisebüro.",
+        "meaning": "旅行社"
+    },
+    {
+        "word": "der Reiseführer",
+        "category": "主题",
+        "subCategory": "旅游",
+        "type": "名词",
+        "example": "Ich kaufe mir einen Reiseführer von Berlin. Unser Reiseführer heißt Peter.",
+        "meaning": "旅游指南，导游"
+    },
+    {
+        "word": "reparieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er hat das Fahrrad repariert.",
+        "meaning": "修理"
+    },
+    {
+        "word": "die Reparatur",
+        "category": "主题",
+        "subCategory": "服务",
+        "type": "名词",
+        "example": "Die Reparatur ist sehr teuer.",
+        "meaning": "修理"
+    },
+    {
+        "word": "das Restaurant",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Wir essen heute in einem Restaurant.",
+        "meaning": "餐馆"
+    },
+    {
+        "word": "die Rezeption",
+        "category": "主题",
+        "subCategory": "服务",
+        "type": "名词",
+        "example": "Fragen Sie bitte im Hotel an der Rezeption.",
+        "meaning": "接待处"
+    },
+    {
+        "word": "richtig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Habe ich das richtig verstanden? Das ist richtig.",
+        "meaning": "正确的"
+    },
+    {
+        "word": "riechen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Dieser Wein riecht gut.",
+        "meaning": "闻，气味"
+    },
+    {
+        "word": "ruhig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich möchte ein ruhiges Zimmer.",
+        "meaning": "安静的"
+    }
+,
+
+    {
+        "word": "der Saft",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Möchtest du einen Apfelsaft?",
+        "meaning": "果汁"
+    },
+    {
+        "word": "sagen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sag mal, wie geht es dir denn?",
+        "meaning": "说"
+    },
+    {
+        "word": "der Salat",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Wie schmeckt dir der Salat?",
+        "meaning": "沙拉"
+    },
+    {
+        "word": "das Salz",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Herr Ober, kann ich bitte Salz haben?",
+        "meaning": "盐"
+    },
+    {
+        "word": "der Satz",
+        "category": "主题",
+        "subCategory": "语言",
+        "type": "名词",
+        "example": "Dieser Satz ist sehr einfach.",
+        "meaning": "句子"
+    },
+    {
+        "word": "die S-Bahn",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Ich nehme lieber die S-Bahn.",
+        "meaning": "城市快铁"
+    },
+    {
+        "word": "der Schalter",
+        "category": "主题",
+        "subCategory": "服务",
+        "type": "名词",
+        "example": "Gehen Sie bitte zum Schalter drei!",
+        "meaning": "柜台"
+    },
+    {
+        "word": "scheinen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Sonne scheint.",
+        "meaning": "照耀，看起来"
+    },
+    {
+        "word": "schicken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bitte schicken Sie mir eine E-Mail.",
+        "meaning": "发送"
+    },
+    {
+        "word": "das Schild",
+        "category": "主题",
+        "subCategory": "标志",
+        "type": "名词",
+        "example": "Haben Sie nicht das Schild gesehen?",
+        "meaning": "标志，牌子"
+    },
+    {
+        "word": "der Schinken",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Ich möchte gern ein Schinkenbrot.",
+        "meaning": "火腿"
+    },
+    {
+        "word": "schlafen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich schlafe meistens acht Stunden.",
+        "meaning": "睡觉"
+    },
+    {
+        "word": "schlecht",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Mir ist schlecht! Sie sehen schlecht aus.",
+        "meaning": "糟糕的"
+    },
+    {
+        "word": "schließen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bitte, schließen Sie die Tür.",
+        "meaning": "关闭"
+    },
+    {
+        "word": "geschlossen",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Bank hat am Samstag geschlossen.",
+        "meaning": "关闭的"
+    },
+    {
+        "word": "der Schluss",
+        "category": "主题",
+        "subCategory": "时间",
+        "type": "名词",
+        "example": "Ich muss jetzt Schluss machen. Zum Schluss gibt er uns allen die Hand.",
+        "meaning": "结束"
+    },
+    {
+        "word": "der Schlüssel",
+        "category": "主题",
+        "subCategory": "物品",
+        "type": "名词",
+        "example": "Ich gebe Ihnen noch den Zimmerschlüssel.",
+        "meaning": "钥匙"
+    },
+    {
+        "word": "schmecken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Schmeckt das gut?",
+        "meaning": "尝起来"
+    },
+    {
+        "word": "schnell",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er fährt schnell.",
+        "meaning": "快速的"
+    },
+    {
+        "word": "schon",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ist das Essen schon fertig?",
+        "meaning": "已经"
+    },
+    {
+        "word": "schön",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Schönen Urlaub! Das ist sehr schön.",
+        "meaning": "美丽的"
+    },
+    {
+        "word": "der Schrank",
+        "category": "主题",
+        "subCategory": "家居",
+        "type": "名词",
+        "example": "Die Gläser stehen im Schrank.",
+        "meaning": "柜子"
+    },
+    {
+        "word": "schreiben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er schreibt jeden Tag fünfzig E-Mails.",
+        "meaning": "写"
+    },
+    {
+        "word": "der Schuh",
+        "category": "主题",
+        "subCategory": "衣物",
+        "type": "名词",
+        "example": "Zieh die Schuhe aus!",
+        "meaning": "鞋子"
+    },
+    {
+        "word": "die Schule",
+        "category": "主题",
+        "subCategory": "教育",
+        "type": "名词",
+        "example": "Meine Tochter geht schon in die Schule. Die Schule ist gleich hier um die Ecke.",
+        "meaning": "学校"
+    },
+    {
+        "word": "der Schüler",
+        "category": "主题",
+        "subCategory": "教育",
+        "type": "名词",
+        "example": "In meinem Kurs sind acht Schülerinnen und fünf Schüler.",
+        "meaning": "学生"
+    },
+    {
+        "word": "schwer",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ist Ihr Gepäck sehr schwer? Das ist eine schwere Arbeit.",
+        "meaning": "重的，困难的"
+    },
+    {
+        "word": "die Schwester",
+        "category": "主题",
+        "subCategory": "家庭",
+        "type": "名词",
+        "example": "Meine Schwester kommt am Dienstag.",
+        "meaning": "姐妹"
+    },
+    {
+        "word": "schwimmen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich schwimme jeden Tag einen Kilometer.",
+        "meaning": "游泳"
+    },
+    {
+        "word": "das Schwimmbad",
+        "category": "主题",
+        "subCategory": "运动",
+        "type": "名词",
+        "example": "Kommst du mit ins Schwimmbad?",
+        "meaning": "游泳池"
+    },
+    {
+        "word": "der See",
+        "category": "主题",
+        "subCategory": "地理",
+        "type": "名词",
+        "example": "Komm, wir fahren zum Starnberger See.",
+        "meaning": "湖"
+    }
+,
+
+    {
+        "word": "sehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich kann dich nicht sehen. Ich habe diesen Jungen schon einmal gesehen.",
+        "meaning": "看见"
+    },
+    {
+        "word": "die Sehenswürdigkeit",
+        "category": "主题",
+        "subCategory": "旅游",
+        "type": "名词",
+        "example": "Welche Sehenswürdigkeiten gibt es in Frankfurt?",
+        "meaning": "名胜，景点"
+    },
+    {
+        "word": "sehr",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Danke sehr! Das ist sehr schwer.",
+        "meaning": "非常"
+    },
+    {
+        "word": "sein",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Herr Müller ist in seinem Zimmer. Mir ist kalt. Ich bin dreiundzwanzig.",
+        "meaning": "是"
+    },
+    {
+        "word": "seit",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Ich wohne seit drei Jahren in Köln.",
+        "meaning": "自从，从...以来"
+    },
+    {
+        "word": "selbstständig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er ist selbstständig.",
+        "meaning": "独立的，自主的"
+    },
+    {
+        "word": "sich",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Sie müssen sich erst anmelden.",
+        "meaning": "自己"
+    },
+    {
+        "word": "sie",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Wie heißt sie?",
+        "meaning": "她"
+    },
+    {
+        "word": "Sie",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Wie heißen Sie, bitte?",
+        "meaning": "您"
+    },
+    {
+        "word": "sitzen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wo sitzen Sie?",
+        "meaning": "坐"
+    },
+    {
+        "word": "so",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Sie müssen das so machen! Fahren Sie bitte nicht so schnell! Meine Frau ist so groß wie ich. So, das war‘s/wär‘s!",
+        "meaning": "如此，这样"
+    },
+    {
+        "word": "das Sofa",
+        "category": "主题",
+        "subCategory": "家居",
+        "type": "名词",
+        "example": "Das Sofa ist neu.",
+        "meaning": "沙发"
+    },
+    {
+        "word": "sofort",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Bitte antworten Sie sofort.",
+        "meaning": "立即，马上"
+    },
+    {
+        "word": "der Sohn",
+        "category": "主题",
+        "subCategory": "家庭",
+        "type": "名词",
+        "example": "Das ist Hans, mein Sohn.",
+        "meaning": "儿子"
+    },
+    {
+        "word": "sollen",
+        "category": "词性",
+        "subCategory": "情态动词",
+        "type": "情态动词",
+        "example": "Soll ich kommen? Was soll ich mitbringen?",
+        "meaning": "应该"
+    },
+    {
+        "word": "die Sonne",
+        "category": "主题",
+        "subCategory": "天气",
+        "type": "名词",
+        "example": "Die Sonne scheint.",
+        "meaning": "太阳"
+    },
+    {
+        "word": "spät",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Es ist schon spät, ich muss gehen.",
+        "meaning": "晚的"
+    },
+    {
+        "word": "später",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Das können wir später machen.",
+        "meaning": "稍后，之后"
+    },
+    {
+        "word": "die Speisekarte",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Bringen Sie mir die Speisekarte, bitte.",
+        "meaning": "菜单"
+    },
+    {
+        "word": "spielen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Kinder spielen draußen. Spielen Sie Karten?",
+        "meaning": "玩，演奏"
+    },
+    {
+        "word": "der Sport",
+        "category": "主题",
+        "subCategory": "活动",
+        "type": "名词",
+        "example": "Ich mache viel Sport.",
+        "meaning": "运动"
+    },
+    {
+        "word": "die Sprache",
+        "category": "主题",
+        "subCategory": "语言",
+        "type": "名词",
+        "example": "Welche Sprachen sprichst du?",
+        "meaning": "语言"
+    },
+    {
+        "word": "sprechen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kann ich (mit) Herrn Klein sprechen?",
+        "meaning": "说话"
+    },
+    {
+        "word": "die Stadt",
+        "category": "主题",
+        "subCategory": "地理",
+        "type": "名词",
+        "example": "Heidelberg ist eine alte Stadt.",
+        "meaning": "城市"
+    },
+    {
+        "word": "stehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich glaube es nicht, aber es steht in der Zeitung. Der Bus steht schon an der Haltestelle.",
+        "meaning": "站立，位于"
+    },
+    {
+        "word": "die Stelle",
+        "category": "主题",
+        "subCategory": "职业",
+        "type": "名词",
+        "example": "Ich habe eine neue Stelle.",
+        "meaning": "职位"
+    },
+    {
+        "word": "stellen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Stell die Tasche rechts in die Ecke!",
+        "meaning": "放置"
+    },
+    {
+        "word": "der Stock",
+        "category": "主题",
+        "subCategory": "建筑",
+        "type": "名词",
+        "example": "Unsere Wohnung liegt im ersten Stock.",
+        "meaning": "楼层"
+    },
+    {
+        "word": "die Straße",
+        "category": "主题",
+        "subCategory": "地理",
+        "type": "名词",
+        "example": "In welcher Straße wohnen Sie?",
+        "meaning": "街道"
+    },
+    {
+        "word": "die Straßenbahn",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Wo fährt die Straßenbahn ab?",
+        "meaning": "电车"
+    },
+    {
+        "word": "studieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich studiere in Mainz.",
+        "meaning": "学习，研究"
+    },
+    {
+        "word": "das Studium",
+        "category": "主题",
+        "subCategory": "教育",
+        "type": "名词",
+        "example": "Das Studium beginnt im Oktober.",
+        "meaning": "学习，学业"
+    },
+    {
+        "word": "der Student",
+        "category": "主题",
+        "subCategory": "教育",
+        "type": "名词",
+        "example": "Ich bin Studentin.",
+        "meaning": "学生"
+    },
+    {
+        "word": "die Stunde",
+        "category": "主题",
+        "subCategory": "时间",
+        "type": "名词",
+        "example": "Ich bin in einer Stunde zurück.",
+        "meaning": "小时"
+    },
+    {
+        "word": "suchen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Suchst du etwas?",
+        "meaning": "寻找"
+    }
+,
+
+    {
+        "word": "tanzen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Tanzen Sie gern?",
+        "meaning": "跳舞"
+    },
+    {
+        "word": "die Tasche",
+        "category": "主题",
+        "subCategory": "物品",
+        "type": "名词",
+        "example": "Ich habe die Schlüssel in der Tasche.",
+        "meaning": "包"
+    },
+    {
+        "word": "das Taxi",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Es gibt heute keinen Bus mehr. Er fährt mit dem Taxi.",
+        "meaning": "出租车"
+    },
+    {
+        "word": "der Tee",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Ich trinke morgens immer Tee.",
+        "meaning": "茶"
+    },
+    {
+        "word": "der Teil",
+        "category": "主题",
+        "subCategory": "整体与部分",
+        "type": "名词",
+        "example": "Lies bitte auch den zweiten Teil.",
+        "meaning": "部分"
+    },
+    {
+        "word": "telefonieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Darf ich mal telefonieren?",
+        "meaning": "打电话"
+    },
+    {
+        "word": "das Telefon",
+        "category": "主题",
+        "subCategory": "通讯",
+        "type": "名词",
+        "example": "Haben Sie Telefon?",
+        "meaning": "电话"
+    },
+    {
+        "word": "der Termin",
+        "category": "主题",
+        "subCategory": "时间",
+        "type": "名词",
+        "example": "Am besten machen wir sofort einen Termin.",
+        "meaning": "预约"
+    },
+    {
+        "word": "der Test",
+        "category": "主题",
+        "subCategory": "教育",
+        "type": "名词",
+        "example": "Der Test war einfach.",
+        "meaning": "测试"
+    },
+    {
+        "word": "teuer",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist mir zu teuer.",
+        "meaning": "贵的"
+    },
+    {
+        "word": "der Text",
+        "category": "主题",
+        "subCategory": "语言",
+        "type": "名词",
+        "example": "Lesen Sie bitte diesen Text.",
+        "meaning": "文本"
+    },
+    {
+        "word": "das Thema",
+        "category": "主题",
+        "subCategory": "话题",
+        "type": "名词",
+        "example": "Wir sprechen heute über das Thema „Essen und Trinken“.",
+        "meaning": "主题"
+    },
+    {
+        "word": "das Ticket",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Wie viel kostet das Ticket?",
+        "meaning": "票"
+    },
+    {
+        "word": "der Tisch",
+        "category": "主题",
+        "subCategory": "家居",
+        "type": "名词",
+        "example": "Die Fotos liegen auf dem Tisch.",
+        "meaning": "桌子"
+    },
+    {
+        "word": "die Tochter",
+        "category": "主题",
+        "subCategory": "家庭",
+        "type": "名词",
+        "example": "Das ist meine Tochter Katharina.",
+        "meaning": "女儿"
+    },
+    {
+        "word": "die Toilette",
+        "category": "主题",
+        "subCategory": "家庭",
+        "type": "名词",
+        "example": "Wo ist die Toilette, bitte?",
+        "meaning": "厕所"
+    },
+    {
+        "word": "die Tomate",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Die Tomate ist noch grün.",
+        "meaning": "番茄"
+    },
+    {
+        "word": "tot",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sein Vater ist schon lange tot.",
+        "meaning": "死的"
+    },
+    {
+        "word": "treffen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich treffe in der Stadt einen Kollegen. Wir treffen uns immer freitags.",
+        "meaning": "见面，遇见"
+    },
+    {
+        "word": "die Treppe",
+        "category": "主题",
+        "subCategory": "建筑",
+        "type": "名词",
+        "example": "Die Toilette? Die Treppe hoch und dann links.",
+        "meaning": "楼梯"
+    },
+    {
+        "word": "trinken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Möchtest du etwas trinken?",
+        "meaning": "喝"
+    },
+    {
+        "word": "tschüss",
+        "category": "词性",
+        "subCategory": "感叹词",
+        "type": "感叹词",
+        "example": "Junge Leute sagen meistens „tschüss!“ und nicht „auf Wiedersehen“.",
+        "meaning": "再见"
+    },
+    {
+        "word": "tun",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe noch etwas zu tun. Was tut Ihr Mann?",
+        "meaning": "做"
+    },
+    {
+        "word": "über",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Gehen Sie hier über die Straße. Er wohnt im zweiten Stock über Familie Meier.",
+        "meaning": "在...上方，超过"
+    },
+    {
+        "word": "übernachten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Du kannst bei mir übernachten.",
+        "meaning": "过夜"
+    },
+    {
+        "word": "überweisen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie können das Geld auch überweisen.",
+        "meaning": "转账"
+    },
+    {
+        "word": "die Uhr",
+        "category": "主题",
+        "subCategory": "时间",
+        "type": "名词",
+        "example": "Es ist vier Uhr.",
+        "meaning": "钟，表"
+    },
+    {
+        "word": "um",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Er kommt um sieben Uhr. Da kommt er gerade um die Ecke.",
+        "meaning": "在...时，绕"
+    },
+    {
+        "word": "umziehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Nächsten Monat ziehen wir um.",
+        "meaning": "搬家"
+    },
+    {
+        "word": "und",
+        "category": "词性",
+        "subCategory": "连词",
+        "type": "连词",
+        "example": "Peter und Helmut sind meine Söhne.",
+        "meaning": "和"
+    }
+,
+
+    {
+        "word": "unser",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "形容词性代词",
+        "example": "Das ist unsere Lehrerin.",
+        "meaning": "我们的"
+    },
+    {
+        "word": "unten",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Er wohnt ganz unten im Haus.",
+        "meaning": "下面"
+    },
+    {
+        "word": "unter",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Unter uns wohnt eine Familie mit drei Kindern.",
+        "meaning": "在...之下"
+    },
+    {
+        "word": "der Unterricht",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "阳性名词",
+        "example": "Wir haben Unterricht von 8.00 bis 12.00 Uhr.",
+        "meaning": "课程"
+    },
+    {
+        "word": "unterschreiben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wo muss ich unterschreiben?",
+        "meaning": "签字"
+    },
+    {
+        "word": "die Unterschrift",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "阴性名词",
+        "example": "Hier fehlt noch Ihre Unterschrift.",
+        "meaning": "签名"
+    },
+    {
+        "word": "der Urlaub",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "阳性名词",
+        "example": "Ich nehme im September Urlaub.",
+        "meaning": "假期"
+    },
+    {
+        "word": "der Vater",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "阳性名词",
+        "example": "Mein Vater ist Arbeiter.",
+        "meaning": "父亲"
+    },
+    {
+        "word": "verboten",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Hier ist Rauchen verboten.",
+        "meaning": "禁止的"
+    },
+    {
+        "word": "verdienen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich verdiene 1.500 Euro im Monat.",
+        "meaning": "赚取"
+    },
+    {
+        "word": "der Verein",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "阳性名词",
+        "example": "Es gibt einen neuen Sportverein in der Stadt.",
+        "meaning": "协会"
+    },
+    {
+        "word": "verheiratet",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin verheiratet und habe drei Kinder.",
+        "meaning": "已婚的"
+    },
+    {
+        "word": "verkaufen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er verkauft sein altes Auto.",
+        "meaning": "出售"
+    },
+    {
+        "word": "der Verkäufer",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "阳性名词",
+        "example": "Meine Mutter ist Verkäuferin im Kaufhaus.",
+        "meaning": "售货员"
+    },
+    {
+        "word": "vermieten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Wohnung ist schon vermietet.",
+        "meaning": "出租"
+    },
+    {
+        "word": "der Vermieter",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "阳性名词",
+        "example": "Unser Vermieter heißt Huber. Er wohnt auch hier.",
+        "meaning": "房东"
+    },
+    {
+        "word": "verstehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Können Sie mich verstehen?",
+        "meaning": "理解"
+    },
+    {
+        "word": "der Verwandte",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "阳性名词",
+        "example": "Peter besucht seine Verwandten in Polen.",
+        "meaning": "亲戚"
+    },
+    {
+        "word": "viel",
+        "category": "词性",
+        "subCategory": "数量词",
+        "type": "数量词",
+        "example": "Hier regnet es viel.",
+        "meaning": "许多"
+    },
+    {
+        "word": "vielleicht",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich komme vielleicht mit dem Bus.",
+        "meaning": "可能"
+    },
+    {
+        "word": "von",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Das Auto von Felix ist kaputt.",
+        "meaning": "从"
+    },
+    {
+        "word": "vor",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Der Termin war vor einer Stunde.",
+        "meaning": "之前"
+    },
+    {
+        "word": "der Vorname",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "阳性名词",
+        "example": "Mein Vorname ist Eva.",
+        "meaning": "名字"
+    },
+    {
+        "word": "die Vorsicht",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "阴性名词",
+        "example": "Vorsicht! Da kommt ein Auto.",
+        "meaning": "小心"
+    },
+    {
+        "word": "wandern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir wandern um den Chiemsee.",
+        "meaning": "徒步旅行"
+    },
+    {
+        "word": "wann",
+        "category": "词性",
+        "subCategory": "疑问词",
+        "type": "疑问词",
+        "example": "Wann bist du fertig?",
+        "meaning": "什么时候"
+    }
+,
+
+    {
+        "word": "warten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Können Sie ein paar Minuten warten?",
+        "meaning": "等待"
+    },
+    {
+        "word": "warum",
+        "category": "词性",
+        "subCategory": "疑问词",
+        "type": "疑问词",
+        "example": "Warum kommt er nicht?",
+        "meaning": "为什么"
+    },
+    {
+        "word": "was",
+        "category": "词性",
+        "subCategory": "疑问词",
+        "type": "疑问词",
+        "example": "Was ist das?",
+        "meaning": "什么"
+    },
+    {
+        "word": "was für ein",
+        "category": "词性",
+        "subCategory": "疑问词",
+        "type": "疑问词",
+        "example": "Was für eine Farbe möchten Sie?",
+        "meaning": "什么样的"
+    },
+    {
+        "word": "(sich) waschen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wo kann ich mir die Hände waschen?",
+        "meaning": "洗"
+    },
+    {
+        "word": "das Wasser",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "中性名词",
+        "example": "Ein Glas Wasser, bitte.",
+        "meaning": "水"
+    },
+    {
+        "word": "weh tun",
+        "category": "词性",
+        "subCategory": "动词短语",
+        "type": "动词短语",
+        "example": "Mein Bein tut weh.",
+        "meaning": "疼"
+    },
+    {
+        "word": "weiblich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Kreuzen Sie bitte an: „weiblich“ oder „männlich“.",
+        "meaning": "女性的"
+    },
+    {
+        "word": "der Wein",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "阳性名词",
+        "example": "Nein danke, ich möchte keinen Wein.",
+        "meaning": "酒"
+    },
+    {
+        "word": "weit",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Zum Bahnhof ist es nicht weit.",
+        "meaning": "远"
+    },
+    {
+        "word": "weiter",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Der Bus fährt nicht weiter.",
+        "meaning": "继续"
+    },
+    {
+        "word": "welch-",
+        "category": "词性",
+        "subCategory": "疑问词",
+        "type": "疑问词",
+        "example": "Welches Buch möchtest du?",
+        "meaning": "哪个"
+    },
+    {
+        "word": "die Welt",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "阴性名词",
+        "example": "Es gibt viele Probleme auf der Welt.",
+        "meaning": "世界"
+    },
+    {
+        "word": "wenig",
+        "category": "词性",
+        "subCategory": "数量词",
+        "type": "数量词",
+        "example": "Ich habe leider nur wenig verstanden.",
+        "meaning": "少量"
+    },
+    {
+        "word": "wer",
+        "category": "词性",
+        "subCategory": "疑问词",
+        "type": "疑问词",
+        "example": "Wer ist das?",
+        "meaning": "谁"
+    },
+    {
+        "word": "werden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Mein Sohn will Arzt werden.",
+        "meaning": "成为"
+    },
+    {
+        "word": "das Wetter",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "中性名词",
+        "example": "Wir hatten schlechtes Wetter.",
+        "meaning": "天气"
+    },
+    {
+        "word": "wichtig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Dieses Formular ist sehr wichtig.",
+        "meaning": "重要的"
+    },
+    {
+        "word": "wie",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Wie heißt du?",
+        "meaning": "如何"
+    },
+    {
+        "word": "wiederholen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Können Sie das bitte wiederholen?",
+        "meaning": "重复"
+    },
+    {
+        "word": "das Wiederhören",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "中性名词",
+        "example": "Also auf Wiederhören!",
+        "meaning": "再见"
+    },
+    {
+        "word": "das Wiedersehen",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "中性名词",
+        "example": "Auf Wiedersehen!",
+        "meaning": "再见"
+    },
+    {
+        "word": "wie viel",
+        "category": "词性",
+        "subCategory": "疑问词",
+        "type": "疑问词",
+        "example": "Wie viel Milch nehmen Sie?",
+        "meaning": "多少"
+    },
+    {
+        "word": "willkommen",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Herzlich willkommen!",
+        "meaning": "欢迎"
+    },
+    {
+        "word": "der Wind",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "阳性名词",
+        "example": "Der Wind kommt aus Osten.",
+        "meaning": "风"
+    },
+    {
+        "word": "wir",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "人称代词",
+        "example": "Wir lernen Deutsch.",
+        "meaning": "我们"
+    },
+    {
+        "word": "wissen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Weißt du, wie er heißt?",
+        "meaning": "知道"
+    },
+    {
+        "word": "wo",
+        "category": "词性",
+        "subCategory": "疑问词",
+        "type": "疑问词",
+        "example": "Wo warst du im Urlaub?",
+        "meaning": "哪里"
+    },
+    {
+        "word": "woher",
+        "category": "词性",
+        "subCategory": "疑问词",
+        "type": "疑问词",
+        "example": "Woher kommen Sie?",
+        "meaning": "从哪里"
+    },
+    {
+        "word": "wohin",
+        "category": "词性",
+        "subCategory": "疑问词",
+        "type": "疑问词",
+        "example": "Wohin fährt dieser Bus?",
+        "meaning": "去哪里"
+    },
+    {
+        "word": "wohnen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich wohne in München.",
+        "meaning": "居住"
+    },
+    {
+        "word": "die Wohnung",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "阴性名词",
+        "example": "Seit wann haben Sie diese Wohnung?",
+        "meaning": "公寓"
+    },
+    {
+        "word": "wollen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wollen Sie einen Kaffee trinken?",
+        "meaning": "想要"
+    },
+    {
+        "word": "das Wort",
+        "category": "词性",
+        "subCategory": "名词",
+        "type": "中性名词",
+        "example": "Ich kenne das Wort nicht.",
+        "meaning": "单词"
+    },
+    {
+        "word": "wunderbar",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Essen schmeckt wunderbar.",
+        "meaning": "美妙的"
+    },
+    
+        {
+            "word": "zahlen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Zahlen, bitte!",
+            "meaning": "支付"
+        },
+        {
+            "word": "die Zeit",
+            "category": "词性",
+            "subCategory": "名词",
+            "type": "阴性名词",
+            "example": "Ich habe heute keine Zeit.",
+            "meaning": "时间"
+        },
+        {
+            "word": "zurzeit",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Zurzeit habe ich sehr viel zu tun.",
+            "meaning": "目前"
+        },
+        {
+            "word": "die Zeitung",
+            "category": "词性",
+            "subCategory": "名词",
+            "type": "阴性名词",
+            "example": "Ich lese gern Zeitung.",
+            "meaning": "报纸"
+        },
+        {
+            "word": "die Zigarette",
+            "category": "词性",
+            "subCategory": "名词",
+            "type": "阴性名词",
+            "example": "Wie teuer sind die Zigaretten?",
+            "meaning": "香烟"
+        },
+        {
+            "word": "das Zimmer",
+            "category": "词性",
+            "subCategory": "名词",
+            "type": "中性名词",
+            "example": "Das Zimmer ist groß.",
+            "meaning": "房间"
+        },
+        {
+            "word": "der Zoll",
+            "category": "词性",
+            "subCategory": "名词",
+            "type": "阳性名词",
+            "example": "Wir müssen noch durch den Zoll.",
+            "meaning": "海关"
+        },
+        {
+            "word": "zu",
+            "category": "词性",
+            "subCategory": "介词",
+            "type": "介词",
+            "example": "Der Bus fährt zum Bahnhof.",
+            "meaning": "去"
+        },
+        {
+            "word": "zufrieden",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Ich bin mit der Wohnung zufrieden.",
+            "meaning": "满意的"
+        },
+        {
+            "word": "der Zug",
+            "category": "词性",
+            "subCategory": "名词",
+            "type": "阳性名词",
+            "example": "Ich fahre gern mit dem Zug.",
+            "meaning": "火车"
+        },
+        {
+            "word": "zurück",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Wann kommst du zurück?",
+            "meaning": "回来"
+        },
+        {
+            "word": "zusammen",
+            "category": "词性",
+            "subCategory": "副词",
+            "type": "副词",
+            "example": "Sollen wir zusammen essen gehen?",
+            "meaning": "一起"
+        },
+        {
+            "word": "zwischen",
+            "category": "词性",
+            "subCategory": "介词",
+            "type": "介词",
+            "example": "Heidelberg liegt zwischen Frankfurt und Stuttgart.",
+            "meaning": "在...之间"
+        }
+    ]
+    
