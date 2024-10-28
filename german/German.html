@@ -499,29 +499,20 @@
 
         // 链接化例句中的单词，模糊匹配
         function linkifyExample(exampleText) {
-            const wordsInExample = exampleText.split(' ');
-            return wordsInExample.map(word => {
-                const cleanWord = word.replace(/[.,!?;:]/g, ''); // 去掉标点符号
+    const wordsInExample = exampleText.split(' ');
+    return wordsInExample.map(word => {
+        const cleanWord = word.replace(/[.,!?;:]/g, '').toLowerCase(); // 去掉标点符号并转为小写
 
-                // 使用正则表达式匹配单词的不同形式（忽略大小写）
-                const matchedWord = words.find(item => {
-                    // 检查长度：匹配单词的长度必须大于或等于原单词的长度
-                    if (item.word.length < cleanWord.length) {
-                        return false;
-                    }
-                    return new RegExp(`^${item.word}`, 'i').test(cleanWord); // 正则表达式匹配
-                });
+        // 使用完全匹配的方式忽略大小写
+        const matchedWord = words.find(item => item.word.toLowerCase() === cleanWord);
 
-                if (matchedWord) {
-                    return `
-                        <a href="#" onclick="showLinkedWordDetail('${matchedWord.word}')" style="color: blue; text-decoration: underline;">
-                            ${word}
-                        </a>
-                    `;
-                }
-                return word; // 如果没有匹配，返回原单词
-            }).join(' ');
+        if (matchedWord) {
+            return `<a href="#" onclick="showLinkedWordDetail('${matchedWord.word}')" style="color: blue; text-decoration: underline;">${word}</a>`;
         }
+        return word;
+    }).join(' ');
+}
+
 
         // 关闭链接单词的详细信息
         function closeLinkedWordDetail() {

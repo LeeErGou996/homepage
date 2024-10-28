@@ -4945,7 +4945,34 @@
             "type": "动词",
             "example": "Er rennt sehr schnell.",
             "meaning": "跑步"
+        },
+        {
+            "word": "jeden",
+            "category": "词性",
+            "subCategory": "代词",
+            "type": "代词",
+            "example": "Ich gehe jeden Tag zur Arbeit.",
+            "meaning": "每一个"
+        },
+        {
+            "word": "die Uhr",
+            "category": "主题",
+            "subCategory": "时间",
+            "type": "名词",
+            "example": "Es ist jetzt 10 Uhr.",
+            "meaning": "钟表，时间"
+        },
+        {
+            "word": "auf",
+            "category": "词性",
+            "subCategory": "介词",
+            "type": "介词",
+            "example": "Das Buch liegt auf dem Tisch.",
+            "meaning": "在...上"
         }
+        
+        
+        
         
     ]
     
