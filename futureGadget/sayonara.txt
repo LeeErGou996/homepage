@@ -35,60 +35,99 @@
 <p>君<span class="furigana">きみ</span>に出会<span class="furigana">であ</span>えないなんてイヤだと気付<span class="furigana">きづ</span>いた冬<span class="furigana">ふゆ</span></p>
 
 
+<p><strong>作詞：</strong>下川直哉</p>
+<p><strong>作曲：</strong>下川直哉</p>
+<p><strong>編曲：</strong>小林俊太郎</p>
+
+<!-- 歌詞开始 -->
+<p>忘<span class="furigana">わす</span>れられない 無邪気<span class="furigana">むじゃき</span>な声<span class="furigana">こえ</span> 今<span class="furigana">いま</span>も<span style="color:blue;">色褪</span><span class="furigana">いろあ</span>せずに</p>
+<p><span style="color:blue;">楽</span><span class="furigana">たの</span>しい日々<span class="furigana">ひび</span>が <span style="color:blue;">隠</span><span class="furigana">かく</span>していた 小<span class="furigana">ちい</span>さな想<span class="furigana">おも</span>いを</p>
+<p>でもね このしあわせ <span style="color:blue;">疑</span><span class="furigana">うたが</span>いもしないで</p>
+<p>「さよなら」なんて言葉<span class="furigana">ことば</span>の意味<span class="furigana">いみ</span>を<span style="color:blue;">習</span><span class="furigana">なら</span>わなかった</p>
+<p>もう夢<span class="furigana">ゆめ</span>じゃなくて そうこの世界<span class="furigana">せかい</span>に</p>
+<p>あの時<span class="furigana">とき</span>のように<span style="color:blue;">素直</span><span class="furigana">すなお</span>に</p>
+<p>ただ泣<span class="furigana">な</span>いて泣<span class="furigana">な</span>いた日々<span class="furigana">ひび</span>はどこにもない</p>
+<p>ねぇ僕<span class="furigana">ぼく</span>たちには<span style="color:blue;">たどり着</span><span class="furigana">つ</span>けない場所<span class="furigana">ばしょ</span>に</p>
+<p><span style="color:blue;">答</span><span class="furigana">こた</span>えがあったのかな</p>
+<p>君<span class="furigana">きみ</span>と出会<span class="furigana">であ</span>わなければつらくないのに</p>
+
+<p>恋人<span class="furigana">こいびと</span>たちの ささやく声<span class="furigana">こえ</span> 街<span class="furigana">まち</span>をあたためてく</p>
+<p><span style="color:blue;">楽</span><span class="furigana">たの</span>しい日々<span class="furigana">ひび</span>は <span style="color:blue;">隠</span><span class="furigana">かく</span>していた 深<span class="furigana">ふか</span>い悲<span class="furigana">かなし</span>みも</p>
+<p>でもね このしあわせ <span style="color:blue;">まわりが見</span><span class="furigana">み</span>えなくて</p>
+<p>「さよなら」のこと置<span class="furigana">お</span>き去<span class="furigana">ざ</span>りのままはしゃぎすぎてた</p>
+<p>まだ夢<span class="furigana">ゆめ</span>の中<span class="furigana">なか</span>で そう<span style="color:blue;">信</span><span class="furigana">しん</span>じたくて</p>
+<p>夢<span class="furigana">ゆめ</span>からもう<span style="color:blue;">覚</span><span class="furigana">さ</span>めているのに</p>
+<p>ただ<span style="color:blue;">笑</span><span class="furigana">わら</span>って笑<span class="furigana">わら</span>った日々<span class="furigana">ひび</span>はどこにもない</p>
+<p>でもあの場所<span class="furigana">ばしょ</span>には<span style="color:blue;">間違</span><span class="furigana">まちが</span>いじゃない</p>
+<p><span style="color:blue;">確</span><span class="furigana">たし</span>かに笑顔<span class="furigana">えがお</span>の僕<span class="furigana">ぼく</span>らがいた</p>
+<p>君<span class="furigana">きみ</span>と出会<span class="furigana">であ</span>わなければつらくないのに</p>
+
+<p>また冬<span class="furigana">ふゆ</span>が来<span class="furigana">き</span>る</p>
+<p>僕<span class="furigana">ぼく</span>たちのためじゃない</p>
+<p>恋<span class="furigana">こい</span>する人<span class="furigana">ひと</span>たちに</p>
+<p>もう夢<span class="furigana">ゆめ</span>じゃなくて そうこの世界<span class="furigana">せかい</span>に</p>
+<p>あの時<span class="furigana">とき</span>のように<span style="color:blue;">素直</span><span class="furigana">すなお</span>に</p>
+<p>ただ泣<span class="furigana">な</span>いて泣<span class="furigana">な</span>いた日々<span class="furigana">ひび</span>はどこにもない</p>
+<p>ねぇ僕<span class="furigana">ぼく</span>たちには<span style="color:blue;">たどり着</span><span class="furigana">つ</span>けない場所<span class="furigana">ばしょ</span>に</p>
+<p><span style="color:blue;">答</span><span class="furigana">こた</span>えがあったのかな</p>
+<p>君<span class="furigana">きみ</span>に出会<span class="furigana">であ</span>えないなんてイヤだと<span style="color:blue;">気付</span><span class="furigana">きづ</span>いた冬<span class="furigana">ふゆ</span></p>
+<!-- 歌詞结束 -->
+
+<!-- 日语学习例句开始 -->
 <h2>Japanese Learning Sentences</h2>
 
 <h3>N5 Level</h3>
-<p><strong>Original:</strong> さよならなんて言葉の意味を習わなかった<br>
+<p><strong>Original:</strong> <span style="color:blue;">さよなら</span>なんて言葉の<span style="color:blue;">意味</span>を<span style="color:blue;">習</span>わなかった<br>
 *Translation*: I never learned the meaning of the word “goodbye.”</p>
-<p><strong>New Sentence:</strong> 先生に「ありがとう」の意味を習いました。<br>
+<p><strong>New Sentence:</strong> 先生に「ありがとう」の<span style="color:blue;">意味</span>を<span style="color:blue;">習</span>いました。<br>
 *Translation*: I learned the meaning of "thank you" from my teacher.</p>
 
-<p><strong>Original:</strong> 今も色褪せずに<br>
+<p><strong>Original:</strong> 今も<span style="color:blue;">色褪</span>せずに<br>
 *Translation*: Still not faded even now.</p>
-<p><strong>New Sentence:</strong> この写真は色褪せずに残っています。<br>
+<p><strong>New Sentence:</strong> この写真は<span style="color:blue;">色褪</span>せずに残っています。<br>
 *Translation*: This photo has remained unfaded.</p>
 
 <h3>N4 Level</h3>
-<p><strong>Original:</strong> ただ泣いて泣いた日々はどこにもない<br>
+<p><strong>Original:</strong> ただ泣いて<span style="color:blue;">泣</span>いた日々はどこにもない<br>
 *Translation*: The days when I just cried and cried are nowhere to be found.</p>
 <p><strong>New Sentence:</strong> ただ遊んで遊んだ日々は思い出になりました。<br>
 *Translation*: The days of just playing and playing have become memories.</p>
 
-<p><strong>Original:</strong> 恋人たちのささやく声<br>
+<p><strong>Original:</strong> 恋人たちの<span style="color:blue;">ささやく</span>声<br>
 *Translation*: The whispers of lovers.</p>
 <p><strong>New Sentence:</strong> 子供たちの笑う声が公園に響きます。<br>
 *Translation*: The laughter of children echoes in the park.</p>
 
 <h3>N3 Level</h3>
-<p><strong>Original:</strong> たどり着けない場所に答えがあったのかな<br>
+<p><strong>Original:</strong> たどり<span style="color:blue;">着</span>けない場所に答えがあったのかな<br>
 *Translation*: Was the answer in a place we couldn’t reach?</p>
-<p><strong>New Sentence:</strong> 私には理解できない話の中に真実があるかもしれません。<br>
+<p><strong>New Sentence:</strong> 私には理解できない話の中に<span style="color:blue;">真実</span>があるかもしれません。<br>
 *Translation*: There might be truth in a story I can’t understand.</p>
 
-<p><strong>Original:</strong> 楽しい日々が隠していた小さな想いを<br>
+<p><strong>Original:</strong> <span style="color:blue;">楽しい</span>日々が<span style="color:blue;">隠</span>していた小さな想いを<br>
 *Translation*: The little feelings that happy days had hidden.</p>
-<p><strong>New Sentence:</strong> 忙しい日々が隠していた大切なことを思い出しました。<br>
+<p><strong>New Sentence:</strong> 忙しい日々が<span style="color:blue;">隠</span>していた大切なことを思い出しました。<br>
 *Translation*: I remembered the important things that busy days had hidden.</p>
 
 <h3>N2 Level</h3>
-<p><strong>Original:</strong> はしゃぎすぎてた<br>
+<p><strong>Original:</strong> <span style="color:blue;">はしゃぎ</span>すぎてた<br>
 *Translation*: I was too excited, playing too hard.</p>
-<p><strong>New Sentence:</strong> みんなで海で泳ぎすぎて、疲れてしまいました。<br>
+<p><strong>New Sentence:</strong> みんなで海で<span style="color:blue;">泳ぎ</span>すぎて、疲れてしまいました。<br>
 *Translation*: We swam too much in the sea, and we all got tired.</p>
 
-<p><strong>Original:</strong> まわりが見えなくて<br>
+<p><strong>Original:</strong> まわりが<span style="color:blue;">見え</span>なくて<br>
 *Translation*: I couldn’t see what was around me.</p>
-<p><strong>New Sentence:</strong> 彼女が好きすぎて、ほかのことが見えなくなった。<br>
+<p><strong>New Sentence:</strong> 彼女が好きすぎて、ほかのことが<span style="color:blue;">見え</span>なくなった。<br>
 *Translation*: I liked her so much that I couldn’t see anything else.</p>
 
 <h3>N1 Level</h3>
-<p><strong>Original:</strong> 君に出会えないなんてイヤだと気付いた冬<br>
+<p><strong>Original:</strong> 君に<span style="color:blue;">出会</span>えないなんてイヤだと<span style="color:blue;">気付</span>いた冬<br>
 *Translation*: The winter I realized I couldn’t bear the thought of not meeting you.</p>
-<p><strong>New Sentence:</strong> 大事な人を失うなんて耐えられないと気付いた夜でした。<br>
+<p><strong>New Sentence:</strong> 大事な人を失うなんて耐えられないと<span style="color:blue;">気付</span>いた夜でした。<br>
 *Translation*: It was the night I realized I couldn’t bear the thought of losing someone important.</p>
 
 <p><strong>Original:</strong> 恋する人たちに<br>
 *Translation*: For the people in love.</p>
-<p><strong>New Sentence:</strong> 夢を追う若者たちにエールを送りたい。<br>
+<p><strong>New Sentence:</strong> 夢を追う若者たちに<span style="color:blue;">エール</span>を送りたい。<br>
 *Translation*: I want to cheer for young people chasing their dreams.</p>
 <!-- 日语学习例句结束 -->
