@@ -37,3 +37,62 @@
                     <p>今日<span class="furigana">きょう</span>も君<span class="furigana">きみ</span>からもらった言葉<span class="furigana">ことば</span>を抱<span class="furigana">だ</span>きしめている</p>
                     <p>私<span class="furigana">わたし</span>にとってそれはまるで月明<span class="furigana">つきあ</span>かり</p>
                     <p>二人<span class="furigana">ふたり</span>で見上<span class="furigana">みあ</span>げたあの時<span class="furigana">とき</span>みたいにきれい</p>
+
+<!-- Japanese Learning Sentences Start -->
+<h2>Japanese Learning Sentences</h2>
+
+<h3>N5 Level</h3>
+<p><strong style="color:blue;">Original:</strong> 夕暮れ落ちる前に白い月が昇る<br>
+*Translation*: A white moon rises before dusk falls.</p>
+<p><strong style="color:blue;">New Sentence (Use of "～が昇る" - "something rises"): </strong> 太陽が朝に昇る。<br>
+*Translation*: The sun rises in the morning.</p>
+
+<p><strong style="color:blue;">Original:</strong> 君への想いはこぼれるほどあるのに<br>
+*Translation*: I have so many feelings for you that they overflow.</p>
+<p><strong style="color:blue;">New Sentence (Use of "こぼれるほど" - "to the point of overflowing"): </strong> 涙がこぼれるほど悲しかった。<br>
+*Translation*: I was so sad that my tears overflowed.</p>
+
+<h3>N4 Level</h3>
+<p><strong style="color:blue;">Original:</strong> 今日も君からもらった言葉を抱きしめている<br>
+*Translation*: Today, I’m still holding on to the words you gave me.</p>
+<p><strong style="color:blue;">New Sentence (Use of "抱きしめる" - "to embrace, to hold tightly"): </strong> 大切な思い出をいつまでも抱きしめています。<br>
+*Translation*: I hold on to precious memories forever.</p>
+
+<p><strong style="color:blue;">Original:</strong> どんなに遠く離れていても君と<br>
+*Translation*: No matter how far apart we are.</p>
+<p><strong style="color:blue;">New Sentence (Use of "～ても" - "even if/no matter how"): </strong> どんなに疲れていても、勉強を続けます。<br>
+*Translation*: No matter how tired I am, I keep studying.</p>
+
+<h3>N3 Level</h3>
+<p><strong style="color:blue;">Original:</strong> それだけがこの世界の全てだった<br>
+*Translation*: That alone was my whole world.</p>
+<p><strong style="color:blue;">New Sentence (Use of "全て" - "everything, whole"): </strong> 彼が私の全てでした。<br>
+*Translation*: He was my everything.</p>
+
+<p><strong style="color:blue;">Original:</strong> 言葉を持たない月が私なら<br>
+*Translation*: If I were the moon without words.</p>
+<p><strong style="color:blue;">New Sentence (Use of "～なら" - "if"): </strong> 雨なら家にいます。<br>
+*Translation*: If it rains, I’ll stay home.</p>
+
+<h3>N2 Level</h3>
+<p><strong style="color:blue;">Original:</strong> このまま時を止めてしまいたかった<br>
+*Translation*: I wanted to stop time just like this.</p>
+<p><strong style="color:blue;">New Sentence (Use of "～たい" - "want to do something"): </strong> 旅行に行きたいです。<br>
+*Translation*: I want to go on a trip.</p>
+
+<p><strong style="color:blue;">Original:</strong> 夏祭りに二人で見上げた花火は今でも<br>
+*Translation*: Even now, the fireworks we watched together at the summer festival.</p>
+<p><strong style="color:blue;">New Sentence (Use of "見上げる" - "to look up at something"): </strong> 夜空の星を見上げた。<br>
+*Translation*: I looked up at the stars in the night sky.</p>
+
+<h3>N1 Level</h3>
+<p><strong style="color:blue;">Original:</strong> 君という星見つめつづける<br>
+*Translation*: I keep gazing at the star that is you.</p>
+<p><strong style="color:blue;">New Sentence (Use of "見つめ続ける" - "to keep gazing at something"): </strong> 彼女の写真を見つめ続けた。<br>
+*Translation*: I kept gazing at her photo.</p>
+
+<p><strong style="color:blue;">Original:</strong> 私にとってそれはまるで月明かり<br>
+*Translation*: To me, it was like moonlight.</p>
+<p><strong style="color:blue;">New Sentence (Use of "まるで～のように" - "like, as if"): </strong> 彼の笑顔はまるで太陽のようです。<br>
+*Translation*: His smile is like the sun.</p>
+<!-- Japanese Learning Sentences End -->
