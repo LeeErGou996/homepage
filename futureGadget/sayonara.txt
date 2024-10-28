@@ -39,26 +39,26 @@
 <h2>Japanese Learning Sentences</h2>
 
 <h3>N5 Level</h3>
+<p><strong style="color:blue;">Original:</strong> 今も夢を見ている<br>
+*Translation*: Even now, I’m still dreaming.</p>
+<p><strong style="color:blue;">New Sentence (Use of "夢を見ている" - "to be dreaming"): </strong>毎晩楽しい夢を見ています。<br>
+*Translation*: I have pleasant dreams every night.</p>
+
+<h3>N4 Level</h3>
 <p><strong style="color:blue;">Original:</strong> 「さよなら」なんて言葉の意味を習わなかった<br>
 *Translation*: I never learned the meaning of the word “goodbye.”</p>
 <p><strong style="color:blue;">New Sentence (Use of "意味を習う" - "to learn the meaning of"): </strong>先生に「ありがとう」の意味を習いました。<br>
 *Translation*: I learned the meaning of "thank you" from my teacher.</p>
 
-<p><strong style="color:blue;">Original:</strong> 今も色褪せずに<br>
+<p><strong style="color:blue;">Original:</strong> 色褪せずに<br>
 *Translation*: Still not faded even now.</p>
 <p><strong style="color:blue;">New Sentence (Use of "色褪せずに" - "unfaded"): </strong>この写真は色褪せずに残っています。<br>
 *Translation*: This photo has remained unfaded.</p>
 
-<h3>N4 Level</h3>
 <p><strong style="color:blue;">Original:</strong> ただ泣いて泣いた日々はどこにもない<br>
 *Translation*: The days when I just cried and cried are nowhere to be found.</p>
 <p><strong style="color:blue;">New Sentence (Use of "ただ～だけ" - "just doing something repeatedly"): </strong>ただ遊んで遊んだ日々は思い出になりました。<br>
 *Translation*: The days of just playing and playing have become memories.</p>
-
-<p><strong style="color:blue;">Original:</strong> 恋人たちのささやく声<br>
-*Translation*: The whispers of lovers.</p>
-<p><strong style="color:blue;">New Sentence (Use of "～の声" - "the voice/sound of"): </strong>子供たちの笑う声が公園に響きます。<br>
-*Translation*: The laughter of children echoes in the park.</p>
 
 <h3>N3 Level</h3>
 <p><strong style="color:blue;">Original:</strong> たどり着けない場所に答えがあったのかな<br>
@@ -77,10 +77,10 @@
 <p><strong style="color:blue;">New Sentence (Use of "～すぎて" - "too much"): </strong>みんなで海で泳ぎすぎて、疲れてしまいました。<br>
 *Translation*: We swam too much in the sea, and we all got tired.</p>
 
-<p><strong style="color:blue;">Original:</strong> まわりが見えなくて<br>
-*Translation*: I couldn’t see what was around me.</p>
-<p><strong style="color:blue;">New Sentence (Use of "見えなくて" - "unable to see something"): </strong>彼女が好きすぎて、ほかのことが見えなくなった。<br>
-*Translation*: I liked her so much that I couldn’t see anything else.</p>
+<p><strong style="color:blue;">Original:</strong> 恋する人たちに<br>
+*Translation*: For the people in love.</p>
+<p><strong style="color:blue;">New Sentence (Use of "～する人たち" - "people who do something"): </strong>夢を追う若者たちにエールを送りたい。<br>
+*Translation*: I want to cheer for young people chasing their dreams.</p>
 
 <h3>N1 Level</h3>
 <p><strong style="color:blue;">Original:</strong> 君に出会えないなんてイヤだと気付いた冬<br>
@@ -88,8 +88,9 @@
 <p><strong style="color:blue;">New Sentence (Use of "気付いた" - "to realize"): </strong>大事な人を失うなんて耐えられないと気付いた夜でした。<br>
 *Translation*: It was the night I realized I couldn’t bear the thought of losing someone important.</p>
 
-<p><strong style="color:blue;">Original:</strong> 恋する人たちに<br>
-*Translation*: For the people in love.</p>
-<p><strong style="color:blue;">New Sentence (Use of "～する人たち" - "people who do something"): </strong>夢を追う若者たちにエールを送りたい。<br>
-*Translation*: I want to cheer for young people chasing their dreams.</p>
+<p><strong style="color:blue;">Original:</strong> いとおしく見えた<br>
+*Translation*: You looked so dear to me.</p>
+<p><strong style="color:blue;">New Sentence (Use of "いとおしい" - "dear, precious"): </strong>子犬がとてもいとおしく感じられる。<br>
+*Translation*: The puppy feels so precious to me.</p>
 <!-- Japanese Learning Sentences End -->
+

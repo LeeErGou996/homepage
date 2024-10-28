@@ -26,56 +26,50 @@
 <h3>N5 Level</h3>
 <p><strong style="color:blue;">Original:</strong> 粉雪が空から優しく降りてくる<br>
 *Translation*: The powdery snow gently falls from the sky.</p>
-<p><strong style="color:blue;">New Sentence (Use of "空から" - "from the sky"):</strong> 太陽が空から輝いている。<br>
+<p><strong style="color:blue;">New Sentence (Use of "空から" - "from the sky"): </strong>太陽が空から輝いている。<br>
 *Translation*: The sun is shining down from the sky.</p>
 
-<p><strong style="color:blue;">Original:</strong> あなたは立ち止まり<br>
-*Translation*: You stop in your tracks.</p>
-<p><strong style="color:blue;">New Sentence (Use of "立ち止まる" - "to stop"):</strong> 私は信号で立ち止まりました。<br>
-*Translation*: I stopped at the traffic light.</p>
+<p><strong style="color:blue;">Original:</strong> あの日見た雪の白さ<br>
+*Translation*: The whiteness of the snow I saw that day.</p>
+<p><strong style="color:blue;">New Sentence (Use of "～の白さ" - "the whiteness of something"): </strong>桜の花の白さが美しいです。<br>
+*Translation*: The whiteness of the cherry blossoms is beautiful.</p>
 
-<p><strong style="color:blue;">Original:</strong> I still love you<br>
-*Translation*: I still love you.</p>
-<p><strong style="color:blue;">New Sentence (Use of "I still..." - expressing ongoing feeling):</strong> I still remember you.<br>
-*Translation*: I still remember you.</p>
+<p><strong style="color:blue;">Original:</strong> 今でも夢を見ている<br>
+*Translation*: Even now, I still dream.</p>
+<p><strong style="color:blue;">New Sentence (Use of "夢を見ている" - "to be dreaming"): </strong>毎晩楽しい夢を見ています。<br>
+*Translation*: I have pleasant dreams every night.</p>
 
 <h3>N4 Level</h3>
-<p><strong style="color:blue;">Original:</strong> 思い出していますか 空を見上げながら<br>
-*Translation*: Do you remember as you look up at the sky?</p>
-<p><strong style="color:blue;">New Sentence (Use of "ながら" - "while doing something"):</strong> 音楽を聴きながら本を読んでいます。<br>
-*Translation*: I’m reading a book while listening to music.</p>
-
-<p><strong style="color:blue;">Original:</strong> 雪が切ない<br>
-*Translation*: The snow feels bittersweet.</p>
-<p><strong style="color:blue;">New Sentence (Use of "切ない" - "bittersweet"):</strong> 映画の結末が切なくて涙が出た。<br>
-*Translation*: The ending of the movie was bittersweet and made me cry.</p>
+<p><strong style="color:blue;">Original:</strong> 手のひらで受け止めた雪が切ない<br>
+*Translation*: The snow I caught in my hand feels bittersweet.</p>
+<p><strong style="color:blue;">New Sentence (Use of "切ない" - "bittersweet, poignant"): </strong>その歌を聴くと切ない気持ちになる。<br>
+*Translation*: Listening to that song makes me feel bittersweet.</p>
 
 <h3>N3 Level</h3>
-<p><strong style="color:blue;">Original:</strong> いとおしく見えた<br>
-*Translation*: You looked so dear to me.</p>
-<p><strong style="color:blue;">New Sentence (Use of "いとおしい" - "dear, precious"):</strong> 赤ちゃんがとてもいとおしく感じられた。<br>
-*Translation*: The baby felt so precious to me.</p>
+<p><strong style="color:blue;">Original:</strong> あなたは立ち止まり<br>
+*Translation*: You stop in your tracks.</p>
+<p><strong style="color:blue;">New Sentence (Use of "立ち止まる" - "to stop in one's tracks"): </strong>考え事をして、突然立ち止まりました。<br>
+*Translation*: Lost in thought, I suddenly stopped in my tracks.</p>
 
-<p><strong style="color:blue;">Original:</strong> あなたが楽しそうに話をしてくれた<br>
-*Translation*: You happily talked with me.</p>
-<p><strong style="color:blue;">New Sentence (Use of "楽しそうに" - "happily"):</strong> 友達が楽しそうに新しい仕事について話してくれた。<br>
-*Translation*: My friend happily talked about their new job.</p>
-
-<p><strong style="color:blue;">Original:</strong> 初めて触れた唇の温もりも忘れない<br>
-*Translation*: I won’t forget the warmth of the first touch of your lips.</p>
-<p><strong style="color:blue;">New Sentence (Use of "初めて" - "first time"):</strong> 初めて会った日のことを今も覚えています。<br>
-*Translation*: I still remember the day we first met.</p>
-
-<p><strong style="color:blue;">Original:</strong> あの日見た白い世界<br>
-*Translation*: The white world I saw that day.</p>
-<p><strong style="color:blue;">New Sentence (Use of "あの日見た" - "the day I saw"): </strong>旅行中に見た美しい景色が忘れられません。<br>
-*Translation*: I can’t forget the beautiful scenery I saw during the trip.</p>
+<p><strong style="color:blue;">Original:</strong> 恋しく思えた<br>
+*Translation*: Felt so dear, missed.</p>
+<p><strong style="color:blue;">New Sentence (Use of "恋しい" - "dear, missed"): </strong>故郷が恋しい。<br>
+*Translation*: I miss my hometown.</p>
 
 <h3>N2 Level</h3>
+<p><strong style="color:blue;">Original:</strong> 暖かいあなたの優しさに似ている<br>
+*Translation*: It’s like your warm kindness.</p>
+<p><strong style="color:blue;">New Sentence (Use of "～に似ている" - "to resemble, to be like"): </strong>彼の声は父の声に似ている。<br>
+*Translation*: His voice is like my father's.</p>
+
+<p><strong style="color:blue;">Original:</strong> いとおしく見えた<br>
+*Translation*: You looked so dear to me.</p>
+<p><strong style="color:blue;">New Sentence (Use of "いとおしい" - "dear, precious"): </strong>子犬がとてもいとおしく感じられる。<br>
+*Translation*: The puppy feels so precious to me.</p>
+
+<h3>N1 Level</h3>
 <p><strong style="color:blue;">Original:</strong> あの時触れた指先の冷たさも忘れない<br>
 *Translation*: I won’t forget the coldness of your fingertips that I felt that time.</p>
-<p><strong style="color:blue;">New Sentence (Use of "忘れない" - "not to forget"): </strong>過去の辛い経験を忘れないことで強くなれる。<br>
-*Translation*: Remembering past painful experiences can make you stronger.</p>
-
-
-<!-- 日语学习总结结束 -->
+<p><strong style="color:blue;">New Sentence (Use of "冷たさ" - "coldness"): </strong>冬の風の冷たさが身にしみる。<br>
+*Translation*: The coldness of the winter wind chills me to the bone.</p>
+<!-- Japanese Learning Sentences End -->
