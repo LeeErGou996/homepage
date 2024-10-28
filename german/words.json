@@ -3630,6 +3630,7 @@
         "example": "Ist Ihr Gepäck sehr schwer? Das ist eine schwere Arbeit.",
         "meaning": "重的，困难的"
     },
+    
     {
         "word": "die Schwester",
         "category": "主题",
@@ -4782,6 +4783,169 @@
             "type": "介词",
             "example": "Heidelberg liegt zwischen Frankfurt und Stuttgart.",
             "meaning": "在...之间"
+        },
+
+
+
+
+
+
+
+
+            {
+                "word": "die Wolke",
+                "category": "主题",
+                "subCategory": "自然",
+                "type": "名词",
+                "example": "Am Himmel gibt es viele Wolken.",
+                "meaning": "云"
+            },
+            {
+                "word": "der Schnee",
+                "category": "主题",
+                "subCategory": "天气",
+                "type": "名词",
+                "example": "Im Winter fällt viel Schnee.",
+                "meaning": "雪"
+            },
+            {
+                "word": "die Katze",
+                "category": "主题",
+                "subCategory": "动物",
+                "type": "名词",
+                "example": "Die Katze schläft auf dem Sofa.",
+                "meaning": "猫"
+            },
+            {
+                "word": "der Baum",
+                "category": "主题",
+                "subCategory": "自然",
+                "type": "名词",
+                "example": "Im Park stehen viele Bäume.",
+                "meaning": "树"
+            },
+            {
+                "word": "der Himmel",
+                "category": "主题",
+                "subCategory": "自然",
+                "type": "名词",
+                "example": "Der Himmel ist heute blau.",
+                "meaning": "天空"
+            },
+            {
+                "word": "der Stern",
+                "category": "主题",
+                "subCategory": "自然",
+                "type": "名词",
+                "example": "In der Nacht sieht man viele Sterne.",
+                "meaning": "星星"
+            },
+            {
+                "word": "die Tür",
+                "category": "主题",
+                "subCategory": "建筑",
+                "type": "名词",
+                "example": "Mach bitte die Tür zu.",
+                "meaning": "门"
+            },
+            {
+                "word": "das Fenster",
+                "category": "主题",
+                "subCategory": "建筑",
+                "type": "名词",
+                "example": "Das Fenster ist offen.",
+                "meaning": "窗户"
+            }
+        ,
+        {
+            "word": "sauber",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Das Zimmer ist sauber.",
+            "meaning": "干净的"
+        },
+        {
+            "word": "dreckig",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Die Schuhe sind dreckig.",
+            "meaning": "脏的"
+        },
+        {
+            "word": "aufstehen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Ich stehe jeden Morgen um 7 Uhr auf.",
+            "meaning": "起床"
+        },
+
+        {
+            "word": "dunkel",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Es wird draußen schon dunkel.",
+            "meaning": "黑暗的"
+        },
+        {
+            "word": "süß",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Das Obst ist sehr süß.",
+            "meaning": "甜的"
+        },
+        {
+            "word": "warm",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Heute ist es warm draußen.",
+            "meaning": "温暖的"
+        },
+        {
+            "word": "zeigen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Kannst du mir den Weg zeigen?",
+            "meaning": "展示"
+        },
+        {
+            "word": "malen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Sie malt ein schönes Bild.",
+            "meaning": "画画"
+        },
+        {
+            "word": "springen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Das Kind springt vor Freude.",
+            "meaning": "跳跃"
+        },
+        {
+            "word": "weinen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Das Baby weint.",
+            "meaning": "哭"
+        },
+        {
+            "word": "rennen",
+            "category": "词性",
+            "subCategory": "动词",
+            "type": "动词",
+            "example": "Er rennt sehr schnell.",
+            "meaning": "跑步"
         }
+        
     ]
     
