@@ -115,6 +115,7 @@
             <li id="song1Link">Powder Snow</li>
             <li id="song2Link">月がきれい</li>
             <li id="song3Link">さよならのこと</li>
+          	  <li id="song4Link">ライア</li>
             <li id="spotifyLink1">Spotify Playlist 1: Instrumental Music</li>
             <li id="spotifyLink2">Spotify Playlist 2: 日本語の歌</li>
         </ul>
@@ -153,6 +154,7 @@
         const song1Link = document.getElementById('song1Link');
         const song2Link = document.getElementById('song2Link');
         const song3Link = document.getElementById('song3Link');
+        const song4Link = document.getElementById('song4Link');
         const spotifyLink1 = document.getElementById('spotifyLink1');
         const spotifyLink2 = document.getElementById('spotifyLink2');
         const toggleFurigana = document.getElementById('toggleFurigana');
@@ -177,7 +179,8 @@
             const backgroundImages = {
                 'powder-snow.txt': './images/powder-snow-bg.jpg',
                 'tsukiga.txt': './images/tsukiga-bg.jpg',
-                'sayonara.txt': './images/sayonara-bg.jpg'
+                'sayonara.txt': './images/sayonara-bg.jpg',
+              'lyra.txt': './images/lyra-bg.jpg'
             };
 
             fetch(filename)
@@ -191,8 +194,9 @@
                     contentDiv.innerHTML = `<h1>${title} 歌詞</h1><div class="lyrics">${text.replace(/\n/g, '<br>')}</div>`;
                     if (backgroundImages[filename]) {
                         document.body.style.backgroundImage = `url('${backgroundImages[filename]}')`;
-                        document.body.style.backgroundSize = 'cover';
-                        document.body.style.backgroundPosition = 'center';
+                        document.body.style.backgroundSize = 'auto';
+                        document.body.style.backgroundPosition = 'top center'; /* 将图片定位到页面顶部 */
+
                         document.body.style.backgroundRepeat = 'no-repeat';
                     } else {
                         document.body.style.backgroundImage = 'none';
@@ -220,6 +224,9 @@
 
         song3Link.addEventListener('click', () => {
             loadLyrics('sayonara.txt', 'さよならのこと');
+        });
+      	  song4Link.addEventListener('click', () => {
+            loadLyrics('lyra.txt', 'ライア');
         });
 
         // 点击第一个Spotify条目时展示第一个Spotify的嵌入代码
