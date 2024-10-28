@@ -195,7 +195,8 @@
                     if (backgroundImages[filename]) {
                         document.body.style.backgroundImage = `url('${backgroundImages[filename]}')`;
                         document.body.style.backgroundSize = 'auto';
-                        document.body.style.backgroundPosition = 'center';
+                        document.body.style.backgroundPosition = 'top center'; /* 将图片定位到页面顶部 */
+
                         document.body.style.backgroundRepeat = 'no-repeat';
                     } else {
                         document.body.style.backgroundImage = 'none';
