@@ -18,3 +18,63 @@
                     <p>今<span class="furigana">いま</span>でも夢<span class="furigana">ゆめ</span>を見<span class="furigana">み</span>るの<br>あの日<span class="furigana">ひ</span>見<span class="furigana">み</span>た白<span class="furigana">しろ</span>い世界<span class="furigana">せかい</span></p>
                     <p>あの時<span class="furigana">とき</span>触<span class="furigana">ふ</span>れた指先<span class="furigana">ゆびさき</span>の<br>冷<span class="furigana">つめ</span>たさも忘<span class="furigana">わす</span>れない</p>
                     <p>I still love you</p>
+
+
+<!-- 日语学习总结开始 -->
+<h2>Japanese Learning Summary</h2>
+
+<h3>N5 Level</h3>
+<p><strong>Original:</strong> 粉雪が空から優しく降りてくる<br>
+*Translation*: The powdery snow gently falls from the sky.</p>
+<p><strong>New Sentence:</strong> 太陽が空から輝いている。<br>
+*Translation*: The sun is shining down from the sky.</p>
+
+<p><strong>Original:</strong> あなたは立ち止まり<br>
+*Translation*: You stop in your tracks.</p>
+<p><strong>New Sentence:</strong> 私は信号で立ち止まりました。<br>
+*Translation*: I stopped at the traffic light.</p>
+
+<h3>N4 Level</h3>
+<p><strong>Original:</strong> 思い出していますか 空を見上げながら<br>
+*Translation*: Do you remember as you look up at the sky?</p>
+<p><strong>New Sentence:</strong> 音楽を聴きながら本を読んでいます。<br>
+*Translation*: I’m reading a book while listening to music.</p>
+
+<p><strong>Original:</strong> 雪が切ない<br>
+*Translation*: The snow feels bittersweet.</p>
+<p><strong>New Sentence:</strong> 映画の結末が切なくて涙が出た。<br>
+*Translation*: The ending of the movie was bittersweet and made me cry.</p>
+
+<h3>N3 Level</h3>
+<p><strong>Original:</strong> いとおしく見えた<br>
+*Translation*: You looked so dear to me.</p>
+<p><strong>New Sentence:</strong> 赤ちゃんがとてもいとおしく感じられた。<br>
+*Translation*: The baby felt so precious to me.</p>
+
+<p><strong>Original:</strong> あなたが楽しそうに話をしてくれた<br>
+*Translation*: You happily talked with me.</p>
+<p><strong>New Sentence:</strong> 友達が楽しそうに新しい仕事について話してくれた。<br>
+*Translation*: My friend happily talked about their new job.</p>
+
+<h3>N2 Level</h3>
+<p><strong>Original:</strong> 初めて触れた唇の温もりも忘れない<br>
+*Translation*: I won’t forget the warmth of the first touch of your lips.</p>
+<p><strong>New Sentence:</strong> 初めて会った日のことを今も覚えています。<br>
+*Translation*: I still remember the day we first met.</p>
+
+<p><strong>Original:</strong> あの日見た白い世界<br>
+*Translation*: The white world I saw that day.</p>
+<p><strong>New Sentence:</strong> 旅行中に見た美しい景色が忘れられません。<br>
+*Translation*: I can’t forget the beautiful scenery I saw during the trip.</p>
+
+<h3>N1 Level</h3>
+<p><strong>Original:</strong> あの時触れた指先の冷たさも忘れない<br>
+*Translation*: I won’t forget the coldness of your fingertips that I felt that time.</p>
+<p><strong>New Sentence:</strong> 過去の辛い経験を忘れないことで強くなれる。<br>
+*Translation*: Remembering past painful experiences can make you stronger.</p>
+
+<p><strong>Original:</strong> I still love you<br>
+*Translation*: I still love you.</p>
+<p><strong>New Sentence:</strong> I still remember you.<br>
+*Translation*: I still remember you.</p>
+<!-- 日语学习总结结束 -->
