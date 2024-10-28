@@ -33,3 +33,62 @@
 <p>ねぇ僕<span class="furigana">ぼく</span>たちにはたどり着<span class="furigana">つ</span>けない場所<span class="furigana">ばしょ</span>に</p>
 <p>答<span class="furigana">こた</span>えがあったのかな</p>
 <p>君<span class="furigana">きみ</span>に出会<span class="furigana">であ</span>えないなんてイヤだと気付<span class="furigana">きづ</span>いた冬<span class="furigana">ふゆ</span></p>
+
+
+<h2>Japanese Learning Sentences</h2>
+
+<h3>N5 Level</h3>
+<p><strong>Original:</strong> さよならなんて言葉の意味を習わなかった<br>
+*Translation*: I never learned the meaning of the word “goodbye.”</p>
+<p><strong>New Sentence:</strong> 先生に「ありがとう」の意味を習いました。<br>
+*Translation*: I learned the meaning of "thank you" from my teacher.</p>
+
+<p><strong>Original:</strong> 今も色褪せずに<br>
+*Translation*: Still not faded even now.</p>
+<p><strong>New Sentence:</strong> この写真は色褪せずに残っています。<br>
+*Translation*: This photo has remained unfaded.</p>
+
+<h3>N4 Level</h3>
+<p><strong>Original:</strong> ただ泣いて泣いた日々はどこにもない<br>
+*Translation*: The days when I just cried and cried are nowhere to be found.</p>
+<p><strong>New Sentence:</strong> ただ遊んで遊んだ日々は思い出になりました。<br>
+*Translation*: The days of just playing and playing have become memories.</p>
+
+<p><strong>Original:</strong> 恋人たちのささやく声<br>
+*Translation*: The whispers of lovers.</p>
+<p><strong>New Sentence:</strong> 子供たちの笑う声が公園に響きます。<br>
+*Translation*: The laughter of children echoes in the park.</p>
+
+<h3>N3 Level</h3>
+<p><strong>Original:</strong> たどり着けない場所に答えがあったのかな<br>
+*Translation*: Was the answer in a place we couldn’t reach?</p>
+<p><strong>New Sentence:</strong> 私には理解できない話の中に真実があるかもしれません。<br>
+*Translation*: There might be truth in a story I can’t understand.</p>
+
+<p><strong>Original:</strong> 楽しい日々が隠していた小さな想いを<br>
+*Translation*: The little feelings that happy days had hidden.</p>
+<p><strong>New Sentence:</strong> 忙しい日々が隠していた大切なことを思い出しました。<br>
+*Translation*: I remembered the important things that busy days had hidden.</p>
+
+<h3>N2 Level</h3>
+<p><strong>Original:</strong> はしゃぎすぎてた<br>
+*Translation*: I was too excited, playing too hard.</p>
+<p><strong>New Sentence:</strong> みんなで海で泳ぎすぎて、疲れてしまいました。<br>
+*Translation*: We swam too much in the sea, and we all got tired.</p>
+
+<p><strong>Original:</strong> まわりが見えなくて<br>
+*Translation*: I couldn’t see what was around me.</p>
+<p><strong>New Sentence:</strong> 彼女が好きすぎて、ほかのことが見えなくなった。<br>
+*Translation*: I liked her so much that I couldn’t see anything else.</p>
+
+<h3>N1 Level</h3>
+<p><strong>Original:</strong> 君に出会えないなんてイヤだと気付いた冬<br>
+*Translation*: The winter I realized I couldn’t bear the thought of not meeting you.</p>
+<p><strong>New Sentence:</strong> 大事な人を失うなんて耐えられないと気付いた夜でした。<br>
+*Translation*: It was the night I realized I couldn’t bear the thought of losing someone important.</p>
+
+<p><strong>Original:</strong> 恋する人たちに<br>
+*Translation*: For the people in love.</p>
+<p><strong>New Sentence:</strong> 夢を追う若者たちにエールを送りたい。<br>
+*Translation*: I want to cheer for young people chasing their dreams.</p>
+<!-- 日语学习例句结束 -->
