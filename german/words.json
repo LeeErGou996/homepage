@@ -4969,7 +4969,49 @@
             "type": "介词",
             "example": "Das Buch liegt auf dem Tisch.",
             "meaning": "在...上"
-        }
+        },
+        {
+            "word": "der Abend",
+            "category": "主题",
+            "subCategory": "时间",
+            "type": "名词",
+            "example": "Guten Abend! Wie war dein Tag?",
+            "meaning": "晚上"
+        },
+        {
+            "word": "die Pause",
+            "category": "主题",
+            "subCategory": "学习",
+            "type": "名词",
+            "example": "Wir machen eine kurze Pause.",
+            "meaning": "休息"
+        },
+        {
+            "word": "der Tag",
+            "category": "主题",
+            "subCategory": "时间",
+            "type": "名词",
+            "example": "Heute ist ein schöner Tag.",
+            "meaning": "天，日"
+        },
+        {
+            "word": "schön",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Das Wetter ist heute schön.",
+            "meaning": "美丽的"
+        },
+        
+            {
+                "word": "Deutsch",
+                "category": "主题",
+                "subCategory": "语言",
+                "type": "名词",
+                "example": "Ich lerne Deutsch in der Schule.",
+                "meaning": "德语"
+            }
+        
         
         
         
