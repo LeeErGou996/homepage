@@ -194,7 +194,7 @@
                     contentDiv.innerHTML = `<h1>${title} 歌詞</h1><div class="lyrics">${text.replace(/\n/g, '<br>')}</div>`;
                     if (backgroundImages[filename]) {
                         document.body.style.backgroundImage = `url('${backgroundImages[filename]}')`;
-                        document.body.style.backgroundSize = 'cover';
+                        document.body.style.backgroundSize = 'contain';
                         document.body.style.backgroundPosition = 'center';
                         document.body.style.backgroundRepeat = 'no-repeat';
                     } else {
