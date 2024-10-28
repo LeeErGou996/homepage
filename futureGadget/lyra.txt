@@ -88,10 +88,10 @@
 <p><strong style="color:blue;">New Sentence (Use of "よみがえる" - "to revive/come back"): </strong>この曲を聴くと、学生時代の思い出がよみがえります。<br>
 *Translation*: Listening to this song brings back memories of my student days.</p>
 
-<p><strong style="color:blue;">Original:</strong> デジャブみたいに心の奧で揺れてる<br>
-*Translation*: It wavers in the depths of my heart, like déjà vu.</p>
-<p><strong style="color:blue;">New Sentence (Use of "心の奥で" - "in the depths of my heart"): </strong>彼の言葉が心の奥で響きました。<br>
-*Translation*: His words resonated in the depths of my heart.</p>
+<p><strong style="color:blue;">Original:</strong> 織姫様にはなれない<br>
+*Translation*: I can't become a star like Orihime.</p>
+<p><strong style="color:blue;">New Sentence (Use of "～にはなれない" - "can't become"): </strong>私はまだ先生にはなれない。<br>
+*Translation*: I can't become a teacher yet.</p>
 
 <h3>N2 Level</h3>
 <p><strong style="color:blue;">Original:</strong> それも愛なのかな?<br>
@@ -99,10 +99,10 @@
 <p><strong style="color:blue;">New Sentence (Use of "なのかな" - "I wonder if..."): </strong>これは本当に良い選択なのかな？<br>
 *Translation*: I wonder if this is truly the right choice?</p>
 
-<p><strong style="color:blue;">Original:</strong> 織姫様にはなれない<br>
-*Translation*: I can't become a star like Orihime.</p>
-<p><strong style="color:blue;">New Sentence (Use of "～にはなれない" - "can't become"): </strong>私はまだ先生にはなれない。<br>
-*Translation*: I can't become a teacher yet.</p>
+<p><strong style="color:blue;">Original:</strong> デジャブみたいに心の奧で揺れてる<br>
+*Translation*: It wavers in the depths of my heart, like déjà vu.</p>
+<p><strong style="color:blue;">New Sentence (Use of "心の奥で" - "in the depths of my heart"): </strong>彼の言葉が心の奥で響きました。<br>
+*Translation*: His words resonated in the depths of my heart.</p>
 
 <h3>N1 Level</h3>
 <p><strong style="color:blue;">Original:</strong> 全ての場面が戀しすぎて<br>
