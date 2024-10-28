@@ -35,60 +35,61 @@
 <p>君<span class="furigana">きみ</span>に出会<span class="furigana">であ</span>えないなんてイヤだと気付<span class="furigana">きづ</span>いた冬<span class="furigana">ふゆ</span></p>
 
 
+<!-- Japanese Learning Sentences Start -->
 <h2>Japanese Learning Sentences</h2>
 
 <h3>N5 Level</h3>
-<p><strong>Original:</strong> 「さよなら」なんて言葉の<span style="color:blue;">意味</span>を<span style="color:blue;">習</span>わなかった<br>
+<p><strong style="color:blue;">Original:</strong> 「さよなら」なんて言葉の意味を習わなかった<br>
 *Translation*: I never learned the meaning of the word “goodbye.”</p>
-<p><strong>New Sentence:</strong> 先生に「ありがとう」の<span style="color:blue;">意味</span>を<span style="color:blue;">習</span>いました。<br>
+<p><strong style="color:blue;">New Sentence (Use of "意味を習う" - "to learn the meaning of"): </strong>先生に「ありがとう」の意味を習いました。<br>
 *Translation*: I learned the meaning of "thank you" from my teacher.</p>
 
-<p><strong>Original:</strong> 今も<span style="color:blue;">色褪</span>せずに<br>
+<p><strong style="color:blue;">Original:</strong> 今も色褪せずに<br>
 *Translation*: Still not faded even now.</p>
-<p><strong>New Sentence:</strong> この写真は<span style="color:blue;">色褪</span>せずに残っています。<br>
+<p><strong style="color:blue;">New Sentence (Use of "色褪せずに" - "unfaded"): </strong>この写真は色褪せずに残っています。<br>
 *Translation*: This photo has remained unfaded.</p>
 
 <h3>N4 Level</h3>
-<p><strong>Original:</strong> ただ泣いて<span style="color:blue;">泣</span>いた日々はどこにもない<br>
+<p><strong style="color:blue;">Original:</strong> ただ泣いて泣いた日々はどこにもない<br>
 *Translation*: The days when I just cried and cried are nowhere to be found.</p>
-<p><strong>New Sentence:</strong> ただ遊んで<span style="color:blue;">遊ん</span>だ日々は思い出になりました。<br>
+<p><strong style="color:blue;">New Sentence (Use of "ただ～だけ" - "just doing something repeatedly"): </strong>ただ遊んで遊んだ日々は思い出になりました。<br>
 *Translation*: The days of just playing and playing have become memories.</p>
 
-<p><strong>Original:</strong> 恋人たちの<span style="color:blue;">ささやく</span>声<br>
+<p><strong style="color:blue;">Original:</strong> 恋人たちのささやく声<br>
 *Translation*: The whispers of lovers.</p>
-<p><strong>New Sentence:</strong> 子供たちの<span style="color:blue;">笑う</span>声が公園に響きます。<br>
+<p><strong style="color:blue;">New Sentence (Use of "～の声" - "the voice/sound of"): </strong>子供たちの笑う声が公園に響きます。<br>
 *Translation*: The laughter of children echoes in the park.</p>
 
 <h3>N3 Level</h3>
-<p><strong>Original:</strong> <span style="color:blue;">たどり着</span>けない場所に<span style="color:blue;">答</span>えがあったのかな<br>
+<p><strong style="color:blue;">Original:</strong> たどり着けない場所に答えがあったのかな<br>
 *Translation*: Was the answer in a place we couldn’t reach?</p>
-<p><strong>New Sentence:</strong> 私には理解できない話の中に<span style="color:blue;">真実</span>があるかもしれません。<br>
+<p><strong style="color:blue;">New Sentence (Use of "～かもしれません" - "might be, maybe"): </strong>私には理解できない話の中に真実があるかもしれません。<br>
 *Translation*: There might be truth in a story I can’t understand.</p>
 
-<p><strong>Original:</strong> <span style="color:blue;">楽しい</span>日々が<span style="color:blue;">隠</span>していた小さな想いを<br>
+<p><strong style="color:blue;">Original:</strong> 楽しい日々が隠していた小さな想いを<br>
 *Translation*: The little feelings that happy days had hidden.</p>
-<p><strong>New Sentence:</strong> 忙しい日々が<span style="color:blue;">隠</span>していた大切なことを思い出しました。<br>
+<p><strong style="color:blue;">New Sentence (Use of "隠していた" - "to hide something"): </strong>忙しい日々が隠していた大切なことを思い出しました。<br>
 *Translation*: I remembered the important things that busy days had hidden.</p>
 
 <h3>N2 Level</h3>
-<p><strong>Original:</strong> <span style="color:blue;">はしゃぎすぎて</span>た<br>
+<p><strong style="color:blue;">Original:</strong> はしゃぎすぎてた<br>
 *Translation*: I was too excited, playing too hard.</p>
-<p><strong>New Sentence:</strong> みんなで海で<span style="color:blue;">泳ぎすぎ</span>て、疲れてしまいました。<br>
+<p><strong style="color:blue;">New Sentence (Use of "～すぎて" - "too much"): </strong>みんなで海で泳ぎすぎて、疲れてしまいました。<br>
 *Translation*: We swam too much in the sea, and we all got tired.</p>
 
-<p><strong>Original:</strong> まわりが<span style="color:blue;">見え</span>なくて<br>
+<p><strong style="color:blue;">Original:</strong> まわりが見えなくて<br>
 *Translation*: I couldn’t see what was around me.</p>
-<p><strong>New Sentence:</strong> 彼女が好きすぎて、ほかのことが<span style="color:blue;">見え</span>なくなった。<br>
+<p><strong style="color:blue;">New Sentence (Use of "見えなくて" - "unable to see something"): </strong>彼女が好きすぎて、ほかのことが見えなくなった。<br>
 *Translation*: I liked her so much that I couldn’t see anything else.</p>
 
 <h3>N1 Level</h3>
-<p><strong>Original:</strong> 君に<span style="color:blue;">出会</span>えないなんてイヤだと<span style="color:blue;">気付</span>いた冬<br>
+<p><strong style="color:blue;">Original:</strong> 君に出会えないなんてイヤだと気付いた冬<br>
 *Translation*: The winter I realized I couldn’t bear the thought of not meeting you.</p>
-<p><strong>New Sentence:</strong> 大事な人を失うなんて耐えられないと<span style="color:blue;">気付</span>いた夜でした。<br>
+<p><strong style="color:blue;">New Sentence (Use of "気付いた" - "to realize"): </strong>大事な人を失うなんて耐えられないと気付いた夜でした。<br>
 *Translation*: It was the night I realized I couldn’t bear the thought of losing someone important.</p>
 
-<p><strong>Original:</strong> 恋する人たちに<br>
+<p><strong style="color:blue;">Original:</strong> 恋する人たちに<br>
 *Translation*: For the people in love.</p>
-<p><strong>New Sentence:</strong> 夢を追う若者たちに<span style="color:blue;">エール</span>を送りたい。<br>
+<p><strong style="color:blue;">New Sentence (Use of "～する人たち" - "people who do something"): </strong>夢を追う若者たちにエールを送りたい。<br>
 *Translation*: I want to cheer for young people chasing their dreams.</p>
-
+<!-- Japanese Learning Sentences End -->
