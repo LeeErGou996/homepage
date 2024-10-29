@@ -499,19 +499,24 @@
 
         // 链接化例句中的单词，模糊匹配
         function linkifyExample(exampleText) {
-    const wordsInExample = exampleText.split(' ');
-    return wordsInExample.map(word => {
-        const cleanWord = word.replace(/[.,!?;:]/g, '').toLowerCase(); // 去掉标点符号并转为小写
+            const wordsInExample = exampleText.split(' ');
+            return wordsInExample.map(word => {
+                // 去掉标点符号并转为小写
+                let cleanWord = word.replace(/[.,!?;:]/g, '').toLowerCase();
 
-        // 使用完全匹配的方式忽略大小写
-        const matchedWord = words.find(item => item.word.toLowerCase() === cleanWord);
+                // 去掉冠词（例如 der, die, das）
+                cleanWord = cleanWord.replace(/^(der|die|das|ein|eine|einen|einem|einer|eines)\s+/i, '');
 
-        if (matchedWord) {
-            return `<a href="#" onclick="showLinkedWordDetail('${matchedWord.word}')" style="color: blue; text-decoration: underline;">${word}</a>`;
+                // 使用完全匹配的方式忽略大小写
+                const matchedWord = words.find(item => item.word.toLowerCase() === cleanWord);
+
+                if (matchedWord) {
+                    return `<a href="#" onclick="showLinkedWordDetail('${matchedWord.word}')" style="color: blue; text-decoration: underline;">${word}</a>`;
+                }
+                return word;
+            }).join(' ');
         }
-        return word;
-    }).join(' ');
-}
+
 
 
         // 关闭链接单词的详细信息
