@@ -504,11 +504,14 @@
                 // 去掉标点符号并转为小写
                 let cleanWord = word.replace(/[.,!?;:]/g, '').toLowerCase();
 
-                // 去掉冠词（例如 der, die, das）
-                cleanWord = cleanWord.replace(/^(der|die|das|ein|eine|einen|einem|einer|eines)\s+/i, '');
+                // 先直接匹配词库中的单词
+                let matchedWord = words.find(item => item.word.toLowerCase() === cleanWord);
 
-                // 使用完全匹配的方式忽略大小写
-                const matchedWord = words.find(item => item.word.toLowerCase() === cleanWord);
+                // 如果没有匹配到，再尝试去掉冠词后匹配
+                if (!matchedWord) {
+                    cleanWord = cleanWord.replace(/^(der|die|das|ein|eine|einen|einem|einer|eines)\s+/i, '');
+                    matchedWord = words.find(item => item.word.toLowerCase() === cleanWord);
+                }
 
                 if (matchedWord) {
                     return `<a href="#" onclick="showLinkedWordDetail('${matchedWord.word}')" style="color: blue; text-decoration: underline;">${word}</a>`;
@@ -516,6 +519,7 @@
                 return word;
             }).join(' ');
         }
+
 
 
 
