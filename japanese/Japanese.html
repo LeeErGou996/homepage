@@ -11,6 +11,12 @@
             margin: 0;
             padding: 0;
         }
+        .button-row {
+        display: flex; /* 使用 Flexbox 布局 */
+        justify-content: space-between; /* 按钮之间的间隔 */
+        margin: 20px 0; /* 可选：增加上下间距 */
+    }
+
         .sidebar {
             width: 200px;
             height: 100vh;
@@ -30,11 +36,6 @@
             align-items: center;
             justify-content: center;
             height: calc(100vh - 40px); /* Adjusts height taking into account padding */
-        }
-        .button-row {
-            display: flex; /* 使用 Flexbox 布局 */
-            justify-content: space-between; /* 按钮之间的间隔 */
-            margin: 20px 0; /* 可选：增加上下间距 */
         }
         h1 {
             color: blue; /* Ensuring consistency with sidebar */
@@ -118,16 +119,10 @@
           <button onclick="showPrevWord()">Last</button>
           <button onclick="showNextWord()">Next</button>
           <button onclick="showRandomWord()">Random</button>
-          <button onclick="searchVocabulary()">Search</button>
-          
       </div>
       <!-- <div class="kana-row">
           <button onclick="showKana()">Show Kana</button>
       </div> -->
-      <input type="text" id="searchInput" placeholder="Search vocabulary..." aria-label="Search vocabulary">
-        <input type="number" id="resultCount" value="1" min="1" style="width: 50px;" aria-label="Number of results">
-        
-        <div id="searchResultsContainer" style="max-height: 200px; overflow-y: auto;"></div>
       <div class="kana-row">
           <button onclick="showKana()">Show Kana</button>
       </div>
@@ -368,36 +363,6 @@ function searchGrammar() {
     resultsContainer.innerHTML = resultsHTML;
 }
 
-function searchVocabulary() {
-    var searchInput = document.getElementById("vocabularySearchInput").value.toLowerCase(); // 获取搜索输入
-    var resultsContainer = document.getElementById("vocabularySearchResultsContainer");
-    var resultCount = parseInt(document.getElementById("vocabularyResultCount").value) || 1; // 默认值为1
-    resultsContainer.innerHTML = ''; // 清空之前的结果
-
-    var foundWords = []; // 用于存储找到的词汇
-
-    // 遍历所有课程中的词汇
-    for (const course in words) {
-        words[course].forEach(word => {
-            // 检查汉字或假名是否包含搜索输入
-            if (word.kanji.toLowerCase().includes(searchInput) || word.kana.toLowerCase().includes(searchInput)) {
-                foundWords.push(`${word.kanji} (${word.kana})`); // 保存找到的词汇
-            }
-        });
-    }
-
-    // 限制结果数量并构建结果HTML
-    var resultsHTML = '';
-    if (foundWords.length > 0) {
-        foundWords.slice(0, resultCount).forEach(result => {
-            resultsHTML += `<p>${result}</p>`;
-        });
-    } else {
-        resultsHTML = '<p>No results found.</p>';
-    }
-
-    resultsContainer.innerHTML = resultsHTML; // 显示结果
-}
 
 
 
