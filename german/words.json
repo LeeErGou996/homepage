@@ -1105,14 +1105,6 @@
         "meaning": "火"
     },
     {
-        "word": "das Fieber",
-        "category": "主题",
-        "subCategory": "健康",
-        "type": "名词",
-        "example": "Mein Mann hat noch immer Fieber.",
-        "meaning": "发烧"
-    },
-    {
         "word": "der Film",
         "category": "主题",
         "subCategory": "娱乐",
@@ -1320,14 +1312,6 @@
             "type": "介词",
             "example": "Das ist für Sie.",
             "meaning": "为了"
-        },
-        {
-            "word": "der Fuß",
-            "category": "主题",
-            "subCategory": "身体部位",
-            "type": "名词",
-            "example": "Der linke Fuß tut mir weh.",
-            "meaning": "脚"
         },
         {
             "word": "der Fußball",
@@ -1785,14 +1769,6 @@
             "type": "名词",
             "example": "An der nächsten Haltestelle müssen Sie aussteigen.",
             "meaning": "车站"
-        },
-        {
-            "word": "die Hand",
-            "category": "主题",
-            "subCategory": "身体部位",
-            "type": "名词",
-            "example": "Er gibt mir die Hand.",
-            "meaning": "手"
         },
         {
             "word": "das Handy",
@@ -2284,28 +2260,12 @@
             "meaning": "账户"
         },
         {
-            "word": "der Kopf",
-            "category": "主题",
-            "subCategory": "身体部位",
-            "type": "名词",
-            "example": "Mein Kopf tut weh!",
-            "meaning": "头"
-        },
-        {
             "word": "kosten",
             "category": "词性",
             "subCategory": "动词",
             "type": "动词",
             "example": "Wie viel kostet das? – 10 Euro.",
             "meaning": "花费"
-        },
-        {
-            "word": "krank",
-            "category": "词性",
-            "subCategory": "形容词",
-            "type": "形容词",
-            "example": "Ich kann heute nicht zur Arbeit kommen, ich bin krank und liege im Bett.",
-            "meaning": "生病的"
         },
         {
             "word": "kriegen",
@@ -2499,14 +2459,6 @@
             "type": "名词",
             "example": "Unsere Deutschlehrerin heißt Frau Müller.",
             "meaning": "教师"
-        },
-        {
-            "word": "leicht",
-            "category": "词性",
-            "subCategory": "形容词",
-            "type": "形容词",
-            "example": "Der Koffer ist leicht. Deutsch ist nicht leicht.",
-            "meaning": "轻的，容易的"
         },
         {
             "word": "leider",
@@ -2861,22 +2813,6 @@
             "type": "副词",
             "example": "Morgen beginnt die Schule um 10 Uhr.",
             "meaning": "明天"
-        },
-        {
-            "word": "müde",
-            "category": "词性",
-            "subCategory": "形容词",
-            "type": "形容词",
-            "example": "Ich bin müde. Ich gehe schlafen.",
-            "meaning": "疲倦的"
-        },
-        {
-            "word": "der Mund",
-            "category": "主题",
-            "subCategory": "身体部位",
-            "type": "名词",
-            "example": "Öffnen Sie den Mund.",
-            "meaning": "嘴巴"
         },
         {
             "word": "müssen",
@@ -4217,7 +4153,7 @@
         "word": "der Unterricht",
         "category": "词性",
         "subCategory": "名词",
-        "type": "阳性名词",
+        "type": "名词",
         "example": "Wir haben Unterricht von 8.00 bis 12.00 Uhr.",
         "meaning": "课程"
     },
@@ -4233,7 +4169,7 @@
         "word": "die Unterschrift",
         "category": "词性",
         "subCategory": "名词",
-        "type": "阴性名词",
+        "type": "名词",
         "example": "Hier fehlt noch Ihre Unterschrift.",
         "meaning": "签名"
     },
@@ -4241,7 +4177,7 @@
         "word": "der Urlaub",
         "category": "词性",
         "subCategory": "名词",
-        "type": "阳性名词",
+        "type": "名词",
         "example": "Ich nehme im September Urlaub.",
         "meaning": "假期"
     },
@@ -4249,7 +4185,7 @@
         "word": "der Vater",
         "category": "词性",
         "subCategory": "名词",
-        "type": "阳性名词",
+        "type": "名词",
         "example": "Mein Vater ist Arbeiter.",
         "meaning": "父亲"
     },
@@ -4273,7 +4209,7 @@
         "word": "der Verein",
         "category": "词性",
         "subCategory": "名词",
-        "type": "阳性名词",
+        "type": "名词",
         "example": "Es gibt einen neuen Sportverein in der Stadt.",
         "meaning": "协会"
     },
@@ -4297,7 +4233,7 @@
         "word": "der Verkäufer",
         "category": "词性",
         "subCategory": "名词",
-        "type": "阳性名词",
+        "type": "名词",
         "example": "Meine Mutter ist Verkäuferin im Kaufhaus.",
         "meaning": "售货员"
     },
@@ -4313,7 +4249,7 @@
         "word": "der Vermieter",
         "category": "词性",
         "subCategory": "名词",
-        "type": "阳性名词",
+        "type": "名词",
         "example": "Unser Vermieter heißt Huber. Er wohnt auch hier.",
         "meaning": "房东"
     },
@@ -4329,7 +4265,7 @@
         "word": "der Verwandte",
         "category": "词性",
         "subCategory": "名词",
-        "type": "阳性名词",
+        "type": "名词",
         "example": "Peter besucht seine Verwandten in Polen.",
         "meaning": "亲戚"
     },
@@ -4369,7 +4305,7 @@
         "word": "der Vorname",
         "category": "词性",
         "subCategory": "名词",
-        "type": "阳性名词",
+        "type": "名词",
         "example": "Mein Vorname ist Eva.",
         "meaning": "名字"
     },
@@ -4377,7 +4313,7 @@
         "word": "die Vorsicht",
         "category": "词性",
         "subCategory": "名词",
-        "type": "阴性名词",
+        "type": "名词",
         "example": "Vorsicht! Da kommt ein Auto.",
         "meaning": "小心"
     },
@@ -4440,14 +4376,6 @@
         "meaning": "洗"
     },
     {
-        "word": "das Wasser",
-        "category": "词性",
-        "subCategory": "名词",
-        "type": "中性名词",
-        "example": "Ein Glas Wasser, bitte.",
-        "meaning": "水"
-    },
-    {
         "word": "weh tun",
         "category": "词性",
         "subCategory": "动词短语",
@@ -4467,7 +4395,7 @@
         "word": "der Wein",
         "category": "词性",
         "subCategory": "名词",
-        "type": "阳性名词",
+        "type": "名词",
         "example": "Nein danke, ich möchte keinen Wein.",
         "meaning": "酒"
     },
@@ -4499,7 +4427,7 @@
         "word": "die Welt",
         "category": "词性",
         "subCategory": "名词",
-        "type": "阴性名词",
+        "type": "名词",
         "example": "Es gibt viele Probleme auf der Welt.",
         "meaning": "世界"
     },
@@ -4531,7 +4459,7 @@
         "word": "das Wetter",
         "category": "词性",
         "subCategory": "名词",
-        "type": "中性名词",
+        "type": "名词",
         "example": "Wir hatten schlechtes Wetter.",
         "meaning": "天气"
     },
@@ -4563,7 +4491,7 @@
         "word": "das Wiederhören",
         "category": "词性",
         "subCategory": "名词",
-        "type": "中性名词",
+        "type": "名词",
         "example": "Also auf Wiederhören!",
         "meaning": "再见"
     },
@@ -4571,7 +4499,7 @@
         "word": "das Wiedersehen",
         "category": "词性",
         "subCategory": "名词",
-        "type": "中性名词",
+        "type": "名词",
         "example": "Auf Wiedersehen!",
         "meaning": "再见"
     },
@@ -4595,7 +4523,7 @@
         "word": "der Wind",
         "category": "词性",
         "subCategory": "名词",
-        "type": "阳性名词",
+        "type": "名词",
         "example": "Der Wind kommt aus Osten.",
         "meaning": "风"
     },
@@ -4651,7 +4579,7 @@
         "word": "die Wohnung",
         "category": "词性",
         "subCategory": "名词",
-        "type": "阴性名词",
+        "type": "名词",
         "example": "Seit wann haben Sie diese Wohnung?",
         "meaning": "公寓"
     },
@@ -4667,7 +4595,7 @@
         "word": "das Wort",
         "category": "词性",
         "subCategory": "名词",
-        "type": "中性名词",
+        "type": "名词",
         "example": "Ich kenne das Wort nicht.",
         "meaning": "单词"
     },
@@ -4692,7 +4620,7 @@
             "word": "die Zeit",
             "category": "词性",
             "subCategory": "名词",
-            "type": "阴性名词",
+            "type": "名词",
             "example": "Ich habe heute keine Zeit.",
             "meaning": "时间"
         },
@@ -4708,7 +4636,7 @@
             "word": "die Zeitung",
             "category": "词性",
             "subCategory": "名词",
-            "type": "阴性名词",
+            "type": "名词",
             "example": "Ich lese gern Zeitung.",
             "meaning": "报纸"
         },
@@ -4716,7 +4644,7 @@
             "word": "die Zigarette",
             "category": "词性",
             "subCategory": "名词",
-            "type": "阴性名词",
+            "type": "名词",
             "example": "Wie teuer sind die Zigaretten?",
             "meaning": "香烟"
         },
@@ -4724,7 +4652,7 @@
             "word": "das Zimmer",
             "category": "词性",
             "subCategory": "名词",
-            "type": "中性名词",
+            "type": "名词",
             "example": "Das Zimmer ist groß.",
             "meaning": "房间"
         },
@@ -4732,7 +4660,7 @@
             "word": "der Zoll",
             "category": "词性",
             "subCategory": "名词",
-            "type": "阳性名词",
+            "type": "名词",
             "example": "Wir müssen noch durch den Zoll.",
             "meaning": "海关"
         },
@@ -4756,7 +4684,7 @@
             "word": "der Zug",
             "category": "词性",
             "subCategory": "名词",
-            "type": "阳性名词",
+            "type": "名词",
             "example": "Ich fahre gern mit dem Zug.",
             "meaning": "火车"
         },
@@ -5010,11 +4938,616 @@
                 "type": "名词",
                 "example": "Ich lerne Deutsch in der Schule.",
                 "meaning": "德语"
+            },
+            
+            {
+                "word": "der Kopf",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Er hat Kopfschmerzen.",
+                "meaning": "头"
+            },
+            {
+                "word": "das Gesicht",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Sie hat ein schönes Gesicht.",
+                "meaning": "脸"
+            },
+            {
+                "word": "das Auge",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Ich sehe mit einem Auge.",
+                "meaning": "眼睛"
+            },
+            {
+                "word": "das Ohr",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Ich habe ein Ohrenschmerzen.",
+                "meaning": "耳朵"
+            },
+            {
+                "word": "die Nase",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Die Nase ist rot.",
+                "meaning": "鼻子"
+            },
+            {
+                "word": "der Mund",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Öffnen Sie den Mund.",
+                "meaning": "嘴"
+            },
+            {
+                "word": "der Zahn",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Ich habe Zahnschmerzen.",
+                "meaning": "牙齿"
+            },
+            {
+                "word": "der Hals",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Er hat Halsschmerzen.",
+                "meaning": "脖子、喉咙"
+            },
+            {
+                "word": "die Schulter",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Ich habe Schmerzen in der Schulter.",
+                "meaning": "肩膀"
+            },
+            {
+                "word": "der Arm",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Er hebt den Arm.",
+                "meaning": "胳膊"
+            },
+            {
+                "word": "der Ellbogen",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Mein Ellbogen tut weh.",
+                "meaning": "肘部"
+            },
+            {
+                "word": "die Hand",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Waschen Sie die Hände.",
+                "meaning": "手"
+            },
+            {
+                "word": "der Finger",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Ich habe mir den Finger verletzt.",
+                "meaning": "手指"
+            },
+            {
+                "word": "der Rücken",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Ich habe Rückenschmerzen.",
+                "meaning": "背部"
+            },
+            {
+                "word": "das Bein",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Ich kann mein Bein nicht bewegen.",
+                "meaning": "腿"
+            },
+            {
+                "word": "das Knie",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Ich habe Schmerzen im Knie.",
+                "meaning": "膝盖"
+            },
+            {
+                "word": "der Fuß",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Mein Fuß ist verletzt.",
+                "meaning": "脚"
+            },
+            {
+                "word": "der Zeh",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Ich habe mir den Zeh gestoßen.",
+                "meaning": "脚趾"
+            },
+            {
+                "word": "das Herz",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Das Herz schlägt schnell.",
+                "meaning": "心脏"
+            },
+            {
+                "word": "der Magen",
+                "category": "主题",
+                "subCategory": "身体部位",
+                "type": "名词",
+                "example": "Mein Magen tut weh.",
+                "meaning": "胃"
+            },
+
+            {
+                "word": "die Gesundheit",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Gesundheit ist wichtig.",
+                "meaning": "健康"
+            },
+            {
+                "word": "krank",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "形容词",
+                "example": "Ich bin krank.",
+                "meaning": "生病的"
+            },
+            {
+                "word": "gesund",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "形容词",
+                "example": "Ich fühle mich gesund.",
+                "meaning": "健康的"
+            },
+            {
+                "word": "die Krankheit",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Er hat eine schwere Krankheit.",
+                "meaning": "疾病"
+            },
+            {
+                "word": "das Fieber",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich habe Fieber.",
+                "meaning": "发烧"
+            },
+            {
+                "word": "der Schmerz",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Der Schmerz ist stark.",
+                "meaning": "疼痛"
+            },
+            {
+                "word": "die Kopfschmerzen",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich habe Kopfschmerzen.",
+                "meaning": "头痛"
+            },
+            {
+                "word": "die Halsschmerzen",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich habe Halsschmerzen.",
+                "meaning": "喉咙痛"
+            },
+            {
+                "word": "die Rückenschmerzen",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich habe Rückenschmerzen.",
+                "meaning": "背痛"
+            },
+            {
+                "word": "der Husten",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich habe Husten.",
+                "meaning": "咳嗽"
+            },
+            {
+                "word": "der Schnupfen",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich habe Schnupfen.",
+                "meaning": "流鼻涕"
+            },
+            {
+                "word": "die Grippe",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Die Grippe ist ansteckend.",
+                "meaning": "流感"
+            },
+            {
+                "word": "die Erkältung",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich habe eine Erkältung.",
+                "meaning": "感冒"
+            },
+            {
+                "word": "der Durchfall",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Er hat Durchfall.",
+                "meaning": "腹泻"
+            },
+            {
+                "word": "die Übelkeit",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich habe Übelkeit.",
+                "meaning": "恶心"
+            },
+            {
+                "word": "der Schwindel",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich habe Schwindel.",
+                "meaning": "头晕"
+            },
+            {
+                "word": "der Blutdruck",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Der Blutdruck ist hoch.",
+                "meaning": "血压"
+            },
+            {
+                "word": "die Allergie",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich habe eine Allergie gegen Pollen.",
+                "meaning": "过敏"
+            },
+
+            {
+                "word": "stark",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "形容词",
+                "example": "Der Schmerz ist stark.",
+                "meaning": "强烈的"
+            },
+            {
+                "word": "leicht",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "形容词",
+                "example": "Ich habe nur leichte Schmerzen.",
+                "meaning": "轻微的"
+            },
+            {
+                "word": "akut",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "形容词",
+                "example": "Die Erkrankung ist akut.",
+                "meaning": "急性的"
+            },
+            {
+                "word": "chronisch",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "形容词",
+                "example": "Er hat eine chronische Krankheit.",
+                "meaning": "慢性的"
+            },
+            {
+                "word": "infektiös",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "形容词",
+                "example": "Diese Krankheit ist infektiös.",
+                "meaning": "传染性的"
+            },
+            {
+                "word": "schmerzhaft",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "形容词",
+                "example": "Die Behandlung kann schmerzhaft sein.",
+                "meaning": "痛苦的"
+            },
+            {
+                "word": "müde",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "形容词",
+                "example": "Ich fühle mich müde.",
+                "meaning": "疲惫的"
+            },
+            {
+                "word": "schlapp",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "形容词",
+                "example": "Ich fühle mich schlapp.",
+                "meaning": "无力的"
+            },
+
+            {
+                "word": "der Arzt",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich gehe zum Arzt.",
+                "meaning": "医生"
+            },
+            {
+                "word": "die Ärztin",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Die Ärztin untersucht mich.",
+                "meaning": "女医生"
+            },
+            {
+                "word": "der Zahnarzt",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich habe einen Termin beim Zahnarzt.",
+                "meaning": "牙医"
+            },
+            {
+                "word": "die Zahnärztin",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Die Zahnärztin ist nett.",
+                "meaning": "女牙医"
+            },
+            {
+                "word": "die Apotheke",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich gehe in die Apotheke.",
+                "meaning": "药店"
+            },
+            {
+                "word": "das Krankenhaus",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Er liegt im Krankenhaus.",
+                "meaning": "医院"
+            },
+            {
+                "word": "die Notaufnahme",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich muss in die Notaufnahme.",
+                "meaning": "急诊室"
+            },
+            {
+                "word": "die Krankenkasse",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Die Krankenkasse bezahlt die Rechnung.",
+                "meaning": "医疗保险"
+            },
+            {
+                "word": "das Rezept",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich brauche ein Rezept für die Medikamente.",
+                "meaning": "处方"
+            },
+            {
+                "word": "die Tablette",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Nehmen Sie eine Tablette ein.",
+                "meaning": "药片"
+            },
+            {
+                "word": "die Medizin",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich nehme meine Medizin.",
+                "meaning": "药品"
+            },
+            {
+                "word": "die Salbe",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Tragen Sie die Salbe auf.",
+                "meaning": "药膏"
+            },
+            {
+                "word": "das Pflaster",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich brauche ein Pflaster.",
+                "meaning": "创可贴"
+            },
+            {
+                "word": "der Verband",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Der Verband muss gewechselt werden.",
+                "meaning": "绷带"
+            },
+            {
+                "word": "die Operation",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Die Operation war erfolgreich.",
+                "meaning": "手术"
+            },
+            {
+                "word": "der Termin",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Hast du einen Termin beim Arzt?",
+                "meaning": "预约"
+            },
+            {
+                "word": "die Untersuchung",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Die Untersuchung ist wichtig.",
+                "meaning": "检查"
+            },
+            {
+                "word": "die Sprechstunde",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Die Sprechstunde beginnt um 8 Uhr.",
+                "meaning": "门诊时间"
+            },
+            {
+                "word": "die Krankenversicherung",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Ich habe eine gute Krankenversicherung.",
+                "meaning": "健康保险"
+            },
+            {
+                "word": "die Ernährung",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Eine gesunde Ernährung ist wichtig.",
+                "meaning": "营养"
+            },
+            {
+                "word": "gesund essen",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "动词短语",
+                "example": "Man sollte gesund essen.",
+                "meaning": "健康饮食"
+            },
+            {
+                "word": "die Bewegung",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Bewegung ist wichtig für die Gesundheit.",
+                "meaning": "锻炼"
+            },
+            {
+                "word": "Sport treiben",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "动词短语",
+                "example": "Ich treibe regelmäßig Sport.",
+                "meaning": "进行体育锻炼"
+            },
+            {
+                "word": "der Schlaf",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Guter Schlaf ist wichtig.",
+                "meaning": "睡眠"
+            },
+            {
+                "word": "genug schlafen",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "动词短语",
+                "example": "Man sollte genug schlafen.",
+                "meaning": "充足睡眠"
+            },
+            {
+                "word": "das Wasser",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Trinken Sie genug Wasser.",
+                "meaning": "水"
+            },
+            {
+                "word": "die Entspannung",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Entspannung ist wichtig für die Gesundheit.",
+                "meaning": "放松"
+            },
+            {
+                "word": "die Hygiene",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Hygiene ist wichtig.",
+                "meaning": "卫生"
+            },
+            {
+                "word": "die Meditation",
+                "category": "主题",
+                "subCategory": "健康",
+                "type": "名词",
+                "example": "Meditation hilft beim Entspannen.",
+                "meaning": "冥想"
             }
         
         
-        
-        
-        
-    ]
     
+    
+    
+    
+    
+]
