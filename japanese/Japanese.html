@@ -113,6 +113,8 @@
           <button onclick="showPrevWord()">Last</button>
           <button onclick="showNextWord()">Next</button>
           <button onclick="showRandomWord()">Random</button>
+          <button onclick="searchVocabulary()">Search</button>
+          
       </div>
       <!-- <div class="kana-row">
           <button onclick="showKana()">Show Kana</button>
@@ -357,6 +359,36 @@ function searchGrammar() {
     resultsContainer.innerHTML = resultsHTML;
 }
 
+function searchVocabulary() {
+    var searchInput = document.getElementById("vocabularySearchInput").value.toLowerCase(); // 获取搜索输入
+    var resultsContainer = document.getElementById("vocabularySearchResultsContainer");
+    var resultCount = parseInt(document.getElementById("vocabularyResultCount").value) || 1; // 默认值为1
+    resultsContainer.innerHTML = ''; // 清空之前的结果
+
+    var foundWords = []; // 用于存储找到的词汇
+
+    // 遍历所有课程中的词汇
+    for (const course in words) {
+        words[course].forEach(word => {
+            // 检查汉字或假名是否包含搜索输入
+            if (word.kanji.toLowerCase().includes(searchInput) || word.kana.toLowerCase().includes(searchInput)) {
+                foundWords.push(`${word.kanji} (${word.kana})`); // 保存找到的词汇
+            }
+        });
+    }
+
+    // 限制结果数量并构建结果HTML
+    var resultsHTML = '';
+    if (foundWords.length > 0) {
+        foundWords.slice(0, resultCount).forEach(result => {
+            resultsHTML += `<p>${result}</p>`;
+        });
+    } else {
+        resultsHTML = '<p>No results found.</p>';
+    }
+
+    resultsContainer.innerHTML = resultsHTML; // 显示结果
+}
 
 
 
