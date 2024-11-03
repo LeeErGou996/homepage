@@ -477,8 +477,12 @@
                 const matchedWord = words.find(item => {
                     // 去掉冠词进行匹配
                     const itemBaseWord = item.word.replace(/^(der|die|das|ein|eine|einen|einem|dem|den)\s+/i, '');
-                    const regex = new RegExp(`^(${itemBaseWord}|${itemBaseWord}s?)$`, 'i'); // 支持复数形式
                     
+                    // 处理元音变化和复数形式
+                    const regex = new RegExp(`^(${itemBaseWord}|${itemBaseWord}s?|${itemBaseWord.replace(/a/, 'ä')}` +
+                        `|${itemBaseWord.replace(/o/, 'ö')}|${itemBaseWord.replace(/u/, 'ü')}|${itemBaseWord.replace(/ä/, 'a')}` +
+                        `|${itemBaseWord.replace(/ö/, 'o')}|${itemBaseWord.replace(/ü/, 'u')})$`, 'i');
+
                     // 检查原始单词和去掉冠词后的匹配
                     return regex.test(cleanWord) || regex.test(cleanWord.replace(/^(der|die|das|ein|eine|einen|einem|dem|den)\s+/i, ''));
                 });
@@ -489,6 +493,7 @@
                 return word;
             }).join(' ');
         }
+
 
 
 
