@@ -265,26 +265,6 @@
             })
             .catch(error => console.error('加载单词数据失败:', error));
 
-        // 显示词性或主题选项
-        function showByCategory(categoryType) {
-            clearSearch();
-            const categoryButtons = document.getElementById('categoryButtons');
-            const themeButtons = document.getElementById('themeButtons');
-            const wordList = document.getElementById('wordList');
-            const wordDetail = document.getElementById('wordDetail');
-
-            if (categoryType === '词性') {
-                categoryButtons.style.display = 'block';
-                themeButtons.style.display = 'none';
-                wordList.innerHTML = '';
-                wordDetail.style.display = 'none';
-            } else if (categoryType === '主题') {
-                categoryButtons.style.display = 'none';
-                themeButtons.style.display = 'block';
-                wordList.innerHTML = '';
-                wordDetail.style.display = 'none';
-            }
-        }
 
         // 显示随机单词
         function showRandomWord() {
@@ -436,20 +416,7 @@
             }
         }
 
-        // 显示链接单词的详细信息
-        function showLinkedWordDetail(word) {
-            const matchedWord = words.find(item => item.word.toLowerCase() === word.toLowerCase());
-            if (matchedWord) {
-                const linkedDetailDiv = document.getElementById('linkedWordDetail');
-                linkedDetailDiv.innerHTML = `
-                    <strong>${matchedWord.word}</strong><br>
-                    例句: ${linkifyExample(matchedWord.example)}<br>
-                    释义: ${matchedWord.meaning}<br>
-                    <button onclick="closeLinkedWordDetail()" style="margin-top: 10px; cursor: pointer;">关闭</button>
-                `;
-                linkedDetailDiv.style.display = 'block'; // 显示详细信息
-            }
-        }
+
         // 显示词性或主题选项
         function showByCategory(categoryType) {
             clearSearch();
@@ -502,18 +469,19 @@
         // 链接化例句中的单词，模糊匹配
         function linkifyExample(exampleText) {
             const wordsInExample = exampleText.split(' ');
+
             return wordsInExample.map(word => {
-                // 去掉标点符号并转为小写
-                let cleanWord = word.replace(/[.,!?;:]/g, '').toLowerCase();
-
-                // 先直接匹配词库中的单词
-                let matchedWord = words.find(item => item.word.toLowerCase() === cleanWord);
-
-                // 如果没有匹配到，再尝试去掉冠词后匹配
-                if (!matchedWord) {
-                    cleanWord = cleanWord.replace(/^(der|die|das|ein|eine|einen|einem|einer|eines)\s+/i, '');
-                    matchedWord = words.find(item => item.word.toLowerCase() === cleanWord);
-                }
+                const cleanWord = word.replace(/[.,!?;:]/g, ''); // 去掉标点符号
+                
+                // 使用正则表达式匹配单词的不同形式（忽略大小写）
+                const matchedWord = words.find(item => {
+                    // 去掉冠词进行匹配
+                    const itemBaseWord = item.word.replace(/^(der|die|das|ein|eine|einen|einem|dem|den)\s+/i, '');
+                    const regex = new RegExp(`^(${itemBaseWord}|${itemBaseWord}s?)$`, 'i'); // 支持复数形式
+                    
+                    // 检查原始单词和去掉冠词后的匹配
+                    return regex.test(cleanWord) || regex.test(cleanWord.replace(/^(der|die|das|ein|eine|einen|einem|dem|den)\s+/i, ''));
+                });
 
                 if (matchedWord) {
                     return `<a href="#" onclick="showLinkedWordDetail('${matchedWord.word}')" style="color: blue; text-decoration: underline;">${word}</a>`;
