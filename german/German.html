@@ -399,16 +399,29 @@
         // 链接化例句中的单词，模糊匹配
         function linkifyExample(exampleText) {
             const wordsInExample = exampleText.split(' ');
+
             return wordsInExample.map(word => {
                 const cleanWord = word.replace(/[.,!?;:]/g, ''); // 去掉标点符号
+                const isArticle = /^(der|die|das|ein|eine|einen|einem|dem|den)$/i; // 冠词正则
+
+                // 去掉冠词并准备基础单词
+                let baseWord = cleanWord;
+                if (isArticle.test(cleanWord)) {
+                    const nextWordIndex = wordsInExample.indexOf(word) + 1;
+                    if (nextWordIndex < wordsInExample.length) {
+                        baseWord = wordsInExample[nextWordIndex].replace(/[.,!?;:]/g, '');
+                    }
+                }
 
                 // 使用正则表达式匹配单词的不同形式（忽略大小写）
                 const matchedWord = words.find(item => {
                     // 检查长度：匹配单词的长度必须大于或等于原单词的长度
-                    if (item.word.length < cleanWord.length) {
+                    if (item.word.length < baseWord.length) {
                         return false;
                     }
-                    return new RegExp(`^${item.word}`, 'i').test(cleanWord); // 正则表达式匹配
+                    // 去掉item.word中的冠词进行匹配
+                    const itemBaseWord = item.word.replace(/^(der|die|das|ein|eine|einen|einem|dem|den)\s+/i, '');
+                    return new RegExp(`^${itemBaseWord}`, 'i').test(baseWord); // 正则表达式匹配
                 });
 
                 if (matchedWord) {
@@ -417,6 +430,7 @@
                 return word;
             }).join(' ');
         }
+
 
 
         // 显示链接单词的详细信息
