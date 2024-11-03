@@ -31,6 +31,11 @@
             justify-content: center;
             height: calc(100vh - 40px); /* Adjusts height taking into account padding */
         }
+        .button-row {
+            display: flex; /* 使用 Flexbox 布局 */
+            justify-content: space-between; /* 按钮之间的间隔 */
+            margin: 20px 0; /* 可选：增加上下间距 */
+        }
         h1 {
             color: blue; /* Ensuring consistency with sidebar */
             margin: 0 0 20px 0; /* Adds space below the header */
@@ -119,6 +124,10 @@
       <!-- <div class="kana-row">
           <button onclick="showKana()">Show Kana</button>
       </div> -->
+      <input type="text" id="searchInput" placeholder="Search vocabulary..." aria-label="Search vocabulary">
+        <input type="number" id="resultCount" value="1" min="1" style="width: 50px;" aria-label="Number of results">
+        
+        <div id="searchResultsContainer" style="max-height: 200px; overflow-y: auto;"></div>
       <div class="kana-row">
           <button onclick="showKana()">Show Kana</button>
       </div>
