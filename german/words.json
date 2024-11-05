@@ -69,7 +69,7 @@
         "subCategory": "个人信息",
         "type": "名词",
         "example": "Können Sie mir seine Adresse sagen?",
-        "meaning": "交通"
+        "meaning": "地址"
     },
     {
         "word": "allein",
@@ -352,6 +352,63 @@
         "meaning": "花"
     },
     {
+        "word": "der Tourist",
+        "词性": "名词",
+        "subCategory": "社交",
+        "type": "名词",
+        "example": "Die Touristen in Köln fragen viel.",
+        "meaning": "游客"
+    },
+    {
+        "word": "die Touristen-Information",
+        "词性": "名词",
+        "subCategory": "旅游",
+        "type": "名词",
+        "example": "Die Touristen-Information ist am Hauptbahnhof.",
+        "meaning": "游客信息中心"
+    },
+    {
+        "word": "ungefähr",
+        "词性": "副词",
+        "subCategory": "时间",
+        "type": "副词",
+        "example": "Es sind ungefähr 10 Kilometer.",
+        "meaning": "大约"
+    },
+    {
+        "word": "der Fluss",
+        "词性": "名词",
+        "subCategory": "地理",
+        "type": "名词",
+        "example": "Der Rhein ist ein großer Fluss.",
+        "meaning": "河流"
+    },
+    {
+        "word": "der Turm",
+        "词性": "名词",
+        "subCategory": "建筑",
+        "type": "名词",
+        "example": "Der Kölner Dom hat zwei Türme.",
+        "meaning": "塔"
+    },
+    {
+        "word": "der Fernmeldeturm",
+        "词性": "名词",
+        "subCategory": "建筑",
+        "type": "名词",
+        "example": "Der Fernmeldeturm steht in Stuttgart.",
+        "meaning": "通讯塔"
+    },
+    {
+        "word": "der Messeturm",
+        "词性": "名词",
+        "subCategory": "建筑",
+        "type": "名词",
+        "example": "Der Messeturm ist ein Wahrzeichen von Frankfurt.",
+        "meaning": "展览塔"
+    },
+    
+    {
         "word": "der Bogen",
         "category": "主题",
         "subCategory": "纸张",
@@ -494,6 +551,62 @@
         "type": "名词",
         "example": "Wann bekommst du deinen neuen Computer?",
         "meaning": "电脑"
+    },
+    {
+        "word": "der Zucker",
+        "category": "主题",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Zu viel Zucker ist ungesund.",
+        "meaning": "糖"
+    },
+    {
+        "word": "der Apparat",
+        "category": "主题",
+        "subCategory": "电子设备",
+        "type": "名词",
+        "example": "Der Apparat ist sehr modern.",
+        "meaning": "设备，仪器"
+    },
+    {
+        "word": "der Fotoapparat",
+        "category": "主题",
+        "subCategory": "电子设备",
+        "type": "名词",
+        "example": "Ich brauche einen neuen Fotoapparat.",
+        "meaning": "照相机"
+    },
+    {
+        "word": "der Norden",
+        "category": "主题",
+        "subCategory": "地理",
+        "type": "名词",
+        "example": "Im Norden ist es oft kalt.",
+        "meaning": "北方"
+    },
+    {
+        "word": "der Westen",
+        "category": "主题",
+        "subCategory": "地理",
+        "type": "名词",
+        "example": "Im Westen geht die Sonne unter.",
+        "meaning": "西方"
+    },
+    {
+        "word": "der Süden",
+        "category": "主题",
+        "subCategory": "地理",
+        "type": "名词",
+        "example": "Im Süden ist es oft warm.",
+        "meaning": "南方"
+    },
+    {
+        "word": "der Osten",
+        "category": "主题",
+        "subCategory": "地理",
+        "type": "名词",
+        "example": "Im Osten geht die Sonne auf.",
+        "meaning": "东方"
     },
     {
         "word": "da",
@@ -1032,6 +1145,126 @@
         "example": "Bei 'Familienstand' musst du 'ledig' ankreuzen.",
         "meaning": "婚姻状况"
     },
+    {
+        "word": "das Blatt",
+        "词性": "名词",
+        "subCategory": "文具",
+        "type": "名词",
+        "example": "Schreiben Sie auf das Blatt.",
+        "meaning": "纸张"
+    },
+    {
+        "word": "das Heft",
+        "词性": "名词",
+        "subCategory": "文具",
+        "type": "名词",
+        "example": "Er schreibt in das Heft.",
+        "meaning": "练习本"
+    },
+    {
+        "word": "der Radiergummi",
+        "词性": "名词",
+        "subCategory": "文具",
+        "type": "名词",
+        "example": "Der Radiergummi liegt auf dem Tisch.",
+        "meaning": "橡皮擦"
+    },
+    {
+        "word": "das Kursbuch",
+        "词性": "名词",
+        "subCategory": "学习",
+        "type": "名词",
+        "example": "Im Kursbuch gibt es viele Übungen.",
+        "meaning": "教材"
+    },
+    {
+        "word": "die Aufgabe",
+        "词性": "名词",
+        "subCategory": "学习",
+        "type": "名词",
+        "example": "Die Aufgabe ist schwer.",
+        "meaning": "任务，练习"
+    },
+    {
+        "word": "die Grammatik",
+        "词性": "名词",
+        "subCategory": "学习",
+        "type": "名词",
+        "example": "Die Grammatik ist wichtig beim Deutschlernen.",
+        "meaning": "语法"
+    },
+    {
+        "word": "die Seite",
+        "词性": "名词",
+        "subCategory": "学习",
+        "type": "名词",
+        "example": "Lies die nächste Seite.",
+        "meaning": "页"
+    },
+    {
+        "word": "der Fernseher",
+        "词性": "名词",
+        "subCategory": "电子设备",
+        "type": "名词",
+        "example": "Der Fernseher steht im Wohnzimmer.",
+        "meaning": "电视机"
+    },
+    {
+        "word": "die Sendung",
+        "词性": "名词",
+        "subCategory": "娱乐",
+        "type": "名词",
+        "example": "Die Sendung beginnt um 20 Uhr.",
+        "meaning": "节目"
+    },
+    {
+        "word": "der Krimi",
+        "词性": "名词",
+        "subCategory": "娱乐",
+        "type": "名词",
+        "example": "Er sieht gerne Krimis.",
+        "meaning": "侦探片，犯罪片"
+    },
+    {
+        "word": "die Nachricht",
+        "词性": "名词",
+        "subCategory": "信息",
+        "type": "名词",
+        "example": "Ich lese die Nachrichten täglich.",
+        "meaning": "消息，新闻"
+    },
+    {
+        "word": "der Beruf",
+        "词性": "名词",
+        "subCategory": "职业",
+        "type": "名词",
+        "example": "Sein Beruf ist Lehrer.",
+        "meaning": "职业"
+    },
+    {
+        "word": "im Moment",
+        "词性": "短语",
+        "subCategory": "时间",
+        "type": "短语",
+        "example": "Ich bin im Moment beschäftigt.",
+        "meaning": "此刻，当前"
+    },    
+    {
+        "word": "hübsch",
+        "词性": "形容词",
+        "subCategory": "情感",
+        "type": "形容词",
+        "example": "Das Mädchen ist sehr hübsch.",
+        "meaning": "漂亮的"
+    },
+    {
+        "word": "das Interview",
+        "词性": "名词",
+        "subCategory": "社交",
+        "type": "名词",
+        "example": "Das Interview wird morgen veröffentlicht.",
+        "meaning": "采访"
+    },    
     {
         "word": "die Farbe",
         "category": "主题",
@@ -1899,6 +2132,94 @@
             "meaning": "在后面"
         },
         {
+            "word": "wer",
+            "词性": "词性",
+            "subCategory": "疑问代词",
+            "type": "代词",
+            "example": "Wer ist das?",
+            "meaning": "谁"
+        },
+        {
+            "word": "was",
+            "词性": "词性",
+            "subCategory": "疑问代词",
+            "type": "代词",
+            "example": "Was machst du?",
+            "meaning": "什么"
+        },
+        {
+            "word": "welcher",
+            "词性": "词性",
+            "subCategory": "疑问代词",
+            "type": "代词",
+            "example": "Welcher Tag ist heute?",
+            "meaning": "哪一个"
+        },
+        {
+            "word": "wo",
+            "词性": "词性",
+            "subCategory": "疑问代词",
+            "type": "代词",
+            "example": "Wo wohnst du?",
+            "meaning": "哪里"
+        },
+        {
+            "word": "woher",
+            "词性": "词性",
+            "subCategory": "疑问代词",
+            "type": "代词",
+            "example": "Woher kommst du?",
+            "meaning": "从哪里"
+        },
+        {
+            "word": "wohin",
+            "词性": "词性",
+            "subCategory": "疑问代词",
+            "type": "代词",
+            "example": "Wohin gehst du?",
+            "meaning": "去哪里"
+        },
+        {
+            "word": "wann",
+            "词性": "词性",
+            "subCategory": "疑问代词",
+            "type": "代词",
+            "example": "Wann kommst du?",
+            "meaning": "什么时候"
+        },
+        {
+            "word": "warum",
+            "词性": "词性",
+            "subCategory": "疑问代词",
+            "type": "代词",
+            "example": "Warum bist du hier?",
+            "meaning": "为什么"
+        },
+        {
+            "word": "wie",
+            "词性": "词性",
+            "subCategory": "疑问代词",
+            "type": "代词",
+            "example": "Wie geht es dir?",
+            "meaning": "如何"
+        },
+        {
+            "word": "wieviel",
+            "词性": "词性",
+            "subCategory": "疑问代词",
+            "type": "代词",
+            "example": "Wieviel kostet das?",
+            "meaning": "多少（数量）"
+        },
+        {
+            "word": "wie viele",
+            "词性": "词性",
+            "subCategory": "疑问代词",
+            "type": "代词",
+            "example": "Wie viele Kinder hast du?",
+            "meaning": "多少（可数）"
+        },        
+        {
             "word": "das Hobby",
             "category": "主题",
             "subCategory": "爱好",
@@ -2735,6 +3056,14 @@
             "meaning": "带来"
         },
         {
+            "word": "sortieren",
+            "词性": "动词",
+            "subCategory": "学习",
+            "type": "动词",
+            "example": "Bitte sortieren Sie die Sätze.",
+            "meaning": "排序，整理"
+        },
+        {
             "word": "mitkommen",
             "category": "词性",
             "subCategory": "动词短语",
@@ -2888,6 +3217,95 @@
         "example": "Das stimmt nicht. Das ist doch schön, nicht?",
         "meaning": "不"
     },
+    {
+        "word": "der Stadtrand",
+        "词性": "名词",
+        "subCategory": "地理",
+        "type": "名词",
+        "example": "Er wohnt am Stadtrand.",
+        "meaning": "市郊"
+    },
+    {
+        "word": "zu Fuß gehen",
+        "词性": "动词短语",
+        "subCategory": "交通",
+        "type": "动词短语",
+        "example": "Im Zentrum gehen alle zu Fuß.",
+        "meaning": "步行"
+    },
+    {
+        "word": "der Main",
+        "词性": "名词",
+        "subCategory": "地理",
+        "type": "名词",
+        "example": "Der Fluss in Frankfurt heißt Main.",
+        "meaning": "美因河"
+    },
+    {
+        "word": "ganz",
+        "词性": "副词",
+        "subCategory": "情感",
+        "type": "副词",
+        "example": "Alles ist ganz nah im Zentrum.",
+        "meaning": "非常"
+    },
+    {
+        "word": "das Wohnhaus",
+        "词性": "名词",
+        "subCategory": "建筑",
+        "type": "名词",
+        "example": "Das Wohnhaus ist sehr groß.",
+        "meaning": "住宅"
+    },
+    {
+        "word": "das Rathaus",
+        "词性": "名词",
+        "subCategory": "建筑",
+        "type": "名词",
+        "example": "Das Rathaus ist im Zentrum der Stadt.",
+        "meaning": "市政厅"
+    },
+    {
+        "word": "das Theater",
+        "词性": "名词",
+        "subCategory": "娱乐",
+        "type": "名词",
+        "example": "Wir gehen ins Theater.",
+        "meaning": "剧院"
+    },
+    {
+        "word": "die Schule",
+        "词性": "名词",
+        "subCategory": "教育",
+        "type": "名词",
+        "example": "Die Kinder gehen zur Schule.",
+        "meaning": "学校"
+    },
+    {
+        "word": "glauben",
+        "词性": "动词",
+        "subCategory": "情感",
+        "type": "动词",
+        "example": "Ich glaube ihm.",
+        "meaning": "相信"
+    },
+    {
+        "word": "doch",
+        "词性": "语气词",
+        "subCategory": "沟通",
+        "type": "语气词",
+        "example": "Das ist doch keine Bank.",
+        "meaning": "却，仍然"
+    },
+    {
+        "word": "wissen",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Ich weiß nicht.",
+        "meaning": "知道"
+    },
+    
     {
         "word": "nichts",
         "category": "词性",
@@ -3130,6 +3548,23 @@
         "example": "Wo ist die Post, bitte? Ist Post da?",
         "meaning": "邮局，邮件"
     },
+    {
+        "word": "trinken",
+        "词性": "动词",
+        "subCategory": "餐饮",
+        "type": "动词",
+        "example": "Ich trinke gern Kaffee.",
+        "meaning": "喝，饮"
+    },
+    {
+        "word": "die Torte",
+        "词性": "名词",
+        "subCategory": "餐饮",
+        "type": "名词",
+        "example": "Heute essen die Kinder Torte.",
+        "meaning": "蛋糕"
+    },
+    
     {
         "word": "die Postleitzahl",
         "category": "主题",
@@ -4278,6 +4713,72 @@
         "meaning": "许多"
     },
     {
+        "word": "ordnen",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Er ordnet die Sätze.",
+        "meaning": "整理"
+    },
+    {
+        "word": "ergänzen",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Ergänzen Sie bitte.",
+        "meaning": "补充，添加"
+    },
+    {
+        "word": "mal",
+        "词性": "副词",
+        "subCategory": "时间",
+        "type": "副词",
+        "example": "Kommen Sie mal nach Leipzig.",
+        "meaning": "一次"
+    },
+    {
+        "word": "buchstabieren",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Können Sie Ihren Namen bitte buchstabieren?",
+        "meaning": "拼写"
+    },
+    {
+        "word": "markieren",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Bitte markieren Sie die richtige Antwort.",
+        "meaning": "标记"
+    },
+    {
+        "word": "antworten",
+        "词性": "动词",
+        "subCategory": "沟通",
+        "type": "动词",
+        "example": "Er antwortet auf die Frage.",
+        "meaning": "回答"
+    },
+    {
+        "word": "kombinieren",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Kombinieren Sie die Sätze.",
+        "meaning": "组合"
+    },
+    {
+        "word": "zusammenpassen",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Was passt zusammen? Zug und Züge.",
+        "meaning": "匹配，配合"
+    },
+    
+    
+    {
         "word": "vielleicht",
         "category": "词性",
         "subCategory": "副词",
@@ -4521,12 +5022,190 @@
     },
     {
         "word": "der Wind",
-        "category": "词性",
-        "subCategory": "名词",
+        "category": "主题",
+        "subCategory": "天气",
         "type": "名词",
-        "example": "Der Wind kommt aus Osten.",
+        "example": "Der Wind ist heute sehr stark.",
         "meaning": "风"
     },
+    {
+        "word": "das Gewitter",
+        "category": "主题",
+        "subCategory": "天气",
+        "type": "名词",
+        "example": "Ein Gewitter zieht über die Stadt.",
+        "meaning": "雷雨"
+    },
+    {
+        "word": "der Nebel",
+        "category": "主题",
+        "subCategory": "天气",
+        "type": "名词",
+        "example": "Im Herbst gibt es oft Nebel.",
+        "meaning": "雾"
+    },
+    {
+        "word": "die Kälte",
+        "category": "主题",
+        "subCategory": "天气",
+        "type": "名词",
+        "example": "Die Kälte im Winter ist hart.",
+        "meaning": "寒冷"
+    },
+    {
+        "word": "die Hitze",
+        "category": "主题",
+        "subCategory": "天气",
+        "type": "名词",
+        "example": "Im Sommer herrscht oft große Hitze.",
+        "meaning": "炎热"
+    },
+    {
+        "word": "der Hagel",
+        "category": "主题",
+        "subCategory": "天气",
+        "type": "名词",
+        "example": "Im Frühling gibt es manchmal Hagel.",
+        "meaning": "冰雹"
+    },
+    {
+        "word": "das Eis",
+        "category": "主题",
+        "subCategory": "天气",
+        "type": "名词",
+        "example": "Im Winter bildet sich Eis auf den Straßen.",
+        "meaning": "冰"
+    },
+    {
+        "word": "die Temperatur",
+        "category": "主题",
+        "subCategory": "天气",
+        "type": "名词",
+        "example": "Die Temperatur ist heute angenehm warm.",
+        "meaning": "温度"
+    },
+    {
+        "word": "der Sturm",
+        "category": "主题",
+        "subCategory": "天气",
+        "type": "名词",
+        "example": "Der Sturm hat viele Bäume umgestürzt.",
+        "meaning": "暴风"
+    },
+    {
+        "word": "der Blitz",
+        "category": "主题",
+        "subCategory": "天气",
+        "type": "名词",
+        "example": "Der Blitz erhellt den Himmel.",
+        "meaning": "闪电"
+    },
+    {
+        "word": "der Donner",
+        "category": "主题",
+        "subCategory": "天气",
+        "type": "名词",
+        "example": "Nach dem Blitz folgt der Donner.",
+        "meaning": "雷声"
+    },
+    {
+        "word": "die Luftfeuchtigkeit",
+        "category": "主题",
+        "subCategory": "天气",
+        "type": "名词",
+        "example": "Die Luftfeuchtigkeit ist heute sehr hoch.",
+        "meaning": "湿度"
+    },
+    {
+        "word": "der Montag",
+        "category": "主题",
+        "subCategory": "星期",
+        "type": "名词",
+        "example": "Am Montag beginnt die Woche.",
+        "meaning": "星期一"
+    },
+    {
+        "word": "der Dienstag",
+        "category": "主题",
+        "subCategory": "星期",
+        "type": "名词",
+        "example": "Am Dienstag habe ich einen Termin.",
+        "meaning": "星期二"
+    },
+    {
+        "word": "der Mittwoch",
+        "category": "主题",
+        "subCategory": "星期",
+        "type": "名词",
+        "example": "Mittwoch ist die Mitte der Woche.",
+        "meaning": "星期三"
+    },
+    {
+        "word": "der Donnerstag",
+        "category": "主题",
+        "subCategory": "星期",
+        "type": "名词",
+        "example": "Am Donnerstag gehen wir ins Kino.",
+        "meaning": "星期四"
+    },
+    {
+        "word": "der Freitag",
+        "category": "主题",
+        "subCategory": "星期",
+        "type": "名词",
+        "example": "Freitag ist fast Wochenende.",
+        "meaning": "星期五"
+    },
+    {
+        "word": "der Samstag",
+        "category": "主题",
+        "subCategory": "星期",
+        "type": "名词",
+        "example": "Samstag ist ein freier Tag.",
+        "meaning": "星期六"
+    },
+    {
+        "word": "der Sonntag",
+        "category": "主题",
+        "subCategory": "星期",
+        "type": "名词",
+        "example": "Sonntag ist ein Ruhetag.",
+        "meaning": "星期日"
+    },
+    {
+        "word": "der Frühling",
+        "category": "主题",
+        "subCategory": "四季",
+        "type": "名词",
+        "example": "Im Frühling blühen die Blumen.",
+        "meaning": "春天"
+    },
+    {
+        "word": "der Sommer",
+        "category": "主题",
+        "subCategory": "四季",
+        "type": "名词",
+        "example": "Im Sommer ist es oft heiß.",
+        "meaning": "夏天"
+    },
+    {
+        "word": "der Herbst",
+        "category": "主题",
+        "subCategory": "四季",
+        "type": "名词",
+        "example": "Im Herbst fallen die Blätter.",
+        "meaning": "秋天"
+    },
+    {
+        "word": "der Winter",
+        "category": "主题",
+        "subCategory": "四季",
+        "type": "名词",
+        "example": "Im Winter schneit es häufig.",
+        "meaning": "冬天"
+    },
+    
+    
     {
         "word": "wir",
         "category": "词性",
@@ -5350,6 +6029,14 @@
                 "type": "名词",
                 "example": "Ich gehe in die Apotheke.",
                 "meaning": "药店"
+            },
+            {
+                "word": "nett",
+                "词性": "形容词",
+                "subCategory": "情感",
+                "type": "形容词",
+                "example": "Frau Mohr ist sehr nett.",
+                "meaning": "友好的，和蔼的"
             },
             {
                 "word": "das Krankenhaus",
