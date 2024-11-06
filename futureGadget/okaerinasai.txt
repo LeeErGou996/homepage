@@ -1,0 +1,40 @@
+<p><strong>作詞：</strong>佐藤良成</p>
+<p><strong>作曲：</strong>佐藤良成</p>
+
+<div class="stanza">
+        <p>ああ今<span class="furigana">こん</span>夜<span class="furigana">や</span>も雨<span class="furigana">あめ</span>が降<span class="furigana">ふ</span>る 冷<span class="furigana">つめ</span>たい雨<span class="furigana">あめ</span>が降<span class="furigana">ふ</span>る</p>
+        <p>近<span class="furigana">ちか</span>づいては行<span class="furigana">い</span>き過<span class="furigana">す</span>ぎる 靴<span class="furigana">くつ</span>音<span class="furigana">おと</span>に耳<span class="furigana">みみ</span>を澄<span class="furigana">す</span>ます</p>
+    </div>
+    <div class="stanza">
+        <p>ああすっかりびしょ濡<span class="furigana">ぬ</span>れになって あなたは帰<span class="furigana">かえ</span>って来<span class="furigana">き</span>た</p>
+        <p>くたびれた顔<span class="furigana">かお</span>でほほえむ 疲<span class="furigana">つか</span>れたでしょう、おかえりなさい</p>
+    </div>
+    <div class="stanza">
+        <p>あなたの目<span class="furigana">め</span>を見<span class="furigana">み</span>ていった 大<span class="furigana">だい</span>事<span class="furigana">じ</span>な話<span class="furigana">はなし</span>があるの</p>
+        <p>自<span class="furigana">じ</span>分<span class="furigana">ぶん</span>に嘘<span class="furigana">うそ</span>をつくのは もうそろそろおやめなさい</p>
+    </div>
+    <div class="stanza">
+        <p>あなたの帰<span class="furigana">かえ</span>る場<span class="furigana">ば</span>所<span class="furigana">しょ</span>は あの人<span class="furigana">ひと</span>のいるところ</p>
+        <p>どんなに隠<span class="furigana">かく</span>してみても 私<span class="furigana">わたし</span>にはわかってしまう</p>
+    </div>
+    <div class="stanza">
+        <p>あなたと暮<span class="furigana">く</span>らすことが 私<span class="furigana">わたし</span>の幸<span class="furigana">しあわ</span>せだった</p>
+        <p>でももう終<span class="furigana">お</span>りにしましょう 元<span class="furigana">もと</span>の場<span class="furigana">ば</span>所<span class="furigana">しょ</span>におかえりなさい</p>
+    </div>
+    <div class="stanza">
+        <p>明<span class="furigana">あ</span>日<span class="furigana">す</span>の朝<span class="furigana">あさ</span>が来<span class="furigana">く</span>れば 何<span class="furigana">なに</span>もかも消<span class="furigana">き</span>えてしまう</p>
+        <p>だから最<span class="furigana">さい</span>後<span class="furigana">ご</span>に今<span class="furigana">こん</span>夜<span class="furigana">や</span>だけ 私<span class="furigana">わたし</span>を抱<span class="furigana">だ</span>いてちょうだい</p>
+    </div>
+    <div class="stanza">
+        <p>あなたの黒<span class="furigana">くろ</span>い瞳<span class="furigana">ひとみ</span>も あなたの優<span class="furigana">やさ</span>しい声<span class="furigana">こえ</span>も</p>
+        <p>あなたの暖<span class="furigana">あたた</span>かな手<span class="furigana">て</span>も 今<span class="furigana">こん</span>夜<span class="furigana">や</span>限<span class="furigana">かぎ</span>りは私<span class="furigana">わたし</span>のもの</p>
+    </div>
+    <div class="stanza">
+        <p>ああ私<span class="furigana">わたし</span>の優<span class="furigana">やさ</span>しい人<span class="furigana">ひと</span>よ 今<span class="furigana">こん</span>夜<span class="furigana">や</span>でさようなら</p>
+        <p>私<span class="furigana">わたし</span>が初<span class="furigana">はじ</span>めて愛<span class="furigana">あい</span>した人<span class="furigana">ひと</span> 最<span class="furigana">さい</span>後<span class="furigana">ご</span>に愛<span class="furigana">あい</span>した人<span class="furigana">ひと</span></p>
+    </div>
+    <div class="stanza">
+        <p>ああ今<span class="furigana">こん</span>夜<span class="furigana">や</span>も雨<span class="furigana">あめ</span>が降<span class="furigana">ふ</span>る 冷<span class="furigana">つめ</span>たい雨<span class="furigana">あめ</span>が降<span class="furigana">ふ</span>る</p>
+        <p>あなたが風<span class="furigana">か</span>邪<span class="furigana">ぜ</span>をひかぬように 私<span class="furigana">わたし</span>が暖<span class="furigana">あたた</span>めてあげる</p>
+    </div>
+    
