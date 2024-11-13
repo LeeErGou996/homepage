@@ -260,12 +260,24 @@
         let words = []; // 全局变量，用于存储加载的单词数据
 
         // 使用 fetch 加载单词数据
-        fetch('words.json')
-            .then(response => response.json())
-            .then(data => {
-                words = data; // 将加载的数据赋值给全局变量
-            })
-            .catch(error => console.error('加载单词数据失败:', error));
+        const jsonFiles = ['adjs.json', 'advs.json', 'nouns.json','preps.json','pronouns.json','verbs.json', 'words.json']; // 这里列出文件夹下的所有 JSON 文件名
+
+        let allWords = [];
+
+        Promise.all(
+            jsonFiles.map(file =>
+                fetch(file)
+                    .then(response => response.json())
+                    .catch(error => console.error(`加载文件 ${file} 失败:`, error))
+            )
+        )
+        .then(dataArray => {
+            // 合并所有文件的数据到全局变量
+            allWords = dataArray.flat(); // 合并多个数组为一个
+            console.log('所有单词数据已加载:', allWords);
+        })
+        .catch(error => console.error('加载文件数据失败:', error));
+
 
 
         // 显示随机单词

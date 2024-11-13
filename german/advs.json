@@ -1,0 +1,402 @@
+[
+    {
+        "word": "der Ab",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ab morgen muss ich arbeiten.",
+        "meaning": "从"
+    },
+    {
+        "word": "allein",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Er kommt allein.",
+        "meaning": "独自"
+    },
+    {
+        "word": "bald",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich komme bald.",
+        "meaning": "很快"
+    },
+    {
+        "word": "bisschen",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich spreche Englisch, Französisch und ein bisschen Deutsch.",
+        "meaning": "一点"
+    },
+    {
+        "word": "ungefähr",
+        "词性": "副词",
+        "subCategory": "时间",
+        "type": "副词",
+        "example": "Es sind ungefähr 10 Kilometer.",
+        "meaning": "大约"
+    },
+    {
+        "word": "circa",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Von Mainz nach Frankfurt sind es circa fünfzig Kilometer.",
+        "meaning": "大约"
+    },
+    {
+        "word": "da",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Da hinten ist er ja.",
+        "meaning": "那里"
+    },
+    {
+        "word": "dort, -her, -hin",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Dort ist unser Haus.",
+        "meaning": "那里"
+    },
+    {
+        "word": "draußen",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Wollen wir draußen sitzen?",
+        "meaning": "在外面"
+    },
+    {
+        "word": "einmal",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Diese Prüfung mache ich nicht noch einmal.",
+        "meaning": "一次"
+    },
+    {
+        "word": "früher",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Früher waren wir oft zusammen im Kino.",
+        "meaning": "以前"
+    },
+    {
+        "word": "gerade",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Da kommt er ja gerade.",
+        "meaning": "刚刚"
+    },
+    {
+        "word": "geradeaus",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Gehen Sie immer geradeaus!",
+        "meaning": "直行"
+    },
+    {
+        "word": "gern(e)",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich gehe gerne einkaufen.",
+        "meaning": "喜欢"
+    },
+    {
+        "word": "gestern",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Gestern war ich krank.",
+        "meaning": "昨天"
+    },
+    {
+        "word": "gleich",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich komme gleich.",
+        "meaning": "马上"
+    },
+    {
+        "word": "heute",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Heute ist ein schöner Tag.",
+        "meaning": "今天"
+    },
+    {
+        "word": "hier",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Hier wohne ich.",
+        "meaning": "这里"
+    },
+    {
+        "word": "hinten",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Die Tür zum Aussteigen ist hinten.",
+        "meaning": "在后面"
+    },
+    {
+        "word": "immer",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Frau Bast kommt immer zu spät.",
+        "meaning": "总是"
+    },
+    {
+        "word": "ja",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Sind Sie Herr Watanabe? – Ja.",
+        "meaning": "是"
+    },
+    {
+        "word": "jetzt",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Jetzt machen wir eine Pause.",
+        "meaning": "现在"
+    },
+    {
+        "word": "lange",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Wie lange fährt der Zug von Hamburg nach Berlin?",
+        "meaning": "多久"
+    },
+    {
+        "word": "leider",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Leider kann ich nicht kommen. Ich muss zum Arzt.",
+        "meaning": "遗憾地"
+    },
+    {
+        "word": "lieber",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Sie fährt lieber mit der Bahn.",
+        "meaning": "宁愿，更喜欢"
+    },
+    {
+        "word": "links",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Gehen Sie die nächste Straße links.",
+        "meaning": "左边"
+    },
+    {
+        "word": "mehr",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Dieses Auto kostet 1.000 Euro mehr als das andere.",
+        "meaning": "更多"
+    },
+    {
+        "word": "morgen",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Morgen beginnt die Schule um 10 Uhr.",
+        "meaning": "明天"
+    },
+    {
+        "word": "nicht",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Das stimmt nicht. Das ist doch schön, nicht?",
+        "meaning": "不"
+    },
+    {
+        "word": "ganz",
+        "词性": "副词",
+        "subCategory": "情感",
+        "type": "副词",
+        "example": "Alles ist ganz nah im Zentrum.",
+        "meaning": "非常"
+    },
+    {
+        "word": "nie",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Er kommt nie pünktlich.",
+        "meaning": "从不"
+    },
+    {
+        "word": "noch",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Vielleicht kommt er noch. Wir warten noch fünf Minuten. Ich habe noch 20 Euro.",
+        "meaning": "还，仍然"
+    },
+    {
+        "word": "nur",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich möchte nur ein Glas Wasser.",
+        "meaning": "仅仅，只"
+    },
+    {
+        "word": "oben",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich wohne oben.",
+        "meaning": "在上面"
+    },
+    {
+        "word": "oft",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Petra treffe ich oft.",
+        "meaning": "经常"
+    },
+    {
+        "word": "rechts",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Die Schillerstraße ist hier rechts.",
+        "meaning": "在右边"
+    },
+    {
+        "word": "schon",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ist das Essen schon fertig?",
+        "meaning": "已经"
+    },
+    {
+        "word": "sehr",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Danke sehr! Das ist sehr schwer.",
+        "meaning": "非常"
+    },
+    {
+        "word": "so",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Sie müssen das so machen! Fahren Sie bitte nicht so schnell! Meine Frau ist so groß wie ich. So, das war‘s/wär‘s!",
+        "meaning": "如此，这样"
+    },
+    {
+        "word": "sofort",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Bitte antworten Sie sofort.",
+        "meaning": "立即，马上"
+    },
+    {
+        "word": "später",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Das können wir später machen.",
+        "meaning": "稍后，之后"
+    },
+    {
+        "word": "unten",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Er wohnt ganz unten im Haus.",
+        "meaning": "下面"
+    },
+    {
+        "word": "mal",
+        "词性": "副词",
+        "subCategory": "时间",
+        "type": "副词",
+        "example": "Kommen Sie mal nach Leipzig.",
+        "meaning": "一次"
+    },
+    {
+        "word": "vielleicht",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich komme vielleicht mit dem Bus.",
+        "meaning": "可能"
+    },
+    {
+        "word": "weit",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Zum Bahnhof ist es nicht weit.",
+        "meaning": "远"
+    },
+    {
+        "word": "weiter",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Der Bus fährt nicht weiter.",
+        "meaning": "继续"
+    },
+    {
+        "word": "wie",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Wie heißt du?",
+        "meaning": "如何"
+    },
+    {
+        "word": "zurzeit",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Zurzeit habe ich sehr viel zu tun.",
+        "meaning": "目前"
+    },
+    {
+        "word": "zurück",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Wann kommst du zurück?",
+        "meaning": "回来"
+    },
+    {
+        "word": "zusammen",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Sollen wir zusammen essen gehen?",
+        "meaning": "一起"
+    }
+]

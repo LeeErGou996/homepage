@@ -1,0 +1,1090 @@
+[
+    {
+        "word": "abfahren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir fahren um zwölf Uhr ab.",
+        "meaning": "出发"
+    },
+    {
+        "word": "abgeben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich muss meine Schlüssel abgeben.",
+        "meaning": "交出"
+    },
+    {
+        "word": "abholen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wann kann ich den Schrank bei dir abholen?",
+        "meaning": "取，接"
+    },
+    {
+        "word": "anbieten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Was darf ich dir anbieten?",
+        "meaning": "提供"
+    },
+    {
+        "word": "anfangen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Unterricht fängt gleich an.",
+        "meaning": "开始"
+    },
+    {
+        "word": "arbeiten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wo arbeiten Sie?",
+        "meaning": "工作"
+    },
+    {
+        "word": "bedeuten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Was bedeutet das Wort?",
+        "meaning": "意思是"
+    },
+    {
+        "word": "beginnen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das Spiel beginnt um 15.30 Uhr.",
+        "meaning": "开始"
+    },
+    {
+        "word": "bekommen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Haben Sie meinen Brief bekommen?",
+        "meaning": "收到"
+    },
+    {
+        "word": "besichtigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich möchte gern den Dom besichtigen.",
+        "meaning": "参观"
+    },
+    {
+        "word": "bestellen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir möchten bestellen, bitte.",
+        "meaning": "点单"
+    },
+    {
+        "word": "besuchen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Darf ich dich besuchen?",
+        "meaning": "拜访"
+    },
+    {
+        "word": "bleiben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich bleibe heute zu Hause.",
+        "meaning": "停留"
+    },
+    {
+        "word": "brauchen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Brauchst du die Zeitung noch?",
+        "meaning": "需要"
+    },
+    {
+        "word": "bringen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bringen Sie mir bitte noch einen Kaffee!",
+        "meaning": "带来"
+    },
+    {
+        "word": "danken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich danke Ihnen für die Einladung.",
+        "meaning": "感谢"
+    },
+    {
+        "word": "dauern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wie lange dauert der Film?",
+        "meaning": "持续"
+    },
+    {
+        "word": "drucken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bitte drucke das Formular für mich.",
+        "meaning": "打印"
+    },
+    {
+        "word": "drücken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Drück hier, dann geht der Computer an.",
+        "meaning": "按"
+    },
+    {
+        "word": "duschen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich bade nicht so gern, ich dusche lieber.",
+        "meaning": "淋浴"
+    },
+    {
+        "word": "einkaufen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich muss noch für morgen einkaufen.",
+        "meaning": "购物"
+    },
+    {
+        "word": "einladen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Darf ich Sie zu einem Kaffee einladen?",
+        "meaning": "邀请"
+    },
+    {
+        "word": "einsteigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Schnell, steig ein, der Zug fährt gleich.",
+        "meaning": "上车"
+    },
+    {
+        "word": "empfehlen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Welchen Wein können Sie mir empfehlen?",
+        "meaning": "推荐"
+    },
+    {
+        "word": "enden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Straße endet hier.",
+        "meaning": "结束"
+    },
+    {
+        "word": "entschuldigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Entschuldigen Sie bitte!",
+        "meaning": "道歉"
+    },
+    {
+        "word": "erklären",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kannst du mir das erklären?",
+        "meaning": "解释"
+    },
+    {
+        "word": "erlauben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Rauchen ist hier nicht erlaubt.",
+        "meaning": "允许"
+    },
+    {
+        "word": "erzählen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir müssen euch etwas erzählen!",
+        "meaning": "讲述"
+    },
+    {
+        "word": "essen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Was gibt es zu essen?",
+        "meaning": "吃"
+    },
+    {
+        "word": "fahren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich fahre mit dem Auto zur Arbeit.",
+        "meaning": "驾驶"
+    },
+    {
+        "word": "feiern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir feiern heute meinen Geburtstag.",
+        "meaning": "庆祝"
+    },
+    {
+        "word": "fehlen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Herr Müller ist nicht da, er fehlt schon seit drei Tagen.",
+        "meaning": "缺席"
+    },
+    {
+        "word": "fernsehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wollen wir heute Abend mal fernsehen?",
+        "meaning": "看电视"
+    },
+    {
+        "word": "finden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir müssen den Schlüssel finden.",
+        "meaning": "找到"
+    },
+    {
+        "word": "fliegen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich fliege nicht gern. Deshalb fahre ich mit dem Zug.",
+        "meaning": "飞行"
+    },
+    {
+        "word": "abfliegen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wann fliegst du ab?",
+        "meaning": "起飞"
+    },
+    {
+        "word": "fragen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er möchte Sie etwas fragen.",
+        "meaning": "问"
+    },
+    {
+        "word": "sich freuen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich freue mich auf den Urlaub.",
+        "meaning": "感到高兴"
+    },
+    {
+        "word": "frühstücken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Am Sonntag frühstücke ich gern im Bett.",
+        "meaning": "吃早餐"
+    },
+    {
+        "word": "geben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kannst du mir bitte deinen Kugelschreiber geben?",
+        "meaning": "给"
+    },
+    {
+        "word": "gefallen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das gefällt mir.",
+        "meaning": "喜欢"
+    },
+    {
+        "word": "gehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Jetzt muss ich (aber) leider gehen.",
+        "meaning": "走"
+    },
+    {
+        "word": "gehören",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wem gehört das?",
+        "meaning": "属于"
+    },
+    {
+        "word": "gewinnen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wer gewinnt das Spiel?",
+        "meaning": "赢"
+    },
+    {
+        "word": "glauben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich glaube, er kommt gleich.",
+        "meaning": "相信"
+    },
+    {
+        "word": "gratulieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich gratuliere dir!",
+        "meaning": "祝贺"
+    },
+    {
+        "word": "grillen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Heute grillen wir im Garten.",
+        "meaning": "烧烤"
+    },
+    {
+        "word": "haben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe keine Zeit.",
+        "meaning": "有"
+    },
+    {
+        "word": "halten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Dieser Zug hält nicht in Rüdesheim.",
+        "meaning": "停下"
+    },
+    {
+        "word": "heiraten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Meine Schwester heiratet einen Japaner.",
+        "meaning": "结婚"
+    },
+    {
+        "word": "heißen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich heiße Charlotte Meier.",
+        "meaning": "叫做"
+    },
+    {
+        "word": "helfen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Können Sie mir helfen, bitte?",
+        "meaning": "帮助"
+    },
+    {
+        "word": "holen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich hole zwei Flaschen Wasser aus der Küche.",
+        "meaning": "取来"
+    },
+    {
+        "word": "hören",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe das Lied schon mal gehört.",
+        "meaning": "听"
+    },
+    {
+        "word": "kaufen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Tim kauft sich ein neues Auto.",
+        "meaning": "购买"
+    },
+    {
+        "word": "kennen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kennen Sie diese Frau? – Nein, leider nicht.",
+        "meaning": "认识"
+    },
+    {
+        "word": "kennenlernen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir sind neu hier. Wir möchten Sie kennenlernen.",
+        "meaning": "认识，了解"
+    },
+    {
+        "word": "kochen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Herr Georgi kann gut kochen.",
+        "meaning": "烹饪"
+    },
+    {
+        "word": "kommen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Woher kommen Sie? – Aus Frankreich.",
+        "meaning": "来"
+    },
+    {
+        "word": "kosten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wie viel kostet das? – 10 Euro.",
+        "meaning": "花费"
+    },
+    {
+        "word": "kriegen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich kriege 15 Euro in der Stunde für meine Arbeit.",
+        "meaning": "得到"
+    },
+    {
+        "word": "lachen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Kinder lachen viel.",
+        "meaning": "笑"
+    },
+    {
+        "word": "laufen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich möchte nicht Auto fahren, ich möchte laufen.",
+        "meaning": "跑，步行"
+    },
+    {
+        "word": "leben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie lebt bei ihrer Schwester.",
+        "meaning": "生活"
+    },
+    {
+        "word": "legen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Legen Sie das Buch auf den Tisch.",
+        "meaning": "放置"
+    },
+    {
+        "word": "lernen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wie lange lernen Sie schon Deutsch?",
+        "meaning": "学习"
+    },
+    {
+        "word": "lesen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich lese ein Buch von García Márquez.",
+        "meaning": "阅读"
+    },
+    {
+        "word": "lieben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich liebe dich!",
+        "meaning": "爱"
+    },
+    {
+        "word": "liegen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Um neun Uhr liegt Judith noch im Bett. Frankfurt liegt am Main.",
+        "meaning": "躺，位于"
+    },
+    {
+        "word": "machen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Was machst du heute Abend? Ich muss jetzt das Essen machen.",
+        "meaning": "做"
+    },
+    {
+        "word": "mieten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich möchte ein Auto mieten.",
+        "meaning": "租"
+    },
+    {
+        "word": "sortieren",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Bitte sortieren Sie die Sätze.",
+        "meaning": "排序，整理"
+    },
+    {
+        "word": "mögen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Magst du Kaffee oder Tee?",
+        "meaning": "喜欢"
+    },
+    {
+        "word": "nehmen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Heute gibt es Hähnchen. Das nehme ich. Ich nehme den Bus.",
+        "meaning": "拿，选择"
+    },
+    {
+        "word": "glauben",
+        "词性": "动词",
+        "subCategory": "情感",
+        "type": "动词",
+        "example": "Ich glaube ihm.",
+        "meaning": "相信"
+    },
+    {
+        "word": "wissen",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Ich weiß nicht.",
+        "meaning": "知道"
+    },
+    {
+        "word": "öffnen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich öffne die Tür.",
+        "meaning": "打开"
+    },
+    {
+        "word": "trinken",
+        "词性": "动词",
+        "subCategory": "餐饮",
+        "type": "动词",
+        "example": "Ich trinke gern Kaffee.",
+        "meaning": "喝，饮"
+    },
+    {
+        "word": "rauchen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich rauche nicht.",
+        "meaning": "抽烟"
+    },
+    {
+        "word": "regnen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Heute regnet es.",
+        "meaning": "下雨"
+    },
+    {
+        "word": "reisen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich reise gern.",
+        "meaning": "旅行"
+    },
+    {
+        "word": "reparieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er hat das Fahrrad repariert.",
+        "meaning": "修理"
+    },
+    {
+        "word": "riechen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Dieser Wein riecht gut.",
+        "meaning": "闻，气味"
+    },
+    {
+        "word": "sagen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sag mal, wie geht es dir denn?",
+        "meaning": "说"
+    },
+    {
+        "word": "scheinen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Sonne scheint.",
+        "meaning": "照耀，看起来"
+    },
+    {
+        "word": "schicken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bitte schicken Sie mir eine E-Mail.",
+        "meaning": "发送"
+    },
+    {
+        "word": "schlafen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich schlafe meistens acht Stunden.",
+        "meaning": "睡觉"
+    },
+    {
+        "word": "schließen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bitte, schließen Sie die Tür.",
+        "meaning": "关闭"
+    },
+    {
+        "word": "schmecken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Schmeckt das gut?",
+        "meaning": "尝起来"
+    },
+    {
+        "word": "schreiben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er schreibt jeden Tag fünfzig E-Mails.",
+        "meaning": "写"
+    },
+    {
+        "word": "schwimmen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich schwimme jeden Tag einen Kilometer.",
+        "meaning": "游泳"
+    },
+    {
+        "word": "sehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich kann dich nicht sehen. Ich habe diesen Jungen schon einmal gesehen.",
+        "meaning": "看见"
+    },
+    {
+        "word": "sein",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Herr Müller ist in seinem Zimmer. Mir ist kalt. Ich bin dreiundzwanzig.",
+        "meaning": "是"
+    },
+    {
+        "word": "sitzen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wo sitzen Sie?",
+        "meaning": "坐"
+    },
+    {
+        "word": "spielen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Kinder spielen draußen. Spielen Sie Karten?",
+        "meaning": "玩，演奏"
+    },
+    {
+        "word": "sprechen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kann ich (mit) Herrn Klein sprechen?",
+        "meaning": "说话"
+    },
+    {
+        "word": "stehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich glaube es nicht, aber es steht in der Zeitung. Der Bus steht schon an der Haltestelle.",
+        "meaning": "站立，位于"
+    },
+    {
+        "word": "stellen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Stell die Tasche rechts in die Ecke!",
+        "meaning": "放置"
+    },
+    {
+        "word": "studieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich studiere in Mainz.",
+        "meaning": "学习，研究"
+    },
+    {
+        "word": "suchen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Suchst du etwas?",
+        "meaning": "寻找"
+    },
+    {
+        "word": "tanzen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Tanzen Sie gern?",
+        "meaning": "跳舞"
+    },
+    {
+        "word": "telefonieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Darf ich mal telefonieren?",
+        "meaning": "打电话"
+    },
+    {
+        "word": "treffen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich treffe in der Stadt einen Kollegen. Wir treffen uns immer freitags.",
+        "meaning": "见面，遇见"
+    },
+    {
+        "word": "trinken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Möchtest du etwas trinken?",
+        "meaning": "喝"
+    },
+    {
+        "word": "tun",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe noch etwas zu tun. Was tut Ihr Mann?",
+        "meaning": "做"
+    },
+    {
+        "word": "übernachten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Du kannst bei mir übernachten.",
+        "meaning": "过夜"
+    },
+    {
+        "word": "überweisen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie können das Geld auch überweisen.",
+        "meaning": "转账"
+    },
+    {
+        "word": "umziehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Nächsten Monat ziehen wir um.",
+        "meaning": "搬家"
+    },
+    {
+        "word": "unterschreiben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wo muss ich unterschreiben?",
+        "meaning": "签字"
+    },
+    {
+        "word": "verdienen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich verdiene 1.500 Euro im Monat.",
+        "meaning": "赚取"
+    },
+    {
+        "word": "verkaufen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er verkauft sein altes Auto.",
+        "meaning": "出售"
+    },
+    {
+        "word": "vermieten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Wohnung ist schon vermietet.",
+        "meaning": "出租"
+    },
+    {
+        "word": "verstehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Können Sie mich verstehen?",
+        "meaning": "理解"
+    },
+    {
+        "word": "ordnen",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Er ordnet die Sätze.",
+        "meaning": "整理"
+    },
+    {
+        "word": "ergänzen",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Ergänzen Sie bitte.",
+        "meaning": "补充，添加"
+    },
+    {
+        "word": "buchstabieren",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Können Sie Ihren Namen bitte buchstabieren?",
+        "meaning": "拼写"
+    },
+    {
+        "word": "markieren",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Bitte markieren Sie die richtige Antwort.",
+        "meaning": "标记"
+    },
+    {
+        "word": "antworten",
+        "词性": "动词",
+        "subCategory": "沟通",
+        "type": "动词",
+        "example": "Er antwortet auf die Frage.",
+        "meaning": "回答"
+    },
+    {
+        "word": "kombinieren",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Kombinieren Sie die Sätze.",
+        "meaning": "组合"
+    },
+    {
+        "word": "zusammenpassen",
+        "词性": "动词",
+        "subCategory": "学习",
+        "type": "动词",
+        "example": "Was passt zusammen? Zug und Züge.",
+        "meaning": "匹配，配合"
+    },
+    {
+        "word": "wandern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir wandern um den Chiemsee.",
+        "meaning": "徒步旅行"
+    },
+    {
+        "word": "warten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Können Sie ein paar Minuten warten?",
+        "meaning": "等待"
+    },
+    {
+        "word": "(sich) waschen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wo kann ich mir die Hände waschen?",
+        "meaning": "洗"
+    },
+    {
+        "word": "werden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Mein Sohn will Arzt werden.",
+        "meaning": "成为"
+    },
+    {
+        "word": "wiederholen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Können Sie das bitte wiederholen?",
+        "meaning": "重复"
+    },
+    {
+        "word": "wissen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Weißt du, wie er heißt?",
+        "meaning": "知道"
+    },
+    {
+        "word": "wohnen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich wohne in München.",
+        "meaning": "居住"
+    },
+    {
+        "word": "wollen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wollen Sie einen Kaffee trinken?",
+        "meaning": "想要"
+    },
+    {
+        "word": "zahlen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Zahlen, bitte!",
+        "meaning": "支付"
+    },
+    {
+        "word": "aufstehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich stehe jeden Morgen um 7 Uhr auf.",
+        "meaning": "起床"
+    },
+    {
+        "word": "zeigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kannst du mir den Weg zeigen?",
+        "meaning": "展示"
+    },
+    {
+        "word": "malen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie malt ein schönes Bild.",
+        "meaning": "画画"
+    },
+    {
+        "word": "springen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das Kind springt vor Freude.",
+        "meaning": "跳跃"
+    },
+    {
+        "word": "weinen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das Baby weint.",
+        "meaning": "哭"
+    },
+    {
+        "word": "rennen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er rennt sehr schnell.",
+        "meaning": "跑步"
+    }
+]

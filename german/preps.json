@@ -1,0 +1,146 @@
+[
+    {
+        "word": "an",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Fahren Sie an der nächsten Straße nach rechts.",
+        "meaning": "在"
+    },
+    {
+        "word": "bis",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Ich fahre nur bis Stuttgart.",
+        "meaning": "直到"
+    },
+    {
+        "word": "durch",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Am besten gehen Sie durch die Breite Straße.",
+        "meaning": "通过"
+    },
+    {
+        "word": "für",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Das ist für Sie.",
+        "meaning": "为了"
+    },
+    {
+        "word": "gegen",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Ich bin gegen diese Lösung.",
+        "meaning": "反对"
+    },
+    {
+        "word": "in",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Ich wohne in Wiesbaden. Der Zug kommt in fünf Minuten.",
+        "meaning": "在...里面"
+    },
+    {
+        "word": "mit",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Trinken Sie den Kaffee mit Milch?",
+        "meaning": "和...一起，带有"
+    },
+    {
+        "word": "nach",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Ich gehe jetzt nach Hause. Ich fliege nach München. Es ist schon 5 nach 12.",
+        "meaning": "向，往，在...之后"
+    },
+    {
+        "word": "ohne",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Ohne Geld kann er nichts kaufen.",
+        "meaning": "没有"
+    },
+    {
+        "word": "seit",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Ich wohne seit drei Jahren in Köln.",
+        "meaning": "自从，从...以来"
+    },
+    {
+        "word": "über",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Gehen Sie hier über die Straße. Er wohnt im zweiten Stock über Familie Meier.",
+        "meaning": "在...上方，超过"
+    },
+    {
+        "word": "um",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Er kommt um sieben Uhr. Da kommt er gerade um die Ecke.",
+        "meaning": "在...时，绕"
+    },
+    {
+        "word": "unter",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Unter uns wohnt eine Familie mit drei Kindern.",
+        "meaning": "在...之下"
+    },
+    {
+        "word": "von",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Das Auto von Felix ist kaputt.",
+        "meaning": "从"
+    },
+    {
+        "word": "vor",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Der Termin war vor einer Stunde.",
+        "meaning": "之前"
+    },
+    {
+        "word": "zu",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Der Bus fährt zum Bahnhof.",
+        "meaning": "去"
+    },
+    {
+        "word": "zwischen",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Heidelberg liegt zwischen Frankfurt und Stuttgart.",
+        "meaning": "在...之间"
+    },
+    {
+        "word": "auf",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Das Buch liegt auf dem Tisch.",
+        "meaning": "在...上"
+    }
+]

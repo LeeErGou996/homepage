@@ -1,0 +1,242 @@
+[
+    {
+        "word": "dein",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Ist das dein Auto?",
+        "meaning": "你的"
+    },
+    {
+        "word": "dich",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Die Blumen sind für dich.",
+        "meaning": "你"
+    },
+    {
+        "word": "dir",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Gefallen dir die Blumen?",
+        "meaning": "你（与格）"
+    },
+    {
+        "word": "er",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Er heißt Ali.",
+        "meaning": "他"
+    },
+    {
+        "word": "es",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Es regnet.",
+        "meaning": "它"
+    },
+    {
+        "word": "euer",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Euer Kurs beginnt heute.",
+        "meaning": "你们的"
+    },
+    {
+        "word": "wer",
+        "词性": "词性",
+        "subCategory": "疑问代词",
+        "type": "代词",
+        "example": "Wer ist das?",
+        "meaning": "谁"
+    },
+    {
+        "word": "was",
+        "词性": "词性",
+        "subCategory": "疑问代词",
+        "type": "代词",
+        "example": "Was machst du?",
+        "meaning": "什么"
+    },
+    {
+        "word": "welcher",
+        "词性": "词性",
+        "subCategory": "疑问代词",
+        "type": "代词",
+        "example": "Welcher Tag ist heute?",
+        "meaning": "哪一个"
+    },
+    {
+        "word": "wo",
+        "词性": "词性",
+        "subCategory": "疑问代词",
+        "type": "代词",
+        "example": "Wo wohnst du?",
+        "meaning": "哪里"
+    },
+    {
+        "word": "woher",
+        "词性": "词性",
+        "subCategory": "疑问代词",
+        "type": "代词",
+        "example": "Woher kommst du?",
+        "meaning": "从哪里"
+    },
+    {
+        "word": "wohin",
+        "词性": "词性",
+        "subCategory": "疑问代词",
+        "type": "代词",
+        "example": "Wohin gehst du?",
+        "meaning": "去哪里"
+    },
+    {
+        "word": "wann",
+        "词性": "词性",
+        "subCategory": "疑问代词",
+        "type": "代词",
+        "example": "Wann kommst du?",
+        "meaning": "什么时候"
+    },
+    {
+        "word": "warum",
+        "词性": "词性",
+        "subCategory": "疑问代词",
+        "type": "代词",
+        "example": "Warum bist du hier?",
+        "meaning": "为什么"
+    },
+    {
+        "word": "wie",
+        "词性": "词性",
+        "subCategory": "疑问代词",
+        "type": "代词",
+        "example": "Wie geht es dir?",
+        "meaning": "如何"
+    },
+    {
+        "word": "wieviel",
+        "词性": "词性",
+        "subCategory": "疑问代词",
+        "type": "代词",
+        "example": "Wieviel kostet das?",
+        "meaning": "多少（数量）"
+    },
+    {
+        "word": "wie viele",
+        "词性": "词性",
+        "subCategory": "疑问代词",
+        "type": "代词",
+        "example": "Wie viele Kinder hast du?",
+        "meaning": "多少（可数）"
+    },
+    {
+        "word": "ich",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Ich heiße Veronika.",
+        "meaning": "我"
+    },
+    {
+        "word": "ihr/ihm/ihn",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Gib ihr/ihm bitte das Buch. Ruf ihn bitte an.",
+        "meaning": "她/他/他（第三人称单数宾格）"
+    },
+    {
+        "word": "jed-",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Blumen kannst du in jedem Bahnhof kaufen.",
+        "meaning": "每一个"
+    },
+    {
+        "word": "kein",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Es gibt keine Eintrittskarten mehr.",
+        "meaning": "没有"
+    },
+    {
+        "word": "man",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Hier darf man nicht rauchen.",
+        "meaning": "人，人们"
+    },
+    {
+        "word": "mein",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Mein Vater ist Arzt.",
+        "meaning": "我的"
+    },
+    {
+        "word": "nichts",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Das macht nichts. Hier kaufe ich nichts. Der Laden gefällt mir nicht.",
+        "meaning": "没有东西，没有"
+    },
+    {
+        "word": "sich",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Sie müssen sich erst anmelden.",
+        "meaning": "自己"
+    },
+    {
+        "word": "sie",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Wie heißt sie?",
+        "meaning": "她"
+    },
+    {
+        "word": "Sie",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Wie heißen Sie, bitte?",
+        "meaning": "您"
+    },
+    {
+        "word": "jeden",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Ich gehe jeden Tag zur Arbeit.",
+        "meaning": "每一个"
+    },
+    {
+        "word": "wir",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Wir lernen Deutsch.",
+        "meaning": "我们"
+    },
+    {
+        "word": "unser",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Das ist unsere Lehrerin.",
+        "meaning": "我们的"
+    }
+]

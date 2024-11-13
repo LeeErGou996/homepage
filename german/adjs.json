@@ -1,0 +1,634 @@
+[
+    {
+        "word": "alt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Mein Auto ist schon sehr alt.",
+        "meaning": "旧的"
+    },
+    {
+        "word": "billig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Jacke kostet nur 10 Euro! Die ist aber billig!",
+        "meaning": "便宜的"
+    },
+    {
+        "word": "böse",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie ist böse auf mich.",
+        "meaning": "生气的"
+    },
+    {
+        "word": "breit",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Wie breit ist der Schrank?",
+        "meaning": "宽的"
+    },
+    {
+        "word": "eilig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Hast du es eilig?",
+        "meaning": "着急的"
+    },
+    {
+        "word": "einfach",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Prüfung ist ganz einfach.",
+        "meaning": "简单的"
+    },
+    {
+        "word": "falsch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist falsch.",
+        "meaning": "错误的"
+    },
+    {
+        "word": "hübsch",
+        "词性": "形容词",
+        "subCategory": "情感",
+        "type": "形容词",
+        "example": "Das Mädchen ist sehr hübsch.",
+        "meaning": "漂亮的"
+    },
+    {
+        "word": "fertig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Bist du fertig?",
+        "meaning": "完成的"
+    },
+    {
+        "word": "frei",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ist der Platz noch frei?",
+        "meaning": "空闲的"
+    },
+    {
+        "word": "fremd",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das weiß ich nicht; ich bin fremd hier.",
+        "meaning": "陌生的"
+    },
+    {
+        "word": "geboren",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin in Zagreb geboren.",
+        "meaning": "出生的"
+    },
+    {
+        "word": "gestorben",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Meine Frau ist gestern gestorben.",
+        "meaning": "去世的"
+    },
+    {
+        "word": "glücklich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Meine Kinder sind glücklich verheiratet.",
+        "meaning": "幸福的"
+    },
+    {
+        "word": "groß",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Frankfurt ist eine große Stadt.",
+        "meaning": "大的"
+    },
+    {
+        "word": "gültig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Pass ist nicht mehr gültig.",
+        "meaning": "有效的"
+    },
+    {
+        "word": "günstig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Dort gibt es günstige Angebote.",
+        "meaning": "便宜的，实惠的"
+    },
+    {
+        "word": "gut",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das finde ich gut.",
+        "meaning": "好的"
+    },
+    {
+        "word": "hell",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Im Sommer ist es bis 21 Uhr hell.",
+        "meaning": "明亮的"
+    },
+    {
+        "word": "herzlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Herzlichen Glückwunsch!",
+        "meaning": "真诚的"
+    },
+    {
+        "word": "hoch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Mount Everest ist 8.880 Meter hoch.",
+        "meaning": "高的"
+    },
+    {
+        "word": "jung",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Claudia ist 21. – Was? Noch so jung?",
+        "meaning": "年轻的"
+    },
+    {
+        "word": "kaputt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Glas war teuer. Es geht sehr leicht kaputt.",
+        "meaning": "破碎的"
+    },
+    {
+        "word": "klar",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Kommst du mit? – Klar!",
+        "meaning": "清楚的"
+    },
+    {
+        "word": "klein",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Eltville ist eine kleine Stadt am Rhein.",
+        "meaning": "小的"
+    },
+    {
+        "word": "kulturell",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin kulturell interessiert. Ich gehe oft ins Museum.",
+        "meaning": "文化的"
+    },
+    {
+        "word": "kurz",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ricardo hat kurzes Haar.",
+        "meaning": "短的"
+    },
+    {
+        "word": "lang",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Jeans ist zu lang.",
+        "meaning": "长的"
+    },
+    {
+        "word": "langsam",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Könnten Sie bitte etwas langsamer sprechen?",
+        "meaning": "慢的"
+    },
+    {
+        "word": "laut",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Nicht so laut! Das Baby schläft.",
+        "meaning": "响的，大声的"
+    },
+    {
+        "word": "ledig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sind Sie verheiratet? – Nein. Ledig.",
+        "meaning": "单身的"
+    },
+    {
+        "word": "leise",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Seid leise. Die anderen schlafen schon.",
+        "meaning": "轻声的，安静的"
+    },
+    {
+        "word": "letzt-",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Morgen ist der letzte Kurstag.",
+        "meaning": "最后的"
+    },
+    {
+        "word": "lieb-",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Liebe Susanne, lieber Hans.",
+        "meaning": "亲爱的"
+    },
+    {
+        "word": "das Lieblings-",
+        "category": "主题",
+        "subCategory": "偏好",
+        "type": "形容词",
+        "example": "Mein Lieblingsfilm ist „Schwarze Augen“.",
+        "meaning": "最喜欢的"
+    },
+    {
+        "word": "lustig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Frau Mertens ist lustig. Sie lacht immer.",
+        "meaning": "有趣的，搞笑的"
+    },
+    {
+        "word": "männlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Kreuzen Sie bitte an: 'weiblich' oder 'männlich'.",
+        "meaning": "男性的"
+    },
+    {
+        "word": "meist-",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die meisten Norddeutschen sind sehr groß.",
+        "meaning": "大多数的"
+    },
+    {
+        "word": "möglich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Mit dieser Fahrkarte ist die Fahrt ab 9 Uhr möglich.",
+        "meaning": "可能的"
+    },
+    {
+        "word": "nächst-",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sehen wir uns nächste Woche?",
+        "meaning": "下一个的"
+    },
+    {
+        "word": "neu",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin der neue Kollege. Wir haben eine neue Wohnung.",
+        "meaning": "新的"
+    },
+    {
+        "word": "normal",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "75 kg. Sein Gewicht ist normal.",
+        "meaning": "正常的"
+    },
+    {
+        "word": "geöffnet",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Laden ist samstags bis 16.00 Uhr geöffnet.",
+        "meaning": "开放的"
+    },
+    {
+        "word": "pünktlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Bus fährt pünktlich um acht Uhr. Herr Müller ist immer pünktlich.",
+        "meaning": "准时的"
+    },
+    {
+        "word": "richtig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Habe ich das richtig verstanden? Das ist richtig.",
+        "meaning": "正确的"
+    },
+    {
+        "word": "ruhig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich möchte ein ruhiges Zimmer.",
+        "meaning": "安静的"
+    },
+    {
+        "word": "schlecht",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Mir ist schlecht! Sie sehen schlecht aus.",
+        "meaning": "糟糕的"
+    },
+    {
+        "word": "geschlossen",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Bank hat am Samstag geschlossen.",
+        "meaning": "关闭的"
+    },
+    {
+        "word": "schnell",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er fährt schnell.",
+        "meaning": "快速的"
+    },
+    {
+        "word": "schön",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Schönen Urlaub! Das ist sehr schön.",
+        "meaning": "美丽的"
+    },
+    {
+        "word": "schwer",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ist Ihr Gepäck sehr schwer? Das ist eine schwere Arbeit.",
+        "meaning": "重的，困难的"
+    },
+    {
+        "word": "selbstständig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er ist selbstständig.",
+        "meaning": "独立的，自主的"
+    },
+    {
+        "word": "spät",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Es ist schon spät, ich muss gehen.",
+        "meaning": "晚的"
+    },
+    {
+        "word": "teuer",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist mir zu teuer.",
+        "meaning": "贵的"
+    },
+    {
+        "word": "tot",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sein Vater ist schon lange tot.",
+        "meaning": "死的"
+    },
+    {
+        "word": "verboten",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Hier ist Rauchen verboten.",
+        "meaning": "禁止的"
+    },
+    {
+        "word": "verheiratet",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin verheiratet und habe drei Kinder.",
+        "meaning": "已婚的"
+    },
+    {
+        "word": "weiblich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Kreuzen Sie bitte an: „weiblich“ oder „männlich“.",
+        "meaning": "女性的"
+    },
+    {
+        "word": "wichtig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Dieses Formular ist sehr wichtig.",
+        "meaning": "重要的"
+    },
+    {
+        "word": "willkommen",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Herzlich willkommen!",
+        "meaning": "欢迎"
+    },
+    {
+        "word": "wunderbar",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Essen schmeckt wunderbar.",
+        "meaning": "美妙的"
+    },
+    {
+        "word": "zufrieden",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin mit der Wohnung zufrieden.",
+        "meaning": "满意的"
+    },
+    {
+        "word": "sauber",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Zimmer ist sauber.",
+        "meaning": "干净的"
+    },
+    {
+        "word": "dreckig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Schuhe sind dreckig.",
+        "meaning": "脏的"
+    },
+    {
+        "word": "dunkel",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Es wird draußen schon dunkel.",
+        "meaning": "黑暗的"
+    },
+    {
+        "word": "süß",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Obst ist sehr süß.",
+        "meaning": "甜的"
+    },
+    {
+        "word": "warm",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Heute ist es warm draußen.",
+        "meaning": "温暖的"
+    },
+    {
+        "word": "schön",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Wetter ist heute schön.",
+        "meaning": "美丽的"
+    },
+    {
+        "word": "krank",
+        "category": "主题",
+        "subCategory": "健康",
+        "type": "形容词",
+        "example": "Ich bin krank.",
+        "meaning": "生病的"
+    },
+    {
+        "word": "gesund",
+        "category": "主题",
+        "subCategory": "健康",
+        "type": "形容词",
+        "example": "Ich fühle mich gesund.",
+        "meaning": "健康的"
+    },
+    {
+        "word": "stark",
+        "category": "主题",
+        "subCategory": "健康",
+        "type": "形容词",
+        "example": "Der Schmerz ist stark.",
+        "meaning": "强烈的"
+    },
+    {
+        "word": "leicht",
+        "category": "主题",
+        "subCategory": "健康",
+        "type": "形容词",
+        "example": "Ich habe nur leichte Schmerzen.",
+        "meaning": "轻微的"
+    },
+    {
+        "word": "akut",
+        "category": "主题",
+        "subCategory": "健康",
+        "type": "形容词",
+        "example": "Die Erkrankung ist akut.",
+        "meaning": "急性的"
+    },
+    {
+        "word": "chronisch",
+        "category": "主题",
+        "subCategory": "健康",
+        "type": "形容词",
+        "example": "Er hat eine chronische Krankheit.",
+        "meaning": "慢性的"
+    },
+    {
+        "word": "infektiös",
+        "category": "主题",
+        "subCategory": "健康",
+        "type": "形容词",
+        "example": "Diese Krankheit ist infektiös.",
+        "meaning": "传染性的"
+    },
+    {
+        "word": "schmerzhaft",
+        "category": "主题",
+        "subCategory": "健康",
+        "type": "形容词",
+        "example": "Die Behandlung kann schmerzhaft sein.",
+        "meaning": "痛苦的"
+    },
+    {
+        "word": "müde",
+        "category": "主题",
+        "subCategory": "健康",
+        "type": "形容词",
+        "example": "Ich fühle mich müde.",
+        "meaning": "疲惫的"
+    },
+    {
+        "word": "schlapp",
+        "category": "主题",
+        "subCategory": "健康",
+        "type": "形容词",
+        "example": "Ich fühle mich schlapp.",
+        "meaning": "无力的"
+    },
+    {
+        "word": "nett",
+        "词性": "形容词",
+        "subCategory": "情感",
+        "type": "形容词",
+        "example": "Frau Mohr ist sehr nett.",
+        "meaning": "友好的，和蔼的"
+    }
+]
