@@ -16,7 +16,7 @@
     "meaning": "寄件人"
   },
   {
-    "word": "die Achtung (die, -en)",
+    "word": "die Achtung (die, -)",
     "category": "主题",
     "subCategory": "警告",
     "type": "名词",
@@ -48,7 +48,7 @@
     "meaning": "优惠"
   },
   {
-    "word": "die Ankunft (die, -en)",
+    "word": "die Ankunft (die, -e)",
     "category": "主题",
     "subCategory": "交通",
     "type": "名词",
@@ -64,7 +64,7 @@
     "meaning": "工作"
   },
   {
-    "word": "das Auto (die, -)",
+    "word": "das Auto (die, -s)",
     "category": "主题",
     "subCategory": "交通",
     "type": "名词",
@@ -88,7 +88,7 @@
     "meaning": "火车"
   },
   {
-    "word": "das Baby (die, -)",
+    "word": "das Baby (die, -s)",
     "category": "主题",
     "subCategory": "家庭",
     "type": "名词",
@@ -104,7 +104,7 @@
     "meaning": "香蕉"
   },
   {
-    "word": "die Bar (die, -en)",
+    "word": "die Bar (die, -s)",
     "category": "主题",
     "subCategory": "支付方式",
     "type": "名词",
@@ -112,7 +112,7 @@
     "meaning": "现金"
   },
   {
-    "word": "das Bett (die, -)",
+    "word": "das Bett (die, betten)",
     "category": "主题",
     "subCategory": "家居",
     "type": "名词",
@@ -120,7 +120,7 @@
     "meaning": "床"
   },
   {
-    "word": "das Bier (die, -)",
+    "word": "das Bier (die, Biere)",
     "category": "主题",
     "subCategory": "餐饮",
     "type": "名词",
@@ -128,7 +128,7 @@
     "meaning": "啤酒"
   },
   {
-    "word": "das Bild (die, -)",
+    "word": "das Bild (die, Bilder)",
     "category": "主题",
     "subCategory": "艺术",
     "type": "名词",
@@ -184,7 +184,7 @@
     "meaning": "游客信息中心"
   },
   {
-    "word": "der Fluss (die, -en)",
+    "word": "der Fluss (die, -Flüsse)",
     "词性": "名词",
     "subCategory": "地理",
     "type": "名词",
@@ -192,7 +192,7 @@
     "meaning": "河流"
   },
   {
-    "word": "der Turm (die, -en)",
+    "word": "der Turm (die, -Türme)",
     "词性": "名词",
     "subCategory": "建筑",
     "type": "名词",
@@ -216,7 +216,7 @@
     "meaning": "展览塔"
   },
   {
-    "word": "der Bogen (die, -)",
+    "word": "der Bogen (die, Bögen)",
     "category": "主题",
     "subCategory": "纸张",
     "type": "名词",
@@ -224,7 +224,7 @@
     "meaning": "表格"
   },
   {
-    "word": "der Brief (die, -en)",
+    "word": "der Brief (die, -e)",
     "category": "主题",
     "subCategory": "通讯",
     "type": "名词",
@@ -240,7 +240,7 @@
     "meaning": "邮票"
   },
   {
-    "word": "das Brot (die, -)",
+    "word": "das Brot (die, Brote)",
     "category": "主题",
     "subCategory": "餐饮",
     "type": "名词",
@@ -256,7 +256,7 @@
     "meaning": "小面包"
   },
   {
-    "word": "der Bruder (die, -)",
+    "word": "der Bruder (die, Brüder)",
     "category": "主题",
     "subCategory": "家庭",
     "type": "名词",
@@ -264,7 +264,7 @@
     "meaning": "兄弟"
   },
   {
-    "word": "das Buch (die, -)",
+    "word": "das Buch (die, Bücher)",
     "category": "主题",
     "subCategory": "学习",
     "type": "名词",
@@ -280,7 +280,7 @@
     "meaning": "公共汽车"
   },
   {
-    "word": "die Butter (die, -en)",
+    "word": "die Butter (die, -)",
     "category": "主题",
     "subCategory": "餐饮",
     "type": "名词",
@@ -632,7 +632,7 @@
     "meaning": "婚姻状况"
   },
   {
-    "word": "das Blatt (die, -)",
+    "word": "das Blatt (die, Blätter)",
     "词性": "名词",
     "subCategory": "文具",
     "type": "名词",
@@ -640,7 +640,7 @@
     "meaning": "纸张"
   },
   {
-    "word": "das Heft (die, -)",
+    "word": "das Heft (die, Hefte)",
     "词性": "名词",
     "subCategory": "文具",
     "type": "名词",
@@ -1240,7 +1240,7 @@
     "meaning": "酒店"
   },
   {
-    "word": "der Hund (die, -en)",
+    "word": "der Hund (die, -e)",
     "category": "主题",
     "subCategory": "动物",
     "type": "名词",
@@ -1520,7 +1520,7 @@
     "meaning": "歌曲"
   },
   {
-    "word": "der Lkw (die, -en)",
+    "word": "der Lkw (die, Lastkraftwagen)",
     "category": "主题",
     "subCategory": "交通",
     "type": "名词",
@@ -1592,7 +1592,7 @@
     "meaning": "租金"
   },
   {
-    "word": "die Milch (die, -en)",
+    "word": "die Milch (die, -)",
     "category": "主题",
     "subCategory": "餐饮",
     "type": "名词",
@@ -1816,7 +1816,7 @@
     "meaning": "位置，广场"
   },
   {
-    "word": "die Polizei (die, -en)",
+    "word": "die Polizei (die, -)",
     "category": "主题",
     "subCategory": "服务",
     "type": "名词",
@@ -1832,7 +1832,7 @@
     "meaning": "薯条"
   },
   {
-    "word": "die Post (die, -en)",
+    "word": "die Post (die, -)",
     "category": "主题",
     "subCategory": "通讯",
     "type": "名词",
@@ -2056,7 +2056,7 @@
     "meaning": "结束"
   },
   {
-    "word": "der Schlüssel (die, -en)",
+    "word": "der Schlüssel (die, -)",
     "category": "主题",
     "subCategory": "物品",
     "type": "名词",
@@ -2264,7 +2264,7 @@
     "meaning": "茶"
   },
   {
-    "word": "der Teil (die, -en)",
+    "word": "der Teil (die, -e)",
     "category": "主题",
     "subCategory": "整体与部分",
     "type": "名词",
@@ -2272,7 +2272,7 @@
     "meaning": "部分"
   },
   {
-    "word": "das Telefon (die, -)",
+    "word": "das Telefon (die, -e)",
     "category": "主题",
     "subCategory": "通讯",
     "type": "名词",
@@ -2312,7 +2312,7 @@
     "meaning": "主题"
   },
   {
-    "word": "das Ticket (die, -)",
+    "word": "das Ticket (die, -s)",
     "category": "主题",
     "subCategory": "交通",
     "type": "名词",
@@ -2320,7 +2320,7 @@
     "meaning": "票"
   },
   {
-    "word": "der Tisch (die, -en)",
+    "word": "der Tisch (die, Tische)",
     "category": "主题",
     "subCategory": "家居",
     "type": "名词",
@@ -2560,7 +2560,7 @@
     "meaning": "暴风"
   },
   {
-    "word": "der Blitz (die, -en)",
+    "word": "der Blitz (die, -e)",
     "category": "主题",
     "subCategory": "天气",
     "type": "名词",
@@ -2680,7 +2680,7 @@
     "meaning": "公寓"
   },
   {
-    "word": "das Wort (die, -)",
+    "word": "das Wort (die, -e)",
     "category": "词性",
     "subCategory": "名词",
     "type": "名词",
@@ -2728,7 +2728,7 @@
     "meaning": "海关"
   },
   {
-    "word": "der Zug (die, -en)",
+    "word": "der Zug (die, Züge)",
     "category": "词性",
     "subCategory": "名词",
     "type": "名词",
@@ -2760,7 +2760,7 @@
     "meaning": "猫"
   },
   {
-    "word": "der Baum (die, -en)",
+    "word": "der Baum (die, -Bäume)",
     "category": "主题",
     "subCategory": "自然",
     "type": "名词",
@@ -2768,7 +2768,7 @@
     "meaning": "树"
   },
   {
-    "word": "der Himmel (die, -en)",
+    "word": "der Himmel (die, Himmel)",
     "category": "主题",
     "subCategory": "自然",
     "type": "名词",
@@ -2776,7 +2776,7 @@
     "meaning": "天空"
   },
   {
-    "word": "der Stern (die, -en)",
+    "word": "der Stern (die, -Sterne)",
     "category": "主题",
     "subCategory": "自然",
     "type": "名词",
@@ -2840,7 +2840,7 @@
     "meaning": "德语"
   },
   {
-    "word": "der Kopf (die, -en)",
+    "word": "der Kopf (die, -Köpfe)",
     "category": "主题",
     "subCategory": "身体部位",
     "type": "名词",
@@ -2848,7 +2848,7 @@
     "meaning": "头"
   },
   {
-    "word": "das Gesicht (die, -)",
+    "word": "das Gesicht (die, Gesichter)",
     "category": "主题",
     "subCategory": "身体部位",
     "type": "名词",
@@ -2856,7 +2856,7 @@
     "meaning": "脸"
   },
   {
-    "word": "das Auge (die, -)",
+    "word": "das Auge (die, Augen)",
     "category": "主题",
     "subCategory": "身体部位",
     "type": "名词",
@@ -2864,7 +2864,7 @@
     "meaning": "眼睛"
   },
   {
-    "word": "das Ohr (die, -)",
+    "word": "das Ohr (die, Ohren)",
     "category": "主题",
     "subCategory": "身体部位",
     "type": "名词",
@@ -2888,7 +2888,7 @@
     "meaning": "嘴"
   },
   {
-    "word": "der Zahn (die, -en)",
+    "word": "der Zahn (die, Zähne)",
     "category": "主题",
     "subCategory": "身体部位",
     "type": "名词",
@@ -2952,7 +2952,7 @@
     "meaning": "背部"
   },
   {
-    "word": "das Bein (die, -)",
+    "word": "das Bein (die, -e)",
     "category": "主题",
     "subCategory": "身体部位",
     "type": "名词",
@@ -2968,7 +2968,7 @@
     "meaning": "膝盖"
   },
   {
-    "word": "der Fuß (die, -en)",
+    "word": "der Fuß (die, -Füße)",
     "category": "主题",
     "subCategory": "身体部位",
     "type": "名词",
@@ -2984,7 +2984,7 @@
     "meaning": "脚趾"
   },
   {
-    "word": "das Herz (die, -)",
+    "word": "das Herz (die, Herzen)",
     "category": "主题",
     "subCategory": "身体部位",
     "type": "名词",
@@ -2992,7 +2992,7 @@
     "meaning": "心脏"
   },
   {
-    "word": "der Magen (die, -)",
+    "word": "der Magen (die, Mägen)",
     "category": "主题",
     "subCategory": "身体部位",
     "type": "名词",
@@ -3168,7 +3168,7 @@
     "meaning": "药店"
   },
   {
-    "word": "das Krankenhaus (die, -)",
+    "word": "das Krankenhaus (die, Krankenhäuser)",
     "category": "主题",
     "subCategory": "健康",
     "type": "名词",

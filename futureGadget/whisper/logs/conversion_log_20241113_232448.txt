@@ -1,0 +1,20 @@
+Whisper Voice Conversion Log - 2024-11-13 23:24:48
+--------------------------------------------------------------------------------
+
+Successfully processed files:
+
+Failed conversions:
+✗ segment_2.mp3: Failed to process segment temp\segment_2\segment_0.mp3
+✗ segment_0.mp3: Failed to process segment temp\segment_0\segment_0.mp3
+✗ segment_10.mp3: Failed to process segment temp\segment_10\segment_0.mp3
+✗ segment_1.mp3: Failed to process segment temp\segment_1\segment_0.mp3
+✗ segment_4.mp3: Failed to process segment temp\segment_4\segment_0.mp3
+✗ segment_3.mp3: Failed to process segment temp\segment_3\segment_0.mp3
+✗ segment_5.mp3: Failed to process segment temp\segment_5\segment_0.mp3
+✗ segment_6.mp3: Failed to process segment temp\segment_6\segment_0.mp3
+✗ segment_7.mp3: Failed to process segment temp\segment_7\segment_0.mp3
+✗ segment_8.mp3: Failed to process segment temp\segment_8\segment_0.mp3
+✗ segment_9.mp3: Failed to process segment temp\segment_9\segment_0.mp3
+
+Total processed: 0
+Total failed: 11

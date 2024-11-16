@@ -1,0 +1,20 @@
+Whisper Voice Conversion Log - 2024-11-13 23:48:02
+--------------------------------------------------------------------------------
+
+Successfully processed files:
+✓ segment_0.mp3
+✓ segment_10.mp3
+✓ segment_2.mp3
+✓ segment_1.mp3
+✓ segment_4.mp3
+✓ segment_3.mp3
+✓ segment_5.mp3
+✓ segment_7.mp3
+✓ segment_9.mp3
+✓ segment_8.mp3
+
+Failed conversions:
+✗ segment_6.mp3: Error merging segments: Expecting ',' delimiter: line 62 column 6 (char 1970)
+
+Total processed: 10
+Total failed: 1
