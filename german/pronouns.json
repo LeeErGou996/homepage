@@ -5,7 +5,7 @@
         "subCategory": "代词",
         "type": "代词",
         "example": "Ist das dein Auto?",
-        "meaning": "你的"
+        "meaning": "你的(和Ihr相比，dein非正式)"
     },
     {
         "word": "dich",
@@ -143,6 +143,25 @@
         "example": "Ich heiße Veronika.",
         "meaning": "我"
     },
+
+    {
+        "word": "Ihr",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Wie ist Ihr Name bitte?",
+        "meaning": "你的（第二人称形容词性物主代词,单数阳性或中性）"
+    },
+
+    {
+        "word": "Ihre",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Wie ist Ihr Name bitte?",
+        "meaning": "你的（第二人称形容词性物主代词，复数或单数阴性）"
+    },
+
     {
         "word": "ihr/ihm/ihn",
         "category": "词性",

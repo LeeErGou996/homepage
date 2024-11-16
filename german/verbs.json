@@ -596,7 +596,7 @@
         "category": "词性",
         "subCategory": "动词",
         "type": "动词",
-        "example": "Heute gibt es Hähnchen. Das nehme ich. Ich nehme den Bus.",
+        "example": "Heute gibt es Hähnchen. Das nehme ich. Ich nehme den Bus; Bitte nehmen Sie Platz.",
         "meaning": "拿，选择"
     },
     {
@@ -886,6 +886,30 @@
         "type": "动词",
         "example": "Ich verdiene 1.500 Euro im Monat.",
         "meaning": "赚取"
+    },
+    {
+        "word": "anfangen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das Casting fängt um 10 Uhr an.",
+        "meaning": "开始"
+    },
+    {
+        "word": "mitspielen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Frau Mainka spielt gern mit.",
+        "meaning": "参加"
+    },
+    {
+        "word": "dran sein",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Jetzt bin ich dran!",
+        "meaning": "轮到"
     },
     {
         "word": "verkaufen",

@@ -40,6 +40,14 @@
         "meaning": "着急的"
     },
     {
+        "word": "fantastisch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich finde die Show ganz fantastisch.",
+        "meaning": "美妙的"
+    },
+    {
         "word": "einfach",
         "category": "词性",
         "subCategory": "形容词",
@@ -246,6 +254,23 @@
         "type": "形容词",
         "example": "Sind Sie verheiratet? – Nein. Ledig.",
         "meaning": "单身的"
+    },
+
+    {
+        "word": "geschieden",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er ist nicht mehr verheiratet, er ist geschieden.",
+        "meaning": "离婚的"
+    },
+    {
+        "word": "nervös",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Produzent ist nervös",
+        "meaning": "焦虑的"
     },
     {
         "word": "leise",

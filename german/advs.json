@@ -160,6 +160,22 @@
         "meaning": "总是"
     },
     {
+        "word": "manchmal",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich mache manchmal Sport.",
+        "meaning": "偶尔"
+    },
+    {
+        "word": "selten",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich mache selten Sport.",
+        "meaning": "几乎不"
+    },
+    {
         "word": "ja",
         "category": "词性",
         "subCategory": "副词",
@@ -230,6 +246,14 @@
         "type": "副词",
         "example": "Das stimmt nicht. Das ist doch schön, nicht?",
         "meaning": "不"
+    },
+    {
+        "word": "ziemlich",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich bin ziemlich unsportlich.",
+        "meaning": "相当"
     },
     {
         "word": "ganz",
@@ -364,9 +388,19 @@
         "category": "词性",
         "subCategory": "副词",
         "type": "副词",
-        "example": "Der Bus fährt nicht weiter.",
+        "example": "Der Bus fährt nicht weiter; Wir müssen unseren Plan weiter vorantreiben.",
         "meaning": "继续"
     },
+
+    {
+        "word": "natürlich",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Natürlich bin ich verheiratet.",
+        "meaning": "自然地"
+    },
+
     {
         "word": "wie",
         "category": "词性",

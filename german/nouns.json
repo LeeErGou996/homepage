@@ -64,6 +64,14 @@
     "meaning": "工作"
   },
   {
+    "word": "die Assistentin (die, -nen)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Wo ist Frau, die Assistentin?",
+    "meaning": "助手"
+  },
+  {
     "word": "das Auto (die, -s)",
     "category": "主题",
     "subCategory": "交通",
@@ -704,7 +712,7 @@
     "meaning": "节目"
   },
   {
-    "word": "der Krimi (die, -en)",
+    "word": "der Krimi (die, -s)",
     "词性": "名词",
     "subCategory": "娱乐",
     "type": "名词",
@@ -727,8 +735,18 @@
     "example": "Sein Beruf ist Lehrer.",
     "meaning": "职业"
   },
+
   {
-    "word": "das Interview (die, -)",
+    "word": "die Gitarre (die, -n)",
+    "词性": "名词",
+    "subCategory": "音乐",
+    "type": "名词",
+    "example": "Ich spiele gern Gitarre.",
+    "meaning": "吉他"
+  },
+
+  {
+    "word": "das Interview (die, -s)",
     "词性": "名词",
     "subCategory": "社交",
     "type": "名词",
@@ -750,6 +768,14 @@
     "type": "名词",
     "example": "Schicken Sie uns einfach ein Fax!",
     "meaning": "传真"
+  },
+  {
+    "word": "der Kandidat (die, -en)",
+    "category": "主题",
+    "subCategory": "学习",
+    "type": "名词",
+    "example": "Wer ist der Kandidat für die Show?",
+    "meaning": "候选人"
   },
   {
     "word": "die Feier (die, -en)",
@@ -844,7 +870,7 @@
     "category": "主题",
     "subCategory": "文档",
     "type": "名词",
-    "example": "Sie müssen dieses Formular ausfüllen.",
+    "example": "Sie müssen dieses Formular ausfüllen; Bitte füllen Sie das Formular aus.",
     "meaning": "表格"
   },
   {
@@ -1620,7 +1646,7 @@
     "category": "主题",
     "subCategory": "时间",
     "type": "名词",
-    "example": "Moment mal bitte! Einen Moment bitte.",
+    "example": "Moment mal bitte! Einen Moment bitte; Im Moment bin ich Hausfrau.",
     "meaning": "片刻，瞬间"
   },
   {
@@ -1839,6 +1865,16 @@
     "example": "Wo ist die Post, bitte? Ist Post da?",
     "meaning": "邮局，邮件"
   },
+
+  {
+    "word": "die Postleitzahl (die, -en)",
+    "category": "主题",
+    "subCategory": "通讯",
+    "type": "名词",
+    "example": "Wie ist Ihre Postleitzahl?",
+    "meaning": "邮编"
+  },
+
   {
     "word": "die Torte (die, -n)",
     "词性": "名词",
@@ -2136,7 +2172,7 @@
     "meaning": "沙发"
   },
   {
-    "word": "der Sohn (die, -en)",
+    "word": "der Sohn (die, Söhne)",
     "category": "主题",
     "subCategory": "家庭",
     "type": "名词",
@@ -2328,7 +2364,7 @@
     "meaning": "桌子"
   },
   {
-    "word": "die Tochter (die, -en)",
+    "word": "die Tochter (die, Töchter)",
     "category": "主题",
     "subCategory": "家庭",
     "type": "名词",
@@ -3207,6 +3243,7 @@
     "example": "Nehmen Sie eine Tablette ein.",
     "meaning": "药片"
   },
+  
   {
     "word": "die Medizin (die, -nen)",
     "category": "主题",
