@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>タイトル</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: blue;
+        }
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #f1f1f1;
+            position: fixed;
+            padding: 20px;
+            box-sizing: border-box;
+            color: blue;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            color: blue;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: blue;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border: 1px solid #ddd;
+            padding: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+
+        .slideshow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        .slideshow img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .thumbnail-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .thumbnail-container img {
+            width: 100px;
+            height: 75px;
+            object-fit: cover;
+            margin: 5px;
+            border: 1px solid #ddd;
+            padding: 2px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+
+        .scrollable-textarea {
+            width: 100%;
+            height: 150px;
+            resize: none;
+            overflow-y: scroll;
+            padding: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .reference-list {
+            padding-left: 20px;
+        }
+
+        .reference-list li {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .reference-list a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .reference-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>メニュー</h2>
+        <ul>
+            <li><a href="https://leeergou996.github.io/leeergou.github.io/" target="_blank" style="color: blue; text-decoration: none;">ホームページに戻る</a></li>
+            <li id="homeLink">がいよう</li>
+            <h2>リスト</h2>
+            <li id="item1Link">立直麻将牌効率計算 / Riichi Mahjong Tile Efficiency Calculator</li>
+            <li id="referenceLink">Reference</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <!-- Main content updates here -->
+    </div>
+
+    <script>
+        const homeLink = document.getElementById('homeLink');
+        const item1Link = document.getElementById('item1Link');
+        const referenceLink = document.getElementById('referenceLink');
+        const contentDiv = document.querySelector('.content');
+
+        homeLink.addEventListener('click', () => {
+            contentDiv.innerHTML = `
+                <h1>概要</h1>
+                <div class="scrollable-textarea readonly">
+                <p>2024.12.13: 「立直麻将牌効率計算」を追加しました</p>
+                </div>
+            `;
+        });
+
+        item1Link.addEventListener('click', () => {
+            contentDiv.innerHTML = `<h1>立直麻将牌効率計算 / Riichi Mahjong Tile Efficiency Calculator</h1>
+                
+                <div class="feature-box">
+                <p>This is a powerful Mahjong hand analysis tool that helps players analyze their hand state, calculate shanten numbers, and provide discard suggestions. The program supports:</p>
+                <ul>
+                    <li>Calculation of shanten numbers for three winning patterns: standard hands, Seven Pairs, and Thirteen Orphans</li>
+                    <li>Real-time analysis of each possible discard</li>
+                    <li>Calculation of effective tiles when in tenpai</li>
+                    <li>Prediction of shanten number changes after drawing tiles</li>
+                </ul>
+            </div>
+
+            <h2>Basic Concepts</h2>
+            <p>The shanten number indicates how many steps a hand is away from being ready for winning:</p>
+            <ul>
+                <li>Shanten 0 means the hand is in tenpai (ready)</li>
+                <li>Shanten -1 means the hand is complete (won)</li>
+                <li>The higher the shanten number, the further from winning</li>
+            </ul>
+
+            <h2>Key Features</h2>
+            <h3>1. Multiple Winning Pattern Analysis</h3>
+            <div class="feature-box">
+                <p>The program automatically calculates shanten numbers for three winning patterns:</p>
+                <ul>
+                    <li>Standard hand (Four sets and one pair)</li>
+                    <li>Seven Pairs (Chii Toitsu)</li>
+                    <li>Thirteen Orphans (Kokushi Musou)</li>
+                </ul>
+                <p>The system automatically selects the lowest shanten number as the current hand's shanten.</p>
+            </div>
+
+            <h3>2. Intelligent Discard Suggestions</h3>
+            <div class="feature-box">
+                <p>The program analyzes each possible discard choice:</p>
+                <ul>
+                    <li>Calculates shanten number changes after each discard</li>
+                    <li>Predicts potential useful tiles</li>
+                    <li>Shows total number of effective tiles for each choice</li>
+                </ul>
+            </div>
+
+            <h2>How to Use</h2>
+            <h3>Input Format</h3>
+            <div class="example">
+                <p>Hand input uses a specialized encoding method:</p>
+                <ul>
+                    <li><code>1m</code> represents One of Characters (Man)</li>
+                    <li><code>2p</code> represents Two of Circles (Pin)</li>
+                    <li><code>3s</code> represents Three of Bamboo (Sou)</li>
+                </ul>
+                <p>Example: <code>1m1m2p4p7p8p9p1s8s8s3p5p8s3p</code></p>
+            </div>
+
+            <h3>Operation Commands</h3>
+            <div class="example">
+                <p>The discard-draw format is: <code>discarded_tile-drawn_tile</code></p>
+                <p>Example: <code>9p-3s</code> means discard Nine of Circles, draw Three of Bamboo</p>
+            </div>
+
+            <h2>Program Output</h2>
+            <div class="feature-box">
+                <p>The program displays the following information:</p>
+                <ul>
+                    <li>Current hand and shanten number</li>
+                    <li>All possible effective tiles when in tenpai</li>
+                    <li>Expected effects of each possible discard</li>
+                    <li>Statistics of remaining useful tiles</li>
+                </ul>
+            </div>
+
+            <h2>Additional Notes</h2>
+            <div class="feature-box">
+                <p>Program features:</p>
+                <ul>
+                    <li>Automatic calculation of the most advantageous winning pattern</li>
+                    <li>Consideration of remaining tile counts</li>
+                    <li>Prediction of shanten changes in the next turn</li>
+                    <li>Support for real-time interaction and dynamic analysis</li>
+                </ul>
+            </div>
+
+            <h2>Usage Tips</h2>
+            <div class="feature-box">
+                <p>For the best experience:</p>
+                <ul>
+                    <li>Ensure correct hand input format</li>
+                    <li>Observe potential benefits of each discard choice</li>
+                    <li>Consider both the number of effective tiles and shanten number changes</li>
+                    <li>Pay attention to the statistics of remaining tiles</li>
+                </ul>
+            </div>`;
+        });
+
+        referenceLink.addEventListener('click', () => {
+            contentDiv.innerHTML = `
+                <h1>References</h1>
+                <ul class="reference-list">
+                    <li>
+                        <a href="https://riichi.wiki/Main_Page" target="_blank">Riichi Mahjong Wiki</a> 
+                    <li>
+                        <a href="https://github.com/garyleung142857/mahjong-tile-efficiency" target="_blank">Mahjong Tile Efficiency</a>
+                    // <li>
+                    //     <a href="http://arcturus.su/wiki/Main_Page" target="_blank">Arcturus Riichi Mahjong Wiki</a> 
+                    // </li>
+                    // <li>
+                    //     <a href="https://github.com/Euophrys/Riichi-Trainer" target="_blank">Riichi-Trainer</a> 
+                    // </li>
+                </ul>
+            `;
+        });
+    </script>
+</body>
+</html>
