@@ -122,6 +122,7 @@
             <li id="mygoLink">BanG Dream! It's MyGO!!!!!</li>
             <li id="tsukigaLink">月がきれい</li>
             <li id="garasuLink">烏は主を選ばない</li>
+            <li id="oshinokoLink">推しの子</li>
         </ul>
     </div>
 
@@ -137,14 +138,16 @@
         const mygoLink = document.getElementById('mygoLink');
         const tsukigaLink = document.getElementById('tsukigaLink');
         const garasuLink = document.getElementById('garasuLink');
+        const oshinokoLink = document.getElementById('oshinokoLink');
         const contentDiv = document.querySelector('.content');
 
         homeLink.addEventListener('click', () => {
             contentDiv.innerHTML = `
                 <h1>概要</h1>
                 <div class="scrollable-textarea readonly">
-                <p>📺 2024.10: アニメ「烏は主を選ばない」を追加する </p>
-                <p>📺 2024.6: アニメ「シュタインズゲート」「響け！ユーフォニアムを追加する」「BanG Dream! It's MyGO!!!!!」「月がきれい」を追加する</p>
+                <p>📺 2024.12: アニメ「推しの子」を追加しました </p>
+                <p>📺 2024.10: アニメ「烏は主を選ばない」を追加しました </p>
+                <p>📺 2024.6: アニメ「シュタインズゲート」「響け！ユーフォニアムを追加しました」「BanG Dream! It's MyGO!!!!!」「月がきれい」を追加しました</p>
                 </div>
 
             `;
@@ -174,6 +177,9 @@
 
         garasuLink.addEventListener('click', () => {
             contentDiv.innerHTML = '<h1>烏は主を選ばない</h1>';
+        });
+        oshinokoLink.addEventListener('click', () => {
+            contentDiv.innerHTML = '<h1>推しの子</h1>';
         });
     </script>
 </body>
