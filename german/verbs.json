@@ -16,6 +16,102 @@
         "meaning": "交出"
     },
     {
+        "word": "joggen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich jogge jeden Morgen im Park.",
+        "meaning": "慢跑"
+    },
+    {
+        "word": "betonen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er betonte die Wichtigkeit der Aufgabe.",
+        "meaning": "强调"
+    },
+    {
+        "word": "spazieren gehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir gehen nach dem Abendessen spazieren.",
+        "meaning": "散步"
+    },
+    {
+        "word": "benutzen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich benutze mein Handy zum Lernen.",
+        "meaning": "使用"
+    },
+    {
+        "word": "wecken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kannst du mich morgen früh um 6 Uhr wecken?",
+        "meaning": "唤醒"
+    },
+    {
+        "word": "vorbereiten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich muss mich auf die Prüfung vorbereiten.",
+        "meaning": "准备"
+    },
+    {
+        "word": "unterrichten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er unterrichtet Deutsch an der Schule.",
+        "meaning": "教学"
+    },
+    {
+        "word": "zurück/kommen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wann wirst du nach Hause zurückkommen?",
+        "meaning": "返回"
+    },
+    {
+        "word": "schälen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie schält die Kartoffeln für das Abendessen.",
+        "meaning": "剥皮"
+    },
+    {
+        "word": "vergessen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe meinen Schlüssel zu Hause vergessen.",
+        "meaning": "忘记"
+    },
+    {
+        "word": "salzen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Vergiss nicht, die Suppe zu salzen.",
+        "meaning": "加盐"
+    },
+    {
+        "word": "braten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er brät das Fleisch in der Pfanne.",
+        "meaning": "煎、炒"
+    },
+    {
         "word": "abholen",
         "category": "词性",
         "subCategory": "动词",

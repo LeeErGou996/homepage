@@ -1346,12 +1346,390 @@
     "meaning": "卡片，地图"
   },
   {
-    "word": "die Kartoffel (die, -en)",
+    "word": "die Kartoffel (die, Kartoffeln)",
     "category": "主题",
     "subCategory": "餐饮",
     "type": "名词",
     "example": "Für Pommes frites braucht man Kartoffeln.",
     "meaning": "土豆"
+  },
+
+  {
+    "word": "die Person (die Personen)",
+    "category": "主题",
+    "subCategory": "人物",
+    "type": "名词",
+    "example": "Jede Person hat unterschiedliche Interessen.",
+    "meaning": "人"
+  },
+  {
+    "word": "die Marmelade (die Marmeladen)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Zum Frühstück esse ich Brot mit Marmelade.",
+    "meaning": "果酱"
+  },
+  {
+    "word": "die Wurst (die Würste)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "In Deutschland gibt es viele Arten von Wurst.",
+    "meaning": "香肠"
+  },
+  {
+    "word": "die Suppe (die Suppen)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Die heiße Suppe schmeckt gut im Winter.",
+    "meaning": "汤"
+  },
+  {
+    "word": "die Freundin (die Freundinnen)",
+    "category": "主题",
+    "subCategory": "人物",
+    "type": "名词",
+    "example": "Meine beste Freundin wohnt in Berlin.",
+    "meaning": "女朋友；女性朋友"
+  },
+  {
+    "word": "der Kellner (die Kellner)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Der Kellner bringt uns das Essen.",
+    "meaning": "男服务员"
+  },
+  {
+    "word": "die Kellnerin (die Kellnerinnen)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Die Kellnerin ist sehr freundlich.",
+    "meaning": "女服务员"
+  },
+  {
+    "word": "die Semmel (die Semmeln)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "In Bayern sagt man oft 'Semmel' statt 'Brötchen'.",
+    "meaning": "小圆面包"
+  },
+  {
+    "word": "die Zwiebel (die Zwiebeln)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Ich brauche eine Zwiebel für das Rezept.",
+    "meaning": "洋葱"
+  },
+  {
+    "word": "die Minute (die Minuten)",
+    "category": "主题",
+    "subCategory": "时间",
+    "type": "名词",
+    "example": "Der Zug kommt in fünf Minuten.",
+    "meaning": "分钟"
+  },
+  {
+    "word": "die Brücke (die Brücken)",
+    "category": "主题",
+    "subCategory": "建筑",
+    "type": "名词",
+    "example": "Die Brücke verbindet die beiden Ufer des Flusses.",
+    "meaning": "桥"
+  },
+  {
+    "word": "die Station (die Stationen)",
+    "category": "主题",
+    "subCategory": "交通",
+    "type": "名词",
+    "example": "Die nächste Station ist Hauptbahnhof.",
+    "meaning": "车站"
+  },
+  {
+    "word": "die Gurke (die Gurken)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Die Gurke schmeckt frisch im Salat.",
+    "meaning": "黄瓜"
+  },
+  {
+    "word": "die Sahne (die Sahnen)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Schlagsahne passt gut zu Kuchen.",
+    "meaning": "奶油"
+  },
+  {
+    "word": "die Olive (die Oliven)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Oliven werden oft in der mediterranen Küche verwendet.",
+    "meaning": "橄榄"
+  },
+  {
+    "word": "die Schokolade (die Schokoladen)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Ich liebe dunkle Schokolade.",
+    "meaning": "巧克力"
+  },
+  {
+    "word": "die Birne (die Birnen)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Die Birne ist süß und saftig.",
+    "meaning": "梨"
+  },
+  {
+    "word": "die Backware (die Backwaren)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Das Bäckerei-Regal ist voller frischer Backwaren.",
+    "meaning": "烘焙食品"
+  },
+  {
+    "word": "die Nudel (die Nudeln)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Die Nudeln kochen gerade im Topf.",
+    "meaning": "面条"
+  },
+  {
+    "word": "die Cola (die Colas)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Ich trinke eine Cola zum Mittagessen.",
+    "meaning": "可乐"
+  },
+  {
+    "word": "die Studentin (die Studentinnen)",
+    "category": "主题",
+    "subCategory": "人物",
+    "type": "名词",
+    "example": "Die Studentin studiert an der Universität.",
+    "meaning": "女大学生"
+  },
+  {
+    "word": "die Lehrerin (die Lehrerinnen)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Die Lehrerin erklärt die Aufgabe.",
+    "meaning": "女教师"
+  },
+  {
+    "word": "die Situation (die Situationen)",
+    "category": "主题",
+    "subCategory": "信息",
+    "type": "名词",
+    "example": "Die Situation ist schwierig zu lösen.",
+    "meaning": "情况"
+  },
+  {
+    "word": "die Fabrik (die Fabriken)",
+    "category": "主题",
+    "subCategory": "商业",
+    "type": "名词",
+    "example": "Die Fabrik produziert täglich tausende Autos.",
+    "meaning": "工厂"
+  },
+
+  {
+    "word": "die Autobahn (die Autobahnen)",
+    "category": "主题",
+    "subCategory": "交通",
+    "type": "名词",
+    "example": "Die deutsche Autobahn ist bekannt für ihre Geschwindigkeit.",
+    "meaning": "高速公路"
+  },
+  {
+    "word": "die Region (die Regionen)",
+    "category": "主题",
+    "subCategory": "地理",
+    "type": "名词",
+    "example": "Diese Region ist bekannt für ihren Wein.",
+    "meaning": "地区"
+  },
+  {
+    "word": "die Bank (die Banken)",
+    "category": "主题",
+    "subCategory": "财务",
+    "type": "名词",
+    "example": "Ich habe ein Konto bei dieser Bank eröffnet.",
+    "meaning": "银行"
+  },
+  {
+    "word": "die Universität (die Universitäten)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Die Universität bietet viele Studiengänge an.",
+    "meaning": "大学"
+  },
+  {
+    "word": "die Flöte (die Flöten)",
+    "category": "主题",
+    "subCategory": "音乐",
+    "type": "名词",
+    "example": "Sie spielt eine wunderschöne Melodie auf der Flöte.",
+    "meaning": "长笛"
+  },
+  {
+    "word": "die Maßeinheit (die Maßeinheiten)",
+    "category": "主题",
+    "subCategory": "信息",
+    "type": "名词",
+    "example": "Kilogramm ist eine Maßeinheit für Gewicht.",
+    "meaning": "计量单位"
+  },
+  {
+    "word": "die Bestellung (die Bestellungen)",
+    "category": "主题",
+    "subCategory": "服务",
+    "type": "名词",
+    "example": "Die Bestellung wurde bereits aufgegeben.",
+    "meaning": "订单"
+  },
+  {
+    "word": "die Idee (die Ideen)",
+    "category": "主题",
+    "subCategory": "信息",
+    "type": "名词",
+    "example": "Das ist eine großartige Idee!",
+    "meaning": "主意"
+  },
+  {
+    "word": "die Reportage (die Reportagen)",
+    "category": "主题",
+    "subCategory": "信息",
+    "type": "名词",
+    "example": "Die Reportage über die Umwelt war sehr informativ.",
+    "meaning": "报道"
+  },
+  {
+    "word": "die Portion (die Portionen)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Ich hätte gerne eine große Portion Pommes.",
+    "meaning": "份"
+  },
+  {
+    "word": "die Tasse (die Tassen)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Ich trinke meinen Kaffee aus einer großen Tasse.",
+    "meaning": "杯子"
+  },
+  {
+    "word": "die Panik (die Paniken)",
+    "category": "主题",
+    "subCategory": "情感",
+    "type": "名词",
+    "example": "In der Panik wusste niemand, was zu tun war.",
+    "meaning": "恐慌"
+  },
+  {
+    "word": "die Rentnerin (die Rentnerinnen)",
+    "category": "主题",
+    "subCategory": "人物",
+    "type": "名词",
+    "example": "Die Rentnerin genießt ihre freie Zeit im Garten.",
+    "meaning": "女退休者"
+  },
+  {
+    "word": "die Spezialität (die Spezialitäten)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Diese Suppe ist eine Spezialität des Hauses.",
+    "meaning": "特色菜"
+  },
+  {
+    "word": "die Fußgängerin (die Fußgängerinnen)",
+    "category": "主题",
+    "subCategory": "人物",
+    "type": "名词",
+    "example": "Die Fußgängerin überquerte vorsichtig die Straße.",
+    "meaning": "女行人"
+  },
+  {
+    "word": "die Volkshochschule (die Volkshochschulen)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Die Volkshochschule bietet Kurse für Erwachsene an.",
+    "meaning": "成人教育中心"
+  },
+  {
+    "word": "das Volk (die Völker)",
+    "category": "主题",
+    "subCategory": "社会",
+    "type": "名词",
+    "example": "Jedes Volk hat seine eigene Kultur.",
+    "meaning": "民族"
+  },
+  {
+    "word": "die Kundin (die Kundinnen)",
+    "category": "主题",
+    "subCategory": "人物",
+    "type": "名词",
+    "example": "Die Kundin ist mit dem Service sehr zufrieden.",
+    "meaning": "女顾客"
+  },
+  {
+    "word": "die Fleischbrühe (die Fleischbrühen)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Die Fleischbrühe ist die Basis für die Suppe.",
+    "meaning": "肉汤"
+  },
+  {
+    "word": "die Kräuter (die Kräuter, nur Plural)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Frische Kräuter verbessern den Geschmack des Gerichts.",
+    "meaning": "香草，草药"
+  },
+  {
+    "word": "die Gabel (die Gabeln)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Bitte gib mir eine Gabel für den Salat.",
+    "meaning": "叉子"
+  },
+  {
+    "word": "die Zutat (die Zutaten)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Die Zutaten für den Kuchen stehen auf dem Tisch.",
+    "meaning": "配料"
+  },
+  {
+    "word": "die Zubereitung (die Zubereitungen)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Die Zubereitung der Speisen dauert etwa eine Stunde.",
+    "meaning": "烹饪准备"
   },
   {
     "word": "die Kasse (die, -n)",
@@ -1482,12 +1860,268 @@
     "meaning": "课程"
   },
   {
-    "word": "der Laden (die, -)",
+    "word": "der Laden (die, läden)",
     "category": "主题",
     "subCategory": "商业",
     "type": "名词",
     "example": "Im Buchladen können Sie Bücher kaufen.",
     "meaning": "商店"
+  },
+  {
+    "word": "der Pfeffer (die Pfeffer)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Pfeffer gibt dem Essen eine scharfe Note.",
+    "meaning": "胡椒"
+  },
+  {
+    "word": "das Schloss (die Schlösser)",
+    "category": "主题",
+    "subCategory": "建筑",
+    "type": "名词",
+    "example": "Das Schloss Neuschwanstein ist ein berühmtes Wahrzeichen.",
+    "meaning": "城堡"
+  },
+  {
+    "word": "das Müsli (die Müslis)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Zum Frühstück esse ich oft Müsli mit Milch.",
+    "meaning": "麦片"
+  },
+  {
+    "word": "das Schiff (die Schiffe)",
+    "category": "主题",
+    "subCategory": "交通",
+    "type": "名词",
+    "example": "Das Schiff fährt über den Ozean.",
+    "meaning": "船"
+  },
+  {
+    "word": "das Kaufhaus (die Kaufhäuser)",
+    "category": "主题",
+    "subCategory": "购物",
+    "type": "名词",
+    "example": "Das Kaufhaus bietet viele Waren unter einem Dach.",
+    "meaning": "百货商店"
+  },
+  {
+    "word": "der Joghurt (die Joghurts)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Ich esse jeden Tag einen Joghurt.",
+    "meaning": "酸奶"
+  },
+  {
+    "word": "das Objekt (die Objekte)",
+    "category": "主题",
+    "subCategory": "物品",
+    "type": "名词",
+    "example": "Das Objekt auf dem Tisch ist eine Vase.",
+    "meaning": "物体"
+  },
+  {
+    "word": "das Stück (die Stücke)",
+    "category": "主题",
+    "subCategory": "物品",
+    "type": "名词",
+    "example": "Ein Stück Kuchen, bitte.",
+    "meaning": "一块"
+  },
+  {
+    "word": "das Nomen (die Nomen)",
+    "category": "主题",
+    "subCategory": "语言",
+    "type": "名词",
+    "example": "Das Wort 'Tisch' ist ein Nomen.",
+    "meaning": "名词"
+  },
+  {
+    "word": "das Wörterheft (die Wörterhefte)",
+    "category": "主题",
+    "subCategory": "学习",
+    "type": "名词",
+    "example": "Im Wörterheft schreibe ich neue Vokabeln auf.",
+    "meaning": "单词本"
+  },
+  {
+    "word": "das Mittagessen (die Mittagessen)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Zum Mittagessen gibt es heute Spaghetti.",
+    "meaning": "午餐"
+  },
+  {
+    "word": "das Abendessen (die Abendessen)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Zum Abendessen essen wir Brot und Käse.",
+    "meaning": "晚餐"
+  },
+  {
+    "word": "das Lebensmittelgeschäft (die Lebensmittelgeschäfte)",
+    "category": "主题",
+    "subCategory": "购物",
+    "type": "名词",
+    "example": "Im Lebensmittelgeschäft kaufe ich frisches Obst.",
+    "meaning": "食品杂货店"
+  },
+  {
+    "word": "das Trockenobst (die Trockenobste)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Trockenobst ist eine gesunde Alternative zu Süßigkeiten.",
+    "meaning": "干果"
+  },
+  {
+    "word": "das Messer (die Messer)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Das Messer schneidet sehr gut.",
+    "meaning": "刀"
+  },
+  {
+    "word": "der Dom (die Dome)",
+    "category": "主题",
+    "subCategory": "建筑",
+    "type": "名词",
+    "example": "Der Kölner Dom ist sehr bekannt.",
+    "meaning": "大教堂"
+  },
+  {
+    "word": "der Souvenirladen (die Souvenirläden)",
+    "category": "主题",
+    "subCategory": "购物",
+    "type": "名词",
+    "example": "Im Souvenirladen kann man kleine Geschenke kaufen.",
+    "meaning": "纪念品商店"
+  },
+  {
+    "word": "der Stadtplan (die Stadtpläne)",
+    "category": "主题",
+    "subCategory": "旅游",
+    "type": "名词",
+    "example": "Ich brauche einen Stadtplan, um die Stadt zu erkunden.",
+    "meaning": "城市地图"
+  },
+  {
+    "word": "der Spaziergang (die Spaziergänge)",
+    "category": "主题",
+    "subCategory": "活动",
+    "type": "名词",
+    "example": "Ein Spaziergang im Park ist sehr entspannend.",
+    "meaning": "散步"
+  },
+  {
+    "word": "der Aal (die Aale)",
+    "category": "主题",
+    "subCategory": "自然",
+    "type": "名词",
+    "example": "Aale leben oft im Meer oder in Flüssen.",
+    "meaning": "鳗鱼"
+  },
+  {
+    "word": "der Lauch (die Lauche)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Lauch ist ein gesundes Gemüse.",
+    "meaning": "韭葱"
+  },
+  {
+    "word": "der Topf (die Töpfe)",
+    "category": "主题",
+    "subCategory": "家居",
+    "type": "名词",
+    "example": "Ich koche Suppe im Topf.",
+    "meaning": "锅"
+  },
+  {
+    "word": "der Teller (die Teller)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Der Teller ist voller Essen.",
+    "meaning": "盘子"
+  },
+  {
+    "word": "der Löffel (die Löffel)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Bitte geben Sie mir einen Löffel für die Suppe.",
+    "meaning": "勺子"
+  },
+  {
+    "word": "der Tipp (die Tipps)",
+    "category": "主题",
+    "subCategory": "沟通",
+    "type": "名词",
+    "example": "Danke für den Tipp, das hat mir geholfen.",
+    "meaning": "建议"
+  },
+  {
+    "word": "der Spiegel (die Spiegel)",
+    "category": "主题",
+    "subCategory": "家居",
+    "type": "名词",
+    "example": "Der Spiegel hängt an der Wand.",
+    "meaning": "镜子"
+  },
+  {
+    "word": "der Rentner (die Rentner)",
+    "category": "主题",
+    "subCategory": "人物",
+    "type": "名词",
+    "example": "Der Rentner genießt seine freie Zeit.",
+    "meaning": "退休者"
+  },
+  {
+    "word": "der Honig (die Honige)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Ich esse gerne Honig zum Frühstück.",
+    "meaning": "蜂蜜"
+  },
+  {
+    "word": "der Obstkuchen (die Obstkuchen)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Der Obstkuchen schmeckt sehr fruchtig.",
+    "meaning": "水果蛋糕"
+  },
+  {
+    "word": "der Akzent (die Akzente)",
+    "category": "主题",
+    "subCategory": "语言",
+    "type": "名词",
+    "example": "Er spricht Deutsch mit einem starken Akzent.",
+    "meaning": "口音"
+  },
+  {
+    "word": "der Hafen (die Häfen)",
+    "category": "主题",
+    "subCategory": "地理",
+    "type": "名词",
+    "example": "Der Hafen ist voll mit Schiffen.",
+    "meaning": "港口"
+  },
+  {
+    "word": "der Ingenieur (die Ingenieure)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Ein Ingenieur arbeitet oft in der Technik.",
+    "meaning": "工程师"
   },
   {
     "word": "das Land (die, -)",
