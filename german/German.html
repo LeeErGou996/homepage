@@ -428,21 +428,8 @@
 
         // 显示词性或主题选项
         function showByCategory(categoryType) {
-            // clearSearch();
-            const categoryButtons = document.getElementById('categoryButtons');
-            const themeButtons = document.getElementById('themeButtons');
-            const wordList = document.getElementById('wordList');
-            const wordDetail = document.getElementById('wordDetail');
-            const linkedDetailDiv = document.getElementById('linkedWordDetail');
-            const randomWordsInput = document.getElementById('randomWordsInput');
-
-            // 清空其他内容
-            categoryButtons.style.display = 'none';
-            themeButtons.style.display = 'none';
-            wordList.innerHTML = '';
-            wordDetail.style.display = 'none';
-            linkedDetailDiv.style.display = 'none'; // 隐藏链接单词的详细信息
-            randomWordsInput.style.display = 'none'; // 隐藏随机单词输入框
+            clearSearch();
+            
 
             // 根据选择显示对应的按钮和内容
             if (categoryType === '词性') {
@@ -450,26 +437,48 @@
             } else if (categoryType === '主题') {
                 themeButtons.style.display = 'block';
             }
+            const wordList = document.getElementById('wordList');
+            wordList.innerHTML = '';
+
+
+            // document.getElementById('randomWordsInput').style.display = 'block';
+            document.getElementById('searchContainer').style.display = 'block';
+            document.getElementById('wordList').style.display = 'block';
+            // document.getElementById('linkedWordDetail').style.display = 'block';
+            // document.getElementById('randomWordsInput').style.display = 'block';
+
+            
         }
 
         // 显示随机单词数量输入框
         function showRandomWordsInput() {
             clearSearch();
-            const categoryButtons = document.getElementById('categoryButtons');
-            const themeButtons = document.getElementById('themeButtons');
-            const wordList = document.getElementById('wordList');
-            const wordDetail = document.getElementById('wordDetail');
-            const linkedDetailDiv = document.getElementById('linkedWordDetail');
+            // const categoryButtons = document.getElementById('categoryButtons');
+            // const themeButtons = document.getElementById('themeButtons');
+            // const wordList = document.getElementById('wordList');
+            // const wordDetail = document.getElementById('wordDetail');
+            // const linkedDetailDiv = document.getElementById('linkedWordDetail');
 
-            // 清空其他内容
-            categoryButtons.style.display = 'none';
-            themeButtons.style.display = 'none';
-            wordList.innerHTML = '';
-            wordDetail.style.display = 'none';
-            linkedDetailDiv.style.display = 'none'; // 隐藏链接单词的详细信息
+            // // 清空其他内容
+            // categoryButtons.style.display = 'none';
+            // themeButtons.style.display = 'none';
+            // wordList.innerHTML = '';
+            // wordDetail.style.display = 'none';
+            // linkedDetailDiv.style.display = 'none'; // 隐藏链接单词的详细信息
 
             // 显示随机单词输入框
+
+            // document.getElementById('searchContainer').style.display = 'block';
+            // document.getElementById('searchInput').style.display = 'block';
+            
+            
             document.getElementById('randomWordsInput').style.display = 'block';
+            document.getElementById('searchResults').style.display = 'block';
+            document.getElementById('wordList').style.display = 'block';
+            // document.getElementById('wordDetail').style.display = 'block';
+            // document.getElementById('randomWordsInput').style.display = 'block';
+
+            
         }
 
         // 其他相关函数可以保持不变...
@@ -516,8 +525,16 @@
         function showSearchBox() {
             clearSearch();
             
+            // document.getElementById('randomWordsInput').style.display = 'block';
             document.getElementById('searchContainer').style.display = 'block';
-            document.getElementById('wordList').innerHTML = ''; // 清空单词列表
+            document.getElementById('searchInput').style.display = 'block';
+            document.getElementById('searchResults').style.display = 'block';
+            // document.getElementById('wordList').style.display = 'block';
+            // document.getElementById('wordDetail').style.display = 'block';
+            // document.getElementById('linkedWordDetail').style.display = 'block';
+            // document.getElementById('randomWordsInput').style.display = 'block';
+            // document.getElementById('categoryButtons').style.display = 'block';
+            // document.getElementById('themeButtons').style.display = 'block';
         }
 
         function searchWords() {
@@ -550,18 +567,19 @@
             const wordDetail = document.getElementById('wordDetail');
             const linkedDetailDiv = document.getElementById('linkedWordDetail');
             const randomWordsInput = document.getElementById('randomWordsInput');
+            const categoryButtons = document.getElementById('categoryButtons');
+            const themeButtons = document.getElementById('themeButtons')
 
-            // 隐藏搜索框及其内容
+            // 隐藏所有内容
             searchContainer.style.display = 'none';
-            searchInput.value = '';
-            searchResults.innerHTML = '';
+            searchInput.style.display = 'none';
+            searchResults.style.display = 'none';
+            themeButtons.style.display = 'none';
             categoryButtons.style.display = 'none';
-
-            // 清空和隐藏其他内容
-            wordList.style.display = 'none'; // 清空单词列表
-            wordDetail.style.display = 'none'; // 隐藏单词详细信息
-            linkedDetailDiv.style.display = 'none'; // 隐藏链接单词的详细信息
-            randomWordsInput.style.display = 'none'; // 隐藏随机单词输入框
+            wordList.style.display = 'none';
+            wordDetail.style.display = 'none';
+            linkedDetailDiv.style.display = 'none';
+            randomWordsInput.style.display = 'none';
         }
 
 
