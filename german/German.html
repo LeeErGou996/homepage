@@ -515,6 +515,7 @@
 
         function showSearchBox() {
             clearSearch();
+            
             document.getElementById('searchContainer').style.display = 'block';
             document.getElementById('wordList').innerHTML = ''; // 清空单词列表
         }
@@ -554,9 +555,10 @@
             searchContainer.style.display = 'none';
             searchInput.value = '';
             searchResults.innerHTML = '';
+            categoryButtons.style.display = 'none';
 
             // 清空和隐藏其他内容
-            wordList.innerHTML = ''; // 清空单词列表
+            wordList.style.display = 'none'; // 清空单词列表
             wordDetail.style.display = 'none'; // 隐藏单词详细信息
             linkedDetailDiv.style.display = 'none'; // 隐藏链接单词的详细信息
             randomWordsInput.style.display = 'none'; // 隐藏随机单词输入框
