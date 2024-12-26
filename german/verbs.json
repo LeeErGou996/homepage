@@ -904,6 +904,14 @@
         "meaning": "寻找"
     },
     {
+        "word": "schneide",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich schneide das Brot in Scheiben.",
+        "meaning": "切, 剪"
+    },
+    {
         "word": "tanzen",
         "category": "词性",
         "subCategory": "动词",

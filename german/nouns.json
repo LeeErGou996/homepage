@@ -744,6 +744,38 @@
     "example": "Ich spiele gern Gitarre.",
     "meaning": "吉他"
   },
+  {
+    "word": "die Mahlzeit (die, -en)",
+    "词性": "名词",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Die Mahlzeit war sehr lecker.",
+    "meaning": "餐, 饭"
+},
+{
+    "word": "der Kontakt (der, -e)",
+    "词性": "名词",
+    "subCategory": "社交",
+    "type": "名词",
+    "example": "Wir sind über E-Mail in Kontakt geblieben.",
+    "meaning": "联系, 接触"
+},
+{
+    "word": "die Waren (Pl.)",
+    "词性": "名词",
+    "subCategory": "商业",
+    "type": "名词",
+    "example": "Die Waren werden morgen geliefert.",
+    "meaning": "商品, 货物"
+},
+{
+    "word": "das Präteritum (das, Präterita)",
+    "词性": "名词",
+    "subCategory": "语言",
+    "type": "名词",
+    "example": "Im Präteritum sagt man 'ging' statt 'geht'.",
+    "meaning": "过去式"
+},
 
   {
     "word": "das Interview (die, -s)",

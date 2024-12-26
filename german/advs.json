@@ -168,6 +168,14 @@
         "meaning": "偶尔"
     },
     {
+        "word": "wohl",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich fühle mich heute sehr wohl.",
+        "meaning": "舒服, 健康"
+    },
+    {
         "word": "selten",
         "category": "词性",
         "subCategory": "副词",
