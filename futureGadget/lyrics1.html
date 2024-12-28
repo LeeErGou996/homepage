@@ -116,7 +116,8 @@
             <li id="song2Link">月がきれい</li>
             <li id="song3Link">さよならのこと</li>
           	<li id="song4Link">ライア</li>
-              <li id="song5Link">おかえりなさい </li>
+            <li id="song5Link">おかえりなさい </li>
+            <li id="song6Link">愛する心 </li>
             <li id="spotifyLink1">Spotify Playlist 1: Instrumental Music</li>
             <li id="spotifyLink2">Spotify Playlist 2: 日本語の歌</li>
         </ul>
@@ -157,6 +158,7 @@
         const song3Link = document.getElementById('song3Link');
         const song4Link = document.getElementById('song4Link');
         const song5Link = document.getElementById('song5Link');
+        const song6Link = document.getElementById('song6Link');
         const spotifyLink1 = document.getElementById('spotifyLink1');
         const spotifyLink2 = document.getElementById('spotifyLink2');
         const toggleFurigana = document.getElementById('toggleFurigana');
@@ -183,7 +185,8 @@
                 'tsukiga.txt': './images/tsukiga-bg.jpg',
                 'sayonara.txt': './images/sayonara-bg.jpg',
               'lyra.txt': './images/lyra-bg.jpg',
-              'okaerinasai.txt': './images/okaeri-bg.jpg'
+              'okaerinasai.txt': './images/okaeri-bg.jpg',
+              'aisurukokoro.txt': './images/aisurukokoro.jpg'
             };
 
             fetch(filename)
@@ -234,7 +237,9 @@
         song5Link.addEventListener('click', () => {
             loadLyrics('okaerinasai.txt', 'おかえりなさい');
         });
-
+        song6Link.addEventListener('click', () => {
+            loadLyrics('aisurukokoro.txt', '愛する心');
+        });
         // 点击第一个Spotify条目时展示第一个Spotify的嵌入代码
         spotifyLink1.addEventListener('click', () => {
             contentDiv.innerHTML = `
