@@ -57,12 +57,119 @@
     },
     {
         "word": "im Moment",
-        "词性": "短语",
-        "subCategory": "时间",
+        "category": "词性",
+        "subCategory": "短语",
         "type": "短语",
         "example": "Ich bin im Moment beschäftigt.",
         "meaning": "此刻，当前"
     },
+
+    {
+        "word": "alles Gute",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Ich wünsche dir alles Gute zum Geburtstag.",
+        "meaning": "一切顺利，祝好"
+    },
+    {
+        "word": "wie lange",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Wie lange dauert der Film?",
+        "meaning": "多长时间"
+    },
+    {
+        "word": "zu Fuß",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Ich gehe zu Fuß zur Arbeit.",
+        "meaning": "步行"
+    },
+    {
+        "word": "keinen Hunger",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Ich habe keinen Hunger.",
+        "meaning": "不饿"
+    },
+    {
+        "word": "Hin- und Rückfahrt",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Wie viel kostet die Hin- und Rückfahrt?",
+        "meaning": "往返"
+    },
+    {
+        "word": "heute Nachmittag",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Wir treffen uns heute Nachmittag.",
+        "meaning": "今天下午"
+    },
+    {
+        "word": "am Wochenende",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Was machst du am Wochenende?",
+        "meaning": "在周末"
+    },
+    {
+        "word": "gern geschehen",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Vielen Dank! – Gern geschehen.",
+        "meaning": "不客气"
+    },
+    {
+        "word": "vielen Dank",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Vielen Dank für Ihre Hilfe.",
+        "meaning": "非常感谢"
+    },
+    {
+        "word": "in der Nähe",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Gibt es hier ein Restaurant in der Nähe?",
+        "meaning": "在附近"
+    },
+    {
+        "word": "da drüben",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Das Café ist da drüben.",
+        "meaning": "在那边"
+    },
+    {
+        "word": "es tut mir leid",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Es tut mir leid, dass ich zu spät bin.",
+        "meaning": "对不起，抱歉"
+    },
+    
+    {
+        "word": "bis zum Hotel",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Gehen Sie geradeaus bis zum Hotel.",
+        "meaning": "到酒店"
+    },
+
     {
         "word": "Guten Morgen",
         "category": "主题",
