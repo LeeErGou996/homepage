@@ -154,7 +154,6 @@
         const ersiLink = document.getElementById('2024');
         const year2025 = document.getElementById('2025');
 
-
         const song1Link = document.getElementById('song1Link');
         const song2Link = document.getElementById('song2Link');
         const song3Link = document.getElementById('song3Link');
@@ -222,6 +221,25 @@
             contentDiv.innerHTML = '<h1>概要</h1><p>これは私が好きな日本語の歌の歌詞です。私は歌を練習しながら日本語を勉強することができて、とても楽しいと思います。このサイトがあなたのお役に立てば嬉しいです。</p>';
         });
 
+                // 点击第一个Spotify条目时展示第一个Spotify的嵌入代码
+        spotifyLink1.addEventListener('click', () => {
+            contentDiv.innerHTML = ''; // 清空内容
+            contentDiv.innerHTML = `
+                <h1>Spotify Playlist 1: Instrumental Music</h1>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6rvWkIttKpCLhWMUx3d2iP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            `;
+        });
+
+        // 点击第二个Spotify条目时展示第二个Spotify的嵌入代码
+        spotifyLink2.addEventListener('click', () => {
+            contentDiv.innerHTML = ''; // 清空内容
+            contentDiv.innerHTML = `
+                <h1>Spotify Playlist 2: 日本語の歌</h1>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5ni4Agotx6uIXYdWFS0ERM?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            `;
+        });
+
+        // 为2024链接添加点击事件
         ersiLink.addEventListener('click', () => {
             contentDiv.innerHTML = ''; // 清空内容
 
@@ -232,12 +250,12 @@
 
             // 定义歌曲数据
             const songs = [
-                { id: 'song1Link', text: 'Powder Snow' },
-                { id: 'song2Link', text: '月がきれい' },
-                { id: 'song3Link', text: 'さよならのこと' },
-                { id: 'song4Link', text: 'ライア' },
-                { id: 'song5Link', text: 'おかえりなさい' },
-                { id: 'song6Link', text: '愛する心' }
+                { id: 'song1Link', text: 'Powder Snow', file: 'powder-snow.txt' },
+                { id: 'song2Link', text: '月がきれい', file: 'tsukiga.txt' },
+                { id: 'song3Link', text: 'さよならのこと', file: 'sayonara.txt' },
+                { id: 'song4Link', text: 'ライア', file: 'lyra.txt' },
+                { id: 'song5Link', text: 'おかえりなさい', file: 'okaerinasai.txt' },
+                { id: 'song6Link', text: '愛する心', file: 'aisurukokoro.txt' }
             ];
 
             // 遍历歌曲数据，创建每一项
@@ -254,7 +272,7 @@
 
                 // 点击事件，加载对应歌词
                 listItem.addEventListener('click', () => {
-                    loadLyrics(`${song.text.toLowerCase().replace(/\s/g, '-')}.txt`, song.text);
+                    loadLyrics(song.file, song.text);
                 });
 
                 // 将每个列表项添加到 ul
@@ -267,7 +285,6 @@
 
 
 
-        const year2025Content = document.getElementById('2025Content');
 
         // 点击 2025 时展开或收起子项
         year2025.addEventListener('click', () => {
@@ -297,7 +314,7 @@
 
                 // 点击事件，加载对应歌词
                 listItem.addEventListener('click', () => {
-                    loadLyrics(`${song.text.toLowerCase().replace(/\s/g, '-')}.txt`, song.text);
+                    loadLyrics(song.file, song.text);
                 });
 
                 // 将每个列表项添加到 ul
@@ -330,21 +347,7 @@
         song6Link.addEventListener('click', () => {
             loadLyrics('aisurukokoro.txt', '愛する心');
         });
-        // 点击第一个Spotify条目时展示第一个Spotify的嵌入代码
-        spotifyLink1.addEventListener('click', () => {
-            contentDiv.innerHTML = `
-                <h1>Spotify Playlist 1: Instrumental Music</h1>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6rvWkIttKpCLhWMUx3d2iP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            `;
-        });
 
-        // 点击第二个Spotify条目时展示第二个Spotify的嵌入代码
-        spotifyLink2.addEventListener('click', () => {
-            contentDiv.innerHTML = `
-                <h1>Spotify Playlist 2: 日本語の歌</h1>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5ni4Agotx6uIXYdWFS0ERM?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            `;
-        });
 
     </script>
 </body>

@@ -117,12 +117,9 @@
           　<li><a href="https://leeergou996.github.io/leeergou.github.io/" target="_blank" style="color: blue; text-decoration: none;">ホームページに戻る</a></li> <!-- 新增主页链接 -->
             <li id="homeLink">がいよう</li>
           <h2>リスト</h2>
-            <li id="steingateLink">シュタインズゲート</li>
-            <li id="euphoniumLink">響け！ユーフォニアム</li>
-            <li id="mygoLink">BanG Dream! It's MyGO!!!!!</li>
-            <li id="tsukigaLink">月がきれい</li>
-            <li id="garasuLink">烏は主を選ばない</li>
-            <li id="oshinokoLink">推しの子</li>
+          <li id="2024">2024 </li>
+          <li id="2025">2025 </li>
+
         </ul>
     </div>
 
@@ -133,6 +130,9 @@
 
     <script>
         const homeLink = document.getElementById('homeLink');
+        const ersiLink = document.getElementById('2024');
+        const year2025 = document.getElementById('2025');
+
         const steingateLink = document.getElementById('steingateLink');
         const euphoniumLink = document.getElementById('euphoniumLink');
         const mygoLink = document.getElementById('mygoLink');
@@ -153,34 +153,69 @@
             `;
         });
 
-        steingateLink.addEventListener('click', () => {
-            contentDiv.innerHTML = `
-            <h1>シュタインズゲート</h1><p><a href="https://leeergou996.github.io/leeergou.github.io/SteinsGate/" target="_blank" style="color: blue; text-decoration: none;">未来ガジェット研究所</a></p>
-            <p><a href="https://leeergou996.github.io/leeergou.github.io/futureGadget/JoshuSound.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.1</a></p>
-            <p><a href="https://leeergou996.github.io/leeergou.github.io/futureGadget/lyrics1.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.2</a></p>
-            <p><a href="https://leeergou996.github.io/leeergou.github.io/german/German.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.3</a></p>
+        
+        // 为2024链接添加点击事件
+        ersiLink.addEventListener('click', () => {
+            contentDiv.innerHTML = ''; // 清空内容
 
-            `;
+            // 创建一个 ul 元素
+            const list = document.createElement('ul');
+            list.style.listStyle = 'none'; // 去除默认的列表样式
+            list.style.padding = '0';
+
+            // 定义条目数据
+            const entries = [
+                { id: 'steingateLink', text: 'Steins;Gate', handler: () => {
+                    contentDiv.innerHTML = `
+                        <h1>シュタインズゲート</h1>
+                        <p><a href="https://leeergou996.github.io/leeergou.github.io/SteinsGate/" target="_blank" style="color: blue; text-decoration: none;">未来ガジェット研究所</a></p>
+                        <p><a href="https://leeergou996.github.io/leeergou.github.io/futureGadget/JoshuSound.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.1</a></p>
+                        <p><a href="https://leeergou996.github.io/leeergou.github.io/futureGadget/lyrics1.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.2</a></p>
+                        <p><a href="https://leeergou996.github.io/leeergou.github.io/german/German.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.3</a></p>
+                    `;
+                }},
+                { id: 'euphoniumLink', text: 'Sound! Euphonium', handler: () => {
+                    contentDiv.innerHTML = '<h1>響け！ユーフォニアム</h1>';
+                }},
+                { id: 'mygoLink', text: 'MyGO!!!', handler: () => {
+                    contentDiv.innerHTML = '<h1>BanG Dream! It\'s MyGO!!!!!</h1>';
+                }},
+                { id: 'tsukigaLink', text: '月がきれい', handler: () => {
+                    contentDiv.innerHTML = '<h1>月がきれい</h1>';
+                }},
+                { id: 'garasuLink', text: 'ガラスの靴', handler: () => {
+                    contentDiv.innerHTML = '<h1>烏は主を選ばない</h1>';
+                }},
+                { id: 'oshinokoLink', text: '【推しの子】', handler: () => {
+                    contentDiv.innerHTML = '<h1>推しの子</h1>';
+                }}
+            ];
+
+            // 遍历条目数据，创建每一项
+            entries.forEach(entry => {
+                const listItem = document.createElement('li');
+                listItem.id = entry.id;
+                listItem.textContent = entry.text;
+
+                // 设置样式以匹配侧栏的样式
+                listItem.style.marginBottom = '10px';
+                listItem.style.cursor = 'pointer';
+                listItem.style.fontSize = '18px';
+                listItem.style.color = 'darkblue';
+
+                // 点击事件，直接调用对应的 handler 方法
+                listItem.addEventListener('click', () => {
+                    entry.handler();
+                });
+
+                // 将每个列表项添加到 ul
+                list.appendChild(listItem);
+            });
+
+            // 将 ul 添加到 contentDiv
+            contentDiv.appendChild(list);
         });
 
-        euphoniumLink.addEventListener('click', () => {
-            contentDiv.innerHTML = '<h1>響け！ユーフォニアム</h1>';
-        });
-
-        mygoLink.addEventListener('click', () => {
-            contentDiv.innerHTML = '<h1>BanG Dream! It\'s MyGO!!!!!</h1>';
-       });
-
-        tsukigaLink.addEventListener('click', () => {
-            contentDiv.innerHTML = '<h1>月がきれい</h1>';
-        });
-
-        garasuLink.addEventListener('click', () => {
-            contentDiv.innerHTML = '<h1>烏は主を選ばない</h1>';
-        });
-        oshinokoLink.addEventListener('click', () => {
-            contentDiv.innerHTML = '<h1>推しの子</h1>';
-        });
     </script>
 </body>
 </html>
