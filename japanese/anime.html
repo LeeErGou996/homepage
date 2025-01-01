@@ -138,6 +138,8 @@
         const mygoLink = document.getElementById('mygoLink');
         const tsukigaLink = document.getElementById('tsukigaLink');
         const garasuLink = document.getElementById('garasuLink');
+        const mujicaLink = document.getElementById('mujicaLink');
+        const kekkonLink = document.getElementById('kekkonLink');
         const oshinokoLink = document.getElementById('oshinokoLink');
         const contentDiv = document.querySelector('.content');
 
@@ -145,6 +147,7 @@
             contentDiv.innerHTML = `
                 <h1>概要</h1>
                 <div class="scrollable-textarea readonly">
+                <p>📺 2024.12: アニメ「BanG Dream! It's MyGO!!!!!」「私の幸せな結婚」を追加しました </p>
                 <p>📺 2024.12: アニメ「推しの子」を追加しました </p>
                 <p>📺 2024.10: アニメ「烏は主を選ばない」を追加しました </p>
                 <p>📺 2024.6: アニメ「シュタインズゲート」「響け！ユーフォニアムを追加しました」「BanG Dream! It's MyGO!!!!!」「月がきれい」を追加しました</p>
@@ -207,16 +210,16 @@
                 { id: 'euphoniumLink', text: 'Sound! Euphonium', handler: () => {
                     contentDiv.innerHTML = '<h1>響け！ユーフォニアム</h1>';
                 }},
-                { id: 'mygoLink', text: 'MyGO!!!', handler: () => {
+                { id: 'mygoLink', text: 'BanG Dream! It\'s MyGO!!!!!', handler: () => {
                     contentDiv.innerHTML = '<h1>BanG Dream! It\'s MyGO!!!!!</h1>';
                 }},
                 { id: 'tsukigaLink', text: '月がきれい', handler: () => {
                     contentDiv.innerHTML = '<h1>月がきれい</h1>';
                 }},
-                { id: 'garasuLink', text: 'ガラスの靴', handler: () => {
+                { id: 'garasuLink', text: '烏は主を選ばない', handler: () => {
                     contentDiv.innerHTML = '<h1>烏は主を選ばない</h1>';
                 }},
-                { id: 'oshinokoLink', text: '【推しの子】', handler: () => {
+                { id: 'oshinokoLink', text: '推しの子', handler: () => {
                     contentDiv.innerHTML = '<h1>推しの子</h1>';
                 }}
             ];
@@ -227,10 +230,10 @@
 
         year2025.addEventListener('click', () => {
             const entries = [
-                { id: 'newLink1', text: '', handler: () => {
+                { id: 'mujicaLink', text: 'BanG Dream! Ave Mujica', handler: () => {
                     contentDiv.innerHTML = '<h1></h1>';
                 }},
-                { id: 'newLink2', text: '', handler: () => {
+                { id: 'kekkonLink', text: '私の幸せな結婚', handler: () => {
                     contentDiv.innerHTML = '<h1></h1>';
                 }}
             ];
