@@ -112,12 +112,10 @@
         <h2>歌いたい</h2>
         <ul>
             <li id="homeLink">概要</li>
-            <li id="song1Link">Powder Snow</li>
-            <li id="song2Link">月がきれい</li>
-            <li id="song3Link">さよならのこと</li>
-          	<li id="song4Link">ライア</li>
-            <li id="song5Link">おかえりなさい </li>
-            <li id="song6Link">愛する心 </li>
+            <li id="2024">2024 </li>
+
+
+            
             <li id="spotifyLink1">Spotify Playlist 1: Instrumental Music</li>
             <li id="spotifyLink2">Spotify Playlist 2: 日本語の歌</li>
         </ul>
@@ -153,6 +151,8 @@
 
         // 其他功能代码
         const homeLink = document.getElementById('homeLink');
+        const ersiLink = document.getElementById('2024');
+
         const song1Link = document.getElementById('song1Link');
         const song2Link = document.getElementById('song2Link');
         const song3Link = document.getElementById('song3Link');
@@ -218,6 +218,49 @@
         // 为不同歌曲绑定点击事件
         homeLink.addEventListener('click', () => {
             contentDiv.innerHTML = '<h1>概要</h1><p>これは私が好きな日本語の歌の歌詞です。私は歌を練習しながら日本語を勉強することができて、とても楽しいと思います。このサイトがあなたのお役に立てば嬉しいです。</p>';
+        });
+
+        ersiLink.addEventListener('click', () => {
+            contentDiv.innerHTML = ''; // 清空内容
+
+            // 创建一个 ul 元素
+            const list = document.createElement('ul');
+            list.style.listStyle = 'none'; // 去除默认的列表样式
+            list.style.padding = '0';
+
+            // 定义歌曲数据
+            const songs = [
+                { id: 'song1Link', text: 'Powder Snow' },
+                { id: 'song2Link', text: '月がきれい' },
+                { id: 'song3Link', text: 'さよならのこと' },
+                { id: 'song4Link', text: 'ライア' },
+                { id: 'song5Link', text: 'おかえりなさい' },
+                { id: 'song6Link', text: '愛する心' }
+            ];
+
+            // 遍历歌曲数据，创建每一项
+            songs.forEach(song => {
+                const listItem = document.createElement('li');
+                listItem.id = song.id;
+                listItem.textContent = song.text;
+
+                // 设置样式以匹配侧栏的样式
+                listItem.style.marginBottom = '10px';
+                listItem.style.cursor = 'pointer';
+                listItem.style.fontSize = '18px';
+                listItem.style.color = 'darkblue';
+
+                // 点击事件，加载对应歌词
+                listItem.addEventListener('click', () => {
+                    loadLyrics(`${song.text.toLowerCase().replace(/\s/g, '-')}.txt`, song.text);
+                });
+
+                // 将每个列表项添加到 ul
+                list.appendChild(listItem);
+            });
+
+            // 将 ul 添加到 contentDiv
+            contentDiv.appendChild(list);
         });
 
         song1Link.addEventListener('click', () => {
