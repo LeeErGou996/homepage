@@ -153,9 +153,12 @@
             `;
         });
 
-        
-        // 为2024链接添加点击事件
-        ersiLink.addEventListener('click', () => {
+                /**
+         * 动态生成年份条目
+         * @param {HTMLElement} contentDiv - 内容区域的 DOM 元素
+         * @param {Array} entries - 包含条目信息的数组
+         */
+        function generateYearContent(contentDiv, entries) {
             contentDiv.innerHTML = ''; // 清空内容
 
             // 创建一个 ul 元素
@@ -163,7 +166,34 @@
             list.style.listStyle = 'none'; // 去除默认的列表样式
             list.style.padding = '0';
 
-            // 定义条目数据
+            // 遍历条目数据，创建每一项
+            entries.forEach(entry => {
+                const listItem = document.createElement('li');
+                listItem.id = entry.id;
+                listItem.textContent = entry.text;
+
+                // 设置样式
+                listItem.style.marginBottom = '10px';
+                listItem.style.cursor = 'pointer';
+                listItem.style.fontSize = '18px';
+                listItem.style.color = 'darkblue';
+
+                // 点击事件，调用对应的 handler 方法
+                listItem.addEventListener('click', () => {
+                    entry.handler();
+                });
+
+                // 将列表项添加到 ul
+                list.appendChild(listItem);
+            });
+
+            // 将 ul 添加到 contentDiv
+            contentDiv.appendChild(list);
+        }
+
+        
+                // 为2024链接添加点击事件
+        ersiLink.addEventListener('click', () => {
             const entries = [
                 { id: 'steingateLink', text: 'Steins;Gate', handler: () => {
                     contentDiv.innerHTML = `
@@ -191,30 +221,24 @@
                 }}
             ];
 
-            // 遍历条目数据，创建每一项
-            entries.forEach(entry => {
-                const listItem = document.createElement('li');
-                listItem.id = entry.id;
-                listItem.textContent = entry.text;
-
-                // 设置样式以匹配侧栏的样式
-                listItem.style.marginBottom = '10px';
-                listItem.style.cursor = 'pointer';
-                listItem.style.fontSize = '18px';
-                listItem.style.color = 'darkblue';
-
-                // 点击事件，直接调用对应的 handler 方法
-                listItem.addEventListener('click', () => {
-                    entry.handler();
-                });
-
-                // 将每个列表项添加到 ul
-                list.appendChild(listItem);
-            });
-
-            // 将 ul 添加到 contentDiv
-            contentDiv.appendChild(list);
+            // 调用生成函数
+            generateYearContent(contentDiv, entries);
         });
+
+        year2025.addEventListener('click', () => {
+            const entries = [
+                { id: 'newLink1', text: '', handler: () => {
+                    contentDiv.innerHTML = '<h1></h1>';
+                }},
+                { id: 'newLink2', text: '', handler: () => {
+                    contentDiv.innerHTML = '<h1></h1>';
+                }}
+            ];
+
+            // 调用生成函数
+            generateYearContent(contentDiv, entries);
+        });
+
 
     </script>
 </body>
