@@ -113,7 +113,7 @@
         <ul>
             <li id="homeLink">概要</li>
             <li id="2024">2024 </li>
-
+            <li id="2025">2025 </li>
 
             
             <li id="spotifyLink1">Spotify Playlist 1: Instrumental Music</li>
@@ -152,6 +152,8 @@
         // 其他功能代码
         const homeLink = document.getElementById('homeLink');
         const ersiLink = document.getElementById('2024');
+        const year2025 = document.getElementById('2025');
+
 
         const song1Link = document.getElementById('song1Link');
         const song2Link = document.getElementById('song2Link');
@@ -262,6 +264,51 @@
             // 将 ul 添加到 contentDiv
             contentDiv.appendChild(list);
         });
+
+
+
+        const year2025Content = document.getElementById('2025Content');
+
+        // 点击 2025 时展开或收起子项
+        year2025.addEventListener('click', () => {
+            contentDiv.innerHTML = ''; // 清空内容
+
+            // 创建一个 ul 元素
+            const list = document.createElement('ul');
+            list.style.listStyle = 'none'; // 去除默认的列表样式
+            list.style.padding = '0';
+
+            // 定义歌曲数据
+            const songs = [
+
+            ];
+
+            // 遍历歌曲数据，创建每一项
+            songs.forEach(song => {
+                const listItem = document.createElement('li');
+                listItem.id = song.id;
+                listItem.textContent = song.text;
+
+                // 设置样式以匹配侧栏的样式
+                listItem.style.marginBottom = '10px';
+                listItem.style.cursor = 'pointer';
+                listItem.style.fontSize = '18px';
+                listItem.style.color = 'darkblue';
+
+                // 点击事件，加载对应歌词
+                listItem.addEventListener('click', () => {
+                    loadLyrics(`${song.text.toLowerCase().replace(/\s/g, '-')}.txt`, song.text);
+                });
+
+                // 将每个列表项添加到 ul
+                list.appendChild(listItem);
+            });
+
+            // 将 ul 添加到 contentDiv
+            contentDiv.appendChild(list);
+        });
+
+
 
         song1Link.addEventListener('click', () => {
             loadLyrics('powder-snow.txt', 'Powder Snow');
