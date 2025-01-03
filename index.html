@@ -3,6 +3,51 @@
 <head>
     <title>LeeErGou</title>
     <style>
+
+        /* Basic style for the container */
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Style for the header button (transparent) */
+        .toggle-btn {
+            background-color: transparent; /* Transparent background */
+            color: blue;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            font-weight: bold;
+            font-family:'Times New Roman', serif;
+        }
+
+        /* Hover effect for the button */
+        .toggle-btn:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for the lecture notes list */
+        .lecture-list {
+            display: none; /* Initially hidden */
+            list-style-type: none;
+            padding: 10px;
+            margin: 0;
+            text-align: left;
+        }
+
+        /* Style for individual lecture notes */
+        .lecture-list li {
+            padding: 5px 0;
+        }
+
+        /* Change font color when the button is active */
+        .active .toggle-btn {
+            color: #f44336; /* Red text when active */
+        }
+
         body {
             font-family:'Times New Roman', serif;
         }
@@ -56,15 +101,29 @@
     <a href="https://github.com//LeeErGou996/" target="_blank">Github</a>
     
     <!-- Add more sidebar content here -->
-    <h3>Lecture Notes</h3> <!-- Lecture Notes 标签 -->
-    <ul>
-        <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/MAT3040_NOTE.pdf" target="_blank">Advanced Linear Algebra</a></li>
-        <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/MAT3004NOTE.pdf" target="_blank">Abstract Algebra</a></li>
-        <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/MAT4001_Numerical_Analysis_NOTE.pdf" target="_blank">Numerical Analysis</a></li>
-        <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/DDA3020_NOTE.pdf" target="_blank">Machine Learning</a></li>
-        <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/MAT4010.pdf" target="_blank">Functional Analysis</a></li>
-        <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/MAT4220_Partial_Differential_Equation_Note.pdf" target="_blank">Partial Differential Equation</a></li>
-    </ul>
+
+
+        <!-- The lecture notes list that will be toggled -->
+        <button class="toggle-btn" data-target="notes-1">CUHKSZ Lecture Notes</button>
+
+        <ul class="lecture-list" id="notes-1">
+            <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/MAT3040_NOTE.pdf" target="_blank">Advanced Linear Algebra</a></li>
+            <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/MAT3004NOTE.pdf" target="_blank">Abstract Algebra</a></li>
+            <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/MAT4001_Numerical_Analysis_NOTE.pdf" target="_blank">Numerical Analysis</a></li>
+            <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/DDA3020_NOTE.pdf" target="_blank">Machine Learning</a></li>
+            <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/MAT4010.pdf" target="_blank">Functional Analysis</a></li>
+            <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/MAT4220_Partial_Differential_Equation_Note.pdf" target="_blank">Partial Differential Equation</a></li>
+        </ul>
+
+        <button class="toggle-btn" data-target="notes-2">TUM Lecture Notes</button>
+
+        <!-- The lecture notes list that will be toggled -->
+        <ul class="lecture-list" id="notes-2">
+            <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/MRL.pdf" target="_blank">Mathematics of Reinforcement Learning</a></li>
+            <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/NLO.pdf" target="_blank">Nonlinear Optimizatin</a></li>
+            <li><a href="https://github.com//LeeErGou996/leeergou.github.io/raw/main/lectureNote/OPTML.pdf" target="_blank">Fundamentals of Optimization for Machine Learning </a></li>
+        </ul>
+
 </div>
 
 <div class="main-content">
@@ -88,6 +147,21 @@
         <p><a href="futureGadget/lyrics1.html" target="_blank" class="no-style">Singing</a> &#127908</p>
 </div>
     
-    
+<script>
+        // Add event listener to all buttons
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                // Get the target list ID from the button's data-target attribute
+                var targetId = this.getAttribute('data-target');
+                var targetList = document.getElementById(targetId);
+
+                // Toggle the display of the target list
+                targetList.style.display = (targetList.style.display === "none" || targetList.style.display === "") ? "block" : "none";
+
+                // Toggle the active class for the button
+                this.classList.toggle('active');
+            });
+        });
+</script>
 </body>
 </html>
