@@ -793,158 +793,159 @@
     "example": "Die Farbe gefällt mir gut.",
     "meaning": "颜色"
   },
-  {
-    "word": "Zukunft",
-    "category": "主题",
-    "subCategory": "社会",
-    "type": "名词",
-    "example": "Die Zukunft der Menschheit hängt von unseren Entscheidungen ab.",
-    "meaning": "未来"
-},
-{
-    "word": "Frieden",
-    "category": "主题",
-    "subCategory": "社会",
-    "type": "名词",
-    "example": "Der Weltfrieden ist ein wichtiges Ziel.",
-    "meaning": "和平"
-},
-{
-    "word": "Dinge",
-    "category": "主题",
-    "subCategory": "物品",
-    "type": "名词",
-    "example": "Es gibt viele Dinge, die man im Leben erreichen kann.",
-    "meaning": "事情"
-},
-{
-    "word": "Standard",
-    "category": "主题",
-    "subCategory": "商业",
-    "type": "名词",
-    "example": "Der Standard für die Qualität wurde erhöht.",
-    "meaning": "标准"
-},
-{
-    "word": "Wettbewerb",
-    "category": "主题",
-    "subCategory": "商业",
-    "type": "名词",
-    "example": "Der Wettbewerb auf dem Markt ist hart.",
-    "meaning": "竞争"
-},
-{
-    "word": "Wandel",
-    "category": "主题",
-    "subCategory": "社会",
-    "type": "名词",
-    "example": "Der Wandel der Gesellschaft ist ein langfristiger Prozess.",
-    "meaning": "变革"
-},
-{
-    "word": "Schutz",
-    "category": "主题",
-    "subCategory": "社会",
-    "type": "名词",
-    "example": "Der Schutz der Umwelt ist unerlässlich.",
-    "meaning": "保护"
-},
-{
-    "word": "Bevölkerung",
-    "category": "主题",
-    "subCategory": "社会",
-    "type": "名词",
-    "example": "Die Bevölkerung wächst in vielen Städten weltweit.",
-    "meaning": "人口，公民"
-},
-{
-    "word": "Klimapolitik",
-    "category": "主题",
-    "subCategory": "社会",
-    "type": "名词",
-    "example": "Klimapolitik ist ein zentrales Thema der aktuellen Diskussion.",
-    "meaning": "气候政策"
-},
-{
-    "word": "Innovation",
-    "category": "主题",
-    "subCategory": "商业",
-    "type": "名词",
-    "example": "Innovation ist der Schlüssel zum Erfolg in der Technologiebranche.",
-    "meaning": "创新"
-},
-{
-    "word": "Desinformation",
-    "category": "主题",
-    "subCategory": "信息",
-    "type": "名词",
-    "example": "Desinformation ist ein ernstes Problem in den Medien.",
-    "meaning": "虚假信息"
-},
-{
-    "word": "Elektromobilität",
-    "category": "主题",
-    "subCategory": "交通",
-    "type": "名词",
-    "example": "Elektromobilität ist eine wichtige Lösung für nachhaltigen Transport.",
-    "meaning": "电动出行/电动车技术"
-},
-{
-    "word": "Populismus",
-    "category": "主题",
-    "subCategory": "社会",
-    "type": "名词",
-    "example": "Populismus hat in vielen Ländern an Bedeutung gewonnen.",
-    "meaning": "民粹主义"
-},
-{
-    "word": "Demokratie",
-    "category": "主题",
-    "subCategory": "社会",
-    "type": "名词",
-    "example": "Demokratie ist das Fundament eines freien Staates.",
-    "meaning": "民主"
-},
-{
-    "word": "Bürokratie",
-    "category": "主题",
-    "subCategory": "社会",
-    "type": "名词",
-    "example": "Bürokratie kann den Fortschritt oft behindern.",
-    "meaning": "官僚主义/文牍主义"
-},
-{
-    "word": "Friedensordnung",
-    "category": "主题",
-    "subCategory": "社会",
-    "type": "名词",
-    "example": "Eine internationale Friedensordnung ist notwendig, um Konflikte zu vermeiden.",
-    "meaning": "和平秩序"
-},
-{
-    "word": "Energieabgabe",
-    "category": "主题",
-    "subCategory": "社会",
-    "type": "名词",
-    "example": "Die Energieabgabe wird von der Regierung reguliert.",
-    "meaning": "能源税"
-},
-{
-    "word": "Investitionsanreize",
-    "category": "主题",
-    "subCategory": "商业",
-    "type": "名词",
-    "example": "Investitionsanreize können die Wirtschaft ankurbeln.",
-    "meaning": "投资激励措施"
-},
-{
-    "word": "Zivilgesellschaft",
-    "category": "主题",
-    "subCategory": "社会",
-    "type": "名词",
-    "example": "Die Zivilgesellschaft spielt eine zentrale Rolle in einer Demokratie.",
-    "meaning": "公民社会"
-},
+
+    {
+        "word": "die Zukunft (die, -en)",
+        "category": "主题",
+        "subCategory": "社会",
+        "type": "名词",
+        "example": "Die Zukunft der Menschheit hängt von unseren Entscheidungen ab.",
+        "meaning": "未来"
+    },
+    {
+        "word": "der Frieden (der, -)",
+        "category": "主题",
+        "subCategory": "社会",
+        "type": "名词",
+        "example": "Der Weltfrieden ist ein wichtiges Ziel.",
+        "meaning": "和平"
+    },
+    {
+        "word": "die Dinge (die, -n)",
+        "category": "主题",
+        "subCategory": "物品",
+        "type": "名词",
+        "example": "Es gibt viele Dinge, die man im Leben erreichen kann.",
+        "meaning": "事情"
+    },
+    {
+        "word": "der Standard (der, -s)",
+        "category": "主题",
+        "subCategory": "商业",
+        "type": "名词",
+        "example": "Der Standard für die Qualität wurde erhöht.",
+        "meaning": "标准"
+    },
+    {
+        "word": "der Wettbewerb (der, -e)",
+        "category": "主题",
+        "subCategory": "商业",
+        "type": "名词",
+        "example": "Der Wettbewerb auf dem Markt ist hart.",
+        "meaning": "竞争"
+    },
+    {
+        "word": "der Wandel (der, -)",
+        "category": "主题",
+        "subCategory": "社会",
+        "type": "名词",
+        "example": "Der Wandel der Gesellschaft ist ein langfristiger Prozess.",
+        "meaning": "变革"
+    },
+    {
+        "word": "der Schutz (der, -)",
+        "category": "主题",
+        "subCategory": "社会",
+        "type": "名词",
+        "example": "Der Schutz der Umwelt ist unerlässlich.",
+        "meaning": "保护"
+    },
+    {
+        "word": "die Bevölkerung (die, -en)",
+        "category": "主题",
+        "subCategory": "社会",
+        "type": "名词",
+        "example": "Die Bevölkerung wächst in vielen Städten weltweit.",
+        "meaning": "人口，公民"
+    },
+    {
+        "word": "die Klimapolitik (die, -en)",
+        "category": "主题",
+        "subCategory": "社会",
+        "type": "名词",
+        "example": "Klimapolitik ist ein zentrales Thema der aktuellen Diskussion.",
+        "meaning": "气候政策"
+    },
+    {
+        "word": "die Innovation (die, -en)",
+        "category": "主题",
+        "subCategory": "商业",
+        "type": "名词",
+        "example": "Innovation ist der Schlüssel zum Erfolg in der Technologiebranche.",
+        "meaning": "创新"
+    },
+    {
+        "word": "die Desinformation (die, -en)",
+        "category": "主题",
+        "subCategory": "信息",
+        "type": "名词",
+        "example": "Desinformation ist ein ernstes Problem in den Medien.",
+        "meaning": "虚假信息"
+    },
+    {
+        "word": "die Elektromobilität (die, -en)",
+        "category": "主题",
+        "subCategory": "交通",
+        "type": "名词",
+        "example": "Elektromobilität ist eine wichtige Lösung für nachhaltigen Transport.",
+        "meaning": "电动出行/电动车技术"
+    },
+    {
+        "word": "der Populismus (der, -)",
+        "category": "主题",
+        "subCategory": "社会",
+        "type": "名词",
+        "example": "Populismus hat in vielen Ländern an Bedeutung gewonnen.",
+        "meaning": "民粹主义"
+    },
+    {
+        "word": "die Demokratie (die, -n)",
+        "category": "主题",
+        "subCategory": "社会",
+        "type": "名词",
+        "example": "Demokratie ist das Fundament eines freien Staates.",
+        "meaning": "民主"
+    },
+    {
+        "word": "die Bürokratie (die, -n)",
+        "category": "主题",
+        "subCategory": "社会",
+        "type": "名词",
+        "example": "Bürokratie kann den Fortschritt oft behindern.",
+        "meaning": "官僚主义/文牍主义"
+    },
+    {
+        "word": "die Friedensordnung (die, -en)",
+        "category": "主题",
+        "subCategory": "社会",
+        "type": "名词",
+        "example": "Eine internationale Friedensordnung ist notwendig, um Konflikte zu vermeiden.",
+        "meaning": "和平秩序"
+    },
+    {
+        "word": "die Energieabgabe (die, -n)",
+        "category": "主题",
+        "subCategory": "社会",
+        "type": "名词",
+        "example": "Die Energieabgabe wird von der Regierung reguliert.",
+        "meaning": "能源税"
+    },
+    {
+        "word": "die Investitionsanreize (die, -n)",
+        "category": "主题",
+        "subCategory": "商业",
+        "type": "名词",
+        "example": "Investitionsanreize können die Wirtschaft ankurbeln.",
+        "meaning": "投资激励措施"
+    },
+    {
+        "word": "die Zivilgesellschaft (die, -en)",
+        "category": "主题",
+        "subCategory": "社会",
+        "type": "名词",
+        "example": "Die Zivilgesellschaft spielt eine zentrale Rolle in einer Demokratie.",
+        "meaning": "公民社会"
+    },
   {
     "word": "das Fax (die, -)",
     "category": "主题",
