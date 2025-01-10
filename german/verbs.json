@@ -1214,5 +1214,37 @@
         "type": "动词",
         "example": "Er rennt sehr schnell.",
         "meaning": "跑步"
+    },
+    {
+        "word": "investieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Es ist wichtig, in erneuerbare Energien zu investieren.",
+        "meaning": "投资"
+    },
+    {
+        "word": "sanieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das alte Gebäude muss dringend saniert werden.",
+        "meaning": "翻修, 修复"
+    },
+    {
+        "word": "fördern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Staat fördert nachhaltige Projekte.",
+        "meaning": "促进，支持"
+    },
+    {
+        "word": "unterstützen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Viele Menschen unterstützen die Klimaschutzinitiative.",
+        "meaning": "支持"
     }
 ]

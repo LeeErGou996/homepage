@@ -274,6 +274,40 @@
         "example": "Die Arbeit war heute wirklich anstrengend.",
         "meaning": "累人的, 费力的"
     },
+    
+        {
+            "word": "günstig",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Das Hotel war sehr günstig und komfortabel.",
+            "meaning": "实惠的, 价格合理的"
+        },
+        {
+            "word": "langfristig",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Langfristig ist es wichtig, in nachhaltige Projekte zu investieren.",
+            "meaning": "长期的, 持久的"
+        },
+        {
+            "word": "klimafreundlich",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Elektroautos sind klimafreundlich und tragen zur Reduzierung der CO2-Emissionen bei.",
+            "meaning": "气候友好的, 有利于环境的"
+        },
+        {
+            "word": "zivilgesellschaftlich",
+            "category": "词性",
+            "subCategory": "形容词",
+            "type": "形容词",
+            "example": "Die zivilgesellschaftlichen Organisationen spielen eine wichtige Rolle in der Demokratie.",
+            "meaning": "公民社会相关的, 与公民社会有关的"
+        },
+
     {
         "word": "aktiv",
         "category": "词性",
