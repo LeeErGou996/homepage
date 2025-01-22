@@ -23,6 +23,319 @@
         "example": "Ich jogge jeden Morgen im Park.",
         "meaning": "慢跑"
     },
+
+    {
+        "word": "aufhören",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich höre mit dem Rauchen auf.",
+        "meaning": "停止"
+    },
+    {
+        "word": "zurückkommen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wann kommst du zurück?",
+        "meaning": "回来"
+    },
+    {
+        "word": "ausgehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir gehen am Wochenende aus.",
+        "meaning": "外出"
+    },
+    {
+        "word": "ankommen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Zug kommt um 10 Uhr an.",
+        "meaning": "到达"
+    },
+    {
+        "word": "aussteigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich steige an der nächsten Haltestelle aus.",
+        "meaning": "下车"
+    },
+    {
+        "word": "aufräumen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich räume mein Zimmer auf.",
+        "meaning": "整理"
+    },
+    {
+        "word": "aussehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Du siehst heute gut aus.",
+        "meaning": "看起来"
+    },
+    {
+        "word": "saubermachen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir machen die Wohnung sauber.",
+        "meaning": "清洁"
+    },
+    {
+        "word": "abwaschen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich wasche das Geschirr ab.",
+        "meaning": "洗碗"
+    },
+    {
+        "word": "vorschlagen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich schlage vor, ins Kino zu gehen.",
+        "meaning": "建议"
+    },
+    {
+        "word": "anmachen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Mach bitte das Licht an.",
+        "meaning": "打开（电器）"
+    },
+    {
+        "word": "aufmachen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Mach die Tür auf.",
+        "meaning": "打开（门、窗）"
+    },
+    {
+        "word": "zumachen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bitte mach das Fenster zu.",
+        "meaning": "关闭"
+    },
+    {
+        "word": "mitkommen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kommst du ins Kino mit?",
+        "meaning": "一起来"
+    },
+    {
+        "word": "weggehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich gehe jetzt weg.",
+        "meaning": "离开"
+    },
+    {
+        "word": "mitbringen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich bringe eine Flasche Wein mit.",
+        "meaning": "带来"
+    },
+    {
+        "word": "mitnehmen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich nehme meinen Regenschirm mit.",
+        "meaning": "带上，随身携带"
+    },
+    {
+        "word": "nachdenken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich muss über das Problem nachdenken.",
+        "meaning": "思考，考虑"
+    },
+    {
+        "word": "zubereiten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich bereite das Mittagessen zu.",
+        "meaning": "准备食物"
+    },
+    {
+        "word": "vorbeikommen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Komm doch mal bei mir vorbei.",
+        "meaning": "顺道拜访"
+    },
+    {
+        "word": "ausfüllen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bitte füllen Sie das Formular aus.",
+        "meaning": "填写"
+    },
+    {
+        "word": "zusammenarbeiten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir arbeiten gut zusammen.",
+        "meaning": "合作"
+    },
+    {
+        "word": "teilnehmen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich nehme am Sprachkurs teil.",
+        "meaning": "参加"
+    },
+    {
+        "word": "vorhaben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Was hast du morgen vor?",
+        "meaning": "计划"
+    },
+    {
+        "word": "wegwerfen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir werfen den alten Müll weg.",
+        "meaning": "扔掉"
+    },
+    {
+        "word": "anschauen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich schaue mir einen Film an.",
+        "meaning": "观看"
+    },
+    {
+        "word": "abmachen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir haben einen Termin abgemacht.",
+        "meaning": "商定，约定"
+    },
+    {
+        "word": "nachschlagen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich schlage das Wort im Wörterbuch nach.",
+        "meaning": "查阅"
+    },
+    {
+        "word": "zusammenstellen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir stellen die Möbel zusammen.",
+        "meaning": "整理，组合"
+    },
+    {
+        "word": "durchführen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir führen das Projekt durch.",
+        "meaning": "执行，实施"
+    },
+    {
+        "word": "aufnehmen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir nehmen das Gespräch auf.",
+        "meaning": "录制，接纳"
+    },
+    {
+        "word": "zurückrufen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich rufe dich später zurück.",
+        "meaning": "回电话"
+    },
+    {
+        "word": "weiterleiten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich leite die E-Mail weiter.",
+        "meaning": "转发"
+    },
+    {
+        "word": "losfahren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir fahren um 8 Uhr los.",
+        "meaning": "出发"
+    },
+    {
+        "word": "absteigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir steigen in einem Hotel ab.",
+        "meaning": "下榻"
+    },
+    {
+        "word": "umsehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich sehe mich in der Stadt um.",
+        "meaning": "四处看看"
+    },
+    {
+        "word": "absprechen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir sprechen den Plan ab.",
+        "meaning": "商议"
+    },
+    {
+        "word": "einfallen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Mir fällt gerade etwas ein.",
+        "meaning": "想起"
+    },
+    {
+        "word": "zurechtkommen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich komme mit der neuen Arbeit zurecht.",
+        "meaning": "应对，适应"
+    },
     {
         "word": "betonen",
         "category": "词性",
