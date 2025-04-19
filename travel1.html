@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Map</title>
+    <title>My Travel Map</title>
     <!-- 引入Leaflet.js库 -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -23,75 +23,211 @@
             height: 150px;
             margin: 5px;
         }
+        /* 弹出窗口 */
+        #photo-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        #photo-modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 80%;
+            max-height: 80%;
+            overflow-y: auto;
+        }
+        #close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        #reset-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: yellow;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
-    <h1>我的旅游地图</h1>
+    <h1>My Travel Map</h1>
     <div id="map"></div>
 
-    <div id="photo-gallery"></div>
+    <div id="photo-modal">
+        <div id="photo-modal-content">
+            <button id="close-btn">Close</button>
+            <div id="photo-gallery"></div>
+        </div>
+    </div>
 
     <script>
-        // 创建地图并设置初始视角和缩放级别
         const map = L.map('map').setView([20, 0], 2);  // 20纬度，0经度，缩放级别2（世界视角）
 
-        // 加载OpenStreetMap图层
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        // 城市列表（示例）
-        const cities = [
-            {
-                name: 'Paris',
-                lat: 48.8566,
-                lon: 2.3522,
-                folder: 'paris',  // 对应GitHub上Paris文件夹
+        // 国家和城市数据
+        const countries = {
+            'Germany': {
+                lat: 51.1657,
+                lon: 10.4515,
+                cities: [
+                    { name: 'Berlin', lat: 52.52, lon: 13.4050 },
+                    { name: 'Munich', lat: 48.1351, lon: 11.5820 },
+                    { name: 'Frankfurt', lat: 50.1109, lon: 8.6821 },
+                ]
             },
-            {
-                name: 'New York',
-                lat: 40.7128,
-                lon: -74.0060,
-                folder: 'new-york',  // 对应GitHub上New York文件夹
+            'Japan': {
+                lat: 36.2048,
+                lon: 138.2529,
+                cities: [
+                    { name: 'Tokyo', lat: 35.6762, lon: 139.6503 },
+                    { name: 'Osaka', lat: 34.6937, lon: 135.5023 },
+                    { name: 'Kyoto', lat: 35.0116, lon: 135.7681 },
+                ]
             },
-            {
-                name: 'Tokyo',
-                lat: 35.6762,
-                lon: 139.6503,
-                folder: 'tokyo',  // 对应GitHub上Tokyo文件夹
-            },
-        ];
+            'Hong Kong': {
+                lat: 22.3193,
+                lon: 114.1694,
+                cities: [
+                    { name: 'Hong Kong', lat: 22.3193, lon: 114.1694 }
+                ]
+            }
+        };
 
-        // 动态添加城市标记到地图
-        cities.forEach(city => {
-            const marker = L.marker([city.lat, city.lon]).addTo(map);
-            marker.bindPopup(`<b>${city.name}</b>`);
+        // 创建国家标记并显示城市
+        let currentCountryMarker = null;
+        let currentCityMarkers = [];
 
-            // 点击标记时加载城市的照片
+        Object.keys(countries).forEach(countryName => {
+            const country = countries[countryName];
+            const marker = L.marker([country.lat, country.lon]).addTo(map);
+            marker.bindPopup(`<b>${countryName}</b>`);
+
+            // 点击国家时，加载该国家的城市
             marker.on('click', function() {
-                loadCityPhotos(city.folder);
+                if (currentCountryMarker) {
+                    map.removeLayer(currentCountryMarker);  // 移除之前的国家标记
+                }
+
+                currentCountryMarker = marker;  // 记录当前的国家标记
+
+                // 重置按钮
+                const resetBtn = document.createElement('button');
+                resetBtn.textContent = 'Reset';
+                resetBtn.id = 'reset-btn';
+                resetBtn.onclick = () => resetCountryMarkers();
+                document.body.appendChild(resetBtn);
+
+                loadCityMarkers(countryName, country.cities);
             });
         });
 
+        // 加载城市标记
+        function loadCityMarkers(countryName, cities) {
+            // 清空地图上的城市标记
+            currentCityMarkers.forEach(marker => map.removeLayer(marker));
+
+            // 在地图上添加城市标记
+            cities.forEach(city => {
+                const cityMarker = L.marker([city.lat, city.lon]).addTo(map);
+                cityMarker.bindPopup(`<b>${city.name}</b>`);
+
+                // 点击城市标记时，加载该城市的照片
+                cityMarker.on('click', function() {
+                    loadCityPhotos(countryName, city.name);
+                });
+
+                currentCityMarkers.push(cityMarker); // 保存城市标记
+            });
+        }
+
         // 加载城市的照片
-        function loadCityPhotos(cityFolder) {
+        function loadCityPhotos(countryName, cityName) {
             const galleryDiv = document.getElementById('photo-gallery');
             galleryDiv.innerHTML = '';  // 清空当前的照片
 
-            // 假设照片存储在 GitHub 文件夹中，以 cityFolder 为路径
-            const baseURL = `https://raw.githubusercontent.com/your-username/your-repository/main/${cityFolder}/`;
+            const basePath = `travel/${countryName.toLowerCase()}_travel/${cityName.toLowerCase()}`;
 
-            // 这里假设每个城市有一些固定的照片（比如1.jpg, 2.jpg）
-            const photoNames = ['1.jpg', '2.jpg', '3.jpg'];  // 这些可以根据实际情况调整
+            fetchPhotos(basePath);
+        }
 
-            // 循环遍历每张照片并展示
-            photoNames.forEach(photo => {
-                const img = document.createElement('img');
-                img.src = baseURL + photo;
-                img.alt = `Photo of ${cityFolder}`;
-                galleryDiv.appendChild(img);
+        // 使用GitHub API来加载城市照片
+        function fetchPhotos(basePath) {
+            const galleryDiv = document.getElementById('photo-gallery');
+            const baseURL = `https://api.github.com/repos/LeeErGou996/homepage/contents/${basePath}`;
+
+            fetch(baseURL)
+                .then(response => response.json())
+                .then(data => {
+                    // 遍历城市文件夹中的所有文件（包括子文件夹）
+                    data.forEach(item => {
+                        if (item.type === 'file' && (item.name.endsWith('.jpg') || item.name.endsWith('.jpeg') || item.name.endsWith('.png'))) {
+                            const img = document.createElement('img');
+                            img.src = item.download_url;
+                            img.alt = `Photo of ${basePath}`;
+                            galleryDiv.appendChild(img);
+                        }
+                    });
+
+                    // 打开弹出窗口显示照片
+                    document.getElementById('photo-modal').style.display = 'flex';
+                })
+                .catch(error => {
+                    console.error('Error loading city photos:', error);
+                    const errorMsg = document.createElement('div');
+                    errorMsg.textContent = 'Error loading photos. Please try again later.';
+                    galleryDiv.appendChild(errorMsg);
+                });
+        }
+
+        // 关闭照片展示弹出窗口
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('photo-modal').style.display = 'none';
+        });
+
+        // 重置国家标记
+        function resetCountryMarkers() {
+            currentCityMarkers.forEach(marker => map.removeLayer(marker));  // 移除城市标记
+            loadCountryMarkers();  // 重新加载国家标记
+        }
+
+        // 重新加载所有国家标记
+        function loadCountryMarkers() {
+            Object.keys(countries).forEach(countryName => {
+                const country = countries[countryName];
+                const marker = L.marker([country.lat, country.lon]).addTo(map);
+                marker.bindPopup(`<b>${countryName}</b>`);
+
+                // 点击国家时，加载该国家的城市
+                marker.on('click', function() {
+                    if (currentCountryMarker) {
+                        map.removeLayer(currentCountryMarker);  // 移除之前的国家标记
+                    }
+
+                    currentCountryMarker = marker;  // 记录当前的国家标记
+                    loadCityMarkers(countryName, country.cities);
+                });
             });
         }
+
     </script>
 </body>
 </html>
