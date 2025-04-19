@@ -13,6 +13,7 @@
         }
         h2 {
             color: blue; /* 设置标题颜色为蓝色 */
+            cursor: pointer; /* 鼠标悬停时显示手型 */
         }
         .sidebar {
             width: 200px;
@@ -43,6 +44,7 @@
         .content {
             margin-left: 220px;
             padding: 20px;
+            color: blue; /* 默认内容字体颜色设为蓝色 */
         }
 
         .gallery {
@@ -112,104 +114,93 @@
 </head>
 <body>
     <div class="sidebar">
-        <h2>アニメ</h2>
+        <h2 id="animeLink">アニメ</h2>
         <ul>
-          　<li><a href="https://leeergou996.github.io/leeergou.github.io/" target="_blank" style="color: blue; text-decoration: none;">ホームページに戻る</a></li> <!-- 新增主页链接 -->
+            <li><a href="https://leeergou996.github.io/leeergou.github.io/" target="_blank" style="color: blue; text-decoration: none;">ホームページに戻る</a></li> <!-- 新增主页链接 -->
             <li id="homeLink">がいよう</li>
-          <h2>リスト</h2>
-          <li id="2024">2024 </li>
-          <li id="2025">2025 </li>
-
+            <h2>リスト</h2>
+            <li id="2024">2024 </li>
+            <li id="2025">2025 </li>
         </ul>
     </div>
 
     <div class="content">
         <!-- Main content updates here -->
-      
     </div>
 
     <script>
         const homeLink = document.getElementById('homeLink');
         const ersiLink = document.getElementById('2024');
         const year2025 = document.getElementById('2025');
-
-        const steingateLink = document.getElementById('steingateLink');
-        const euphoniumLink = document.getElementById('euphoniumLink');
-        const mygoLink = document.getElementById('mygoLink');
-        const tsukigaLink = document.getElementById('tsukigaLink');
-        const garasuLink = document.getElementById('garasuLink');
-        const mujicaLink = document.getElementById('mujicaLink');
-        const kekkonLink = document.getElementById('kekkonLink');
-        const oshinokoLink = document.getElementById('oshinokoLink');
-        const konokaishaLink = document.getElementById('konokaishaLink');
-        const kusuriLink = document.getElementById('kusuriLink');
+        const animeLink = document.getElementById('animeLink');  // アニメ title link
         const contentDiv = document.querySelector('.content');
 
         homeLink.addEventListener('click', () => {
             contentDiv.innerHTML = `
                 <h1>概要</h1>
                 <div class="scrollable-textarea readonly">
-                <p>📺 2025.4: アニメ「この会社に好きな人がいます」「薬屋のひとりごと」を追加しました </p>
-                <p>📺 2024.12: アニメ「BanG Dream! It's MyGO!!!!!」「私の幸せな結婚」を追加しました </p>
-                <p>📺 2024.12: アニメ「推しの子」を追加しました </p>
-                <p>📺 2024.10: アニメ「烏は主を選ばない」を追加しました </p>
-                <p>📺 2024.6: アニメ「シュタインズゲート」「響け！ユーフォニアムを追加しました」「BanG Dream! It's MyGO!!!!!」「月がきれい」を追加しました</p>
+                    <p>📺 2025.4: アニメ「この会社に好きな人がいます」「薬屋のひとりごと」を追加しました </p>
+                    <p>📺 2024.12: アニメ「BanG Dream! It's MyGO!!!!!」「私の幸せな結婚」を追加しました </p>
+                    <p>📺 2024.12: アニメ「推しの子」を追加しました </p>
+                    <p>📺 2024.10: アニメ「烏は主を選ばない」を追加しました </p>
+                    <p>📺 2024.6: アニメ「シュタインズゲート」「響け！ユーフォニアムを追加しました」「BanG Dream! It's MyGO!!!!!」「月がきれい」を追加しました</p>
                 </div>
-
             `;
         });
 
-                /**
-         * 动态生成年份条目
-         * @param {HTMLElement} contentDiv - 内容区域的 DOM 元素
-         * @param {Array} entries - 包含条目信息的数组
-         */
-        function generateYearContent(contentDiv, entries) {
-            contentDiv.innerHTML = ''; // 清空内容
+        animeLink.addEventListener('click', () => {
+            contentDiv.innerHTML = `
+                <p>私の最も好きなアニメは「命運石之門（Steins;Gate）」です。以下は私が作成したFuture Gadgetのいくつかです。</p>
+                <ul>
+                    <li><a href="https://leeergou996.github.io/homepage/futureGadget/JoshuSound.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.1</a></li>
+                    <li><a href="https://leeergou996.github.io/homepage/futureGadget/lyrics1.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.2</a></li>
+                    <li><a href="https://leeergou996.github.io/homepage/german/German.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.3</a></li>
+                    <li><a href="https://leeergou996.github.io/homepage/travel1.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.4</a></li>
+                </ul>
+            `;
+        });
 
-            // 创建一个 ul 元素
+        function generateYearContent(contentDiv, entries) {
+            contentDiv.innerHTML = ''; // Clear current content
+
             const list = document.createElement('ul');
-            list.style.listStyle = 'none'; // 去除默认的列表样式
+            list.style.listStyle = 'none'; // Remove default list styling
             list.style.padding = '0';
 
-            // 遍历条目数据，创建每一项
             entries.forEach(entry => {
                 const listItem = document.createElement('li');
                 listItem.id = entry.id;
                 listItem.textContent = entry.text;
 
-                // 设置样式
                 listItem.style.marginBottom = '10px';
                 listItem.style.cursor = 'pointer';
                 listItem.style.fontSize = '18px';
                 listItem.style.color = 'darkblue';
 
-                // 点击事件，调用对应的 handler 方法
                 listItem.addEventListener('click', () => {
                     entry.handler();
                 });
 
-                // 将列表项添加到 ul
                 list.appendChild(listItem);
             });
 
-            // 将 ul 添加到 contentDiv
             contentDiv.appendChild(list);
         }
 
-        
-                // 为2024链接添加点击事件
+        document.addEventListener('DOMContentLoaded', () => {
+            contentDiv.innerHTML = `
+                <p>私の最も好きなアニメは「命運石之門（Steins;Gate）」です。以下は私が作成したFuture Gadgetのいくつかです。</p>
+                <ul>
+                    <li><a href="https://leeergou996.github.io/homepage/futureGadget/JoshuSound.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.1</a></li>
+                    <li><a href="https://leeergou996.github.io/homepage/futureGadget/lyrics1.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.2</a></li>
+                    <li><a href="https://leeergou996.github.io/homepage/german/German.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.3</a></li>
+                    <li><a href="https://leeergou996.github.io/homepage/travel1.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.4</a></li>
+                </ul>
+            `;
+        });
+
         ersiLink.addEventListener('click', () => {
             const entries = [
-                { id: 'steingateLink', text: 'Steins;Gate', handler: () => {
-                    contentDiv.innerHTML = `
-                        <h1>シュタインズゲート</h1>
-                        <p><a href="https://leeergou996.github.io/homepage/futureGadget/JoshuSound.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.1</a></p>
-                        <p><a href="https://leeergou996.github.io/homepage/futureGadget/lyrics1.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.2</a></p>
-                        <p><a href="https://leeergou996.github.io/homepage/german/German.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.3</a></p>
-                        <p><a href="https://leeergou996.github.io/homepage/travel1.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.4</a></p>
-                    `;
-                }},
                 { id: 'euphoniumLink', text: 'Sound! Euphonium', handler: () => {
                     contentDiv.innerHTML = '<h1>響け！ユーフォニアム</h1>';
                 }},
@@ -226,8 +217,6 @@
                     contentDiv.innerHTML = '<h1>推しの子</h1>';
                 }}
             ];
-
-            // 调用生成函数
             generateYearContent(contentDiv, entries);
         });
 
@@ -246,12 +235,8 @@
                     contentDiv.innerHTML = '<h1>薬屋のひとりごと</h1>';
                 }}
             ];
-
-            // 调用生成函数
             generateYearContent(contentDiv, entries);
         });
-
-
     </script>
 </body>
 </html>
