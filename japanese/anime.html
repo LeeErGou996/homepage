@@ -141,12 +141,15 @@
         const mujicaLink = document.getElementById('mujicaLink');
         const kekkonLink = document.getElementById('kekkonLink');
         const oshinokoLink = document.getElementById('oshinokoLink');
+        const konokaishaLink = document.getElementById('konokaishaLink');
+        const kusuriLink = document.getElementById('kusuriLink');
         const contentDiv = document.querySelector('.content');
 
         homeLink.addEventListener('click', () => {
             contentDiv.innerHTML = `
                 <h1>概要</h1>
                 <div class="scrollable-textarea readonly">
+                <p>📺 2025.4: アニメ「この会社に好きな人がいます」「薬屋のひとりごと」を追加しました </p>
                 <p>📺 2024.12: アニメ「BanG Dream! It's MyGO!!!!!」「私の幸せな結婚」を追加しました </p>
                 <p>📺 2024.12: アニメ「推しの子」を追加しました </p>
                 <p>📺 2024.10: アニメ「烏は主を選ばない」を追加しました </p>
@@ -201,10 +204,10 @@
                 { id: 'steingateLink', text: 'Steins;Gate', handler: () => {
                     contentDiv.innerHTML = `
                         <h1>シュタインズゲート</h1>
-                        <p><a href="https://leeergou996.github.io/leeergou.github.io/SteinsGate/" target="_blank" style="color: blue; text-decoration: none;">未来ガジェット研究所</a></p>
-                        <p><a href="https://leeergou996.github.io/leeergou.github.io/futureGadget/JoshuSound.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.1</a></p>
-                        <p><a href="https://leeergou996.github.io/leeergou.github.io/futureGadget/lyrics1.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.2</a></p>
-                        <p><a href="https://leeergou996.github.io/leeergou.github.io/german/German.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.3</a></p>
+                        <p><a href="https://leeergou996.github.io/homepage/futureGadget/JoshuSound.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.1</a></p>
+                        <p><a href="https://leeergou996.github.io/homepage/futureGadget/lyrics1.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.2</a></p>
+                        <p><a href="https://leeergou996.github.io/homepage/german/German.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.3</a></p>
+                        <p><a href="https://leeergou996.github.io/homepage/travel1.html" target="_blank" style="color: blue; text-decoration: none;">Future Gadget No.4</a></p>
                     `;
                 }},
                 { id: 'euphoniumLink', text: 'Sound! Euphonium', handler: () => {
@@ -231,10 +234,16 @@
         year2025.addEventListener('click', () => {
             const entries = [
                 { id: 'mujicaLink', text: 'BanG Dream! Ave Mujica', handler: () => {
-                    contentDiv.innerHTML = '<h1></h1>';
+                    contentDiv.innerHTML = '<h1>BanG Dream! Ave Mujica</h1>';
                 }},
                 { id: 'kekkonLink', text: '私の幸せな結婚', handler: () => {
-                    contentDiv.innerHTML = '<h1></h1>';
+                    contentDiv.innerHTML = '<h1>私の幸せな結婚</h1>';
+                }},
+                { id: 'konokaishaLink', text: 'この会社に好きな人がいます', handler: () => {
+                    contentDiv.innerHTML = '<h1>この会社に好きな人がいます</h1>';
+                }},
+                { id: 'kusuriLink', text: '薬屋のひとりごと', handler: () => {
+                    contentDiv.innerHTML = '<h1>薬屋のひとりごと</h1>';
                 }}
             ];
 
