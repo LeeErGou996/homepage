@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Map</title>
+    <!-- 引入Leaflet.js库 -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        /* 设置地图的容器 */
+        #map {
+            height: 600px;
+        }
+        /* 照片展示区域 */
+        #photo-gallery {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #photo-gallery img {
+            width: 200px;
+            height: 150px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>我的旅游地图</h1>
+    <div id="map"></div>
+
+    <div id="photo-gallery"></div>
+
+    <script>
+        // 创建地图并设置初始视角和缩放级别
+        const map = L.map('map').setView([20, 0], 2);  // 20纬度，0经度，缩放级别2（世界视角）
+
+        // 加载OpenStreetMap图层
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // 城市列表（示例）
+        const cities = [
+            {
+                name: 'Paris',
+                lat: 48.8566,
+                lon: 2.3522,
+                folder: 'paris',  // 对应GitHub上Paris文件夹
+            },
+            {
+                name: 'New York',
+                lat: 40.7128,
+                lon: -74.0060,
+                folder: 'new-york',  // 对应GitHub上New York文件夹
+            },
+            {
+                name: 'Tokyo',
+                lat: 35.6762,
+                lon: 139.6503,
+                folder: 'tokyo',  // 对应GitHub上Tokyo文件夹
+            },
+        ];
+
+        // 动态添加城市标记到地图
+        cities.forEach(city => {
+            const marker = L.marker([city.lat, city.lon]).addTo(map);
+            marker.bindPopup(`<b>${city.name}</b>`);
+
+            // 点击标记时加载城市的照片
+            marker.on('click', function() {
+                loadCityPhotos(city.folder);
+            });
+        });
+
+        // 加载城市的照片
+        function loadCityPhotos(cityFolder) {
+            const galleryDiv = document.getElementById('photo-gallery');
+            galleryDiv.innerHTML = '';  // 清空当前的照片
+
+            // 假设照片存储在 GitHub 文件夹中，以 cityFolder 为路径
+            const baseURL = `https://raw.githubusercontent.com/your-username/your-repository/main/${cityFolder}/`;
+
+            // 这里假设每个城市有一些固定的照片（比如1.jpg, 2.jpg）
+            const photoNames = ['1.jpg', '2.jpg', '3.jpg'];  // 这些可以根据实际情况调整
+
+            // 循环遍历每张照片并展示
+            photoNames.forEach(photo => {
+                const img = document.createElement('img');
+                img.src = baseURL + photo;
+                img.alt = `Photo of ${cityFolder}`;
+                galleryDiv.appendChild(img);
+            });
+        }
+    </script>
+</body>
+</html>
