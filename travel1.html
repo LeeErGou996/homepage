@@ -4,27 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Travel Map</title>
-    <!-- 引入Leaflet.js库 -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <style>
-        /* 设置地图的容器 */
-        #map {
-            height: 600px;
-        }
-        /* 照片展示区域 */
-        #photo-gallery {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        #photo-gallery img {
-            width: 200px;
-            height: 150px;
-            margin: 5px;
+        :root {
+            --primary-color: #2196F3;
+            --secondary-color: #1976D2;
+            --accent-color: #FFC107;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --modal-bg: rgba(0, 0, 0, 0.8);
+            --transition-speed: 0.3s;
         }
 
-        /* 弹出窗口 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        #map {
+            height: 70vh;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .map-controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+
+        .control-btn {
+            background-color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all var(--transition-speed);
+            font-weight: 500;
+        }
+
+        .control-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #reset-btn {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+        }
+
         #photo-modal {
             display: none;
             position: fixed;
@@ -32,65 +82,178 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: var(--modal-bg);
             z-index: 1000;
             justify-content: center;
             align-items: center;
+            opacity: 0;
+            transition: opacity var(--transition-speed);
+        }
+
+        #photo-modal.active {
+            opacity: 1;
         }
 
         #photo-modal-content {
             background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 80%;
-            max-height: 80%;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 90%;
+            max-height: 90vh;
             overflow-y: auto;
             position: relative;
+            transform: scale(0.9);
+            transition: transform var(--transition-speed);
         }
 
-        /* 关闭按钮样式 */
+        #photo-modal.active #photo-modal-content {
+            transform: scale(1);
+        }
+
+        #photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px 0;
+        }
+
+        #photo-gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform var(--transition-speed);
+        }
+
+        #photo-gallery img:hover {
+            transform: scale(1.05);
+        }
+
         #close-btn {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 15px;
+            right: 15px;
             background-color: #f44336;
             color: white;
             border: none;
-            padding: 10px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
-            font-size: 16px;
+            font-size: 20px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: all var(--transition-speed);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         #close-btn:hover {
             background-color: #d32f2f;
+            transform: rotate(90deg);
         }
 
-        /* 重置按钮样式 */
-        #reset-btn {
+        .loading {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        .loading::after {
+            content: '';
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .city-info {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            #map {
+                height: 50vh;
+            }
+
+            .map-controls {
+                top: 10px;
+                right: 10px;
+            }
+
+            .control-btn {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+
+            #photo-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+
+        .language-controls {
             position: absolute;
-            top: 10px;
-            right: 80px;
-            background-color: #ffeb3b;
-            color: #333;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+
+        .language-btn {
+            background-color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 8px 15px;
             border-radius: 25px;
-            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: all var(--transition-speed);
+            font-weight: 500;
         }
 
-        #reset-btn:hover {
-            background-color: #fbc02d;
+        .language-btn.active {
+            background-color: var(--primary-color);
+            color: white;
         }
 
+        .language-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
     <h1>My Travel Map</h1>
     <div id="map"></div>
+    <div class="map-controls">
+        <button id="reset-btn" class="control-btn">Reset View</button>
+    </div>
+    <div class="language-controls">
+        <button class="language-btn active" data-lang="en">English</button>
+        <button class="language-btn" data-lang="zh">中文</button>
+        <button class="language-btn" data-lang="ja">日本語</button>
+    </div>
 
     <div id="photo-modal">
         <div id="photo-modal-content">
@@ -99,12 +262,96 @@
         </div>
     </div>
 
-    <script>
-        const map = L.map('map').setView([20, 0], 2);  // 20纬度，0经度，缩放级别2（世界视角）
+    <div class="loading"></div>
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    <script>
+        // 语言配置
+        const translations = {
+            en: {
+                title: "My Travel Map",
+                resetView: "Reset View",
+                exploreCities: "Click to explore cities",
+                viewPhotos: "Click to view photos",
+                loadingError: "Error loading photos. Please try again later."
+            },
+            zh: {
+                title: "我的旅行地图",
+                resetView: "重置视图",
+                exploreCities: "点击探索城市",
+                viewPhotos: "点击查看照片",
+                loadingError: "加载照片时出错，请稍后重试。"
+            },
+            ja: {
+                title: "旅行地図",
+                resetView: "ビューをリセット",
+                exploreCities: "都市を探索するにはクリック",
+                viewPhotos: "写真を見るにはクリック",
+                loadingError: "写真の読み込み中にエラーが発生しました。後でもう一度お試しください。"
+            }
+        };
+
+        // 当前语言
+        let currentLang = 'en';
+
+        // 初始化地图
+        const map = L.map('map').setView([20, 0], 2);
+
+        // 地图图层配置
+        const mapLayers = {
+            en: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            zh: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            ja: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+        };
+
+        let currentTileLayer = L.tileLayer(mapLayers[currentLang], {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
+
+        // 更新界面语言
+        function updateUILanguage(lang) {
+            document.querySelector('h1').textContent = translations[lang].title;
+            document.getElementById('reset-btn').textContent = translations[lang].resetView;
+            
+            // 更新所有弹出窗口的文本
+            Object.keys(countries).forEach(countryName => {
+                const country = countries[countryName];
+                const marker = L.marker([country.lat, country.lon]);
+                const popupContent = `
+                    <div class="city-info">
+                        <h3>${countryName}</h3>
+                        <p>${translations[lang].exploreCities}</p>
+                    </div>
+                `;
+                marker.bindPopup(popupContent);
+            });
+        }
+
+        // 切换地图语言
+        function changeMapLanguage(lang) {
+            // 移除当前图层
+            map.removeLayer(currentTileLayer);
+            
+            // 添加新语言图层
+            currentTileLayer = L.tileLayer(mapLayers[lang], {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // 更新界面语言
+            updateUILanguage(lang);
+            currentLang = lang;
+
+            // 更新按钮状态
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+        }
+
+        // 语言切换按钮事件监听
+        document.querySelectorAll('.language-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                changeMapLanguage(btn.dataset.lang);
+            });
+        });
 
         // 国家和城市数据
         const countries = {
@@ -115,9 +362,9 @@
                     { name: 'Berlin', lat: 52.52, lon: 13.4050 },
                     { name: 'Munich', lat: 48.1351, lon: 11.5820 },
                     { name: 'Frankfurt', lat: 50.1109, lon: 8.6821 },
-                    { name: 'Bremen', lat: 53.0793, lon: 8.8017 },  // Bremen
-                    { name: 'Düsseldorf', lat: 51.2217, lon: 6.7762 },  // Düsseldorf
-                    { name: 'Hamburg', lat: 53.5511, lon: 9.9937 },  // Hamburg
+                    { name: 'Bremen', lat: 53.0793, lon: 8.8017 },
+                    { name: 'Düsseldorf', lat: 51.2217, lon: 6.7762 },
+                    { name: 'Hamburg', lat: 53.5511, lon: 9.9937 },
                 ]
             },
             'Japan': {
@@ -138,122 +385,162 @@
             }
         };
 
-        // 创建国家标记并显示城市
         let currentCountryMarker = null;
         let currentCityMarkers = [];
+        let currentCityLayer = null;
 
-        Object.keys(countries).forEach(countryName => {
-            const country = countries[countryName];
-            const marker = L.marker([country.lat, country.lon]).addTo(map);
-            marker.bindPopup(`<b>${countryName}</b>`);
-
-            // 点击国家时，加载该国家的城市
-            marker.on('click', function() {
-                if (currentCountryMarker) {
-                    map.removeLayer(currentCountryMarker);  // 移除之前的国家标记
-                }
-
-                currentCountryMarker = marker;  // 记录当前的国家标记
-
-                // 重置按钮
-                const resetBtn = document.createElement('button');
-                resetBtn.textContent = 'Reset';
-                resetBtn.id = 'reset-btn';
-                resetBtn.onclick = () => resetCountryMarkers();
-                document.body.appendChild(resetBtn);
-
-                loadCityMarkers(countryName, country.cities);
-            });
-        });
-
-        // 加载城市标记
-        function loadCityMarkers(countryName, cities) {
-            // 清空地图上的城市标记
-            currentCityMarkers.forEach(marker => map.removeLayer(marker));
-
-            // 在地图上添加城市标记
-            cities.forEach(city => {
-                const cityMarker = L.marker([city.lat, city.lon]).addTo(map);
-                cityMarker.bindPopup(`<b>${city.name}</b>`);
-
-                // 点击城市标记时，加载该城市的照片
-                cityMarker.on('click', function() {
-                    loadCityPhotos(countryName, city.name);
-                });
-
-                currentCityMarkers.push(cityMarker); // 保存城市标记
-            });
-        }
-
-        // 加载城市的照片
-        function loadCityPhotos(countryName, cityName) {
-            const galleryDiv = document.getElementById('photo-gallery');
-            galleryDiv.innerHTML = '';  // 清空当前的照片
-
-            const basePath = `travel/${countryName.toLowerCase()}_travel/${cityName.toLowerCase()}`;
-
-            fetchPhotos(basePath);
-        }
-
-        // 使用GitHub API来加载城市照片
-        function fetchPhotos(basePath) {
-            const galleryDiv = document.getElementById('photo-gallery');
-            const baseURL = `https://api.github.com/repos/LeeErGou996/homepage/contents/${basePath}`;
-
-            fetch(baseURL)
-                .then(response => response.json())
-                .then(data => {
-                    // 遍历城市文件夹中的所有文件（包括子文件夹）
-                    data.forEach(item => {
-                        if (item.type === 'file' && (item.name.endsWith('.jpg') || item.name.endsWith('.jpeg') || item.name.endsWith('.png'))) {
-                            const img = document.createElement('img');
-                            img.src = item.download_url;
-                            img.alt = `Photo of ${basePath}`;
-                            galleryDiv.appendChild(img);
-                        }
-                    });
-
-                    // 打开弹出窗口显示照片
-                    document.getElementById('photo-modal').style.display = 'flex';
-                })
-                .catch(error => {
-                    console.error('Error loading city photos:', error);
-                    const errorMsg = document.createElement('div');
-                    errorMsg.textContent = 'Error loading photos. Please try again later.';
-                    galleryDiv.appendChild(errorMsg);
-                });
-        }
-
-        // 关闭照片展示弹出窗口
-        document.getElementById('close-btn').addEventListener('click', function() {
-            document.getElementById('photo-modal').style.display = 'none';
-        });
-
-        // 重置国家标记
-        function resetCountryMarkers() {
-            currentCityMarkers.forEach(marker => map.removeLayer(marker));  // 移除城市标记
-            loadCountryMarkers();  // 重新加载国家标记
-        }
-
-        // 重新加载所有国家标记
-        function loadCountryMarkers() {
+        // 创建国家标记
+        function createCountryMarkers() {
             Object.keys(countries).forEach(countryName => {
                 const country = countries[countryName];
                 const marker = L.marker([country.lat, country.lon]).addTo(map);
-                marker.bindPopup(`<b>${countryName}</b>`);
+                
+                const popupContent = `
+                    <div class="city-info">
+                        <h3>${countryName}</h3>
+                        <p>${translations[currentLang].exploreCities}</p>
+                    </div>
+                `;
+                marker.bindPopup(popupContent);
 
-                // 点击国家时，加载该国家的城市
                 marker.on('click', function() {
                     if (currentCountryMarker) {
-                        map.removeLayer(currentCountryMarker);  // 移除之前的国家标记
+                        map.removeLayer(currentCountryMarker);
                     }
-
-                    currentCountryMarker = marker;  // 记录当前的国家标记
+                    currentCountryMarker = marker;
                     loadCityMarkers(countryName, country.cities);
                 });
             });
         }
 
+        // 加载城市标记
+        function loadCityMarkers(countryName, cities) {
+            // 清除现有的城市标记
+            if (currentCityLayer) {
+                map.removeLayer(currentCityLayer);
+            }
+
+            const cityLayer = L.layerGroup().addTo(map);
+            currentCityLayer = cityLayer;
+
+            cities.forEach(city => {
+                const cityMarker = L.marker([city.lat, city.lon]).addTo(cityLayer);
+                const popupContent = `
+                    <div class="city-info">
+                        <h3>${city.name}</h3>
+                        <p>${translations[currentLang].viewPhotos}</p>
+                    </div>
+                `;
+                cityMarker.bindPopup(popupContent);
+
+                cityMarker.on('click', () => {
+                    loadCityPhotos(countryName, city.name);
+                });
+            });
+
+            // 调整地图视图以显示所有城市
+            const bounds = cityLayer.getBounds();
+            map.fitBounds(bounds, { padding: [50, 50] });
+        }
+
+        // 加载城市照片
+        async function loadCityPhotos(countryName, cityName) {
+            showLoading();
+            const galleryDiv = document.getElementById('photo-gallery');
+            galleryDiv.innerHTML = '';
+
+            const basePath = `travel/${countryName.toLowerCase()}_travel/${cityName.toLowerCase()}`;
+            const baseURL = `https://api.github.com/repos/LeeErGou996/homepage/contents/${basePath}`;
+
+            try {
+                const response = await fetch(baseURL);
+                const data = await response.json();
+
+                const imagePromises = data
+                    .filter(item => item.type === 'file' && /\.(jpg|jpeg|png)$/i.test(item.name))
+                    .map(item => {
+                        return new Promise((resolve, reject) => {
+                            const img = new Image();
+                            img.onload = () => resolve(img);
+                            img.onerror = reject;
+                            img.src = item.download_url;
+                            img.alt = `Photo of ${cityName}`;
+                            img.loading = 'lazy';
+                        });
+                    });
+
+                const images = await Promise.all(imagePromises);
+                images.forEach(img => galleryDiv.appendChild(img));
+
+                showPhotoModal();
+            } catch (error) {
+                console.error('Error loading photos:', error);
+                galleryDiv.innerHTML = `<p>${translations[currentLang].loadingError}</p>`;
+            } finally {
+                hideLoading();
+            }
+        }
+
+        // 显示/隐藏加载动画
+        function showLoading() {
+            document.querySelector('.loading').style.display = 'block';
+        }
+
+        function hideLoading() {
+            document.querySelector('.loading').style.display = 'none';
+        }
+
+        // 显示照片模态框
+        function showPhotoModal() {
+            const modal = document.getElementById('photo-modal');
+            modal.style.display = 'flex';
+            setTimeout(() => modal.classList.add('active'), 10);
+        }
+
+        // 关闭照片模态框
+        function closePhotoModal() {
+            const modal = document.getElementById('photo-modal');
+            modal.classList.remove('active');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+        }
+
+        // 重置地图视图
+        function resetMapView() {
+            if (currentCityLayer) {
+                map.removeLayer(currentCityLayer);
+                currentCityLayer = null;
+            }
+            if (currentCountryMarker) {
+                map.removeLayer(currentCountryMarker);
+                currentCountryMarker = null;
+            }
+            // 移除所有现有的标记
+            map.eachLayer((layer) => {
+                if (layer instanceof L.Marker) {
+                    map.removeLayer(layer);
+                }
+            });
+            // 重新创建所有国家标记
+            createCountryMarkers();
+            // 重置地图视图
+            map.setView([20, 0], 2);
+        }
+
+        // 事件监听器
+        document.getElementById('close-btn').addEventListener('click', closePhotoModal);
+        document.getElementById('reset-btn').addEventListener('click', resetMapView);
+
+        // 点击模态框背景关闭
+        document.getElementById('photo-modal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('photo-modal')) {
+                closePhotoModal();
+            }
+        });
+
+        // 初始化地图
+        createCountryMarkers();
     </script>
 </body>
 </html>
