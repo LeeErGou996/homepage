@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joshu Sound Player</title>
     <style>
+        :root {
+            --primary-color: #2196F3;
+            --hover-color: #1976D2;
+            --bg-opacity: 0.3;
+        }
+
         body {
             font-family: 'Times New Roman', Times, serif;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            padding: 20px;
             position: relative;
-            overflow: hidden;
-            color: black;
+            overflow-x: hidden;
+            color: #333;
         }
 
         body::before {
             content: "";
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
@@ -29,99 +35,207 @@
             background-size: cover;
             opacity: 0.45;
             z-index: -2;
-            pointer-events: none;
         }
 
         body::after {
             content: "";
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to top, transparent, rgb(255, 255, 255) 20%),
-                        linear-gradient(to bottom, transparent, rgb(255, 255, 255) 20%),
-                        linear-gradient(to left, transparent, rgb(255, 255, 255) 20%),
-                        linear-gradient(to right, transparent, rgb(255, 255, 255) 20%);
+            background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.9) 20%),
+                        linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.9) 20%),
+                        linear-gradient(to left, transparent, rgba(255, 255, 255, 0.9) 20%),
+                        linear-gradient(to right, transparent, rgba(255, 255, 255, 0.9) 20%);
             background-size: cover;
             opacity: 0.3;
             z-index: -1;
-            pointer-events: none;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(255, 255, 255, var(--bg-opacity));
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            backdrop-filter: blur(5px);
+        }
+
+        h1 {
+            text-align: center;
+            color: #000;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
         }
 
         .button-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
         }
-        .search-container {
-            margin-top: 20px;
-            width: 100%;
-            max-width: 400px;
-        }
-        .search-results {
-            max-height: 200px;
-            overflow-y: auto;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-            width: 100%;
-            box-sizing: border-box;
-            background: rgba(255, 255, 255, 0.5);
-            font-family: 'Times New Roman', Times, serif;
-        }
-        audio {
-            margin-top: 20px;
-            width: 100%;
-            max-width: 400px;
-            background: rgba(240, 240, 240, 0.5);
-        }
-        button, input {
-            padding: 10px;
+
+        button {
+            padding: 12px 20px;
             font-size: 16px;
-            background: rgba(240, 240, 240, 0.5);
-            border: 1px solid rgba(240, 240, 240, 0.5);
-            color: black;
-            font-family: 'Times New Roman', Times, serif;
+            background: rgba(33, 150, 243, 0.9);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
+
+        button:hover {
+            background: rgba(25, 118, 210, 0.9);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-container {
+            margin: 20px 0;
+            width: 100%;
+        }
+
         input {
             width: 100%;
-            box-sizing: border-box;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
         }
+
+        input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+        }
+
+        .search-results {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 10px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
         .search-result {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
             cursor: pointer;
-            padding: 5px;
-            border-bottom: 1px solid #ccc;
-            background: rgba(240, 240, 240, 0.5);
-            color: black;
-            font-family: 'Times New Roman', Times, serif;
+            transition: all 0.2s ease;
+            background: rgba(255, 255, 255, 0.5);
         }
+
         .search-result:hover {
-            background-color: rgba(240, 240, 240, 0.5);
+            background: rgba(33, 150, 243, 0.2);
         }
-        h1, p {
-            font-family: 'Times New Roman', Times, serif;
+
+        .search-result:last-child {
+            border-bottom: none;
+        }
+
+        audio {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        #mp3Name {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 15px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            min-height: 1.5em;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--hover-color);
+        }
+
+        /* Status indicators */
+        .status {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+
+        .status.active {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .status.inactive {
+            background: #f44336;
+            color: white;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .button-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Joshu Sound Player</h1>
-    <div class="button-container">
-        <button onclick="playRandom()">Random Sound</button>
-        <button onclick="playNext()">Next Sound</button>
-        <button onclick="playLast()">Last Sound</button>
-        <button onclick="toggleLoop()">Toggle Loop</button>
-        <button onclick="startAutoPlay()">Start Auto Play</button>
-        <button onclick="stopAutoPlay()">Stop Auto Play</button>
+    <div class="container">
+        <h1>Joshu Sound Player</h1>
+        <div class="button-container">
+            <button onclick="playRandom()">🎲 Random Sound</button>
+            <button onclick="playNext()">⏭️ Next Sound</button>
+            <button onclick="playLast()">⏮️ Last Sound</button>
+            <button onclick="toggleLoop()" id="loopButton">🔄 Toggle Loop</button>
+            <button onclick="startAutoPlay()" id="autoPlayButton">▶️ Start Auto Play</button>
+            <button onclick="stopAutoPlay()" id="stopAutoPlayButton" style="display: none;">⏹️ Stop Auto Play</button>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search in Japanese ヽ(*ﾟдﾟ)ノ" oninput="searchSubtitles()">
+            <div class="search-results" id="searchResults"></div>
+        </div>
+        <p id="mp3Name"></p>
+        <audio id="audioPlayer" controls>
+            Your browser does not support the audio element.
+        </audio>
     </div>
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search in Japaneseヽ(*ﾟдﾟ)ノ" oninput="searchSubtitles()">
-        <div class="search-results" id="searchResults"></div>
-    </div>
-    <p id="mp3Name"></p>
-    <audio id="audioPlayer" controls>
-        Your browser does not support the audio element.
-    </audio>
 
     <script>
         const baseURL = "https://github.com/LeeErGou996/steinsgate/raw/main/src/files/voice/CRS_voice/CRS_";
@@ -170,32 +284,40 @@
         function toggleLoop() {
             isLooping = !isLooping;
             document.getElementById('audioPlayer').loop = isLooping;
-            alert(`Looping is now ${isLooping ? 'enabled' : 'disabled'}`);
+            const loopButton = document.getElementById('loopButton');
+            loopButton.innerHTML = isLooping ? '🔄 Loop Enabled' : '🔄 Toggle Loop';
+            loopButton.classList.toggle('active');
         }
 
         function playCurrent() {
             if (currentIndex >= 0) {
+                showLoading();
                 const selectedMP3 = mp3Files[currentIndex];
                 const fileNumber = selectedMP3.match(/CRS_(\d+)_converted\.mp3/)[1];
                 const subtitle = subtitles[parseInt(fileNumber)] || ' ';
-                console.log("Playing current sound, file number: ", fileNumber, " subtitle: ", subtitle); // 调试信息
 
-                document.getElementById('audioPlayer').src = selectedMP3;
-                document.getElementById('audioPlayer').play();
-                document.getElementById('mp3Name').innerText = `${subtitle}`;
+                const audioPlayer = document.getElementById('audioPlayer');
+                audioPlayer.src = selectedMP3;
+                audioPlayer.play().catch(error => {
+                    console.error('Error playing audio:', error);
+                    document.getElementById('mp3Name').innerText = 'Error playing audio';
+                });
+                document.getElementById('mp3Name').innerText = subtitle;
             }
         }
 
         function startAutoPlay() {
             isAutoPlaying = true;
             document.getElementById('audioPlayer').addEventListener('ended', handleAudioEnded);
-            alert('Auto play is now enabled');
+            document.getElementById('autoPlayButton').style.display = 'none';
+            document.getElementById('stopAutoPlayButton').style.display = 'block';
         }
 
         function stopAutoPlay() {
             isAutoPlaying = false;
             document.getElementById('audioPlayer').removeEventListener('ended', handleAudioEnded);
-            alert('Auto play is now disabled');
+            document.getElementById('autoPlayButton').style.display = 'block';
+            document.getElementById('stopAutoPlayButton').style.display = 'none';
         }
 
         function handleAudioEnded() {
@@ -228,6 +350,17 @@
             audioPlayer.pause();
             playCurrent();
         }
+
+        // Add loading indicator
+        function showLoading() {
+            document.getElementById('mp3Name').innerText = 'Loading...';
+        }
+
+        // Add error handling for audio loading
+        document.getElementById('audioPlayer').addEventListener('error', function(e) {
+            console.error('Audio loading error:', e);
+            document.getElementById('mp3Name').innerText = 'Error loading audio';
+        });
     </script>
 </body>
 </html>
