@@ -391,9 +391,9 @@
 
         // 创建国家标记
         function createCountryMarkers() {
-            Object.keys(countries).forEach(countryName => {
-                const country = countries[countryName];
-                const marker = L.marker([country.lat, country.lon]).addTo(map);
+        Object.keys(countries).forEach(countryName => {
+            const country = countries[countryName];
+            const marker = L.marker([country.lat, country.lon]).addTo(map);
                 
                 const popupContent = `
                     <div class="city-info">
@@ -403,14 +403,14 @@
                 `;
                 marker.bindPopup(popupContent);
 
-                marker.on('click', function() {
-                    if (currentCountryMarker) {
+            marker.on('click', function() {
+                if (currentCountryMarker) {
                         map.removeLayer(currentCountryMarker);
-                    }
+                }
                     currentCountryMarker = marker;
-                    loadCityMarkers(countryName, country.cities);
-                });
+                loadCityMarkers(countryName, country.cities);
             });
+        });
         }
 
         // 加载城市标记
@@ -537,7 +537,7 @@
             if (e.target === document.getElementById('photo-modal')) {
                 closePhotoModal();
             }
-        });
+            });
 
         // 初始化地图
         createCountryMarkers();

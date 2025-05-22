@@ -1,0 +1,279 @@
+/* 全局样式 */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --danger-color: #f44336;
+    --text-color: #333;
+    --background-color: #f5f5f5;
+    --border-color: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* 布局 */
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #45a049;
+}
+
+/* 表单样式 */
+.record-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+/* 表格样式 */
+.transaction-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filters {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+/* 按钮样式 */
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+button.delete {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+/* 图表容器 */
+.charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.chart-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 设置页面样式 */
+.settings {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.settings-group {
+    margin-bottom: 30px;
+}
+
+.settings-group h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.category-manager {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.category-manager ul {
+    list-style: none;
+}
+
+.category-manager li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    #app {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* 预算管理样式 */
+.budget-overview {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.budget-item {
+    margin-bottom: 15px;
+}
+
+.budget-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.budget-bar {
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.budget-bar-fill {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.budget-manager {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.budget-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 10px;
+    align-items: center;
+}
+
+/* 货币设置样式 */
+.currency-manager {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.currency-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.currency-row span {
+    min-width: 100px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .budget-row {
+        grid-template-columns: 1fr;
+    }
+
+    .currency-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+} 
