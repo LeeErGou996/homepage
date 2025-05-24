@@ -52,10 +52,39 @@ const EventHandler = {
         let searchTimeout;
         UIManager.elements.searchInput.addEventListener('input', (e) => {
             clearTimeout(searchTimeout);
+            const query = e.target.value.trim();
+            
+            if (query === '') {
+                UIManager.elements.searchResults.innerHTML = '';
+                UIManager.elements.searchResults.style.display = 'none';
+                return;
+            }
+
             searchTimeout = setTimeout(() => {
-                const results = WordManager.searchWords(e.target.value);
+                const results = WordManager.searchWords(query);
                 UIManager.displaySearchResults(results);
             }, 300);
+        });
+
+        // 添加搜索框失焦事件
+        UIManager.elements.searchInput.addEventListener('blur', () => {
+            // 延迟隐藏搜索结果，以便用户可以点击结果
+            setTimeout(() => {
+                if (!UIManager.elements.searchResults.matches(':hover')) {
+                    UIManager.elements.searchResults.style.display = 'none';
+                }
+            }, 200);
+        });
+
+        // 添加搜索结果鼠标悬停事件
+        UIManager.elements.searchResults.addEventListener('mouseenter', () => {
+            UIManager.elements.searchResults.style.display = 'block';
+        });
+
+        UIManager.elements.searchResults.addEventListener('mouseleave', () => {
+            if (document.activeElement !== UIManager.elements.searchInput) {
+                UIManager.elements.searchResults.style.display = 'none';
+            }
         });
     },
 

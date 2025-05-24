@@ -27,12 +27,17 @@ const UIManager = {
         this.elements.content.classList.toggle('collapsed');
     },
 
-    clearAll() {
-        this.elements.categoryButtons.style.display = 'none';
-        this.elements.themeButtons.style.display = 'none';
+    clearSearch() {
         this.elements.searchContainer.style.display = 'none';
         this.elements.searchInput.value = '';
         this.elements.searchResults.innerHTML = '';
+        this.elements.searchResults.style.display = 'none';
+    },
+
+    clearAll() {
+        this.clearSearch();
+        this.elements.categoryButtons.style.display = 'none';
+        this.elements.themeButtons.style.display = 'none';
         this.elements.randomWordsInput.style.display = 'none';
         this.elements.wordList.innerHTML = '';
         this.elements.wordDetail.style.display = 'none';
@@ -56,6 +61,8 @@ const UIManager = {
     showSearchBox() {
         this.clearAll();
         this.elements.searchContainer.style.display = 'block';
+        this.elements.searchResults.style.display = 'block';
+        this.elements.searchInput.value = '';
         this.elements.searchInput.focus();
     },
 
@@ -88,11 +95,16 @@ const UIManager = {
     },
 
     displaySearchResults(results) {
-        this.elements.searchResults.innerHTML = results.map(word => `
-            <div class="word-item" data-word="${word.word}">
-                ${word.word} (${word.type}) - ${word.meaning}
-            </div>
-        `).join('');
+        if (results.length === 0) {
+            this.elements.searchResults.innerHTML = '<div class="no-results">没有找到匹配的单词</div>';
+        } else {
+            this.elements.searchResults.innerHTML = results.map(word => `
+                <div class="word-item" data-word="${word.word}">
+                    ${word.word} (${word.type}) - ${word.meaning}
+                </div>
+            `).join('');
+        }
+        this.elements.searchResults.style.display = 'block';
     },
 
     displayWordDetail(word) {
