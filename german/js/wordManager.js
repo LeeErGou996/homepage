@@ -1,6 +1,5 @@
 const WordManager = {
     words: [],
-    favorites: new Set(),
 
     async loadWords() {
         const jsonFiles = ['adjs.json', 'advs.json', 'nouns.json', 'preps.json', 'pronouns.json', 'verbs.json', 'words.json'];
@@ -10,36 +9,11 @@ const WordManager = {
             );
             this.words = dataArray.flat();
             console.log('所有单词数据已加载:', this.words);
-            this.loadFavorites();
             return true;
         } catch (error) {
             console.error('加载文件数据失败:', error);
             return false;
         }
-    },
-
-    loadFavorites() {
-        const savedFavorites = localStorage.getItem('favorites');
-        if (savedFavorites) {
-            this.favorites = new Set(JSON.parse(savedFavorites));
-        }
-    },
-
-    saveFavorites() {
-        localStorage.setItem('favorites', JSON.stringify([...this.favorites]));
-    },
-
-    toggleFavorite(word) {
-        if (this.favorites.has(word)) {
-            this.favorites.delete(word);
-        } else {
-            this.favorites.add(word);
-        }
-        this.saveFavorites();
-    },
-
-    isFavorite(word) {
-        return this.favorites.has(word);
     },
 
     getRandomWord() {

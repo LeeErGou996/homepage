@@ -31,6 +31,8 @@ const UIManager = {
         this.elements.categoryButtons.style.display = 'none';
         this.elements.themeButtons.style.display = 'none';
         this.elements.searchContainer.style.display = 'none';
+        this.elements.searchInput.value = '';
+        this.elements.searchResults.innerHTML = '';
         this.elements.randomWordsInput.style.display = 'none';
         this.elements.wordList.innerHTML = '';
         this.elements.wordDetail.style.display = 'none';
@@ -98,9 +100,6 @@ const UIManager = {
         this.elements.wordDetail.querySelector('#wordTitle').textContent = word.word;
         this.elements.wordDetail.querySelector('#wordExample').innerHTML = WordManager.linkifyExample(word.example);
         this.elements.wordDetail.querySelector('#wordMeaning').textContent = word.meaning;
-        
-        const favoriteButton = this.elements.wordDetail.querySelector('#toggleFavorite');
-        favoriteButton.textContent = WordManager.isFavorite(word.word) ? '取消收藏' : '收藏';
     },
 
     displayLinkedWordDetail(word) {
@@ -124,10 +123,16 @@ const UIManager = {
         this.elements.linkedWordDetail.style.display = 'none';
     },
 
-    updateFavoriteButton(word) {
-        const button = this.elements.wordDetail.querySelector('#toggleFavorite');
-        if (button) {
-            button.textContent = WordManager.isFavorite(word) ? '取消收藏' : '收藏';
+    toggleTheme() {
+        document.body.classList.toggle('dark-mode');
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDarkMode);
+    },
+
+    initTheme() {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        if (isDarkMode) {
+            document.body.classList.add('dark-mode');
         }
     }
 }; 

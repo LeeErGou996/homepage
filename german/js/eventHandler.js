@@ -6,6 +6,7 @@ const EventHandler = {
         this.initWordDetailEvents();
         this.initRandomWordsEvents();
         this.initThemeEvents();
+        UIManager.initTheme(); // 初始化主题
     },
 
     initSidebarEvents() {
@@ -39,7 +40,7 @@ const EventHandler = {
                         UIManager.showSearchBox();
                         break;
                     case 'toggleDarkMode':
-                        document.body.classList.toggle('dark-mode');
+                        UIManager.toggleTheme();
                         break;
                 }
             });
@@ -106,13 +107,6 @@ const EventHandler = {
             UIManager.closeWordDetail();
         });
 
-        // 收藏按钮
-        UIManager.elements.wordDetail.querySelector('#toggleFavorite').addEventListener('click', () => {
-            const word = UIManager.elements.wordDetail.querySelector('#wordTitle').textContent;
-            WordManager.toggleFavorite(word);
-            UIManager.updateFavoriteButton(word);
-        });
-
         // 链接单词点击事件
         UIManager.elements.wordDetail.addEventListener('click', (e) => {
             if (e.target.matches('.linked-word')) {
@@ -144,13 +138,16 @@ const EventHandler = {
     },
 
     initThemeEvents() {
-        // 主题切换事件
+        // 监听系统主题变化
         const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
         prefersDarkScheme.addListener((e) => {
-            if (e.matches) {
-                document.body.classList.add('dark-mode');
-            } else {
-                document.body.classList.remove('dark-mode');
+            // 如果用户没有手动设置主题，则跟随系统
+            if (localStorage.getItem('darkMode') === null) {
+                if (e.matches) {
+                    document.body.classList.add('dark-mode');
+                } else {
+                    document.body.classList.remove('dark-mode');
+                }
             }
         });
     }
