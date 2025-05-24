@@ -6,7 +6,6 @@ const EventHandler = {
         this.initWordDetailEvents();
         this.initRandomWordsEvents();
         this.initThemeEvents();
-        UIManager.initTheme(); // 初始化主题
     },
 
     initSidebarEvents() {
@@ -40,7 +39,7 @@ const EventHandler = {
                         UIManager.showSearchBox();
                         break;
                     case 'toggleDarkMode':
-                        UIManager.toggleTheme();
+                        document.body.classList.toggle('dark-mode');
                         break;
                 }
             });
@@ -52,39 +51,10 @@ const EventHandler = {
         let searchTimeout;
         UIManager.elements.searchInput.addEventListener('input', (e) => {
             clearTimeout(searchTimeout);
-            const query = e.target.value.trim();
-            
-            if (query === '') {
-                UIManager.elements.searchResults.innerHTML = '';
-                UIManager.elements.searchResults.style.display = 'none';
-                return;
-            }
-
             searchTimeout = setTimeout(() => {
-                const results = WordManager.searchWords(query);
+                const results = WordManager.searchWords(e.target.value);
                 UIManager.displaySearchResults(results);
             }, 300);
-        });
-
-        // 添加搜索框失焦事件
-        UIManager.elements.searchInput.addEventListener('blur', () => {
-            // 延迟隐藏搜索结果，以便用户可以点击结果
-            setTimeout(() => {
-                if (!UIManager.elements.searchResults.matches(':hover')) {
-                    UIManager.elements.searchResults.style.display = 'none';
-                }
-            }, 200);
-        });
-
-        // 添加搜索结果鼠标悬停事件
-        UIManager.elements.searchResults.addEventListener('mouseenter', () => {
-            UIManager.elements.searchResults.style.display = 'block';
-        });
-
-        UIManager.elements.searchResults.addEventListener('mouseleave', () => {
-            if (document.activeElement !== UIManager.elements.searchInput) {
-                UIManager.elements.searchResults.style.display = 'none';
-            }
         });
     },
 
@@ -167,16 +137,13 @@ const EventHandler = {
     },
 
     initThemeEvents() {
-        // 监听系统主题变化
+        // 主题切换事件
         const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
         prefersDarkScheme.addListener((e) => {
-            // 如果用户没有手动设置主题，则跟随系统
-            if (localStorage.getItem('darkMode') === null) {
-                if (e.matches) {
-                    document.body.classList.add('dark-mode');
-                } else {
-                    document.body.classList.remove('dark-mode');
-                }
+            if (e.matches) {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
             }
         });
     }
