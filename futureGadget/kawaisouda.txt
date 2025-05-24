@@ -1,0 +1,39 @@
+<p><strong>作詞：</strong>平井堅</p>
+<p><strong>作曲：</strong>平井堅</p>
+
+<div class="stanza">
+<p>「あの子ってかわいそうだよね」いつも陰<span class="furigana">かげ</span>で笑<span class="furigana">わら</span>っていた</p>
+<p>くだらない服<span class="furigana">ふく</span> くだらない話<span class="furigana">はなし</span> くだらない笑顔<span class="furigana">えがお</span></p>
+<p>「ああはなりたくないね」と話<span class="furigana">はな</span>してた</p>
+<p>「あの子ってかわいそうだよね」いつも馬鹿<span class="furigana">ばか</span>にして見<span class="furigana">み</span>ていた</p>
+<p>平凡<span class="furigana">へいぼん</span>な夢<span class="furigana">ゆめ</span> 平凡<span class="furigana">へいぼん</span>な爪<span class="furigana">つめ</span> 平凡<span class="furigana">へいぼん</span>な恋人<span class="furigana">こいびと</span></p>
+<p>どこにでもあるものなど欲<span class="furigana">ほ</span>しくなかった</p>
+<p>選<span class="furigana">えら</span>ばれた女<span class="furigana">おんな</span>であるためには 孤独<span class="furigana">こどく</span>さえ愛<span class="furigana">あい</span>した</p>
+<p>だけど クローゼットの中<span class="furigana">なか</span>には２年前<span class="furigana">ねんまえ</span>のワンピース</p>
+<p>あたしにしか出来<span class="furigana">でき</span>ないことなど 何<span class="furigana">なに</span>ひとつなかった</p>
+<p>からっぽなのは誰<span class="furigana">だれ</span>でもなく この無様<span class="furigana">ぶざま</span>なあたし</p>
+<p>かわいそうなのは あの子じゃなく ああ あたしだった</p>
+
+<p>「あの子ってかわいそうだよね」いつも上<span class="furigana">うえ</span>から眺<span class="furigana">なが</span>めていた</p>
+<p>ありがちな趣味<span class="furigana">しゅみ</span> ありがちな部屋<span class="furigana">へや</span> ありがちな写真<span class="furigana">しゃしん</span></p>
+<p>「ああはなりたくないね」と話<span class="furigana">はな</span>してた</p>
+<p>「あの子ってかわいそうだよね」鏡<span class="furigana">かがみ</span>の中<span class="furigana">なか</span>で呟<span class="furigana">つぶや</span>いてた</p>
+<p>正<span class="furigana">ただ</span>しい嘘<span class="furigana">うそ</span> 正<span class="furigana">ただ</span>しい過去<span class="furigana">かこ</span> 正<span class="furigana">ただ</span>しい強<span class="furigana">つよ</span>がり</p>
+<p>どこにでもある道<span class="furigana">みち</span>だけ 避<span class="furigana">さ</span>けて歩<span class="furigana">ある</span>いた</p>
+<p>あの頃<span class="furigana">ころ</span>のあたしがあたしを見<span class="furigana">み</span>て 何<span class="furigana">なに</span>を思<span class="furigana">おも</span>うだろう</p>
+<p>だけど クローゼットにはあたしを飾<span class="furigana">かざ</span>る布切<span class="furigana">ぬのき</span>れだらけ</p>
+<p>あたしにしか出来<span class="furigana">でき</span>ないことなど 何<span class="furigana">なに</span>ひとつなかった</p>
+<p>からっぽなのは誰<span class="furigana">だれ</span>でもなく このみじめなあたし</p>
+<p>かわいそうなのは あの子じゃなく ああ ああ ああ あたしだった</p>
+
+<p>クローゼットの中<span class="furigana">なか</span>には２年前<span class="furigana">ねんまえ</span>のワンピース</p>
+<p>あたしにしか出来<span class="furigana">でき</span>ないことなど 何<span class="furigana">なに</span>ひとつなかった</p>
+<p>からっぽなのは誰<span class="furigana">だれ</span>でもなく この無様<span class="furigana">ぶざま</span>なあたし</p>
+<p>かわいそうなのは あの子じゃなく ああ ああ ああ ああ</p>
+<p>あたしの心<span class="furigana">こころ</span>の中<span class="furigana">なか</span>には こぼれ落<span class="furigana">お</span>ちたあなた</p>
+<p>あたしにしか出来<span class="furigana">でき</span>ないことなど 何<span class="furigana">なに</span>ひとつなかった</p>
+<p>越<span class="furigana">こ</span>えられない夜<span class="furigana">よる</span>にひとりきり 床<span class="furigana">ゆか</span>のホコリを見<span class="furigana">み</span>てた</p>
+<p>かわいそうなのは あの子じゃなく ああ ああ ああ ああ ああ ああ ああ ああ ああ あたしだった</p>
+<p>あたしって かわいそうだよね</p>
+
+</div>

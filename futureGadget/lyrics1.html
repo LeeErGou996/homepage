@@ -105,6 +105,20 @@
             color: darkblue;
         }
 
+        .overview-container {
+            position: relative;
+            min-height: 200px;  /* 确保有足够空间显示格言 */
+        }
+
+        .german-quote {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-style: italic;
+            color: #666;
+            padding: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -165,7 +179,7 @@
         const toggleFurigana = document.getElementById('toggleFurigana');
 
         // 初始内容显示为 "概要"
-        contentDiv.innerHTML = '<h1>概要</h1><p>これは私が好きな日本語の歌の歌詞です。私は歌を練習しながら日本語を勉強することができて、とても楽しいと思います。このサイトがあなたのお役に立てば嬉しいです。</p>';
+        contentDiv.innerHTML = '<h1>概要</h1><div class="overview-container"><p>これは私が好きな日本語の歌の歌詞です。私は歌を練習しながら日本語を勉強することができて、とても楽しいと思います。このサイトがあなたのお役に立てば嬉しいです。</p><p class="german-quote"><i>„Wie geht es Ihnen? Ich singe immer noch."</i></p></div>';
 
         // 切换假名显示
         toggleFurigana.addEventListener('change', function () {
@@ -218,7 +232,7 @@
 
         // 为不同歌曲绑定点击事件
         homeLink.addEventListener('click', () => {
-            contentDiv.innerHTML = '<h1>概要</h1><p>これは私が好きな日本語の歌の歌詞です。私は歌を練習しながら日本語を勉強することができて、とても楽しいと思います。このサイトがあなたのお役に立てば嬉しいです。</p>';
+            contentDiv.innerHTML = '<h1>概要</h1><div class="overview-container"><p>これは私が好きな日本語の歌の歌詞です。私は歌を練習しながら日本語を勉強することができて、とても楽しいと思います。このサイトがあなたのお役に立てば嬉しいです。</p><p class="german-quote"><i>„Wie geht es Ihnen? Ich singe immer noch."</i></p></div>';
         });
 
                 // 点击第一个Spotify条目时展示第一个Spotify的嵌入代码
@@ -297,7 +311,8 @@
 
             // 定义歌曲数据
             const songs = [
-
+                { id: 'song7Link', text: 'かわいそうだよね', file: 'kawaisouda.txt' },
+                { id: 'song8Link', text: '廃墟からの復活(Auferstanden aus Ruinen) 東北きりたん ver.', file: 'auferstanden.txt' }
             ];
 
             // 遍历歌曲数据，创建每一项
@@ -348,6 +363,14 @@
             loadLyrics('aisurukokoro.txt', '愛する心');
         });
 
+        // 为2025的歌曲添加点击事件
+        song7Link.addEventListener('click', () => {
+            loadLyrics('kawaisouda.txt', 'かわいそうだよね');
+        });
+
+        song8Link.addEventListener('click', () => {
+            loadLyrics('auferstanden.txt', '廃墟からの復活(Auferstanden aus Ruinen) 東北きりたん ver.');
+        });
 
     </script>
 </body>
