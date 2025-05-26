@@ -16,7 +16,7 @@
             <li data-action="showRandomWord">Zufälliges Wort</li>
             <li data-action="showRandomWordsInput">Zufällige Wörter nach Anzahl auswählen</li>
             <li data-action="showSearchBox">Wort suchen</li>
-            <li data-action="toggleDarkMode">Dunkelmodus</li>
+            <li data-action="showGrammar">Grammatik Übung</li>
         </ul>
     </div>
  
@@ -65,6 +65,32 @@
 
         <!-- 链接单词详情 -->
         <div id="linkedWordDetail"></div>
+
+        <!-- 语法练习区域 -->
+        <div id="grammarContainer" style="display: none; max-width: 800px; margin: 0 auto; padding: 20px; text-align: center;">
+            <h2 style="color: #1e40af; margin-bottom: 30px;">Grammatik Übung</h2>
+            <div style="margin: 20px 0;">
+                <div style="display: inline-block; padding: 10px 20px; color: #1e40af; text-decoration: underline; cursor: pointer; font-size: 18px; transition: all 0.3s ease;" 
+                     onmouseover="this.style.color='#3b82f6'; this.style.backgroundColor='rgba(59, 130, 246, 0.1)'; this.style.borderRadius='4px';" 
+                     onmouseout="this.style.color='#1e40af'; this.style.backgroundColor=''; this.style.borderRadius='';"
+                     onclick="GrammarManager.openA1Page()">A1</div>
+            </div>
+        </div>
+
+        <!-- A1 界面 -->
+        <div id="a1Container" style="display: none; max-width: 800px; margin: 0 auto; padding: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <button style="padding: 8px 16px; background: #f0f0f0; border: none; border-radius: 4px; cursor: pointer; color: #666; transition: all 0.3s ease;"
+                        onmouseover="this.style.background='#e0e0e0'; this.style.color='#1e40af';"
+                        onmouseout="this.style.background='#f0f0f0'; this.style.color='#666';"
+                        onclick="GrammarManager.closeA1Page()">← Zurück</button>
+                <h2 style="color: #1e40af; margin: 0;">A1 Grammatik</h2>
+                <div style="width: 80px;"></div>
+            </div>
+            <div id="a1Content" style="background: white; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <!-- 内容将通过 JavaScript 动态加载 -->
+            </div>
+        </div>
     </div>
 
     <!-- 引入JavaScript模块 -->
@@ -72,5 +98,6 @@
     <script src="js/uiManager.js"></script>
     <script src="js/eventHandler.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/grammarManager.js"></script>
 </body>
 </html>

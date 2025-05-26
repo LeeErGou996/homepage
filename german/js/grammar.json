@@ -1,0 +1,414 @@
+{
+    "A1": {
+        "topics": [
+                       
+            {
+                "id": "ja_nein_fragen",
+                "title": "德语是非疑问句（Ja-Nein-Fragen）— 肯定与否定问句的回答方式",
+                "description": "德语中是非疑问句分为肯定句和否定句，回答方式会根据问题的形式发生变化，特别是使用“doch”来表达肯定的反驳。",
+                "sections": [
+                    {
+                        "title": "是非疑问句的形式与回答",
+                        "explanation": "德语的 Ja/Nein-Fragen 通常用动词开头。对于否定性的问题，如果实际情况是肯定的，需要使用“doch”来反驳。",
+                        "examples": [
+                            {
+                                "question": "Positive Frage:",
+                                "answer": "Hast du Zeit? – Ja, ich habe Zeit. / Nein, ich habe keine Zeit.",
+                                "translation": {
+                                    "question": "你有时间吗？",
+                                    "answer": "是的，我有时间。/ 不，我没有时间。"
+                                }
+                            },
+                            {
+                                "question": "Negative Frage:",
+                                "answer": "Hast du keine Zeit? – Doch, ich habe Zeit. / Nein, ich habe keine Zeit.",
+                                "translation": {
+                                    "question": "你没有时间吗？",
+                                    "answer": "有的，我有时间。/ 没有，我确实没有时间。"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "tips": [
+                    "肯定问句 → 肯定回答用 Ja，否定回答用 Nein + 否定句",
+                    "否定问句 → 肯定回答用 Doch（表示反驳），否定回答仍用 Nein",
+                    "“doch” 是用来否定对方的否定，表示“实际上是这样”",
+                    "否定句通常使用 keine 或 nicht 来表达"
+                ]
+            },            
+            {
+                "id": "verben_mit_dativ",
+                "title": "德语中与第三格（Dativ）连用的动词",
+                "description": "有些德语动词需要一个第三格宾语（Dativobjekt），这些动词不能与第四格（Akkusativ）连用。",
+                "sections": [
+                    {
+                        "title": "常见的 Dativ 动词及其用法",
+                        "explanation": "以下动词在句中要求第三格宾语（例如：mir, dir, ihm, ihr, uns, euch, Ihnen, ihnen）。这些动词的主语为第一格（Nominativ），而动作的接受者为第三格。",
+                        "examples": [
+                            {
+                                "question": "helfen",
+                                "answer": "Adnan hilft der Frau.",
+                                "translation": {
+                                    "question": "帮助谁？",
+                                    "answer": "Adnan 正在帮助这位女士。"
+                                }
+                            },
+                            {
+                                "question": "gehören",
+                                "answer": "Das Handy gehört mir.",
+                                "translation": {
+                                    "question": "属于谁？",
+                                    "answer": "这部手机是我的。"
+                                }
+                            },
+                            {
+                                "question": "gefallen",
+                                "answer": "Der Film gefällt dir.",
+                                "translation": {
+                                    "question": "喜欢/合心意的是？",
+                                    "answer": "你喜欢这部电影。"
+                                }
+                            },
+                            {
+                                "question": "es geht",
+                                "answer": "Wie geht es dir? – Mir geht es gut.",
+                                "translation": {
+                                    "question": "你好吗？",
+                                    "answer": "我很好。"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "tips": [
+                    "Dativ（第三格）代词如：mir, dir, ihm, ihr, uns, euch, Ihnen, ihnen",
+                    "常与 Dativ 搭配的动词不能直接用于 Akkusativ",
+                    "典型 Dativ 动词：helfen, gehören, gefallen, danken, antworten, es geht",
+                    "第三格冠词变化：dem（阳/中性）, der（阴性）, den+n（复数）"
+                ]
+            },
+            
+            {
+                "id": "praeposition_mit",
+                "title": "德语介词 mit 的用法与变格",
+                "description": "“mit” 是一个常见的德语介词，表示“与某人一起”或“通过某种方式”。它始终要求与第三格（Dativ）连用。",
+                "sections": [
+                    {
+                        "title": "mit 的含义与用法",
+                        "explanation": "介词“mit”有两种基本含义：\n1. 表示与某人一起做某事（伴随）\n2. 表示做某事所使用的工具或方法（手段）\n无论哪种用法，mit 后的名词都使用第三格（Dativ）。",
+                        "examples": [
+                            {
+                                "question": "mit + 人（一起）",
+                                "answer": "Ich telefoniere mit dem Freund.",
+                                "translation": {
+                                    "question": "我和谁一起……",
+                                    "answer": "我在和这位朋友通电话。"
+                                }
+                            },
+                            {
+                                "question": "mit + 工具/方式",
+                                "answer": "Du lernst mit einem Buch.",
+                                "translation": {
+                                    "question": "用什么方式/工具……",
+                                    "answer": "你用一本书学习。"
+                                }
+                            },
+                            {
+                                "question": "mit + Plural Dativ",
+                                "answer": "Wir sprechen mit unseren Freunden.",
+                                "translation": {
+                                    "question": "与谁（复数）一起……",
+                                    "answer": "我们和我们的朋友们交谈。"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "tips": [
+                    "“mit” 始终要求 Dativ（第三格）",
+                    "maskulin: mit dem Freund",
+                    "neutrum: mit dem Buch",
+                    "feminin: mit der Freundin",
+                    "Plural: mit den Freunden（注意名词加 -n）",
+                    "可用于表示伴随或使用工具的场景"
+                ]
+            },
+            
+            {
+                "id": "adjektivdeklination",
+                "title": "德语形容词词尾变化 - Adjektivdeklination",
+                "description": "形容词在德语中根据性别、数和格的不同会有词尾变化，尤其在带有冠词的名词前。",
+                "sections": [
+                    {
+                        "title": "形容词词尾的基本规则与示例",
+                        "explanation": "当形容词位于名词前，并且带有冠词时，其词尾需根据该名词的性别、数和格发生变化。词尾与冠词的形式密切相关。",
+                        "examples": [
+                            {
+                                "question": "Nominativ – 主格",
+                                "answer": "Das ist ein roter Tisch. / Das ist eine weiße Maschine.",
+                                "translation": {
+                                    "question": "主格（谁是……）",
+                                    "answer": "这是一个红色的桌子。/ 这是一台白色的机器。"
+                                }
+                            },
+                            {
+                                "question": "Akkusativ – 宾格",
+                                "answer": "Ich kaufe einen roten Tisch. / Ich kaufe eine weiße Maschine.",
+                                "translation": {
+                                    "question": "宾格（买了什么？）",
+                                    "answer": "我买了一个红色的桌子。/ 我买了一台白色的机器。"
+                                }
+                            },
+                            {
+                                "question": "Dativ – 与格",
+                                "answer": "Ich esse an einem roten Tisch. / Ich wasche mit einer weißen Maschine.",
+                                "translation": {
+                                    "question": "与格（在……上/用……）",
+                                    "answer": "我在红色的桌子上吃饭。/ 我用白色的机器清洗。"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "tips": [
+                    "形容词的词尾依赖于冠词、性别（der/die/das）、数（单数/复数）和格（主/宾/与格）",
+                    "主格阳性：ein roter Tisch；宾格阳性：einen roten Tisch",
+                    "中性和阴性变化相对简单：ein gelbes Sofa / eine weiße Maschine",
+                    "复数通常以 -e 结尾，如 braune Tische",
+                    "注意与冠词连用时的变化：ein, eine, einem 等都会影响形容词词尾"
+                ]
+            },
+            
+            {
+                "id": "komposita",
+                "title": "德语复合词 Komposita - 构成与规律",
+                "description": "德语中常通过将两个词组合成一个新词，这种构词法叫做复合词（Komposita）。",
+                "sections": [
+                    {
+                        "title": "复合词的构成类型与示例",
+                        "explanation": "德语中，复合词是由两个或更多词根组成的单词，最后一个词决定整个词的词性和复数形式。常见组合方式如下：",
+                        "examples": [
+                            {
+                                "question": "Nomen + Nomen",
+                                "answer": "die Kleider + der Schrank = der Kleiderschrank",
+                                "translation": {
+                                    "question": "名词 + 名词",
+                                    "answer": "衣服 + 柜子 = 衣柜"
+                                }
+                            },
+                            {
+                                "question": "Verbstamm + Nomen",
+                                "answer": "schreib- + der Tisch = der Schreibtisch",
+                                "translation": {
+                                    "question": "动词词根 + 名词",
+                                    "answer": "写 + 桌子 = 写字台"
+                                }
+                            },
+                            {
+                                "question": "Adjektiv + Nomen",
+                                "answer": "groß + die Stadt = die Großstadt",
+                                "translation": {
+                                    "question": "形容词 + 名词",
+                                    "answer": "大 + 城市 = 大城市"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "tips": [
+                    "复合词最后一个词决定词性和复数形式",
+                    "有时为了发音需要加上连接词母，如 -s-, -n-",
+                    "例：die Wohnung + die Suche = die Wohnungssuche",
+                    "例：die Sonne + die Terrasse = die Sonnenterrasse",
+                    "这些连接字母不影响词义，仅为了发音流畅"
+                ]
+            },
+            
+            {
+                "id": "wo_wohin_woher",
+                "title": "德语地点与方向疑问词：Wo, Wohin, Woher 的用法总结与示例",
+                "description": "德语中询问地点和方向的三个重要疑问词",
+                "sections": [
+                    {
+                        "title": "Wo, Wohin, Woher 的区别与用法",
+                        "explanation": "这三个疑问词都与位置和方向有关，但表达的意义不同：\n- \"wo\" 表示静态位置\n- \"wohin\" 表示移动的方向（去哪里）\n- \"woher\" 表示来源或起点（从哪里来）\n它们分别与不同的介词和格（Dativ 或 Akkusativ）搭配使用。",
+                        "examples": [
+                            {
+                                "question": "Wo wohnst du?",
+                                "answer": "Ich wohne in Berlin.",
+                                "translation": {
+                                    "question": "你住在哪里？",
+                                    "answer": "我住在柏林。"
+                                }
+                            },
+                            {
+                                "question": "Wo bist du?",
+                                "answer": "Ich bin beim Arzt.",
+                                "translation": {
+                                    "question": "你在哪里？",
+                                    "answer": "我在医生那里。"
+                                }
+                            },
+                            {
+                                "question": "Wohin gehst du?",
+                                "answer": "Ich gehe nach Hause.",
+                                "translation": {
+                                    "question": "你去哪里？",
+                                    "answer": "我回家。"
+                                }
+                            },
+                            {
+                                "question": "Wohin fährst du?",
+                                "answer": "Ich fahre in die Schweiz.",
+                                "translation": {
+                                    "question": "你去哪里？",
+                                    "answer": "我去瑞士。"
+                                }
+                            },
+                            {
+                                "question": "Woher kommst du?",
+                                "answer": "Ich komme aus China.",
+                                "translation": {
+                                    "question": "你从哪里来？",
+                                    "answer": "我来自中国。"
+                                }
+                            },
+                            {
+                                "question": "Woher hast du das?",
+                                "answer": "Ich habe das aus dem Supermarkt.",
+                                "translation": {
+                                    "question": "你从哪里得到的？",
+                                    "answer": "我从超市得到的。"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "tips": [
+                    "wo = 位置（静态） → 介词 in, auf, an, bei + Dativ",
+                    "wohin = 方向（去往）→ 介词 in, auf, nach, zu + Akkusativ",
+                    "woher = 来源（来自）→ 介词 aus, von + Dativ"
+                ]
+            },
+            {
+                "id": "perfekt_regelmaessige_verben",
+                "title": "德语规则动词的完成时（Perfekt）总结",
+                "description": "德语的 Perfekt（完成时）用于表达已经发生的动作，主要用于口语中。规则动词的 Partizip II（过去分词）遵循统一构造规则。",
+                "sections": [
+                    {
+                        "title": "Perfekt 的构成与规则",
+                        "explanation": "Perfekt（完成时）由两个部分组成：Hilfsverb（助动词 haben 或 sein）+ Partizip II（过去分词）。规则动词的 Partizip II 通常以 ge- 开头，词干后加 -t。",
+                        "examples": [
+                            {
+                                "question": "Ich lerne Deutsch.",
+                                "answer": "Ich habe Deutsch gelernt. (lernen → gelernt)",
+                                "translation": {
+                                    "question": "我在学德语。",
+                                    "answer": "我学了德语。"
+                                }
+                            },
+                            {
+                                "question": "Wir feiern eine Party.",
+                                "answer": "Wir haben eine Party gefeiert. (feiern → gefeiert)",
+                                "translation": {
+                                    "question": "我们在办派对。",
+                                    "answer": "我们办了一个派对。"
+                                }
+                            },
+                            {
+                                "question": "Du arbeitest im Büro.",
+                                "answer": "Du hast im Büro gearbeitet. (arbeiten → gearbeitet)",
+                                "translation": {
+                                    "question": "你在办公室工作。",
+                                    "answer": "你在办公室工作过了。"
+                                }
+                            },
+                            {
+                                "question": "Sie plant eine Reise.",
+                                "answer": "Sie hat eine Reise geplant. (planen → geplant)",
+                                "translation": {
+                                    "question": "她在计划旅行。",
+                                    "answer": "她已经计划了旅行。"
+                                }
+                            },
+                            {
+                                "question": "Ihr schickt eine Einladung.",
+                                "answer": "Ihr habt eine Einladung geschickt. (schicken → geschickt)",
+                                "translation": {
+                                    "question": "你们发送邀请。",
+                                    "answer": "你们已经发送了邀请。"
+                                }
+                            },
+                            {
+                                "question": "Ich hole eine Pizza.",
+                                "answer": "Ich habe eine Pizza geholt. (holen → geholt)",
+                                "translation": {
+                                    "question": "我去拿披萨。",
+                                    "answer": "我拿了披萨。"
+                                }
+                            },
+                            {
+                                "question": "Peter fragt den Professor.",
+                                "answer": "Peter hat den Professor gefragt. (fragen → gefragt)",
+                                "translation": {
+                                    "question": "Peter 问教授。",
+                                    "answer": "Peter 问过教授了。"
+                                }
+                            },
+                            {
+                                "question": "Sie reden mit ihren Freunden.",
+                                "answer": "Sie haben mit ihren Freunden geredet. (reden → geredet)",
+                                "translation": {
+                                    "question": "他们在和朋友聊天。",
+                                    "answer": "他们已经和朋友聊过了。"
+                                }
+                            },
+                            {
+                                "question": "Wir machen eine Pause.",
+                                "answer": "Wir haben eine Pause gemacht. (machen → gemacht)",
+                                "translation": {
+                                    "question": "我们正在休息。",
+                                    "answer": "我们休息过了。"
+                                }
+                            },
+                            {
+                                "question": "Du kaufst einen Tisch.",
+                                "answer": "Du hast einen Tisch gekauft. (kaufen → gekauft)",
+                                "translation": {
+                                    "question": "你买一个桌子。",
+                                    "answer": "你买了一个桌子。"
+                                }
+                            },
+                            {
+                                "question": "Ich höre Radio.",
+                                "answer": "Ich habe Radio gehört. (hören → gehört)",
+                                "translation": {
+                                    "question": "我在听广播。",
+                                    "answer": "我听过广播了。"
+                                }
+                            },
+                            {
+                                "question": "Wir kochen einen Kaffee.",
+                                "answer": "Wir haben einen Kaffee gekocht. (kochen → gekocht)",
+                                "translation": {
+                                    "question": "我们煮咖啡。",
+                                    "answer": "我们煮了咖啡。"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "tips": [
+                    "Perfekt = 助动词（haben/sein）+ Partizip II",
+                    "规则动词构成：ge + 动词词干 + t，例如: spielen → gespielt",
+                    "大多数动词用 haben，表示运动方向变化的动词用 sein",
+                    "例：Ich habe einen Kaffee gekocht. / Er ist nach Paris geflogen.",
+                    "Perfekt 常用于日常口语；Präteritum 更常见于书面语"
+                ]
+            }
+
+            
+        ]
+    }
+} 

@@ -5,7 +5,6 @@ const EventHandler = {
         this.initWordListEvents();
         this.initWordDetailEvents();
         this.initRandomWordsEvents();
-        this.initThemeEvents();
     },
 
     initSidebarEvents() {
@@ -17,6 +16,9 @@ const EventHandler = {
         // 侧边栏菜单项
         document.querySelectorAll('#sidebar li').forEach(item => {
             item.addEventListener('click', () => {
+                // 先清除所有内容
+                UIManager.clearAll();
+                
                 const action = item.dataset.action;
                 const category = item.dataset.category;
 
@@ -38,23 +40,63 @@ const EventHandler = {
                     case 'showSearchBox':
                         UIManager.showSearchBox();
                         break;
-                    case 'toggleDarkMode':
-                        document.body.classList.toggle('dark-mode');
+                    case 'showGrammar':
+                        UIManager.showGrammar();
                         break;
                 }
             });
         });
     },
 
+    // 防抖函数
+    debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    },
+
     initSearchEvents() {
-        // 搜索输入防抖
-        let searchTimeout;
-        UIManager.elements.searchInput.addEventListener('input', (e) => {
-            clearTimeout(searchTimeout);
-            searchTimeout = setTimeout(() => {
-                const results = WordManager.searchWords(e.target.value);
-                UIManager.displaySearchResults(results);
-            }, 300);
+        const searchInput = UIManager.elements.searchInput;
+        
+        // 使用防抖处理搜索输入
+        const debouncedSearch = this.debounce((query) => {
+            const results = WordManager.searchWords(query);
+            UIManager.displaySearchResults(results, query);
+        }, 300); // 300ms 延迟
+
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.trim();
+            if (query.length > 0) {
+                debouncedSearch(query);
+            } else {
+                UIManager.elements.searchResults.innerHTML = '';
+            }
+        });
+
+        // 添加清除按钮
+        const clearButton = document.createElement('button');
+        clearButton.className = 'clear-search';
+        clearButton.innerHTML = '×';
+        clearButton.style.display = 'none';
+        
+        searchInput.parentNode.style.position = 'relative';
+        searchInput.parentNode.appendChild(clearButton);
+
+        clearButton.addEventListener('click', () => {
+            searchInput.value = '';
+            UIManager.elements.searchResults.innerHTML = '';
+            clearButton.style.display = 'none';
+            searchInput.focus();
+        });
+
+        searchInput.addEventListener('input', () => {
+            clearButton.style.display = searchInput.value ? 'block' : 'none';
         });
     },
 
@@ -132,18 +174,6 @@ const EventHandler = {
                 UIManager.displayWords(randomWords);
             } else {
                 alert('请输入1-100之间的数字');
-            }
-        });
-    },
-
-    initThemeEvents() {
-        // 主题切换事件
-        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-        prefersDarkScheme.addListener((e) => {
-            if (e.matches) {
-                document.body.classList.add('dark-mode');
-            } else {
-                document.body.classList.remove('dark-mode');
             }
         });
     }
