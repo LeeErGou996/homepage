@@ -117,6 +117,11 @@
         .search-result:hover {
             background-color: rgba(33, 150, 243, 0.2);
         }
+        .search-result mark {
+            background-color: rgba(33, 150, 243, 0.3);
+            padding: 0 2px;
+            border-radius: 2px;
+        }
         h1, p {
             font-family: 'Times New Roman', Times, serif;
         }
@@ -170,6 +175,7 @@
         const mp3Files = [];
         const subtitles = {};
         let currentIndex = -1;
+        let searchTimeout; // 用于防抖的定时器
 
         let isLooping = false;
         let isAutoPlaying = false;
@@ -246,22 +252,32 @@
             }
         }
 
-        function searchSubtitles() {
-            const query = document.getElementById('searchInput').value.toLowerCase();
-            const resultsContainer = document.getElementById('searchResults');
-            resultsContainer.innerHTML = '';
+        function highlightText(text, query) {
+            if (!query) return text;
+            const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+            return text.replace(regex, '<mark>$1</mark>');
+        }
 
-            if (query) {
-                for (const [index, subtitle] of Object.entries(subtitles)) {
-                    if (subtitle.toLowerCase().includes(query)) {
-                        const resultItem = document.createElement('div');
-                        resultItem.className = 'search-result';
-                        resultItem.innerText = subtitle;
-                        resultItem.onclick = () => playSearchedSubtitle(index);
-                        resultsContainer.appendChild(resultItem);
+        function searchSubtitles() {
+            clearTimeout(searchTimeout); // 清除之前的定时器
+            
+            searchTimeout = setTimeout(() => {
+                const query = document.getElementById('searchInput').value.toLowerCase();
+                const resultsContainer = document.getElementById('searchResults');
+                resultsContainer.innerHTML = '';
+
+                if (query) {
+                    for (const [index, subtitle] of Object.entries(subtitles)) {
+                        if (subtitle.toLowerCase().includes(query)) {
+                            const resultItem = document.createElement('div');
+                            resultItem.className = 'search-result';
+                            resultItem.innerHTML = highlightText(subtitle, query);
+                            resultItem.onclick = () => playSearchedSubtitle(index);
+                            resultsContainer.appendChild(resultItem);
+                        }
                     }
                 }
-            }
+            }, 300); // 300ms 延迟
         }
 
         function playSearchedSubtitle(index) {
