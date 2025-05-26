@@ -298,7 +298,7 @@
                 "sections": [
                     {
                         "title": "Perfekt 的构成与规则",
-                        "explanation": "Perfekt（完成时）由两个部分组成：Hilfsverb（助动词 haben 或 sein）+ Partizip II（过去分词）。规则动词的 Partizip II 通常以 ge- 开头，词干后加 -t。",
+                        "explanation": "Perfekt（完成时）由两个部分组成：Hilfsverb（助动词 haben 或 sein）+ Partizip II（过去分词）。\n规则动词的 Partizip II 通常结构为：ge + 动词词干 + t。\n这个结构在口语中广泛使用，尤其是描述最近发生的事情。",
                         "examples": [
                             {
                                 "question": "Ich lerne Deutsch.",
@@ -401,12 +401,222 @@
                 ],
                 "tips": [
                     "Perfekt = 助动词（haben/sein）+ Partizip II",
-                    "规则动词构成：ge + 动词词干 + t，例如: spielen → gespielt",
-                    "大多数动词用 haben，表示运动方向变化的动词用 sein",
-                    "例：Ich habe einen Kaffee gekocht. / Er ist nach Paris geflogen.",
-                    "Perfekt 常用于日常口语；Präteritum 更常见于书面语"
+                    "规则动词 Partizip II 构成方式：ge + 词干 + t",
+                    "词干以 -ieren 结尾的不加 ge，例如: studieren → studiert",
+                    "以 be-, ver-, ent- 开头的词也不加 ge，例如: besuchen → besucht",
+                    "大多数动词使用 haben；表示移动/变化的动词使用 sein，如 gehen, fahren",
+                    "Perfekt 常用于口语中，而 Präteritum 更多用于书面语和文学",
+                    "例句：Er hat das Auto gekauft. / Sie ist nach Berlin gefahren."
                 ]
-            }
+            },
+            {
+                "id": "zeiten_perfekt_uebersicht",
+                "title": "德语时态概览与 Perfekt 结构总结",
+                "description": "总结德语中 Präsens（现在时）、Präteritum（过去时）与 Perfekt（完成时）的基本概念和构造方法，重点介绍 Perfekt 的构成规则及其使用。",
+                "sections": [
+                  {
+                    "title": "德语三大主要时态概览",
+                    "explanation": "德语中常用的时态包括现在时（Präsens）、过去时（Präteritum）和完成时（Perfekt）。Präsens 用于当前或将来的动作，Präteritum 多用于书面语中的叙述，而 Perfekt 用于口语中表示已经完成的动作。",
+                    "examples": [
+                      {
+                        "question": "Präsens – Gegenwart（现在）",
+                        "answer": "Ich lerne Deutsch. / Der Bus fährt um 10.15 Uhr.",
+                        "translation": {
+                          "question": "现在发生的动作",
+                          "answer": "我正在学德语。/ 公交车在10:15出发。"
+                        }
+                      },
+                      {
+                        "question": "Präteritum – Vergangenheit（过去）",
+                        "answer": "Ich hatte viel Arbeit. / Du warst im Kino.",
+                        "translation": {
+                          "question": "一般用于书面语言",
+                          "answer": "我以前工作很多。/ 你在电影院。"
+                        }
+                      },
+                      {
+                        "question": "Perfekt – Vergangenheit（口语中使用）",
+                        "answer": "Ich habe einen Kaffee gekocht. / Er hat ein Auto gekauft.",
+                        "translation": {
+                          "question": "强调已完成的动作",
+                          "answer": "我煮了咖啡。/ 他买了辆车。"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Perfekt 的构成与动词变化",
+                    "explanation": "Perfekt 由助动词（haben 或 sein）+ Partizip II（过去分词）构成。规则动词构成 Partizip II 的规律为：ge + 词干 + t。不规则动词则可能出现词干变化，或仅用 -en 结尾。",
+                    "examples": [
+                      {
+                        "question": "规则动词",
+                        "answer": "spielen → gespielt / arbeiten → gearbeitet",
+                        "translation": {
+                          "question": "规则构造形式",
+                          "answer": "玩 → 玩过了 / 工作 → 工作过了"
+                        }
+                      },
+                      {
+                        "question": "不规则动词（无元音变化）",
+                        "answer": "fahren → gefahren",
+                        "translation": {
+                          "question": "没有词干元音变化",
+                          "answer": "驾车 → 驾车过了"
+                        }
+                      },
+                      {
+                        "question": "不规则动词（有元音变化）",
+                        "answer": "schwimmen → geschwommen",
+                        "translation": {
+                          "question": "词干元音变化",
+                          "answer": "游泳 → 游过了"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "助动词 haben 与 sein 的选择",
+                    "explanation": "大多数动词使用 haben 构成 Perfekt。使用 sein 的情况：1）表示地点变动（如 gehen, fahren）2）表示状态变化或事件发生（如 passieren, bleiben）。",
+                    "examples": [
+                      {
+                        "question": "Ortswechsel / Bewegung",
+                        "answer": "Ich bin nach Hause gegangen.",
+                        "translation": {
+                          "question": "地点变动",
+                          "answer": "我回家了。"
+                        }
+                      },
+                      {
+                        "question": "Zustand / Ereignis",
+                        "answer": "Es ist gestern passiert.",
+                        "translation": {
+                          "question": "事件发生",
+                          "answer": "这件事昨天发生了。"
+                        }
+                      },
+                      {
+                        "question": "Normale Tätigkeiten",
+                        "answer": "Ich habe einen Kaffee gekocht.",
+                        "translation": {
+                          "question": "一般行为（使用 haben）",
+                          "answer": "我煮了咖啡。"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "tips": [
+                  "Perfekt = 助动词（haben/sein）+ Partizip II（过去分词）",
+                  "规则动词：ge + 词干 + t，如 lernen → gelernt",
+                  "不规则动词可能出现元音变化，如 schwimmen → geschwommen",
+                  "使用 sein 的典型动词：gehen, fahren, bleiben, passieren 等",
+                  "使用 haben 的典型动词：essen, trinken, machen, spielen 等",
+                  "Präteritum 更用于书面语，Perfekt 更常用于口语"
+                ]
+              },
+              {
+                "id": "perfekt_unregelmaessige_verben",
+                "title": "德语不规则动词的完成时（Perfekt）总结",
+                "description": "以下是不规则动词在完成时中的常见变形方式，包括 Partizip II（过去分词）和助动词选择，适用于日常口语与写作。",
+                "sections": [
+                  {
+                    "title": "常见不规则动词变形",
+                    "explanation": "不规则动词在构成 Perfekt 时，其 Partizip II（过去分词）通常以 ge- 开头、-en 结尾，并伴有词干的元音变化。这些动词通常配合助动词 haben 或 sein 使用。",
+                    "examples": [
+                      {
+                        "question": "Ich beginne den Kurs.",
+                        "answer": "Ich habe den Kurs begonnen. (beginnen → begonnen)",
+                        "translation": {
+                          "question": "我开始这门课程。",
+                          "answer": "我已经开始了这门课程。"
+                        }
+                      },
+                      {
+                        "question": "Wir bekommen ein Geschenk.",
+                        "answer": "Wir haben ein Geschenk bekommen. (bekommen → bekommen)",
+                        "translation": {
+                          "question": "我们收到礼物。",
+                          "answer": "我们收到了一个礼物。"
+                        }
+                      },
+                      {
+                        "question": "Er bleibt zu Hause.",
+                        "answer": "Er ist zu Hause geblieben. (bleiben → geblieben)",
+                        "translation": {
+                          "question": "他待在家里。",
+                          "answer": "他一直在家里。"
+                        }
+                      },
+                      {
+                        "question": "Sie bringt das Buch.",
+                        "answer": "Sie hat das Buch gebracht. (bringen → gebracht)",
+                        "translation": {
+                          "question": "她带书来了。",
+                          "answer": "她已经把书带来了。"
+                        }
+                      },
+                      {
+                        "question": "Ich denke an dich.",
+                        "answer": "Ich habe an dich gedacht. (denken → gedacht)",
+                        "translation": {
+                          "question": "我在想你。",
+                          "answer": "我想过你。"
+                        }
+                      },
+                      {
+                        "question": "Er isst Pizza.",
+                        "answer": "Er hat Pizza gegessen. (essen → gegessen)",
+                        "translation": {
+                          "question": "他吃披萨。",
+                          "answer": "他吃过披萨了。"
+                        }
+                      },
+                      {
+                        "question": "Wir fahren nach Berlin.",
+                        "answer": "Wir sind nach Berlin gefahren. (fahren → gefahren)",
+                        "translation": {
+                          "question": "我们去柏林。",
+                          "answer": "我们已经去过柏林了。"
+                        }
+                      },
+                      {
+                        "question": "Sie findet den Schlüssel.",
+                        "answer": "Sie hat den Schlüssel gefunden. (finden → gefunden)",
+                        "translation": {
+                          "question": "她找到钥匙了。",
+                          "answer": "她已经找到钥匙了。"
+                        }
+                      },
+                      {
+                        "question": "Du fliegst nach Wien.",
+                        "answer": "Du bist nach Wien geflogen. (fliegen → geflogen)",
+                        "translation": {
+                          "question": "你飞去维也纳。",
+                          "answer": "你已经飞到维也纳了。"
+                        }
+                      },
+                      {
+                        "question": "Ich gehe nach Hause.",
+                        "answer": "Ich bin nach Hause gegangen. (gehen → gegangen)",
+                        "translation": {
+                          "question": "我回家。",
+                          "answer": "我已经回家了。"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "tips": [
+                  "不规则动词 Partizip II 通常以 ge- 开头，-en 结尾，且词干可能变音",
+                  "如：sehen → gesehen, nehmen → genommen, schlafen → geschlafen",
+                  "助动词 haben 通用于大多数动词；sein 用于表地点移动或状态变化",
+                  "构成公式：haben/sein + Partizip II",
+                  "例：Ich habe gegessen. / Er ist gegangen."
+                ]
+              }
+              
+              
+            
 
             
         ]
