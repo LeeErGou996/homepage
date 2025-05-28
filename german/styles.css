@@ -174,51 +174,96 @@ h1, h2 {
 }
 
 /* 搜索框样式 */
-#searchContainer {
+.search-box {
     position: relative;
-    margin: 20px auto;
     max-width: 600px;
+    margin: 20px auto;
 }
 
 #searchInput {
     width: 100%;
-    padding: 10px 40px 10px 15px;
+    padding: 12px 40px 12px 15px;
     font-size: 16px;
-    border: 2px solid #1e40af;
-    border-radius: 5px;
-    box-sizing: border-box;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .clear-search {
     position: absolute;
-    right: 10px;
+    right: 12px;
     top: 50%;
     transform: translateY(-50%);
     background: none;
     border: none;
     font-size: 20px;
-    color: #666;
+    color: #94a3b8;
     cursor: pointer;
-    padding: 0 5px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
 }
 
 .clear-search:hover {
-    color: #1e40af;
+    background-color: #f1f5f9;
+    color: #64748b;
 }
 
-/* 搜索结果样式 */
+.search-filters {
+    max-width: 600px;
+    margin: 10px auto;
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+}
+
+.search-filters label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: #475569;
+    font-size: 14px;
+}
+
+.search-filter {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+#searchResults {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
 .word-item {
     background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px 0;
+    border-radius: 8px;
     padding: 15px;
-    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .word-item:hover {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .word-header {
@@ -230,43 +275,42 @@ h1, h2 {
 
 .word-text {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
     color: #1e40af;
 }
 
 .word-type {
     font-size: 14px;
-    color: #666;
-    background: #f0f0f0;
+    color: #64748b;
+    background: #f1f5f9;
     padding: 2px 8px;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .word-meaning {
-    color: #333;
-    margin: 5px 0;
+    color: #475569;
+    margin-bottom: 8px;
 }
 
 .word-example {
-    color: #666;
+    color: #64748b;
     font-style: italic;
-    margin-top: 5px;
-    padding-left: 10px;
-    border-left: 3px solid #1e40af;
+    font-size: 14px;
+    padding-top: 8px;
+    border-top: 1px solid #e2e8f0;
 }
 
-/* 高亮文本样式 */
 mark {
-    background-color: #ffeb3b;
-    padding: 2px;
+    background-color: #fef08a;
+    padding: 0 2px;
     border-radius: 2px;
 }
 
 .no-results {
     text-align: center;
-    color: #666;
+    color: #64748b;
     padding: 20px;
-    font-style: italic;
+    font-size: 16px;
 }
 
 /* 链接单词样式 */

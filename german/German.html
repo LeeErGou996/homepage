@@ -3,53 +3,535 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsch A1 Wort Lernseite</title>
     <title>Deutsch Wort Lernseite</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            transition: margin-left 0.3s;
+        }
+
+        h1, h2 {
+            color: #1e40af;
+            text-align: center;
+        }
+
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #f9f9f9;
+            position: fixed;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            transition: width 0.3s;
+            overflow-x: hidden;
+        }
+
+        .sidebar.collapsed {
+            width: 20px;
+            padding: 10px 0;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            font-size: 20px;
+            transition: opacity 0.3s;
+        }
+
+        .sidebar.collapsed h2 {
+            display: none;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            transition: opacity 0.3s;
+        }
+
+        .sidebar.collapsed ul {
+            display: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            color: #1e40af;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: margin-left 0.3s;
+        }
+
+        .content.collapsed {
+            margin-left: 40px;
+        }
+
+        .toggle-sidebar {
+            position: absolute;
+            top: 10px;
+            left: 210px;
+            background-color: #1e40af;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            border: none;
+            transition: left 0.3s;
+        }
+
+        .sidebar.collapsed + .toggle-sidebar {
+            left: 20px;
+        }
+
+        #wordDetail {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .word-list {
+            margin-top: 20px;
+            max-height: 200px; /* 限制高度 */
+            overflow-y: auto; /* 使列表可以滚动 */
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+
+        .word-item {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .word-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        .category-buttons,
+        .theme-buttons {
+            display: none;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .category-buttons button,
+        .theme-buttons button {
+            margin: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .grammar-section {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .grammar-section h3 {
+            color: #1e40af;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .grammar-section p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .grammar-category {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .grammar-category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .grammar-category-header h3 {
+            margin: 0;
+            color: #1e40af;
+        }
+
+        .grammar-category-content {
+            display: none;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        .grammar-category-content.show {
+            display: block;
+        }
+
+        .toggle-btn {
+            background: none;
+            border: none;
+            color: #1e40af;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 0 5px;
+        }
+
+        .word-item {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .word-item:last-child {
+            border-bottom: none;
+        }
+
+        .topic-description {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .grammar-section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .grammar-section h4 {
+            color: #1e40af;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .section-explanation {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            white-space: pre-line;
+        }
+
+        .examples-container {
+            margin: 15px 0;
+        }
+
+        .example-item {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .example-question {
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 8px;
+        }
+
+        .example-answer {
+            margin-bottom: 8px;
+        }
+
+        .example-translation {
+            color: #666;
+            font-style: italic;
+            padding-top: 8px;
+            border-top: 1px solid #eee;
+        }
+
+        .tips-container {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f7ff;
+            border-radius: 4px;
+        }
+
+        .tips-container h4 {
+            color: #1e40af;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .tips-container ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .tips-container li {
+            margin: 5px 0;
+            line-height: 1.4;
+        }
+
+        /* Partizip II 练习样式 */
+        .setup-options {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .option-group {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .exercise-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .progress {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .word-display {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .current-word {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1e40af;
+            margin: 10px 0;
+        }
+
+        .answer-input {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .answer-input input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .answer-input button {
+            padding: 10px 20px;
+            background-color: #1e40af;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .feedback {
+            text-align: center;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .learning-container {
+            display: grid;
+            gap: 20px;
+        }
+
+        .learning-group {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .word-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .word-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .results-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .results-summary {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .results-details {
+            display: grid;
+            gap: 10px;
+        }
+
+        .result-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .result-item.correct {
+            border-left: 4px solid #10b981;
+        }
+
+        .result-item.incorrect {
+            border-left: 4px solid #ef4444;
+        }
+
+        .result-actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .result-actions button {
+            padding: 10px 20px;
+            background-color: #1e40af;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <!-- 侧边栏 -->
     <div class="sidebar" id="sidebar">
         <h2>Funktionen Auswahl</h2>
         <ul>
-            <li data-action="showByCategory" data-category="词性">Nach Wortart sortieren</li>
-            <li data-action="showByCategory" data-category="主题">Nach Wortthema sortieren</li>
-            <li data-action="showRandomWord">Zufälliges Wort</li>
-            <li data-action="showRandomWordsInput">Zufällige Wörter nach Anzahl auswählen</li>
-            <li data-action="showSearchBox">Wort suchen</li>
-            <li data-action="showGrammar">Grammatik Übung</li>
+            <li onclick="showByCategory('词性')">Nach Wortart sortieren</li>
+            <li onclick="showByCategory('主题')">Nach Wortthema sortieren</li>
+            <li onclick="showRandomWord()">Zufälliges Wort</li>
+            <li onclick="showRandomWordsInput()">Zufällige Wörter nach Anzahl auswählen</li>
+            <li onclick="showSearchBox()">Wort suchen</li>
+            <li onclick="showGrammar()">Grammatik</li>
+            <li onclick="openPartizip2Page()">Partizip II Übung</li>
         </ul>
     </div>
- 
+
+
     <!-- 侧边栏折叠按钮 -->
-    <button class="toggle-sidebar" id="toggleSidebar">Seitenleiste einklappen</button>
+    <button class="toggle-sidebar" onclick="toggleSidebar()">Seitenleiste einklappen</button>
 
     <!-- 主内容区 -->
     <div class="content" id="content">
+        <h1>Deutsch A1 Wort Lernseite</h1>
         <h1>Deutsch Wort Lernseite</h1>
-
-        <!-- 加载动画 -->
-        <div class="loading" id="loading"></div>
 
         <!-- 词性按钮 -->
         <div class="category-buttons" id="categoryButtons">
-            <!-- 按钮将通过JavaScript动态生成 -->
+            <button onclick="filterByType('名词')">名词</button>
+            <button onclick="filterByType('动词')">动词</button>
+            <button onclick="filterByType('形容词')">形容词</button>
+            <button onclick="filterByType('副词')">副词</button>
+            <button onclick="filterByType('代词')">代词</button>
+            <button onclick="filterByType('介词')">介词</button>
+            <button onclick="filterByType('连词')">连词</button>
+            <button onclick="filterByType('感叹词')">感叹词</button>
+            <button onclick="filterByType('冠词')">冠词</button>
+            <button onclick="filterByType('情态动词')">情态动词</button>
+            <button onclick="filterByType('指示代词')">指示代词</button>
+            <button onclick="filterByTheme('动词短语')">动词短语</button>
+            <button onclick="filterByTheme('短语')">短语</button>
+            <button onclick="filterByTheme('疑问代词')">疑问代词</button>
+
         </div>
 
         <!-- 主题按钮 -->
         <div class="theme-buttons" id="themeButtons">
-            <!-- 按钮将通过JavaScript动态生成 -->
+            <button onclick="filterByTheme('个人信息')">个人信息</button>
+            <button onclick="filterByTheme('交通')">交通</button>
+            <button onclick="filterByTheme('人物')">人物</button>
+            <button onclick="filterByTheme('住宿')">住宿</button>
+            <button onclick="filterByTheme('信息')">信息</button>
+            <button onclick="filterByTheme('健康')">健康</button>
+
+            <button onclick="filterByTheme('商业')">商业</button>
+            <button onclick="filterByTheme('地理')">地理</button>
+            <button onclick="filterByTheme('天气')">天气</button>
+            <button onclick="filterByTheme('娱乐')">娱乐</button>
+            <button onclick="filterByTheme('学习')">学习</button>
+            <button onclick="filterByTheme('家居')">家居</button>
+            <button onclick="filterByTheme('家庭')">家庭</button>
+            <button onclick="filterByTheme('建筑')">建筑</button>
+
+            <button onclick="filterByTheme('情感')">情感</button>
+            <button onclick="filterByTheme('教育')">教育</button>
+            <button onclick="filterByTheme('文具')">文具</button>
+
+            <button onclick="filterByTheme('旅游')">旅游</button>
+            <button onclick="filterByTheme('时间')">时间</button>
+            <button onclick="filterByTheme('服务')">服务</button>
+            <button onclick="filterByTheme('沟通')">沟通</button>
+            <button onclick="filterByTheme('活动')">活动</button>
+
+            <button onclick="filterByTheme('物品')">物品</button>
+
+            <button onclick="filterByTheme('电子设备')">电子设备</button>
+
+            <button onclick="filterByTheme('社交')">社交</button>
+            <button onclick="filterByTheme('社会')">社会</button>
+
+            <button onclick="filterByTheme('职业')">职业</button>
+            <button onclick="filterByTheme('自然')">自然</button>
+            <button onclick="filterByTheme('衣物')">衣物</button>
+            <button onclick="filterByTheme('语言')">语言</button>
+            <button onclick="filterByTheme('财务')">财务</button>
+            <button onclick="filterByTheme('购物')">购物</button>
+            <button onclick="filterByTheme('身体状况')">身体状况</button>
+            <button onclick="filterByTheme('身体部位')">身体部位</button>
+            <button onclick="filterByTheme('运动')">运动</button>
+
+            <button onclick="filterByTheme('通讯')">通讯</button>
+            <button onclick="filterByTheme('邮寄')">邮寄</button>
+            <button onclick="filterByTheme('问候')">问候</button>
+            <button onclick="filterByTheme('音乐')">音乐</button>
+
+            <button onclick="filterByTheme('餐饮')">餐饮</button>
         </div>
 
         <!-- 搜索框 -->
-        <div id="searchContainer" style="display: none;">
-            <input type="text" id="searchInput" placeholder="输入单词或汉语意思" />
+        <div id="searchContainer" style="display: none; margin-top: 20px;">
+            <input type="text" id="searchInput" placeholder="输入单词或汉语意思" oninput="searchWords()" />
             <div id="searchResults" class="word-list"></div>
-        </div>
-
-        <!-- 随机单词数量输入框 -->
-        <div id="randomWordsInput" style="display: none;">
-            <input type="number" id="randomCount" placeholder="请输入数字" min="1" max="100" />
-            <button id="confirmRandom">确认</button>
         </div>
 
         <!-- 单词列表 -->
@@ -60,44 +542,547 @@
             <h3 id="wordTitle"></h3>
             <p><strong>例句:</strong> <span id="wordExample"></span></p>
             <p><strong>中文释义:</strong> <span id="wordMeaning"></span></p>
-            <button id="closeDetail">关闭</button>
+            <button onclick="closeDetail()">关闭</button>
         </div>
 
-        <!-- 链接单词详情 -->
-        <div id="linkedWordDetail"></div>
-
-        <!-- 语法练习区域 -->
-        <div id="grammarContainer" style="display: none; max-width: 800px; margin: 0 auto; padding: 20px; text-align: center;">
-            <h2 style="color: #1e40af; margin-bottom: 30px;">Grammatik Übung</h2>
-            <div style="margin: 20px 0;">
-                <div style="display: inline-block; padding: 10px 20px; color: #1e40af; text-decoration: underline; cursor: pointer; font-size: 18px; transition: all 0.3s ease;" 
-                     onmouseover="this.style.color='#3b82f6'; this.style.backgroundColor='rgba(59, 130, 246, 0.1)'; this.style.borderRadius='4px';" 
-                     onmouseout="this.style.color='#1e40af'; this.style.backgroundColor=''; this.style.borderRadius='';"
-                     onclick="GrammarManager.openA1Page()">A1</div>
-            </div>
+        <!-- 随机单词数量输入框 -->
+        <div id="randomWordsInput" style="display: none;">
+            <input type="number" id="randomCount" placeholder="请输入数字">
+            <button onclick="selectRandomWords()">确认</button>
         </div>
 
-        <!-- A1 界面 -->
-        <div id="a1Container" style="display: none; max-width: 800px; margin: 0 auto; padding: 20px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
-                <button style="padding: 8px 16px; background: #f0f0f0; border: none; border-radius: 4px; cursor: pointer; color: #666; transition: all 0.3s ease;"
-                        onmouseover="this.style.background='#e0e0e0'; this.style.color='#1e40af';"
-                        onmouseout="this.style.background='#f0f0f0'; this.style.color='#666';"
-                        onclick="GrammarManager.closeA1Page()">← Zurück</button>
-                <h2 style="color: #1e40af; margin: 0;">A1 Grammatik</h2>
-                <div style="width: 80px;"></div>
+    <!-- 用于显示链接单词的详细信息 -->
+    <div id="linkedWordDetail" style="display: none; border: 1px solid #ccc; padding: 10px; margin-top: 20px;"></div>
+
+    <!-- 语法内容 -->
+    <div id="grammarContent" style="display: none; margin-top: 20px;">
+        <h2>Deutsche Grammatik A1</h2>
+        <div id="grammarCategories"></div>
+    </div>
+
+    <!-- Partizip II 练习内容 -->
+    <div id="partizip2Setup" style="display: none; margin-top: 20px;">
+        <h2>Partizip II 练习</h2>
+        <div class="setup-options">
+            <div class="option-group">
+                <h3>练习模式</h3>
+                <input type="number" id="partizip2Count" min="1" max="50" value="10" placeholder="练习数量(1-50)">
+                <button onclick="startPartizip2Exercise()">开始练习</button>
             </div>
-            <div id="a1Content" style="background: white; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                <!-- 内容将通过 JavaScript 动态加载 -->
+            <div class="option-group">
+                <h3>学习模式</h3>
+                <button onclick="showPartizip2Learning()">查看所有动词</button>
             </div>
         </div>
     </div>
 
-    <!-- 引入JavaScript模块 -->
-    <script src="js/wordManager.js"></script>
-    <script src="js/uiManager.js"></script>
-    <script src="js/eventHandler.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/grammarManager.js"></script>
+    <div id="partizip2Exercise" style="display: none; margin-top: 20px;">
+        <h2>Partizip II 练习</h2>
+        <div class="exercise-container">
+            <div id="partizip2Progress" class="progress"></div>
+            <div class="word-display">
+                <h3>动词原形：</h3>
+                <div id="currentWord" class="current-word"></div>
+            </div>
+            <div class="answer-input">
+                <input type="text" id="partizip2Answer" placeholder="请输入过去分词" 
+                       onkeypress="if(event.key === 'Enter') checkPartizip2Answer()">
+                <button onclick="checkPartizip2Answer()">检查</button>
+                <button onclick="skipPartizip2Question()">跳过</button>
+                <button onclick="showResults()">提前结束</button>
+            </div>
+            <div id="partizip2Feedback" class="feedback"></div>
+        </div>
+    </div>
+
+    <div id="partizip2Learning" style="display: none; margin-top: 20px;">
+        <h2>Partizip II 学习</h2>
+        <div id="partizip2LearningList" class="learning-container"></div>
+    </div>
+
+    <div id="partizip2Results" style="display: none; margin-top: 20px;">
+        <h2>练习结果</h2>
+        <div id="partizip2ResultsList" class="results-container"></div>
+        <div class="result-actions">
+            <button onclick="showPartizip2Setup()">返回</button>
+            <button onclick="startPartizip2Exercise()">重新练习</button>
+        </div>
+    </div>
+
+    </div>
+
+    <script>
+
+            const jsonFiles = ['adjs.json', 'advs.json', 'nouns.json','preps.json','pronouns.json','verbs.json', 'words.json']; // 这里列出文件夹下的所有 JSON 文件名
+            let words = [];
+
+            Promise.all(
+                jsonFiles.map(file =>
+                    fetch(file)
+                        .then(response => response.json())
+                        .catch(error => console.error(`加载文件 ${file} 失败:`, error))
+                )
+            )
+            .then(dataArray => {
+                // 合并所有文件的数据到全局变量
+                words = dataArray.flat(); // 合并多个数组为一个
+                console.log('所有单词数据已加载:', words);
+            })
+            .catch(error => console.error('加载文件数据失败:', error));
+
+        // 显示随机单词
+        function showRandomWord() {
+            clearSearch();
+            document.getElementById('randomWordsInput').style.display = 'none'; // 隐藏随机单词输入框
+            if (words.length > 0) {
+                const randomWord = words[Math.floor(Math.random() * words.length)];
+                displayWordDetail(randomWord);
+            } else {
+                console.error('单词数据尚未加载');
+            }
+        }
+
+        // 按词性过滤单词
+        function filterByType(type) {
+            const filteredWords = words.filter(word => word.type === type);
+            displayWords(filteredWords);
+        }
+
+        // 按主题过滤单词
+        function filterByTheme(theme) {
+            const filteredWords = words.filter(word => word.subCategory === theme);
+            displayWords(filteredWords);
+        }
+
+        // 显示单词列表
+        function displayWords(wordList) {
+            const wordListDiv = document.getElementById('wordList');
+            wordListDiv.innerHTML = ''; // 清空列表
+            wordList.forEach((wordObj) => {
+                const wordItem = document.createElement('div');
+                wordItem.className = 'word-item';
+                wordItem.innerText = `${wordObj.word} (${wordObj.type}) - ${wordObj.subCategory}`;
+                wordItem.onclick = () => showWordDetail(wordObj);
+                wordListDiv.appendChild(wordItem);
+            });
+        }
+
+        // 显示单词详细信息
+        function displayWordDetail(wordObj) {
+            const categoryButtons = document.getElementById('categoryButtons');
+            const themeButtons = document.getElementById('themeButtons');
+            const wordList = document.getElementById('wordList');
+
+            categoryButtons.style.display = 'none';
+            themeButtons.style.display = 'none';
+            wordList.innerHTML = '';
+
+            showWordDetail(wordObj);
+        }
+
+        // 显示单词详情
+        function showWordDetail(wordObj) {
+            document.getElementById('wordDetail').style.display = 'block';
+            document.getElementById('wordTitle').innerText = wordObj.word;
+            document.getElementById('wordExample').innerText = wordObj.example;
+            document.getElementById('wordMeaning').innerText = wordObj.meaning;
+        }
+
+        // 关闭单词详情
+        function closeDetail() {
+            document.getElementById('wordDetail').style.display = 'none';
+        }
+
+        // 折叠侧边栏
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const content = document.getElementById('content');
+            sidebar.classList.toggle('collapsed');
+            content.classList.toggle('collapsed');
+        }
+
+
+
+        // 从单词表中随机挑选指定数量的单词并展示汉语释义
+        function selectRandomWords() {
+            const count = parseInt(document.getElementById('randomCount').value);
+            const randomWords = [];
+            if (words.length > 0 && count > 0) {
+                for (let i = 0; i < count && i < words.length; i++) {
+                    const randomIndex = Math.floor(Math.random() * words.length);
+                    randomWords.push(words[randomIndex]);
+                }
+                displayRandomWords(randomWords);
+            } else {
+                alert("请输入有效的数字");
+            }
+        }
+
+        // 显示随机选中的单词的汉语释义，点击汉语查看拼写和例句
+        function displayRandomWords(wordList) {
+            const wordListDiv = document.getElementById('wordList');
+            wordListDiv.innerHTML = ''; // 清空列表
+            wordList.forEach((wordObj) => {
+                const wordItem = document.createElement('div');
+                wordItem.className = 'word-item';
+                wordItem.innerText = wordObj.meaning;
+                wordItem.onclick = () => showWordDetail(wordObj);
+                wordListDiv.appendChild(wordItem);
+            });
+        }
+
+        // 显示单词详细信息并链接相关例句中的单词
+        function showWordDetail(wordObj) {
+            const wordDetailDiv = document.getElementById('wordDetail');
+            wordDetailDiv.style.display = 'block';
+            document.getElementById('wordTitle').innerText = wordObj.word;
+            document.getElementById('wordExample').innerHTML = linkifyExample(wordObj.example);
+            document.getElementById('wordMeaning').innerText = wordObj.meaning;
+        }
+
+        // 链接化例句中的单词，模糊匹配
+        function linkifyExample(exampleText) {
+            const wordsInExample = exampleText.split(' ');
+
+            return wordsInExample.map(word => {
+                const cleanWord = word.replace(/[.,!?;:]/g, ''); // 去掉标点符号
+
+                // 使用正则表达式匹配单词的不同形式（忽略大小写）
+                const matchedWord = words.find(item => {
+
+                    const itemBaseWord = item.word.replace(/^(der|die|das|ein|eine|einen|einem|dem|den)\s+/i, '');
+                    const regex = new RegExp(`^(${itemBaseWord}|${itemBaseWord}s?)$`, 'i'); // 支持复数形式
+                    return regex.test(cleanWord);
+                });
+
+                if (matchedWord) {
+                    return `<a href="#" onclick="showLinkedWordDetail('${matchedWord.word}')" style="color: blue; text-decoration: underline;">${word}</a>`;
+                }
+                return word;
+            }).join(' ');
+        }
+
+
+
+
+        // 显示链接单词的详细信息
+        function showLinkedWordDetail(word) {
+            const matchedWord = words.find(item => item.word.toLowerCase() === word.toLowerCase());
+            if (matchedWord) {
+                const linkedDetailDiv = document.getElementById('linkedWordDetail');
+                linkedDetailDiv.innerHTML = `
+                    <strong>${matchedWord.word}</strong><br>
+                    例句: ${linkifyExample(matchedWord.example)}<br>
+                    释义: ${matchedWord.meaning}<br>
+                    <button onclick="closeLinkedWordDetail()" style="margin-top: 10px; cursor: pointer;">关闭</button>
+                `;
+                linkedDetailDiv.style.display = 'block'; // 显示详细信息
+            }
+        }
+
+
+        // 显示词性或主题选项
+        function showByCategory(categoryType) {
+            clearSearch();
+
+
+            // 根据选择显示对应的按钮和内容
+            if (categoryType === '词性') {
+                categoryButtons.style.display = 'block';
+            } else if (categoryType === '主题') {
+                themeButtons.style.display = 'block';
+            }
+            const wordList = document.getElementById('wordList');
+            wordList.innerHTML = '';
+
+
+            // document.getElementById('randomWordsInput').style.display = 'block';
+            document.getElementById('searchContainer').style.display = 'block';
+            document.getElementById('wordList').style.display = 'block';
+            // document.getElementById('linkedWordDetail').style.display = 'block';
+            // document.getElementById('randomWordsInput').style.display = 'block';
+
+
+        }
+
+        // 显示随机单词数量输入框
+        function showRandomWordsInput() {
+            clearSearch();
+            // const categoryButtons = document.getElementById('categoryButtons');
+            // const themeButtons = document.getElementById('themeButtons');
+            // const wordList = document.getElementById('wordList');
+            // const wordDetail = document.getElementById('wordDetail');
+            // const linkedDetailDiv = document.getElementById('linkedWordDetail');
+
+            // // 清空其他内容
+            // categoryButtons.style.display = 'none';
+            // themeButtons.style.display = 'none';
+            // wordList.innerHTML = '';
+            // wordDetail.style.display = 'none';
+            // linkedDetailDiv.style.display = 'none'; // 隐藏链接单词的详细信息
+
+            // 显示随机单词输入框
+
+            // document.getElementById('searchContainer').style.display = 'block';
+            // document.getElementById('searchInput').style.display = 'block';
+
+
+            document.getElementById('randomWordsInput').style.display = 'block';
+            document.getElementById('searchResults').style.display = 'block';
+            document.getElementById('wordList').style.display = 'block';
+            // document.getElementById('wordDetail').style.display = 'block';
+            // document.getElementById('randomWordsInput').style.display = 'block';
+
+
+        }
+
+        // 其他相关函数可以保持不变...
+
+
+        // 链接化例句中的单词，模糊匹配
+        function linkifyExample(exampleText) {
+            const wordsInExample = exampleText.split(' ');
+
+            return wordsInExample.map(word => {
+                const cleanWord = word.replace(/[.,!?;:]/g, ''); // 去掉标点符号
+
+                // 使用正则表达式匹配单词的不同形式（忽略大小写）
+                const matchedWord = words.find(item => {
+                    // 去掉冠词进行匹配
+                    const itemBaseWord = item.word.replace(/^(der|die|das|ein|eine|einen|einem|dem|den)\s+/i, '');
+
+                    // 处理元音变化和复数形式
+                    const regex = new RegExp(`^(${itemBaseWord}|${itemBaseWord}s?|${itemBaseWord.replace(/a/, 'ä')}` +
+                        `|${itemBaseWord.replace(/o/, 'ö')}|${itemBaseWord.replace(/u/, 'ü')}|${itemBaseWord.replace(/ä/, 'a')}` +
+                        `|${itemBaseWord.replace(/ö/, 'o')}|${itemBaseWord.replace(/ü/, 'u')})$`, 'i');
+
+                    // 检查原始单词和去掉冠词后的匹配
+                    return regex.test(cleanWord) || regex.test(cleanWord.replace(/^(der|die|das|ein|eine|einen|einem|dem|den)\s+/i, ''));
+                });
+
+                if (matchedWord) {
+                    return `<a href="#" onclick="showLinkedWordDetail('${matchedWord.word}')" style="color: blue; text-decoration: underline;">${word}</a>`;
+                }
+                return word;
+            }).join(' ');
+        }
+
+
+
+
+
+        // 关闭链接单词的详细信息
+        function closeLinkedWordDetail() {
+            const linkedDetailDiv = document.getElementById('linkedWordDetail');
+            linkedDetailDiv.style.display = 'none'; // 隐藏详细信息
+        }
+
+        function showSearchBox() {
+            clearSearch();
+
+            // document.getElementById('randomWordsInput').style.display = 'block';
+            document.getElementById('searchContainer').style.display = 'block';
+            document.getElementById('searchInput').style.display = 'block';
+            document.getElementById('searchResults').style.display = 'block';
+            // document.getElementById('wordList').style.display = 'block';
+            // document.getElementById('wordDetail').style.display = 'block';
+            // document.getElementById('linkedWordDetail').style.display = 'block';
+            // document.getElementById('randomWordsInput').style.display = 'block';
+            // document.getElementById('categoryButtons').style.display = 'block';
+            // document.getElementById('themeButtons').style.display = 'block';
+        }
+
+        function searchWords() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const results = words.filter(word => 
+                word.word.toLowerCase().includes(input) || 
+                word.meaning.toLowerCase().includes(input)
+            );
+            displaySearchResults(results);
+        }
+
+        function displaySearchResults(results) {
+            const resultsDiv = document.getElementById('searchResults');
+            resultsDiv.innerHTML = ''; // 清空结果
+            results.forEach((wordObj) => {
+                const resultItem = document.createElement('div');
+                resultItem.className = 'word-item';
+                resultItem.innerText = `${wordObj.word} (${wordObj.type}) - ${wordObj.meaning}`;
+                resultItem.onclick = () => showWordDetail(wordObj);
+                resultsDiv.appendChild(resultItem);
+            });
+        }
+
+        // 清除搜索框和结果的通用函数
+        function clearSearch() {
+            const elements = [
+                'searchContainer',
+                'searchInput',
+                'searchResults',
+                'wordList',
+                'wordDetail',
+                'linkedWordDetail',
+                'randomWordsInput',
+                'categoryButtons',
+                'themeButtons',
+                'grammarContent',
+                'partizip2Setup',
+                'partizip2Exercise',
+                'partizip2Learning',
+                'partizip2Results'
+            ];
+
+            elements.forEach(id => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.style.display = 'none';
+                }
+            });
+
+            // 清除搜索输入
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) {
+                searchInput.value = '';
+            }
+        }
+
+        function showGrammar() {
+            clearSearch();
+            const grammarContent = document.getElementById('grammarContent');
+            if (grammarContent) {
+                grammarContent.style.display = 'block';
+                loadGrammarContent();
+            }
+        }
+
+        function loadGrammarContent() {
+            const grammarCategories = document.getElementById('grammarCategories');
+            grammarCategories.innerHTML = '';
+
+            // 加载grammar.json文件
+            fetch('js/grammar.json')
+                .then(response => response.json())
+                .then(data => {
+                    if (data && data.A1 && data.A1.topics) {
+                        data.A1.topics.forEach(topic => {
+                            const topicDiv = document.createElement('div');
+                            topicDiv.className = 'grammar-category';
+                            
+                            const header = document.createElement('div');
+                            header.className = 'grammar-category-header';
+                            header.innerHTML = `
+                                <h3>${topic.title}</h3>
+                                <button class="toggle-btn">+</button>
+                            `;
+
+                            const content = document.createElement('div');
+                            content.className = 'grammar-category-content';
+
+                            // 添加描述
+                            if (topic.description) {
+                                const description = document.createElement('p');
+                                description.className = 'topic-description';
+                                description.textContent = topic.description;
+                                content.appendChild(description);
+                            }
+
+                            // 添加各个部分
+                            if (topic.sections) {
+                                topic.sections.forEach(section => {
+                                    const sectionDiv = document.createElement('div');
+                                    sectionDiv.className = 'grammar-section';
+
+                                    // 添加部分标题
+                                    if (section.title) {
+                                        const sectionTitle = document.createElement('h4');
+                                        sectionTitle.textContent = section.title;
+                                        sectionDiv.appendChild(sectionTitle);
+                                    }
+
+                                    // 添加解释
+                                    if (section.explanation) {
+                                        const explanation = document.createElement('p');
+                                        explanation.className = 'section-explanation';
+                                        explanation.textContent = section.explanation;
+                                        sectionDiv.appendChild(explanation);
+                                    }
+
+                                    // 添加示例
+                                    if (section.examples) {
+                                        const examplesDiv = document.createElement('div');
+                                        examplesDiv.className = 'examples-container';
+                                        section.examples.forEach(example => {
+                                            const exampleDiv = document.createElement('div');
+                                            exampleDiv.className = 'example-item';
+                                            exampleDiv.innerHTML = `
+                                                <div class="example-question">${example.question}</div>
+                                                <div class="example-answer">${example.answer}</div>
+                                                <div class="example-translation">
+                                                    <div>${example.translation.question}</div>
+                                                    <div>${example.translation.answer}</div>
+                                                </div>
+                                            `;
+                                            examplesDiv.appendChild(exampleDiv);
+                                        });
+                                        sectionDiv.appendChild(examplesDiv);
+                                    }
+
+                                    content.appendChild(sectionDiv);
+                                });
+                            }
+
+                            // 添加提示
+                            if (topic.tips && topic.tips.length > 0) {
+                                const tipsDiv = document.createElement('div');
+                                tipsDiv.className = 'tips-container';
+                                const tipsTitle = document.createElement('h4');
+                                tipsTitle.textContent = '提示';
+                                tipsDiv.appendChild(tipsTitle);
+                                
+                                const tipsList = document.createElement('ul');
+                                topic.tips.forEach(tip => {
+                                    const tipItem = document.createElement('li');
+                                    tipItem.textContent = tip;
+                                    tipsList.appendChild(tipItem);
+                                });
+                                tipsDiv.appendChild(tipsList);
+                                content.appendChild(tipsDiv);
+                            }
+
+                            // 添加点击事件
+                            header.addEventListener('click', () => {
+                                content.classList.toggle('show');
+                                const btn = header.querySelector('.toggle-btn');
+                                btn.textContent = content.classList.contains('show') ? '-' : '+';
+                            });
+
+                            topicDiv.appendChild(header);
+                            topicDiv.appendChild(content);
+                            grammarCategories.appendChild(topicDiv);
+                        });
+                    } else {
+                        grammarCategories.innerHTML = '<p>暂无语法数据</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('加载语法数据失败:', error);
+                    grammarCategories.innerHTML = '<p>加载语法数据失败</p>';
+                });
+        }
+
+        function openPartizip2Page() {
+            clearSearch();
+            document.getElementById('partizip2Setup').style.display = 'block';
+        }
+
+    </script>
+    <script src="./js/partizip2.js"></script>
+    <script>
+        window.startPartizip2Exercise = startPartizip2Exercise;
+        window.showPartizip2Learning = showPartizip2Learning;
+        window.checkPartizip2Answer = checkPartizip2Answer;
+        window.skipPartizip2Question = skipPartizip2Question;
+        window.showPartizip2Setup = showPartizip2Setup;
+    </script>
 </body>
 </html>
