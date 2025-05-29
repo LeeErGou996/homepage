@@ -71,6 +71,27 @@ const partizip2Data = [
         example: "Sie ist mit dem Auto gefahren."
     },
     {
+        "infinitive": "fliegen",
+        "partizip2": "geflogen",
+        "meaning": "飞",
+        "category": "irregular",
+        "example": "Ich bin nach Berlin geflogen."
+    },
+    {
+        "infinitive": "laufen",
+        "partizip2": "gelaufen",
+        "meaning": "跑，走",
+        "category": "irregular",
+        "example": "Er ist sehr schnell gelaufen."
+    },
+    {
+        "infinitive": "springen",
+        "partizip2": "gesprungen",
+        "meaning": "跳",
+        "category": "irregular",
+        "example": "Das Kind ist hoch gesprungen."
+    },
+    {
         infinitive: "bekommen",
         partizip2: "bekommen",
         meaning: "得到",
@@ -106,6 +127,13 @@ const partizip2Data = [
         example: "Der Film hat mir gefallen."
     },
     {
+        "infinitive": "fallen",
+        "partizip2": "gefallen",
+        "meaning": "掉下",
+        "category": "irregular",
+        "example": "Sie ist auf den Boden gefallen."
+    },
+    {
         infinitive: "gehören",
         partizip2: "gehört",
         meaning: "属于",
@@ -135,7 +163,7 @@ const partizip2Data = [
     },
     {
         infinitive: "anprobieren",
-        partizip2: "angeprobt",
+        partizip2: "anprobiert",
         meaning: "试穿",
         category: "separableRegular",
         example: "Ich habe das Kleid anprobiert."
@@ -183,11 +211,18 @@ const partizip2Data = [
         example: "Ich habe lange gestanden."
     },
     {
-        infinitive: "genehmen",
+        infinitive: "nehmen",
         partizip2: "genommen",
         meaning: "拿",
         category: "irregular",
         example: "Ich habe das Buch genommen."
+    },
+    {
+        "infinitive": "annehmen",
+        "partizip2": "angenommen",
+        "meaning": "接受",
+        "category": "separableIrregular",
+        "example": "Ich habe das Geschenk angenommen."
     },
     {
         infinitive: "anziehen",
@@ -209,6 +244,27 @@ const partizip2Data = [
         meaning: "到达",
         category: "separableIrregular",
         example: "Der Zug ist pünktlich angekommen."
+    },
+    {
+        "infinitive": "reisen",
+        "partizip2": "gereist",
+        "meaning": "旅行",
+        "category": "regular",
+        "example": "Sie ist viel gereist."
+    },
+    {
+        "infinitive": "einsteigen",
+        "partizip2": "eingestiegen",
+        "meaning": "上车",
+        "category": "separableIrregular",
+        "example": "Er ist in den Bus eingestiegen."
+    },
+    {
+        "infinitive": "aussteigen",
+        "partizip2": "ausgestiegen",
+        "meaning": "下车",
+        "category": "separableIrregular",
+        "example": "Wir sind an der Haltestelle ausgestiegen."
     },
     {
         infinitive: "bezahlen",
@@ -294,6 +350,20 @@ const partizip2Data = [
     "category": "separableIrregular",
     "example": "Wir haben den Kindern ein Buch vorgelesen."
   },
+  {
+    "infinitive": "bleiben",
+    "partizip2": "geblieben",
+    "meaning": "停留",
+    "category": "irregular",
+    "example": "Wir sind zu Hause geblieben."
+},
+{
+    "infinitive": "werden",
+    "partizip2": "geworden",
+    "meaning": "变成",
+    "category": "irregular",
+    "example": "Er ist Arzt geworden."
+},
   {
     "infinitive": "aufstehen",
     "partizip2": "aufgestanden",
