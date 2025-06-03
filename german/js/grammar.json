@@ -613,7 +613,73 @@
                   "构成公式：haben/sein + Partizip II",
                   "例：Ich habe gegessen. / Er ist gegangen."
                 ]
+              },
+              {
+                "id": "adjektivdeklination_dies",
+                "title": "德语形容词变格（Adjektivdeklination）— 指示词“dies-”在主格与宾格中的应用",
+                "description": "在德语中，带有指示词如“dies-”的形容词变格遵循‘弱变化’规则，其词尾会根据性别、数和格发生变化。主格和宾格的变化规则需要特别掌握，尤其是阳性和复数的变化。",
+                "sections": [
+                  {
+                    "title": "dies- + 形容词的变格形式",
+                    "explanation": "当形容词前有“dies-”这类限定词时，形容词使用‘弱变化’，词尾根据主格/宾格和名词的性别/数发生变化。阳性宾格和所有复数使用 -en，其他使用 -e。",
+                    "examples": [
+                      {
+                        "question": "阳性主格:",
+                        "answer": "Dieser rote Pullover ist schön.",
+                        "translation": {
+                          "question": "这件红色的毛衣很漂亮。",
+                          "answer": "der + rot + Pullover → dieser rote Pullover"
+                        }
+                      },
+                      {
+                        "question": "阳性宾格:",
+                        "answer": "Ich kaufe diesen roten Pullover.",
+                        "translation": {
+                          "question": "我买这件红色的毛衣。",
+                          "answer": "den + rot + Pullover → diesen roten Pullover"
+                        }
+                      },
+                      {
+                        "question": "阴性主格/宾格:",
+                        "answer": "Diese blaue Bluse passt mir nicht.",
+                        "translation": {
+                          "question": "这件蓝色的女衬衫不适合我。",
+                          "answer": "die + blau + Bluse → diese blaue Bluse"
+                        }
+                      },
+                      {
+                        "question": "中性主格/宾格:",
+                        "answer": "Ich finde dieses weiße T-Shirt schön.",
+                        "translation": {
+                          "question": "我觉得这件白色T恤很好看。",
+                          "answer": "das + weiß + T-Shirt → dieses weiße T-Shirt"
+                        }
+                      },
+                      {
+                        "question": "复数主格/宾格:",
+                        "answer": "Ich kaufe diese neuen Schuhe.",
+                        "translation": {
+                          "question": "我买这双新鞋。",
+                          "answer": "die + neu + Schuhe → diese neuen Schuhe"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "tips": [
+                    "“dies-” 是‘这个/这些’的指示限定词，变化形式如下：",
+                    "阳性：dieser（主格），diesen（宾格）",
+                    "阴性：diese（主格 & 宾格）",
+                    "中性：dieses（主格 & 宾格）",
+                    "复数：diese（主格 & 宾格）",
+                  "dies- 是‘这个/这些’的指示词，后面形容词采用‘弱变化’",
+                  "阳性主格形容词用 -e，宾格变 -en",
+                  "复数主格与宾格形容词都变 -en",
+                  "阴性与中性主宾格中形容词均用 -e",
+                  "只要有 dies-、der- 等限定词，形容词用‘弱变化’（-e 或 -en）"
+                ]
               }
+              
               
               
             

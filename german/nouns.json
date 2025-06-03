@@ -1482,14 +1482,7 @@
     "example": "Das findest du im Internet.",
     "meaning": "互联网"
   },
-  {
-    "word": "die Jacke (die, -n)",
-    "category": "主题",
-    "subCategory": "衣物",
-    "type": "名词",
-    "example": "Zieh dir eine Jacke an. Es ist kalt.",
-    "meaning": "夹克"
-  },
+
   {
     "word": "der Job (die, -en)",
     "category": "主题",
@@ -1971,6 +1964,135 @@
     "type": "名词",
     "example": "Wo finde ich Kleidung? – Jacken im ersten, Jeans im zweiten Stock.",
     "meaning": "衣物"
+  },
+  {
+    "word": "der Pullover (der, -)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Ich kaufe einen neuen Pullover.",
+    "meaning": "毛衣"
+  },
+  {
+    "word": "die Bluse (die, -n)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Die Bluse passt gut zur Hose.",
+    "meaning": "女衬衫"
+  },
+  {
+    "word": "das Kleid (das, -er)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Das Kleid sieht elegant aus.",
+    "meaning": "连衣裙"
+  },
+  {
+    "word": "die Schuhe (die, Pl.)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Ich trage heute neue Schuhe.",
+    "meaning": "鞋子"
+  },
+  {
+    "word": "das T-Shirt (das, -s)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Im Sommer trage ich gern ein T-Shirt.",
+    "meaning": "T恤"
+  },
+  {
+    "word": "der Gürtel (der, -)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Der Gürtel ist aus Leder.",
+    "meaning": "腰带"
+  },
+  {
+    "word": "der Anorak (der, -s)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Im Winter brauche ich einen warmen Anorak.",
+    "meaning": "防寒夹克，风雪大衣"
+  },
+
+  {
+    "word": "die Hose (die, -n)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Diese Hose ist zu eng.",
+    "meaning": "裤子"
+  },
+  {
+    "word": "der Rock (der, ⸚e)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Der Rock ist zu kurz.",
+    "meaning": "裙子"
+  },
+  {
+    "word": "die Jacke (die, -n)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Diese Jacke ist zu groß.",
+    "meaning": "夹克"
+  },
+  {
+    "word": "das Hemd (das, -en)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Ich trage gern ein weißes Hemd.",
+    "meaning": "衬衫"
+  },
+  {
+    "word": "der Gürtel (der, -)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Der Gürtel gefällt mir nicht.",
+    "meaning": "皮带"
+  },
+  {
+    "word": "das Parfüm (das, -e)",
+    "category": "主题",
+    "subCategory": "物品",
+    "type": "名词",
+    "example": "Das Parfüm steht dir gut.",
+    "meaning": "香水"
+  },
+  {
+    "word": "das Tuch (das, ⸚er)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Das Tuch steht mir nicht.",
+    "meaning": "围巾，头巾"
+  },
+  {
+    "word": "der Anzug (der, ⸚e)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Ich trage selten einen Anzug.",
+    "meaning": "西装"
+  },
+  {
+    "word": "der Schal (der, -e)",
+    "category": "主题",
+    "subCategory": "衣物",
+    "type": "名词",
+    "example": "Der Schal ist aus Wolle.",
+    "meaning": "围巾"
   },
   {
     "word": "der Koffer (die, -)",
