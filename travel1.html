@@ -382,6 +382,13 @@
                 cities: [
                     { name: 'HongKong', lat: 22.3193, lon: 114.1694 }
                 ]
+            },
+            'Hungary': {
+                lat: 47.1625,
+                lon: 19.5033,
+                cities: [
+                    { name: 'Budapest', lat: 47.4979, lon: 19.0402 }
+                ]
             }
         };
 
@@ -449,16 +456,22 @@
             const galleryDiv = document.getElementById('photo-gallery');
             galleryDiv.innerHTML = '';
 
-            const basePath = `travel/${countryName.toLowerCase()}_travel/${cityName.toLowerCase()}`;
-            const baseURL = `https://api.github.com/repos/LeeErGou996/homepage/contents/${basePath}`;
+            // 修改照片路径逻辑以匹配您的GitHub结构
+            let basePath;
+            if (countryName === 'Hungary' && cityName === 'Budapest') {
+                // 对于匈牙利的布达佩斯，直接从hungary_travel文件夹加载budapest1-15.jpg
+                basePath = 'travel/hungary_travel';
+                try {
+                    const response = await fetch(`https://api.github.com/repos/LeeErGou996/leeergou.github.io/contents/${basePath}`);
+                    const data = await response.json();
 
-            try {
-                const response = await fetch(baseURL);
-                const data = await response.json();
+                    // 筛选出budapest1.jpg到budapest15.jpg的文件
+                    const budapestFiles = data.filter(item => 
+                        item.type === 'file' && 
+                        /^budapest\d+\.jpg$/i.test(item.name)
+                    );
 
-                const imagePromises = data
-                    .filter(item => item.type === 'file' && /\.(jpg|jpeg|png)$/i.test(item.name))
-                    .map(item => {
+                    const imagePromises = budapestFiles.map(item => {
                         return new Promise((resolve, reject) => {
                             const img = new Image();
                             img.onload = () => resolve(img);
@@ -469,16 +482,47 @@
                         });
                     });
 
-                const images = await Promise.all(imagePromises);
-                images.forEach(img => galleryDiv.appendChild(img));
+                    const images = await Promise.all(imagePromises);
+                    images.forEach(img => galleryDiv.appendChild(img));
 
-                showPhotoModal();
-            } catch (error) {
-                console.error('Error loading photos:', error);
-                galleryDiv.innerHTML = `<p>${translations[currentLang].loadingError}</p>`;
-            } finally {
-                hideLoading();
+                    showPhotoModal();
+                } catch (error) {
+                    console.error('Error loading photos:', error);
+                    galleryDiv.innerHTML = `<p>${translations[currentLang].loadingError}</p>`;
+                }
+            } else {
+                // 原有的逻辑，用于其他国家/城市
+                basePath = `travel/${countryName.toLowerCase()}_travel/${cityName.toLowerCase()}`;
+                const baseURL = `https://api.github.com/repos/LeeErGou996/leeergou.github.io/contents/${basePath}`;
+
+                try {
+                    const response = await fetch(baseURL);
+                    const data = await response.json();
+
+                    const imagePromises = data
+                        .filter(item => item.type === 'file' && /\.(jpg|jpeg|png)$/i.test(item.name))
+                        .map(item => {
+                            return new Promise((resolve, reject) => {
+                                const img = new Image();
+                                img.onload = () => resolve(img);
+                                img.onerror = reject;
+                                img.src = item.download_url;
+                                img.alt = `Photo of ${cityName}`;
+                                img.loading = 'lazy';
+                            });
+                        });
+
+                    const images = await Promise.all(imagePromises);
+                    images.forEach(img => galleryDiv.appendChild(img));
+
+                    showPhotoModal();
+                } catch (error) {
+                    console.error('Error loading photos:', error);
+                    galleryDiv.innerHTML = `<p>${translations[currentLang].loadingError}</p>`;
+                }
             }
+            
+            hideLoading();
         }
 
         // 显示/隐藏加载动画
