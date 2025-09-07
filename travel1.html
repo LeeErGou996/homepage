@@ -459,8 +459,8 @@
             // 修改照片路径逻辑以匹配您的GitHub结构
             let basePath;
             if (countryName === 'Hungary' && cityName === 'Budapest') {
-                // 对于匈牙利的布达佩斯，直接从hungary_travel文件夹加载budapest1-15.jpg
-                basePath = 'travel/hungary_travel';
+                // 对于匈牙利的布达佩斯，从hungary_travel/budapest文件夹加载budapest1-15.jpg
+                basePath = 'travel/hungary_travel/budapest';
                 try {
                     const response = await fetch(`https://api.github.com/repos/LeeErGou996/leeergou.github.io/contents/${basePath}`);
                     const data = await response.json();

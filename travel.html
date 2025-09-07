@@ -111,6 +111,7 @@
             <li id="homeLink">Overview</li>
             <li id="japanTravelLink">Japan Travel</li>
             <li id="hongKongTravelLink">Hong Kong Travel</li> <!-- 新增香港旅行链接 -->
+            <li id="hungaryTravelLink">Hungary Travel</li> <!-- 新增匈牙利旅行链接 -->
             <li id="germanTravelLink">Germany Travel</li> <!-- 新增德国旅行链接 -->
         </ul>
     </div>
@@ -153,6 +154,7 @@
         const japanTravelLink = document.getElementById('japanTravelLink');
         const homeLink = document.getElementById('homeLink');
         const hongKongTravelLink = document.getElementById('hongKongTravelLink');
+        const hungaryTravelLink = document.getElementById('hungaryTravelLink');
         const germanTravelLink = document.getElementById('germanTravelLink');
 
         // 将图片 URL 转换为 blob 对象
@@ -255,6 +257,53 @@
                 const img = document.createElement('img');
                 img.src = photoUrl;
                 img.alt = `Travel Photo ${index + 1}`;
+                galleryContainer.appendChild(img);
+
+                img.addEventListener('click', () => {
+                    slideshow.style.display = 'flex';
+                    slideshowImage.src = photoUrl;
+                });
+
+                const thumbnail = document.createElement('img');
+                thumbnail.src = photoUrl;
+                thumbnail.alt = `Thumbnail ${index + 1}`;
+                thumbnail.addEventListener('click', () => {
+                    slideshow.style.display = 'flex';
+                    slideshowImage.src = photoUrl;
+                });
+                thumbnailContainer.appendChild(thumbnail);
+            });
+        }
+
+        // 显示 Hungary Travel 照片
+        function showHungaryTravelPhotos() {
+            galleryContainer.innerHTML = '';
+            thumbnailContainer.innerHTML = '';
+            travelThoughts.style.display = 'none';
+
+            const hungaryTravelPhotos = [
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest1.jpg',
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest2.jpg',
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest3.jpg',
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest4.jpg',
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest5.jpg',
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest6.jpg',
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest7.jpg',
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest8.jpg',
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest9.jpg',
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest10.jpg',
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest11.jpg',
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest12.jpg',
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest13.jpg',
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest14.jpg',
+                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest15.jpg'
+                
+            ];
+
+            hungaryTravelPhotos.forEach((photoUrl, index) => {
+                const img = document.createElement('img');
+                img.src = photoUrl;
+                img.alt = `Hungary Travel Photo ${index + 1}`;
                 galleryContainer.appendChild(img);
 
                 img.addEventListener('click', () => {
@@ -407,6 +456,7 @@
 
         hongKongTravelLink.addEventListener('click', showHongKongTravelPhotos);
         japanTravelLink.addEventListener('click', showJapanTravelPhotos);
+        hungaryTravelLink.addEventListener('click', showHungaryTravelPhotos); // 添加匈牙利事件监听器
         germanTravelLink.addEventListener('click', showGermanTravelPhotos); // 添加事件监听器
         homeLink.addEventListener('click', showTravelThoughts);
         slideshow.addEventListener('click', () => {
