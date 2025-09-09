@@ -202,7 +202,8 @@
               'lyra.txt': './images/lyra-bg.jpg',
               'okaerinasai.txt': './images/okaeri-bg.jpg',
               'aisurukokoro.txt': './images/aisurukokoro.jpg',
-              'auferstanden.txt': './images/auferstanden.png'
+              'auferstanden.txt': './images/auferstanden.png',
+              'battotai.txt': './images/battotai.png'
             };
 
             fetch(filename)
@@ -313,7 +314,8 @@
             // 定义歌曲数据
             const songs = [
                 { id: 'song7Link', text: 'かわいそうだよね', file: 'kawaisouda.txt' },
-                { id: 'song8Link', text: '廃墟からの復活(Auferstanden aus Ruinen) 東北きりたん ver.', file: 'auferstanden.txt' }
+                { id: 'song8Link', text: '廃墟からの復活(Auferstanden aus Ruinen) 東北きりたん ver.', file: 'auferstanden.txt' },
+                { id: 'song9Link', text: '抜刀隊', file: 'battotai.txt' }
             ];
 
             // 遍历歌曲数据，创建每一项
@@ -371,6 +373,10 @@
 
         song8Link.addEventListener('click', () => {
             loadLyrics('auferstanden.txt', '廃墟からの復活(Auferstanden aus Ruinen) 東北きりたん ver.');
+        });
+
+        song9Link.addEventListener('click', () => {
+            loadLyrics('battotai.txt', '拔刀隊');
         });
 
     </script>
