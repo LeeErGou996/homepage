@@ -141,7 +141,7 @@
                 <div class="scrollable-textarea readonly">
                     <p>📺 2025.9: アニメ「わたしが恋人になれるわけないじゃん、ムリムリ! (※ムリじゃなかった!?)」を追加しました </p>
                     <p>📺 2025.4: アニメ「この会社に好きな人がいます」「薬屋のひとりごと」を追加しました </p>
-                    <p>📺 2024.12: アニメ「私の幸せな結婚」を追加しました </p>
+                    <p>📺 2024.12: アニメ「BanG Dream! Ave Mujica」「私の幸せな結婚」を追加しました </p>
                     <p>📺 2024.12: アニメ「推しの子」を追加しました </p>
                     <p>📺 2024.10: アニメ「烏は主を選ばない」を追加しました </p>
                     <p>📺 2024.6: アニメ「シュタインズゲート」「響け！ユーフォニアムを追加しました」「BanG Dream! It's MyGO!!!!!」「月がきれい」を追加しました</p>
@@ -203,7 +203,17 @@
         ersiLink.addEventListener('click', () => {
             const entries = [
                 { id: 'euphoniumLink', text: 'Sound! Euphonium', handler: () => {
-                    contentDiv.innerHTML = '<h1>響け！ユーフォニアム</h1>';
+                    contentDiv.innerHTML = `
+                        <h1>響け！ユーフォニアム</h1>
+                        <p>Sound! Euphonium 「響け！ユーフォニアム」 is a series I hold in very high regard. While the third season had some controversies, it doesn't diminish the place this series holds in my heart. I also greatly appreciate the spin-off set in the same universe: Liz and the Blue Bird 「リズと青い鳥」</p>
+                        <p>This work sparked my interest in wind ensemble music. Though the pieces I listen to most frequently are from Sound! Euphonium:</p>
+                        <ul>
+                            <li><a href="https://www.bilibili.com/video/BV1vt411e7NL/?spm_id_from=333.337.search-card.all.click&vd_source=85f78634ae6a4437016f20e28a7f87c4" target="_blank">愛を見つけた場所</a></li>
+                            <li><a href="https://www.bilibili.com/video/BV1k7411A7eH/?spm_id_from=333.337.search-card.all.click&vd_source=85f78634ae6a4437016f20e28a7f87c4" target="_blank">RYDEEN</a></li>
+                            <li><strong><a href="https://www.bilibili.com/video/BV1pt411S7NY/?spm_id_from=333.337.search-card.all.click&vd_source=85f78634ae6a4437016f20e28a7f87c4" target="_blank">愛ゆえの決断</a></strong></li>
+                            <li><a href="https://www.bilibili.com/video/BV1Se411g7ta/?spm_id_from=333.337.search-card.all.click&vd_source=85f78634ae6a4437016f20e28a7f87c4" target="_blank">響け！ユーフォニアム</a></li>
+                        </ul>
+                    `;
                 }},
                 { id: 'mygoLink', text: 'BanG Dream! It\'s MyGO!!!!!', handler: () => {
                     contentDiv.innerHTML = '<h1>BanG Dream! It\'s MyGO!!!!!</h1>';
