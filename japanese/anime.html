@@ -139,6 +139,7 @@
             contentDiv.innerHTML = `
                 <h1>概要</h1>
                 <div class="scrollable-textarea readonly">
+                    <p>📺 2025.12: アニメ「私を喰べたい、ひとでなし」「千歳くんはラムネ瓶のなか」を追加しました </p>
                     <p>📺 2025.9: アニメ「わたしが恋人になれるわけないじゃん、ムリムリ! (※ムリじゃなかった!?)」を追加しました </p>
                     <p>📺 2025.4: アニメ「この会社に好きな人がいます」「薬屋のひとりごと」を追加しました </p>
                     <p>📺 2024.12: アニメ「BanG Dream! Ave Mujica」「私の幸せな結婚」を追加しました </p>
@@ -245,11 +246,16 @@
                 { id: 'kusuriLink', text: '薬屋のひとりごと', handler: () => {
                     contentDiv.innerHTML = '<h1>薬屋のひとりごと</h1>';
                 }},
-                { id: 'kusuriLink', text: 'わたしが恋人になれるわけないじゃん、ムリムリ! (※ムリじゃなかった!?)', handler: () => {
+                { id: 'muriLink', text: 'わたしが恋人になれるわけないじゃん、ムリムリ! (※ムリじゃなかった!?)', handler: () => {
                     contentDiv.innerHTML = '<h1>わたしが恋人になれるわけないじゃん、ムリムリ! (※ムリじゃなかった!?)</h1>';
+                }},
+                { id: 'hitodenashiLink', text: '私を喰べたい、ひとでなし', handler: () => {
+                    contentDiv.innerHTML = `<h1>私を喰べたい、ひとでなし</h1>
+                    <p>アニメのOP曲『贄-nie-』by 吉野すごく好きです。</p>`;
+                }},
+                { id: 'steinLink', text: '千歳くんはラムネ瓶のなか', handler: () => {
+                    contentDiv.innerHTML = '<h1>千歳くんはラムネ瓶のなか</h1>';
                 }}
-
-                
 
             ];
             generateYearContent(contentDiv, entries);
