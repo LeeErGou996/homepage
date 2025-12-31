@@ -114,6 +114,9 @@
             <li id="hungaryTravelLink">Hungary Travel</li> <!-- 新增匈牙利旅行链接 -->
             <li id="austriaTravelLink">Austria Travel</li> <!-- 新增奥地利旅行链接 -->
             <li id="germanTravelLink">Germany Travel</li> <!-- 新增德国旅行链接 -->
+            <li id="pragueTravelLink">Czech Travel</li> <!-- 新增布拉格旅行链接 -->
+            <li id="romaTravelLink">Italy Travel</li> <!-- 新增罗马旅行链接 -->
+            <li id="strasbourgTravelLink">France Travel</li> <!-- 新增斯特拉斯堡、科尔马旅行链接 -->
         </ul>
     </div>
 
@@ -137,6 +140,15 @@
 				<p>Munich is a big city, and the weather is often cloudy. When it is sunny, my mood feels better.</p>
             <h2>China 2025.8.26-2025.9.23</h2>
                 <p>I'm returning home for a break. On my way back, I stopped by Wien and Budapest.</p>
+            <h2>Czech 2025.11.115-2025.11.16</h2>
+                <p>Travel to Prague, Czech Republic.</p>
+                <!-- Photos will be added here -->
+            <h2>Italy & Vatican City 2025.12.6-2025.12.8</h2>
+                <p>Travel to Rome and Vatican City.</p>
+                <!-- Photos will be added here -->
+            <h2>France 2025.12.24-2025.12.25</h2>
+                <p>Travel to Strasbourg and Colmar, France for seichi junrei.</p>
+                <!-- Photos will be added here -->
         </div>
 
         <div class="slideshow">
@@ -160,6 +172,9 @@
         const hungaryTravelLink = document.getElementById('hungaryTravelLink');
         const austriaTravelLink = document.getElementById('austriaTravelLink');
         const germanTravelLink = document.getElementById('germanTravelLink');
+        const pragueTravelLink = document.getElementById('pragueTravelLink');
+        const romaTravelLink = document.getElementById('romaTravelLink');
+        const strasbourgTravelLink = document.getElementById('strasbourgTravelLink');
 
         // 将图片 URL 转换为 blob 对象
         function urlToBlob(url) {
@@ -184,165 +199,53 @@
             return URL.createObjectURL(blob);
         }
 
-        // 显示 Hong Kong Travel 照片
-        function showHongKongTravelPhotos() {
+        // 通用函数：递归加载文件夹中的所有图片
+        function loadTravelPhotos(folderPath, photoLabel) {
             galleryContainer.innerHTML = '';
             thumbnailContainer.innerHTML = '';
             travelThoughts.style.display = 'none';
 
-            const hongKongTravelPhotos = [
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hongkong_travel/20240515215903.jpg', // 替换为你的香港图片 URL
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hongkong_travel/20240515215929.jpg', 
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hongkong_travel/20240515215938.jpg', 
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hongkong_travel/20240515215946.jpg', 
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hongkong_travel/20240515215953.jpg', 
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hongkong_travel/20240515220008.jpg', 
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hongkong_travel/20240515220014.jpg', 
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hongkong_travel/20240515220020.jpg', 
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hongkong_travel/20240515220027.jpg', 
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hongkong_travel/20240515220033.jpg', 
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hongkong_travel/20240515220041.jpg', 
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hongkong_travel/20240515220045.jpg'
-            ];
+            // 显示加载提示
+            galleryContainer.innerHTML = '<p>Loading photos...</p>';
 
-            hongKongTravelPhotos.forEach((photoUrl, index) => {
-                const img = document.createElement('img');
-                img.src = photoUrl;
-                img.alt = `Hong Kong Travel Photo ${index + 1}`;
-                galleryContainer.appendChild(img);
+            // 递归获取所有图片文件
+            function getAllImages(path, allImages = []) {
+                return fetch(`https://api.github.com/repos/LeeErGou996/leeergou.github.io/contents/travel/${path}`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`Failed to load: ${path}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        const promises = [];
+                        
+                        data.forEach(item => {
+                            if (item.type === 'file' && /\.(jpg|jpeg|png|gif|webp|heic)$/i.test(item.name)) {
+                                allImages.push(item);
+                            } else if (item.type === 'dir') {
+                                // 递归处理子文件夹
+                                promises.push(getAllImages(`${path}/${item.name}`, allImages));
+                            }
+                        });
+                        
+                        return Promise.all(promises).then(() => allImages);
+                    });
+            }
 
-                img.addEventListener('click', () => {
-                    slideshow.style.display = 'flex';
-                    slideshowImage.src = photoUrl;
-                });
+            getAllImages(folderPath)
+                .then(allImages => {
+                    if (allImages.length === 0) {
+                        galleryContainer.innerHTML = '<p>No photos found in this folder.</p>';
+                        return;
+                    }
 
-                const thumbnail = document.createElement('img');
-                thumbnail.src = photoUrl;
-                thumbnail.alt = `Thumbnail ${index + 1}`;
-                thumbnail.addEventListener('click', () => {
-                    slideshow.style.display = 'flex';
-                    slideshowImage.src = photoUrl;
-                });
-                thumbnailContainer.appendChild(thumbnail);
-            });
-        }
+                    galleryContainer.innerHTML = '';
 
-        // 显示 Japan Travel 照片
-        function showJapanTravelPhotos() {
-            galleryContainer.innerHTML = '';
-            thumbnailContainer.innerHTML = '';
-            travelThoughts.style.display = 'none';
-
-            const japanTravelPhotos = [
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240429_091929.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240501_142522.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240502_110551.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240502_140502.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240504_170611.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240505_103139.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240429_043048.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240429_100001.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240429_115458.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240429_163029.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240430_080639.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240501_185346.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240502_090008.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240502_134257.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240503_114706.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240505_103022.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240505_111724.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/IMG_20240506_151454.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/kitauji.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/kitauji2.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/kitauji3.jpg'
-            ];
-
-            japanTravelPhotos.forEach((photoUrl, index) => {
-                const img = document.createElement('img');
-                img.src = photoUrl;
-                img.alt = `Travel Photo ${index + 1}`;
-                galleryContainer.appendChild(img);
-
-                img.addEventListener('click', () => {
-                    slideshow.style.display = 'flex';
-                    slideshowImage.src = photoUrl;
-                });
-
-                const thumbnail = document.createElement('img');
-                thumbnail.src = photoUrl;
-                thumbnail.alt = `Thumbnail ${index + 1}`;
-                thumbnail.addEventListener('click', () => {
-                    slideshow.style.display = 'flex';
-                    slideshowImage.src = photoUrl;
-                });
-                thumbnailContainer.appendChild(thumbnail);
-            });
-        }
-
-        // 显示 Hungary Travel 照片
-        function showHungaryTravelPhotos() {
-            galleryContainer.innerHTML = '';
-            thumbnailContainer.innerHTML = '';
-            travelThoughts.style.display = 'none';
-
-            const hungaryTravelPhotos = [
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest1.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest2.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest3.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest4.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest5.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest6.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest7.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest8.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest9.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest10.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest11.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest12.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest13.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest14.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/hungary_travel/budapest/budapest15.jpg'
-            ];
-
-            hungaryTravelPhotos.forEach((photoUrl, index) => {
-                const img = document.createElement('img');
-                img.src = photoUrl;
-                img.alt = `Hungary Travel Photo ${index + 1}`;
-                galleryContainer.appendChild(img);
-
-                img.addEventListener('click', () => {
-                    slideshow.style.display = 'flex';
-                    slideshowImage.src = photoUrl;
-                });
-
-                const thumbnail = document.createElement('img');
-                thumbnail.src = photoUrl;
-                thumbnail.alt = `Thumbnail ${index + 1}`;
-                thumbnail.addEventListener('click', () => {
-                    slideshow.style.display = 'flex';
-                    slideshowImage.src = photoUrl;
-                });
-                thumbnailContainer.appendChild(thumbnail);
-            });
-        }
-
-        // 显示 Austria Travel 照片
-        function showAustriaTravelPhotos() {
-            galleryContainer.innerHTML = '';
-            thumbnailContainer.innerHTML = '';
-            travelThoughts.style.display = 'none';
-
-            // 动态加载奥地利维也纳的照片
-            fetch('https://api.github.com/repos/LeeErGou996/leeergou.github.io/contents/travel/austria_travel/wien')
-                .then(response => response.json())
-                .then(data => {
-                    const imageFiles = data.filter(file => 
-                        file.type === 'file' && /\.(jpg|jpeg|png)$/i.test(file.name)
-                    );
-
-                    imageFiles.forEach((file, index) => {
+                    allImages.forEach((file, index) => {
                         const img = document.createElement('img');
                         img.src = file.download_url;
-                        img.alt = `Austria Travel Photo ${index + 1}`;
+                        img.alt = `${photoLabel} Photo ${index + 1}`;
                         galleryContainer.appendChild(img);
 
                         img.addEventListener('click', () => {
@@ -361,134 +264,49 @@
                     });
                 })
                 .catch(error => {
-                    console.error('Error loading Austria photos:', error);
-                    galleryContainer.innerHTML = '<p>Error loading Austria photos. Please try again later.</p>';
+                    console.error(`Error loading ${photoLabel} photos:`, error);
+                    galleryContainer.innerHTML = `<p>Error loading ${photoLabel} photos. Please try again later.</p>`;
                 });
+        }
+
+        // 显示 Hong Kong Travel 照片
+        function showHongKongTravelPhotos() {
+            loadTravelPhotos('hongkong_travel', 'Hong Kong Travel');
+        }
+
+        // 显示 Japan Travel 照片
+        function showJapanTravelPhotos() {
+            loadTravelPhotos('japan_travel', 'Japan Travel');
+        }
+
+        // 显示 Hungary Travel 照片
+        function showHungaryTravelPhotos() {
+            loadTravelPhotos('hungary_travel', 'Hungary Travel');
+        }
+
+        // 显示 Austria Travel 照片
+        function showAustriaTravelPhotos() {
+            loadTravelPhotos('austria_travel', 'Austria Travel');
         }
 
         // 显示 German Travel 照片
         function showGermanTravelPhotos() {
-            galleryContainer.innerHTML = '';
-            thumbnailContainer.innerHTML = '';
-            travelThoughts.style.display = 'none';
+            loadTravelPhotos('germany_travel', 'Germany Travel');
+        }
 
-            const germanTravelPhotos = [
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241019212133.jpg', // 替换为你的德国图片 URL
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241019212218.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241019212220.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241020132436.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241023122322.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241023122323.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241023122324.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241023122326.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241023122327.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241023122328.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241023122329.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241023122330.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202410231223301.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241023122335.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241023122337.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/eibsee1.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/eibsee2.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/eibsee3.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/eibsee4.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/eibsee5.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/eibsee6.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/eibsee7.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/eibsee8.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/kochel1.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/kochel2.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/kochel3.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/kochel4.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/kochel5.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/kochel6.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/kochel7.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/kochel8.jpg',
+        // 显示 Prague Travel 照片
+        function showPragueTravelPhotos() {
+            loadTravelPhotos('czech_travel', 'Czech Travel');
+        }
 
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch1.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch2.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch3.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch4.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch5.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch6.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch7.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch8.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch9.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch10.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch11.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch12.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch13.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch14.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch15.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch16.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch17.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch18.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/garmisch19.jpg',
+        // 显示 Roma Travel 照片
+        function showRomaTravelPhotos() {
+            loadTravelPhotos('italy_travel', 'Italy Travel');
+        }
 
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Silvester1.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Silvester2.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Silvester3.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Silvester4.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Silvester5.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Silvester6.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Silvester7.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Silvester8.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Silvester9.jpg',
-
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/berlin1.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/berlin2.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/berlin3.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/berlin4.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/berlin5.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/berlin6.jpg',
-
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/bremen1.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/bremen2.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/bremen3.jpg',
-
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Düsseldorf1.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Düsseldorf2.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Düsseldorf3.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Düsseldorf4.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Düsseldorf5.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Düsseldorf6.jpg',
-
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/frankfort1.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/frankfort2.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/frankfort3.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/frankfort4.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/frankfort5.jpg',
-
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/hamburg1.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/hamburg2.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/hamburg3.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/hamburg4.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/hamburg5.jpg',
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/hamburg6.jpg',
-
-                'https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/germany_travel/Potsdam.jpg'
-            ];
-
-            germanTravelPhotos.forEach((photoUrl, index) => {
-                const img = document.createElement('img');
-                img.src = photoUrl;
-                img.alt = `German Travel Photo ${index + 1}`;
-                galleryContainer.appendChild(img);
-
-                img.addEventListener('click', () => {
-                    slideshow.style.display = 'flex';
-                    slideshowImage.src = photoUrl;
-                });
-
-                const thumbnail = document.createElement('img');
-                thumbnail.src = photoUrl;
-                thumbnail.alt = `Thumbnail ${index + 1}`;
-                thumbnail.addEventListener('click', () => {
-                    slideshow.style.display = 'flex';
-                    slideshowImage.src = photoUrl;
-                });
-                thumbnailContainer.appendChild(thumbnail);
-            });
+        // 显示 Strasbourg, Colmar Travel 照片
+        function showStrasbourgTravelPhotos() {
+            loadTravelPhotos('france_travel', 'France Travel');
         }
 
         // 显示 travel 感悟
@@ -503,6 +321,9 @@
         hungaryTravelLink.addEventListener('click', showHungaryTravelPhotos); // 添加匈牙利事件监听器
         austriaTravelLink.addEventListener('click', showAustriaTravelPhotos); // 添加奥地利事件监听器
         germanTravelLink.addEventListener('click', showGermanTravelPhotos); // 添加事件监听器
+        pragueTravelLink.addEventListener('click', showPragueTravelPhotos); // 添加布拉格事件监听器
+        romaTravelLink.addEventListener('click', showRomaTravelPhotos); // 添加罗马事件监听器
+        strasbourgTravelLink.addEventListener('click', showStrasbourgTravelPhotos); // 添加斯特拉斯堡事件监听器
         homeLink.addEventListener('click', showTravelThoughts);
         slideshow.addEventListener('click', () => {
             slideshow.style.display = 'none';
