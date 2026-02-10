@@ -121,6 +121,7 @@
             <h2>リスト</h2>
             <li id="2024">2024 </li>
             <li id="2025">2025 </li>
+            <li id="2026">2026 </li>
         </ul>
     </div>
 
@@ -132,6 +133,7 @@
         const homeLink = document.getElementById('homeLink');
         const ersiLink = document.getElementById('2024');
         const year2025 = document.getElementById('2025');
+        const year2026 = document.getElementById('2026');
         const animeLink = document.getElementById('animeLink');  // アニメ title link
         const contentDiv = document.querySelector('.content');
 
@@ -139,6 +141,7 @@
             contentDiv.innerHTML = `
                 <h1>概要</h1>
                 <div class="scrollable-textarea readonly">
+                    <p>📺 2026.2: アニメ「違国日記」を追加しました </p>
                     <p>📺 2025.12: アニメ「私を喰べたい、ひとでなし」「千歳くんはラムネ瓶のなか」を追加しました </p>
                     <p>📺 2025.9: アニメ「わたしが恋人になれるわけないじゃん、ムリムリ! (※ムリじゃなかった!?)」を追加しました </p>
                     <p>📺 2025.4: アニメ「この会社に好きな人がいます」「薬屋のひとりごと」を追加しました </p>
@@ -255,6 +258,17 @@
                 }},
                 { id: 'steinLink', text: '千歳くんはラムネ瓶のなか', handler: () => {
                     contentDiv.innerHTML = '<h1>千歳くんはラムネ瓶のなか</h1>';
+                }}
+
+            ];
+            generateYearContent(contentDiv, entries);
+        });
+
+        year2026.addEventListener('click', () => {
+            const entries = [
+                
+                { id: 'igokuniLink', text: '違国日記', handler: () => {
+                    contentDiv.innerHTML = '<h1>違国日記</h1>';
                 }}
 
             ];
