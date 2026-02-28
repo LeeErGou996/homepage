@@ -440,5 +440,197 @@
         "type": "副词",
         "example": "Sollen wir zusammen essen gehen?",
         "meaning": "一起"
+    },
+    {
+        "word": "gemeinsam",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Wir arbeiten gemeinsam an dem Projekt.",
+        "meaning": "共同地"
+    },
+    {
+        "word": "fast",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich bin fast fertig.",
+        "meaning": "几乎"
+    },
+    {
+        "word": "fließend",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Sie spricht fließend Deutsch.",
+        "meaning": "流利地"
+    },
+    {
+        "word": "wahrscheinlich",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Er kommt wahrscheinlich morgen.",
+        "meaning": "可能"
+    },
+    {
+        "word": "wenigstens",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Wenigstens hast du es versucht.",
+        "meaning": "至少"
+    },
+    {
+        "word": "erst",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Es ist erst acht Uhr.",
+        "meaning": "才，刚刚"
+    },
+    {
+        "word": "genauso",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich denke genauso wie du.",
+        "meaning": "同样地"
+    },
+    {
+        "word": "plötzlich",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Plötzlich begann es zu regnen.",
+        "meaning": "突然"
+    },
+    {
+        "word": "überhaupt",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Das verstehe ich überhaupt nicht.",
+        "meaning": "根本，究竟"
+    },
+    {
+        "word": "mehrmals",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich habe ihn mehrmals angerufen.",
+        "meaning": "多次"
+    },
+    {
+        "word": "unbedingt",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Du musst unbedingt kommen!",
+        "meaning": "一定，务必"
+    },
+    {
+        "word": "zuletzt",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Zuletzt war ich vor einem Jahr dort.",
+        "meaning": "最后，上次"
+    },
+    {
+        "word": "dabei",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Kann ich dabei sein?",
+        "meaning": "在此，同时"
+    },
+    {
+        "word": "außerdem",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Außerdem habe ich keine Zeit.",
+        "meaning": "此外"
+    },
+    {
+        "word": "inzwischen",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Inzwischen ist es schon dunkel.",
+        "meaning": "在这期间，此时"
+    },
+    {
+        "word": "nirgends",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich finde meinen Schlüssel nirgends.",
+        "meaning": "哪儿都不"
+    },
+    {
+        "word": "nun",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Nun beginnen wir mit der Übung.",
+        "meaning": "现在，此刻"
+    },
+    {
+        "word": "häufig",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Er ist häufig unterwegs.",
+        "meaning": "经常"
+    },
+    {
+        "word": "wieder",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Komm wieder vorbei!",
+        "meaning": "又，再"
+    },
+    {
+        "word": "überall",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Er sucht überall nach seinem Schlüssel.",
+        "meaning": "到处"
+    },
+    {
+        "word": "besonders",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Das hat mir besonders gut gefallen.",
+        "meaning": "特别"
+    },
+    {
+        "word": "gar",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Das verstehe ich gar nicht.",
+        "meaning": "根本，完全"
+    },
+    {
+        "word": "eigentlich",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Eigentlich wollte ich früher kommen.",
+        "meaning": "其实，本来"
+    },
+    {
+        "word": "endlich",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Endlich sind wir da!",
+        "meaning": "终于"
     }
 ]

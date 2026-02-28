@@ -136,6 +136,14 @@
         "meaning": "在...之间"
     },
     {
+        "word": "neben",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Sitz bitte neben mir!",
+        "meaning": "在...旁边"
+    },
+    {
         "word": "auf",
         "category": "词性",
         "subCategory": "介词",

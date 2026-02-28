@@ -24,6 +24,118 @@
         "meaning": "因为"
     },
     {
+        "word": "weil",
+        "category": "词性",
+        "subCategory": "连词",
+        "type": "连词",
+        "example": "Ich bleibe zu Hause, weil ich krank bin.",
+        "meaning": "因为"
+    },
+    {
+        "word": "Hauptsache",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Hauptsache, du bist gesund!",
+        "meaning": "主要的是，关键是"
+    },
+    {
+        "word": "ein paar",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Ich brauche noch ein paar Minuten.",
+        "meaning": "几个，一些"
+    },
+    {
+        "word": "dass",
+        "category": "词性",
+        "subCategory": "连词",
+        "type": "连词",
+        "example": "Ich weiß, dass du Recht hast.",
+        "meaning": "（引导从句）"
+    },
+    {
+        "word": "als",
+        "category": "词性",
+        "subCategory": "连词",
+        "type": "连词",
+        "example": "Er ist größer als ich. / Als ich jung war, ...",
+        "meaning": "比；当……时；作为"
+    },
+    {
+        "word": "manche",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Manche Leute denken anders.",
+        "meaning": "有些（人/物）"
+    },
+    {
+        "word": "Schade",
+        "category": "词性",
+        "subCategory": "感叹词",
+        "type": "感叹词",
+        "example": "Schade, dass du nicht kommen kannst!",
+        "meaning": "可惜"
+    },
+    {
+        "word": "tausend",
+        "category": "词性",
+        "subCategory": "数词",
+        "type": "数词",
+        "example": "Tausend Dank!",
+        "meaning": "千"
+    },
+    {
+        "word": "niemand",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Niemand war da.",
+        "meaning": "没有人"
+    },
+    {
+        "word": "einige",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Einige Leute sind schon gegangen.",
+        "meaning": "一些，若干"
+    },
+    {
+        "word": "weg sein",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Mein Handy ist weg!",
+        "meaning": "不见了，丢了"
+    },
+    {
+        "word": "das Beste",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Ich wünsche dir das Beste!",
+        "meaning": "最好的（事物）"
+    },
+    {
+        "word": "das Nächste",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Was ist das Nächste?",
+        "meaning": "下一个"
+    },
+    {
+        "word": "Daumen drücken",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Ich drücke dir die Daumen für die Prüfung!",
+        "meaning": "祝好运"
+    },
+    {
         "word": "der, die, das",
         "category": "词性",
         "subCategory": "冠词",
@@ -234,14 +346,7 @@
         "example": "Warum macht ihr nicht mit?",
         "meaning": "参加"
     },
-    {
-        "word": "mitnehmen",
-        "category": "词性",
-        "subCategory": "动词短语",
-        "type": "动词短语",
-        "example": "Nehmen wir meine Schwester ins Kino mit?",
-        "meaning": "带走"
-    },
+
     {
         "word": "möchten",
         "category": "词性",
@@ -418,14 +523,7 @@
         "example": "Woher kommen Sie?",
         "meaning": "从哪里"
     },
-    {
-        "word": "wohin",
-        "category": "词性",
-        "subCategory": "疑问词",
-        "type": "疑问词",
-        "example": "Wohin fährt dieser Bus?",
-        "meaning": "去哪里"
-    },
+
     {
         "word": "gesund essen",
         "category": "主题",

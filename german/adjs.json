@@ -707,5 +707,525 @@
         "type": "形容词",
         "example": "Frau Mohr ist sehr nett.",
         "meaning": "友好的，和蔼的"
+    },
+    {
+        "word": "romantisch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist ein romantischer Abend.",
+        "meaning": "浪漫的"
+    },
+    {
+        "word": "einverstanden",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin damit einverstanden.",
+        "meaning": "同意的"
+    },
+    {
+        "word": "streng",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Lehrer ist sehr streng.",
+        "meaning": "严格的"
+    },
+    {
+        "word": "nützlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist ein nützliches Buch.",
+        "meaning": "有用的"
+    },
+    {
+        "word": "witzig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Film war sehr witzig.",
+        "meaning": "滑稽的，风趣的"
+    },
+    {
+        "word": "furchtbar",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Wetter war furchtbar.",
+        "meaning": "可怕的，非常"
+    },
+    {
+        "word": "wütend",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er war wütend auf mich.",
+        "meaning": "愤怒的"
+    },
+    {
+        "word": "anders / anderes",
+        "category": "词性",
+        "subCategory": "副词 / 形容词",
+        "type": "形容词",
+        "example": "Das ist etwas ganz Anderes.",
+        "meaning": "不同的，另外的事物"
+    },
+    {
+        "word": "überrascht",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich war sehr überrascht.",
+        "meaning": "惊讶的"
+    },
+    {
+        "word": "ehrlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sei ehrlich zu mir!",
+        "meaning": "诚实的"
+    },
+    {
+        "word": "erwachsen",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Meine Kinder sind schon erwachsen.",
+        "meaning": "成年的"
+    },
+    {
+        "word": "unabhängig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er ist finanziell unabhängig.",
+        "meaning": "独立的"
+    },
+    {
+        "word": "freiwillig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie arbeitet freiwillig im Altersheim.",
+        "meaning": "自愿的"
+    },
+    {
+        "word": "sozial",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Soziale Berufe sind wichtig.",
+        "meaning": "社会的，社会福利的"
+    },
+    {
+        "word": "verloren",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich habe mich in der Stadt verlaufen und war völlig verloren.",
+        "meaning": "迷路的，失去的"
+    },
+    {
+        "word": "fest",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Wir sind feste Freunde.",
+        "meaning": "牢固的，固定的"
+    },
+    {
+        "word": "kritisch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er ist sehr kritisch.",
+        "meaning": "批评的，关键的"
+    },
+    {
+        "word": "blöd",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das war ein blöder Fehler.",
+        "meaning": "愚蠢的，讨厌的"
+    },
+    {
+        "word": "peinlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das war mir sehr peinlich.",
+        "meaning": "尴尬的"
+    },
+    {
+        "word": "privat",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist meine private Angelegenheit.",
+        "meaning": "私人的"
+    },
+    {
+        "word": "logisch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist doch logisch!",
+        "meaning": "合乎逻辑的"
+    },
+    {
+        "word": "real",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist die reale Welt.",
+        "meaning": "真实的，现实的"
+    },
+    {
+        "word": "fröhlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie ist immer fröhlich.",
+        "meaning": "快乐的"
+    },
+    {
+        "word": "nah",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Bahnhof ist ganz nah.",
+        "meaning": "近的"
+    },
+    {
+        "word": "schwierig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Aufgabe ist schwierig.",
+        "meaning": "困难的"
+    },
+    {
+        "word": "still",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sei bitte still!",
+        "meaning": "安静的"
+    },
+    {
+        "word": "vorsichtig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sei vorsichtig auf der Straße!",
+        "meaning": "小心的"
+    },
+    {
+        "word": "dumm",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das war eine dumme Idee.",
+        "meaning": "笨的，愚蠢的"
+    },
+    {
+        "word": "aufgeregt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie war vor der Prüfung sehr aufgeregt.",
+        "meaning": "激动的，紧张的"
+    },
+    {
+        "word": "ärgerlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist wirklich ärgerlich!",
+        "meaning": "令人恼火的"
+    },
+    {
+        "word": "genervt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin total genervt.",
+        "meaning": "烦躁的"
+    },
+    {
+        "word": "gestresst",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er wirkt gerade sehr gestresst.",
+        "meaning": "有压力的，紧张的"
+    },
+    {
+        "word": "sauer",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie ist sauer auf mich.",
+        "meaning": "生气的"
+    },
+    {
+        "word": "schlimm",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist nicht so schlimm.",
+        "meaning": "严重的，糟糕的"
+    },
+    {
+        "word": "stolz",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin stolz auf dich.",
+        "meaning": "骄傲的"
+    },
+    {
+        "word": "traurig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Warum bist du so traurig?",
+        "meaning": "悲伤的"
+    },
+    {
+        "word": "unangenehm",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das war eine unangenehme Situation.",
+        "meaning": "令人不快的"
+    },
+    {
+        "word": "unglücklich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie fühlt sich unglücklich.",
+        "meaning": "不幸福的，难过的"
+    },
+    {
+        "word": "verspätet",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Zug ist verspätet.",
+        "meaning": "晚点的"
+    },
+    {
+        "word": "kostenlos",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Eintritt ist kostenlos.",
+        "meaning": "免费的"
+    },
+    {
+        "word": "hilfsbereit",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er ist immer hilfsbereit.",
+        "meaning": "乐于助人的"
+    },
+    {
+        "word": "ordentlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Räum dein Zimmer ordentlich auf!",
+        "meaning": "整齐的，认真的"
+    },
+    {
+        "word": "wahr",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ist das wirklich wahr?",
+        "meaning": "真实的"
+    },
+    {
+        "word": "weltweit",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Produkt ist weltweit bekannt.",
+        "meaning": "全球的"
+    },
+    {
+        "word": "langweilig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Film war langweilig.",
+        "meaning": "无聊的"
+    },
+    {
+        "word": "öffentlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die öffentlichen Verkehrsmittel sind günstig.",
+        "meaning": "公共的"
+    },
+    {
+        "word": "dringend",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich habe dringend deine Hilfe nötig.",
+        "meaning": "紧急的"
+    },
+    {
+        "word": "bunt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Blumen sind bunt.",
+        "meaning": "彩色的"
+    },
+    {
+        "word": "modern",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist eine moderne Wohnung.",
+        "meaning": "现代的"
+    },
+    {
+        "word": "professionell",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er arbeitet sehr professionell.",
+        "meaning": "专业的"
+    },
+    {
+        "word": "beruflich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich reise beruflich oft nach Berlin.",
+        "meaning": "职业上的"
+    },
+    {
+        "word": "komplett",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Liste ist jetzt komplett.",
+        "meaning": "完整的，完全的"
+    },
+    {
+        "word": "erfolgreich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie ist sehr erfolgreich im Beruf.",
+        "meaning": "成功的"
+    },
+    {
+        "word": "finanziell",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er hat finanzielle Probleme.",
+        "meaning": "经济上的，财政的"
+    },
+    {
+        "word": "hektisch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Tag war sehr hektisch.",
+        "meaning": "忙乱的"
+    },
+    {
+        "word": "befristet",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er hat nur einen befristeten Vertrag.",
+        "meaning": "有期限的"
+    },
+    {
+        "word": "mobil",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "In diesem Job muss man mobil sein.",
+        "meaning": "机动的，灵活的"
+    },
+    {
+        "word": "lebenslang",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Bildung ist ein lebenslanger Prozess.",
+        "meaning": "终身的"
+    },
+    {
+        "word": "problemlos",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Reparatur verlief völlig problemlos.",
+        "meaning": "毫无问题的"
+    },
+    {
+        "word": "komisch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Film war sehr komisch.",
+        "meaning": "滑稽的，奇怪的"
+    },
+    {
+        "word": "unnötig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist völlig unnötig.",
+        "meaning": "不必要的"
+    },
+    {
+        "word": "schwanger",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie ist im dritten Monat schwanger.",
+        "meaning": "怀孕的"
+    },
+    {
+        "word": "virtuell",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Wir treffen uns in einem virtuellen Raum.",
+        "meaning": "虚拟的"
+    },
+    {
+        "word": "erreichbar",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin tagsüber gut erreichbar.",
+        "meaning": "可联系到的"
+    },
+    {
+        "word": "bar",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Muss ich bar zahlen oder geht’s auch mit Karte?",
+        "meaning": "现金（支付方式）"
     }
 ]

@@ -433,28 +433,31 @@ let currentExercise = {
 
 // 开始练习
 function startPartizip2Exercise() {
-    const count = parseInt(document.getElementById('partizip2Count').value);
+    const countInput = document.getElementById('partizip2Count');
+    const count = parseInt(countInput.value);
+    
     if (isNaN(count) || count < 1 || count > 50) {
         alert('请输入1-50之间的数字');
         return;
     }
 
-    // 随机选择指定数量的动词
     currentExercise.words = [...partizip2Data]
         .sort(() => Math.random() - 0.5)
-        .slice(0, count);
+        .slice(0, Math.min(count, partizip2Data.length));
+        
     currentExercise.currentIndex = 0;
     currentExercise.correct = 0;
     currentExercise.incorrect = 0;
     currentExercise.skipped = 0;
 
-    // 显示练习界面
-    document.getElementById('partizip2Setup').style.display = 'none';
-    document.getElementById('partizip2Exercise').style.display = 'block';
-    document.getElementById('partizip2Learning').style.display = 'none';
-    document.getElementById('partizip2Results').style.display = 'none';
-
+    togglePartizipPanels('exercise');
     showNextQuestion();
+
+    // 绑定回车键监听
+    const inputField = document.getElementById('partizip2Answer');
+    inputField.onkeydown = (e) => {
+        if (e.key === 'Enter') checkPartizip2Answer();
+    };
 }
 
 // 显示下一个问题
@@ -465,130 +468,154 @@ function showNextQuestion() {
     }
 
     const currentWord = currentExercise.words[currentExercise.currentIndex];
-    document.getElementById('currentWord').textContent = currentWord.infinitive;
-    document.getElementById('partizip2Answer').value = '';
-    document.getElementById('partizip2Feedback').textContent = '';
+    const wordDisplay = document.getElementById('currentWord');
+    const inputField = document.getElementById('partizip2Answer');
+    const feedback = document.getElementById('partizip2Feedback');
+    
+    // 获取新增的“下一题”按钮
+    const nextBtn = document.getElementById('nextQuestionBtn');
+
+    wordDisplay.innerHTML = `<span style="font-size: 0.6em; color: var(--text-muted);">Infinitive:</span><br>${currentWord.infinitive}`;
+    
+    inputField.value = '';
+    inputField.disabled = false; // 恢复输入框
+    inputField.focus(); 
+    
+    feedback.textContent = '';
+    
+    // 【修改点】：进入新题时，隐藏“下一题”按钮
+    if (nextBtn) nextBtn.style.display = 'none';
+
     document.getElementById('partizip2Progress').textContent = 
-        `进度: ${currentExercise.currentIndex + 1}/${currentExercise.words.length}`;
+        `进度: ${currentExercise.currentIndex + 1} / ${currentExercise.words.length}`;
 }
 
-// 检查答案
+// 2. 修改检查答案逻辑：删除定时器，显示“下一题”按钮
 function checkPartizip2Answer() {
-    const answer = document.getElementById('partizip2Answer').value.trim().toLowerCase();
+    const inputField = document.getElementById('partizip2Answer');
+    const answer = inputField.value.trim().toLowerCase();
     const currentWord = currentExercise.words[currentExercise.currentIndex];
     const feedback = document.getElementById('partizip2Feedback');
+    const nextBtn = document.getElementById('nextQuestionBtn');
+
+    if (!answer) return;
 
     if (answer === currentWord.partizip2.toLowerCase()) {
-        feedback.textContent = '正确！';
-        feedback.style.color = 'green';
+        feedback.innerHTML = `✅ 正确！`;
+        feedback.style.color = '#16a34a';
         currentExercise.correct++;
     } else {
-        feedback.textContent = `错误！正确答案是: ${currentWord.partizip2}`;
-        feedback.style.color = 'red';
+        feedback.innerHTML = `❌ 错误！正确答案: <b style="font-size: 1.2em;">${currentWord.partizip2}</b>`;
+        feedback.style.color = '#dc2626';
         currentExercise.incorrect++;
     }
 
-    setTimeout(() => {
-        currentExercise.currentIndex++;
-        showNextQuestion();
-    }, 1500);
+    inputField.disabled = true; // 检查完后禁用输入
+
+    // 【修改点】：不再使用 setTimeout，而是直接显示“下一题”按钮
+    if (nextBtn) nextBtn.style.display = 'inline-block';
 }
 
-// 跳过当前问题
+// 3. 修改跳过逻辑：同样显示“下一题”按钮
 function skipPartizip2Question() {
     const currentWord = currentExercise.words[currentExercise.currentIndex];
     const feedback = document.getElementById('partizip2Feedback');
-    feedback.textContent = `已跳过。正确答案是: ${currentWord.partizip2}`;
-    feedback.style.color = 'orange';
+    const nextBtn = document.getElementById('nextQuestionBtn');
+
+    feedback.innerHTML = `⏭ 已跳过。正确答案: <b>${currentWord.partizip2}</b>`;
+    feedback.style.color = '#ea580c';
     currentExercise.skipped++;
 
-    setTimeout(() => {
-        currentExercise.currentIndex++;
-        showNextQuestion();
-    }, 1500);
+    document.getElementById('partizip2Answer').disabled = true;
+
+    // 【修改点】：显示“下一题”按钮
+    if (nextBtn) nextBtn.style.display = 'inline-block';
 }
+
+// 4. 新增：手动跳转下一题的函数
+function goToNextQuestion() {
+    currentExercise.currentIndex++;
+    showNextQuestion();
+}
+
+window.goToNextQuestion = goToNextQuestion;
 
 // 显示学习模式
 function showPartizip2Learning() {
-    document.getElementById('partizip2Setup').style.display = 'none';
-    document.getElementById('partizip2Exercise').style.display = 'none';
-    document.getElementById('partizip2Learning').style.display = 'block';
-    document.getElementById('partizip2Results').style.display = 'none';
-
+    togglePartizipPanels('learning');
     const learningList = document.getElementById('partizip2LearningList');
-    learningList.innerHTML = '';
+    learningList.innerHTML = `<button class="nav-btn" onclick="showPartizip2Setup()" style="margin-bottom: 20px;">⬅ Zurück (返回)</button>`;
 
-    const categories = {
-        regular: partizip2Data.filter(word => word.category === 'regular'),
-        irregular: partizip2Data.filter(word => word.category === 'irregular'),
-        separableRegular: partizip2Data.filter(word => word.category === 'separableRegular'),
-        separableIrregular: partizip2Data.filter(word => word.category === 'separableIrregular')
-    };
-
-    Object.entries(categories).forEach(([category, words]) => {
-        if (words.length > 0) {
-            const categoryDiv = document.createElement('div');
-            categoryDiv.className = 'learning-group';
-            categoryDiv.innerHTML = `<h3>${category}</h3>`;
-            words.forEach(word => {
-                const wordDiv = document.createElement('div');
-                wordDiv.className = 'word-item';
-                wordDiv.innerHTML = `
-                    <div>动词原形: ${word.infinitive}</div>
-                    <div>过去分词: ${word.partizip2}</div>
-                    <div>中文意思: ${word.meaning}</div>
-                    <div class="example" style="display: none; margin-top: 10px; color: #666;">
-                        <div>例句: ${word.example}</div>
-                    </div>
-                `;
-                wordDiv.style.cursor = 'pointer';
-                wordDiv.onclick = function() {
-                    const exampleDiv = this.querySelector('.example');
-                    exampleDiv.style.display = exampleDiv.style.display === 'none' ? 'block' : 'none';
-                };
-                categoryDiv.appendChild(wordDiv);
-            });
-            learningList.appendChild(categoryDiv);
-        }
+    partizip2Data.forEach(word => {
+        const card = document.createElement('div');
+        card.className = 'detail-card';
+        card.style.marginBottom = '15px';
+        card.style.borderLeft = '5px solid var(--primary-color)';
+        card.innerHTML = `
+            <div style="display: flex; justify-content: space-between;">
+                <strong>${word.infinitive} <span style="color: var(--text-muted);">➔</span> ${word.partizip2}</strong>
+                <span style="color: var(--primary-color);">${word.meaning}</span>
+            </div>
+            <div style="margin-top: 10px; font-style: italic; color: var(--text-muted); font-size: 0.9em;">
+                例句: ${word.example}
+            </div>
+        `;
+        learningList.appendChild(card);
     });
 }
 
-// 显示练习结果
+// 显示结果
 function showResults() {
-    document.getElementById('partizip2Exercise').style.display = 'none';
-    document.getElementById('partizip2Results').style.display = 'block';
-
+    togglePartizipPanels('results');
     const resultsList = document.getElementById('partizip2ResultsList');
+    const accuracy = ((currentExercise.correct / currentExercise.words.length) * 100).toFixed(1);
+
     resultsList.innerHTML = `
-        <div class="results-summary">
-            <h3>练习结果</h3>
-            <p>总题数: ${currentExercise.words.length}</p>
-            <p>正确: ${currentExercise.correct}</p>
-            <p>错误: ${currentExercise.incorrect}</p>
-            <p>跳过: ${currentExercise.skipped}</p>
-            <p>正确率: ${((currentExercise.correct / currentExercise.words.length) * 100).toFixed(1)}%</p>
+        <div class="control-panel" style="background: white; border-radius: 12px; padding: 25px; margin-bottom: 20px;">
+            <h3 style="margin-top:0;">练习结束报告</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; text-align: left;">
+                <p>总题数: <b>${currentExercise.words.length}</b></p>
+                <p>正确: <b style="color: #16a34a;">${currentExercise.correct}</b></p>
+                <p>错误: <b style="color: #dc2626;">${currentExercise.incorrect}</b></p>
+                <p>正确率: <b style="color: var(--primary-color);">${accuracy}%</b></p>
+            </div>
+            <button class="nav-btn" onclick="showPartizip2Setup()" style="margin-top: 15px; width: 100%; text-align: center; background: var(--primary-color); color: white;">重新开始</button>
         </div>
         <div class="results-details">
             ${currentExercise.words.map((word, index) => `
-                <div class="result-item">
-                    <div>${index + 1}. ${word.infinitive} → ${word.partizip2}</div>
-                    <div>中文意思: ${word.meaning}</div>
+                <div class="detail-card" style="margin-bottom: 10px; padding: 15px;">
+                    <b>${index + 1}. ${word.infinitive}</b> ➔ ${word.partizip2} <br>
+                    <small style="color: var(--text-muted);">${word.meaning}</small>
                 </div>
             `).join('')}
         </div>
     `;
 }
 
-// 返回设置界面
-function showPartizip2Setup() {
-    document.getElementById('partizip2Exercise').style.display = 'none';
-    document.getElementById('partizip2Learning').style.display = 'none';
-    document.getElementById('partizip2Results').style.display = 'none';
-    document.getElementById('partizip2Setup').style.display = 'block';
+// 内部面板切换辅助函数
+function togglePartizipPanels(activePanel) {
+    const panels = {
+        setup: 'partizip2Setup',
+        exercise: 'partizip2Exercise',
+        learning: 'partizip2Learning',
+        results: 'partizip2Results'
+    };
+    
+    Object.values(panels).forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = 'none';
+    });
+    
+    document.getElementById(panels[activePanel]).style.display = 'block';
 }
 
+function showPartizip2Setup() {
+    togglePartizipPanels('setup');
+}
+
+// 导出全局函数
 window.startPartizip2Exercise = startPartizip2Exercise;
 window.showPartizip2Learning = showPartizip2Learning;
 window.checkPartizip2Answer = checkPartizip2Answer;
 window.skipPartizip2Question = skipPartizip2Question;
-window.showPartizip2Setup = showPartizip2Setup; 
+window.showPartizip2Setup = showPartizip2Setup;

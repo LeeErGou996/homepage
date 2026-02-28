@@ -1,24 +1,67 @@
+/* =========================================
+   1. 全局变量 (CSS Variables)
+   ========================================= */
+:root {
+    /* 颜色系统 */
+    --primary-color: #1e40af;
+    --primary-hover: #3b82f6;
+    --bg-main: #f0f0f0;
+    --bg-sidebar: #f9f9f9;
+    --bg-card: #ffffff;
+    --text-main: #333333;
+    --text-muted: #666666;
+    --text-light: #94a3b8;
+    --border-color: #cccccc;
+    --border-light: #e2e8f0;
+    
+    /* 阴影系统 */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 5px 15px rgba(30, 64, 175, 0.2);
+    
+    /* 动画与过渡 */
+    --transition-speed: 0.3s;
+}
+
+/* =========================================
+   2. 基础重置与通用样式
+   ========================================= */
 body {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Times New Roman', serif; /* 建议后续可考虑现代无衬线字体如 Arial 或 Helvetica */
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    transition: margin-left 0.3s;
+    background-color: var(--bg-main);
+    transition: margin-left var(--transition-speed);
 }
 
 h1, h2 {
-    color: #1e40af;
+    color: var(--primary-color);
     text-align: center;
 }
 
+/* 可点击文字统一样式 */
+.clickable-text {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+h2.clickable-text,
+h3.clickable-text,
+h4.clickable-text {
+    margin: 0;
+}
+
+/* =========================================
+   3. 核心布局 (Sidebar & Content)
+   ========================================= */
 .sidebar {
     width: 200px;
     height: 100vh;
-    background-color: #f9f9f9;
+    background-color: var(--bg-sidebar);
     position: fixed;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    transition: width 0.3s;
+    transition: width var(--transition-speed);
     overflow-x: hidden;
 }
 
@@ -27,31 +70,27 @@ h1, h2 {
     padding: 10px 0;
 }
 
-.sidebar h2 {
+.sidebar h2, 
+.sidebar ul {
     margin-top: 0;
-    font-size: 20px;
-    transition: opacity 0.3s;
+    transition: opacity var(--transition-speed);
 }
 
-.sidebar.collapsed h2 {
+.sidebar.collapsed h2,
+.sidebar.collapsed ul {
     display: none;
 }
 
 .sidebar ul {
     list-style: none;
     padding: 0;
-    transition: opacity 0.3s;
-}
-
-.sidebar.collapsed ul {
-    display: none;
 }
 
 .sidebar li {
     margin-bottom: 10px;
     cursor: pointer;
     font-size: 18px;
-    color: #1e40af;
+    color: var(--primary-color);
 }
 
 .content {
@@ -59,7 +98,7 @@ h1, h2 {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: margin-left 0.3s;
+    transition: margin-left var(--transition-speed);
 }
 
 .content.collapsed {
@@ -70,45 +109,21 @@ h1, h2 {
     position: absolute;
     top: 10px;
     left: 210px;
-    background-color: #1e40af;
+    background-color: var(--primary-color);
     color: white;
     padding: 5px 10px;
     cursor: pointer;
     border: none;
-    transition: left 0.3s;
+    transition: left var(--transition-speed);
 }
 
 .sidebar.collapsed + .toggle-sidebar {
     left: 20px;
 }
 
-#wordDetail {
-    display: none;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.word-list {
-    margin-top: 20px;
-    max-height: 200px;
-    overflow-y: auto;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.word-item {
-    cursor: pointer;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-}
-
-.word-item:hover {
-    background-color: #f0f0f0;
-}
-
+/* =========================================
+   4. 组件样式 (Buttons, Inputs, Loaders)
+   ========================================= */
 .category-buttons,
 .theme-buttons {
     display: none;
@@ -124,56 +139,7 @@ h1, h2 {
     font-size: 16px;
 }
 
-/* 加载动画 */
-.loading {
-    display: none;
-    text-align: center;
-    padding: 20px;
-}
-
-.loading::after {
-    content: '';
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border: 3px solid #f3f3f3;
-    border-top: 3px solid #1e40af;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-/* 移动端适配 */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    .content {
-        margin-left: 0;
-    }
-
-    .category-buttons,
-    .theme-buttons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .category-buttons button,
-    .theme-buttons button {
-        flex: 1 1 calc(50% - 10px);
-        margin: 5px;
-    }
-}
-
-/* 搜索框样式 */
+/* 搜索框 */
 .search-box {
     position: relative;
     max-width: 600px;
@@ -184,15 +150,15 @@ h1, h2 {
     width: 100%;
     padding: 12px 40px 12px 15px;
     font-size: 16px;
-    border: 2px solid #e2e8f0;
+    border: 2px solid var(--border-light);
     border-radius: 8px;
-    transition: all 0.3s ease;
-    background-color: white;
+    transition: all var(--transition-speed) ease;
+    background-color: var(--bg-card);
 }
 
 #searchInput:focus {
     outline: none;
-    border-color: #3b82f6;
+    border-color: var(--primary-hover);
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
@@ -204,9 +170,8 @@ h1, h2 {
     background: none;
     border: none;
     font-size: 20px;
-    color: #94a3b8;
+    color: var(--text-light);
     cursor: pointer;
-    padding: 0;
     width: 24px;
     height: 24px;
     display: flex;
@@ -221,121 +186,86 @@ h1, h2 {
     color: #64748b;
 }
 
-.search-filters {
-    max-width: 600px;
-    margin: 10px auto;
-    display: flex;
-    gap: 15px;
+/* 加载动画 */
+.loading {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.loading::after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* =========================================
+   5. 单词列表与详情 (Word Lists & Modals)
+   ========================================= */
+.word-list {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
     padding: 10px;
-    background-color: #f8fafc;
-    border-radius: 8px;
-}
-
-.search-filters label {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-    color: #475569;
-    font-size: 14px;
-}
-
-.search-filter {
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-}
-
-#searchResults {
-    max-width: 800px;
-    margin: 20px auto;
+    box-sizing: border-box;
 }
 
 .word-item {
-    background: white;
+    background: var(--bg-card);
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-sm);
     transition: all 0.2s ease;
     cursor: pointer;
 }
 
 .word-item:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-md);
+    background-color: #f8fafc;
 }
 
-.word-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
-}
-
-.word-text {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1e40af;
-}
-
-.word-type {
-    font-size: 14px;
-    color: #64748b;
-    background: #f1f5f9;
-    padding: 2px 8px;
-    border-radius: 4px;
-}
-
-.word-meaning {
-    color: #475569;
-    margin-bottom: 8px;
-}
-
-.word-example {
-    color: #64748b;
-    font-style: italic;
-    font-size: 14px;
-    padding-top: 8px;
-    border-top: 1px solid #e2e8f0;
-}
-
-mark {
-    background-color: #fef08a;
-    padding: 0 2px;
-    border-radius: 2px;
-}
-
-.no-results {
-    text-align: center;
-    color: #64748b;
+#wordDetail {
+    display: none;
+    border: 1px solid var(--border-color);
     padding: 20px;
-    font-size: 16px;
+    margin-top: 20px;
 }
 
-/* 链接单词样式 */
+/* 链接单词与模态框 */
 .linked-word {
-    color: #1e40af;
+    color: var(--primary-color);
     text-decoration: none;
-    border-bottom: 1px dotted #1e40af;
+    border-bottom: 1px dotted var(--primary-color);
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 .linked-word:hover {
-    color: #3b82f6;
-    border-bottom: 1px solid #3b82f6;
+    color: var(--primary-hover);
+    border-bottom: 1px solid var(--primary-hover);
     background-color: rgba(59, 130, 246, 0.1);
 }
 
-/* 链接单词详情样式 */
 #linkedWordDetail {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: var(--bg-card);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -345,76 +275,23 @@ mark {
     overflow-y: auto;
 }
 
-.linked-word-detail {
-    position: relative;
-}
-
-.linked-word-detail h4 {
-    color: #1e40af;
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 1.2em;
-}
-
-.linked-word-detail p {
-    margin: 10px 0;
-    line-height: 1.5;
-}
-
 .close-linked-detail {
     position: absolute;
     top: 10px;
     right: 10px;
     background: none;
     border: none;
-    color: #666;
+    color: var(--text-muted);
     cursor: pointer;
     font-size: 16px;
     padding: 5px;
 }
 
-.close-linked-detail:hover {
-    color: #1e40af;
-}
+.close-linked-detail:hover { color: var(--primary-color); }
 
-/* 语法练习区域样式 */
-#grammarContainer {
-    /* 删除所有样式，因为已经移到 HTML 中 */
-}
-
-#grammarContainer h2 {
-    /* 删除所有样式，因为已经移到 HTML 中 */
-}
-
-/* 移动端适配 */
-@media (max-width: 768px) {
-    .exercise-content {
-        grid-template-columns: 1fr;
-    }
-
-    .topic-list {
-        grid-template-columns: 1fr;
-    }
-
-    .cefr-levels {
-        flex-wrap: wrap;
-    }
-}
-
-/* CEFR 等级选择样式 */
-.cefr-selection {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.cefr-description {
-    color: #666;
-    margin-bottom: 30px;
-    font-size: 1.2em;
-}
-
+/* =========================================
+   6. 特定模块 (CEFR Levels & Topics)
+   ========================================= */
 .cefr-levels {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -423,70 +300,62 @@ mark {
 }
 
 .cefr-level-card {
-    background: white;
-    border: 2px solid #1e40af;
+    background: var(--bg-card);
+    border: 2px solid var(--primary-color);
     border-radius: 12px;
     padding: 20px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all var(--transition-speed) ease;
     position: relative;
-    text-align: left;
 }
 
 .cefr-level-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(30, 64, 175, 0.2);
+    box-shadow: var(--shadow-lg);
 }
 
 .cefr-level-card h3 {
-    color: #1e40af;
+    color: var(--primary-color);
     font-size: 24px;
     margin: 0 0 5px 0;
     text-decoration: underline;
 }
 
-.cefr-level-card p {
-    color: #666;
-    margin: 0 0 15px 0;
-    font-size: 16px;
-}
-
+/* 列表统一样式 */
 .cefr-level-card ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.cefr-level-card li:not(.feature-item) {
-    color: #444;
+.cefr-level-card ul li {
     margin: 8px 0;
     padding-left: 20px;
     position: relative;
+    color: #444;
 }
 
-.cefr-level-card li:not(.feature-item):before {
+.cefr-level-card ul li:before {
     content: "•";
-    color: #1e40af;
+    color: var(--primary-color);
     position: absolute;
     left: 0;
 }
 
-.coming-soon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #f0f0f0;
-    color: #666;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 12px;
+/* 特殊高亮的 feature-item (无需 !important) */
+.cefr-level-card ul li.feature-item {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-weight: bold;
 }
 
+/* 禁用的 CEFR 卡片 */
 .cefr-level-card[data-level="A2"],
 .cefr-level-card[data-level="B1"],
 .cefr-level-card[data-level="B2"] {
     opacity: 0.7;
     cursor: not-allowed;
+    color: var(--text-muted);
 }
 
 .cefr-level-card[data-level="A2"]:hover,
@@ -496,26 +365,54 @@ mark {
     box-shadow: none;
 }
 
-/* 返回按钮样式 */
-.back-to-levels {
-    padding: 8px 16px;
-    background: #f0f0f0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: #666;
-    transition: all 0.3s ease;
-    font-size: 16px;
+/* 主题与练习区块 */
+.topic-item {
+    background: var(--bg-card);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all var(--transition-speed) ease;
 }
 
-.back-to-levels:hover {
-    background: #e0e0e0;
-    color: #1e40af;
+.topic-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
 }
 
-/* 移动端适配 */
+/* =========================================
+   7. 移动端适配 (Media Queries 集中管理)
+   ========================================= */
 @media (max-width: 768px) {
-    .cefr-levels {
+    /* 侧边栏与主内容流式布局 */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content { margin-left: 0; }
+    
+    .toggle-sidebar { display: none; } /* 移动端考虑隐藏折叠按钮或改变位置 */
+
+    /* 按钮组弹性换行 */
+    .category-buttons,
+    .theme-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category-buttons button,
+    .theme-buttons button {
+        flex: 1 1 calc(50% - 10px);
+        margin: 5px;
+    }
+
+    /* 网格布局转单列 */
+    .cefr-levels,
+    .exercise-content,
+    .topic-list {
         grid-template-columns: 1fr;
     }
 
@@ -523,123 +420,3 @@ mark {
         margin: 0 10px;
     }
 }
-
-/* 可点击文字样式 */
-.clickable-text {
-    cursor: pointer !important;
-    transition: all 0.2s ease !important;
-}
-
-/* 删除所有标题的特殊样式 */
-.grammar-header h2.clickable-text,
-.grammar-topics h3.clickable-text,
-.topic-item h4.clickable-text,
-.exercise-header h3.clickable-text,
-.explanation h4.clickable-text,
-.practice h4.clickable-text {
-    margin: 0;
-}
-
-/* 修改主题项目样式 */
-.topic-item {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    transition: all 0.3s ease;
-}
-
-.topic-item.clickable-text {
-    text-decoration: none;
-}
-
-.topic-item.clickable-text:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-color: #1e40af;
-}
-
-.topic-item h4.clickable-text {
-    margin-bottom: 10px;
-}
-
-/* 修改返回按钮样式 */
-.back-to-levels,
-.back-to-topics {
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    font-size: 16px;
-    padding: 8px 16px;
-}
-
-/* 修改练习选项样式 */
-.exercise-item .options label {
-    display: block;
-    padding: 8px 12px;
-    margin: 5px 0;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    color: #333;
-}
-
-.exercise-item .options label:hover {
-    background-color: rgba(59, 130, 246, 0.1);
-    color: #1e40af;
-}
-
-.exercise-item .options input[type="radio"] {
-    margin-right: 8px;
-}
-
-/* 修改禁用状态的样式 */
-.cefr-level-card[data-level="A2"],
-.cefr-level-card[data-level="B1"],
-.cefr-level-card[data-level="B2"] {
-    opacity: 0.7;
-    cursor: not-allowed;
-    color: #666 !important;
-    text-decoration: none !important;
-}
-
-.cefr-level-card[data-level="A2"]:hover,
-.cefr-level-card[data-level="B1"]:hover,
-.cefr-level-card[data-level="B2"]:hover {
-    transform: none;
-    box-shadow: none;
-    background-color: transparent !important;
-}
-
-/* A1 等级卡片特性条目样式 */
-.cefr-level-card[data-level="A1"] ul li.feature-item {
-    color: #1e40af !important;
-    text-decoration: underline !important;
-    margin: 8px 0 !important;
-    padding-left: 20px !important;
-    position: relative !important;
-    font-weight: bold !important;
-}
-
-.cefr-level-card[data-level="A1"] ul li.feature-item:before {
-    content: "•" !important;
-    color: #1e40af !important;
-    position: absolute !important;
-    left: 0 !important;
-}
-
-/* 修改 CEFR 等级卡片列表样式 */
-.cefr-level-card ul li:not(.feature-item) {
-    color: #444;
-    margin: 8px 0;
-    padding-left: 20px;
-    position: relative;
-}
-
-.cefr-level-card ul li:not(.feature-item):before {
-    content: "•";
-    color: #1e40af;
-    position: absolute;
-    left: 0;
-} 

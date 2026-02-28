@@ -111,14 +111,7 @@
     "example": "Drei Bananen, bitte!",
     "meaning": "香蕉"
   },
-  {
-    "word": "die Bar (die, -s)",
-    "category": "主题",
-    "subCategory": "支付方式",
-    "type": "名词",
-    "example": "Muss ich bar zahlen oder geht’s auch mit Karte?",
-    "meaning": "现金"
-  },
+
   {
     "word": "das Bett (die, betten)",
     "category": "主题",
@@ -987,7 +980,7 @@
     "meaning": "火"
   },
   {
-    "word": "der Film (die, -en)",
+    "word": "der Film (die, -e)",
     "category": "主题",
     "subCategory": "娱乐",
     "type": "名词",
@@ -1131,7 +1124,7 @@
     "meaning": "花园"
   },
   {
-    "word": "der Gast (die, -en)",
+    "word": "der Gast (die, Gäste)",
     "category": "主题",
     "subCategory": "社交",
     "type": "名词",
@@ -1219,7 +1212,7 @@
     "meaning": "谈话"
   },
   {
-    "word": "das Getränk (die, -)",
+    "word": "das Getränk (die, Getränke)",
     "category": "主题",
     "subCategory": "餐饮",
     "type": "名词",
@@ -1259,7 +1252,7 @@
     "meaning": "好运"
   },
   {
-    "word": "der Glückwunsch (die, -en)",
+    "word": "der Glückwunsch (die, Glückwünsche)",
     "category": "主题",
     "subCategory": "祝福",
     "type": "名词",
@@ -2111,7 +2104,7 @@
     "meaning": "同事"
   },
   {
-    "word": "das Konto (die, -)",
+    "word": "das Konto (die, Konten)",
     "category": "主题",
     "subCategory": "财务",
     "type": "名词",
@@ -3657,7 +3650,7 @@
     "meaning": "公寓"
   },
   {
-    "word": "das Wort (die, -e)",
+    "word": "das Wort (die, Wörter)",
     "category": "词性",
     "subCategory": "名词",
     "type": "名词",
@@ -3792,14 +3785,7 @@
     "example": "Guten Abend! Wie war dein Tag?",
     "meaning": "晚上"
   },
-  {
-    "word": "die Pause (die, -n)",
-    "category": "主题",
-    "subCategory": "学习",
-    "type": "名词",
-    "example": "Wir machen eine kurze Pause.",
-    "meaning": "休息"
-  },
+
   {
     "word": "der Tag (die, -en)",
     "category": "主题",
@@ -4312,5 +4298,1654 @@
     "type": "名词",
     "example": "Meditation hilft beim Entspannen.",
     "meaning": "冥想"
+  },
+  {
+    "word": "der Flohmarkt (die, -märkte)",
+    "category": "主题",
+    "subCategory": "购物",
+    "type": "名词",
+    "example": "Am Samstag gehen wir auf den Flohmarkt.",
+    "meaning": "跳蚤市场"
+  },
+  {
+    "word": "die Überstunde (die, -n)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Er macht oft Überstunden.",
+    "meaning": "加班"
+  },
+  {
+    "word": "die Augenoptikerin (die, -nen)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Die Augenoptikerin hat meine Brille angepasst.",
+    "meaning": "女验光师"
+  },
+  {
+    "word": "der Augenoptiker (die, -)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Der Augenoptiker verkauft Brillen.",
+    "meaning": "验光师"
+  },
+  {
+    "word": "die Bankkauffrau (die, -en)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Sie ist Bankkauffrau bei der Sparkasse.",
+    "meaning": "女银行职员"
+  },
+  {
+    "word": "der Bankkaufmann (die Bankkaufleute)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Er arbeitet als Bankkaufmann.",
+    "meaning": "银行职员"
+  },
+  {
+    "word": "die Biologie (die, -n)",
+    "category": "主题",
+    "subCategory": "学科",
+    "type": "名词",
+    "example": "Biologie war mein Lieblingsfach.",
+    "meaning": "生物学"
+  },
+  {
+    "word": "die Mathematik (die, -)",
+    "category": "主题",
+    "subCategory": "学科",
+    "type": "名词",
+    "example": "Mathematik fällt mir schwer.",
+    "meaning": "数学"
+  },
+  {
+    "word": "die Note (die, -n)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Sie hat eine gute Note in Deutsch.",
+    "meaning": "成绩，分数"
+  },
+  {
+    "word": "das Stadtzentrum (die, -en)",
+    "category": "主题",
+    "subCategory": "地点",
+    "type": "名词",
+    "example": "Das Geschäft liegt im Stadtzentrum.",
+    "meaning": "市中心"
+  },
+  {
+    "word": "der Sinn (die, -e)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Das macht keinen Sinn.",
+    "meaning": "意义，感官"
+  },
+  {
+    "word": "der Gegenstand (die, -e)",
+    "category": "主题",
+    "subCategory": "物品",
+    "type": "名词",
+    "example": "Was ist das für ein Gegenstand?",
+    "meaning": "物体，物品"
+  },
+  {
+    "word": "die Angst (die, Ängste)",
+    "category": "主题",
+    "subCategory": "情感",
+    "type": "名词",
+    "example": "Sie hat Angst vor Hunden.",
+    "meaning": "恐惧"
+  },
+  {
+    "word": "die Entscheidung (die, -en)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Das war eine schwere Entscheidung.",
+    "meaning": "决定"
+  },
+  {
+    "word": "der Abschluss (die, -e)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Nach dem Abschluss geht er arbeiten.",
+    "meaning": "毕业，结业"
+  },
+  {
+    "word": "der Schulabschluss (die, -e)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Sie hat einen guten Schulabschluss.",
+    "meaning": "中学毕业"
+  },
+  {
+    "word": "das Abitur (die, -e)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Er macht nächstes Jahr Abitur.",
+    "meaning": "Abitur（德国高中毕业考试）"
+  },
+  {
+    "word": "das Zeugnis (die, -se)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Das Zeugnis kommt nächste Woche.",
+    "meaning": "成绩单，证书"
+  },
+  {
+    "word": "der Direktor (die, -en)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Der Direktor der Schule spricht.",
+    "meaning": "校长，主任"
+  },
+  {
+    "word": "die Direktorin (die, -nen)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Die Direktorin hat eine Besprechung.",
+    "meaning": "女校长，女主任"
+  },
+  {
+    "word": "die Schülerin (die, -nen)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Sie ist eine gute Schülerin.",
+    "meaning": "女学生"
+  },
+  {
+    "word": "die Klasse (die, -n)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "In welcher Klasse bist du?",
+    "meaning": "班级，年级"
+  },
+  {
+    "word": "das Klassenzimmer (die, -)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Das Klassenzimmer ist im zweiten Stock.",
+    "meaning": "教室"
+  },
+  {
+    "word": "die Unterrichtszeit (die, -en)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Die Unterrichtszeit beginnt um 8 Uhr.",
+    "meaning": "上课时间"
+  },
+  {
+    "word": "der Stundenplan (die, -e)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Zeig mir deinen Stundenplan.",
+    "meaning": "课程表"
+  },
+  {
+    "word": "die Fremdsprache (die, -n)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Englisch ist eine wichtige Fremdsprache.",
+    "meaning": "外语"
+  },
+  {
+    "word": "die Cafeteria (die, -s)",
+    "category": "主题",
+    "subCategory": "地点",
+    "type": "名词",
+    "example": "Wir treffen uns in der Cafeteria.",
+    "meaning": "食堂，咖啡厅"
+  },
+  {
+    "word": "der Schulweg (die, -e)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Der Schulweg dauert zehn Minuten.",
+    "meaning": "上学路线"
+  },
+  {
+    "word": "die Klassenfahrt (die, -en)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Die Klassenfahrt geht nach Berlin.",
+    "meaning": "班级旅行"
+  },
+  {
+    "word": "die Schuluniform (die, -en)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "An manchen Schulen gibt es eine Schuluniform.",
+    "meaning": "校服"
+  },
+  {
+    "word": "die Vorbereitung (die, -en)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Die Vorbereitung auf die Prüfung dauert lange.",
+    "meaning": "准备"
+  },
+  {
+    "word": "der Vokabeltest (die, -s)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Morgen haben wir einen Vokabeltest.",
+    "meaning": "词汇测验"
+  },
+  {
+    "word": "die Wirtschaft (die, -en)",
+    "category": "主题",
+    "subCategory": "经济",
+    "type": "名词",
+    "example": "Die Wirtschaft wächst.",
+    "meaning": "经济"
+  },
+  {
+    "word": "die AG (die, -s)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Sie ist in der Theater-AG.",
+    "meaning": "兴趣小组，社团"
+  },
+  {
+    "word": "die Grundschule (die, -n)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Sie geht in die vierte Klasse der Grundschule.",
+    "meaning": "小学"
+  },
+  {
+    "word": "die Hauptschule (die, -n)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Er hat die Hauptschule abgeschlossen.",
+    "meaning": "主体中学"
+  },
+  {
+    "word": "die Realschule (die, -n)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Sie macht ihren Abschluss an der Realschule.",
+    "meaning": "实科中学"
+  },
+  {
+    "word": "das Gymnasium (die, Gymnasien)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Er besucht das Gymnasium.",
+    "meaning": "文理中学"
+  },
+  {
+    "word": "die Gesamtschule (die, -n)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "An der Gesamtschule kann man alle Abschlüsse machen.",
+    "meaning": "综合中学"
+  },
+  {
+    "word": "die Berufsschule (die, -n)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Er geht zweimal pro Woche in die Berufsschule.",
+    "meaning": "职业学校"
+  },
+  {
+    "word": "das Schulsystem (die, -e)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Das deutsche Schulsystem ist anders als in China.",
+    "meaning": "学校体制"
+  },
+  {
+    "word": "das Bundesland (die, -er)",
+    "category": "主题",
+    "subCategory": "地理",
+    "type": "名词",
+    "example": "Bayern ist ein großes Bundesland.",
+    "meaning": "联邦州"
+  },
+  {
+    "word": "der Altenpfleger (die, -)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Er arbeitet als Altenpfleger.",
+    "meaning": "老年护理员"
+  },
+  {
+    "word": "die Arzthelferin (die, -nen)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Die Arzthelferin nimmt die Patienten an.",
+    "meaning": "女医生助理"
+  },
+  {
+    "word": "das Au-pair (die, -s)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Sie arbeitet als Au-pair in Deutschland.",
+    "meaning": "互惠生"
+  },
+  {
+    "word": "der Englischlehrer (die, -)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Unser Englischlehrer kommt aus London.",
+    "meaning": "英语老师"
+  },
+  {
+    "word": "die Gärtnerin (die, -nen)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Die Gärtnerin pflanzt Blumen.",
+    "meaning": "女园艺师"
+  },
+  {
+    "word": "der Grafiker (die, -)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Er ist Grafiker bei einer Werbeagentur.",
+    "meaning": "平面设计师"
+  },
+  {
+    "word": "der Hotelkaufmann (die Hotelkaufleute)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Er hat eine Ausbildung zum Hotelkaufmann gemacht.",
+    "meaning": "酒店管理专员"
+  },
+  {
+    "word": "die Hotelfachfrau (die, -en)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Sie arbeitet als Hotelfachfrau.",
+    "meaning": "酒店管理女专员"
+  },
+  {
+    "word": "die Krankenschwester (die, -n)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Die Krankenschwester pflegt die Patienten.",
+    "meaning": "护士"
+  },
+  {
+    "word": "der Krankenpfleger (die, -)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Er ist Krankenpfleger im Krankenhaus.",
+    "meaning": "男护士"
+  },
+  {
+    "word": "die Arbeitswelt (die, -en)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Die Arbeitswelt hat sich verändert.",
+    "meaning": "职场，工作世界"
+  },
+  {
+    "word": "der Auszubildende / die Auszubildende (die, -n)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Die Auszubildenden lernen im Betrieb.",
+    "meaning": "学徒，培训生"
+  },
+  {
+    "word": "der Azubi (die, -s)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Er ist Azubi bei der Bank.",
+    "meaning": "学徒（口语）"
+  },
+  {
+    "word": "die Berufserfahrung (die, -en)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Sie hat viel Berufserfahrung.",
+    "meaning": "职业经验"
+  },
+  {
+    "word": "die Erfahrung (die, -en)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Das war eine gute Erfahrung.",
+    "meaning": "经验"
+  },
+  {
+    "word": "das Berufsleben (die, -)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Er ist am Anfang seines Berufslebens.",
+    "meaning": "职业生涯"
+  },
+  {
+    "word": "das Handwerk (die, -e)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Er lernt ein Handwerk.",
+    "meaning": "手艺，手工业"
+  },
+  {
+    "word": "die Messe (die, -n)",
+    "category": "主题",
+    "subCategory": "经济",
+    "type": "名词",
+    "example": "Die Buchmesse findet in Frankfurt statt.",
+    "meaning": "博览会，展会"
+  },
+  {
+    "word": "die Arztpraxis (die, -en)",
+    "category": "主题",
+    "subCategory": "地点",
+    "type": "名词",
+    "example": "Die Arztpraxis ist von 9 bis 12 Uhr geöffnet.",
+    "meaning": "诊所"
+  },
+  {
+    "word": "die Werbeagentur (die, -en)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Sie arbeitet bei einer Werbeagentur.",
+    "meaning": "广告公司"
+  },
+  {
+    "word": "das Jura (plural)",
+    "category": "主题",
+    "subCategory": "学科",
+    "type": "名词",
+    "example": "Sie studiert Jura.",
+    "meaning": "法学"
+  },
+  {
+    "word": "die Vorlesung (die, -en)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Die Vorlesung beginnt um 10 Uhr.",
+    "meaning": "大学讲座，大课"
+  },
+  {
+    "word": "die Meinung (die, -en)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Das ist meine Meinung.",
+    "meaning": "意见，看法"
+  },
+  {
+    "word": "die Gemeinsamkeit (die, -en)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Wir haben viele Gemeinsamkeiten.",
+    "meaning": "共同点"
+  },
+  {
+    "word": "der Unterschied (die, -e)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Was ist der Unterschied?",
+    "meaning": "区别"
+  },
+  {
+    "word": "das Beispiel (die, -e)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Zum Beispiel kann man Bus fahren.",
+    "meaning": "例子"
+  },
+  {
+    "word": "die Wendung (die, -en)",
+    "category": "主题",
+    "subCategory": "语言",
+    "type": "名词",
+    "example": "Das ist eine feste Wendung im Deutschen.",
+    "meaning": "短语，说法"
+  },
+  {
+    "word": "die Behinderung (die, -en)",
+    "category": "主题",
+    "subCategory": "健康",
+    "type": "名词",
+    "example": "Menschen mit Behinderung brauchen Unterstützung.",
+    "meaning": "残疾"
+  },
+  {
+    "word": "der Rollstuhl (die, -e)",
+    "category": "主题",
+    "subCategory": "物品",
+    "type": "名词",
+    "example": "Er sitzt im Rollstuhl.",
+    "meaning": "轮椅"
+  },
+  {
+    "word": "die Erholung (die, -en)",
+    "category": "主题",
+    "subCategory": "健康",
+    "type": "名词",
+    "example": "Zur Erholung fahre ich in die Berge.",
+    "meaning": "休息，恢复"
+  },
+  {
+    "word": "die Erinnerung (die, -en)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Ich habe schöne Erinnerungen an die Reise.",
+    "meaning": "回忆"
+  },
+  {
+    "word": "die Weltreise (die, -n)",
+    "category": "主题",
+    "subCategory": "旅行",
+    "type": "名词",
+    "example": "Sie träumt von einer Weltreise.",
+    "meaning": "环球旅行"
+  },
+  {
+    "word": "die Grafik (die, -en)",
+    "category": "主题",
+    "subCategory": "艺术",
+    "type": "名词",
+    "example": "Die Grafik zeigt die Entwicklung.",
+    "meaning": "图表，平面设计"
+  },
+  {
+    "word": "der Berg (die, -e)",
+    "category": "主题",
+    "subCategory": "自然",
+    "type": "名词",
+    "example": "Wir fahren in die Berge.",
+    "meaning": "山"
+  },
+  {
+    "word": "die Entwicklung (die, -en)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Die Entwicklung der Technik ist schnell.",
+    "meaning": "发展"
+  },
+  {
+    "word": "das Gerät (die, -e)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Dieses Gerät ist kaputt.",
+    "meaning": "设备，器具"
+  },
+  {
+    "word": "das Medium (die, Medien)",
+    "category": "主题",
+    "subCategory": "媒体",
+    "type": "名词",
+    "example": "Soziale Medien sind wichtig.",
+    "meaning": "媒体"
+  },
+  {
+    "word": "der Laptop (die, -s)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Ich arbeite am Laptop.",
+    "meaning": "笔记本电脑"
+  },
+  {
+    "word": "das Radio (die, -s)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Ich höre gerne Radio.",
+    "meaning": "收音机"
+  },
+  {
+    "word": "das Smartphone (die, -s)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Mein Smartphone ist neu.",
+    "meaning": "智能手机"
+  },
+  {
+    "word": "die Spielkonsole (die, -n)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Er spielt an der Spielkonsole.",
+    "meaning": "游戏机"
+  },
+  {
+    "word": "das Tablet (die, -s)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Sie liest auf dem Tablet.",
+    "meaning": "平板电脑"
+  },
+  {
+    "word": "der Bildschirm (die, -e)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Der Bildschirm ist zu klein.",
+    "meaning": "屏幕"
+  },
+  {
+    "word": "die Tastatur (die, -en)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Die Tastatur funktioniert nicht.",
+    "meaning": "键盘"
+  },
+  {
+    "word": "die Maus (die, Mäuse)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Die Maus ist für den Computer.",
+    "meaning": "鼠标"
+  },
+  {
+    "word": "das Kabel (die, -)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Das Kabel ist zu kurz.",
+    "meaning": "电缆，线"
+  },
+  {
+    "word": "die Webseite (die, -n)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Besuchen Sie unsere Webseite!",
+    "meaning": "网页"
+  },
+  {
+    "word": "der Link (die, -s)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Klicken Sie auf den Link.",
+    "meaning": "链接"
+  },
+
+  {
+    "word": "der Vergleich (die, -e)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Im Vergleich dazu ist das billiger.",
+    "meaning": "比较"
+  },
+  {
+    "word": "der Studierende / die Studierende (die, -n)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Die Studierenden protestieren.",
+    "meaning": "大学生"
+  },
+  {
+    "word": "die Umfrage (die, -n)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "An der Umfrage haben 1000 Menschen teilgenommen.",
+    "meaning": "问卷调查"
+  },
+  {
+    "word": "die Komödie (die, -n)",
+    "category": "主题",
+    "subCategory": "娱乐",
+    "type": "名词",
+    "example": "Ich mag Komödien.",
+    "meaning": "喜剧"
+  },
+  {
+    "word": "der Liebesfilm (die, -e)",
+    "category": "主题",
+    "subCategory": "娱乐",
+    "type": "名词",
+    "example": "Sie schaut gerne Liebesfilme.",
+    "meaning": "爱情片"
+  },
+  {
+    "word": "der Thriller (die, -)",
+    "category": "主题",
+    "subCategory": "娱乐",
+    "type": "名词",
+    "example": "Der Thriller war spannend.",
+    "meaning": "惊悚片"
+  },
+  {
+    "word": "die Filmmusik (die, -en)",
+    "category": "主题",
+    "subCategory": "娱乐",
+    "type": "名词",
+    "example": "Die Filmmusik war sehr schön.",
+    "meaning": "电影配乐"
+  },
+  {
+    "word": "die Handlung (die, -en)",
+    "category": "主题",
+    "subCategory": "娱乐",
+    "type": "名词",
+    "example": "Die Handlung des Films ist kompliziert.",
+    "meaning": "情节"
+  },
+  {
+    "word": "der Trailer (die, -)",
+    "category": "主题",
+    "subCategory": "娱乐",
+    "type": "名词",
+    "example": "Hast du den Trailer gesehen?",
+    "meaning": "预告片"
+  },
+  {
+    "word": "die Hauptperson (die, -en)",
+    "category": "主题",
+    "subCategory": "娱乐",
+    "type": "名词",
+    "example": "Die Hauptperson stirbt am Ende.",
+    "meaning": "主角"
+  },
+  {
+    "word": "das Talent (die, -e)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Sie hat Talent für Musik.",
+    "meaning": "天赋"
+  },
+  {
+    "word": "der Humor (die, -e)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Er hat einen guten Humor.",
+    "meaning": "幽默"
+  },
+  {
+    "word": "der Witz (die, -e)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Erzähl uns einen Witz!",
+    "meaning": "笑话"
+  },
+  {
+    "word": "der Enkel (die, -)",
+    "category": "主题",
+    "subCategory": "家庭",
+    "type": "名词",
+    "example": "Meine Enkel besuchen mich oft.",
+    "meaning": "孙子，外孙"
+  },
+  {
+    "word": "die Enkelin (die, -nen)",
+    "category": "主题",
+    "subCategory": "家庭",
+    "type": "名词",
+    "example": "Sie hat zwei Enkelinnen.",
+    "meaning": "孙女，外孙女"
+  },
+  {
+    "word": "die Freundschaft (die, -en)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Unsere Freundschaft ist wichtig.",
+    "meaning": "友谊"
+  },
+  {
+    "word": "die Kindheit (die, -en)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Er hatte eine schöne Kindheit.",
+    "meaning": "童年"
+  },
+  {
+    "word": "das Schicksal (die, -e)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Das Schicksal hat uns zusammengeführt.",
+    "meaning": "命运"
+  },
+  {
+    "word": "die Sorge (die, -n)",
+    "category": "主题",
+    "subCategory": "情感",
+    "type": "名词",
+    "example": "Ich mache mir Sorgen um dich.",
+    "meaning": "担忧"
+  },
+  {
+    "word": "das Tier (die, -e)",
+    "category": "主题",
+    "subCategory": "自然",
+    "type": "名词",
+    "example": "Viele Tiere leben im Wald.",
+    "meaning": "动物"
+  },
+  {
+    "word": "der Bahnhof (die, -höfe)",
+    "category": "主题",
+    "subCategory": "交通",
+    "type": "名词",
+    "example": "Am Bahnhof treffen wir uns.",
+    "meaning": "火车站"
+  },
+  {
+    "word": "das Ereignis (die, -se)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Das war ein besonderes Ereignis.",
+    "meaning": "事件"
+  },
+  {
+    "word": "die Geburt (die, -en)",
+    "category": "主题",
+    "subCategory": "家庭",
+    "type": "名词",
+    "example": "Zur Geburt des Kindes gratulieren wir.",
+    "meaning": "出生"
+  },
+  {
+    "word": "der Schultag (die, -e)",
+    "category": "主题",
+    "subCategory": "教育",
+    "type": "名词",
+    "example": "Ein Schultag dauert bis 13 Uhr.",
+    "meaning": "上学日"
+  },
+  {
+    "word": "die Führerscheinprüfung (die, -en)",
+    "category": "主题",
+    "subCategory": "交通",
+    "type": "名词",
+    "example": "Sie hat die Führerscheinprüfung bestanden.",
+    "meaning": "驾照考试"
+  },
+  {
+    "word": "der Club (die, -s)",
+    "category": "主题",
+    "subCategory": "休闲",
+    "type": "名词",
+    "example": "Er ist Mitglied im Sportclub.",
+    "meaning": "俱乐部"
+  },
+  {
+    "word": "das Brautpaar (die, -e)",
+    "category": "主题",
+    "subCategory": "家庭",
+    "type": "名词",
+    "example": "Das Brautpaar tauscht die Ringe.",
+    "meaning": "新婚夫妇"
+  },
+  {
+    "word": "der Ring (die, -e)",
+    "category": "主题",
+    "subCategory": "物品",
+    "type": "名词",
+    "example": "Sie trägt einen goldenen Ring.",
+    "meaning": "戒指"
+  },
+  {
+    "word": "der Sieg (die, -e)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Der Sieg war verdient.",
+    "meaning": "胜利"
+  },
+  {
+    "word": "die Medaille (die, -n)",
+    "category": "主题",
+    "subCategory": "体育",
+    "type": "名词",
+    "example": "Sie hat eine goldene Medaille gewonnen.",
+    "meaning": "奖牌"
+  },
+  {
+    "word": "das Feuerwerk (die, -e)",
+    "category": "主题",
+    "subCategory": "休闲",
+    "type": "名词",
+    "example": "Zum Jahresende gibt es ein Feuerwerk.",
+    "meaning": "烟花"
+  },
+  {
+    "word": "die Absage (die, -n)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Er hat eine Absage bekommen.",
+    "meaning": "拒绝"
+  },
+  {
+    "word": "das Gefühl (die, -e)",
+    "category": "主题",
+    "subCategory": "情感",
+    "type": "名词",
+    "example": "Ich habe ein komisches Gefühl.",
+    "meaning": "感觉"
+  },
+  {
+    "word": "die Emotion (die, -en)",
+    "category": "主题",
+    "subCategory": "情感",
+    "type": "名词",
+    "example": "Er zeigte keine Emotionen.",
+    "meaning": "情绪"
+  },
+  {
+    "word": "die Ahnung (die, -en)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Ich habe keine Ahnung.",
+    "meaning": "预感，概念"
+  },
+  {
+    "word": "die Laune (die, -n)",
+    "category": "主题",
+    "subCategory": "情感",
+    "type": "名词",
+    "example": "Er ist heute in guter Laune.",
+    "meaning": "心情"
+  },
+  {
+    "word": "die Liebe (die, -n)",
+    "category": "主题",
+    "subCategory": "情感",
+    "type": "名词",
+    "example": "Die Liebe ist schön.",
+    "meaning": "爱"
+  },
+  {
+    "word": "die Freude (die, -n)",
+    "category": "主题",
+    "subCategory": "情感",
+    "type": "名词",
+    "example": "Es macht mir Freude, dir zu helfen.",
+    "meaning": "快乐"
+  },
+  {
+    "word": "das Bedauern (die, -)",
+    "category": "主题",
+    "subCategory": "情感",
+    "type": "名词",
+    "example": "Er zeigte sein Bedauern.",
+    "meaning": "遗憾"
+  },
+  {
+    "word": "das Frühjahr (die, -e)",
+    "category": "主题",
+    "subCategory": "时间",
+    "type": "名词",
+    "example": "Im Frühjahr blühen die Bäume.",
+    "meaning": "春天"
+  },
+  {
+    "word": "das Gegenteil (die, -e)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Das Gegenteil von groß ist klein.",
+    "meaning": "相反"
+  },
+  {
+    "word": "das Wohnheim (die, -e)",
+    "category": "主题",
+    "subCategory": "地点",
+    "type": "名词",
+    "example": "Sie wohnt im Studentenwohnheim.",
+    "meaning": "宿舍"
+  },
+  {
+    "word": "der Verkehr (die, -)",
+    "category": "主题",
+    "subCategory": "交通",
+    "type": "名词",
+    "example": "Der Verkehr ist heute stark.",
+    "meaning": "交通"
+  },
+  {
+    "word": "die Währung (die, -en)",
+    "category": "主题",
+    "subCategory": "经济",
+    "type": "名词",
+    "example": "Die Währung in Deutschland ist der Euro.",
+    "meaning": "货币"
+  },
+  {
+    "word": "das Verkehrsmittel (die, -)",
+    "category": "主题",
+    "subCategory": "交通",
+    "type": "名词",
+    "example": "Bus und Bahn sind öffentliche Verkehrsmittel.",
+    "meaning": "交通工具"
+  },
+  {
+    "word": "die Fahrerin (die, -nen)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Die Fahrerin hält am nächsten Halt.",
+    "meaning": "女司机"
+  },
+  {
+    "word": "die Feuerwehr (die, -en)",
+    "category": "主题",
+    "subCategory": "机构",
+    "type": "名词",
+    "example": "Ruf die Feuerwehr!",
+    "meaning": "消防队"
+  },
+  {
+    "word": "die Sicherheit (die, -en)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Sicherheit geht vor.",
+    "meaning": "安全"
+  },
+  {
+    "word": "die Operation (die, -en)",
+    "category": "主题",
+    "subCategory": "健康",
+    "type": "名词",
+    "example": "Die Operation war erfolgreich.",
+    "meaning": "手术"
+  },
+  {
+    "word": "die Straßenreinigung (die, -en)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Die Straßenreinigung arbeitet nachts.",
+    "meaning": "街道清洁"
+  },
+  {
+    "word": "der Müll (der, -)",
+    "category": "主题",
+    "subCategory": "物品",
+    "type": "名词",
+    "example": "Bitte den Müll trennen!",
+    "meaning": "垃圾"
+  },
+  {
+    "word": "die Müllabfuhr (die, -en)",
+    "category": "主题",
+    "subCategory": "机构",
+    "type": "名词",
+    "example": "Die Müllabfuhr kommt jeden Dienstag.",
+    "meaning": "垃圾清运"
+  },
+  {
+    "word": "die Mülltonne (die, -n)",
+    "category": "主题",
+    "subCategory": "物品",
+    "type": "名词",
+    "example": "Die Mülltonne steht im Hof.",
+    "meaning": "垃圾桶"
+  },
+  {
+    "word": "die Aushilfe (die, -n)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Sie arbeitet als Aushilfe im Café.",
+    "meaning": "临时工"
+  },
+  {
+    "word": "die Behörde (die, -n)",
+    "category": "主题",
+    "subCategory": "机构",
+    "type": "名词",
+    "example": "Bei der Behörde muss ich den Antrag abgeben.",
+    "meaning": "机关，当局"
+  },
+  {
+    "word": "das Amt (die, Ämter)",
+    "category": "主题",
+    "subCategory": "机构",
+    "type": "名词",
+    "example": "Ich gehe zum Amt.",
+    "meaning": "局，办事处"
+  },
+  {
+    "word": "der Beamte / die Beamtin (die Beamtinnen)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Der Beamte bearbeitet den Antrag.",
+    "meaning": "公务员"
+  },
+  {
+    "word": "der Antrag (die, Anträge)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Der Antrag wurde abgelehnt.",
+    "meaning": "申请"
+  },
+  {
+    "word": "die Einbürgerung (die, -en)",
+    "category": "主题",
+    "subCategory": "法律",
+    "type": "名词",
+    "example": "Sie hat die Einbürgerung beantragt.",
+    "meaning": "入籍"
+  },
+  {
+    "word": "das Dokument (die, -e)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Bitte alle Dokumente mitbringen!",
+    "meaning": "文件"
+  },
+  {
+    "word": "die Angabe (die, -n)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Die Angaben müssen stimmen.",
+    "meaning": "说明，数据"
+  },
+  {
+    "word": "der Personalausweis (die, -e)",
+    "category": "主题",
+    "subCategory": "证件",
+    "type": "名词",
+    "example": "Zeig bitte deinen Personalausweis!",
+    "meaning": "身份证"
+  },
+  {
+    "word": "das Visum (die, Visa)",
+    "category": "主题",
+    "subCategory": "证件",
+    "type": "名词",
+    "example": "Sie braucht ein Visum für die Einreise.",
+    "meaning": "签证"
+  },
+  {
+    "word": "die Grenze (die, -n)",
+    "category": "主题",
+    "subCategory": "地理",
+    "type": "名词",
+    "example": "An der Grenze wird kontrolliert.",
+    "meaning": "边界"
+  },
+  {
+    "word": "der Angestellte / die Angestellte (die, -n)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Er ist Angestellter bei einer Bank.",
+    "meaning": "职员"
+  },
+  {
+    "word": "der Betrag (die, -e)",
+    "category": "主题",
+    "subCategory": "经济",
+    "type": "名词",
+    "example": "Der Betrag wird vom Konto abgebucht.",
+    "meaning": "金额"
+  },
+  {
+    "word": "die Finanzen (plural)",
+    "category": "主题",
+    "subCategory": "经济",
+    "type": "名词",
+    "example": "Er kümmert sich um die Finanzen.",
+    "meaning": "财政，财务"
+  },
+  {
+    "word": "das Bankgeschäft (die, -e)",
+    "category": "主题",
+    "subCategory": "经济",
+    "type": "名词",
+    "example": "Ich erledige mein Bankgeschäft online.",
+    "meaning": "银行业务"
+  },
+  {
+    "word": "die Bankkarte (die, -n)",
+    "category": "主题",
+    "subCategory": "经济",
+    "type": "名词",
+    "example": "Mit der Bankkarte kann man bargeldlos zahlen.",
+    "meaning": "银行卡"
+  },
+  {
+    "word": "der Kredit (die, -e)",
+    "category": "主题",
+    "subCategory": "经济",
+    "type": "名词",
+    "example": "Sie hat einen Kredit aufgenommen.",
+    "meaning": "贷款"
+  },
+  {
+    "word": "der Diebstahl (die, -e)",
+    "category": "主题",
+    "subCategory": "法律",
+    "type": "名词",
+    "example": "Der Diebstahl wurde angezeigt.",
+    "meaning": "盗窃"
+  },
+  {
+    "word": "die Touristin (die, -nen)",
+    "category": "主题",
+    "subCategory": "人物",
+    "type": "名词",
+    "example": "Viele Touristinnen besuchen Berlin.",
+    "meaning": "女游客"
+  },
+  {
+    "word": "der Politiker (die, -)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Der Politiker hält eine Rede.",
+    "meaning": "政治家"
+  },
+  {
+    "word": "die Politikerin (die, -nen)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Sie ist Politikerin und Abgeordnete.",
+    "meaning": "女政治家"
+  },
+  {
+    "word": "das Parlament (die, -e)",
+    "category": "主题",
+    "subCategory": "政治",
+    "type": "名词",
+    "example": "Das Parlament hat das Gesetz verabschiedet.",
+    "meaning": "议会"
+  },
+  {
+    "word": "das Gesetz (die, -e)",
+    "category": "主题",
+    "subCategory": "法律",
+    "type": "名词",
+    "example": "Das neue Gesetz tritt in Kraft.",
+    "meaning": "法律"
+  },
+  {
+    "word": "die Verwaltung (die, -en)",
+    "category": "主题",
+    "subCategory": "机构",
+    "type": "名词",
+    "example": "Die Verwaltung ist im ersten Stock.",
+    "meaning": "管理，行政部门"
+  },
+  {
+    "word": "das Gebäude (die, -)",
+    "category": "主题",
+    "subCategory": "地点",
+    "type": "名词",
+    "example": "Das Gebäude hat fünf Stockwerke.",
+    "meaning": "建筑物"
+  },
+  {
+    "word": "der Gefallen (die, -)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Kannst du mir einen Gefallen tun?",
+    "meaning": "好意，帮忙"
+  },
+  {
+    "word": "der Fan (die, -s)",
+    "category": "主题",
+    "subCategory": "人物",
+    "type": "名词",
+    "example": "Er ist ein großer Fan von dieser Band.",
+    "meaning": "粉丝"
+  },
+  {
+    "word": "der Daumen (die, -)",
+    "category": "主题",
+    "subCategory": "身体",
+    "type": "名词",
+    "example": "Ich drücke dir die Daumen!",
+    "meaning": "拇指"
+  },
+  {
+    "word": "der Gedanke (die, -n)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Ein guter Gedanke!",
+    "meaning": "想法"
+  },
+  {
+    "word": "die Ruhe (die, -n)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Ich brauche Ruhe.",
+    "meaning": "安静"
+  },
+  {
+    "word": "das Wunder (die, -)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Es ist ein Wunder, dass du da bist.",
+    "meaning": "奇迹"
+  },
+  {
+    "word": "die Tätigkeit (die, -en)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Welche Tätigkeit üben Sie aus?",
+    "meaning": "工作，活动"
+  },
+  {
+    "word": "der Ärger (die, -)",
+    "category": "主题",
+    "subCategory": "情感",
+    "type": "名词",
+    "example": "Er hat heute viel Ärger gehabt.",
+    "meaning": "生气，麻烦"
+  },
+  {
+    "word": "der Trainer (die, -)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Der Trainer betreut die Mannschaft.",
+    "meaning": "教练"
+  },
+  {
+    "word": "der Berufswunsch (die, -wünsche)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Was ist dein Berufswunsch?",
+    "meaning": "职业愿望"
+  },
+  {
+    "word": "der Neuanfang (die, -anfänge)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Der Umzug war ein kompletter Neuanfang.",
+    "meaning": "新的开始"
+  },
+  {
+    "word": "die Chance (die, -n)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Nutze die Chance!",
+    "meaning": "机会"
+  },
+  {
+    "word": "die Umwelt (die, -en)",
+    "category": "主题",
+    "subCategory": "自然",
+    "type": "名词",
+    "example": "Wir müssen die Umwelt schützen.",
+    "meaning": "环境"
+  },
+  {
+    "word": "das Plastik (die, -s)",
+    "category": "主题",
+    "subCategory": "物品",
+    "type": "名词",
+    "example": "Plastik ist schlecht für die Umwelt.",
+    "meaning": "塑料"
+  },
+  {
+    "word": "das Gehalt (die, -hälter)",
+    "category": "主题",
+    "subCategory": "经济",
+    "type": "名词",
+    "example": "Sie ist mit ihrem Gehalt zufrieden.",
+    "meaning": "工资，薪水"
+  },
+  {
+    "word": "das Risiko (die, -en)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Dieses Projekt hat ein hohes Risiko.",
+    "meaning": "风险"
+  },
+  {
+    "word": "die Oberärztin (die, -nen)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Die Oberärztin leitet die Station.",
+    "meaning": "女主治医师"
+  },
+  {
+    "word": "der Chirurg (die, -en)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Der Chirurg führt die Operation durch.",
+    "meaning": "外科医生"
+  },
+  {
+    "word": "der Leiter (die, -)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Der Leiter der Abteilung ist im Urlaub.",
+    "meaning": "负责人，领导"
+  },
+  {
+    "word": "der Lastwagen (die, -)",
+    "category": "主题",
+    "subCategory": "交通",
+    "type": "名词",
+    "example": "Der Lastwagen transportiert Waren.",
+    "meaning": "卡车"
+  },
+  {
+    "word": "das Stadtprogramm (die, -e)",
+    "category": "主题",
+    "subCategory": "城市",
+    "type": "名词",
+    "example": "Im Stadtprogramm stehen viele Veranstaltungen.",
+    "meaning": "城市活动项目"
+  },
+  {
+    "word": "die Ermäßigung (die, -en)",
+    "category": "主题",
+    "subCategory": "经济",
+    "type": "名词",
+    "example": "Studenten bekommen eine Ermäßigung.",
+    "meaning": "折扣，减价"
+  },
+  {
+    "word": "die Band (die, -s)",
+    "category": "主题",
+    "subCategory": "娱乐",
+    "type": "名词",
+    "example": "Die Band spielt live.",
+    "meaning": "乐队"
+  },
+  {
+    "word": "die Sängerin (die, -nen)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Die Sängerin hat eine schöne Stimme.",
+    "meaning": "女歌手"
+  },
+  {
+    "word": "das Album (die, -s)",
+    "category": "主题",
+    "subCategory": "娱乐",
+    "type": "名词",
+    "example": "Das neue Album ist sehr erfolgreich.",
+    "meaning": "专辑"
+  },
+  {
+    "word": "der Anrufer (die, -)",
+    "category": "主题",
+    "subCategory": "人物",
+    "type": "名词",
+    "example": "Der Anrufer hat keine Nachricht hinterlassen.",
+    "meaning": "来电者"
+  },
+  {
+    "word": "der Anrufbeantworter (die, -)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Der Anrufbeantworter ist voll.",
+    "meaning": "电话答录机"
+  },
+  {
+    "word": "das Wissen (das, -)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Wissen ist Macht.",
+    "meaning": "知识"
+  },
+  {
+    "word": "die Kompetenz (die, -en)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Für diese Stelle braucht man soziale Kompetenzen.",
+    "meaning": "能力，胜任力"
+  },
+  {
+    "word": "die Hausarbeit (die, -en)",
+    "category": "主题",
+    "subCategory": "家庭",
+    "type": "名词",
+    "example": "Die Hausarbeit nimmt viel Zeit.",
+    "meaning": "家务；家庭作业"
+  },
+  {
+    "word": "der Fall (die, Fälle)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "In diesem Fall rufen Sie bitte die Polizei.",
+    "meaning": "情况，案件"
+  },
+  {
+    "word": "der Schritt (die, -e)",
+    "category": "主题",
+    "subCategory": "抽象",
+    "type": "名词",
+    "example": "Der erste Schritt ist gemacht.",
+    "meaning": "步，步骤"
+  },
+  {
+    "word": "der Feiertag (die, -e)",
+    "category": "主题",
+    "subCategory": "时间",
+    "type": "名词",
+    "example": "Am Feiertag haben viele Geschäfte geschlossen.",
+    "meaning": "节假日"
+  },
+  {
+    "word": "das Jahrhundert (die, -e)",
+    "category": "主题",
+    "subCategory": "时间",
+    "type": "名词",
+    "example": "Im 21. Jahrhundert hat sich viel verändert.",
+    "meaning": "世纪"
+  },
+  {
+    "word": "der Arbeitstag (die, -e)",
+    "category": "主题",
+    "subCategory": "时间",
+    "type": "名词",
+    "example": "Ein normaler Arbeitstag dauert acht Stunden.",
+    "meaning": "工作日"
+  },
+  {
+    "word": "der Betrieb (die, -e)",
+    "category": "主题",
+    "subCategory": "职业",
+    "type": "名词",
+    "example": "Im Betrieb arbeiten 200 Angestellte.",
+    "meaning": "企业，工厂"
+  },
+  {
+    "word": "der Roboter (die, -)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Roboter übernehmen viele Tätigkeiten.",
+    "meaning": "机器人"
+  },
+  {
+    "word": "die Digitalisierung (die, -en)",
+    "category": "主题",
+    "subCategory": "科技",
+    "type": "名词",
+    "example": "Die Digitalisierung verändert die Arbeitswelt.",
+    "meaning": "数字化"
   }
 ]

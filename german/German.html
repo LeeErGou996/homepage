@@ -215,33 +215,34 @@
 
             <div id="view-filter" class="view-module control-panel filter-buttons">
                 <div id="categoryGroup" style="display: none;">
-                    <button onclick="filterBy('type', '名词')">名词</button>
-                    <button onclick="filterBy('type', '动词')">动词</button>
-                    <button onclick="filterBy('type', '形容词')">形容词</button>
-                    <button onclick="filterBy('type', '副词')">副词</button>
-                    <button onclick="filterBy('type', '代词')">代词</button>
-                    <button onclick="filterBy('type', '介词')">介词</button>
-                    <button onclick="filterBy('type', '连词')">连词</button>
-                    <button onclick="filterBy('type', '冠词')">冠词</button>
-                    <button onclick="filterBy('type', '情态动词')">情态动词</button>
-                </div>
+                    </div>
                 <div id="themeGroup" style="display: none;">
-                    <button onclick="filterBy('theme', '个人信息')">个人信息</button>
-                    <button onclick="filterBy('theme', '交通')">交通</button>
-                    <button onclick="filterBy('theme', '时间')">时间</button>
-                    <button onclick="filterBy('theme', '天气')">天气</button>
-                    <button onclick="filterBy('theme', '购物')">购物</button>
-                    <button onclick="filterBy('theme', '餐饮')">餐饮</button>
-                </div>
+                    </div>
             </div>
 
             <div id="view-search" class="view-module control-panel">
-                <input type="text" id="searchInput" placeholder="输入单词或汉语意思进行搜索" oninput="searchWords()" style="width: 80%; max-width: 400px;" />
+                <input type="text" id="searchInput" placeholder="支持多词组合 (如: 名词 Apfel) 或忽略冠词搜索" oninput="advancedSearch()" style="width: 80%; max-width: 400px; padding: 12px; font-size: 16px;" />
             </div>
 
-            <div id="view-random-input" class="view-module control-panel">
-                <input type="number" id="randomCount" placeholder="请输入抽取数量 (如: 10)">
-                <button onclick="selectRandomWords()" style="padding: 8px 15px; background: var(--primary-color); color: white; border: none; border-radius: 4px;">确认</button>
+            <div id="view-random-input" class="view-module control-panel" style="text-align: center;">
+                <h3 style="color: var(--primary-color);">Zufällige Wörter</h3>
+                
+                <div style="margin: 20px 0;">
+                    <button onclick="drawNextRandomWord()" style="padding: 12px 24px; font-size: 16px; background: var(--primary-color); color: white; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
+                        ✨ Nächstes Wort (抽取下一个)
+                    </button>
+                    <button onclick="resetRandomPool()" style="padding: 12px 24px; font-size: 16px; background: #fff; color: var(--text-muted); border: 1px solid var(--border-color); border-radius: 8px; cursor: pointer; margin-left: 10px; transition: all 0.2s;">
+                        🔄 Reset (重置词库)
+                    </button>
+                </div>
+                
+                <div id="currentRandomWordCard" class="detail-card" style="display: none; max-width: 600px; margin: 0 auto; text-align: left; border-left: 5px solid var(--primary-hover);">
+                    </div>
+                
+                <div style="max-width: 600px; margin: 30px auto 0;">
+                    <h4 style="text-align: left; color: var(--text-muted); margin-bottom: 10px;">Verlauf (历史记录):</h4>
+                    <div id="randomWordHistory" class="word-list" style="max-height: 40vh; text-align: left;"></div>
+                </div>
             </div>
 
             <div id="wordListContainer" class="view-module word-list"></div>
@@ -253,7 +254,18 @@
                 <button onclick="closeElement('wordDetail')" style="margin-top:10px;">关闭</button>
             </div>
 
-            <div id="linkedWordDetail" class="detail-card" style="display: none; border-left: 4px solid var(--primary-color);"></div>
+            <div id="linkedWordsWrapper" style="display: none; margin-top: 30px; background: var(--bg-card); padding: 15px; border-radius: 8px; box-shadow: var(--shadow-sm);">
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-bottom: 15px;">
+                    <h4 style="margin: 0; color: var(--primary-color); font-size: 18px;">🔗 Verwandte Wörter (关联词汇)</h4>
+                    <button onclick="clearAllLinkedWords()" style="background: #ef4444; color: white; border: none; padding: 6px 15px; border-radius: 6px; cursor: pointer; font-size: 14px; transition: background 0.2s; box-shadow: 0 2px 4px rgba(239, 68, 68, 0.2);" onmouseover="this.style.background='#dc2626'" onmouseout="this.style.background='#ef4444'">
+                        🗑️ Alle schließen (全部关闭)
+                    </button>
+                </div>
+                
+                <div id="linkedWordsContainer" style="display: flex; flex-direction: column; gap: 15px;"></div>
+                
+            </div>
 
             <div id="view-grammar" class="view-module">
                 <h2>Deutsche Grammatik A1</h2>
@@ -261,23 +273,48 @@
             </div>
 
             <div id="view-partizip" class="view-module">
-                <div id="partizip2Setup">
-                    <h2>Partizip II 练习</h2>
-                    <div class="setup-options">
-                        <div class="option-group">
-                            <h3>练习模式</h3>
-                            <input type="number" id="partizip2Count" min="1" max="50" value="10" placeholder="练习数量(1-50)">
-                            <button onclick="startPartizip2Exercise()">开始练习</button>
-                        </div>
-                        <div class="option-group">
-                            <h3>学习模式</h3>
-                            <button onclick="showPartizip2Learning()">查看所有动词</button>
-                        </div>
+                <div id="partizip2Setup" class="control-panel" style="display: block;">
+                    <h2>Partizip II Übung</h2>
+                    <div style="margin: 20px 0;">
+                        <label>题数 (1-50): </label>
+                        <input type="number" id="partizip2Count" value="10" style="width: 60px;">
+                    </div>
+                    <div style="display: flex; gap: 10px; justify-content: center;">
+                        <button class="nav-btn" style="background: var(--primary-color); color: white;" onclick="startPartizip2Exercise()">🚀 开始练习</button>
+                        <button class="nav-btn" onclick="showPartizip2Learning()">📖 进入学习模式</button>
                     </div>
                 </div>
-                <div id="partizip2Exercise" style="display: none;"></div>
-                <div id="partizip2Learning" style="display: none;"></div>
-                <div id="partizip2Results" style="display: none;"></div>
+
+                <div id="partizip2Exercise" class="detail-card" style="display: none; text-align: center; padding: 40px 20px;">
+                    <div id="partizip2Progress" style="color: var(--text-muted); margin-bottom: 20px;"></div>
+                    <div id="currentWord" style="font-size: 2.5em; font-weight: bold; margin-bottom: 30px; color: var(--primary-color);"></div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <input type="text" id="partizip2Answer" placeholder="请输入过去分词..." 
+                            style="width: 80%; max-width: 300px; padding: 15px; font-size: 1.2em; text-align: center; border: 2px solid var(--primary-color); border-radius: 8px;">
+                    </div>
+                    
+                    <div style="display: flex; gap: 10px; justify-content: center;">
+                        <button class="nav-btn" style="background: var(--primary-color); color: white; padding: 10px 30px;" onclick="checkPartizip2Answer()">检查答案</button>
+                        <button class="nav-btn" onclick="skipPartizip2Question()">跳过</button>
+                        
+                        <button id="nextQuestionBtn" class="nav-btn" 
+                                style="display: none; background: #22c55e; color: white; padding: 10px 30px;" 
+                                onclick="goToNextQuestion()">
+                            下一题 ➜
+                        </button>
+                    </div>
+                    
+                    <div id="partizip2Feedback" style="margin-top: 30px; font-size: 1.2em; font-weight: bold; min-height: 1.5em;"></div>
+                </div>
+
+                <div id="partizip2Learning" style="display: none;">
+                    <div id="partizip2LearningList"></div>
+                </div>
+
+                <div id="partizip2Results" style="display: none;">
+                    <div id="partizip2ResultsList"></div>
+                </div>
             </div>
 
         </div> </div>
@@ -290,17 +327,17 @@
         Promise.all(
             jsonFiles.map(file =>
                 fetch(file)
-                    .then(response => response.ok ? response.json() : []) // 异常处理：防止 404 破坏整个流
+                    .then(response => response.ok ? response.json() : []) // 异常处理
                     .catch(error => {
                         console.error(`加载文件 ${file} 失败:`, error);
-                        return []; // 返回空数组保底
+                        return []; 
                     })
             )
         ).then(dataArray => {
             // 合并并过滤可能存在的空数据
             words = dataArray.flat().filter(Boolean); 
             
-            // 【性能优化】：数据加载时预生成正则表达式，避免在渲染列表时重复计算
+            // 【性能优化】：数据加载时预生成正则表达式
             words.forEach(item => {
                 if(item.word) {
                     const baseWord = item.word.replace(/^(der|die|das|ein|eine|einen|einem|dem|den)\s+/i, '');
@@ -314,10 +351,45 @@
 
             console.log(`所有单词数据已加载，共 ${words.length} 条。`);
             
+            // ==========================================
+            // 【新增】：根据加载的数据，动态生成过滤按钮
+            // ==========================================
+            generateFilterButtons();
+            
             // 隐藏加载提示，显示主容器
             document.getElementById('loadingState').style.display = 'none';
             document.getElementById('mainContainer').style.display = 'block';
         });
+
+        // 动态提取去重标签并生成按钮的函数
+        function generateFilterButtons() {
+            // 1. 使用 Set 数据结构自动去重提取所有的 type 和 subCategory
+            const types = [...new Set(words.map(w => w.type).filter(Boolean))];
+            const themes = [...new Set(words.map(w => w.subCategory).filter(Boolean))];
+
+            const categoryGroup = document.getElementById('categoryGroup');
+            const themeGroup = document.getElementById('themeGroup');
+            
+            // 2. 清空容器（防止重复生成）
+            categoryGroup.innerHTML = '';
+            themeGroup.innerHTML = '';
+
+            // 3. 生成词性按钮
+            types.forEach(type => {
+                const btn = document.createElement('button');
+                btn.textContent = type;
+                btn.onclick = () => filterBy('type', type);
+                categoryGroup.appendChild(btn);
+            });
+
+            // 4. 生成主题按钮
+            themes.forEach(theme => {
+                const btn = document.createElement('button');
+                btn.textContent = theme;
+                btn.onclick = () => filterBy('theme', theme);
+                themeGroup.appendChild(btn);
+            });
+        }
 
         // ==========================================
         // UI 核心管理器：负责不同功能模块的切换
@@ -331,7 +403,9 @@
             // 2. 清理通用展示容器
             document.getElementById('wordListContainer').innerHTML = '';
             closeElement('wordDetail');
-            closeElement('linkedWordDetail');
+            
+            // 【修改这里】：调用我们刚写的一键清理函数
+            clearAllLinkedWords();
 
             // 3. 显示目标模块
             if(viewId) {
@@ -363,20 +437,137 @@
             renderWordList(filteredWords);
         }
 
-        // 搜索功能
-        function searchWords() {
-            const input = document.getElementById('searchInput').value.toLowerCase().trim();
-            if(!input) {
+// ==========================================
+        // 1. 高级匹配搜索机制 (Advanced Search)
+        // ==========================================
+        function advancedSearch() {
+            const rawInput = document.getElementById('searchInput').value.trim();
+            if (!rawInput) {
                 renderWordList([]);
                 return;
             }
-            const results = words.filter(w => 
-                (w.word && w.word.toLowerCase().includes(input)) || 
-                (w.meaning && w.meaning.toLowerCase().includes(input))
-            );
+            
+            // 智能预处理：转小写，并剔除德语常见定冠词，方便模糊匹配
+            const cleanInput = rawInput.toLowerCase().replace(/^(der|die|das)\s+/i, '').trim();
+            
+            // 支持空格分隔的多关键词匹配 (例如输入: "动词 essen" 或 "apfel 苹果")
+            const searchTerms = cleanInput.split(/\s+/); 
+
+            const results = words.filter(w => {
+                if (!w.word && !w.meaning) return false;
+                
+                const wordDe = (w.word || '').toLowerCase();
+                const wordZh = (w.meaning || '').toLowerCase();
+                const wordType = (w.type || '').toLowerCase();
+                const wordTheme = (w.subCategory || '').toLowerCase();
+                
+                // 必须满足用户输入的所有关键词 (AND 逻辑)
+                return searchTerms.every(term => 
+                    wordDe.includes(term) || 
+                    wordZh.includes(term) || 
+                    wordType.includes(term) ||
+                    wordTheme.includes(term)
+                );
+            });
+            
             renderWordList(results);
         }
 
+        // ==========================================
+        // 2. 迭代式抽卡机制 (Flashcard Randomizer)
+        // ==========================================
+        let randomPool = [];    // 待抽取的词库池 (避免重复)
+        let randomHistory = []; // 已经抽取的历史记录
+
+        // 初始化/洗牌词库
+        function initRandomPool() {
+            randomPool = [...words]; // 拷贝全量词库
+            // Fisher-Yates 洗牌算法打乱数组
+            for (let i = randomPool.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [randomPool[i], randomPool[j]] = [randomPool[j], randomPool[i]];
+            }
+            randomHistory = [];
+            document.getElementById('randomWordHistory').innerHTML = '';
+            document.getElementById('currentRandomWordCard').style.display = 'none';
+        }
+
+        // 抽取下一个单词
+        function drawNextRandomWord() {
+            // 首次点击时初始化
+            if (randomPool.length === 0 && randomHistory.length === 0) {
+                if (words.length === 0) {
+                    alert("⏳ 数据尚未加载完毕，请稍后再试...");
+                    return;
+                }
+                initRandomPool(); 
+            }
+            
+            // 词库抽完时的自动重置逻辑
+            if (randomPool.length === 0) {
+                alert("🎉 恭喜！所有单词都已复习完毕！词库即将自动洗牌重置。");
+                initRandomPool();
+            }
+
+            // 弹出数组最后一个单词（因为已经洗牌，相当于随机抽取且不重复）
+            const wordObj = randomPool.pop();
+            randomHistory.unshift(wordObj); // 将新单词加入历史记录的最顶端
+            
+            // 渲染当前单词的精美卡片
+            const card = document.getElementById('currentRandomWordCard');
+            card.style.display = 'block';
+            
+            // 加入一个简单的 CSS 弹入动画
+            card.classList.remove('active');
+            void card.offsetWidth; // 触发 DOM 重绘
+            card.classList.add('active');
+
+            card.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h2 style="margin: 0; color: var(--primary-color); font-size: 32px;">${wordObj.word}</h2>
+                    <span style="background: var(--bg-main); color: var(--text-muted); padding: 4px 10px; border-radius: 12px; font-size: 14px;">
+                        ${wordObj.type || 'N/A'}
+                    </span>
+                </div>
+                <div style="color: var(--text-light); margin-bottom: 20px; font-size: 14px;">主题: ${wordObj.subCategory || '未分类'}</div>
+                <div style="font-size: 22px; color: var(--text-main); font-weight: bold; margin-bottom: 20px;">${wordObj.meaning}</div>
+                <div style="font-size: 16px; color: var(--text-muted); line-height: 1.6; border-top: 1px dashed var(--border-color); padding-top: 15px;">
+                    <strong>Beispiel:</strong> <br>
+                    ${linkifyExample(wordObj.example || "Kein Beispiel.")}
+                </div>
+            `;
+            
+            renderHistoryList(); // 更新历史记录
+        }
+
+        // 渲染历史记录列表
+        function renderHistoryList() {
+            const listDiv = document.getElementById('randomWordHistory');
+            listDiv.innerHTML = '';
+            
+            // 遍历历史记录（跳过第0个，因为它已经在主卡片上展示了）
+            randomHistory.forEach((wordObj, index) => {
+                if (index === 0) return; 
+                
+                const item = document.createElement('div');
+                item.className = 'word-item';
+                item.innerHTML = `
+                    <div style="display: flex; justify-content: space-between;">
+                        <strong>${wordObj.word}</strong>
+                        <span style="color: var(--text-light); font-size: 14px;">${wordObj.meaning}</span>
+                    </div>
+                `;
+                // 点击历史记录也可以查看详情
+                item.onclick = () => showWordDetail(wordObj);
+                listDiv.appendChild(item);
+            });
+        }
+        
+        // 手动重置词库
+        function resetRandomPool() {
+            initRandomPool();
+            alert("🔄 词库已重新洗牌！");
+        }
         // 随机一个单词
         function showRandomWord() {
             showView(''); // 隐藏其他面板
@@ -386,24 +577,6 @@
             }
         }
 
-        // 随机多个单词
-        function selectRandomWords() {
-            const count = parseInt(document.getElementById('randomCount').value);
-            if (isNaN(count) || count <= 0) {
-                alert("请输入有效的数字");
-                return;
-            }
-            
-            const randomWords = [];
-            const tempWords = [...words]; // 复制数组防止改变原数据
-            for (let i = 0; i < count && tempWords.length > 0; i++) {
-                const randomIndex = Math.floor(Math.random() * tempWords.length);
-                randomWords.push(tempWords.splice(randomIndex, 1)[0]); // 抽出防止重复
-            }
-            
-            // 随机抽取时，列表中显示中文意思测试自己
-            renderWordList(randomWords, true); 
-        }
 
         // 通用渲染单词列表
         function renderWordList(wordList, showMeaningOnly = false) {
@@ -458,51 +631,261 @@
             }).join(' ');
         }
 
-        // 弹出次级链接单词详情
+        // ==========================================
+        // 清空所有关联单词卡片
+        // ==========================================
+        function clearAllLinkedWords() {
+            const container = document.getElementById('linkedWordsContainer');
+            const wrapper = document.getElementById('linkedWordsWrapper');
+            
+            if (container) container.innerHTML = ''; // 清空所有卡片
+            if (wrapper) wrapper.style.display = 'none'; // 隐藏整个区域
+        }
+
+        // ==========================================
+        // 弹出/追加次级链接单词详情 (带去重、高亮和一键关闭支持)
+        // ==========================================
         function showLinkedWordDetail(wordName) {
             const matchedWord = words.find(item => item.word === wordName);
             if (matchedWord) {
-                const detailDiv = document.getElementById('linkedWordDetail');
-                detailDiv.innerHTML = `
-                    <h4 style="margin-top:0;">${matchedWord.word}</h4>
-                    <p><strong>例句:</strong> ${linkifyExample(matchedWord.example)}</p>
-                    <p><strong>释义:</strong> ${matchedWord.meaning}</p>
-                    <button onclick="closeElement('linkedWordDetail')" style="cursor: pointer;">关闭</button>
+                const wrapper = document.getElementById('linkedWordsWrapper');
+                const container = document.getElementById('linkedWordsContainer');
+                
+                // 显示整个外层区域
+                wrapper.style.display = 'block';
+                
+                // 检查查重
+                const existingCard = container.querySelector(`[data-word="${matchedWord.word}"]`);
+                if (existingCard) {
+                    existingCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    const originalShadow = existingCard.style.boxShadow || '0 2px 5px rgba(0,0,0,0.05)';
+                    existingCard.style.transition = 'box-shadow 0.3s ease';
+                    existingCard.style.boxShadow = '0 0 15px var(--primary-color)';
+                    setTimeout(() => { existingCard.style.boxShadow = originalShadow; }, 800);
+                    return; 
+                }
+
+                // 创建新卡片
+                const card = document.createElement('div');
+                card.className = 'detail-card'; 
+                card.style.borderLeft = '4px solid var(--primary-color)';
+                card.style.position = 'relative';
+                card.style.marginTop = '0'; // 外层有gap，这里不需要margin了
+                card.style.animation = 'fadeIn 0.3s ease'; 
+                card.setAttribute('data-word', matchedWord.word);
+
+                // 填充内容 (注意单张卡片的关闭按钮加上了联动逻辑：如果全关完了，外层框也隐藏)
+                card.innerHTML = `
+                    <button onclick="this.parentElement.remove(); if(document.getElementById('linkedWordsContainer').children.length === 0) document.getElementById('linkedWordsWrapper').style.display='none';" style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 16px; cursor: pointer; color: var(--text-light); transition: color 0.2s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-light)'">✖</button>
+                    
+                    <h4 style="margin-top: 0; color: var(--primary-color); font-size: 20px;">
+                        ${matchedWord.word}
+                        <span style="font-size: 12px; background: var(--bg-main); color: var(--text-muted); padding: 3px 8px; border-radius: 10px; vertical-align: middle; margin-left: 10px; font-weight: normal;">
+                            ${matchedWord.type || 'N/A'}
+                        </span>
+                    </h4>
+                    <p style="margin: 10px 0;"><strong>例句:</strong> ${linkifyExample(matchedWord.example || "Kein Beispiel.")}</p>
+                    <p style="margin: 0;"><strong>释义:</strong> ${matchedWord.meaning}</p>
                 `;
-                detailDiv.style.display = 'block';
+                
+                // 追加并滚动
+                container.appendChild(card);
+                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
         }
 
         // ==========================================
         // 外部模块集成 (语法 / Partizip 2)
         // ==========================================
-        
         function showGrammar() {
             showView('view-grammar');
             const categories = document.getElementById('grammarCategories');
             
-            // 避免重复加载
-            if(categories.innerHTML.trim() !== '') return; 
+            // 避免重复加载：如果里面已经有实际内容了，就不再 fetch
+            if(categories.innerHTML.trim() !== '' && categories.innerHTML.indexOf('Lade Daten') === -1 && categories.innerHTML.indexOf('暂无语法数据') === -1) {
+                return; 
+            }
+            
+            // 显示加载提示
+            categories.innerHTML = '<div style="text-align: center; padding: 20px; color: var(--text-muted);">⏳ Lade Grammatik... (语法数据加载中)</div>';
             
             fetch('js/grammar.json')
-                .then(res => res.json())
-                .then(data => {
-                    // ...（这部分保持你原有的 Grammar JSON 渲染逻辑，为节省版面此处省略 DOM 拼接步骤，你可以直接将你原来的 fetch logic 复制到此处）
-                    categories.innerHTML = '<p>Grammar 加载成功 (请插入原有 DOM 渲染代码)</p>';
+                .then(res => {
+                    if (!res.ok) throw new Error("Netzwerkantwort war nicht ok");
+                    return res.json();
                 })
-                .catch(err => {
-                    categories.innerHTML = '<p>暂无语法数据或加载失败</p>';
+                .then(data => {
+                    categories.innerHTML = ''; // 清空加载提示
+                    
+                    if (data && data.A1 && data.A1.topics) {
+                        data.A1.topics.forEach(topic => {
+                            // 1. 创建分类容器
+                            const topicDiv = document.createElement('div');
+                            topicDiv.className = 'grammar-category';
+                            topicDiv.style.marginBottom = '15px';
+                            topicDiv.style.background = 'var(--bg-card)';
+                            topicDiv.style.border = '1px solid var(--border-color)';
+                            topicDiv.style.borderRadius = '8px';
+                            topicDiv.style.overflow = 'hidden';
+
+                            // 2. 创建可点击的头部
+                            const header = document.createElement('div');
+                            header.className = 'grammar-category-header';
+                            header.style.display = 'flex';
+                            header.style.justifyContent = 'space-between';
+                            header.style.alignItems = 'center';
+                            header.style.cursor = 'pointer';
+                            header.style.padding = '15px';
+                            header.style.backgroundColor = '#f8f9fa';
+                            header.innerHTML = `
+                                <h3 style="margin: 0; color: var(--primary-color); font-size: 18px;">${topic.title}</h3>
+                                <button class="toggle-btn" style="background: none; border: none; font-size: 24px; color: var(--primary-color); cursor: pointer;">+</button>
+                            `;
+
+                            // 3. 创建内容容器
+                            const content = document.createElement('div');
+                            content.className = 'grammar-category-content';
+                            content.style.display = 'none'; // 默认折叠
+                            content.style.padding = '15px';
+                            content.style.borderTop = '1px solid var(--border-light)';
+
+                            // 添加大类描述
+                            if (topic.description) {
+                                const description = document.createElement('p');
+                                description.className = 'topic-description';
+                                description.style.fontStyle = 'italic';
+                                description.style.color = 'var(--text-muted)';
+                                description.textContent = topic.description;
+                                content.appendChild(description);
+                            }
+
+                            // 添加各个子部分
+                            if (topic.sections) {
+                                topic.sections.forEach(section => {
+                                    const sectionDiv = document.createElement('div');
+                                    sectionDiv.className = 'grammar-section';
+
+                                    if (section.title) {
+                                        const sectionTitle = document.createElement('h4');
+                                        sectionTitle.style.color = 'var(--primary-color)';
+                                        sectionTitle.textContent = section.title;
+                                        sectionDiv.appendChild(sectionTitle);
+                                    }
+
+                                    if (section.explanation) {
+                                        const explanation = document.createElement('p');
+                                        explanation.className = 'section-explanation';
+                                        explanation.textContent = section.explanation;
+                                        sectionDiv.appendChild(explanation);
+                                    }
+
+                                    if (section.examples) {
+                                        const examplesDiv = document.createElement('div');
+                                        examplesDiv.className = 'examples-container';
+                                        section.examples.forEach(example => {
+                                            const exampleDiv = document.createElement('div');
+                                            exampleDiv.className = 'example-item';
+                                            exampleDiv.style.background = '#f8f9fa';
+                                            exampleDiv.style.padding = '10px 15px';
+                                            exampleDiv.style.margin = '10px 0';
+                                            exampleDiv.style.borderRadius = '6px';
+                                            exampleDiv.innerHTML = `
+                                                <div class="example-question" style="font-weight: bold; color: var(--primary-color); margin-bottom: 5px;">${example.question}</div>
+                                                <div class="example-answer" style="margin-bottom: 5px;">${example.answer}</div>
+                                                <div class="example-translation" style="color: var(--text-muted); border-top: 1px dashed var(--border-color); padding-top: 8px; font-size: 14px;">
+                                                    <div>${example.translation.question}</div>
+                                                    <div>${example.translation.answer}</div>
+                                                </div>
+                                            `;
+                                            examplesDiv.appendChild(exampleDiv);
+                                        });
+                                        sectionDiv.appendChild(examplesDiv);
+                                    }
+                                    content.appendChild(sectionDiv);
+                                });
+                            }
+
+                            // 添加提示框 (Tips)
+                            if (topic.tips && topic.tips.length > 0) {
+                                const tipsDiv = document.createElement('div');
+                                tipsDiv.className = 'tips-container';
+                                tipsDiv.style.background = '#f0fdf4'; // 浅绿色背景区分
+                                tipsDiv.style.borderLeft = '4px solid #22c55e';
+                                tipsDiv.style.padding = '15px';
+                                tipsDiv.style.marginTop = '15px';
+                                tipsDiv.style.borderRadius = '0 6px 6px 0';
+
+                                const tipsTitle = document.createElement('h4');
+                                tipsTitle.style.margin = '0 0 10px 0';
+                                tipsTitle.style.color = '#166534';
+                                tipsTitle.textContent = '💡 提示 (Tipps)';
+                                tipsDiv.appendChild(tipsTitle);
+                                
+                                const tipsList = document.createElement('ul');
+                                tipsList.style.margin = '0';
+                                tipsList.style.paddingLeft = '20px';
+                                topic.tips.forEach(tip => {
+                                    const tipItem = document.createElement('li');
+                                    tipItem.style.color = '#15803d';
+                                    tipItem.style.marginBottom = '5px';
+                                    tipItem.textContent = tip;
+                                    tipsList.appendChild(tipItem);
+                                });
+                                tipsDiv.appendChild(tipsList);
+                                content.appendChild(tipsDiv);
+                            }
+
+                            // 折叠/展开动画事件绑定
+                            header.addEventListener('click', () => {
+                                const isHidden = content.style.display === 'none';
+                                content.style.display = isHidden ? 'block' : 'none';
+                                header.querySelector('.toggle-btn').textContent = isHidden ? '−' : '+';
+                            });
+
+                            topicDiv.appendChild(header);
+                            topicDiv.appendChild(content);
+                            categories.appendChild(topicDiv);
+                        });
+                    } else {
+                        categories.innerHTML = '<p style="color: var(--text-muted); text-align: center;">暂无语法数据内容。</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('加载语法数据失败:', error);
+                    categories.innerHTML = '<p style="color: #ef4444; text-align: center;">❌ 加载语法数据失败，请确保您使用了本地服务器环境(Live Server)。</p>';
                 });
         }
 
         function openPartizip2Page() {
             showView('view-partizip');
-            if(typeof showPartizip2Setup === 'function') {
-                showPartizip2Setup();
+            
+            // 确保面板显示正确
+            const setup = document.getElementById('partizip2Setup');
+            const exercise = document.getElementById('partizip2Exercise');
+            const learning = document.getElementById('partizip2Learning');
+            const results = document.getElementById('partizip2Results');
+            
+            if(setup) setup.style.display = 'block';
+            if(exercise) exercise.style.display = 'none';
+            if(learning) learning.style.display = 'none';
+            if(results) results.style.display = 'none';
+
+            // 检查外部脚本是否加载成功并尝试初始化
+            if (typeof verbs !== 'undefined' && verbs.length === 0 && typeof loadVerbs === 'function') {
+                loadVerbs(); // 假设你的 partizip2.js 有加载数据的函数
             }
         }
     </script>
 
-    <script src="./js/partizip2.js"></script>
+<script src="./js/partizip2.js"></script>
+    
+    <script>
+    // 排查点：如果 console 报错 "startPartizip2Exercise is not defined"，说明需要手动绑定
+    window.startPartizip2Exercise = typeof startPartizip2Exercise !== 'undefined' ? startPartizip2Exercise : null;
+    window.showPartizip2Learning = typeof showPartizip2Learning !== 'undefined' ? showPartizip2Learning : null;
+    window.checkPartizip2Answer = typeof checkPartizip2Answer !== 'undefined' ? checkPartizip2Answer : null;
+    window.skipPartizip2Question = typeof skipPartizip2Question !== 'undefined' ? skipPartizip2Question : null;
+    window.showPartizip2Setup = typeof showPartizip2Setup !== 'undefined' ? showPartizip2Setup : null;
+</script>
 </body>
 </html>

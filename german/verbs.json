@@ -768,14 +768,7 @@
         "example": "Wer gewinnt das Spiel?",
         "meaning": "赢"
     },
-    {
-        "word": "glauben",
-        "category": "词性",
-        "subCategory": "动词",
-        "type": "动词",
-        "example": "Ich glaube, er kommt gleich.",
-        "meaning": "相信"
-    },
+
     {
         "word": "gratulieren",
         "category": "词性",
@@ -1448,14 +1441,7 @@
         "example": "Können Sie das bitte wiederholen?",
         "meaning": "重复"
     },
-    {
-        "word": "wissen",
-        "category": "词性",
-        "subCategory": "动词",
-        "type": "动词",
-        "example": "Weißt du, wie er heißt?",
-        "meaning": "知道"
-    },
+
     {
         "word": "wohnen",
         "category": "词性",
@@ -1559,5 +1545,742 @@
         "type": "动词",
         "example": "Viele Menschen unterstützen die Klimaschutzinitiative.",
         "meaning": "支持"
+    },
+    {
+        "word": "absagen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er muss die Einladung leider absagen.",
+        "meaning": "拒绝，取消"
+    },
+    {
+        "word": "zusagen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe der Einladung zugesagt.",
+        "meaning": "答应，接受"
+    },
+    {
+        "word": "ändern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kann ich den Termin ändern?",
+        "meaning": "改变"
+    },
+    {
+        "word": "anmelden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich muss mich für den Kurs anmelden.",
+        "meaning": "报名，登记"
+    },
+    {
+        "word": "organisieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wer organisiert die Feier?",
+        "meaning": "组织"
+    },
+    {
+        "word": "renovieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir renovieren die Wohnung.",
+        "meaning": "装修，翻新"
+    },
+    {
+        "word": "weiterhelfen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Können Sie mir weiterhelfen?",
+        "meaning": "继续帮助"
+    },
+    {
+        "word": "fühlen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich fühle mich heute gut.",
+        "meaning": "感觉"
+    },
+    {
+        "word": "zuhören",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Hör mir bitte zu!",
+        "meaning": "倾听"
+    },
+    {
+        "word": "begründen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er muss seine Entscheidung begründen.",
+        "meaning": "说明理由，论证"
+    },
+    {
+        "word": "rufen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ruf mich bitte an!",
+        "meaning": "叫，打电话"
+    },
+    {
+        "word": "üben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich übe jeden Tag Deutsch.",
+        "meaning": "练习"
+    },
+    {
+        "word": "ablehnen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er hat das Angebot abgelehnt.",
+        "meaning": "拒绝"
+    },
+    {
+        "word": "zustimmen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich stimme dir voll und ganz zu.",
+        "meaning": "同意"
+    },
+    {
+        "word": "ausschlafen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Am Wochenende schlafe ich lange aus.",
+        "meaning": "睡懒觉"
+    },
+    {
+        "word": "jobben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie jobbt neben dem Studium.",
+        "meaning": "打零工"
+    },
+
+    {
+        "word": "vergleichen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kannst du die Preise vergleichen?",
+        "meaning": "比较"
+    },
+    {
+        "word": "gründen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie haben eine Firma gegründet.",
+        "meaning": "建立，创立"
+    },
+    {
+        "word": "entwickeln",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er entwickelt eine neue App.",
+        "meaning": "开发，发展"
+    },
+    {
+        "word": "programmieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie programmiert Computerspiele.",
+        "meaning": "编程"
+    },
+    {
+        "word": "äußern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er äußerte seine Meinung.",
+        "meaning": "表达，说出"
+    },
+    {
+        "word": "kommentieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie kommentiert den Artikel online.",
+        "meaning": "评论"
+    },
+    {
+        "word": "meinen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Was meinst du damit?",
+        "meaning": "认为，意思是"
+    },
+    {
+        "word": "mitteilen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe es ihm mitgeteilt.",
+        "meaning": "告知，通知"
+    },
+    {
+        "word": "sterben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Patient ist gestern gestorben.",
+        "meaning": "死亡"
+    },
+    {
+        "word": "ausprobieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Probier das mal aus!",
+        "meaning": "试用，尝试"
+    },
+    {
+        "word": "probieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Möchtest du probieren?",
+        "meaning": "尝试，品尝"
+    },
+    {
+        "word": "flüstern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie flüsterte mir etwas ins Ohr.",
+        "meaning": "低声说，耳语"
+    },
+    {
+        "word": "schmücken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir schmücken den Weihnachtsbaum.",
+        "meaning": "装饰"
+    },
+    {
+        "word": "bestehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie hat die Prüfung bestanden.",
+        "meaning": "通过（考试）；存在"
+    },
+    {
+        "word": "ausdrücken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich kann meine Gefühle nicht ausdrücken.",
+        "meaning": "表达"
+    },
+    {
+        "word": "sich bedanken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich möchte mich bei dir bedanken.",
+        "meaning": "感谢"
+    },
+    {
+        "word": "sich wohlfühlen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich fühle mich hier sehr wohl.",
+        "meaning": "感到舒适"
+    },
+    {
+        "word": "sich ärgern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er ärgert sich über die Verspätung.",
+        "meaning": "生气"
+    },
+    {
+        "word": "sich streiten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Geschwister streiten sich oft.",
+        "meaning": "争吵"
+    },
+    {
+        "word": "beruhigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Beruhig dich bitte!",
+        "meaning": "使平静，安慰"
+    },
+    {
+        "word": "hoffen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich hoffe, dass du kommst.",
+        "meaning": "希望"
+    },
+    {
+        "word": "sich langweilen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich langweile mich in der Vorlesung.",
+        "meaning": "感到无聊"
+    },
+    {
+        "word": "sich austauschen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir tauschen uns über unsere Erfahrungen aus.",
+        "meaning": "交流"
+    },
+    {
+        "word": "fallen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Pass auf, dass du nicht fällst!",
+        "meaning": "落下，跌倒"
+    },
+    {
+        "word": "sich unterhalten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir haben uns lange unterhalten.",
+        "meaning": "聊天，交谈"
+    },
+    {
+        "word": "sich ausruhen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich muss mich ein bisschen ausruhen.",
+        "meaning": "休息"
+    },
+    {
+        "word": "aussprechen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kannst du das Wort aussprechen?",
+        "meaning": "发音；说出"
+    },
+    {
+        "word": "bewundern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich bewundere ihre Geduld.",
+        "meaning": "钦佩，欣赏"
+    },
+    {
+        "word": "sich entscheiden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe mich für Deutsch entschieden.",
+        "meaning": "决定"
+    },
+    {
+        "word": "wegfahren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wann fährst du weg?",
+        "meaning": "离开（乘车）"
+    },
+    {
+        "word": "transportieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Ware wird per Lkw transportiert.",
+        "meaning": "运输"
+    },
+    {
+        "word": "beschützen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er will seine Familie beschützen.",
+        "meaning": "保护"
+    },
+    {
+        "word": "sich kümmern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie kümmert sich um die Kinder.",
+        "meaning": "照顾，关心"
+    },
+    {
+        "word": "pflegen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er pflegt seine kranke Mutter.",
+        "meaning": "护理；保养"
+    },
+    {
+        "word": "leeren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Mülltonne muss geleert werden.",
+        "meaning": "清空"
+    },
+    {
+        "word": "bedienen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Können Sie mich bedienen?",
+        "meaning": "服务；操作"
+    },
+    {
+        "word": "servieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Kellner serviert das Essen.",
+        "meaning": "端上（饭菜）"
+    },
+    {
+        "word": "erledigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich muss noch etwas erledigen.",
+        "meaning": "完成，办理"
+    },
+    {
+        "word": "genehmigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Antrag wurde genehmigt.",
+        "meaning": "批准"
+    },
+    {
+        "word": "prüfen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Lehrer prüft die Arbeiten.",
+        "meaning": "检查，审核"
+    },
+    {
+        "word": "beantragen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie hat einen Pass beantragt.",
+        "meaning": "申请"
+    },
+    {
+        "word": "verlängern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich muss meinen Ausweis verlängern.",
+        "meaning": "延长"
+    },
+    {
+        "word": "abheben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich hebe Geld am Automaten ab.",
+        "meaning": "取（款）"
+    },
+    {
+        "word": "ausgeben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er gibt zu viel Geld aus.",
+        "meaning": "花费"
+    },
+    {
+        "word": "eröffnen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie hat ein Konto eröffnet.",
+        "meaning": "开设"
+    },
+    {
+        "word": "sperren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich muss meine Karte sperren lassen.",
+        "meaning": "冻结，封锁"
+    },
+    {
+        "word": "leihen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kannst du mir Geld leihen?",
+        "meaning": "借出"
+    },
+    {
+        "word": "melden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Du musst den Diebstahl bei der Polizei melden.",
+        "meaning": "报告，报案"
+    },
+    {
+        "word": "bitten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich bitte dich um Hilfe.",
+        "meaning": "请求"
+    },
+    {
+        "word": "funktionieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Maschine funktioniert nicht.",
+        "meaning": "运转，正常"
+    },
+    {
+        "word": "vorstellen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Darf ich mich vorstellen? / Stell dir das vor!",
+        "meaning": "介绍；想象"
+    },
+    {
+        "word": "einhalten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie müssen die Frist einhalten.",
+        "meaning": "遵守，按时完成"
+    },
+    {
+        "word": "beraten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Anwältin berät ihre Kunden.",
+        "meaning": "给……提供咨询"
+    },
+    {
+        "word": "sich beeilen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Beeil dich, sonst kommen wir zu spät!",
+        "meaning": "赶紧，抓紧时间"
+    },
+    {
+        "word": "klappen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Hat alles geklappt?",
+        "meaning": "顺利，实现"
+    },
+    {
+        "word": "erleben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir haben viel Schönes erlebt.",
+        "meaning": "经历，体验"
+    },
+    {
+        "word": "wechseln",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er möchte den Job wechseln.",
+        "meaning": "更换，变更"
+    },
+    {
+        "word": "nutzen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Nutzen Sie die Chance!",
+        "meaning": "利用"
+    },
+    {
+        "word": "bereuen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie bereut ihre Entscheidung.",
+        "meaning": "后悔"
+    },
+    {
+        "word": "sich konzentrieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich kann mich heute nicht konzentrieren.",
+        "meaning": "集中注意力"
+    },
+    {
+        "word": "lächeln",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie lächelt freundlich.",
+        "meaning": "微笑"
+    },
+    {
+        "word": "stören",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Entschuldigung, darf ich kurz stören?",
+        "meaning": "打扰"
+    },
+    {
+        "word": "hinterlassen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bitte hinterlassen Sie eine Nachricht.",
+        "meaning": "留下"
+    },
+    {
+        "word": "ausrichten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kannst du ihm einen Gruß ausrichten?",
+        "meaning": "转告"
+    },
+    {
+        "word": "mithelfen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Alle helfen bei der Party mit.",
+        "meaning": "一起帮忙"
+    },
+    {
+        "word": "verändern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Digitalisierung verändert die Arbeitswelt.",
+        "meaning": "改变"
+    },
+    {
+        "word": "zunehmen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Zahl der Roboter nimmt zu.",
+        "meaning": "增加"
+    },
+    {
+        "word": "korrigieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Lehrer korrigiert die Fehler.",
+        "meaning": "纠正"
+    },
+    {
+        "word": "interessieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das Thema interessiert mich sehr.",
+        "meaning": "使感兴趣"
+    },
+    {
+        "word": "diskutieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir diskutieren über die neue Regel.",
+        "meaning": "讨论"
+    },
+    {
+        "word": "grüßen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Grüß deine Eltern von mir!",
+        "meaning": "问候"
+    },
+    {
+        "word": "reden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Worüber redet ihr?",
+        "meaning": "说话，谈论"
+    },
+    {
+        "word": "genießen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Genieß den Urlaub!",
+        "meaning": "享受"
+    },
+    {
+        "word": "passieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Was ist passiert?",
+        "meaning": "发生"
+    },
+    {
+        "word": "denken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich denke an dich.",
+        "meaning": "想，认为"
+    },
+    {
+        "word": "verwenden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Man kann dieses Wort in vielen Situationen verwenden.",
+        "meaning": "使用"
     }
 ]
