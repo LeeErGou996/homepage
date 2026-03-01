@@ -82,8 +82,8 @@
     {
         "word": "tausend",
         "category": "词性",
-        "subCategory": "数词",
-        "type": "数词",
+        "subCategory": "数量词",
+        "type": "数量词",
         "example": "Tausend Dank!",
         "meaning": "千"
     },
@@ -226,8 +226,8 @@
     {
         "word": "dies-",
         "category": "词性",
-        "subCategory": "指示代词",
-        "type": "指示代词",
+        "subCategory": "代词",
+        "type": "代词",
         "example": "Ich nehme lieber diesen Kuchen.",
         "meaning": "这个"
     },

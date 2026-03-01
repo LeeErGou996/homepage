@@ -1254,7 +1254,7 @@
   {
     "word": "der Glückwunsch (die, Glückwünsche)",
     "category": "主题",
-    "subCategory": "祝福",
+    "subCategory": "名词",
     "type": "名词",
     "example": "Herzlichen Glückwunsch zum Geburtstag!",
     "meaning": "祝贺"
@@ -5641,7 +5641,7 @@
   {
     "word": "der Daumen (die, -)",
     "category": "主题",
-    "subCategory": "身体",
+    "subCategory": "身体部位",
     "type": "名词",
     "example": "Ich drücke dir die Daumen!",
     "meaning": "拇指"
@@ -5785,7 +5785,7 @@
   {
     "word": "das Stadtprogramm (die, -e)",
     "category": "主题",
-    "subCategory": "城市",
+    "subCategory": "地理",
     "type": "名词",
     "example": "Im Stadtprogramm stehen viele Veranstaltungen.",
     "meaning": "城市活动项目"
