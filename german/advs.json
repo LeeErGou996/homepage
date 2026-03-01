@@ -136,6 +136,14 @@
         "meaning": "今天"
     },
     {
+        "word": "also",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Also, was sollen wir machen?",
+        "meaning": "那么；也就是说"
+    },
+    {
         "word": "hier",
         "category": "词性",
         "subCategory": "副词",
@@ -268,8 +276,8 @@
         "词性": "副词",
         "subCategory": "情感",
         "type": "副词",
-        "example": "Alles ist ganz nah im Zentrum.",
-        "meaning": "非常"
+        "example": "Alles ist ganz nah im Zentrum / Das konjugierte Verb steht ganz am Ende.",
+        "meaning": "表程度/数量  (Very / Really) / 表精确/强调 (Exactly / Right)"
     },
     {
         "word": "nie",
@@ -704,5 +712,117 @@
         "type": "副词",
         "example": "Sitz vorne!",
         "meaning": "在前面"
+    },
+    {
+        "word": "bestens",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Es geht mir bestens.",
+        "meaning": "非常好"
+    },
+    {
+        "word": "bestimmt",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Er kommt bestimmt.",
+        "meaning": "肯定，一定"
+    },
+    {
+        "word": "blitzschnell",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Er antwortete blitzschnell.",
+        "meaning": "极快地"
+    },
+    {
+        "word": "dafür",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Dafür habe ich keine Zeit.",
+        "meaning": "为此；代替"
+    },
+    {
+        "word": "dahinter",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Das Haus steht dahinter.",
+        "meaning": "在后面"
+    },
+    {
+        "word": "damals",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Damals war ich noch jung.",
+        "meaning": "当时"
+    },
+    {
+        "word": "damit",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Damit meinte ich etwas anderes.",
+        "meaning": "以此；为此"
+    },
+    {
+        "word": "dazu",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Dazu brauche ich Hilfe.",
+        "meaning": "对此；此外"
+    },
+    {
+        "word": "deshalb",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Deshalb bin ich gekommen.",
+        "meaning": "因此"
+    },
+    {
+        "word": "dorthin",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Wir fahren dorthin.",
+        "meaning": "到那里"
+    },
+    {
+        "word": "eben",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Eben habe ich ihn gesehen.",
+        "meaning": "刚才；就是"
+    },
+    {
+        "word": "einfach",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Das ist einfach so.",
+        "meaning": "简单地；就是"
+    },
+    {
+        "word": "etwa",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Es dauert etwa eine Stunde.",
+        "meaning": "大约；难道"
+    },
+    {
+        "word": "ewig",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Das dauert ewig.",
+        "meaning": "永远；很久"
     }
 ]

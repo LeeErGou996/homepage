@@ -710,7 +710,7 @@
         "meaning": "浪漫的"
     },
     {
-        "word": "einverstanden",
+        "word": "einverstanden sein",
         "category": "词性",
         "subCategory": "形容词",
         "type": "形容词",
@@ -1644,5 +1644,261 @@
         "type": "形容词",
         "example": "Ich bin froh, dass du da bist.",
         "meaning": "高兴的"
+    },
+    {
+        "word": "abstrakt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist ein abstrakter Begriff.",
+        "meaning": "抽象的"
+    },
+    {
+        "word": "allgemein",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist allgemein bekannt.",
+        "meaning": "一般的；普遍的"
+    },
+    {
+        "word": "altmodisch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Möbel sehen altmodisch aus.",
+        "meaning": "过时的"
+    },
+    {
+        "word": "ausländisch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er spricht mehrere ausländische Sprachen.",
+        "meaning": "外国的"
+    },
+    {
+        "word": "aufregend",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das war ein aufregendes Erlebnis.",
+        "meaning": "令人兴奋的"
+    },
+    {
+        "word": "befreundet",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Wir sind seit Jahren befreundet.",
+        "meaning": "成为朋友的"
+    },
+    {
+        "word": "besorgt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie ist besorgt um ihre Gesundheit.",
+        "meaning": "担心的"
+    },
+    {
+        "word": "bestimmt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er kommt bestimmt.",
+        "meaning": "肯定的；某种"
+    },
+    {
+        "word": "bitter",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Kaffee schmeckt bitter.",
+        "meaning": "苦的"
+    },
+    {
+        "word": "blitzschnell",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er reagierte blitzschnell.",
+        "meaning": "极快的"
+    },
+    {
+        "word": "blöd",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das war eine blöde Idee.",
+        "meaning": "愚蠢的；讨厌的"
+    },
+    {
+        "word": "betrunken",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er war betrunken.",
+        "meaning": "喝醉的"
+    },
+    {
+        "word": "chinesisch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie kocht chinesisches Essen.",
+        "meaning": "中国的；中文的"
+    },
+    {
+        "word": "deutlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Unterschied ist deutlich.",
+        "meaning": "明显的"
+    },
+    {
+        "word": "dick",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Buch ist sehr dick.",
+        "meaning": "厚的；胖的"
+    },
+    {
+        "word": "dünn",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie ist sehr dünn.",
+        "meaning": "薄的；瘦的"
+    },
+    {
+        "word": "effektiv",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist eine effektive Methode.",
+        "meaning": "有效的"
+    },
+    {
+        "word": "einsam",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er fühlt sich einsam.",
+        "meaning": "孤独的"
+    },
+    {
+        "word": "elektrisch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist ein elektrisches Gerät.",
+        "meaning": "电的"
+    },
+    {
+        "word": "emotional",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Film war sehr emotional.",
+        "meaning": "感性的；情感的"
+    },
+    {
+        "word": "erforderlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist erforderlich.",
+        "meaning": "必需的"
+    },
+    {
+        "word": "entfernt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Hotel ist weit entfernt.",
+        "meaning": "遥远的"
+    },
+    {
+        "word": "faszinierend",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Vortrag war faszinierend.",
+        "meaning": "令人着迷的"
+    },
+    {
+        "word": "einmalig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das war eine einmalige Gelegenheit.",
+        "meaning": "独一无二的；一次的"
+    },
+    {
+        "word": "fett",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Essen ist zu fett.",
+        "meaning": "油腻的；胖的"
+    },
+    {
+        "word": "flexibel",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Arbeitszeiten sind flexibel.",
+        "meaning": "灵活的"
+    },
+    {
+        "word": "flüssig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er spricht flüssig Deutsch.",
+        "meaning": "流利的；液体的"
+    },
+    {
+        "word": "folgend",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Am folgenden Tag...",
+        "meaning": "接下来的"
+    },
+    {
+        "word": "freiberuflich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er arbeitet freiberuflich.",
+        "meaning": "自由职业的"
+    },
+    {
+        "word": "gebraucht",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich kaufe ein gebrauchtes Auto.",
+        "meaning": "二手的"
+    },
+    {
+        "word": "gehörlos",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie ist gehörlos.",
+        "meaning": "聋的"
+    },
+    {
+        "word": "gelaunt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er ist gut gelaunt.",
+        "meaning": "心情……的（gut/schlecht gelaunt）"
     }
 ]

@@ -5,7 +5,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir fahren um zwölf Uhr ab.",
-        "meaning": "出发"
+        "meaning": "出发",
+        "perfekt": "ist abgefahren"
     },
     {
         "word": "abgeben",
@@ -13,7 +14,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich muss meine Schlüssel abgeben.",
-        "meaning": "交出"
+        "meaning": "交出",
+        "perfekt": "hat abgegeben"
     },
     {
         "word": "joggen",
@@ -21,16 +23,17 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich jogge jeden Morgen im Park.",
-        "meaning": "慢跑"
+        "meaning": "慢跑",
+        "perfekt": "hat gejoggt"
     },
-
     {
         "word": "aufhören",
         "category": "词性",
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich höre mit dem Rauchen auf.",
-        "meaning": "停止"
+        "meaning": "停止",
+        "perfekt": "hat aufgehört"
     },
     {
         "word": "zurückkommen",
@@ -38,7 +41,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wann kommst du zurück?",
-        "meaning": "回来"
+        "meaning": "回来",
+        "perfekt": "ist zurückgekommen"
     },
     {
         "word": "ausgehen",
@@ -46,7 +50,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir gehen am Wochenende aus.",
-        "meaning": "外出"
+        "meaning": "外出",
+        "perfekt": "ist ausgegangen"
     },
     {
         "word": "ankommen",
@@ -54,7 +59,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Der Zug kommt um 10 Uhr an.",
-        "meaning": "到达"
+        "meaning": "到达",
+        "perfekt": "ist angekommen"
     },
     {
         "word": "aussteigen",
@@ -62,7 +68,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich steige an der nächsten Haltestelle aus.",
-        "meaning": "下车"
+        "meaning": "下车",
+        "perfekt": "ist ausgestiegen"
     },
     {
         "word": "aufräumen",
@@ -70,7 +77,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich räume mein Zimmer auf.",
-        "meaning": "整理"
+        "meaning": "整理",
+        "perfekt": "hat aufgeräumt"
     },
     {
         "word": "aussehen",
@@ -78,7 +86,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Du siehst heute gut aus.",
-        "meaning": "看起来"
+        "meaning": "看起来",
+        "perfekt": "hat ausgesehen"
     },
     {
         "word": "saubermachen",
@@ -86,7 +95,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir machen die Wohnung sauber.",
-        "meaning": "清洁"
+        "meaning": "清洁",
+        "perfekt": "hat sauber gemacht"
     },
     {
         "word": "abwaschen",
@@ -94,7 +104,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich wasche das Geschirr ab.",
-        "meaning": "洗碗"
+        "meaning": "洗碗",
+        "perfekt": "hat abgewaschen"
     },
     {
         "word": "vorschlagen",
@@ -102,7 +113,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich schlage vor, ins Kino zu gehen.",
-        "meaning": "建议"
+        "meaning": "建议",
+        "perfekt": "hat vorgeschlagen"
     },
     {
         "word": "anmachen",
@@ -110,7 +122,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Mach bitte das Licht an.",
-        "meaning": "打开（电器）"
+        "meaning": "打开（电器）",
+        "perfekt": "hat angemacht"
     },
     {
         "word": "aufmachen",
@@ -118,7 +131,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Mach die Tür auf.",
-        "meaning": "打开（门、窗）"
+        "meaning": "打开（门、窗）",
+        "perfekt": "hat aufgemacht"
     },
     {
         "word": "zumachen",
@@ -126,7 +140,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Bitte mach das Fenster zu.",
-        "meaning": "关闭"
+        "meaning": "关闭",
+        "perfekt": "hat zugemacht"
     },
     {
         "word": "mitkommen",
@@ -134,7 +149,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Kommst du ins Kino mit?",
-        "meaning": "一起来"
+        "meaning": "一起来",
+        "perfekt": "ist mitgekommen"
     },
     {
         "word": "weggehen",
@@ -142,7 +158,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich gehe jetzt weg.",
-        "meaning": "离开"
+        "meaning": "离开",
+        "perfekt": "ist weggegangen"
     },
     {
         "word": "mitbringen",
@@ -150,7 +167,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich bringe eine Flasche Wein mit.",
-        "meaning": "带来"
+        "meaning": "带来",
+        "perfekt": "hat mitgebracht"
     },
     {
         "word": "mitnehmen",
@@ -158,7 +176,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich nehme meinen Regenschirm mit.",
-        "meaning": "带上，随身携带"
+        "meaning": "带上，随身携带",
+        "perfekt": "hat mitgenommen"
     },
     {
         "word": "nachdenken",
@@ -166,7 +185,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich muss über das Problem nachdenken.",
-        "meaning": "思考，考虑"
+        "meaning": "思考，考虑",
+        "perfekt": "hat nachgedacht"
     },
     {
         "word": "zubereiten",
@@ -174,7 +194,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich bereite das Mittagessen zu.",
-        "meaning": "准备食物"
+        "meaning": "准备食物",
+        "perfekt": "hat zubereitet"
     },
     {
         "word": "vorbeikommen",
@@ -182,7 +203,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Komm doch mal bei mir vorbei.",
-        "meaning": "顺道拜访"
+        "meaning": "顺道拜访",
+        "perfekt": "ist vorbeigekommen"
     },
     {
         "word": "ausfüllen",
@@ -190,7 +212,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Bitte füllen Sie das Formular aus.",
-        "meaning": "填写"
+        "meaning": "填写",
+        "perfekt": "hat ausgefüllt"
     },
     {
         "word": "zusammenarbeiten",
@@ -198,7 +221,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir arbeiten gut zusammen.",
-        "meaning": "合作"
+        "meaning": "合作",
+        "perfekt": "hat zusammengearbeitet"
     },
     {
         "word": "teilnehmen",
@@ -206,7 +230,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich nehme am Sprachkurs teil.",
-        "meaning": "参加"
+        "meaning": "参加",
+        "perfekt": "hat teilgenommen"
     },
     {
         "word": "vorhaben",
@@ -214,7 +239,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Was hast du morgen vor?",
-        "meaning": "计划"
+        "meaning": "计划",
+        "perfekt": "hat vorgehabt"
     },
     {
         "word": "wegwerfen",
@@ -222,7 +248,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir werfen den alten Müll weg.",
-        "meaning": "扔掉"
+        "meaning": "扔掉",
+        "perfekt": "hat weggeworfen"
     },
     {
         "word": "anschauen",
@@ -230,7 +257,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich schaue mir einen Film an.",
-        "meaning": "观看"
+        "meaning": "观看",
+        "perfekt": "hat angeschaut"
     },
     {
         "word": "abmachen",
@@ -238,7 +266,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir haben einen Termin abgemacht.",
-        "meaning": "商定，约定"
+        "meaning": "商定，约定",
+        "perfekt": "hat abgemacht"
     },
     {
         "word": "nachschlagen",
@@ -246,7 +275,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich schlage das Wort im Wörterbuch nach.",
-        "meaning": "查阅"
+        "meaning": "查阅",
+        "perfekt": "hat nachgeschlagen"
     },
     {
         "word": "zusammenstellen",
@@ -254,7 +284,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir stellen die Möbel zusammen.",
-        "meaning": "整理，组合"
+        "meaning": "整理，组合",
+        "perfekt": "hat zusammengestellt"
     },
     {
         "word": "durchführen",
@@ -262,7 +293,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir führen das Projekt durch.",
-        "meaning": "执行，实施"
+        "meaning": "执行，实施",
+        "perfekt": "hat durchgeführt"
     },
     {
         "word": "aufnehmen",
@@ -270,7 +302,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir nehmen das Gespräch auf.",
-        "meaning": "录制，接纳"
+        "meaning": "录制，接纳",
+        "perfekt": "hat aufgenommen"
     },
     {
         "word": "zurückrufen",
@@ -278,7 +311,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich rufe dich später zurück.",
-        "meaning": "回电话"
+        "meaning": "回电话",
+        "perfekt": "hat zurückgerufen"
     },
     {
         "word": "weiterleiten",
@@ -286,7 +320,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich leite die E-Mail weiter.",
-        "meaning": "转发"
+        "meaning": "转发",
+        "perfekt": "hat weitergeleitet"
     },
     {
         "word": "losfahren",
@@ -294,7 +329,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir fahren um 8 Uhr los.",
-        "meaning": "出发"
+        "meaning": "出发",
+        "perfekt": "ist losgefahren"
     },
     {
         "word": "absteigen",
@@ -302,7 +338,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir steigen in einem Hotel ab.",
-        "meaning": "下榻"
+        "meaning": "下榻",
+        "perfekt": "ist abgestiegen"
     },
     {
         "word": "umsehen",
@@ -310,7 +347,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich sehe mich in der Stadt um.",
-        "meaning": "四处看看"
+        "meaning": "四处看看",
+        "perfekt": "hat umgesehen"
     },
     {
         "word": "absprechen",
@@ -318,7 +356,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir sprechen den Plan ab.",
-        "meaning": "商议"
+        "meaning": "商议",
+        "perfekt": "hat abgesprochen"
     },
     {
         "word": "einfallen",
@@ -326,7 +365,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Mir fällt gerade etwas ein.",
-        "meaning": "想起"
+        "meaning": "想起",
+        "perfekt": "ist eingefallen"
     },
     {
         "word": "zurechtkommen",
@@ -334,7 +374,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich komme mit der neuen Arbeit zurecht.",
-        "meaning": "应对，适应"
+        "meaning": "应对，适应",
+        "perfekt": "hat zurechtgekommen"
     },
     {
         "word": "betonen",
@@ -342,7 +383,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er betonte die Wichtigkeit der Aufgabe.",
-        "meaning": "强调"
+        "meaning": "强调",
+        "perfekt": "hat betont"
     },
     {
         "word": "spazieren gehen",
@@ -350,7 +392,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir gehen nach dem Abendessen spazieren.",
-        "meaning": "散步"
+        "meaning": "散步",
+        "perfekt": "ist spazieren gegangen"
     },
     {
         "word": "benutzen",
@@ -358,7 +401,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich benutze mein Handy zum Lernen.",
-        "meaning": "使用"
+        "meaning": "使用",
+        "perfekt": "hat benutzt"
     },
     {
         "word": "wecken",
@@ -366,7 +410,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Kannst du mich morgen früh um 6 Uhr wecken?",
-        "meaning": "唤醒"
+        "meaning": "唤醒",
+        "perfekt": "hat geweckt"
     },
     {
         "word": "vorbereiten",
@@ -374,7 +419,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich muss mich auf die Prüfung vorbereiten.",
-        "meaning": "准备"
+        "meaning": "准备",
+        "perfekt": "hat vorbereitet"
     },
     {
         "word": "unterrichten",
@@ -382,7 +428,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er unterrichtet Deutsch an der Schule.",
-        "meaning": "教学"
+        "meaning": "教学",
+        "perfekt": "hat unterrichtet"
     },
     {
         "word": "zurückkommen",
@@ -390,7 +437,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wann wirst du nach Hause zurückkommen?",
-        "meaning": "返回"
+        "meaning": "返回",
+        "perfekt": "ist zurückgekommen"
     },
     {
         "word": "schälen",
@@ -398,7 +446,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie schält die Kartoffeln für das Abendessen.",
-        "meaning": "剥皮"
+        "meaning": "剥皮",
+        "perfekt": "hat geschält"
     },
     {
         "word": "vergessen",
@@ -406,7 +455,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich habe meinen Schlüssel zu Hause vergessen.",
-        "meaning": "忘记"
+        "meaning": "忘记",
+        "perfekt": "hat vergessen"
     },
     {
         "word": "salzen",
@@ -414,7 +464,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Vergiss nicht, die Suppe zu salzen.",
-        "meaning": "加盐"
+        "meaning": "加盐",
+        "perfekt": "hat gesalzen"
     },
     {
         "word": "braten",
@@ -422,7 +473,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er brät das Fleisch in der Pfanne.",
-        "meaning": "煎、炒"
+        "meaning": "煎、炒",
+        "perfekt": "hat gebraten"
     },
     {
         "word": "abholen",
@@ -430,7 +482,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wann kann ich den Schrank bei dir abholen?",
-        "meaning": "取，接"
+        "meaning": "取，接",
+        "perfekt": "hat abgeholt"
     },
     {
         "word": "anbieten",
@@ -438,16 +491,17 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Was darf ich dir anbieten?",
-        "meaning": "提供"
+        "meaning": "提供",
+        "perfekt": "hat angeboten"
     },
-
     {
         "word": "arbeiten",
         "category": "词性",
         "subCategory": "动词",
         "type": "动词",
         "example": "Wo arbeiten Sie?",
-        "meaning": "工作"
+        "meaning": "工作",
+        "perfekt": "hat gearbeitet"
     },
     {
         "word": "bedeuten",
@@ -455,7 +509,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Was bedeutet das Wort?",
-        "meaning": "意思是"
+        "meaning": "意思是",
+        "perfekt": "hat bedeutet"
     },
     {
         "word": "beginnen",
@@ -463,7 +518,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Das Spiel beginnt um 15.30 Uhr.",
-        "meaning": "开始"
+        "meaning": "开始",
+        "perfekt": "hat begonnen"
     },
     {
         "word": "bekommen",
@@ -471,7 +527,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Haben Sie meinen Brief bekommen?",
-        "meaning": "收到"
+        "meaning": "收到",
+        "perfekt": "hat bekommen"
     },
     {
         "word": "besichtigen",
@@ -479,7 +536,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich möchte gern den Dom besichtigen.",
-        "meaning": "参观"
+        "meaning": "参观",
+        "perfekt": "hat besichtigt"
     },
     {
         "word": "bestellen",
@@ -487,7 +545,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir möchten bestellen, bitte.",
-        "meaning": "点单"
+        "meaning": "点单",
+        "perfekt": "hat bestellt"
     },
     {
         "word": "besuchen",
@@ -495,7 +554,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Darf ich dich besuchen?",
-        "meaning": "拜访"
+        "meaning": "拜访",
+        "perfekt": "hat besucht"
     },
     {
         "word": "bleiben",
@@ -503,7 +563,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich bleibe heute zu Hause.",
-        "meaning": "停留"
+        "meaning": "停留",
+        "perfekt": "ist geblieben"
     },
     {
         "word": "brauchen",
@@ -511,7 +572,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Brauchst du die Zeitung noch?",
-        "meaning": "需要"
+        "meaning": "需要",
+        "perfekt": "hat gebraucht"
     },
     {
         "word": "bringen",
@@ -519,7 +581,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Bringen Sie mir bitte noch einen Kaffee!",
-        "meaning": "带来"
+        "meaning": "带来",
+        "perfekt": "hat gebracht"
     },
     {
         "word": "danken",
@@ -527,7 +590,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich danke Ihnen für die Einladung.",
-        "meaning": "感谢"
+        "meaning": "感谢",
+        "perfekt": "hat gedankt"
     },
     {
         "word": "dauern",
@@ -535,7 +599,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wie lange dauert der Film?",
-        "meaning": "持续"
+        "meaning": "持续",
+        "perfekt": "hat gedauert"
     },
     {
         "word": "drucken",
@@ -543,7 +608,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Bitte drucke das Formular für mich.",
-        "meaning": "打印"
+        "meaning": "打印",
+        "perfekt": "hat gedruckt"
     },
     {
         "word": "drücken",
@@ -551,7 +617,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Drück hier, dann geht der Computer an.",
-        "meaning": "按"
+        "meaning": "按",
+        "perfekt": "hat gedrückt"
     },
     {
         "word": "duschen",
@@ -559,7 +626,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich bade nicht so gern, ich dusche lieber.",
-        "meaning": "淋浴"
+        "meaning": "淋浴",
+        "perfekt": "hat geduscht"
     },
     {
         "word": "einkaufen",
@@ -567,7 +635,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich muss noch für morgen einkaufen.",
-        "meaning": "购物"
+        "meaning": "购物",
+        "perfekt": "hat eingekauft"
     },
     {
         "word": "einladen",
@@ -575,7 +644,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Darf ich Sie zu einem Kaffee einladen?",
-        "meaning": "邀请"
+        "meaning": "邀请",
+        "perfekt": "hat eingeladen"
     },
     {
         "word": "einsteigen",
@@ -583,7 +653,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Schnell, steig ein, der Zug fährt gleich.",
-        "meaning": "上车"
+        "meaning": "上车",
+        "perfekt": "ist eingestiegen"
     },
     {
         "word": "empfehlen",
@@ -591,7 +662,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Welchen Wein können Sie mir empfehlen?",
-        "meaning": "推荐"
+        "meaning": "推荐",
+        "perfekt": "hat empfohlen"
     },
     {
         "word": "enden",
@@ -599,7 +671,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Die Straße endet hier.",
-        "meaning": "结束"
+        "meaning": "结束",
+        "perfekt": "hat geendet"
     },
     {
         "word": "entschuldigen",
@@ -607,7 +680,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Entschuldigen Sie bitte!",
-        "meaning": "道歉"
+        "meaning": "道歉",
+        "perfekt": "hat entschuldigt"
     },
     {
         "word": "erklären",
@@ -615,7 +689,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Kannst du mir das erklären?",
-        "meaning": "解释"
+        "meaning": "解释",
+        "perfekt": "hat erklärt"
     },
     {
         "word": "erlauben",
@@ -623,7 +698,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Rauchen ist hier nicht erlaubt.",
-        "meaning": "允许"
+        "meaning": "允许",
+        "perfekt": "hat erlaubt"
     },
     {
         "word": "erzählen",
@@ -631,7 +707,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir müssen euch etwas erzählen!",
-        "meaning": "讲述"
+        "meaning": "讲述",
+        "perfekt": "hat erzählt"
     },
     {
         "word": "essen",
@@ -639,7 +716,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Was gibt es zu essen?",
-        "meaning": "吃"
+        "meaning": "吃",
+        "perfekt": "hat gegessen"
     },
     {
         "word": "fahren",
@@ -647,7 +725,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich fahre mit dem Auto zur Arbeit.",
-        "meaning": "驾驶"
+        "meaning": "驾驶",
+        "perfekt": "ist gefahren"
     },
     {
         "word": "feiern",
@@ -655,7 +734,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir feiern heute meinen Geburtstag.",
-        "meaning": "庆祝"
+        "meaning": "庆祝",
+        "perfekt": "hat gefeiert"
     },
     {
         "word": "fehlen",
@@ -663,7 +743,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Herr Müller ist nicht da, er fehlt schon seit drei Tagen.",
-        "meaning": "缺席"
+        "meaning": "缺席",
+        "perfekt": "hat gefehlt"
     },
     {
         "word": "fernsehen",
@@ -671,7 +752,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wollen wir heute Abend mal fernsehen?",
-        "meaning": "看电视"
+        "meaning": "看电视",
+        "perfekt": "hat ferngesehen"
     },
     {
         "word": "finden",
@@ -679,7 +761,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir müssen den Schlüssel finden.",
-        "meaning": "找到"
+        "meaning": "找到",
+        "perfekt": "hat gefunden"
     },
     {
         "word": "fliegen",
@@ -687,7 +770,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich fliege nicht gern. Deshalb fahre ich mit dem Zug.",
-        "meaning": "飞行"
+        "meaning": "飞行",
+        "perfekt": "ist geflogen"
     },
     {
         "word": "abfliegen",
@@ -695,7 +779,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wann fliegst du ab?",
-        "meaning": "起飞"
+        "meaning": "起飞",
+        "perfekt": "ist abgeflogen"
     },
     {
         "word": "fragen",
@@ -703,7 +788,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er möchte Sie etwas fragen.",
-        "meaning": "问"
+        "meaning": "问",
+        "perfekt": "hat gefragt"
     },
     {
         "word": "sich freuen",
@@ -711,7 +797,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich freue mich auf den Urlaub.",
-        "meaning": "感到高兴"
+        "meaning": "感到高兴",
+        "perfekt": "hat sich gefreut"
     },
     {
         "word": "frühstücken",
@@ -719,7 +806,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Am Sonntag frühstücke ich gern im Bett.",
-        "meaning": "吃早餐"
+        "meaning": "吃早餐",
+        "perfekt": "hat gefrühstückt"
     },
     {
         "word": "geben",
@@ -727,7 +815,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Kannst du mir bitte deinen Kugelschreiber geben?",
-        "meaning": "给"
+        "meaning": "给",
+        "perfekt": "hat gegeben"
     },
     {
         "word": "gefallen",
@@ -735,7 +824,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Das gefällt mir.",
-        "meaning": "喜欢"
+        "meaning": "喜欢",
+        "perfekt": "hat gefallen"
     },
     {
         "word": "gehen",
@@ -743,7 +833,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Jetzt muss ich (aber) leider gehen.",
-        "meaning": "走"
+        "meaning": "走",
+        "perfekt": "ist gegangen"
     },
     {
         "word": "gehören",
@@ -751,7 +842,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wem gehört das?",
-        "meaning": "属于"
+        "meaning": "属于",
+        "perfekt": "hat gehört"
     },
     {
         "word": "gewinnen",
@@ -759,16 +851,17 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wer gewinnt das Spiel?",
-        "meaning": "赢"
+        "meaning": "赢",
+        "perfekt": "hat gewonnen"
     },
-
     {
         "word": "gratulieren",
         "category": "词性",
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich gratuliere dir!",
-        "meaning": "祝贺"
+        "meaning": "祝贺",
+        "perfekt": "hat gratuliert"
     },
     {
         "word": "grillen",
@@ -776,7 +869,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Heute grillen wir im Garten.",
-        "meaning": "烧烤"
+        "meaning": "烧烤",
+        "perfekt": "hat gegrillt"
     },
     {
         "word": "haben",
@@ -784,7 +878,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich habe keine Zeit.",
-        "meaning": "有"
+        "meaning": "有",
+        "perfekt": "hat gehabt"
     },
     {
         "word": "halten",
@@ -792,7 +887,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Dieser Zug hält nicht in Rüdesheim.",
-        "meaning": "停下"
+        "meaning": "停下",
+        "perfekt": "hat gehalten"
     },
     {
         "word": "heiraten",
@@ -800,7 +896,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Meine Schwester heiratet einen Japaner.",
-        "meaning": "结婚"
+        "meaning": "结婚",
+        "perfekt": "hat geheiratet"
     },
     {
         "word": "heißen",
@@ -808,7 +905,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich heiße Charlotte Meier.",
-        "meaning": "叫做"
+        "meaning": "叫做",
+        "perfekt": "hat geheißen"
     },
     {
         "word": "helfen",
@@ -816,7 +914,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Können Sie mir helfen, bitte?",
-        "meaning": "帮助"
+        "meaning": "帮助",
+        "perfekt": "hat geholfen"
     },
     {
         "word": "holen",
@@ -824,7 +923,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich hole zwei Flaschen Wasser aus der Küche.",
-        "meaning": "取来"
+        "meaning": "取来",
+        "perfekt": "hat geholt"
     },
     {
         "word": "hören",
@@ -832,7 +932,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich habe das Lied schon mal gehört.",
-        "meaning": "听"
+        "meaning": "听",
+        "perfekt": "hat gehört"
     },
     {
         "word": "kaufen",
@@ -840,7 +941,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Tim kauft sich ein neues Auto.",
-        "meaning": "购买"
+        "meaning": "购买",
+        "perfekt": "hat gekauft"
     },
     {
         "word": "kennen",
@@ -848,7 +950,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Kennen Sie diese Frau? – Nein, leider nicht.",
-        "meaning": "认识"
+        "meaning": "认识",
+        "perfekt": "hat gekannt"
     },
     {
         "word": "kennenlernen",
@@ -856,7 +959,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir sind neu hier. Wir möchten Sie kennenlernen.",
-        "meaning": "认识，了解"
+        "meaning": "认识，了解",
+        "perfekt": "hat kennengelernt"
     },
     {
         "word": "kochen",
@@ -864,7 +968,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Herr Georgi kann gut kochen.",
-        "meaning": "烹饪"
+        "meaning": "烹饪",
+        "perfekt": "hat gekocht"
     },
     {
         "word": "kommen",
@@ -872,7 +977,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Woher kommen Sie? – Aus Frankreich.",
-        "meaning": "来"
+        "meaning": "来",
+        "perfekt": "ist gekommen"
     },
     {
         "word": "kosten",
@@ -880,7 +986,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wie viel kostet das? – 10 Euro.",
-        "meaning": "花费"
+        "meaning": "花费",
+        "perfekt": "hat gekostet"
     },
     {
         "word": "kriegen",
@@ -888,7 +995,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich kriege 15 Euro in der Stunde für meine Arbeit.",
-        "meaning": "得到"
+        "meaning": "得到",
+        "perfekt": "hat gekriegt"
     },
     {
         "word": "lachen",
@@ -896,7 +1004,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Die Kinder lachen viel.",
-        "meaning": "笑"
+        "meaning": "笑",
+        "perfekt": "hat gelacht"
     },
     {
         "word": "laufen",
@@ -904,7 +1013,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich möchte nicht Auto fahren, ich möchte laufen.",
-        "meaning": "跑，步行"
+        "meaning": "跑，步行",
+        "perfekt": "ist gelaufen"
     },
     {
         "word": "leben",
@@ -912,7 +1022,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie lebt bei ihrer Schwester.",
-        "meaning": "生活"
+        "meaning": "生活",
+        "perfekt": "hat gelebt"
     },
     {
         "word": "legen",
@@ -920,7 +1031,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Legen Sie das Buch auf den Tisch.",
-        "meaning": "放置"
+        "meaning": "放置",
+        "perfekt": "hat gelegt"
     },
     {
         "word": "lernen",
@@ -928,7 +1040,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wie lange lernen Sie schon Deutsch?",
-        "meaning": "学习"
+        "meaning": "学习",
+        "perfekt": "hat gelernt"
     },
     {
         "word": "lesen",
@@ -936,7 +1049,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich lese ein Buch von García Márquez.",
-        "meaning": "阅读"
+        "meaning": "阅读",
+        "perfekt": "hat gelesen"
     },
     {
         "word": "lieben",
@@ -944,7 +1058,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich liebe dich!",
-        "meaning": "爱"
+        "meaning": "爱",
+        "perfekt": "hat geliebt"
     },
     {
         "word": "liegen",
@@ -952,7 +1067,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Um neun Uhr liegt Judith noch im Bett. Frankfurt liegt am Main.",
-        "meaning": "躺，位于"
+        "meaning": "躺，位于",
+        "perfekt": "hat gelegen"
     },
     {
         "word": "machen",
@@ -960,7 +1076,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Was machst du heute Abend? Ich muss jetzt das Essen machen.",
-        "meaning": "做"
+        "meaning": "做",
+        "perfekt": "hat gemacht"
     },
     {
         "word": "mieten",
@@ -968,7 +1085,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich möchte ein Auto mieten.",
-        "meaning": "租"
+        "meaning": "租",
+        "perfekt": "hat gemietet"
     },
     {
         "word": "sortieren",
@@ -976,7 +1094,8 @@
         "subCategory": "学习",
         "type": "动词",
         "example": "Bitte sortieren Sie die Sätze.",
-        "meaning": "排序，整理"
+        "meaning": "排序，整理",
+        "perfekt": "hat sortiert"
     },
     {
         "word": "mögen",
@@ -984,7 +1103,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Magst du Kaffee oder Tee?",
-        "meaning": "喜欢"
+        "meaning": "喜欢",
+        "perfekt": "hat gemocht"
     },
     {
         "word": "nehmen",
@@ -992,7 +1112,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Heute gibt es Hähnchen. Das nehme ich. Ich nehme den Bus; Bitte nehmen Sie Platz.",
-        "meaning": "拿，选择"
+        "meaning": "拿，选择",
+        "perfekt": "hat genommen"
     },
     {
         "word": "glauben",
@@ -1000,7 +1121,8 @@
         "subCategory": "情感",
         "type": "动词",
         "example": "Ich glaube ihm.",
-        "meaning": "相信"
+        "meaning": "相信",
+        "perfekt": "hat geglaubt"
     },
     {
         "word": "wissen",
@@ -1008,7 +1130,8 @@
         "subCategory": "学习",
         "type": "动词",
         "example": "Ich weiß nicht.",
-        "meaning": "知道"
+        "meaning": "知道",
+        "perfekt": "hat gewusst"
     },
     {
         "word": "öffnen",
@@ -1016,7 +1139,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich öffne die Tür.",
-        "meaning": "打开"
+        "meaning": "打开",
+        "perfekt": "hat geöffnet"
     },
     {
         "word": "trinken",
@@ -1024,7 +1148,8 @@
         "subCategory": "餐饮",
         "type": "动词",
         "example": "Ich trinke gern Kaffee.",
-        "meaning": "喝，饮"
+        "meaning": "喝，饮",
+        "perfekt": "hat getrunken"
     },
     {
         "word": "rauchen",
@@ -1032,7 +1157,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich rauche nicht.",
-        "meaning": "抽烟"
+        "meaning": "抽烟",
+        "perfekt": "hat geraucht"
     },
     {
         "word": "regnen",
@@ -1040,7 +1166,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Heute regnet es.",
-        "meaning": "下雨"
+        "meaning": "下雨",
+        "perfekt": "hat geregnet"
     },
     {
         "word": "reisen",
@@ -1048,7 +1175,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich reise gern.",
-        "meaning": "旅行"
+        "meaning": "旅行",
+        "perfekt": "ist gereist"
     },
     {
         "word": "reparieren",
@@ -1056,7 +1184,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er hat das Fahrrad repariert.",
-        "meaning": "修理"
+        "meaning": "修理",
+        "perfekt": "hat repariert"
     },
     {
         "word": "riechen",
@@ -1064,7 +1193,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Dieser Wein riecht gut.",
-        "meaning": "闻，气味"
+        "meaning": "闻，气味",
+        "perfekt": "hat gerochen"
     },
     {
         "word": "sagen",
@@ -1072,7 +1202,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sag mal, wie geht es dir denn?",
-        "meaning": "说"
+        "meaning": "说",
+        "perfekt": "hat gesagt"
     },
     {
         "word": "scheinen",
@@ -1080,7 +1211,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Die Sonne scheint.",
-        "meaning": "照耀，看起来"
+        "meaning": "照耀，看起来",
+        "perfekt": "hat geschienen"
     },
     {
         "word": "schicken",
@@ -1088,7 +1220,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Bitte schicken Sie mir eine E-Mail.",
-        "meaning": "发送"
+        "meaning": "发送",
+        "perfekt": "hat geschickt"
     },
     {
         "word": "schlafen",
@@ -1096,7 +1229,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich schlafe meistens acht Stunden.",
-        "meaning": "睡觉"
+        "meaning": "睡觉",
+        "perfekt": "hat geschlafen"
     },
     {
         "word": "schließen",
@@ -1104,7 +1238,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Bitte, schließen Sie die Tür.",
-        "meaning": "关闭"
+        "meaning": "关闭",
+        "perfekt": "hat geschlossen"
     },
     {
         "word": "schmecken",
@@ -1112,7 +1247,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Schmeckt das gut?",
-        "meaning": "尝起来"
+        "meaning": "尝起来",
+        "perfekt": "hat geschmeckt"
     },
     {
         "word": "schreiben",
@@ -1120,7 +1256,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er schreibt jeden Tag fünfzig E-Mails.",
-        "meaning": "写"
+        "meaning": "写",
+        "perfekt": "hat geschrieben"
     },
     {
         "word": "schwimmen",
@@ -1128,7 +1265,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich schwimme jeden Tag einen Kilometer.",
-        "meaning": "游泳"
+        "meaning": "游泳",
+        "perfekt": "hat geschwommen"
     },
     {
         "word": "sehen",
@@ -1136,7 +1274,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich kann dich nicht sehen. Ich habe diesen Jungen schon einmal gesehen.",
-        "meaning": "看见"
+        "meaning": "看见",
+        "perfekt": "hat gesehen"
     },
     {
         "word": "sein",
@@ -1144,7 +1283,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Herr Müller ist in seinem Zimmer. Mir ist kalt. Ich bin dreiundzwanzig.",
-        "meaning": "是"
+        "meaning": "是",
+        "perfekt": "ist gewesen"
     },
     {
         "word": "sitzen",
@@ -1152,7 +1292,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wo sitzen Sie?",
-        "meaning": "坐"
+        "meaning": "坐",
+        "perfekt": "hat gesessen"
     },
     {
         "word": "spielen",
@@ -1160,7 +1301,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Die Kinder spielen draußen. Spielen Sie Karten?",
-        "meaning": "玩，演奏"
+        "meaning": "玩，演奏",
+        "perfekt": "hat gespielt"
     },
     {
         "word": "sprechen",
@@ -1168,7 +1310,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Kann ich (mit) Herrn Klein sprechen?",
-        "meaning": "说话"
+        "meaning": "说话",
+        "perfekt": "hat gesprochen"
     },
     {
         "word": "stehen",
@@ -1176,7 +1319,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich glaube es nicht, aber es steht in der Zeitung. Der Bus steht schon an der Haltestelle.",
-        "meaning": "站立，位于"
+        "meaning": "站立，位于",
+        "perfekt": "hat gestanden"
     },
     {
         "word": "stellen",
@@ -1184,7 +1328,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Stell die Tasche rechts in die Ecke!",
-        "meaning": "放置"
+        "meaning": "放置",
+        "perfekt": "hat gestellt"
     },
     {
         "word": "studieren",
@@ -1192,7 +1337,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich studiere in Mainz.",
-        "meaning": "学习，研究"
+        "meaning": "学习，研究",
+        "perfekt": "hat studiert"
     },
     {
         "word": "suchen",
@@ -1200,7 +1346,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Suchst du etwas?",
-        "meaning": "寻找"
+        "meaning": "寻找",
+        "perfekt": "hat gesucht"
     },
     {
         "word": "schneide",
@@ -1208,7 +1355,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich schneide das Brot in Scheiben.",
-        "meaning": "切, 剪"
+        "meaning": "切, 剪",
+        "perfekt": "hat geschnitten"
     },
     {
         "word": "tanzen",
@@ -1216,7 +1364,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Tanzen Sie gern?",
-        "meaning": "跳舞"
+        "meaning": "跳舞",
+        "perfekt": "hat getanzt"
     },
     {
         "word": "telefonieren",
@@ -1224,15 +1373,17 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Darf ich mal telefonieren?",
-        "meaning": "打电话"
+        "meaning": "打电话",
+        "perfekt": "hat telefoniert"
     },
     {
-        "word": "treffen",
+        "word": "sich treffen",
         "category": "词性",
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich treffe in der Stadt einen Kollegen. Wir treffen uns immer freitags.",
-        "meaning": "见面，遇见"
+        "meaning": "见面，遇见",
+        "perfekt": "hat sich getroffen"
     },
     {
         "word": "trinken",
@@ -1240,7 +1391,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Möchtest du etwas trinken?",
-        "meaning": "喝"
+        "meaning": "喝",
+        "perfekt": "hat getrunken"
     },
     {
         "word": "tun",
@@ -1248,7 +1400,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich habe noch etwas zu tun. Was tut Ihr Mann?",
-        "meaning": "做"
+        "meaning": "做",
+        "perfekt": "hat getan"
     },
     {
         "word": "übernachten",
@@ -1256,7 +1409,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Du kannst bei mir übernachten.",
-        "meaning": "过夜"
+        "meaning": "过夜",
+        "perfekt": "hat übernachtet"
     },
     {
         "word": "überweisen",
@@ -1264,7 +1418,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie können das Geld auch überweisen.",
-        "meaning": "转账"
+        "meaning": "转账",
+        "perfekt": "hat überwiesen"
     },
     {
         "word": "umziehen",
@@ -1272,7 +1427,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Nächsten Monat ziehen wir um.",
-        "meaning": "搬家"
+        "meaning": "搬家",
+        "perfekt": "ist umgezogen"
     },
     {
         "word": "unterschreiben",
@@ -1280,7 +1436,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wo muss ich unterschreiben?",
-        "meaning": "签字"
+        "meaning": "签字",
+        "perfekt": "hat unterschrieben"
     },
     {
         "word": "verdienen",
@@ -1288,7 +1445,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich verdiene 1.500 Euro im Monat.",
-        "meaning": "赚取"
+        "meaning": "赚取",
+        "perfekt": "hat verdient"
     },
     {
         "word": "anfangen",
@@ -1296,7 +1454,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Das Casting fängt um 10 Uhr an.",
-        "meaning": "开始"
+        "meaning": "开始",
+        "perfekt": "hat angefangen"
     },
     {
         "word": "mitspielen",
@@ -1304,7 +1463,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Frau Mainka spielt gern mit.",
-        "meaning": "参加"
+        "meaning": "参加",
+        "perfekt": "hat mitgespielt"
     },
     {
         "word": "dran sein",
@@ -1312,7 +1472,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Jetzt bin ich dran!",
-        "meaning": "轮到"
+        "meaning": "轮到",
+        "perfekt": "ist dran gewesen"
     },
     {
         "word": "verkaufen",
@@ -1320,7 +1481,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er verkauft sein altes Auto.",
-        "meaning": "出售"
+        "meaning": "出售",
+        "perfekt": "hat verkauft"
     },
     {
         "word": "vermieten",
@@ -1328,7 +1490,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Die Wohnung ist schon vermietet.",
-        "meaning": "出租"
+        "meaning": "出租",
+        "perfekt": "hat vermietet"
     },
     {
         "word": "verstehen",
@@ -1336,7 +1499,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Können Sie mich verstehen?",
-        "meaning": "理解"
+        "meaning": "理解",
+        "perfekt": "hat verstanden"
     },
     {
         "word": "ordnen",
@@ -1344,7 +1508,8 @@
         "subCategory": "学习",
         "type": "动词",
         "example": "Er ordnet die Sätze.",
-        "meaning": "整理"
+        "meaning": "整理",
+        "perfekt": "hat geordnet"
     },
     {
         "word": "ergänzen",
@@ -1352,7 +1517,8 @@
         "subCategory": "学习",
         "type": "动词",
         "example": "Ergänzen Sie bitte.",
-        "meaning": "补充，添加"
+        "meaning": "补充，添加",
+        "perfekt": "hat ergänzt"
     },
     {
         "word": "buchstabieren",
@@ -1360,7 +1526,8 @@
         "subCategory": "学习",
         "type": "动词",
         "example": "Können Sie Ihren Namen bitte buchstabieren?",
-        "meaning": "拼写"
+        "meaning": "拼写",
+        "perfekt": "hat buchstabiert"
     },
     {
         "word": "markieren",
@@ -1368,7 +1535,8 @@
         "subCategory": "学习",
         "type": "动词",
         "example": "Bitte markieren Sie die richtige Antwort.",
-        "meaning": "标记"
+        "meaning": "标记",
+        "perfekt": "hat markiert"
     },
     {
         "word": "antworten",
@@ -1376,7 +1544,8 @@
         "subCategory": "沟通",
         "type": "动词",
         "example": "Er antwortet auf die Frage.",
-        "meaning": "回答"
+        "meaning": "回答",
+        "perfekt": "hat geantwortet"
     },
     {
         "word": "kombinieren",
@@ -1384,7 +1553,8 @@
         "subCategory": "学习",
         "type": "动词",
         "example": "Kombinieren Sie die Sätze.",
-        "meaning": "组合"
+        "meaning": "组合",
+        "perfekt": "hat kombiniert"
     },
     {
         "word": "zusammenpassen",
@@ -1392,7 +1562,8 @@
         "subCategory": "学习",
         "type": "动词",
         "example": "Was passt zusammen? Zug und Züge.",
-        "meaning": "匹配，配合"
+        "meaning": "匹配，配合",
+        "perfekt": "hat zusammengepasst"
     },
     {
         "word": "wandern",
@@ -1400,7 +1571,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir wandern um den Chiemsee.",
-        "meaning": "徒步旅行"
+        "meaning": "徒步旅行",
+        "perfekt": "ist gewandert"
     },
     {
         "word": "warten",
@@ -1408,7 +1580,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Können Sie ein paar Minuten warten?",
-        "meaning": "等待"
+        "meaning": "等待",
+        "perfekt": "hat gewartet"
     },
     {
         "word": "(sich) waschen",
@@ -1416,7 +1589,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wo kann ich mir die Hände waschen?",
-        "meaning": "洗"
+        "meaning": "洗",
+        "perfekt": "hat (sich) gewaschen"
     },
     {
         "word": "werden",
@@ -1424,7 +1598,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Mein Sohn will Arzt werden.",
-        "meaning": "成为"
+        "meaning": "成为",
+        "perfekt": "ist geworden"
     },
     {
         "word": "wiederholen",
@@ -1432,16 +1607,17 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Können Sie das bitte wiederholen?",
-        "meaning": "重复"
+        "meaning": "重复",
+        "perfekt": "hat wiederholt"
     },
-
     {
         "word": "wohnen",
         "category": "词性",
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich wohne in München.",
-        "meaning": "居住"
+        "meaning": "居住",
+        "perfekt": "hat gewohnt"
     },
     {
         "word": "wollen",
@@ -1449,7 +1625,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wollen Sie einen Kaffee trinken?",
-        "meaning": "想要"
+        "meaning": "想要",
+        "perfekt": "hat gewollt"
     },
     {
         "word": "zahlen",
@@ -1457,7 +1634,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Zahlen, bitte!",
-        "meaning": "支付"
+        "meaning": "支付",
+        "perfekt": "hat gezahlt"
     },
     {
         "word": "aufstehen",
@@ -1465,7 +1643,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich stehe jeden Morgen um 7 Uhr auf.",
-        "meaning": "起床"
+        "meaning": "起床",
+        "perfekt": "ist aufgestanden"
     },
     {
         "word": "zeigen",
@@ -1473,7 +1652,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Kannst du mir den Weg zeigen?",
-        "meaning": "展示"
+        "meaning": "展示",
+        "perfekt": "hat gezeigt"
     },
     {
         "word": "malen",
@@ -1481,7 +1661,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie malt ein schönes Bild.",
-        "meaning": "画画"
+        "meaning": "画画",
+        "perfekt": "hat gemalt"
     },
     {
         "word": "springen",
@@ -1489,7 +1670,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Das Kind springt vor Freude.",
-        "meaning": "跳跃"
+        "meaning": "跳跃",
+        "perfekt": "ist gesprungen"
     },
     {
         "word": "weinen",
@@ -1497,7 +1679,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Das Baby weint.",
-        "meaning": "哭"
+        "meaning": "哭",
+        "perfekt": "hat geweint"
     },
     {
         "word": "rennen",
@@ -1505,7 +1688,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er rennt sehr schnell.",
-        "meaning": "跑步"
+        "meaning": "跑步",
+        "perfekt": "ist gerannt"
     },
     {
         "word": "investieren",
@@ -1513,7 +1697,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Es ist wichtig, in erneuerbare Energien zu investieren.",
-        "meaning": "投资"
+        "meaning": "投资",
+        "perfekt": "hat investiert"
     },
     {
         "word": "sanieren",
@@ -1521,7 +1706,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Das alte Gebäude muss dringend saniert werden.",
-        "meaning": "翻修, 修复"
+        "meaning": "翻修, 修复",
+        "perfekt": "hat saniert"
     },
     {
         "word": "fördern",
@@ -1529,7 +1715,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Der Staat fördert nachhaltige Projekte.",
-        "meaning": "促进，支持"
+        "meaning": "促进，支持",
+        "perfekt": "hat gefördert"
     },
     {
         "word": "unterstützen",
@@ -1537,7 +1724,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Viele Menschen unterstützen die Klimaschutzinitiative.",
-        "meaning": "支持"
+        "meaning": "支持",
+        "perfekt": "hat unterstützt"
     },
     {
         "word": "absagen",
@@ -1545,7 +1733,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er muss die Einladung leider absagen.",
-        "meaning": "拒绝，取消"
+        "meaning": "拒绝，取消",
+        "perfekt": "hat abgesagt"
     },
     {
         "word": "zusagen",
@@ -1553,7 +1742,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich habe der Einladung zugesagt.",
-        "meaning": "答应，接受"
+        "meaning": "答应，接受",
+        "perfekt": "hat zugesagt"
     },
     {
         "word": "ändern",
@@ -1561,7 +1751,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Kann ich den Termin ändern?",
-        "meaning": "改变"
+        "meaning": "改变",
+        "perfekt": "hat geändert"
     },
     {
         "word": "anmelden",
@@ -1569,7 +1760,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich muss mich für den Kurs anmelden.",
-        "meaning": "报名，登记"
+        "meaning": "报名，登记",
+        "perfekt": "hat angemeldet"
     },
     {
         "word": "organisieren",
@@ -1577,7 +1769,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wer organisiert die Feier?",
-        "meaning": "组织"
+        "meaning": "组织",
+        "perfekt": "hat organisiert"
     },
     {
         "word": "renovieren",
@@ -1585,7 +1778,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir renovieren die Wohnung.",
-        "meaning": "装修，翻新"
+        "meaning": "装修，翻新",
+        "perfekt": "hat renoviert"
     },
     {
         "word": "weiterhelfen",
@@ -1593,7 +1787,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Können Sie mir weiterhelfen?",
-        "meaning": "继续帮助"
+        "meaning": "继续帮助",
+        "perfekt": "hat weitergeholfen"
     },
     {
         "word": "fühlen",
@@ -1601,7 +1796,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich fühle mich heute gut.",
-        "meaning": "感觉"
+        "meaning": "感觉",
+        "perfekt": "hat gefühlt"
     },
     {
         "word": "zuhören",
@@ -1609,7 +1805,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Hör mir bitte zu!",
-        "meaning": "倾听"
+        "meaning": "倾听",
+        "perfekt": "hat zugehört"
     },
     {
         "word": "begründen",
@@ -1617,7 +1814,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er muss seine Entscheidung begründen.",
-        "meaning": "说明理由，论证"
+        "meaning": "说明理由，论证",
+        "perfekt": "hat begründet"
     },
     {
         "word": "rufen",
@@ -1625,7 +1823,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ruf mich bitte an!",
-        "meaning": "叫，打电话"
+        "meaning": "叫，打电话",
+        "perfekt": "hat gerufen"
     },
     {
         "word": "üben",
@@ -1633,7 +1832,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich übe jeden Tag Deutsch.",
-        "meaning": "练习"
+        "meaning": "练习",
+        "perfekt": "hat geübt"
     },
     {
         "word": "ablehnen",
@@ -1641,7 +1841,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er hat das Angebot abgelehnt.",
-        "meaning": "拒绝"
+        "meaning": "拒绝",
+        "perfekt": "hat abgelehnt"
     },
     {
         "word": "zustimmen",
@@ -1649,7 +1850,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich stimme dir voll und ganz zu.",
-        "meaning": "同意"
+        "meaning": "同意",
+        "perfekt": "hat zugestimmt"
     },
     {
         "word": "ausschlafen",
@@ -1657,7 +1859,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Am Wochenende schlafe ich lange aus.",
-        "meaning": "睡懒觉"
+        "meaning": "睡懒觉",
+        "perfekt": "hat ausgeschlafen"
     },
     {
         "word": "jobben",
@@ -1665,16 +1868,17 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie jobbt neben dem Studium.",
-        "meaning": "打零工"
+        "meaning": "打零工",
+        "perfekt": "hat gejobbt"
     },
-
     {
         "word": "vergleichen",
         "category": "词性",
         "subCategory": "动词",
         "type": "动词",
         "example": "Kannst du die Preise vergleichen?",
-        "meaning": "比较"
+        "meaning": "比较",
+        "perfekt": "hat verglichen"
     },
     {
         "word": "gründen",
@@ -1682,7 +1886,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie haben eine Firma gegründet.",
-        "meaning": "建立，创立"
+        "meaning": "建立，创立",
+        "perfekt": "hat gegründet"
     },
     {
         "word": "entwickeln",
@@ -1690,7 +1895,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er entwickelt eine neue App.",
-        "meaning": "开发，发展"
+        "meaning": "开发，发展",
+        "perfekt": "hat entwickelt"
     },
     {
         "word": "programmieren",
@@ -1698,7 +1904,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie programmiert Computerspiele.",
-        "meaning": "编程"
+        "meaning": "编程",
+        "perfekt": "hat programmiert"
     },
     {
         "word": "äußern",
@@ -1706,7 +1913,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er äußerte seine Meinung.",
-        "meaning": "表达，说出"
+        "meaning": "表达，说出",
+        "perfekt": "hat geäußert"
     },
     {
         "word": "kommentieren",
@@ -1714,7 +1922,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie kommentiert den Artikel online.",
-        "meaning": "评论"
+        "meaning": "评论",
+        "perfekt": "hat kommentiert"
     },
     {
         "word": "meinen",
@@ -1722,7 +1931,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Was meinst du damit?",
-        "meaning": "认为，意思是"
+        "meaning": "认为，意思是",
+        "perfekt": "hat gemeint"
     },
     {
         "word": "mitteilen",
@@ -1730,7 +1940,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich habe es ihm mitgeteilt.",
-        "meaning": "告知，通知"
+        "meaning": "告知，通知",
+        "perfekt": "hat mitgeteilt"
     },
     {
         "word": "sterben",
@@ -1738,7 +1949,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Der Patient ist gestern gestorben.",
-        "meaning": "死亡"
+        "meaning": "死亡",
+        "perfekt": "ist gestorben"
     },
     {
         "word": "ausprobieren",
@@ -1746,7 +1958,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Probier das mal aus!",
-        "meaning": "试用，尝试"
+        "meaning": "试用，尝试",
+        "perfekt": "hat ausprobiert"
     },
     {
         "word": "probieren",
@@ -1754,7 +1967,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Möchtest du probieren?",
-        "meaning": "尝试，品尝"
+        "meaning": "尝试，品尝",
+        "perfekt": "hat probiert"
     },
     {
         "word": "flüstern",
@@ -1762,7 +1976,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie flüsterte mir etwas ins Ohr.",
-        "meaning": "低声说，耳语"
+        "meaning": "低声说，耳语",
+        "perfekt": "hat geflüstert"
     },
     {
         "word": "schmücken",
@@ -1770,7 +1985,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir schmücken den Weihnachtsbaum.",
-        "meaning": "装饰"
+        "meaning": "装饰",
+        "perfekt": "hat geschmückt"
     },
     {
         "word": "bestehen",
@@ -1778,7 +1994,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie hat die Prüfung bestanden.",
-        "meaning": "通过（考试）；存在"
+        "meaning": "通过（考试）；存在",
+        "perfekt": "hat bestanden"
     },
     {
         "word": "ausdrücken",
@@ -1786,7 +2003,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich kann meine Gefühle nicht ausdrücken.",
-        "meaning": "表达"
+        "meaning": "表达",
+        "perfekt": "hat ausgedrückt"
     },
     {
         "word": "sich bedanken",
@@ -1794,7 +2012,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich möchte mich bei dir bedanken.",
-        "meaning": "感谢"
+        "meaning": "感谢",
+        "perfekt": "hat sich bedankt"
     },
     {
         "word": "sich wohlfühlen",
@@ -1802,7 +2021,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich fühle mich hier sehr wohl.",
-        "meaning": "感到舒适"
+        "meaning": "感到舒适",
+        "perfekt": "hat sich wohlgefühlt"
     },
     {
         "word": "sich ärgern",
@@ -1810,7 +2030,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er ärgert sich über die Verspätung.",
-        "meaning": "生气"
+        "meaning": "生气",
+        "perfekt": "hat sich geärgert"
     },
     {
         "word": "sich streiten",
@@ -1818,7 +2039,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Die Geschwister streiten sich oft.",
-        "meaning": "争吵"
+        "meaning": "争吵",
+        "perfekt": "hat sich gestritten"
     },
     {
         "word": "beruhigen",
@@ -1826,7 +2048,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Beruhig dich bitte!",
-        "meaning": "使平静，安慰"
+        "meaning": "使平静，安慰",
+        "perfekt": "hat beruhigt"
     },
     {
         "word": "hoffen",
@@ -1834,7 +2057,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich hoffe, dass du kommst.",
-        "meaning": "希望"
+        "meaning": "希望",
+        "perfekt": "hat gehofft"
     },
     {
         "word": "sich langweilen",
@@ -1842,7 +2066,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich langweile mich in der Vorlesung.",
-        "meaning": "感到无聊"
+        "meaning": "感到无聊",
+        "perfekt": "hat sich gelangweilt"
     },
     {
         "word": "sich austauschen",
@@ -1850,7 +2075,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir tauschen uns über unsere Erfahrungen aus.",
-        "meaning": "交流"
+        "meaning": "交流",
+        "perfekt": "hat sich ausgetauscht"
     },
     {
         "word": "fallen",
@@ -1858,7 +2084,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Pass auf, dass du nicht fällst!",
-        "meaning": "落下，跌倒"
+        "meaning": "落下，跌倒",
+        "perfekt": "ist gefallen"
     },
     {
         "word": "sich unterhalten",
@@ -1866,7 +2093,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir haben uns lange unterhalten.",
-        "meaning": "聊天，交谈"
+        "meaning": "聊天，交谈",
+        "perfekt": "hat sich unterhalten"
     },
     {
         "word": "sich ausruhen",
@@ -1874,7 +2102,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich muss mich ein bisschen ausruhen.",
-        "meaning": "休息"
+        "meaning": "休息",
+        "perfekt": "hat sich ausgeruht"
     },
     {
         "word": "aussprechen",
@@ -1882,7 +2111,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Kannst du das Wort aussprechen?",
-        "meaning": "发音；说出"
+        "meaning": "发音；说出",
+        "perfekt": "hat ausgesprochen"
     },
     {
         "word": "bewundern",
@@ -1890,7 +2120,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich bewundere ihre Geduld.",
-        "meaning": "钦佩，欣赏"
+        "meaning": "钦佩，欣赏",
+        "perfekt": "hat bewundert"
     },
     {
         "word": "sich entscheiden",
@@ -1898,7 +2129,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich habe mich für Deutsch entschieden.",
-        "meaning": "决定"
+        "meaning": "决定",
+        "perfekt": "hat sich entschieden"
     },
     {
         "word": "wegfahren",
@@ -1906,7 +2138,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wann fährst du weg?",
-        "meaning": "离开（乘车）"
+        "meaning": "离开（乘车）",
+        "perfekt": "ist weggefahren"
     },
     {
         "word": "transportieren",
@@ -1914,7 +2147,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Die Ware wird per Lkw transportiert.",
-        "meaning": "运输"
+        "meaning": "运输",
+        "perfekt": "hat transportiert"
     },
     {
         "word": "beschützen",
@@ -1922,7 +2156,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er will seine Familie beschützen.",
-        "meaning": "保护"
+        "meaning": "保护",
+        "perfekt": "hat beschützt"
     },
     {
         "word": "sich kümmern",
@@ -1930,7 +2165,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie kümmert sich um die Kinder.",
-        "meaning": "照顾，关心"
+        "meaning": "照顾，关心",
+        "perfekt": "hat sich gekümmert"
     },
     {
         "word": "pflegen",
@@ -1938,7 +2174,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er pflegt seine kranke Mutter.",
-        "meaning": "护理；保养"
+        "meaning": "护理；保养",
+        "perfekt": "hat gepflegt"
     },
     {
         "word": "leeren",
@@ -1946,7 +2183,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Die Mülltonne muss geleert werden.",
-        "meaning": "清空"
+        "meaning": "清空",
+        "perfekt": "hat geleert"
     },
     {
         "word": "bedienen",
@@ -1954,7 +2192,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Können Sie mich bedienen?",
-        "meaning": "服务；操作"
+        "meaning": "服务；操作",
+        "perfekt": "hat bedient"
     },
     {
         "word": "servieren",
@@ -1962,7 +2201,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Der Kellner serviert das Essen.",
-        "meaning": "端上（饭菜）"
+        "meaning": "端上（饭菜）",
+        "perfekt": "hat serviert"
     },
     {
         "word": "erledigen",
@@ -1970,7 +2210,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich muss noch etwas erledigen.",
-        "meaning": "完成，办理"
+        "meaning": "完成，办理",
+        "perfekt": "hat erledigt"
     },
     {
         "word": "genehmigen",
@@ -1978,7 +2219,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Der Antrag wurde genehmigt.",
-        "meaning": "批准"
+        "meaning": "批准",
+        "perfekt": "hat genehmigt"
     },
     {
         "word": "prüfen",
@@ -1986,7 +2228,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Der Lehrer prüft die Arbeiten.",
-        "meaning": "检查，审核"
+        "meaning": "检查，审核",
+        "perfekt": "hat geprüft"
     },
     {
         "word": "beantragen",
@@ -1994,7 +2237,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie hat einen Pass beantragt.",
-        "meaning": "申请"
+        "meaning": "申请",
+        "perfekt": "hat beantragt"
     },
     {
         "word": "verlängern",
@@ -2002,7 +2246,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich muss meinen Ausweis verlängern.",
-        "meaning": "延长"
+        "meaning": "延长",
+        "perfekt": "hat verlängert"
     },
     {
         "word": "abheben",
@@ -2010,7 +2255,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich hebe Geld am Automaten ab.",
-        "meaning": "取（款）"
+        "meaning": "取（款）",
+        "perfekt": "hat abgehoben"
     },
     {
         "word": "ausgeben",
@@ -2018,7 +2264,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er gibt zu viel Geld aus.",
-        "meaning": "花费"
+        "meaning": "花费",
+        "perfekt": "hat ausgegeben"
     },
     {
         "word": "eröffnen",
@@ -2026,7 +2273,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie hat ein Konto eröffnet.",
-        "meaning": "开设"
+        "meaning": "开设",
+        "perfekt": "hat eröffnet"
     },
     {
         "word": "sperren",
@@ -2034,7 +2282,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich muss meine Karte sperren lassen.",
-        "meaning": "冻结，封锁"
+        "meaning": "冻结，封锁",
+        "perfekt": "hat gesperrt"
     },
     {
         "word": "leihen",
@@ -2042,7 +2291,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Kannst du mir Geld leihen?",
-        "meaning": "借出"
+        "meaning": "借出",
+        "perfekt": "hat geliehen"
     },
     {
         "word": "melden",
@@ -2050,7 +2300,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Du musst den Diebstahl bei der Polizei melden.",
-        "meaning": "报告，报案"
+        "meaning": "报告，报案",
+        "perfekt": "hat gemeldet"
     },
     {
         "word": "bitten",
@@ -2058,7 +2309,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich bitte dich um Hilfe.",
-        "meaning": "请求"
+        "meaning": "请求",
+        "perfekt": "hat gebeten"
     },
     {
         "word": "funktionieren",
@@ -2066,7 +2318,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Die Maschine funktioniert nicht.",
-        "meaning": "运转，正常"
+        "meaning": "运转，正常",
+        "perfekt": "hat funktioniert"
     },
     {
         "word": "vorstellen",
@@ -2074,7 +2327,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Darf ich mich vorstellen? / Stell dir das vor!",
-        "meaning": "介绍；想象"
+        "meaning": "介绍；想象",
+        "perfekt": "hat vorgestellt"
     },
     {
         "word": "einhalten",
@@ -2082,7 +2336,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie müssen die Frist einhalten.",
-        "meaning": "遵守，按时完成"
+        "meaning": "遵守，按时完成",
+        "perfekt": "hat eingehalten"
     },
     {
         "word": "beraten",
@@ -2090,7 +2345,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Die Anwältin berät ihre Kunden.",
-        "meaning": "给……提供咨询"
+        "meaning": "给……提供咨询",
+        "perfekt": "hat beraten"
     },
     {
         "word": "sich beeilen",
@@ -2098,7 +2354,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Beeil dich, sonst kommen wir zu spät!",
-        "meaning": "赶紧，抓紧时间"
+        "meaning": "赶紧，抓紧时间",
+        "perfekt": "hat sich beeilt"
     },
     {
         "word": "klappen",
@@ -2106,7 +2363,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Hat alles geklappt?",
-        "meaning": "顺利，实现"
+        "meaning": "顺利，实现",
+        "perfekt": "hat geklappt"
     },
     {
         "word": "erleben",
@@ -2114,7 +2372,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir haben viel Schönes erlebt.",
-        "meaning": "经历，体验"
+        "meaning": "经历，体验",
+        "perfekt": "hat erlebt"
     },
     {
         "word": "wechseln",
@@ -2122,7 +2381,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er möchte den Job wechseln.",
-        "meaning": "更换，变更"
+        "meaning": "更换，变更",
+        "perfekt": "hat gewechselt"
     },
     {
         "word": "nutzen",
@@ -2130,7 +2390,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Nutzen Sie die Chance!",
-        "meaning": "利用"
+        "meaning": "利用",
+        "perfekt": "hat genutzt"
     },
     {
         "word": "bereuen",
@@ -2138,7 +2399,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie bereut ihre Entscheidung.",
-        "meaning": "后悔"
+        "meaning": "后悔",
+        "perfekt": "hat bereut"
     },
     {
         "word": "sich konzentrieren",
@@ -2146,7 +2408,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich kann mich heute nicht konzentrieren.",
-        "meaning": "集中注意力"
+        "meaning": "集中注意力",
+        "perfekt": "hat sich konzentriert"
     },
     {
         "word": "lächeln",
@@ -2154,7 +2417,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie lächelt freundlich.",
-        "meaning": "微笑"
+        "meaning": "微笑",
+        "perfekt": "hat gelächelt"
     },
     {
         "word": "stören",
@@ -2162,7 +2426,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Entschuldigung, darf ich kurz stören?",
-        "meaning": "打扰"
+        "meaning": "打扰",
+        "perfekt": "hat gestört"
     },
     {
         "word": "hinterlassen",
@@ -2170,7 +2435,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Bitte hinterlassen Sie eine Nachricht.",
-        "meaning": "留下"
+        "meaning": "留下",
+        "perfekt": "hat hinterlassen"
     },
     {
         "word": "ausrichten",
@@ -2178,7 +2444,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Kannst du ihm einen Gruß ausrichten?",
-        "meaning": "转告"
+        "meaning": "转告",
+        "perfekt": "hat ausgerichtet"
     },
     {
         "word": "mithelfen",
@@ -2186,7 +2453,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Alle helfen bei der Party mit.",
-        "meaning": "一起帮忙"
+        "meaning": "一起帮忙",
+        "perfekt": "hat mitgeholfen"
     },
     {
         "word": "verändern",
@@ -2194,7 +2462,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Die Digitalisierung verändert die Arbeitswelt.",
-        "meaning": "改变"
+        "meaning": "改变",
+        "perfekt": "hat verändert"
     },
     {
         "word": "zunehmen",
@@ -2202,7 +2471,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Die Zahl der Roboter nimmt zu.",
-        "meaning": "增加"
+        "meaning": "增加",
+        "perfekt": "hat zugenommen"
     },
     {
         "word": "korrigieren",
@@ -2210,7 +2480,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Der Lehrer korrigiert die Fehler.",
-        "meaning": "纠正"
+        "meaning": "纠正",
+        "perfekt": "hat korrigiert"
     },
     {
         "word": "interessieren",
@@ -2218,7 +2489,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Das Thema interessiert mich sehr.",
-        "meaning": "使感兴趣"
+        "meaning": "使感兴趣",
+        "perfekt": "hat interessiert"
     },
     {
         "word": "diskutieren",
@@ -2226,7 +2498,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir diskutieren über die neue Regel.",
-        "meaning": "讨论"
+        "meaning": "讨论",
+        "perfekt": "hat diskutiert"
     },
     {
         "word": "grüßen",
@@ -2234,7 +2507,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Grüß deine Eltern von mir!",
-        "meaning": "问候"
+        "meaning": "问候",
+        "perfekt": "hat gegrüßt"
     },
     {
         "word": "reden",
@@ -2242,7 +2516,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Worüber redet ihr?",
-        "meaning": "说话，谈论"
+        "meaning": "说话，谈论",
+        "perfekt": "hat geredet"
     },
     {
         "word": "genießen",
@@ -2250,7 +2525,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Genieß den Urlaub!",
-        "meaning": "享受"
+        "meaning": "享受",
+        "perfekt": "hat genossen"
     },
     {
         "word": "passieren",
@@ -2258,7 +2534,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Was ist passiert?",
-        "meaning": "发生"
+        "meaning": "发生",
+        "perfekt": "ist passiert"
     },
     {
         "word": "denken",
@@ -2266,7 +2543,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich denke an dich.",
-        "meaning": "想，认为"
+        "meaning": "想，认为",
+        "perfekt": "hat gedacht"
     },
     {
         "word": "verwenden",
@@ -2274,7 +2552,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Man kann dieses Wort in vielen Situationen verwenden.",
-        "meaning": "使用"
+        "meaning": "使用",
+        "perfekt": "hat verwendet"
     },
     {
         "word": "anziehen",
@@ -2282,7 +2561,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Zieh dich warm an!",
-        "meaning": "穿（衣服）"
+        "meaning": "穿（衣服）",
+        "perfekt": "hat angezogen"
     },
     {
         "word": "weitermachen",
@@ -2290,7 +2570,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Mach weiter so!",
-        "meaning": "继续"
+        "meaning": "继续",
+        "perfekt": "hat weitergemacht"
     },
     {
         "word": "schaffen",
@@ -2298,7 +2579,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Das schaffst du!",
-        "meaning": "完成，做到"
+        "meaning": "完成，做到",
+        "perfekt": "hat geschafft"
     },
     {
         "word": "vermissen",
@@ -2306,7 +2588,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich vermisse dich.",
-        "meaning": "想念"
+        "meaning": "想念",
+        "perfekt": "hat vermisst"
     },
     {
         "word": "wehtun",
@@ -2314,7 +2597,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Mein Kopf tut weh.",
-        "meaning": "疼"
+        "meaning": "疼",
+        "perfekt": "hat wehgetan"
     },
     {
         "word": "bewegen",
@@ -2322,7 +2606,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Beweg dich nicht!",
-        "meaning": "移动"
+        "meaning": "移动",
+        "perfekt": "hat bewegt"
     },
     {
         "word": "wiegen",
@@ -2330,7 +2615,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Das Baby wiegt 3,5 Kilogramm.",
-        "meaning": "称重；重量为"
+        "meaning": "称重；重量为",
+        "perfekt": "hat gewogen"
     },
     {
         "word": "untersuchen",
@@ -2338,7 +2624,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Der Arzt untersucht den Patienten.",
-        "meaning": "检查"
+        "meaning": "检查",
+        "perfekt": "hat untersucht"
     },
     {
         "word": "aufschreiben",
@@ -2346,7 +2633,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Schreib die Adresse auf!",
-        "meaning": "记下，写下"
+        "meaning": "记下，写下",
+        "perfekt": "hat aufgeschrieben"
     },
     {
         "word": "vorlesen",
@@ -2354,7 +2642,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Lies mir die Geschichte vor!",
-        "meaning": "朗读"
+        "meaning": "朗读",
+        "perfekt": "hat vorgelesen"
     },
     {
         "word": "einschlafen",
@@ -2362,7 +2651,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich konnte gestern nicht einschlafen.",
-        "meaning": "入睡"
+        "meaning": "入睡",
+        "perfekt": "ist eingeschlafen"
     },
     {
         "word": "versuchen",
@@ -2370,7 +2660,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Versuch es noch einmal!",
-        "meaning": "尝试"
+        "meaning": "尝试",
+        "perfekt": "hat versucht"
     },
     {
         "word": "baden",
@@ -2378,7 +2669,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Die Kinder baden im See.",
-        "meaning": "洗澡；游泳"
+        "meaning": "洗澡；游泳",
+        "perfekt": "hat gebadet"
     },
     {
         "word": "beschreiben",
@@ -2386,7 +2678,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Kannst du mir den Weg beschreiben?",
-        "meaning": "描述"
+        "meaning": "描述",
+        "perfekt": "hat beschrieben"
     },
     {
         "word": "packen",
@@ -2394,7 +2687,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich muss noch meine Koffer packen.",
-        "meaning": "打包"
+        "meaning": "打包",
+        "perfekt": "hat gepackt"
     },
     {
         "word": "ziehen",
@@ -2402,7 +2696,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Nächstes Monat ziehen wir um.",
-        "meaning": "搬（家）；拉"
+        "meaning": "搬（家）；拉",
+        "perfekt": "hat gezogen"
     },
     {
         "word": "sich melden",
@@ -2410,7 +2705,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Melde dich, wenn du angekommen bist!",
-        "meaning": "接电话；报到"
+        "meaning": "接电话；报到",
+        "perfekt": "hat sich gemeldet"
     },
     {
         "word": "nachfragen",
@@ -2418,7 +2714,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich werde noch einmal nachfragen.",
-        "meaning": "询问"
+        "meaning": "询问",
+        "perfekt": "hat nachgefragt"
     },
     {
         "word": "verbinden",
@@ -2426,7 +2723,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich verbinde Sie mit Herrn Müller.",
-        "meaning": "连接；转接"
+        "meaning": "连接；转接",
+        "perfekt": "hat verbunden"
     },
     {
         "word": "sich verbinden",
@@ -2434,7 +2732,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich verbinde mich mit dem Internet.",
-        "meaning": "连接"
+        "meaning": "连接",
+        "perfekt": "hat sich verbunden"
     },
     {
         "word": "trainieren",
@@ -2442,7 +2741,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Er trainiert jeden Tag.",
-        "meaning": "训练"
+        "meaning": "训练",
+        "perfekt": "hat trainiert"
     },
     {
         "word": "tragen",
@@ -2450,7 +2750,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Sie trägt eine rote Jacke.",
-        "meaning": "穿；戴"
+        "meaning": "穿；戴",
+        "perfekt": "hat getragen"
     },
     {
         "word": "passen",
@@ -2458,7 +2759,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Die Hose passt mir gut.",
-        "meaning": "合身"
+        "meaning": "合身",
+        "perfekt": "hat gepasst"
     },
     {
         "word": "ausziehen",
@@ -2466,7 +2768,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Zieh die Jacke aus!",
-        "meaning": "脱（衣服）；搬出"
+        "meaning": "脱（衣服）；搬出",
+        "perfekt": "hat ausgezogen"
     },
     {
         "word": "anprobieren",
@@ -2474,7 +2777,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Darf ich die Jacke anprobieren?",
-        "meaning": "试穿"
+        "meaning": "试穿",
+        "perfekt": "hat anprobiert"
     },
     {
         "word": "entdecken",
@@ -2482,7 +2786,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir haben ein tolles Café entdeckt.",
-        "meaning": "发现"
+        "meaning": "发现",
+        "perfekt": "hat entdeckt"
     },
     {
         "word": "umtauschen",
@@ -2490,7 +2795,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Kann ich die Hose umtauschen?",
-        "meaning": "换货"
+        "meaning": "换货",
+        "perfekt": "hat umgetauscht"
     },
     {
         "word": "zurückschicken",
@@ -2498,7 +2804,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich schicke die Ware zurück.",
-        "meaning": "退回"
+        "meaning": "退回",
+        "perfekt": "hat zurückgeschickt"
     },
     {
         "word": "nerven",
@@ -2506,7 +2813,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Das nervt mich!",
-        "meaning": "使烦躁"
+        "meaning": "使烦躁",
+        "perfekt": "hat genervt"
     },
     {
         "word": "shoppen",
@@ -2514,7 +2822,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wir gehen shoppen.",
-        "meaning": "购物"
+        "meaning": "购物",
+        "perfekt": "hat geshoppt"
     },
     {
         "word": "reservieren",
@@ -2522,7 +2831,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich habe einen Tisch reserviert.",
-        "meaning": "预订"
+        "meaning": "预订",
+        "perfekt": "hat reserviert"
     },
     {
         "word": "umsteigen",
@@ -2530,7 +2840,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich muss in Frankfurt umsteigen.",
-        "meaning": "换乘"
+        "meaning": "换乘",
+        "perfekt": "ist umgestiegen"
     },
     {
         "word": "zurückfahren",
@@ -2538,7 +2849,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Wann fährst du zurück?",
-        "meaning": "返回"
+        "meaning": "返回",
+        "perfekt": "ist zurückgefahren"
     },
     {
         "word": "verpassen",
@@ -2546,7 +2858,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich habe den Zug verpasst.",
-        "meaning": "错过"
+        "meaning": "错过",
+        "perfekt": "hat verpasst"
     },
     {
         "word": "schneien",
@@ -2554,7 +2867,8 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Es schneit heute.",
-        "meaning": "下雪"
+        "meaning": "下雪",
+        "perfekt": "hat geschneit"
     },
     {
         "word": "wünschen",
@@ -2562,6 +2876,637 @@
         "subCategory": "动词",
         "type": "动词",
         "example": "Ich wünsche dir alles Gute!",
-        "meaning": "祝愿"
+        "meaning": "祝愿",
+        "perfekt": "hat gewünscht"
+    },
+    {
+        "word": "sich beschweren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er beschwert sich über den Service.",
+        "meaning": "抱怨",
+        "perfekt": "hat sich beschwert"
+    },
+    {
+        "word": "sich erholen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich erhole mich im Urlaub.",
+        "meaning": "休息，恢复",
+        "perfekt": "hat sich erholt"
+    },
+    {
+        "word": "sich erinnern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich erinnere mich an unsere Reise.",
+        "meaning": "回忆，记得",
+        "perfekt": "hat sich erinnert"
+    },
+    {
+        "word": "sich verabschieden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir verabschieden uns am Bahnhof.",
+        "meaning": "告别",
+        "perfekt": "hat sich verabschiedet"
+    },
+    {
+        "word": "ablesen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er liest die Temperatur vom Thermometer ab.",
+        "meaning": "读出，念出",
+        "perfekt": "hat abgelesen"
+    },
+    {
+        "word": "abmalen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das Kind malt das Bild ab.",
+        "meaning": "临摹，照着画",
+        "perfekt": "hat abgemalt"
+    },
+    {
+        "word": "abonnieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe die Zeitung abonniert.",
+        "meaning": "订阅",
+        "perfekt": "hat abonniert"
+    },
+    {
+        "word": "abschließen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bitte schließen Sie die Tür ab.",
+        "meaning": "锁上；完成",
+        "perfekt": "hat abgeschlossen"
+    },
+    {
+        "word": "abstellen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Stell bitte das Radio ab.",
+        "meaning": "关掉（电器）；停放",
+        "perfekt": "hat abgestellt"
+    },
+    {
+        "word": "anhören",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Hör mich bitte an!",
+        "meaning": "倾听",
+        "perfekt": "hat angehört"
+    },
+    {
+        "word": "anklicken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Klicken Sie auf den Button.",
+        "meaning": "点击",
+        "perfekt": "hat angeklickt"
+    },
+    {
+        "word": "ansprechen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ein Fremder sprach mich an.",
+        "meaning": "搭讪；谈及",
+        "perfekt": "hat angesprochen"
+    },
+    {
+        "word": "anstellen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Firma stellt neue Mitarbeiter an.",
+        "meaning": "雇用",
+        "perfekt": "hat angestellt"
+    },
+    {
+        "word": "ausschalten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Schalt den Computer aus!",
+        "meaning": "关掉（电器）",
+        "perfekt": "hat ausgeschaltet"
+    },
+    {
+        "word": "austauschen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir tauschen unsere Erfahrungen aus.",
+        "meaning": "交换；交流",
+        "perfekt": "hat ausgetauscht"
+    },
+    {
+        "word": "auswählen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wählen Sie eine Option aus.",
+        "meaning": "选择",
+        "perfekt": "hat ausgewählt"
+    },
+    {
+        "word": "backen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie backt einen Kuchen.",
+        "meaning": "烘烤",
+        "perfekt": "hat gebacken"
+    },
+    {
+        "word": "basteln",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Kinder basteln Weihnachtsdekoration.",
+        "meaning": "手工制作",
+        "perfekt": "hat gebastelt"
+    },
+    {
+        "word": "beachten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Beachten Sie die Hinweise!",
+        "meaning": "注意，遵守",
+        "perfekt": "hat beachtet"
+    },
+    {
+        "word": "bearbeiten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er bearbeitet den Text am Computer.",
+        "meaning": "编辑；加工",
+        "perfekt": "hat bearbeitet"
+    },
+    {
+        "word": "ausdrucken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Drucken Sie das Formular aus.",
+        "meaning": "打印",
+        "perfekt": "hat ausgedruckt"
+    },
+    {
+        "word": "ausfallen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Zug ist ausgefallen.",
+        "meaning": "取消；故障",
+        "perfekt": "ist ausgefallen"
+    },
+    {
+        "word": "sich auskennen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich kenne mich hier gut aus.",
+        "meaning": "熟悉，了解",
+        "perfekt": "hat sich ausgekannt"
+    },
+    {
+        "word": "begleiten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er begleitet sie zum Bahnhof.",
+        "meaning": "陪伴；伴奏",
+        "perfekt": "hat begleitet"
+    },
+    {
+        "word": "behalten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Du kannst das Buch behalten.",
+        "meaning": "保留",
+        "perfekt": "hat behalten"
+    },
+    {
+        "word": "bellen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Hund bellt.",
+        "meaning": "（狗）叫",
+        "perfekt": "hat gebellt"
+    },
+    {
+        "word": "sich benehmen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Benehm dich!",
+        "meaning": "举止得体",
+        "perfekt": "hat sich benommen"
+    },
+    {
+        "word": "besitzen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er besitzt ein Haus.",
+        "meaning": "拥有",
+        "perfekt": "hat besessen"
+    },
+    {
+        "word": "besorgen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kannst du mir die Tickets besorgen?",
+        "meaning": "弄到；照料",
+        "perfekt": "hat besorgt"
+    },
+    {
+        "word": "bestätigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bitte bestätigen Sie Ihre Buchung.",
+        "meaning": "确认",
+        "perfekt": "hat bestätigt"
+    },
+    {
+        "word": "bestimmen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das Wetter bestimmt unsere Pläne.",
+        "meaning": "决定；确定",
+        "perfekt": "hat bestimmt"
+    },
+    {
+        "word": "bewachen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Wachmann bewacht das Gebäude.",
+        "meaning": "看守，守卫",
+        "perfekt": "hat bewacht"
+    },
+    {
+        "word": "bewerben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie bewirbt sich um die Stelle.",
+        "meaning": "申请（职位）",
+        "perfekt": "hat beworben"
+    },
+    {
+        "word": "bieten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das Hotel bietet Frühstück an.",
+        "meaning": "提供",
+        "perfekt": "hat geboten"
+    },
+    {
+        "word": "bloggen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie bloggt über Reisen.",
+        "meaning": "写博客",
+        "perfekt": "hat gebloggt"
+    },
+    {
+        "word": "bluten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Wunde blutet.",
+        "meaning": "流血",
+        "perfekt": "hat geblutet"
+    },
+    {
+        "word": "brechen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er hat sich den Arm gebrochen.",
+        "meaning": "打破；折断",
+        "perfekt": "hat gebrochen"
+    },
+    {
+        "word": "bremsen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Fahrer bremst abrupt.",
+        "meaning": "刹车",
+        "perfekt": "hat gebremst"
+    },
+    {
+        "word": "buchen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe einen Flug gebucht.",
+        "meaning": "预订",
+        "perfekt": "hat gebucht"
+    },
+    {
+        "word": "chatten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir chatten jeden Abend.",
+        "meaning": "聊天",
+        "perfekt": "hat gechattet"
+    },
+    {
+        "word": "checken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Lass mich das schnell checken.",
+        "meaning": "检查；确认",
+        "perfekt": "hat gecheckt"
+    },
+    {
+        "word": "bereitlegen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bitte legen Sie die Unterlagen bereit.",
+        "meaning": "准备好，摆放好",
+        "perfekt": "hat bereitgelegt"
+    },
+    {
+        "word": "dazukommen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kann ich noch dazukommen?",
+        "meaning": "加入；来得及",
+        "perfekt": "ist dazugekommen"
+    },
+    {
+        "word": "dazulernen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Man lernt nie aus – man kann immer dazulernen.",
+        "meaning": "额外学习",
+        "perfekt": "hat dazugelernt"
+    },
+    {
+        "word": "dazuschreiben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Schreib noch etwas dazu!",
+        "meaning": "补充写上",
+        "perfekt": "hat dazugeschrieben"
+    },
+    {
+        "word": "deuten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das deutet auf ein Problem hin.",
+        "meaning": "表明；指向",
+        "perfekt": "hat gedeutet"
+    },
+    {
+        "word": "dolmetschen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie dolmetscht bei der Konferenz.",
+        "meaning": "口译",
+        "perfekt": "hat gedolmetscht"
+    },
+    {
+        "word": "downloaden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe die App heruntergeladen.",
+        "meaning": "下载",
+        "perfekt": "hat heruntergeladen"
+    },
+    {
+        "word": "durchatmen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Atme tief durch!",
+        "meaning": "深呼吸",
+        "perfekt": "hat durchgeatmet"
+    },
+    {
+        "word": "einplanen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Planen Sie genug Zeit ein.",
+        "meaning": "计划进去",
+        "perfekt": "hat eingeplant"
+    },
+    {
+        "word": "planen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir planen eine Reise.",
+        "meaning": "计划",
+        "perfekt": "hat geplant"
+    },
+    {
+        "word": "einrichten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir richten die Wohnung ein.",
+        "meaning": "布置；设立",
+        "perfekt": "hat eingerichtet"
+    },
+    {
+        "word": "einzeichnen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Zeichnen Sie die Route in die Karte ein.",
+        "meaning": "标入，画入",
+        "perfekt": "hat eingezeichnet"
+    },
+    {
+        "word": "einziehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Nächste Woche ziehen wir ein.",
+        "meaning": "搬入",
+        "perfekt": "ist eingezogen"
+    },
+    {
+        "word": "empfangen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie empfängt Gäste.",
+        "meaning": "接待；接收",
+        "perfekt": "hat empfangen"
+    },
+    {
+        "word": "entspannen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich entspanne mich im Urlaub.",
+        "meaning": "放松",
+        "perfekt": "hat entspannt"
+    },
+    {
+        "word": "erfahren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe es aus der Zeitung erfahren.",
+        "meaning": "得知",
+        "perfekt": "hat erfahren"
+    },
+    {
+        "word": "erfragen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Erfragen Sie die Öffnungszeiten.",
+        "meaning": "询问得知",
+        "perfekt": "hat erfragt"
+    },
+    {
+        "word": "erhalten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe einen Brief erhalten.",
+        "meaning": "收到",
+        "perfekt": "hat erhalten"
+    },
+    {
+        "word": "erkennen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich erkenne dich nicht wieder.",
+        "meaning": "认出；认识到",
+        "perfekt": "hat erkannt"
+    },
+    {
+        "word": "erreichen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir haben das Ziel erreicht.",
+        "meaning": "达到；联系上",
+        "perfekt": "hat erreicht"
+    },
+    {
+        "word": "erwarten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir erwarten Gäste.",
+        "meaning": "期待；等待",
+        "perfekt": "hat erwartet"
+    },
+    {
+        "word": "existieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das Problem existiert schon lange.",
+        "meaning": "存在",
+        "perfekt": "hat existiert"
+    },
+    {
+        "word": "faszinieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Film hat mich fasziniert.",
+        "meaning": "使着迷",
+        "perfekt": "hat fasziniert"
+    },
+    {
+        "word": "entlassen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Firma hat ihn entlassen.",
+        "meaning": "解雇；释放",
+        "perfekt": "hat entlassen"
+    },
+    {
+        "word": "folgen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Hund folgt seinem Herrchen.",
+        "meaning": "跟随；遵循",
+        "perfekt": "ist gefolgt"
+    },
+    {
+        "word": "freimachen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich mache morgen frei.",
+        "meaning": "腾出；休假",
+        "perfekt": "hat freigemacht"
+    },
+    {
+        "word": "füllen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Füllen Sie das Formular aus.",
+        "meaning": "填满；填写",
+        "perfekt": "hat gefüllt"
+    },
+    {
+        "word": "füttern",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie füttert die Vögel.",
+        "meaning": "喂食",
+        "perfekt": "hat gefüttert"
+    },
+    {
+        "word": "gelten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das gilt nicht mehr.",
+        "meaning": "有效；算作",
+        "perfekt": "hat gegolten"
     }
 ]

@@ -402,22 +402,7 @@
         "example": "Jede Mutter kümmert sich um ihre kleinen Kinder.",
         "meaning": "照顾"
     },
-    {
-        "word": "mitbringen",
-        "category": "词性",
-        "subCategory": "动词短语",
-        "type": "动词短语",
-        "example": "Ich gehe einkaufen. Soll ich dir was mitbringen?",
-        "meaning": "带来"
-    },
-    {
-        "word": "mitkommen",
-        "category": "词性",
-        "subCategory": "动词短语",
-        "type": "动词短语",
-        "example": "Ich gehe ins Kino. Kommst du mit?",
-        "meaning": "一起去"
-    },
+
     {
         "word": "mitmachen",
         "category": "词性",
@@ -627,5 +612,94 @@
         "type": "动词短语",
         "example": "Man sollte genug schlafen.",
         "meaning": "充足睡眠"
+    },
+
+    {
+        "word": "acht geben",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Gib acht auf die Kinder!",
+        "meaning": "注意，当心"
+    },
+    {
+        "word": "an sein / aus sein",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Ist das Licht an oder aus?",
+        "meaning": "开着 / 关着"
+    },
+    {
+        "word": "auf keinen Fall",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Auf keinen Fall darfst du das tun!",
+        "meaning": "绝不"
+    },
+    {
+        "word": "außer",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Alle außer mir waren da.",
+        "meaning": "除了"
+    },
+    {
+        "word": "außerhalb von",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Außerhalb von Berlin wohnt er.",
+        "meaning": "在……之外"
+    },
+    {
+        "word": "dabei haben",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Hast du deinen Ausweis dabei?",
+        "meaning": "随身带着"
+    },
+    {
+        "word": "dafür sein",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Ich bin dafür!",
+        "meaning": "赞成"
+    },
+    {
+        "word": "dagegen sein",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Er ist dagegen.",
+        "meaning": "反对"
+    },
+    {
+        "word": "Erst mal",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Erst mal eine Tasse Kaffee!",
+        "meaning": "先……"
+    },
+    {
+        "word": "eineinhalb",
+        "category": "词性",
+        "subCategory": "数词",
+        "type": "数词",
+        "example": "Es dauert eineinhalb Stunden.",
+        "meaning": "一个半"
+    },
+    {
+        "word": "gegenüber von",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Gegenüber von der Bank ist ein Café.",
+        "meaning": "在……对面（+ D.）"
     }
 ]

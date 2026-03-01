@@ -249,6 +249,7 @@
 
             <div id="wordDetail" class="detail-card" style="display: none;">
                 <h3 id="wordTitle" style="margin-top:0;"></h3>
+                <p id="wordPerfektRow" style="display: none;"><strong>完成时 (Perfekt):</strong> <span id="wordPerfekt"></span></p>
                 <p><strong>例句:</strong> <span id="wordExample"></span></p>
                 <p><strong>中文释义:</strong> <span id="wordMeaning"></span></p>
                 <button onclick="closeElement('wordDetail')" style="margin-top:10px;">关闭</button>
@@ -268,7 +269,12 @@
             </div>
 
             <div id="view-grammar" class="view-module">
-                <h2>Deutsche Grammatik A1</h2>
+                <h2>Deutsche Grammatik</h2>
+                <div class="grammar-toolbar" style="margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
+                    <input type="text" id="grammarSearch" placeholder="搜索语法条目（标题、描述、例句）..." 
+                        style="flex: 1; min-width: 200px; padding: 10px 14px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 14px;">
+                    <span id="grammarSearchHint" style="color: var(--text-muted); font-size: 13px;"></span>
+                </div>
                 <div id="grammarCategories"></div>
             </div>
 
@@ -530,6 +536,7 @@
                     </span>
                 </div>
                 <div style="color: var(--text-light); margin-bottom: 20px; font-size: 14px;">主题: ${wordObj.subCategory || '未分类'}</div>
+                ${wordObj.perfekt ? `<div style="font-size: 16px; color: var(--primary-color); margin-bottom: 15px;"><strong>Perfekt:</strong> ${wordObj.perfekt}</div>` : ''}
                 <div style="font-size: 22px; color: var(--text-main); font-weight: bold; margin-bottom: 20px;">${wordObj.meaning}</div>
                 <div style="font-size: 16px; color: var(--text-muted); line-height: 1.6; border-top: 1px dashed var(--border-color); padding-top: 15px;">
                     <strong>Beispiel:</strong> <br>
@@ -608,7 +615,14 @@
             document.getElementById('wordMeaning').innerText = wordObj.meaning;
             // 渲染处理过的例句
             document.getElementById('wordExample').innerHTML = linkifyExample(wordObj.example || "Kein Beispiel.");
-            
+            // 动词完成时：有 perfekt 时显示
+            const perfektRow = document.getElementById('wordPerfektRow');
+            if (wordObj.perfekt) {
+                perfektRow.style.display = 'block';
+                document.getElementById('wordPerfekt').innerText = wordObj.perfekt;
+            } else {
+                perfektRow.style.display = 'none';
+            }
             // 手机端自动滚动到详情处
             document.getElementById('wordDetail').scrollIntoView({behavior: "smooth"});
         }
@@ -684,6 +698,7 @@
                             ${matchedWord.type || 'N/A'}
                         </span>
                     </h4>
+                    ${matchedWord.perfekt ? `<p style="margin: 10px 0;"><strong>Perfekt:</strong> ${matchedWord.perfekt}</p>` : ''}
                     <p style="margin: 10px 0;"><strong>例句:</strong> ${linkifyExample(matchedWord.example || "Kein Beispiel.")}</p>
                     <p style="margin: 0;"><strong>释义:</strong> ${matchedWord.meaning}</p>
                 `;
@@ -700,160 +715,258 @@
         function showGrammar() {
             showView('view-grammar');
             const categories = document.getElementById('grammarCategories');
-            
-            // 避免重复加载：如果里面已经有实际内容了，就不再 fetch
-            if(categories.innerHTML.trim() !== '' && categories.innerHTML.indexOf('Lade Daten') === -1 && categories.innerHTML.indexOf('暂无语法数据') === -1) {
-                return; 
+            const searchInput = document.getElementById('grammarSearch');
+            const searchHint = document.getElementById('grammarSearchHint');
+
+            // 避免重复加载：若已有内容且非加载/空状态提示，仅绑定搜索
+            if (categories.innerHTML.trim() !== '' && categories.innerHTML.indexOf('Lade Grammatik') === -1 && categories.innerHTML.indexOf('暂无语法数据') === -1) {
+                if (searchInput && !searchInput._bound) {
+                    searchInput._bound = true;
+                    searchInput.addEventListener('input', () => {
+                        if (window.__grammarData) renderGrammarContent(window.__grammarData, searchInput.value.trim(), categories, searchHint);
+                    });
+                }
+                return;
             }
-            
-            // 显示加载提示
+
             categories.innerHTML = '<div style="text-align: center; padding: 20px; color: var(--text-muted);">⏳ Lade Grammatik... (语法数据加载中)</div>';
-            
+            if (searchHint) searchHint.textContent = '';
+
             fetch('js/grammar.json')
                 .then(res => {
                     if (!res.ok) throw new Error("Netzwerkantwort war nicht ok");
                     return res.json();
                 })
                 .then(data => {
-                    categories.innerHTML = ''; // 清空加载提示
-                    
-                    if (data && data.A1 && data.A1.topics) {
-                        data.A1.topics.forEach(topic => {
-                            // 1. 创建分类容器
-                            const topicDiv = document.createElement('div');
-                            topicDiv.className = 'grammar-category';
-                            topicDiv.style.marginBottom = '15px';
-                            topicDiv.style.background = 'var(--bg-card)';
-                            topicDiv.style.border = '1px solid var(--border-color)';
-                            topicDiv.style.borderRadius = '8px';
-                            topicDiv.style.overflow = 'hidden';
+                    window.__grammarData = data;
+                    renderGrammarContent(data, (searchInput && searchInput.value) ? searchInput.value.trim() : '', categories, searchHint);
 
-                            // 2. 创建可点击的头部
-                            const header = document.createElement('div');
-                            header.className = 'grammar-category-header';
-                            header.style.display = 'flex';
-                            header.style.justifyContent = 'space-between';
-                            header.style.alignItems = 'center';
-                            header.style.cursor = 'pointer';
-                            header.style.padding = '15px';
-                            header.style.backgroundColor = '#f8f9fa';
-                            header.innerHTML = `
-                                <h3 style="margin: 0; color: var(--primary-color); font-size: 18px;">${topic.title}</h3>
-                                <button class="toggle-btn" style="background: none; border: none; font-size: 24px; color: var(--primary-color); cursor: pointer;">+</button>
-                            `;
-
-                            // 3. 创建内容容器
-                            const content = document.createElement('div');
-                            content.className = 'grammar-category-content';
-                            content.style.display = 'none'; // 默认折叠
-                            content.style.padding = '15px';
-                            content.style.borderTop = '1px solid var(--border-light)';
-
-                            // 添加大类描述
-                            if (topic.description) {
-                                const description = document.createElement('p');
-                                description.className = 'topic-description';
-                                description.style.fontStyle = 'italic';
-                                description.style.color = 'var(--text-muted)';
-                                description.textContent = topic.description;
-                                content.appendChild(description);
-                            }
-
-                            // 添加各个子部分
-                            if (topic.sections) {
-                                topic.sections.forEach(section => {
-                                    const sectionDiv = document.createElement('div');
-                                    sectionDiv.className = 'grammar-section';
-
-                                    if (section.title) {
-                                        const sectionTitle = document.createElement('h4');
-                                        sectionTitle.style.color = 'var(--primary-color)';
-                                        sectionTitle.textContent = section.title;
-                                        sectionDiv.appendChild(sectionTitle);
-                                    }
-
-                                    if (section.explanation) {
-                                        const explanation = document.createElement('p');
-                                        explanation.className = 'section-explanation';
-                                        explanation.textContent = section.explanation;
-                                        sectionDiv.appendChild(explanation);
-                                    }
-
-                                    if (section.examples) {
-                                        const examplesDiv = document.createElement('div');
-                                        examplesDiv.className = 'examples-container';
-                                        section.examples.forEach(example => {
-                                            const exampleDiv = document.createElement('div');
-                                            exampleDiv.className = 'example-item';
-                                            exampleDiv.style.background = '#f8f9fa';
-                                            exampleDiv.style.padding = '10px 15px';
-                                            exampleDiv.style.margin = '10px 0';
-                                            exampleDiv.style.borderRadius = '6px';
-                                            exampleDiv.innerHTML = `
-                                                <div class="example-question" style="font-weight: bold; color: var(--primary-color); margin-bottom: 5px;">${example.question}</div>
-                                                <div class="example-answer" style="margin-bottom: 5px;">${example.answer}</div>
-                                                <div class="example-translation" style="color: var(--text-muted); border-top: 1px dashed var(--border-color); padding-top: 8px; font-size: 14px;">
-                                                    <div>${example.translation.question}</div>
-                                                    <div>${example.translation.answer}</div>
-                                                </div>
-                                            `;
-                                            examplesDiv.appendChild(exampleDiv);
-                                        });
-                                        sectionDiv.appendChild(examplesDiv);
-                                    }
-                                    content.appendChild(sectionDiv);
-                                });
-                            }
-
-                            // 添加提示框 (Tips)
-                            if (topic.tips && topic.tips.length > 0) {
-                                const tipsDiv = document.createElement('div');
-                                tipsDiv.className = 'tips-container';
-                                tipsDiv.style.background = '#f0fdf4'; // 浅绿色背景区分
-                                tipsDiv.style.borderLeft = '4px solid #22c55e';
-                                tipsDiv.style.padding = '15px';
-                                tipsDiv.style.marginTop = '15px';
-                                tipsDiv.style.borderRadius = '0 6px 6px 0';
-
-                                const tipsTitle = document.createElement('h4');
-                                tipsTitle.style.margin = '0 0 10px 0';
-                                tipsTitle.style.color = '#166534';
-                                tipsTitle.textContent = '💡 提示 (Tipps)';
-                                tipsDiv.appendChild(tipsTitle);
-                                
-                                const tipsList = document.createElement('ul');
-                                tipsList.style.margin = '0';
-                                tipsList.style.paddingLeft = '20px';
-                                topic.tips.forEach(tip => {
-                                    const tipItem = document.createElement('li');
-                                    tipItem.style.color = '#15803d';
-                                    tipItem.style.marginBottom = '5px';
-                                    tipItem.textContent = tip;
-                                    tipsList.appendChild(tipItem);
-                                });
-                                tipsDiv.appendChild(tipsList);
-                                content.appendChild(tipsDiv);
-                            }
-
-                            // 折叠/展开动画事件绑定
-                            header.addEventListener('click', () => {
-                                const isHidden = content.style.display === 'none';
-                                content.style.display = isHidden ? 'block' : 'none';
-                                header.querySelector('.toggle-btn').textContent = isHidden ? '−' : '+';
-                            });
-
-                            topicDiv.appendChild(header);
-                            topicDiv.appendChild(content);
-                            categories.appendChild(topicDiv);
+                    if (searchInput && !searchInput._bound) {
+                        searchInput._bound = true;
+                        searchInput.addEventListener('input', () => {
+                            renderGrammarContent(window.__grammarData, searchInput.value.trim(), categories, searchHint);
                         });
-                    } else {
-                        categories.innerHTML = '<p style="color: var(--text-muted); text-align: center;">暂无语法数据内容。</p>';
                     }
                 })
                 .catch(error => {
                     console.error('加载语法数据失败:', error);
                     categories.innerHTML = '<p style="color: #ef4444; text-align: center;">❌ 加载语法数据失败，请确保您使用了本地服务器环境(Live Server)。</p>';
                 });
+        }
+
+        function topicMatchesSearch(topic, searchText) {
+            if (!searchText) return true;
+            const s = searchText.toLowerCase();
+            const text = (topic.title || '') + ' ' + (topic.description || '') + ' ' + (topic.tips || []).join(' ');
+            const sectionText = (topic.sections || []).map(sec => {
+                let t = (sec.title || '') + ' ' + (sec.explanation || '');
+                (sec.examples || []).forEach(ex => {
+                    t += ' ' + (ex.question || '') + ' ' + (ex.answer || '');
+                    if (ex.translation) t += ' ' + (ex.translation.question || '') + ' ' + (ex.translation.answer || '');
+                });
+                return t;
+            }).join(' ');
+            return (text + ' ' + sectionText).toLowerCase().indexOf(s) !== -1;
+        }
+
+        function buildOneTopicEl(topic) {
+            const topicDiv = document.createElement('div');
+            topicDiv.className = 'grammar-category';
+            topicDiv.style.marginBottom = '15px';
+            topicDiv.style.background = 'var(--bg-card)';
+            topicDiv.style.border = '1px solid var(--border-color)';
+            topicDiv.style.borderRadius = '8px';
+            topicDiv.style.overflow = 'hidden';
+
+            const header = document.createElement('div');
+            header.className = 'grammar-category-header';
+            header.style.display = 'flex';
+            header.style.justifyContent = 'space-between';
+            header.style.alignItems = 'center';
+            header.style.cursor = 'pointer';
+            header.style.padding = '15px';
+            header.style.backgroundColor = '#f8f9fa';
+            header.innerHTML = `
+                <h3 style="margin: 0; color: var(--primary-color); font-size: 18px;">${topic.title}</h3>
+                <button class="toggle-btn" style="background: none; border: none; font-size: 24px; color: var(--primary-color); cursor: pointer;">+</button>
+            `;
+
+            const content = document.createElement('div');
+            content.className = 'grammar-category-content';
+            content.style.display = 'none';
+            content.style.padding = '15px';
+            content.style.borderTop = '1px solid var(--border-light)';
+
+            if (topic.description) {
+                const description = document.createElement('p');
+                description.className = 'topic-description';
+                description.style.fontStyle = 'italic';
+                description.style.color = 'var(--text-muted)';
+                description.textContent = topic.description;
+                content.appendChild(description);
+            }
+
+            if (topic.sections) {
+                topic.sections.forEach(section => {
+                    const sectionDiv = document.createElement('div');
+                    sectionDiv.className = 'grammar-section';
+
+                    if (section.title) {
+                        const sectionTitle = document.createElement('h4');
+                        sectionTitle.style.color = 'var(--primary-color)';
+                        sectionTitle.textContent = section.title;
+                        sectionDiv.appendChild(sectionTitle);
+                    }
+
+                    if (section.explanation) {
+                        const explanation = document.createElement('p');
+                        explanation.className = 'section-explanation';
+                        explanation.textContent = section.explanation;
+                        sectionDiv.appendChild(explanation);
+                    }
+
+                    if (section.examples) {
+                        const examplesDiv = document.createElement('div');
+                        examplesDiv.className = 'examples-container';
+                        section.examples.forEach(example => {
+                            const exampleDiv = document.createElement('div');
+                            exampleDiv.className = 'example-item';
+                            exampleDiv.style.background = '#f8f9fa';
+                            exampleDiv.style.padding = '10px 15px';
+                            exampleDiv.style.margin = '10px 0';
+                            exampleDiv.style.borderRadius = '6px';
+                            exampleDiv.innerHTML = `
+                                <div class="example-question" style="font-weight: bold; color: var(--primary-color); margin-bottom: 5px;">${example.question}</div>
+                                <div class="example-answer" style="margin-bottom: 5px;">${example.answer}</div>
+                                <div class="example-translation" style="color: var(--text-muted); border-top: 1px dashed var(--border-color); padding-top: 8px; font-size: 14px;">
+                                    <div>${example.translation.question}</div>
+                                    <div>${example.translation.answer}</div>
+                                </div>
+                            `;
+                            examplesDiv.appendChild(exampleDiv);
+                        });
+                        sectionDiv.appendChild(examplesDiv);
+                    }
+
+                    if (section.table && section.table.headings && section.table.rows) {
+                        const tableEl = document.createElement('table');
+                        tableEl.className = 'grammar-table';
+                        tableEl.style.width = '100%';
+                        tableEl.style.borderCollapse = 'collapse';
+                        tableEl.style.marginTop = '12px';
+                        tableEl.style.marginBottom = '12px';
+                        tableEl.style.fontSize = '14px';
+                        const thead = document.createElement('thead');
+                        const headRow = document.createElement('tr');
+                        (section.table.headings || []).forEach(h => {
+                            const th = document.createElement('th');
+                            th.textContent = h;
+                            th.style.border = '1px solid var(--border-color)';
+                            th.style.padding = '10px 12px';
+                            th.style.textAlign = 'left';
+                            th.style.backgroundColor = 'var(--bg-card)';
+                            th.style.color = 'var(--primary-color)';
+                            headRow.appendChild(th);
+                        });
+                        thead.appendChild(headRow);
+                        tableEl.appendChild(thead);
+                        const tbody = document.createElement('tbody');
+                        (section.table.rows || []).forEach((row, idx) => {
+                            const tr = document.createElement('tr');
+                            (Array.isArray(row) ? row : []).forEach(cell => {
+                                const td = document.createElement('td');
+                                td.textContent = cell;
+                                td.style.border = '1px solid var(--border-color)';
+                                td.style.padding = '10px 12px';
+                                td.style.verticalAlign = 'top';
+                                if (idx % 2 === 1) td.style.backgroundColor = 'rgba(0,0,0,0.03)';
+                                tr.appendChild(td);
+                            });
+                            tbody.appendChild(tr);
+                        });
+                        tableEl.appendChild(tbody);
+                        sectionDiv.appendChild(tableEl);
+                    }
+                    content.appendChild(sectionDiv);
+                });
+            }
+
+            if (topic.tips && topic.tips.length > 0) {
+                const tipsDiv = document.createElement('div');
+                tipsDiv.className = 'tips-container';
+                tipsDiv.style.background = '#f0fdf4';
+                tipsDiv.style.borderLeft = '4px solid #22c55e';
+                tipsDiv.style.padding = '15px';
+                tipsDiv.style.marginTop = '15px';
+                tipsDiv.style.borderRadius = '0 6px 6px 0';
+
+                const tipsTitle = document.createElement('h4');
+                tipsTitle.style.margin = '0 0 10px 0';
+                tipsTitle.style.color = '#166534';
+                tipsTitle.textContent = '💡 提示 (Tipps)';
+                tipsDiv.appendChild(tipsTitle);
+
+                const tipsList = document.createElement('ul');
+                tipsList.style.margin = '0';
+                tipsList.style.paddingLeft = '20px';
+                topic.tips.forEach(tip => {
+                    const tipItem = document.createElement('li');
+                    tipItem.style.color = '#15803d';
+                    tipItem.style.marginBottom = '5px';
+                    tipItem.textContent = tip;
+                    tipsList.appendChild(tipItem);
+                });
+                tipsDiv.appendChild(tipsList);
+                content.appendChild(tipsDiv);
+            }
+
+            header.addEventListener('click', () => {
+                const isHidden = content.style.display === 'none';
+                content.style.display = isHidden ? 'block' : 'none';
+                header.querySelector('.toggle-btn').textContent = isHidden ? '−' : '+';
+            });
+
+            topicDiv.appendChild(header);
+            topicDiv.appendChild(content);
+            return topicDiv;
+        }
+
+        function renderGrammarContent(data, searchText, categoriesEl, searchHintEl) {
+            categoriesEl.innerHTML = '';
+
+            const levels = ['A1', 'A2'];
+            let totalShown = 0;
+
+            levels.forEach(level => {
+                const levelData = data && data[level] && data[level].topics;
+                const topics = Array.isArray(levelData) ? levelData : [];
+                const filtered = searchText ? topics.filter(t => topicMatchesSearch(t, searchText)) : topics;
+                if (filtered.length === 0 && topics.length > 0 && searchText) return;
+
+                const levelTitle = document.createElement('h3');
+                levelTitle.className = 'grammar-level-title';
+                levelTitle.style.margin = '20px 0 12px 0';
+                levelTitle.style.paddingBottom = '8px';
+                levelTitle.style.borderBottom = '2px solid var(--primary-color)';
+                levelTitle.style.color = 'var(--primary-color)';
+                levelTitle.textContent = level + (filtered.length < topics.length ? `（匹配 ${filtered.length}/${topics.length}）` : `（${topics.length} 条）`);
+                if (totalShown > 0 || level === 'A1') levelTitle.style.marginTop = level === 'A1' ? '0' : '24px';
+                categoriesEl.appendChild(levelTitle);
+
+                filtered.forEach(topic => {
+                    categoriesEl.appendChild(buildOneTopicEl(topic));
+                    totalShown++;
+                });
+            });
+
+            if (searchHintEl) {
+                if (searchText && totalShown === 0)
+                    searchHintEl.textContent = '未找到匹配的语法条目。';
+                else if (searchText)
+                    searchHintEl.textContent = '共 ' + totalShown + ' 条匹配';
+                else
+                    searchHintEl.textContent = '';
+            }
         }
 
         function openPartizip2Page() {
