@@ -315,6 +315,35 @@
         const hitodenashiHtml = `<p>吉野さんが歌うアニメのOP曲『贄-nie-』がすごく好きです。</p>`;
 
         const ikokuniHtml = `<p>アニメ『違国日記』は、TOMOOさんが歌うOP曲『ソナーレ』も、Bialystocksが歌うED曲『言伝』も両方すごく好きです。</p>`;
+
+        const chokaguyaHtml = `
+            <p>
+                for the later half part i think it is better<br>
+                i donot know <br>
+                for the beginning i just felt kaguya was too annoying<br>
+                but i also do not like bad end<br>
+                i think it is good if iroha and kaguya can live together at the end <br>
+                but the beginning just makes me Imagine i am raising my kid<br>
+                i would say it is a good movie it has good Performance and visualization<br>
+                the relationship i prefer is two Girls live together harmoniously, like in adachi to shimamura<br>
+                for the later part it is better<br>
+                if they live together finally i would give 8 Points<br>
+                but if it is a bad end i can only give 6 Points, it is satisfactory only<br>
+                it makes me feel sorry to be not good at playing Music, just regret<br>
+                i would rate iroha &gt; hachiyo &gt; kaguya<br>
+                ich habe keine Ahnung<br>
+                emm <br>
+                the ending is interesting, a bit of Stein's gate feel<br>
+                well.. this is not the very ending<br><br>
+                just a feel of time leap <br>
+                emm i can not find out the relation between yachiyo and kaguya<br>
+                hitomazu<br>
+                i believe it is a good ending, but not what I imagined.<br>
+                i would give 7 Point<br>
+                probably 
+            </p>
+        `;
+                                
         // ==========================================
         // 页面点击逻辑 (概要页面)
         // ==========================================
@@ -322,9 +351,11 @@
             contentDiv.innerHTML = `
                 <h1>概要</h1>
                 <div class="scrollable-textarea readonly">
+                    <p>📺 2026.3: アニメ<a href="javascript:void(0);" onclick="renderAnimePage('超かぐや姫！', 'chokaguyaHtml', 'chokaguyaLink')">「超かぐや姫！」</a>を追加しました </p>
+
                     <p>📺 2026.2: アニメ<a href="javascript:void(0);" onclick="renderAnimePage('推しの子第3期', '', 'oshinoko3Link')">「推しの子第3期」</a>を追加しました </p>
                     
-                    <p>📺 2026.2: アニメ<a href="javascript:void(0);" onclick="renderAnimePage('違国日記', '', 'ikokuniLink')">「違国日記」</a>を追加しました </p>
+                    <p>📺 2026.2: アニメ<a href="javascript:void(0);" onclick="renderAnimePage('違国日記', ikokuniHtml, 'ikokuniLink')">「違国日記」</a>を追加しました </p>
                     
                     <p>📺 2025.12: アニメ<a href="javascript:void(0);" onclick="renderAnimePage('私を喰べたい、ひとでなし', hitodenashiHtml, 'hitodenashiLink')">「私を喰べたい、ひとでなし」</a><a href="javascript:void(0);" onclick="renderAnimePage('千歳くんはラムネ瓶のなか', '', 'steinLink')">「千歳くんはラムネ瓶のなか」</a>を追加しました </p>
                     
@@ -430,7 +461,8 @@
         year2026.addEventListener('click', () => {
             const entries = [
                 { id: 'ikokuniLink', text: '📖 違国日記', handler: () => renderAnimePage('違国日記', ikokuniHtml, 'ikokuniLink') },
-                { id: 'oshinoko3Link', text: '🌟 推しの子第3期', handler: () => renderAnimePage('推しの子第3期', '', 'oshinoko3Link') }
+                { id: 'oshinoko3Link', text: '🌟 推しの子第3期', handler: () => renderAnimePage('推しの子第3期', '', 'oshinoko3Link') },
+                { id: 'chokaguyaLink', text: '👸 超かぐや姫！', handler: () => renderAnimePage('超かぐや姫！', chokaguyaHtml, 'chokaguyaLink') }
             ];
             generateYearContent(entries);
         });

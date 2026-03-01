@@ -144,6 +144,30 @@
         "meaning": "在...旁边"
     },
     {
+        "word": "hinter",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Das Auto steht hinter dem Haus.",
+        "meaning": "在...后面"
+    },
+    {
+        "word": "außerhalb",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Außerhalb der Stadt ist es ruhiger.",
+        "meaning": "在...外面"
+    },
+    {
+        "word": "gegenüber",
+        "category": "词性",
+        "subCategory": "介词",
+        "type": "介词",
+        "example": "Gegenüber dem Bahnhof ist ein Café.",
+        "meaning": "在...对面"
+    },
+    {
         "word": "auf",
         "category": "词性",
         "subCategory": "介词",

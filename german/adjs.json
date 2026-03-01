@@ -135,14 +135,7 @@
         "example": "Der Pass ist nicht mehr gültig.",
         "meaning": "有效的"
     },
-    {
-        "word": "günstig",
-        "category": "词性",
-        "subCategory": "形容词",
-        "type": "形容词",
-        "example": "Dort gibt es günstige Angebote.",
-        "meaning": "便宜的，实惠的"
-    },
+
     {
         "word": "gut",
         "category": "词性",
@@ -1227,5 +1220,429 @@
         "type": "形容词",
         "example": "Muss ich bar zahlen oder geht’s auch mit Karte?",
         "meaning": "现金（支付方式）"
+    },
+    {
+        "word": "geehrt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sehr geehrte Damen und Herren, ...",
+        "meaning": "尊敬的"
+    },
+    {
+        "word": "freundlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie war sehr freundlich zu mir.",
+        "meaning": "友好的"
+    },
+    {
+        "word": "aktuell",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das sind die aktuellen Nachrichten.",
+        "meaning": "当前的，最新的"
+    },
+    {
+        "word": "neutral",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er bleibt in der Diskussion neutral.",
+        "meaning": "中立的"
+    },
+    {
+        "word": "kalt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Heute ist es sehr kalt.",
+        "meaning": "冷的"
+    },
+    {
+        "word": "typisch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist typisch für ihn.",
+        "meaning": "典型的"
+    },
+    {
+        "word": "heiß",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Kaffee ist noch heiß.",
+        "meaning": "热的"
+    },
+    {
+        "word": "schrecklich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Wetter war schrecklich.",
+        "meaning": "可怕的，糟糕的"
+    },
+    {
+        "word": "beliebt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Dieser Park ist bei Touristen sehr beliebt.",
+        "meaning": "受欢迎的"
+    },
+    {
+        "word": "sportlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er ist sehr sportlich.",
+        "meaning": "爱好运动的"
+    },
+    {
+        "word": "egal",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist mir egal.",
+        "meaning": "无所谓的"
+    },
+    {
+        "word": "regelmäßig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er geht regelmäßig zum Sport.",
+        "meaning": "定期的"
+    },
+    {
+        "word": "täglich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die tägliche Arbeit beginnt um 8 Uhr.",
+        "meaning": "每天的"
+    },
+    {
+        "word": "gefährlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist gefährlich!",
+        "meaning": "危险的"
+    },
+    {
+        "word": "hungrig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin hungrig.",
+        "meaning": "饿的"
+    },
+    {
+        "word": "verletzt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er ist am Arm verletzt.",
+        "meaning": "受伤的"
+    },
+    {
+        "word": "perfekt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das hast du perfekt gemacht!",
+        "meaning": "完美的"
+    },
+    {
+        "word": "sicher",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Hier fühle ich mich sicher.",
+        "meaning": "安全的，肯定的"
+    },
+    {
+        "word": "zentral",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Wohnung liegt sehr zentral.",
+        "meaning": "市中心的"
+    },
+    {
+        "word": "direkt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Es gibt eine direkte Verbindung.",
+        "meaning": "直接的"
+    },
+    {
+        "word": "blau",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Himmel ist blau.",
+        "meaning": "蓝色的"
+    },
+    {
+        "word": "braun",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie hat braune Haare.",
+        "meaning": "棕色的"
+    },
+    {
+        "word": "gelb",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Sonne ist gelb.",
+        "meaning": "黄色的"
+    },
+    {
+        "word": "grau",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Heute ist der Himmel grau.",
+        "meaning": "灰色的"
+    },
+    {
+        "word": "grün",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Gras ist grün.",
+        "meaning": "绿色的"
+    },
+    {
+        "word": "lila",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie trägt ein lila Kleid.",
+        "meaning": "紫色的"
+    },
+    {
+        "word": "orange",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Orange ist orange.",
+        "meaning": "橙色的"
+    },
+    {
+        "word": "rot",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Tomate ist rot.",
+        "meaning": "红色的"
+    },
+    {
+        "word": "schwarz",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er trägt eine schwarze Jacke.",
+        "meaning": "黑色的"
+    },
+    {
+        "word": "weiß",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Schnee ist weiß.",
+        "meaning": "白色的"
+    },
+    {
+        "word": "genau",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist die genaue Adresse.",
+        "meaning": "精确的"
+    },
+    {
+        "word": "hässlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Gebäude ist hässlich.",
+        "meaning": "丑的"
+    },
+    {
+        "word": "jung",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie ist noch sehr jung.",
+        "meaning": "年轻的"
+    },
+    {
+        "word": "positiv",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Reaktion war positiv.",
+        "meaning": "积极的，正面的"
+    },
+    {
+        "word": "negativ",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Ergebnis war negativ.",
+        "meaning": "消极的，负面的"
+    },
+    {
+        "word": "arbeitslos",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er ist seit einem Jahr arbeitslos.",
+        "meaning": "失业的"
+    },
+    {
+        "word": "fleißig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie ist eine fleißige Schülerin.",
+        "meaning": "勤奋的"
+    },
+    {
+        "word": "besetzt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Leitung ist besetzt.",
+        "meaning": "占线的；已占用的"
+    },
+    {
+        "word": "berühmt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er ist ein berühmter Schauspieler.",
+        "meaning": "著名的"
+    },
+    {
+        "word": "leer",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Saal war leer.",
+        "meaning": "空的"
+    },
+    {
+        "word": "weit",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Hose ist mir zu weit.",
+        "meaning": "宽松的"
+    },
+    {
+        "word": "besser",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist die bessere Lösung.",
+        "meaning": "更好的"
+    },
+    {
+        "word": "doof",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das war eine doofe Idee.",
+        "meaning": "愚蠢的，讨厌的"
+    },
+    {
+        "word": "eng",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Jeans ist zu eng.",
+        "meaning": "紧的"
+    },
+    {
+        "word": "bequem",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Schuhe sind sehr bequem.",
+        "meaning": "舒适的"
+    },
+    {
+        "word": "praktisch",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist eine praktische Tasche.",
+        "meaning": "实用的"
+    },
+    {
+        "word": "kreativ",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie ist sehr kreativ.",
+        "meaning": "有创意的"
+    },
+    {
+        "word": "originell",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist eine originelle Idee.",
+        "meaning": "有创意的，独特的"
+    },
+    {
+        "word": "attraktiv",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Angebot ist sehr attraktiv.",
+        "meaning": "有吸引力的"
+    },
+    {
+        "word": "sonnig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Heute ist es sonnig.",
+        "meaning": "晴朗的"
+    },
+    {
+        "word": "bewölkt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Himmel ist bewölkt.",
+        "meaning": "多云的"
+    },
+    {
+        "word": "windig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Es ist heute sehr windig.",
+        "meaning": "有风的"
+    },
+    {
+        "word": "froh",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin froh, dass du da bist.",
+        "meaning": "高兴的"
     }
 ]

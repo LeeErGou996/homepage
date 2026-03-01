@@ -136,6 +136,86 @@
         "meaning": "祝好运"
     },
     {
+        "word": "los sein",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Wann seid ihr los?",
+        "meaning": "出发，开始"
+    },
+    {
+        "word": "die meisten",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Die meisten sind schon da.",
+        "meaning": "大多数人"
+    },
+    {
+        "word": "jemand",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Hat jemand meine Brille gesehen?",
+        "meaning": "某人"
+    },
+    {
+        "word": "Hurra",
+        "category": "词性",
+        "subCategory": "感叹词",
+        "type": "感叹词",
+        "example": "Hurra! Wir haben gewonnen!",
+        "meaning": "万岁！太好了！"
+    },
+    {
+        "word": "vorbei sein",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Die Prüfung ist vorbei.",
+        "meaning": "结束"
+    },
+    {
+        "word": "rund ums Jahr",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Hier blühen Blumen rund ums Jahr.",
+        "meaning": "一年到头"
+    },
+    {
+        "word": "beide",
+        "category": "词性",
+        "subCategory": "代词",
+        "type": "代词",
+        "example": "Beide sind zufrieden.",
+        "meaning": "两者"
+    },
+    {
+        "word": "auf sein",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Der Laden ist auf.",
+        "meaning": "开门，营业"
+    },
+    {
+        "word": "zu sein",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Der Laden ist zu.",
+        "meaning": "关门"
+    },
+    {
+        "word": "zuhaben",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Der Laden hat um 18 Uhr zu.",
+        "meaning": "关门"
+    },
+    {
         "word": "der, die, das",
         "category": "词性",
         "subCategory": "冠词",

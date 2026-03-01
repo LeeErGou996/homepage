@@ -125,7 +125,7 @@
         "subCategory": "副词",
         "type": "副词",
         "example": "Ich komme gleich.",
-        "meaning": "马上"
+        "meaning": "马上; 一样"
     },
     {
         "word": "heute",
@@ -632,5 +632,77 @@
         "type": "副词",
         "example": "Endlich sind wir da!",
         "meaning": "终于"
+    },
+    {
+        "word": "mindestens",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Du brauchst mindestens 100 Euro.",
+        "meaning": "至少"
+    },
+    {
+        "word": "genau",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Das ist genau das, was ich meine.",
+        "meaning": "正好，精确地"
+    },
+    {
+        "word": "insgesamt",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Insgesamt waren 50 Gäste da.",
+        "meaning": "总共"
+    },
+    {
+        "word": "kaum",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich habe kaum geschlafen.",
+        "meaning": "几乎不"
+    },
+    {
+        "word": "wirklich",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Das ist wirklich schön!",
+        "meaning": "真的"
+    },
+    {
+        "word": "online",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Ich kaufe gerne online ein.",
+        "meaning": "在线"
+    },
+    {
+        "word": "vorgestern",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Vorgestern war ich beim Arzt.",
+        "meaning": "前天"
+    },
+    {
+        "word": "unterwegs",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Wir sind gerade unterwegs.",
+        "meaning": "在路上"
+    },
+    {
+        "word": "vorne",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Sitz vorne!",
+        "meaning": "在前面"
     }
 ]

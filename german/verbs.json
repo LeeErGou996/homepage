@@ -385,7 +385,7 @@
         "meaning": "教学"
     },
     {
-        "word": "zurück/kommen",
+        "word": "zurückkommen",
         "category": "词性",
         "subCategory": "动词",
         "type": "动词",
@@ -440,14 +440,7 @@
         "example": "Was darf ich dir anbieten?",
         "meaning": "提供"
     },
-    {
-        "word": "anfangen",
-        "category": "词性",
-        "subCategory": "动词",
-        "type": "动词",
-        "example": "Der Unterricht fängt gleich an.",
-        "meaning": "开始"
-    },
+
     {
         "word": "arbeiten",
         "category": "词性",
@@ -2282,5 +2275,293 @@
         "type": "动词",
         "example": "Man kann dieses Wort in vielen Situationen verwenden.",
         "meaning": "使用"
+    },
+    {
+        "word": "anziehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Zieh dich warm an!",
+        "meaning": "穿（衣服）"
+    },
+    {
+        "word": "weitermachen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Mach weiter so!",
+        "meaning": "继续"
+    },
+    {
+        "word": "schaffen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das schaffst du!",
+        "meaning": "完成，做到"
+    },
+    {
+        "word": "vermissen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich vermisse dich.",
+        "meaning": "想念"
+    },
+    {
+        "word": "wehtun",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Mein Kopf tut weh.",
+        "meaning": "疼"
+    },
+    {
+        "word": "bewegen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Beweg dich nicht!",
+        "meaning": "移动"
+    },
+    {
+        "word": "wiegen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das Baby wiegt 3,5 Kilogramm.",
+        "meaning": "称重；重量为"
+    },
+    {
+        "word": "untersuchen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Der Arzt untersucht den Patienten.",
+        "meaning": "检查"
+    },
+    {
+        "word": "aufschreiben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Schreib die Adresse auf!",
+        "meaning": "记下，写下"
+    },
+    {
+        "word": "vorlesen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Lies mir die Geschichte vor!",
+        "meaning": "朗读"
+    },
+    {
+        "word": "einschlafen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich konnte gestern nicht einschlafen.",
+        "meaning": "入睡"
+    },
+    {
+        "word": "versuchen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Versuch es noch einmal!",
+        "meaning": "尝试"
+    },
+    {
+        "word": "baden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Kinder baden im See.",
+        "meaning": "洗澡；游泳"
+    },
+    {
+        "word": "beschreiben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kannst du mir den Weg beschreiben?",
+        "meaning": "描述"
+    },
+    {
+        "word": "packen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich muss noch meine Koffer packen.",
+        "meaning": "打包"
+    },
+    {
+        "word": "ziehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Nächstes Monat ziehen wir um.",
+        "meaning": "搬（家）；拉"
+    },
+    {
+        "word": "sich melden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Melde dich, wenn du angekommen bist!",
+        "meaning": "接电话；报到"
+    },
+    {
+        "word": "nachfragen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich werde noch einmal nachfragen.",
+        "meaning": "询问"
+    },
+    {
+        "word": "verbinden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich verbinde Sie mit Herrn Müller.",
+        "meaning": "连接；转接"
+    },
+    {
+        "word": "sich verbinden",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich verbinde mich mit dem Internet.",
+        "meaning": "连接"
+    },
+    {
+        "word": "trainieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er trainiert jeden Tag.",
+        "meaning": "训练"
+    },
+    {
+        "word": "tragen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Sie trägt eine rote Jacke.",
+        "meaning": "穿；戴"
+    },
+    {
+        "word": "passen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Hose passt mir gut.",
+        "meaning": "合身"
+    },
+    {
+        "word": "ausziehen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Zieh die Jacke aus!",
+        "meaning": "脱（衣服）；搬出"
+    },
+    {
+        "word": "anprobieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Darf ich die Jacke anprobieren?",
+        "meaning": "试穿"
+    },
+    {
+        "word": "entdecken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir haben ein tolles Café entdeckt.",
+        "meaning": "发现"
+    },
+    {
+        "word": "umtauschen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kann ich die Hose umtauschen?",
+        "meaning": "换货"
+    },
+    {
+        "word": "zurückschicken",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich schicke die Ware zurück.",
+        "meaning": "退回"
+    },
+    {
+        "word": "nerven",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das nervt mich!",
+        "meaning": "使烦躁"
+    },
+    {
+        "word": "shoppen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir gehen shoppen.",
+        "meaning": "购物"
+    },
+    {
+        "word": "reservieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe einen Tisch reserviert.",
+        "meaning": "预订"
+    },
+    {
+        "word": "umsteigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich muss in Frankfurt umsteigen.",
+        "meaning": "换乘"
+    },
+    {
+        "word": "zurückfahren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wann fährst du zurück?",
+        "meaning": "返回"
+    },
+    {
+        "word": "verpassen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe den Zug verpasst.",
+        "meaning": "错过"
+    },
+    {
+        "word": "schneien",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Es schneit heute.",
+        "meaning": "下雪"
+    },
+    {
+        "word": "wünschen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich wünsche dir alles Gute!",
+        "meaning": "祝愿"
     }
 ]
