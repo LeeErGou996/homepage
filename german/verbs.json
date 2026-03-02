@@ -3379,8 +3379,8 @@
         "category": "词性",
         "subCategory": "动词",
         "type": "动词",
-        "example": "Ich entspanne mich im Urlaub.",
-        "meaning": "放松",
+        "example": ["Ich entspanne mich im Urlaub.","Die Regierung versucht, die Situation zu entspannen."],
+        "meaning": "放松,缓和",
         "perfekt": "hat entspannt"
     },
     {
@@ -3537,6 +3537,96 @@
         "perfekt": "hat gegossen"
     },
     {
+        "word": "aufgeben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er gibt das Rauchen auf.",
+        "meaning": "放弃",
+        "perfekt": "hat aufgegeben"
+    },
+    {
+        "word": "kopieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kannst du das Dokument kopieren?",
+        "meaning": "复印，拷贝",
+        "perfekt": "hat kopiert"
+    },
+    {
+        "word": "kündigen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Er kündigt seinen Job.",
+        "meaning": "辞职；解约",
+        "perfekt": "hat gekündigt"
+    },
+    {
+        "word": "landen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das Flugzeug landet pünktlich.",
+        "meaning": "着陆",
+        "perfekt": "ist gelandet"
+    },
+    {
+        "word": "langlaufen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Im Winter gehen wir langlaufen.",
+        "meaning": "越野滑雪",
+        "perfekt": "ist langgelaufen"
+    },
+    {
+        "word": "sich langweilen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich langweile mich im Unterricht.",
+        "meaning": "感到无聊",
+        "perfekt": "hat sich gelangweilt"
+    },
+    {
+        "word": "lassen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Lass das Fenster offen.",
+        "meaning": "让，留",
+        "perfekt": "hat gelassen"
+    },
+    {
+        "word": "löschen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bitte lösche die alte Mail.",
+        "meaning": "删除；熄灭",
+        "perfekt": "hat gelöscht"
+    },
+    {
+        "word": "lösen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Kannst du die Aufgabe lösen?",
+        "meaning": "解决；解答",
+        "perfekt": "hat gelöst"
+    },
+    {
+        "word": "mailen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich maile dir die Unterlagen.",
+        "meaning": "发电子邮件",
+        "perfekt": "hat gemailt"
+    },
+    {
         "word": "hängen",
         "category": "词性",
         "subCategory": "动词",
@@ -3635,13 +3725,94 @@
         "meaning": "鼓掌",
         "perfekt": "hat geklatscht"
     },
-    {
-        "word": "klingeln",
-        "category": "词性",
-        "subCategory": "动词",
-        "type": "动词",
-        "example": "Es klingelt an der Tür.",
-        "meaning": "按铃；响铃",
-        "perfekt": "hat geklingelt"
-    }
+  {
+    "word": "klingeln",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Es klingelt an der Tür.",
+    "meaning": "按铃；响铃",
+    "perfekt": "hat geklingelt"
+  },
+  {
+    "word": "parken",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Du darfst hier nicht parken.",
+    "meaning": "停车",
+    "perfekt": "hat geparkt"
+  },
+  {
+    "word": "pendeln",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Sie pendelt jeden Tag zwischen Bonn und Köln.",
+    "meaning": "通勤，往返于两地",
+    "perfekt": "ist gependelt"
+  },
+  {
+    "word": "posten",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Er postet jeden Tag Fotos auf Instagram.",
+    "meaning": "发帖，发（社交媒体）",
+    "perfekt": "hat gepostet"
+  },
+  {
+    "word": "produzieren",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Die Firma produziert Fahrräder.",
+    "meaning": "生产，制造",
+    "perfekt": "hat produziert"
+  },
+  {
+    "word": "putzen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Am Wochenende putze ich die Wohnung.",
+    "meaning": "打扫，清洁",
+    "perfekt": "hat geputzt"
+  },
+  {
+    "word": "rasen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Die Autos rasen viel zu schnell durch die Stadt.",
+    "meaning": "飞驰，猛冲",
+    "perfekt": "ist gerast"
+  },
+  {
+    "word": "reduzieren",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Wir müssen unseren Müll reduzieren.",
+    "meaning": "减少，降低",
+    "perfekt": "hat reduziert"
+  },
+  {
+    "word": "registrieren (sich)",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Ich habe mich online für den Kurs registriert.",
+    "meaning": "注册，登记",
+    "perfekt": "hat sich registriert"
+  },
+  {
+    "word": "reiten",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Am Wochenende reitet sie oft auf einem Pferd.",
+    "meaning": "骑马",
+    "perfekt": "ist geritten"
+  }
 ]

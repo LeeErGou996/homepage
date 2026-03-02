@@ -540,7 +540,7 @@
                 <div style="font-size: 22px; color: var(--text-main); font-weight: bold; margin-bottom: 20px;">${wordObj.meaning}</div>
                 <div style="font-size: 16px; color: var(--text-muted); line-height: 1.6; border-top: 1px dashed var(--border-color); padding-top: 15px;">
                     <strong>Beispiel:</strong> <br>
-                    ${linkifyExample(wordObj.example || "Kein Beispiel.")}
+                    ${renderExamples(wordObj.example)}
                 </div>
             `;
             
@@ -613,8 +613,8 @@
             document.getElementById('wordDetail').style.display = 'block';
             document.getElementById('wordTitle').innerText = wordObj.word;
             document.getElementById('wordMeaning').innerText = wordObj.meaning;
-            // 渲染处理过的例句
-            document.getElementById('wordExample').innerHTML = linkifyExample(wordObj.example || "Kein Beispiel.");
+            // 渲染处理过的例句（支持单个字符串 / 字符串数组）
+            document.getElementById('wordExample').innerHTML = renderExamples(wordObj.example);
             // 动词完成时：有 perfekt 时显示
             const perfektRow = document.getElementById('wordPerfektRow');
             if (wordObj.perfekt) {
@@ -625,6 +625,16 @@
             }
             // 手机端自动滚动到详情处
             document.getElementById('wordDetail').scrollIntoView({behavior: "smooth"});
+        }
+
+        // 统一处理单条 / 多条例句
+        function renderExamples(exampleField) {
+            if (Array.isArray(exampleField)) {
+                return exampleField
+                    .map(e => linkifyExample(e || "Kein Beispiel."))
+                    .join("<br>");
+            }
+            return linkifyExample(exampleField || "Kein Beispiel.");
         }
 
         // 链接化例句中的单词（已利用预编译正则优化性能）
@@ -699,7 +709,7 @@
                         </span>
                     </h4>
                     ${matchedWord.perfekt ? `<p style="margin: 10px 0;"><strong>Perfekt:</strong> ${matchedWord.perfekt}</p>` : ''}
-                    <p style="margin: 10px 0;"><strong>例句:</strong> ${linkifyExample(matchedWord.example || "Kein Beispiel.")}</p>
+                    <p style="margin: 10px 0;"><strong>例句:</strong> ${renderExamples(matchedWord.example)}</p>
                     <p style="margin: 0;"><strong>释义:</strong> ${matchedWord.meaning}</p>
                 `;
                 

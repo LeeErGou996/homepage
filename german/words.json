@@ -394,14 +394,7 @@
         "example": "Ich kann Deutsch und Russisch.",
         "meaning": "能够"
     },
-    {
-        "word": "sich kümmern",
-        "category": "词性",
-        "subCategory": "动词短语",
-        "type": "动词短语",
-        "example": "Jede Mutter kümmert sich um ihre kleinen Kinder.",
-        "meaning": "照顾"
-    },
+
 
     {
         "word": "mitmachen",
@@ -733,5 +726,141 @@
         "type": "短语",
         "example": "In Zukunft werde ich vorsichtiger sein.",
         "meaning": "今后"
+  },
+  {
+    "word": "meistabonniert",
+    "category": "主题",
+    "subCategory": "社交媒体",
+    "type": "形容词 / 分词",
+    "example": "Das ist der meistabonnierte Kanal auf der Plattform.",
+    "meaning": "被订阅最多的"
+  },
+  {
+    "word": "Mitteilung machen",
+    "category": "词性",
+    "subCategory": "短语",
+    "type": "短语",
+    "example": "Die Lehrerin macht eine wichtige Mitteilung.",
+    "meaning": "发布通知，宣布消息"
+  },
+  {
+    "word": "mitteilen",
+    "category": "词性",
+    "subCategory": "动词短语",
+    "type": "动词短语",
+    "example": "Bitte teilen Sie uns Ihre neue Adresse mit.",
+    "meaning": "通知某人，告知"
+  },
+  {
+    "word": "mitten in",
+    "category": "词性",
+    "subCategory": "短语",
+    "type": "短语",
+    "example": "Mitten in der Stadt gibt es einen Park.",
+    "meaning": "在……正中间"
+  },
+  {
+    "word": "möbliert wohnen",
+    "category": "词性",
+    "subCategory": "短语",
+    "type": "短语",
+    "example": "Er wohnt in einem möblierten Zimmer.",
+    "meaning": "住在带家具的房间里"
+  },
+  {
+    "word": "Musikstil, der",
+    "category": "主题",
+    "subCategory": "音乐",
+    "type": "提示",
+    "example": "Welcher Musikstil passt zu dir?",
+    "meaning": "音乐风格（提示性写法）"
+  },
+  {
+    "word": "Nation, die",
+    "category": "主题",
+    "subCategory": "提示",
+    "type": "提示",
+    "example": "Jede Nation hat ihre eigene Geschichte.",
+    "meaning": "民族，国家（提示性写法）"
+  },
+  {
+    "word": "Positionsverb",
+    "category": "主题",
+    "subCategory": "语法",
+    "type": "名词",
+    "example": "„stehen, liegen, sitzen“ sind Positionsverben.",
+    "meaning": "表示位置的动词"
+  },
+  {
+    "word": "Präsens, das",
+    "category": "主题",
+    "subCategory": "语法",
+    "type": "提示",
+    "example": "Im Präsens benutzt man die Grundformen der Verben.",
+    "meaning": "现在时（提示性写法）"
+  },
+  {
+    "word": "prima finden",
+    "category": "词性",
+    "subCategory": "短语",
+    "type": "短语",
+    "example": "Ich finde die Idee prima.",
+    "meaning": "觉得……棒"
+  },
+  {
+    "word": "privat",
+    "category": "词性",
+    "subCategory": "副词 / 形容词用法",
+    "type": "副词",
+    "example": "Das ist privat, darüber möchte ich nicht sprechen.",
+    "meaning": "私下地，个人的"
+  },
+  {
+    "word": "recht haben",
+    "category": "词性",
+    "subCategory": "短语",
+    "type": "短语",
+    "example": "Du hast Recht, so ist es besser.",
+    "meaning": "说得对，有道理"
+  },
+  {
+    "word": "Redewiedergabe",
+    "category": "主题",
+    "subCategory": "语法",
+    "type": "名词",
+    "example": "Mit „dass“ und dem Konjunktiv übt man die Redewiedergabe.",
+    "meaning": "转述，引语"
+  },
+  {
+    "word": "reflexiv",
+    "category": "主题",
+    "subCategory": "语法",
+    "type": "形容词",
+    "example": "„sich freuen“ ist ein reflexives Verb.",
+    "meaning": "反身的"
+  },
+  {
+    "word": "Richtungsverb",
+    "category": "主题",
+    "subCategory": "语法",
+    "type": "名词",
+    "example": "„gehen, kommen, fahren“ sind Richtungsverben.",
+    "meaning": "表示方向的动词"
+  },
+  {
+    "word": "das Letzte",
+    "category": "词性",
+    "subCategory": "短语",
+    "type": "短语",
+    "example": "Das ist wirklich das Letzte!",
+    "meaning": "太过分了；最糟糕的事"
+  },
+  {
+    "word": "live",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Das Konzert wird live im Fernsehen übertragen.",
+    "meaning": "现场直播地，现场地"
     }
 ]

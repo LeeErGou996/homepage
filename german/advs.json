@@ -856,5 +856,69 @@
         "type": "副词",
         "example": "Die Kurse kosten jeweils 100 Euro.",
         "meaning": "各自；每次"
+  },
+  {
+    "word": "nämlich",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Ich komme später, ich habe nämlich noch einen Termin.",
+    "meaning": "也就是说，因为（用来解释原因）"
+  },
+  {
+    "word": "neulich",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Neulich habe ich ihn im Bus gesehen.",
+    "meaning": "前不久，不久前"
+  },
+  {
+    "word": "mitten",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Mitten in der Nacht klingelt das Telefon.",
+    "meaning": "正中间，正好在……的时候"
+  },
+  {
+    "word": "nebenan",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Meine Freundin wohnt gleich nebenan.",
+    "meaning": "在隔壁，在旁边"
+  },
+  {
+    "word": "nebeneinander",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Die Stühle stehen nebeneinander.",
+    "meaning": "并排地，挨着地"
+  },
+  {
+    "word": "nie mehr",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "So spät komme ich nie mehr.",
+    "meaning": "再也不"
+  },
+  {
+    "word": "quer",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Er läuft quer über die Straße.",
+    "meaning": "横着，斜穿着"
+  },
+  {
+    "word": "rückwärts",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Das Auto fährt rückwärts aus der Garage.",
+    "meaning": "向后，倒着"
     }
 ]

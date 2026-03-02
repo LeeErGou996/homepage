@@ -642,8 +642,11 @@
         "category": "主题",
         "subCategory": "健康",
         "type": "形容词",
-        "example": "Ich habe nur leichte Schmerzen.",
-        "meaning": "轻微的"
+        "example": [
+          "Ich habe nur leichte Schmerzen.",
+          "Das Tablet ist viel leichter als ein Laptop."
+        ],
+        "meaning": "轻微的,轻的"
     },
     {
         "word": "akut",
@@ -2044,5 +2047,141 @@
         "type": "形容词",
         "example": "Er ist 20-jährig. / ein 20-Jähriger",
         "meaning": "……岁的（与数字连用）"
+  },
+  {
+    "word": "kühl",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Heute ist es draußen kühl.",
+    "meaning": "凉的，凉爽的"
+  },
+  {
+    "word": "mega",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Der Film war mega spannend.",
+    "meaning": "超棒的，非常好的（口语）"
+  },
+  {
+    "word": "mehrmalig",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Er hat mehrmalig versucht anzurufen.",
+    "meaning": "多次的，反复的"
+  },
+  {
+    "word": "melodisch",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Die Musik klingt sehr melodisch.",
+    "meaning": "有旋律的，优美动听的"
+  },
+  {
+    "word": "mündlich",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Morgen schreiben wir keinen Test, es gibt nur eine mündliche Prüfung.",
+    "meaning": "口头的，口语的"
+  },
+  {
+    "word": "modisch",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Sie trägt sehr modische Kleidung.",
+    "meaning": "时髦的，流行的"
+  },
+  {
+    "word": "nass",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Nach dem Regen sind meine Schuhe ganz nass.",
+    "meaning": "湿的，湿透的"
+  },
+  {
+    "word": "nervig",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Der Lärm vor dem Fenster ist wirklich nervig.",
+    "meaning": "讨厌的，烦人的（口语）"
+  },
+  {
+    "word": "neugierig",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Die Kinder sind sehr neugierig.",
+    "meaning": "好奇的"
+  },
+  {
+    "word": "niedrig",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Die Miete ist hier relativ niedrig.",
+    "meaning": "低的（价格、水平等）"
+  },
+  {
+    "word": "nötig",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Ist es wirklich nötig, heute noch zu arbeiten?",
+    "meaning": "必要的，必须的（常和 „sein“ 连用）"
+  },
+  {
+    "word": "notwendig",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Für den Kurs sind Grundkenntnisse notwendig.",
+    "meaning": "必要的，必需的"
+  },
+  {
+    "word": "nett",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Der Oberarzt ist sehr nett zu den Patienten.",
+    "meaning": "友好的，和蔼的"
+  },
+  {
+    "word": "realistisch",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Sein Plan ist sehr realistisch.",
+    "meaning": "现实的，切合实际的"
+  },
+  {
+    "word": "reich",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Die Stadt hat eine reiche Geschichte.",
+    "meaning": "富有的；丰富的"
+  },
+  {
+    "word": "riesig",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Das Konzert war ein riesiger Erfolg.",
+    "meaning": "巨大的，非常大的"
+  },
+  {
+    "word": "rockig",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Sie mag rockige Musik.",
+    "meaning": "带摇滚风格的"
     }
 ]

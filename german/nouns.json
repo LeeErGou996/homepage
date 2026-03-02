@@ -2414,7 +2414,10 @@
     "category": "主题",
     "subCategory": "地理",
     "type": "名词",
-    "example": "Italien ist ein schönes Land.",
+    "example": [
+      "Italien ist ein schönes Land.",
+      "Ich wohne auf dem Land."
+    ],
     "meaning": "国家，土地"
   },
   {
@@ -2751,8 +2754,8 @@
     "category": "主题",
     "subCategory": "地理",
     "type": "名词",
-    "example": "Tut mir leid, der Platz ist besetzt. Bitte nehmen Sie Platz! Ich wohne Messeplatz 5.",
-    "meaning": "位置，广场"
+    "example": ["Tut mir leid, der Platz ist besetzt.","Bitte nehmen Sie Platz!","Erster Platz! Ich habe gewonnen."],
+    "meaning": "广场，座位,名次"
   },
   {
     "word": "die Polizei (die, -)",
@@ -4143,7 +4146,7 @@
   },
   
   {
-    "word": "die Medizin (die, -nen)",
+    "word": "die Medizin (die, Sg.)",
     "category": "主题",
     "subCategory": "健康",
     "type": "名词",
@@ -4787,7 +4790,7 @@
     "category": "主题",
     "subCategory": "抽象",
     "type": "名词",
-    "example": "Das ist meine Meinung.",
+    "example": ["Das ist meine Meinung.","Sag deine Meinung.","Ich bin der Meinung, dass wir mehr Pausen brauchen.", "Meiner Meinung nach ist das zu teuer"],
     "meaning": "意见，看法"
   },
   {
@@ -4963,8 +4966,8 @@
     "category": "主题",
     "subCategory": "科技",
     "type": "名词",
-    "example": "Die Maus ist für den Computer.",
-    "meaning": "鼠标"
+    "example": ["Die Maus ist für den Computer.","Eine Maus als Haustier? Das ist nichts für mich"],
+    "meaning": "鼠标,老鼠"
   },
   {
     "word": "das Kabel (die, -)",
@@ -9183,5 +9186,685 @@
     "type": "名词",
     "example": "Er studiert Informatik.",
     "meaning": "计算机科学"
+  },
+  {
+    "word": "die Mehrwertsteuer (die, -n)",
+    "category": "主题",
+    "subCategory": "Wirtschaft",
+    "type": "名词",
+    "example": "Auf den Preis kommt noch die Mehrwertsteuer dazu.",
+    "meaning": "增值税"
+  },
+  {
+    "word": "die Meldung (die, -en)",
+    "category": "主题",
+    "subCategory": "信息",
+    "type": "名词",
+    "example": "Hast du die Meldung in den Nachrichten gesehen?",
+    "meaning": "消息，通报"
+  },
+  {
+    "word": "die Menge (die, -n)",
+    "category": "主题",
+    "subCategory": "数量",
+    "type": "名词",
+    "example": "Eine große Menge Leute steht vor dem Eingang.",
+    "meaning": "数量；许多"
+  },
+  {
+    "word": "der Mieter (die, -)",
+    "category": "主题",
+    "subCategory": "住房",
+    "type": "名词",
+    "example": "Der Mieter zahlt die Miete immer pünktlich.",
+    "meaning": "房客，租户（男）"
+  },
+  {
+    "word": "die Mieterin (die, -nen)",
+    "category": "主题",
+    "subCategory": "住房",
+    "type": "名词",
+    "example": "Die Mieterin wohnt im dritten Stock.",
+    "meaning": "房客，租户（女）"
+  },
+  {
+    "word": "das Mineralwasser (die, -)",
+    "category": "主题",
+    "subCategory": "餐饮",
+    "type": "名词",
+    "example": "Zum Essen trinke ich ein Glas Mineralwasser.",
+    "meaning": "矿泉水"
+  },
+  {
+    "word": "der Mitbewohner (die, -)",
+    "category": "主题",
+    "subCategory": "住房",
+    "type": "名词",
+    "example": "Mein Mitbewohner kommt aus Spanien.",
+    "meaning": "室友，合租者（男）"
+  },
+  {
+    "word": "die Mitbewohnerin (die, -nen)",
+    "category": "主题",
+    "subCategory": "住房",
+    "type": "名词",
+    "example": "Meine Mitbewohnerin studiert Physik.",
+    "meaning": "室友，合租者（女）"
+  },
+  {
+    "word": "das Mitleid (das, -)",
+    "category": "主题",
+    "subCategory": "情感",
+    "type": "名词",
+    "example": "Sie hat Mitleid mit ihm.",
+    "meaning": "同情"
+  },
+  {
+    "word": "die Mitteilung (die, -en)",
+    "category": "主题",
+    "subCategory": "信息",
+    "type": "名词",
+    "example": "Sie bekommen eine schriftliche Mitteilung.",
+    "meaning": "通知，通告"
+  },
+  {
+    "word": "die Mitternacht (die, -)",
+    "category": "主题",
+    "subCategory": "时间",
+    "type": "名词",
+    "example": "Um Mitternacht gehen die Lichter aus.",
+    "meaning": "午夜"
+  },
+  {
+    "word": "das Mobiltelefon (die, -e)",
+    "category": "主题",
+    "subCategory": "Technik",
+    "type": "名词",
+    "example": "Sie telefoniert mit ihrem Mobiltelefon.",
+    "meaning": "手机"
+  },
+  {
+    "word": "die Monatskarte (die, -n)",
+    "category": "主题",
+    "subCategory": "Verkehr",
+    "type": "名词",
+    "example": "Mit der Monatskarte kann ich jeden Tag fahren.",
+    "meaning": "月票"
+  },
+  {
+    "word": "die Morgenstunde (die, -n)",
+    "category": "主题",
+    "subCategory": "时间",
+    "type": "名词",
+    "example": "In den frühen Morgenstunden ist es noch ruhig.",
+    "meaning": "清晨时刻"
+  },
+  {
+    "word": "der Motor (die, -en)",
+    "category": "主题",
+    "subCategory": "Technik",
+    "type": "名词",
+    "example": "Der Motor macht komische Geräusche.",
+    "meaning": "发动机"
+  },
+  {
+    "word": "das Mountainbike (die, -s)",
+    "category": "主题",
+    "subCategory": "Sport",
+    "type": "名词",
+    "example": "Er fährt gern mit dem Mountainbike im Wald.",
+    "meaning": "山地自行车"
+  },
+  {
+    "word": "die Müllabfuhr (die, -en)",
+    "category": "主题",
+    "subCategory": "Umwelt",
+    "type": "名词",
+    "example": "Die Müllabfuhr kommt jeden Dienstag.",
+    "meaning": "垃圾清运"
+  },
+  {
+    "word": "der Musiker (die, -)",
+    "category": "主题",
+    "subCategory": "Beruf",
+    "type": "名词",
+    "example": "Der Musiker spielt Gitarre in einer Band.",
+    "meaning": "音乐家（男）"
+  },
+  {
+    "word": "die Musikerin (die, -nen)",
+    "category": "主题",
+    "subCategory": "Beruf",
+    "type": "名词",
+    "example": "Die Musikerin komponiert eigene Lieder.",
+    "meaning": "音乐家（女）"
+  },
+  {
+    "word": "der Musikfan (die, -s)",
+    "category": "主题",
+    "subCategory": "Musik",
+    "type": "名词",
+    "example": "Viele Musikfans besuchen das Festival.",
+    "meaning": "音乐迷"
+  },
+  {
+    "word": "das Musikfestival (die, -s)",
+    "category": "主题",
+    "subCategory": "Musik",
+    "type": "名词",
+    "example": "Im Sommer gibt es viele Musikfestivals.",
+    "meaning": "音乐节"
+  },
+  {
+    "word": "der Musikstil (die, -e)",
+    "category": "主题",
+    "subCategory": "Musik",
+    "type": "名词",
+    "example": "Welchen Musikstil hörst du am liebsten?",
+    "meaning": "音乐风格"
+  },
+  {
+    "word": "der Nachrichtensprecher (die, -)",
+    "category": "主题",
+    "subCategory": "Medien",
+    "type": "名词",
+    "example": "Der Nachrichtensprecher liest die neuesten Meldungen vor.",
+    "meaning": "新闻播音员（男）"
+  },
+  {
+    "word": "die Nachrichtensprecherin (die, -nen)",
+    "category": "主题",
+    "subCategory": "Medien",
+    "type": "名词",
+    "example": "Die Nachrichtensprecherin arbeitet im Fernsehen.",
+    "meaning": "新闻播音员（女）"
+  },
+  {
+    "word": "die Nation (die, -en)",
+    "category": "主题",
+    "subCategory": "Politik",
+    "type": "名词",
+    "example": "Die Nation feiert einen wichtigen Feiertag.",
+    "meaning": "民族，国家"
+  },
+  {
+    "word": "der Nationalpark (die, -s)",
+    "category": "主题",
+    "subCategory": "Natur",
+    "type": "名词",
+    "example": "Im Nationalpark darf man die Natur schützen und genießen.",
+    "meaning": "国家公园"
+  },
+  {
+    "word": "das Navi (die, -s)",
+    "category": "主题",
+    "subCategory": "Technik",
+    "type": "名词",
+    "example": "Das Navi zeigt uns den Weg.",
+    "meaning": "导航仪（口语）"
+  },
+  {
+    "word": "die Nebenkosten (pl.)",
+    "category": "主题",
+    "subCategory": "Wohnen",
+    "type": "名词",
+    "example": "Die Nebenkosten sind in der Miete nicht enthalten.",
+    "meaning": "附加费用（暖气、水、电等）"
+  },
+  {
+    "word": "der Nebensatz (die, -sätze)",
+    "category": "主题",
+    "subCategory": "Grammatik",
+    "type": "名词",
+    "example": "Im Nebensatz steht das Verb am Ende.",
+    "meaning": "从句"
+  },
+  {
+    "word": "die Nervosität (die, -en)",
+    "category": "主题",
+    "subCategory": "Gefühl",
+    "type": "名词",
+    "example": "Vor der Prüfung spürt sie große Nervosität.",
+    "meaning": "紧张，不安"
+  },
+  {
+    "word": "das Netto (das, -)",
+    "category": "主题",
+    "subCategory": "Geld",
+    "type": "名词",
+    "example": "Er verdient 2000 Euro netto im Monat.",
+    "meaning": "净收入，税后"
+  },
+  {
+    "word": "der Notfall (die, -fälle)",
+    "category": "主题",
+    "subCategory": "Gesundheit",
+    "type": "名词",
+    "example": "Im Notfall rufen Sie bitte die 112 an.",
+    "meaning": "紧急情况"
+  },
+  {
+    "word": "der Oberarzt (die, -ärzte)",
+    "category": "主题",
+    "subCategory": "Beruf",
+    "type": "名词",
+    "example": "Der Oberarzt entscheidet über die Operation.",
+    "meaning": "主治医师，高级住院医师（男）"
+  },
+  {
+    "word": "die Oberärztin (die, -nen)",
+    "category": "主题",
+    "subCategory": "Beruf",
+    "type": "名词",
+    "example": "Die Oberärztin leitet die Station.",
+    "meaning": "主治医师，高级住院医师（女）"
+  },
+  {
+    "word": "das Päckchen (die, -)",
+    "category": "主题",
+    "subCategory": "Post",
+    "type": "名词",
+    "example": "Ich habe ein Päckchen aus China bekommen.",
+    "meaning": "小包裹"
+  },
+  {
+    "word": "das Paddel (die, -)",
+    "category": "主题",
+    "subCategory": "Sport",
+    "type": "名词",
+    "example": "Er hält das Paddel fest in der Hand.",
+    "meaning": "桨（划船用）"
+  },
+  {
+    "word": "die Panne (die, -n)",
+    "category": "主题",
+    "subCategory": "Verkehr",
+    "type": "名词",
+    "example": "Unterwegs hatten wir eine Autopanne.",
+    "meaning": "故障，事故"
+  },
+  {
+    "word": "der Papa (die, -s)",
+    "category": "主题",
+    "subCategory": "Familie",
+    "type": "名词",
+    "example": "Die Kinder warten auf ihren Papa.",
+    "meaning": "爸爸（口语）"
+  },
+  {
+    "word": "das Parkhaus (die, -häuser)",
+    "category": "主题",
+    "subCategory": "Verkehr",
+    "type": "名词",
+    "example": "Im Parkhaus gibt es noch freie Plätze.",
+    "meaning": "立体停车场"
+  },
+  {
+    "word": "der Parkplatz (die, -plätze)",
+    "category": "主题",
+    "subCategory": "Verkehr",
+    "type": "名词",
+    "example": "Vor dem Haus gibt es keinen Parkplatz.",
+    "meaning": "停车位，停车场"
+  },
+  {
+    "word": "der PC (die, -s)",
+    "category": "主题",
+    "subCategory": "Technik",
+    "type": "名词",
+    "example": "Er arbeitet den ganzen Tag am PC.",
+    "meaning": "个人电脑"
+  },
+  {
+    "word": "der Pferd (das, -e)",
+    "category": "主题",
+    "subCategory": "Tiere",
+    "type": "名词",
+    "example": "Das Pferd läuft über die Wiese.",
+    "meaning": "马"
+  },
+  {
+    "word": "die Phase (die, -n)",
+    "category": "主题",
+    "subCategory": "abstrakt",
+    "type": "名词",
+    "example": "Die Kinder sind in einer schwierigen Phase.",
+    "meaning": "阶段，时期"
+  },
+  {
+    "word": "die Physik (die, -)",
+    "category": "主题",
+    "subCategory": "Fach",
+    "type": "名词",
+    "example": "Sie studiert Physik an der Universität.",
+    "meaning": "物理，物理学"
+  },
+  {
+    "word": "die PIN (die, -s)",
+    "category": "主题",
+    "subCategory": "Technik",
+    "type": "名词",
+    "example": "Geben Sie bitte Ihre PIN ein.",
+    "meaning": "密码，个人识别码"
+  },
+  {
+    "word": "der Pkw (die, -s)",
+    "category": "主题",
+    "subCategory": "Verkehr",
+    "type": "名词",
+    "example": "In der Straße parken viele Pkw.",
+    "meaning": "小汽车（Personenkraftwagen 缩写）"
+  },
+  {
+    "word": "das Poster (die, -)",
+    "category": "主题",
+    "subCategory": "Deko",
+    "type": "名词",
+    "example": "An der Wand hängt ein großes Poster.",
+    "meaning": "海报"
+  },
+  {
+    "word": "das Präsens (die, -)",
+    "category": "主题",
+    "subCategory": "Grammatik",
+    "type": "名词",
+    "example": "Im Präsens benutzt man die Grundformen der Verben.",
+    "meaning": "现在时"
+  },
+  {
+    "word": "der Privatkunde (die, -n)",
+    "category": "主题",
+    "subCategory": "Wirtschaft",
+    "type": "名词",
+    "example": "Die Bank berät Privatkunden und Firmenkunden.",
+    "meaning": "个人客户（男）"
+  },
+  {
+    "word": "der Probetag (die, -e)",
+    "category": "主题",
+    "subCategory": "Beruf",
+    "type": "名词",
+    "example": "Am Probetag kann sie den Beruf kennenlernen.",
+    "meaning": "试用日，体验日"
+  },
+  {
+    "word": "die Prominente (die, -n)",
+    "category": "主题",
+    "subCategory": "Medien",
+    "type": "名词",
+    "example": "Viele Prominente sind zu der Gala gekommen.",
+    "meaning": "名人（阴阳性统称）"
+  },
+  {
+    "word": "das Prozent (die, -e)",
+    "category": "主题",
+    "subCategory": "Zahl",
+    "type": "名词",
+    "example": "20 Prozent der Befragten sind zufrieden.",
+    "meaning": "百分比"
+  },
+  {
+    "word": "die Prüferin (die, -nen)",
+    "category": "主题",
+    "subCategory": "Prüfung",
+    "type": "名词",
+    "example": "Die Prüferin stellt viele Fragen.",
+    "meaning": "女考官"
+  },
+  {
+    "word": "der Prüfer (die, -)",
+    "category": "主题",
+    "subCategory": "Prüfung",
+    "type": "名词",
+    "example": "Der Prüfer bewertet die Prüfenden fair.",
+    "meaning": "男考官"
+  },
+  {
+    "word": "die Prüfenden (pl.)",
+    "category": "主题",
+    "subCategory": "Prüfung",
+    "type": "名词",
+    "example": "Die Prüfenden achten auf klare Aussprache.",
+    "meaning": "主考人，考官们"
+  },
+  {
+    "word": "der Quadratmeter (die, -)",
+    "category": "主题",
+    "subCategory": "Maß",
+    "type": "名词",
+    "example": "Die Wohnung hat 80 Quadratmeter.",
+    "meaning": "平方米"
+  },
+  {
+    "word": "die Qualität (die, -en)",
+    "category": "主题",
+    "subCategory": "abstrakt",
+    "type": "名词",
+    "example": "Die Qualität der Ware ist sehr gut.",
+    "meaning": "质量"
+  },
+  {
+    "word": "das Quiz (die, -)",
+    "category": "主题",
+    "subCategory": "Spiel",
+    "type": "名词",
+    "example": "Im Fernsehen läuft ein Quiz.",
+    "meaning": "知识竞赛，问答游戏"
+  },
+  {
+    "word": "das Rad (die, Räder)",
+    "category": "主题",
+    "subCategory": "Verkehr",
+    "type": "名词",
+    "example": "Sie fährt jeden Tag mit dem Rad zur Arbeit.",
+    "meaning": "自行车；轮子"
+  },
+  {
+    "word": "der Radfahrer (die, -)",
+    "category": "主题",
+    "subCategory": "Verkehr",
+    "type": "名词",
+    "example": "Der Radfahrer fährt auf dem Radweg.",
+    "meaning": "骑自行车的人（男）"
+  },
+  {
+    "word": "die Radfahrerin (die, -nen)",
+    "category": "主题",
+    "subCategory": "Verkehr",
+    "type": "名词",
+    "example": "Die Radfahrerin trägt einen Helm.",
+    "meaning": "骑自行车的人（女）"
+  },
+  {
+    "word": "der Radiosprecher (die, -)",
+    "category": "主题",
+    "subCategory": "Medien",
+    "type": "名词",
+    "example": "Der Radiosprecher moderiert die Sendung.",
+    "meaning": "电台播音员（男）"
+  },
+  {
+    "word": "die Radiosprecherin (die, -nen)",
+    "category": "主题",
+    "subCategory": "Medien",
+    "type": "名词",
+    "example": "Die Radiosprecherin hat eine angenehme Stimme.",
+    "meaning": "电台播音员（女）"
+  },
+  {
+    "word": "der Radweg (die, -e)",
+    "category": "主题",
+    "subCategory": "Verkehr",
+    "type": "名词",
+    "example": "Es gibt einen sicheren Radweg entlang des Flusses.",
+    "meaning": "自行车道"
+  },
+  {
+    "word": "die Radtour (die, -en)",
+    "category": "主题",
+    "subCategory": "Freizeit",
+    "type": "名词",
+    "example": "Am Wochenende machen wir eine Radtour.",
+    "meaning": "自行车游"
+  },
+  {
+    "word": "der Rap (die, -s)",
+    "category": "主题",
+    "subCategory": "Musik",
+    "type": "名词",
+    "example": "Die Jugendlichen hören gern Rap.",
+    "meaning": "说唱音乐"
+  },
+  {
+    "word": "der Rat (die, Räte)",
+    "category": "主题",
+    "subCategory": "abstrakt",
+    "type": "名词",
+    "example": "Kannst du mir einen Rat geben?",
+    "meaning": "建议"
+  },
+  {
+    "word": "die Ratte (die, -n)",
+    "category": "主题",
+    "subCategory": "Tiere",
+    "type": "名词",
+    "example": "Im Keller haben sie eine Ratte gesehen.",
+    "meaning": "老鼠（体型较大的）"
+  },
+  {
+    "word": "die Realität (die, -en)",
+    "category": "主题",
+    "subCategory": "abstrakt",
+    "type": "名词",
+    "example": "Die Realität ist oft anders als der Traum.",
+    "meaning": "现实"
+  },
+  {
+    "word": "die Rechnungsinformation (die, -en)",
+    "category": "主题",
+    "subCategory": "Geld",
+    "type": "名词",
+    "example": "Sie erhalten die Rechnungsinformation per E-Mail.",
+    "meaning": "账单信息"
+  },
+  {
+    "word": "das Reflexivpronomen (die, -)",
+    "category": "主题",
+    "subCategory": "Grammatik",
+    "type": "名词",
+    "example": "„mich, dich, sich“ sind Reflexivpronomen.",
+    "meaning": "反身代词"
+  },
+  {
+    "word": "das Relativpronomen (die, -)",
+    "category": "主题",
+    "subCategory": "Grammatik",
+    "type": "名词",
+    "example": "„der, die, das“ können Relativpronomen sein.",
+    "meaning": "关系代词"
+  },
+  {
+    "word": "der Relativsatz (die, -sätze)",
+    "category": "主题",
+    "subCategory": "Grammatik",
+    "type": "名词",
+    "example": "Der Relativsatz gibt zusätzliche Informationen.",
+    "meaning": "关系从句"
+  },
+  {
+    "word": "die Rente (die, -n)",
+    "category": "主题",
+    "subCategory": "Soziales",
+    "type": "名词",
+    "example": "Er bekommt eine gute Rente.",
+    "meaning": "养老金，退休金"
+  },
+  {
+    "word": "das Repair-Café (die, -s)",
+    "category": "主题",
+    "subCategory": "Nachhaltigkeit",
+    "type": "名词",
+    "example": "Im Repair-Café reparieren Freiwillige alte Geräte.",
+    "meaning": "维修咖啡馆（义修场所）"
+  },
+  {
+    "word": "die Reservierung (die, -en)",
+    "category": "主题",
+    "subCategory": "Reise",
+    "type": "名词",
+    "example": "Ich habe eine Reservierung auf den Namen Li.",
+    "meaning": "预订，保留"
+  },
+  {
+    "word": "die Richtung (die, -en)",
+    "category": "主题",
+    "subCategory": "Verkehr",
+    "type": "名词",
+    "example": "In welche Richtung müssen wir gehen?",
+    "meaning": "方向"
+  },
+  {
+    "word": "der Riesenspaß (der, -)",
+    "category": "主题",
+    "subCategory": "Gefühl",
+    "type": "名词",
+    "example": "Die Party war ein Riesenspaß.",
+    "meaning": "巨大乐趣，非常好玩"
+  },
+  {
+    "word": "das Risiko (die, Risiken)",
+    "category": "主题",
+    "subCategory": "abstrakt",
+    "type": "名词",
+    "example": "Dieses Investment ist mit einem hohen Risiko verbunden.",
+    "meaning": "风险"
+  },
+  {
+    "word": "die Rockmusik (die, -)",
+    "category": "主题",
+    "subCategory": "Musik",
+    "type": "名词",
+    "example": "Er hört gern Rockmusik.",
+    "meaning": "摇滚音乐"
+  },
+  {
+    "word": "der Roller (die, -)",
+    "category": "主题",
+    "subCategory": "Verkehr",
+    "type": "名词",
+    "example": "Das Kind fährt mit dem Roller zur Schule.",
+    "meaning": "滑板车；小型踏板摩托车"
+  },
+  {
+    "word": "der Roman (die, -e)",
+    "category": "主题",
+    "subCategory": "Literatur",
+    "type": "名词",
+    "example": "Sie liest einen spannenden Roman.",
+    "meaning": "长篇小说"
+  },
+  {
+    "word": "die Rückfrage (die, -n)",
+    "category": "主题",
+    "subCategory": "Kommunikation",
+    "type": "名词",
+    "example": "Bei Rückfragen können Sie uns anrufen.",
+    "meaning": "进一步询问，追问"
+  },
+  {
+    "word": "die Rückmeldung (die, -en)",
+    "category": "主题",
+    "subCategory": "Kommunikation",
+    "type": "名词",
+    "example": "Vielen Dank für Ihre Rückmeldung.",
+    "meaning": "反馈，回复"
+  },
+  {
+    "word": "der Rucksack (die, -säcke)",
+    "category": "主题",
+    "subCategory": "Alltag",
+    "type": "名词",
+    "example": "Er trägt einen schweren Rucksack.",
+    "meaning": "双肩背包"
   }
 ]
