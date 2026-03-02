@@ -824,5 +824,37 @@
         "type": "副词",
         "example": "Das dauert ewig.",
         "meaning": "永远；很久"
+    },
+    {
+        "word": "hintereinander",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Die Sätze stehen hintereinander.",
+        "meaning": "一个接一个"
+    },
+    {
+        "word": "hinunter",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Er geht die Treppe hinunter.",
+        "meaning": "向下"
+    },
+    {
+        "word": "insbesondere",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Insbesondere Kinder lieben das.",
+        "meaning": "尤其"
+    },
+    {
+        "word": "jeweils",
+        "category": "词性",
+        "subCategory": "副词",
+        "type": "副词",
+        "example": "Die Kurse kosten jeweils 100 Euro.",
+        "meaning": "各自；每次"
     }
 ]

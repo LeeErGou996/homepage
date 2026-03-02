@@ -1900,5 +1900,149 @@
         "type": "形容词",
         "example": "Er ist gut gelaunt.",
         "meaning": "心情……的（gut/schlecht gelaunt）"
+    },
+    {
+        "word": "genial",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Idee ist genial.",
+        "meaning": "极妙的，天才的"
+    },
+    {
+        "word": "gespannt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin gespannt auf das Ergebnis.",
+        "meaning": "充满期待的；紧张的"
+    },
+    {
+        "word": "gestresst",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Ich bin heute sehr gestresst.",
+        "meaning": "有压力的，紧张的"
+    },
+    {
+        "word": "großartig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Film war großartig.",
+        "meaning": "精彩的，了不起的"
+    },
+    {
+        "word": "gültig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Ticket ist noch drei Tage gültig.",
+        "meaning": "有效的"
+    },
+    {
+        "word": "hart",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Boden ist hart.",
+        "meaning": "硬的；艰难的"
+    },
+    {
+        "word": "hell",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Zimmer ist hell.",
+        "meaning": "明亮的"
+    },
+    {
+        "word": "hilfsbereit",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Sie ist sehr hilfsbereit.",
+        "meaning": "乐于助人的"
+    },
+    {
+        "word": "indirekt",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das ist eine indirekte Frage.",
+        "meaning": "间接的"
+    },
+    {
+        "word": "inklusive",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Preis ist inklusive Frühstück.",
+        "meaning": "包含在内的"
+    },
+    {
+        "word": "intelligent",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er ist sehr intelligent.",
+        "meaning": "聪明的"
+    },
+    {
+        "word": "intensiv",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Der Kurs ist intensiv.",
+        "meaning": "密集的；强烈的"
+    },
+    {
+        "word": "jährlich",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die jährliche Versammlung findet im März statt.",
+        "meaning": "每年的"
+    },
+    {
+        "word": "knapp",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Zeit ist knapp.",
+        "meaning": "紧的；差点"
+    },
+    {
+        "word": "kompliziert",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Die Aufgabe ist kompliziert.",
+        "meaning": "复杂的"
+    },
+    {
+        "word": "konjugiert",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das Verb ist konjugiert.",
+        "meaning": "变位了的"
+    },
+    {
+        "word": "klug",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Das war eine kluge Entscheidung.",
+        "meaning": "聪明的"
+    },
+    {
+        "word": "-jährig",
+        "category": "词性",
+        "subCategory": "形容词",
+        "type": "形容词",
+        "example": "Er ist 20-jährig. / ein 20-Jähriger",
+        "meaning": "……岁的（与数字连用）"
     }
 ]

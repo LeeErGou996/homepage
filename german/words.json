@@ -701,5 +701,37 @@
         "type": "介词",
         "example": "Gegenüber von der Bank ist ein Café.",
         "meaning": "在……对面（+ D.）"
+    },
+    {
+        "word": "hin und zurück",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Eine Fahrkarte hin und zurück, bitte.",
+        "meaning": "往返"
+    },
+    {
+        "word": "immer wenn",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Immer wenn es regnet, bleibt er zu Hause.",
+        "meaning": "每当"
+    },
+    {
+        "word": "in Ordnung",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "Alles in Ordnung?",
+        "meaning": "没问题；好的"
+    },
+    {
+        "word": "in Zukunft",
+        "category": "词性",
+        "subCategory": "短语",
+        "type": "短语",
+        "example": "In Zukunft werde ich vorsichtiger sein.",
+        "meaning": "今后"
     }
 ]

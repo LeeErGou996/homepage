@@ -3508,5 +3508,140 @@
         "example": "Das gilt nicht mehr.",
         "meaning": "有效；算作",
         "perfekt": "hat gegolten"
+    },
+    {
+        "word": "gestalten",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir gestalten das Plakat zusammen.",
+        "meaning": "设计；塑造",
+        "perfekt": "hat gestaltet"
+    },
+    {
+        "word": "sich gewöhnen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich habe mich an das Klima gewöhnt.",
+        "meaning": "习惯，适应",
+        "perfekt": "hat sich gewöhnt"
+    },
+    {
+        "word": "gießen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich gieße die Blumen jeden Tag.",
+        "meaning": "浇水；倒",
+        "perfekt": "hat gegossen"
+    },
+    {
+        "word": "hängen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich hänge das Bild an die Wand.",
+        "meaning": "挂",
+        "perfekt": "hat gehängt"
+    },
+    {
+        "word": "hereinkommen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Komm bitte herein!",
+        "meaning": "进来",
+        "perfekt": "ist hereingekommen"
+    },
+    {
+        "word": "hergeben",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Gib mir bitte das Buch her.",
+        "meaning": "递过来",
+        "perfekt": "hat hergegeben"
+    },
+    {
+        "word": "herunterladen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich lade die App herunter.",
+        "meaning": "下载",
+        "perfekt": "hat heruntergeladen"
+    },
+    {
+        "word": "heilen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Die Wunde heilt schnell.",
+        "meaning": "治愈",
+        "perfekt": "hat geheilt"
+    },
+    {
+        "word": "heizen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir heizen im Winter.",
+        "meaning": "供暖",
+        "perfekt": "hat geheizt"
+    },
+    {
+        "word": "hochladen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich lade die Fotos hoch.",
+        "meaning": "上传",
+        "perfekt": "hat hochgeladen"
+    },
+    {
+        "word": "informieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Bitte informieren Sie mich.",
+        "meaning": "通知，告知",
+        "perfekt": "hat informiert"
+    },
+    {
+        "word": "kapieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Ich kapiere das nicht.",
+        "meaning": "明白（口语）",
+        "perfekt": "hat kapiert"
+    },
+    {
+        "word": "kommunizieren",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Wir kommunizieren per E-Mail.",
+        "meaning": "沟通",
+        "perfekt": "hat kommuniziert"
+    },
+    {
+        "word": "klatschen",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Das Publikum klatscht.",
+        "meaning": "鼓掌",
+        "perfekt": "hat geklatscht"
+    },
+    {
+        "word": "klingeln",
+        "category": "词性",
+        "subCategory": "动词",
+        "type": "动词",
+        "example": "Es klingelt an der Tür.",
+        "meaning": "按铃；响铃",
+        "perfekt": "hat geklingelt"
     }
 ]
