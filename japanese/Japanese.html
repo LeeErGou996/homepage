@@ -592,12 +592,13 @@
         }
 
         function renderGrammarUnits(config, items, listEl) {
-            // label / unit などでグループ化（なければ「その他」）
+            // 基本の単元名（例: 「第一単元」「第一単元-基础练习」→「第一単元」）
             const groups = {};
             items.forEach((item, index) => {
-                const key = item.label || item.unit || "その他";
-                if (!groups[key]) groups[key] = [];
-                groups[key].push({ item, index });
+                const rawLabel = item.label || item.unit || "その他";
+                const baseLabel = String(rawLabel).split("-")[0]; // 「-」以降は練習種別など
+                if (!groups[baseLabel]) groups[baseLabel] = [];
+                groups[baseLabel].push({ item, index });
             });
 
             const unitNames = Object.keys(groups);
@@ -666,8 +667,19 @@
                     toggleSpan.textContent = closed ? "－" : "＋";
                 });
 
-                // 単元内の各文法項目カード
-                groups[unitName].forEach(({ item, index }) => {
+                const unitItems = groups[unitName];
+                const isGrammarMode = config.type === "grammar";
+
+                // 文法モードでは「問題」と「文法情報」を分けて扱う
+                const grammarItems = isGrammarMode
+                    ? unitItems.filter(({ item }) => !item.question)
+                    : unitItems;
+                const exerciseItems = isGrammarMode
+                    ? unitItems.filter(({ item }) => item.question)
+                    : [];
+
+                // 1. 単元内の文法（あるいは語彙）カード
+                grammarItems.forEach(({ item, index }) => {
                     const card = document.createElement("div");
                     card.className = "item-card";
 
@@ -702,6 +714,72 @@
 
                     body.appendChild(card);
                 });
+
+                // 2. 文法用：練習問題をこの単元の最後にまとめて表示
+                if (isGrammarMode && exerciseItems.length > 0) {
+                    const exHeader = document.createElement("div");
+                    exHeader.style.margin = "10px 4px 4px";
+                    exHeader.style.fontWeight = "600";
+                    exHeader.style.color = "var(--primary-color)";
+                    exHeader.textContent = "練習問題";
+                    body.appendChild(exHeader);
+
+                    exerciseItems.forEach(({ item }, exIndex) => {
+                        const exCard = document.createElement("div");
+                        exCard.className = "item-card";
+
+                        const qTitle = document.createElement("div");
+                        qTitle.className = "item-title";
+                        qTitle.textContent = item.question || "";
+
+                        const optList = document.createElement("ul");
+                        optList.style.paddingLeft = "20px";
+                        optList.style.margin = "8px 0";
+                        (item.options || []).forEach(opt => {
+                            const li = document.createElement("li");
+                            li.textContent = opt;
+                            optList.appendChild(li);
+                        });
+
+                        const answerBox = document.createElement("div");
+                        answerBox.className = "item-sub";
+                        answerBox.style.display = "none";
+
+                        // 答えと解説
+                        const answerCode = String(item.answer || "").trim();
+                        const optionMatch = (item.options || []).find(opt => {
+                            const trimmed = String(opt).trim();
+                            return trimmed.startsWith(answerCode + " ") || trimmed === answerCode;
+                        });
+                        const answerText = optionMatch || answerCode;
+                        const explanation = stripCitation(item.explanation || "");
+                        answerBox.textContent = `【正解】${answerText}\n${explanation ? "【解説】" + explanation : ""}`;
+
+                        const toggleBtn = document.createElement("button");
+                        toggleBtn.type = "button";
+                        toggleBtn.textContent = "答えを表示";
+                        toggleBtn.style.marginTop = "6px";
+                        toggleBtn.style.fontSize = "12px";
+                        toggleBtn.style.padding = "4px 10px";
+                        toggleBtn.style.borderRadius = "999px";
+                        toggleBtn.style.border = "1px solid var(--border-color)";
+                        toggleBtn.style.background = "#f9fafb";
+                        toggleBtn.style.cursor = "pointer";
+
+                        toggleBtn.addEventListener("click", () => {
+                            const visible = answerBox.style.display === "block";
+                            answerBox.style.display = visible ? "none" : "block";
+                            toggleBtn.textContent = visible ? "答えを表示" : "答えを隠す";
+                        });
+
+                        exCard.appendChild(qTitle);
+                        exCard.appendChild(optList);
+                        exCard.appendChild(toggleBtn);
+                        exCard.appendChild(answerBox);
+
+                        body.appendChild(exCard);
+                    });
+                }
 
                 unitWrapper.appendChild(header);
                 unitWrapper.appendChild(body);
