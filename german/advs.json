@@ -348,7 +348,7 @@
         "category": "词性",
         "subCategory": "副词",
         "type": "副词",
-        "example": "Sie müssen das so machen! Fahren Sie bitte nicht so schnell! Meine Frau ist so groß wie ich. So, das war‘s/wär‘s!",
+        "example": ["Sie müssen das so machen! Fahren Sie bitte nicht so schnell! Meine Frau ist so groß wie ich.","Ich bin so glücklich, dass ich dich habe.","Das war bei mir auch so."],
         "meaning": "如此，这样"
     },
     {
@@ -920,5 +920,37 @@
     "type": "副词",
     "example": "Das Auto fährt rückwärts aus der Garage.",
     "meaning": "向后，倒着"
+  },
+  {
+    "word": "sogar",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Er spricht sogar ein bisschen Chinesisch.",
+    "meaning": "甚至，就连"
+  },
+  {
+    "word": "sowieso",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Ich komme sowieso später vorbei.",
+    "meaning": "反正，无论如何"
+  },
+  {
+    "word": "spätestens",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Spätestens um acht Uhr müssen wir gehen.",
+    "meaning": "最晚，不迟于"
+  },
+  {
+    "word": "ständig",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Er schaut ständig aufs Handy.",
+    "meaning": "不断地，总是"
     }
 ]

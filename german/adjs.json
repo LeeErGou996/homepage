@@ -341,14 +341,7 @@
         "example": "Liebe Susanne, lieber Hans.",
         "meaning": "亲爱的"
     },
-    {
-        "word": "das Lieblings-",
-        "category": "主题",
-        "subCategory": "偏好",
-        "type": "形容词",
-        "example": "Mein Lieblingsfilm ist „Schwarze Augen“.",
-        "meaning": "最喜欢的"
-    },
+
     {
         "word": "lustig",
         "category": "词性",
@@ -461,14 +454,7 @@
         "example": "Er fährt schnell.",
         "meaning": "快速的"
     },
-    {
-        "word": "schön",
-        "category": "词性",
-        "subCategory": "形容词",
-        "type": "形容词",
-        "example": "Schönen Urlaub! Das ist sehr schön.",
-        "meaning": "美丽的"
-    },
+
     {
         "word": "schwer",
         "category": "词性",
@@ -965,8 +951,8 @@
         "category": "词性",
         "subCategory": "形容词",
         "type": "形容词",
-        "example": "Sie ist sauer auf mich.",
-        "meaning": "生气的"
+        "example": ["Sie ist sauer auf mich.","Die Zitrone schmeckt sauer."],
+        "meaning": "酸的，生气的"
     },
     {
         "word": "schlimm",
@@ -2183,5 +2169,69 @@
     "type": "形容词",
     "example": "Sie mag rockige Musik.",
     "meaning": "带摇滚风格的"
+  },
+  {
+    "word": "salzig",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Die Suppe ist zu salzig.",
+    "meaning": "咸的"
+  },
+  {
+    "word": "scharf",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Das Essen ist mir zu scharf.",
+    "meaning": "辣的；锋利的，尖锐的"
+  },
+  {
+    "word": "schmutzig",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Die Schuhe sind ganz schmutzig.",
+    "meaning": "脏的"
+  },
+  {
+    "word": "schriftlich",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Sie müssen eine schriftliche Bewerbung schicken.",
+    "meaning": "书面的，书写的"
+  },
+  {
+    "word": "sinnvoll",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Das ist eine sinnvolle Lösung.",
+    "meaning": "有意义的，有益的"
+  },
+  {
+    "word": "spannend",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Der Film ist sehr spannend.",
+    "meaning": "紧张刺激的，引人入胜的"
+  },
+  {
+    "word": "spontan",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Sie ist sehr spontan und entscheidet oft plötzlich.",
+    "meaning": "自发的，临时起意的"
+  },
+  {
+    "word": "stressfrei",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Ich wünsche mir einen stressfreien Tag.",
+    "meaning": "没有压力的"
     }
 ]

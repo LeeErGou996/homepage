@@ -1273,8 +1273,8 @@
         "category": "词性",
         "subCategory": "动词",
         "type": "动词",
-        "example": "Ich kann dich nicht sehen. Ich habe diesen Jungen schon einmal gesehen.",
-        "meaning": "看见",
+        "example": ["Ich kann dich nicht sehen.","Ich habe diesen Jungen schon einmal gesehen.","Das sehe ich anders."],
+        "meaning": "看见, 持有观点",
         "perfekt": "hat gesehen"
     },
     {
@@ -3814,5 +3814,113 @@
     "example": "Am Wochenende reitet sie oft auf einem Pferd.",
     "meaning": "骑马",
     "perfekt": "ist geritten"
+  },
+  {
+    "word": "schaukeln",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Die Kinder schaukeln auf dem Spielplatz.",
+    "meaning": "荡秋千，摇晃",
+    "perfekt": "hat geschaukelt"
+  },
+  {
+    "word": "schießen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Er schießt den Ball ins Tor.",
+    "meaning": "射击，射门",
+    "perfekt": "hat geschossen"
+  },
+  {
+    "word": "schimpfen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Die Mutter schimpft mit dem Kind.",
+    "meaning": "责骂，抱怨",
+    "perfekt": "hat geschimpft"
+  },
+  {
+    "word": "senden",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Ich sende dir eine E-Mail.",
+    "meaning": "发送，播送",
+    "perfekt": "hat gesendet"
+  },
+  {
+    "word": "setzen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Bitte setzen Sie sich.",
+    "meaning": "使坐下，放置",
+    "perfekt": "hat gesetzt"
+  },
+  {
+    "word": "sorgen (für)",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Die Eltern sorgen für ihre Kinder.",
+    "meaning": "照顾，关心",
+    "perfekt": "hat gesorgt"
+  },
+  {
+    "word": "sparen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Sie spart jeden Monat Geld.",
+    "meaning": "节省，存钱",
+    "perfekt": "hat gespart"
+  },
+  {
+    "word": "spiegeln (sich)",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Die Berge spiegeln sich im See.",
+    "meaning": "映照，反映",
+    "perfekt": "hat sich gespiegelt"
+  },
+  {
+    "word": "spülen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Nach dem Essen spült er das Geschirr.",
+    "meaning": "冲洗，洗碗",
+    "perfekt": "hat gespült"
+  },
+  {
+    "word": "starten",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Das Flugzeug startet in zehn Minuten.",
+    "meaning": "启动，开始；起飞",
+    "perfekt": "ist gestartet"
+  },
+  {
+    "word": "stinken",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Der Müll stinkt.",
+    "meaning": "发臭",
+    "perfekt": "hat gestunken"
+  },
+  {
+    "word": "strukturieren",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Sie strukturiert den Text in drei Teile.",
+    "meaning": "给……分结构，归类",
+    "perfekt": "hat strukturiert"
   }
 ]
