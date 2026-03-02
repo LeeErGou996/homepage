@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本語学習ページ</title>
+    <style>
+        :root {
+            --primary-color: #1e40af;
+            --primary-hover: #1e3a8a;
+            --bg-color: #f0f0f0;
+            --sidebar-bg: #f9f9f9;
+            --card-bg: #ffffff;
+            --border-color: #ccc;
+            --text-main: #333;
+            --text-muted: #666;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .sidebar {
+            width: 240px;
+            height: 100vh;
+            background-color: var(--sidebar-bg);
+            position: fixed;
+            padding: 20px 0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            z-index: 100;
+        }
+
+        .sidebar h2 {
+            padding: 0 20px;
+            font-size: 20px;
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 0 10px;
+        }
+
+        .nav-btn {
+            background: none;
+            border: none;
+            text-align: left;
+            padding: 12px 15px;
+            cursor: pointer;
+            font-size: 15px;
+            color: var(--primary-color);
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .nav-btn:hover,
+        .nav-btn.active {
+            background-color: rgba(30, 64, 175, 0.1);
+        }
+
+        .content {
+            margin-left: 240px;
+            padding: 30px;
+            width: 100%;
+            min-height: 100vh;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 15px;
+            }
+        }
+
+        .info-box {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+            border: 1px solid var(--border-color);
+        }
+
+        .status-text {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .status-text strong {
+            color: var(--primary-color);
+        }
+
+        .list-container {
+            margin-top: 10px;
+            background: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        .item-card {
+            padding: 12px 16px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .item-card:last-child {
+            border-bottom: none;
+        }
+
+        .item-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 4px 10px;
+            margin-bottom: 4px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        .item-meta {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .item-body {
+            font-size: 14px;
+            color: var(--text-main);
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+
+        .item-sub {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 4px;
+            white-space: pre-wrap;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            font-size: 11px;
+            border-radius: 999px;
+            background: rgba(30, 64, 175, 0.08);
+            color: var(--primary-color);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px 10px;
+            color: var(--text-muted);
+        }
+
+        .error {
+            text-align: center;
+            padding: 40px 10px;
+            color: #b91c1c;
+        }
+
+        .json-raw {
+            margin-top: 6px;
+            font-size: 12px;
+            background: #f3f4f6;
+            border-radius: 4px;
+            padding: 6px 8px;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        /* 文法用：単元ごとの折りたたみ表示 */
+        .unit-toolbar {
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .unit-toolbar button {
+            padding: 4px 10px;
+            font-size: 12px;
+            border-radius: 999px;
+            border: 1px solid var(--border-color);
+            background: #f9fafb;
+            cursor: pointer;
+        }
+
+        .grammar-unit {
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .unit-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 14px;
+            cursor: pointer;
+            background: #f9fafb;
+        }
+
+        .unit-header:hover {
+            background: #eff6ff;
+        }
+
+        .unit-title {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .unit-count {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .unit-toggle {
+            margin-left: 12px;
+            font-size: 14px;
+            color: var(--primary-color);
+        }
+
+        .unit-body {
+            padding: 4px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>日本語学習メニュー</h2>
+        <div class="nav-menu">
+            <button class="nav-btn" data-section="n2-vocab" onclick="loadSection('n2-vocab')">N2語彙</button>
+            <button class="nav-btn" data-section="n2-grammar" onclick="loadSection('n2-grammar')">N2文法</button>
+            <button class="nav-btn" data-section="n1-vocab" onclick="loadSection('n1-vocab')">N1語彙</button>
+            <button class="nav-btn" data-section="n1-grammar" onclick="loadSection('n1-grammar')">N1文法</button>
+            <button class="nav-btn" data-section="reading" onclick="loadSection('reading')">読解</button>
+            <button class="nav-btn" data-section="listening" onclick="loadSection('listening')">聴解</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>日本語学習ページ</h1>
+
+        <div class="info-box">
+            <div class="status-text" id="statusText">
+                今日から 2026年7月5日（JLPT N1）までの残り日数を計算中...
+            </div>
+        </div>
+
+        <div id="mainArea">
+            <div id="loadingState" class="loading" style="display:none;">読み込み中...</div>
+            <div id="errorState" class="error" style="display:none;"></div>
+            <div id="listContainer" class="list-container" style="display:none;"></div>
+        </div>
+    </div>
+
+    <script>
+        const SECTION_CONFIG = {
+            "n2-vocab": {
+                label: "N2語彙",
+                file: null,
+                fileFolder: "n2_vocabulary",
+                indexFile: "index.json",
+                type: "vocab",
+                groupByUnit: true
+            },
+            "n2-grammar": {
+                label: "N2文法",
+                file: null,
+                fileFolder: "n2_grammar",
+                indexFile: "index.json",
+                type: "grammar",
+                groupByUnit: true
+            },
+            "n1-vocab": {
+                label: "N1語彙",
+                file: "n1_vocab.json",
+                type: "vocab"
+            },
+            "n1-grammar": {
+                label: "N1文法",
+                file: "n1_grammar.json",
+                type: "grammar"
+            },
+            "reading": {
+                label: "読解",
+                file: "reading.json",
+                type: "reading"
+            },
+            "listening": {
+                label: "聴解",
+                file: "listening.json",
+                type: "listening"
+            }
+        };
+
+        let currentSectionKey = null;
+
+        function setActiveButton(sectionKey) {
+            document.querySelectorAll(".nav-btn").forEach(btn => {
+                if (btn.getAttribute("data-section") === sectionKey) {
+                    btn.classList.add("active");
+                } else {
+                    btn.classList.remove("active");
+                }
+            });
+        }
+
+        function showStatus(messageHtml) {
+            const status = document.getElementById("statusText");
+            status.innerHTML = messageHtml;
+        }
+
+        // N1 試験（2026-07-05）までの残り日数をリアルタイムで表示
+        (function initCountdown() {
+            const target = new Date("2026-07-05T00:00:00+09:00"); // 日本時間基準
+            const statusEl = document.getElementById("statusText");
+
+            function update() {
+                const now = new Date();
+                const diffMs = target.getTime() - now.getTime();
+
+                // ミリ秒を日数に変換（切り上げ：部分の日も1日としてカウント）
+                const dayMs = 1000 * 60 * 60 * 24;
+                const daysLeft = Math.ceil(diffMs / dayMs);
+
+                if (daysLeft > 0) {
+                    statusEl.innerHTML = `
+                        JLPT N1（2026年7月5日）まで <strong>${daysLeft}</strong> 日。
+                    `;
+                } else if (daysLeft === 0) {
+                    statusEl.innerHTML = `
+                        今日は <strong>JLPT N1（2026年7月5日）</strong> の当日です！
+                    `;
+                } else {
+                    statusEl.innerHTML = `
+                        2026年7月5日の JLPT N1 は終了しました（${Math.abs(daysLeft)} 日前）。
+                    `;
+                }
+            }
+
+            update();
+            // 日が変わったときも自然に更新されるよう、1時間ごとに再計算
+            setInterval(update, 60 * 60 * 1000);
+        })();
+
+        function showLoading(show) {
+            document.getElementById("loadingState").style.display = show ? "block" : "none";
+        }
+
+        function showError(message) {
+            const el = document.getElementById("errorState");
+            el.textContent = message;
+            el.style.display = message ? "block" : "none";
+        }
+
+        function showList(show) {
+            document.getElementById("listContainer").style.display = show ? "block" : "none";
+        }
+
+        function loadSection(sectionKey) {
+            const config = SECTION_CONFIG[sectionKey];
+            if (!config) return;
+
+            currentSectionKey = sectionKey;
+            setActiveButton(sectionKey);
+
+            if (config.fileFolder) {
+                showStatus(
+                    `${config.label}（フォルダ: <strong>${config.fileFolder}</strong>）を読み込み中です。` +
+                    `<br>フォルダ内の JSON をまとめて結合して表示します。`
+                );
+            } else {
+                showStatus(
+                    `${config.label}（ファイル: <strong>${config.file}</strong>）を表示中です。` +
+                    `<br>JSON が存在しない場合は、後でファイルを作成してください。`
+                );
+            }
+            showError("");
+            showList(false);
+            showLoading(true);
+
+            // フォルダ読み込み（複数 JSON を結合）
+            if (config.fileFolder) {
+                loadFromFolder(config);
+                return;
+            }
+
+            // 通常の単一ファイル読み込み
+            fetch(config.file)
+                .then(res => {
+                    if (!res.ok) {
+                        throw new Error(`HTTP ${res.status}`);
+                    }
+                    return res.json();
+                })
+                .then(data => {
+                    showLoading(false);
+                    renderSection(config, data);
+                })
+                .catch(err => {
+                    showLoading(false);
+                    console.error("JSON 読み込みエラー:", err);
+                    showError(`「${config.file}」を読み込めませんでした。ファイルの場所と内容を確認してください。`);
+                });
+        }
+
+        // フォルダ内の JSON を一括読み込み（N2語彙など）
+        function loadFromFolder(config) {
+            const folder = config.fileFolder;
+            const indexFile = config.indexFile || "index.json";
+
+            // 1. index.json から各単元ファイル名のリストを取得
+            fetch(`${folder}/${indexFile}`)
+                .then(res => {
+                    if (!res.ok) {
+                        throw new Error(`index not found: HTTP ${res.status}`);
+                    }
+                    return res.json();
+                })
+                .then(list => {
+                    let files = [];
+                    if (Array.isArray(list)) {
+                        // 文字列配列 or {file: "..."} 配列を想定
+                        files = list.map(entry => {
+                            if (typeof entry === "string") return entry;
+                            if (entry && typeof entry === "object" && entry.file) return entry.file;
+                            return null;
+                        }).filter(Boolean);
+                    }
+                    if (!files.length) {
+                        throw new Error("index.json に有効なファイル名がありません。");
+                    }
+
+                    return Promise.all(
+                        files.map(name =>
+                            fetch(`${folder}/${name}`)
+                                .then(res => {
+                                    if (!res.ok) {
+                                        console.warn(`ファイル読み込み失敗: ${name}`, res.status);
+                                        return [];
+                                    }
+                                    return res.json();
+                                })
+                                .catch(err => {
+                                    console.warn(`ファイル読み込みエラー: ${name}`, err);
+                                    return [];
+                                })
+                        )
+                    );
+                })
+                .then(dataArrays => {
+                    showLoading(false);
+                    const merged = dataArrays
+                        .map(arr => normalizeToArray(arr))
+                        .flat()
+                        .filter(Boolean);
+                    if (!merged.length) {
+                        showError("データが読み込めませんでした。各 JSON を確認してください。");
+                        showList(false);
+                        return;
+                    }
+
+                    const listEl = document.getElementById("listContainer");
+                    listEl.innerHTML = "";
+
+                    // 文法は単元ごとに折りたたみ、それ以外は通常レンダリング
+                    if (config.type === "grammar") {
+                        renderGrammarUnits(config, merged, listEl);
+                    } else {
+                        renderSection(config, merged);
+                    }
+                    showList(true);
+                })
+                .catch(err => {
+                    showLoading(false);
+                    console.error("フォルダ読み込みエラー:", err);
+                    showError(`「${folder}/${indexFile}」を読み込めませんでした。フォルダと index.json を確認してください。`);
+                });
+        }
+
+        function normalizeToArray(data) {
+            if (Array.isArray(data)) return data;
+            if (data && typeof data === "object") {
+                // オブジェクトの場合は value を配列として扱う
+                return Object.keys(data).map(key => {
+                    const value = data[key];
+                    if (value && typeof value === "object") {
+                        return Object.assign({ id: key }, value);
+                    }
+                    return { id: key, value };
+                });
+            }
+            return [];
+        }
+
+        function renderSection(config, rawData) {
+            const listEl = document.getElementById("listContainer");
+            listEl.innerHTML = "";
+
+            const items = normalizeToArray(rawData);
+
+            if (!items.length) {
+                listEl.innerHTML = '<div class="loading">データが見つかりませんでした。</div>';
+                showList(true);
+                return;
+            }
+
+            // 単元ごとの折りたたみ表示が有効な場合
+            if (config.groupByUnit) {
+                renderGrammarUnits(config, items, listEl);
+                showList(true);
+                return;
+            }
+
+            items.forEach((item, index) => {
+                const card = document.createElement("div");
+                card.className = "item-card";
+
+                const title = getItemTitle(config.type, item, index);
+                const main = getItemMain(config.type, item);
+                const sub = getItemSub(config.type, item);
+
+                const metaPieces = [];
+                if (item.level) metaPieces.push(`レベル: ${item.level}`);
+                if (item.type && config.type === "vocab") metaPieces.push(`品詞: ${item.type}`);
+                if (item.lesson) metaPieces.push(`課: ${item.lesson}`);
+
+                const metaHtml = metaPieces.length
+                    ? `<span class="item-meta">${metaPieces.join(" / ")}</span>`
+                    : "";
+
+                card.innerHTML = `
+                    <div class="item-header">
+                        <div class="item-title">${escapeHtml(title)}</div>
+                        ${metaHtml}
+                    </div>
+                    ${main ? `<div class="item-body">${escapeHtml(main)}</div>` : ""}
+                    ${sub ? `<div class="item-sub">${escapeHtml(sub)}</div>` : ""}
+                `;
+
+                // JSON 構造が想定外のとき用のデバッグ表示
+                if (!main && !sub) {
+                    const raw = document.createElement("div");
+                    raw.className = "json-raw";
+                    raw.textContent = JSON.stringify(item, null, 2);
+                    card.appendChild(raw);
+                }
+
+                // 聴解で audioUrl があれば簡単なプレーヤーを追加
+                if (config.type === "listening" && item.audioUrl) {
+                    const audio = document.createElement("audio");
+                    audio.controls = true;
+                    audio.style.marginTop = "6px";
+                    audio.src = item.audioUrl;
+                    card.appendChild(audio);
+                }
+
+                listEl.appendChild(card);
+            });
+
+            showList(true);
+        }
+
+        function renderGrammarUnits(config, items, listEl) {
+            // label / unit などでグループ化（なければ「その他」）
+            const groups = {};
+            items.forEach((item, index) => {
+                const key = item.label || item.unit || "その他";
+                if (!groups[key]) groups[key] = [];
+                groups[key].push({ item, index });
+            });
+
+            const unitNames = Object.keys(groups);
+
+            // 単元が複数あるときだけツールバーを表示
+            if (unitNames.length > 0) {
+                const toolbar = document.createElement("div");
+                toolbar.className = "unit-toolbar";
+                const toggleAllBtn = document.createElement("button");
+                toggleAllBtn.textContent = "すべて展開";
+                toggleAllBtn.addEventListener("click", () => {
+                    const bodies = listEl.querySelectorAll(".unit-body");
+                    const anyClosed = Array.from(bodies).some(
+                        b => b.style.display === "none" || !b.style.display
+                    );
+                    const expand = anyClosed;
+                    bodies.forEach(b => {
+                        b.style.display = expand ? "block" : "none";
+                    });
+                    listEl.querySelectorAll(".unit-toggle").forEach(t => {
+                        t.textContent = expand ? "－" : "＋";
+                    });
+                    toggleAllBtn.textContent = expand ? "すべて折りたたむ" : "すべて展開";
+                });
+                toolbar.appendChild(toggleAllBtn);
+                listEl.appendChild(toolbar);
+            }
+
+            unitNames.forEach(unitName => {
+                const unitWrapper = document.createElement("div");
+                unitWrapper.className = "grammar-unit";
+
+                const header = document.createElement("div");
+                header.className = "unit-header";
+
+                const titleSpan = document.createElement("span");
+                titleSpan.className = "unit-title";
+                titleSpan.textContent = unitName;
+
+                const countSpan = document.createElement("span");
+                countSpan.className = "unit-count";
+                countSpan.textContent = `${groups[unitName].length}項目`;
+
+                const rightBox = document.createElement("span");
+                rightBox.style.display = "flex";
+                rightBox.style.alignItems = "center";
+                rightBox.style.gap = "6px";
+
+                const toggleSpan = document.createElement("span");
+                toggleSpan.className = "unit-toggle";
+                toggleSpan.textContent = "＋"; // 初期状態は折りたたみ
+
+                rightBox.appendChild(countSpan);
+                rightBox.appendChild(toggleSpan);
+
+                header.appendChild(titleSpan);
+                header.appendChild(rightBox);
+
+                const body = document.createElement("div");
+                body.className = "unit-body";
+                body.style.display = "none"; // デフォルトで折りたたみ
+
+                header.addEventListener("click", () => {
+                    const closed = body.style.display === "none";
+                    body.style.display = closed ? "block" : "none";
+                    toggleSpan.textContent = closed ? "－" : "＋";
+                });
+
+                // 単元内の各文法項目カード
+                groups[unitName].forEach(({ item, index }) => {
+                    const card = document.createElement("div");
+                    card.className = "item-card";
+
+                    const title = getItemTitle(config.type, item, index);
+                    const main = getItemMain(config.type, item);
+                    const sub = getItemSub(config.type, item);
+
+                    const metaPieces = [];
+                    if (item.level) metaPieces.push(`レベル: ${stripCitation(item.level)}`);
+                    if (item.type && config.type === "vocab") metaPieces.push(`品詞: ${stripCitation(item.type)}`);
+                    if (item.lesson) metaPieces.push(`課: ${stripCitation(item.lesson)}`);
+
+                    const metaHtml = metaPieces.length
+                        ? `<span class="item-meta">${metaPieces.join(" / ")}</span>`
+                        : "";
+
+                    card.innerHTML = `
+                        <div class="item-header">
+                            <div class="item-title">${escapeHtml(title)}</div>
+                            ${metaHtml}
+                        </div>
+                        ${main ? `<div class="item-body">${escapeHtml(main)}</div>` : ""}
+                        ${sub ? `<div class="item-sub">${escapeHtml(sub)}</div>` : ""}
+                    `;
+
+                    if (!main && !sub) {
+                        const raw = document.createElement("div");
+                        raw.className = "json-raw";
+                        raw.textContent = JSON.stringify(item, null, 2);
+                        card.appendChild(raw);
+                    }
+
+                    body.appendChild(card);
+                });
+
+                unitWrapper.appendChild(header);
+                unitWrapper.appendChild(body);
+                listEl.appendChild(unitWrapper);
+            });
+        }
+
+        function stripCitation(text) {
+            if (text == null) return "";
+            return String(text).replace(/\s*\[cite:[^\]]*]/g, "");
+        }
+
+        function getItemTitle(type, item, index) {
+            // 共通で title 優先
+            if (item.title) return item.title;
+
+            if (type === "vocab") {
+                // 新スタイル: pattern を見出しとして使う
+                if (item.pattern) return item.pattern;
+                // 旧スタイル: word / reading
+                if (item.word && item.reading) return `${item.word}（${item.reading}）`;
+                if (item.word) return item.word;
+            }
+
+            if (type === "grammar") {
+                if (item.pattern) return item.pattern;
+            }
+            if (type === "reading" || type === "listening") {
+                if (item.topic) return item.topic;
+            }
+            return `${index + 1}`;
+        }
+
+        function getItemMain(type, item) {
+            if (type === "vocab") {
+                // N2 語彙の新スタイル: 説明＋意味をまとめて表示
+                const parts = [];
+                if (item.explanation) parts.push(stripCitation(item.explanation));
+                if (item.meaning) parts.push(stripCitation(item.meaning));
+
+                // 旧スタイルのフォールバック
+                if (!parts.length) {
+                    if (item.meaning) parts.push(stripCitation(item.meaning));
+                    else if (item.translation) parts.push(stripCitation(item.translation));
+                }
+                return parts.join("\n");
+            } else if (type === "grammar") {
+                const parts = [];
+                if (item.explanation) parts.push(stripCitation(item.explanation));
+                if (item.meaning) parts.push(stripCitation(item.meaning));
+                return parts.join("\n");
+            } else if (type === "reading" || type === "listening") {
+                if (item.text) return stripCitation(item.text);
+                if (item.passage) return stripCitation(item.passage);
+            }
+            return "";
+        }
+
+        function getItemSub(type, item) {
+            if (type === "vocab") {
+                const parts = [];
+
+                // 新结构: examples 配列
+                if (Array.isArray(item.examples) && item.examples.length > 0) {
+                    const lines = item.examples.map(ex => {
+                        const s = stripCitation(ex.sentence || "");
+                        const t = stripCitation(ex.translation || "");
+                        if (s && t) return `${s}\n  → ${t}`;
+                        if (s) return s;
+                        if (t) return t;
+                        return "";
+                    }).filter(Boolean);
+                    if (lines.length) {
+                        parts.push("例文:\n" + lines.join("\n"));
+                    }
+                }
+
+                // 兼容旧结构: example / note
+                if (item.example) {
+                    parts.push(`例文: ${stripCitation(item.example)}`);
+                }
+                if (item.note) {
+                    parts.push(`メモ: ${stripCitation(item.note)}`);
+                }
+
+                // 相关词: related_items 配列
+                if (Array.isArray(item.related_items) && item.related_items.length > 0) {
+                    const relLines = item.related_items.map(r => {
+                        const w = stripCitation(r.word || "");
+                        const e = stripCitation(r.explanation || "");
+                        const m = stripCitation(r.meaning || "");
+                        const detail = [e, m].filter(Boolean).join(" / ");
+                        return detail ? `${w}: ${detail}` : w;
+                    }).filter(Boolean);
+                    if (relLines.length) {
+                        parts.push("関連語:\n" + relLines.join("\n"));
+                    }
+                }
+
+                return parts.join("\n\n");
+            } else if (type === "grammar") {
+                const parts = [];
+
+                // 新结构: examples 配列
+                if (Array.isArray(item.examples) && item.examples.length > 0) {
+                    const lines = item.examples.map(ex => {
+                        const s = stripCitation(ex.sentence || "");
+                        const t = stripCitation(ex.translation || "");
+                        if (s && t) return `${s}\n  → ${t}`;
+                        if (s) return s;
+                        if (t) return t;
+                        return "";
+                    }).filter(Boolean);
+                    if (lines.length) {
+                        parts.push("例文:\n" + lines.join("\n"));
+                    }
+                }
+
+                // 兼容旧结构: example / exampleTranslation
+                if (item.example) {
+                    parts.push(`例文: ${stripCitation(item.example)}`);
+                }
+                if (item.exampleTranslation) {
+                    parts.push(`訳: ${stripCitation(item.exampleTranslation)}`);
+                }
+
+                // 相关词: related_items 配列
+                if (Array.isArray(item.related_items) && item.related_items.length > 0) {
+                    const relLines = item.related_items.map(r => {
+                        const w = stripCitation(r.word || "");
+                        const e = stripCitation(r.explanation || "");
+                        const m = stripCitation(r.meaning || "");
+                        const detail = [e, m].filter(Boolean).join(" / ");
+                        return detail ? `${w}: ${detail}` : w;
+                    }).filter(Boolean);
+                    if (relLines.length) {
+                        parts.push("関連語:\n" + relLines.join("\n"));
+                    }
+                }
+
+                return parts.join("\n\n");
+            } else if (type === "reading" || type === "listening") {
+                const parts = [];
+                if (item.translation) parts.push(`訳: ${stripCitation(item.translation)}`);
+                if (item.question) parts.push(`質問: ${stripCitation(item.question)}`);
+                return parts.join("\n");
+            }
+            return "";
+        }
+
+        function escapeHtml(str) {
+            if (str == null) return "";
+            return String(str)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#39;");
+        }
+    </script>
+</body>
+</html>
+
