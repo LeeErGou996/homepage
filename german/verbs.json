@@ -2060,15 +2060,7 @@
         "meaning": "希望",
         "perfekt": "hat gehofft"
     },
-    {
-        "word": "sich langweilen",
-        "category": "词性",
-        "subCategory": "动词",
-        "type": "动词",
-        "example": "Ich langweile mich in der Vorlesung.",
-        "meaning": "感到无聊",
-        "perfekt": "hat sich gelangweilt"
-    },
+
     {
         "word": "sich austauschen",
         "category": "词性",
@@ -3922,5 +3914,230 @@
     "example": "Sie strukturiert den Text in drei Teile.",
     "meaning": "给……分结构，归类",
     "perfekt": "hat strukturiert"
+  },
+  {
+    "word": "tanken",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Ich muss noch schnell tanken.",
+    "meaning": "加油（给车加油）",
+    "perfekt": "hat getankt"
+  },
+  {
+    "word": "tauchen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Im Urlaub wollen wir im Meer tauchen.",
+    "meaning": "潜水，潜入水中",
+    "perfekt": "ist getaucht"
+  },
+  {
+    "word": "teilen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Wir teilen uns die Kosten.",
+    "meaning": "分享，分担，分开",
+    "perfekt": "hat geteilt"
+  },
+  {
+    "word": "träumen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Ich träume oft von der Reise nach Europa.",
+    "meaning": "做梦，幻想",
+    "perfekt": "hat geträumt"
+  },
+  {
+    "word": "überlegen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Ich muss mir die Sache noch einmal überlegen.",
+    "meaning": "考虑，思考",
+    "perfekt": "hat überlegt"
+  },
+  {
+    "word": "überraschen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Wir wollen sie mit einer Party überraschen.",
+    "meaning": "使惊喜，使惊讶",
+    "perfekt": "hat überrascht"
+  },
+  {
+    "word": "übersetzen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Kannst du diesen Text ins Deutsche übersetzen?",
+    "meaning": "翻译",
+    "perfekt": "hat übersetzt"
+  },
+  {
+    "word": "unternehmen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Am Wochenende unternehmen wir einen Ausflug.",
+    "meaning": "做，进行（活动）",
+    "perfekt": "hat unternommen"
+  },
+  {
+    "word": "verbringen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Wir verbringen den Sommer am Meer.",
+    "meaning": "度过（时间）",
+    "perfekt": "hat verbracht"
+  },
+  {
+    "word": "vergehen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Die Zeit vergeht so schnell.",
+    "meaning": "过去，流逝",
+    "perfekt": "ist vergangen"
+  },
+  {
+    "word": "sich verirren",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Wir haben uns im Wald verirrt.",
+    "meaning": "迷路",
+    "perfekt": "hat sich verirrt"
+  },
+  {
+    "word": "verletzen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Er hat sich beim Sport verletzt.",
+    "meaning": "受伤；伤害",
+    "perfekt": "hat verletzt"
+  },
+  {
+    "word": "verlieren",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Ich habe meinen Schlüssel verloren.",
+    "meaning": "丢失；输掉",
+    "perfekt": "hat verloren"
+  },
+  {
+    "word": "verplanen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Ich habe das Wochenende schon komplett verplant.",
+    "meaning": "把……安排满，计划完",
+    "perfekt": "hat verplant"
+  },
+  {
+    "word": "verreisen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Er verreist nächste Woche nach Spanien.",
+    "meaning": "出远门，旅行",
+    "perfekt": "ist verreist"
+  },
+  {
+    "word": "verschieben",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Wir müssen den Termin verschieben.",
+    "meaning": "推迟，延期",
+    "perfekt": "hat verschoben"
+  },
+  {
+    "word": "verschlafen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Heute Morgen habe ich verschlafen.",
+    "meaning": "睡过头",
+    "perfekt": "hat verschlafen"
+  },
+  {
+    "word": "versprechen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Er hat mir versprochen, pünktlich zu sein.",
+    "meaning": "承诺",
+    "perfekt": "hat versprochen"
+  },
+  {
+    "word": "verstärken",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Wir wollen das Team verstärken.",
+    "meaning": "加强，增强",
+    "perfekt": "hat verstärkt"
+  },
+  {
+    "word": "verzichten (auf)",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Ich verzichte auf den Nachtisch.",
+    "meaning": "放弃",
+    "perfekt": "hat verzichtet"
+  },
+  {
+    "word": "zurückgeben",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Ich muss das Buch morgen zurückgeben.",
+    "meaning": "归还，退回",
+    "perfekt": "hat zurückgegeben"
+  },
+  {
+    "word": "zurücklaufen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Wir sind den gleichen Weg zurückgelaufen.",
+    "meaning": "跑回去，折返",
+    "perfekt": "ist zurückgelaufen"
+  },
+  {
+    "word": "zusammenbringen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Das Projekt bringt viele Menschen zusammen.",
+    "meaning": "把……聚在一起",
+    "perfekt": "hat zusammengebracht"
+  },
+  {
+    "word": "zusammenfassen",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Fassen Sie den Text kurz zusammen.",
+    "meaning": "总结，概括",
+    "perfekt": "hat zusammengefasst"
+  },
+  {
+    "word": "zusammenleben",
+    "category": "词性",
+    "subCategory": "动词",
+    "type": "动词",
+    "example": "Wir leben seit zwei Jahren zusammen.",
+    "meaning": "共同生活，同居",
+    "perfekt": "hat zusammengelebt"
   }
 ]

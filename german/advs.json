@@ -952,5 +952,85 @@
     "type": "副词",
     "example": "Er schaut ständig aufs Handy.",
     "meaning": "不断地，总是"
+  },
+  {
+    "word": "stundenweise",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Sie arbeitet stundenweise im Café.",
+    "meaning": "按小时地，每小时地"
+  },
+  {
+    "word": "tagsüber",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Tagsüber arbeite ich, abends lerne ich Deutsch.",
+    "meaning": "在白天"
+  },
+  {
+    "word": "trotzdem",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Es regnet, aber wir gehen trotzdem spazieren.",
+    "meaning": "尽管如此，仍然"
+  },
+  {
+    "word": "übermorgen",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Übermorgen habe ich einen Termin beim Arzt.",
+    "meaning": "后天"
+  },
+  {
+    "word": "übrigens",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Übrigens, morgen habe ich keine Zeit.",
+    "meaning": "顺便说一下，对了"
+  },
+  {
+    "word": "unter anderem",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Wir haben unter anderem über die Prüfung gesprochen.",
+    "meaning": "其中包括，除别的之外"
+  },
+  {
+    "word": "vorn",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Vorn im Bus ist noch ein Platz frei.",
+    "meaning": "在前面"
+  },
+  {
+    "word": "vor allem",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Ich esse gern Obst, vor allem Äpfel.",
+    "meaning": "尤其，特别是"
+  },
+  {
+    "word": "voneinander",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Wir können viel voneinander lernen.",
+    "meaning": "互相，从彼此身上"
+  },
+  {
+    "word": "vorwärts",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Bitte gehen Sie ein Stück vorwärts.",
+    "meaning": "向前"
     }
 ]

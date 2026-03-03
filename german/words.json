@@ -862,5 +862,93 @@
     "type": "副词",
     "example": "Das Konzert wird live im Fernsehen übertragen.",
     "meaning": "现场直播地，现场地"
-    }
+    },
+  {
+    "word": "tausend Dank",
+    "category": "词性",
+    "subCategory": "短语",
+    "type": "短语",
+    "example": "Tausend Dank für deine Hilfe!",
+    "meaning": "万分感谢！"
+  },
+  {
+    "word": "usw.",
+    "category": "词性",
+    "subCategory": "缩写",
+    "type": "缩写",
+    "example": "Bringen Sie Obst, Getränke, Kuchen usw. mit.",
+    "meaning": "等等（und so weiter 的缩写）"
+  },
+  {
+    "word": "wofür",
+    "category": "词性",
+    "subCategory": "疑问词",
+    "type": "疑问词",
+    "example": "Wofür interessierst du dich?",
+    "meaning": "为了什么，对什么"
+  },
+  {
+    "word": "womit",
+    "category": "词性",
+    "subCategory": "疑问词",
+    "type": "疑问词",
+    "example": "Womit fängst du an?",
+    "meaning": "用什么，拿什么"
+  },
+  {
+    "word": "worauf",
+    "category": "词性",
+    "subCategory": "疑问词",
+    "type": "疑问词",
+    "example": "Worauf wartest du?",
+    "meaning": "在等什么，在……之上"
+  },
+  {
+    "word": "worüber",
+    "category": "词性",
+    "subCategory": "疑问词",
+    "type": "疑问词",
+    "example": "Worüber sprecht ihr?",
+    "meaning": "在谈论什么"
+  },
+  {
+    "word": "worum",
+    "category": "词性",
+    "subCategory": "疑问词",
+    "type": "疑问词",
+    "example": "Worum geht es in dem Film?",
+    "meaning": "是关于什么"
+  },
+  {
+    "word": "wovon",
+    "category": "词性",
+    "subCategory": "疑问词",
+    "type": "疑问词",
+    "example": "Wovon träumst du?",
+    "meaning": "关于什么，靠什么"
+  },
+  {
+    "word": "zum Beispiel",
+    "category": "词性",
+    "subCategory": "短语",
+    "type": "短语",
+    "example": "Viele Leute treiben Sport, zum Beispiel joggen.",
+    "meaning": "例如，比如"
+  },
+  {
+    "word": "zum Teil",
+    "category": "词性",
+    "subCategory": "短语",
+    "type": "短语",
+    "example": "Zum Teil verstehe ich den Text schon.",
+    "meaning": "部分地，在某种程度上"
+  },
+  {
+    "word": "zumindest",
+    "category": "词性",
+    "subCategory": "副词",
+    "type": "副词",
+    "example": "Ich komme zumindest zur Pause.",
+    "meaning": "至少"
+  }
 ]

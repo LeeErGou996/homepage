@@ -2233,5 +2233,165 @@
     "type": "形容词",
     "example": "Ich wünsche mir einen stressfreien Tag.",
     "meaning": "没有压力的"
+  },
+  {
+    "word": "super",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Das Essen schmeckt super.",
+    "meaning": "棒极了，非常好（口语）"
+  },
+  {
+    "word": "sympathisch",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Die neue Kollegin ist sehr sympathisch.",
+    "meaning": "讨人喜欢的，有好感的"
+  },
+  {
+    "word": "tief",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Der See ist hier sehr tief.",
+    "meaning": "深的"
+  },
+  {
+    "word": "treu",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Der Hund ist seinem Besitzer sehr treu.",
+    "meaning": "忠诚的"
+  },
+  {
+    "word": "trocken",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Nach dem Regen sind die Straßen wieder trocken.",
+    "meaning": "干的，干燥的"
+  },
+  {
+    "word": "umweltfreundlich",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Mit dem Rad zu fahren ist sehr umweltfreundlich.",
+    "meaning": "环保的，对环境友好的"
+  },
+  {
+    "word": "unendlich",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Der Himmel scheint unendlich groß zu sein.",
+    "meaning": "无限的，无穷的"
+  },
+  {
+    "word": "ungeduldig",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Das Kind ist ungeduldig und will sofort los.",
+    "meaning": "不耐烦的，急躁的"
+  },
+  {
+    "word": "unglaublich",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Das Konzert war unglaublich gut.",
+    "meaning": "难以置信的，非常的"
+  },
+  {
+    "word": "uninteressant",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Das Thema finde ich eher uninteressant.",
+    "meaning": "无趣的，不有趣的"
+  },
+  {
+    "word": "unordentlich",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Sein Zimmer ist immer unordentlich.",
+    "meaning": "不整洁的，乱的"
+  },
+  {
+    "word": "unpraktisch",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Die Tasche ist schön, aber sehr unpraktisch.",
+    "meaning": "不实用的"
+  },
+  {
+    "word": "unsympathisch",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Die Figur im Film wirkt unsympathisch.",
+    "meaning": "令人反感的，不招人喜欢的"
+  },
+  {
+    "word": "unterschiedlich",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Die Meinungen sind sehr unterschiedlich.",
+    "meaning": "不同的，多样的"
+  },
+  {
+    "word": "unwichtig",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Das ist im Moment unwichtig.",
+    "meaning": "不重要的"
+  },
+  {
+    "word": "verrückt",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Die Idee klingt verrückt, aber interessant.",
+    "meaning": "疯狂的，古怪的"
+  },
+  {
+    "word": "voll",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Der Zug ist heute sehr voll.",
+    "meaning": "满的，挤满的"
+  },
+  {
+    "word": "wahnsinnig",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Das Konzert war wahnsinnig gut.",
+    "meaning": "非常，极其；疯狂的（口语）"
+  },
+  {
+    "word": "wild",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Die Kinder spielen wild im Garten.",
+    "meaning": "野的，疯狂的"
+  },
+  {
+    "word": "wertvoll",
+    "category": "词性",
+    "subCategory": "形容词",
+    "type": "形容词",
+    "example": "Das ist ein sehr wertvolles Bild.",
+    "meaning": "贵重的，有价值的"
     }
 ]
