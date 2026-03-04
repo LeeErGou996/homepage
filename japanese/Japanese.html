@@ -596,7 +596,8 @@
             const groups = {};
             items.forEach((item, index) => {
                 const rawLabel = item.label || item.unit || "その他";
-                const baseLabel = String(rawLabel).split("-")[0]; // 「-」以降は練習種別など
+                // 「-」以降は練習種別など。前後の余分な空白は無視してグルーピング
+                const baseLabel = String(rawLabel).split("-")[0].trim();
                 if (!groups[baseLabel]) groups[baseLabel] = [];
                 groups[baseLabel].push({ item, index });
             });
