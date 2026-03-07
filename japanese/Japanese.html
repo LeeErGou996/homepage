@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +26,9 @@
             display: flex;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: var(--primary-color);
         }
 
@@ -104,7 +107,7 @@
             border-radius: 8px;
             padding: 16px 20px;
             margin-bottom: 16px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
             border: 1px solid var(--border-color);
         }
 
@@ -252,13 +255,280 @@
         .unit-body {
             padding: 4px 10px 10px;
         }
+
+        /* クイズ用CSS */
+        .quiz-setup {
+            padding: 20px;
+            background: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-top: 10px;
+        }
+
+        .quiz-setup h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 15px;
+            background: white;
+        }
+
+        .btn-start {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+        }
+
+        .btn-start:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .quiz-container {
+            background: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            padding: 24px;
+            margin-top: 10px;
+            min-height: 300px;
+        }
+
+        .quiz-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .quiz-progress {
+            font-size: 14px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .quiz-question {
+            font-size: 28px;
+            text-align: center;
+            margin: 30px 0;
+            font-weight: bold;
+            color: var(--text-main);
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .quiz-option {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .quiz-option:hover:not(:disabled) {
+            background: #edf2f7;
+            border-color: #cbd5e0;
+        }
+
+        .quiz-option.correct {
+            background: #c6f6d5;
+            border-color: #48bb78;
+            color: #22543d;
+        }
+
+        .quiz-option.wrong {
+            background: #fed7d7;
+            border-color: #f56565;
+            color: #742a2a;
+        }
+
+        .quiz-option:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        .quiz-input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .quiz-input {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 15px;
+            font-size: 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .quiz-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .quiz-submit-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+            flex: 1;
+        }
+
+        .quiz-submit-btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .quiz-skip-btn {
+            background-color: white;
+            color: var(--text-muted);
+            border: 2px solid var(--border-color);
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+            flex: 1;
+        }
+
+        .quiz-skip-btn:hover {
+            background-color: #f1f5f9;
+        }
+
+        .quiz-input-actions {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .quiz-feedback {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+            background: #f1f5f9;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .quiz-next-btn {
+            background-color: var(--text-main);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: none;
+            float: right;
+        }
+
+        .quiz-next-btn:hover {
+            background-color: #555;
+        }
+
+        .quiz-end-btn {
+            background-color: white;
+            color: #e53e3e;
+            border: 1px solid #fc8181;
+            padding: 6px 14px;
+            font-size: 13px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .quiz-end-btn:hover {
+            background-color: #fff5f5;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .quiz-result {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .quiz-result h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .quiz-result .score {
+            font-size: 48px;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 20px 0;
+        }
+
+        .btn-restart {
+            background: white;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-restart:hover {
+            background: var(--primary-color);
+            color: white;
+        }
     </style>
 </head>
+
 <body>
     <div class="sidebar">
         <h2>日本語学習メニュー</h2>
         <div class="nav-menu">
             <button class="nav-btn" data-section="n2-vocab" onclick="loadSection('n2-vocab')">N2語彙</button>
+            <button class="nav-btn" data-section="n2-vocab-quiz" onclick="loadSection('n2-vocab-quiz')">N2語彙クイズ</button>
             <button class="nav-btn" data-section="n2-grammar" onclick="loadSection('n2-grammar')">N2文法</button>
             <button class="nav-btn" data-section="n1-vocab" onclick="loadSection('n1-vocab')">N1語彙</button>
             <button class="nav-btn" data-section="n1-grammar" onclick="loadSection('n1-grammar')">N1文法</button>
@@ -292,6 +562,13 @@
                 indexFile: "index.json",
                 type: "vocab",
                 groupByUnit: true
+            },
+            "n2-vocab-quiz": {
+                label: "N2語彙クイズ",
+                file: null,
+                fileFolder: "n2_vocabulary",
+                indexFile: "index.json",
+                type: "quiz"
             },
             "n2-grammar": {
                 label: "N2文法",
@@ -493,9 +770,11 @@
                     const listEl = document.getElementById("listContainer");
                     listEl.innerHTML = "";
 
-                    // 文法は単元ごとに折りたたみ、それ以外は通常レンダリング
+                    // 文法は単元ごとに折りたたみ、クイズはクイズUIを描画、それ以外は通常レンダリング
                     if (config.type === "grammar") {
                         renderGrammarUnits(config, merged, listEl);
+                    } else if (config.type === "quiz") {
+                        renderQuizSetup(merged, listEl);
                     } else {
                         renderSection(config, merged);
                     }
@@ -592,7 +871,7 @@
         }
 
         function renderGrammarUnits(config, items, listEl) {
-            // 基本の単元名（例: 「第一単元」「第一単元-基础练习」→「第一単元」）
+            // 基本の単元名（例: 「第一単元」「第一単元-基礎練習」→「第一単元」）
             const groups = {};
             items.forEach((item, index) => {
                 const rawLabel = item.label || item.unit || "その他";
@@ -940,7 +1219,410 @@
                 .replace(/"/g, "&quot;")
                 .replace(/'/g, "&#39;");
         }
+
+        // --- クイズ機能 ---
+        let quizState = {
+            items: [],
+            currentIndex: 0,
+            score: 0,
+            mode: "ja-zh", // "ja-zh" (日→中) or "zh-ja" (中→日)
+            options: [],
+            wrongItems: []
+        };
+
+        function renderQuizSetup(items, listEl) {
+            // 単元の一覧を抽出
+            const units = Array.from(new Set(items.map(item => {
+                let label = item.label || item.unit || "その他";
+                return String(label).split("-")[0].trim();
+            })));
+
+            // クイズ開始用のUIを作成
+            listEl.innerHTML = `
+                <div class="quiz-setup">
+                    <h3>N2語彙クイズ設定</h3>
+                    <div class="form-group">
+                        <label>学習ユニット選択:</label>
+                        <select id="quizUnitSelect">
+                            <option value="all">すべてのユニット</option>
+                            ${units.map(u => `<option value="${escapeHtml(u)}">${escapeHtml(u)}</option>`).join("")}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>出題形式:</label>
+                        <select id="quizModeSelect">
+                            <option value="ja-zh">語彙選択（日本語 → 中国語）</option>
+                            <option value="zh-ja">語彙選択（中国語 → 日本語）</option>
+                            <option value="spell-zh-ja">綴り入力（中国語 → 日本語）</option>
+                        </select>
+                    </div>
+                    <button class="btn-start" id="btnStartQuiz">クイズを始める</button>
+                </div>
+            `;
+
+            // 設定用データ保持（イベントリスナーのため）
+            window.quizRawItems = items;
+
+            document.getElementById("btnStartQuiz").addEventListener("click", () => {
+                const selectedUnit = document.getElementById("quizUnitSelect").value;
+                const selectedMode = document.getElementById("quizModeSelect").value;
+
+                let targetItems = items;
+                if (selectedUnit !== "all") {
+                    targetItems = items.filter(item => {
+                        let label = item.label || item.unit || "その他";
+                        return String(label).split("-")[0].trim() === selectedUnit;
+                    });
+                }
+
+                // 意味やパターンがないデータは除外する
+                targetItems = targetItems.filter(i => i.pattern && i.meaning);
+
+                if (targetItems.length < 3) {
+                    alert("このユニットにはクイズを行うための十分な単語データ（最低3つ）がありません。");
+                    return;
+                }
+
+                startQuiz(targetItems, selectedMode, listEl);
+            });
+        }
+
+        function shuffleArray(array) {
+            const newArr = [...array];
+            for (let i = newArr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+            }
+            return newArr;
+        }
+
+        function startQuiz(items, mode, listEl) {
+            // シャッフルして準備
+            quizState.items = shuffleArray(items);
+            quizState.currentIndex = 0;
+            quizState.score = 0;
+            quizState.wrongItems = [];
+            quizState.mode = mode;
+
+            renderQuizQuestion(listEl);
+        }
+
+        function renderQuizQuestion(listEl) {
+            if (quizState.currentIndex >= quizState.items.length) {
+                renderQuizResult(listEl);
+                return;
+            }
+
+            const currentItem = quizState.items[quizState.currentIndex];
+            const allItems = quizState.items;
+
+            // 選択肢を生成 (正解1 + 不正解2) - 選択モードのみ
+            if (quizState.mode !== "spell-zh-ja") {
+                const options = [currentItem];
+                const distractors = allItems.filter(i => i !== currentItem);
+                const shuffledDistractors = shuffleArray(distractors);
+                options.push(shuffledDistractors[0], shuffledDistractors[1]);
+
+                quizState.options = shuffleArray(options);
+            }
+
+            // 問題と選択肢のテキストを決定
+            let questionText = "";
+            let getOptionText = null;
+
+            if (quizState.mode === "ja-zh") {
+                questionText = currentItem.pattern;
+                // 読みがなをヒントとして追加する場合
+                // if(currentItem.explanation && currentItem.explanation.split(" ")[0]) {
+                //    questionText += ` (${currentItem.explanation.split(" ")[0]})`;
+                // }
+                getOptionText = (item) => stripCitation(item.meaning);
+            } else if (quizState.mode === "zh-ja" || quizState.mode === "spell-zh-ja") {
+                questionText = stripCitation(currentItem.meaning);
+                getOptionText = (item) => {
+                    let text = item.pattern;
+                    let reading = (item.explanation || "").split(" ")[0];
+                    if (reading && text !== reading && !reading.includes("⓪") && !reading.includes("①")) {
+                        text += ` (${reading})`;
+                    }
+                    return text;
+                };
+            }
+
+            let interactiveHtml = "";
+            if (quizState.mode === "spell-zh-ja") {
+                interactiveHtml = `
+                    <div class="quiz-input-container">
+                        <input type="text" id="quizSpellInput" class="quiz-input" placeholder="日本語を入力..." autocomplete="off">
+                        <div class="quiz-input-actions">
+                            <button id="quizSpellSubmit" class="quiz-submit-btn">決定</button>
+                            <button id="quizSpellSkip" class="quiz-skip-btn">分からない</button>
+                        </div>
+                    </div>
+                `;
+            } else {
+                interactiveHtml = `
+                    <div class="quiz-options" id="quizOptions">
+                        ${quizState.options.map((opt, i) => `
+                            <button class="quiz-option" data-idx="${i}">${escapeHtml(getOptionText(opt))}</button>
+                        `).join("")}
+                    </div>
+                `;
+            }
+
+            listEl.innerHTML = `
+                <div class="quiz-container">
+                    <div class="quiz-header">
+                        <span class="quiz-progress">問題 ${quizState.currentIndex + 1} / ${quizState.items.length}</span>
+                        <div>
+                            <span class="quiz-score" style="margin-right: 15px;">スコア: ${quizState.score}</span>
+                            <button id="quizEndEarlyBtn" class="quiz-end-btn">終了して結果を見る</button>
+                        </div>
+                    </div>
+                    <div class="quiz-question">${escapeHtml(questionText)}</div>
+                    ${interactiveHtml}
+                    <div id="quizFeedback" class="quiz-feedback"></div>
+                    <button id="quizNextBtn" class="quiz-next-btn">次の問題へ ➔</button>
+                    <div class="clearfix"></div>
+                </div>
+            `;
+
+            // 終了ボタン
+            document.getElementById("quizEndEarlyBtn").addEventListener("click", () => {
+                renderQuizResult(listEl, true);
+            });
+
+            // イベントリスナーの追加
+            if (quizState.mode === "spell-zh-ja") {
+                const submitBtn = document.getElementById("quizSpellSubmit");
+                const skipBtn = document.getElementById("quizSpellSkip");
+                const inputEl = document.getElementById("quizSpellInput");
+
+                inputEl.focus();
+
+                const checkSpellAnswer = (isSkip = false) => {
+                    if (inputEl.disabled) return;
+                    const answer = isSkip ? "" : inputEl.value.trim();
+                    if (!isSkip && !answer) return;
+                    handleQuizSpellAnswer(answer, inputEl, submitBtn, skipBtn, isSkip);
+                };
+
+                submitBtn.addEventListener("click", () => checkSpellAnswer(false));
+                skipBtn.addEventListener("click", () => checkSpellAnswer(true));
+                inputEl.addEventListener("keypress", (e) => {
+                    if (e.key === "Enter") checkSpellAnswer(false);
+                });
+            } else {
+                const optionBtns = document.querySelectorAll(".quiz-option");
+                optionBtns.forEach(btn => {
+                    btn.addEventListener("click", function () {
+                        handleQuizAnswer(parseInt(this.getAttribute("data-idx")), this, optionBtns);
+                    });
+                });
+            }
+
+            document.getElementById("quizNextBtn").addEventListener("click", () => {
+                quizState.currentIndex++;
+                renderQuizQuestion(listEl);
+            });
+        }
+
+        function handleQuizSpellAnswer(userAnswer, inputEl, submitBtn, skipBtn, isSkip) {
+            inputEl.disabled = true;
+            submitBtn.disabled = true;
+            if (skipBtn) skipBtn.disabled = true;
+
+            const correctItem = quizState.items[quizState.currentIndex];
+            const feedbackEl = document.getElementById("quizFeedback");
+            const nextBtnEl = document.getElementById("quizNextBtn");
+
+            // 正解判定ロジック: パターンまたは読みと一致するか
+            let isCorrect = false;
+            if (!isSkip) {
+                if (userAnswer === correctItem.pattern) {
+                    isCorrect = true;
+                } else if (correctItem.explanation) {
+                    const reading = correctItem.explanation.split(" ")[0];
+                    if (userAnswer === reading) {
+                        isCorrect = true;
+                    }
+                }
+            }
+
+            if (isCorrect) {
+                quizState.score++;
+                inputEl.style.borderColor = "#48bb78";
+                inputEl.style.backgroundColor = "#c6f6d5";
+                feedbackEl.style.borderLeftColor = "#48bb78";
+                feedbackEl.innerHTML = `<strong>正解！⭕</strong>`;
+            } else {
+                if (!quizState.wrongItems.includes(correctItem)) {
+                    quizState.wrongItems.push(correctItem);
+                }
+
+                inputEl.style.borderColor = "#f56565";
+                inputEl.style.backgroundColor = "#fed7d7";
+                feedbackEl.style.borderLeftColor = "#f56565";
+                feedbackEl.innerHTML = isSkip ? `<strong>スキップしました ⏭️</strong><br>正解は：<br>` : `<strong>不正解 ❌</strong><br>正解は：<br>`;
+
+                let ansText = correctItem.pattern;
+                let reading = (correctItem.explanation || "").split(" ")[0];
+                if (reading && ansText !== reading) ansText += ` (${reading})`;
+                feedbackEl.innerHTML += `${escapeHtml(ansText)}`;
+            }
+
+            // 解説があれば追加表示
+            let detail = [
+                correctItem.pattern,
+                correctItem.explanation ? stripCitation(correctItem.explanation) : "",
+                correctItem.meaning ? stripCitation(correctItem.meaning) : ""
+            ].filter(Boolean).join(" / ");
+
+            feedbackEl.innerHTML += `<div style="margin-top: 10px; font-size: 14px; color: #555; background: white; padding: 10px; border-radius: 4px; border: 1px solid #ddd;">
+                <strong>詳細:</strong><br>${escapeHtml(detail)}
+            </div>`;
+
+            feedbackEl.style.display = "block";
+            nextBtnEl.style.display = "block";
+            nextBtnEl.focus(); // Enterで次へ進めるように
+
+            // スコア表示の更新
+            document.querySelector(".quiz-score").textContent = `スコア: ${quizState.score}`;
+        }
+
+        function handleQuizAnswer(selectedIndex, clickedBtn, allBtns) {
+            // すべてのボタンを無効化
+            allBtns.forEach(btn => btn.disabled = true);
+
+            const selectedItem = quizState.options[selectedIndex];
+            const correctItem = quizState.items[quizState.currentIndex];
+            const feedbackEl = document.getElementById("quizFeedback");
+            const nextBtnEl = document.getElementById("quizNextBtn");
+
+            const isCorrect = selectedItem === correctItem;
+
+            if (isCorrect) {
+                quizState.score++;
+                clickedBtn.classList.add("correct");
+                feedbackEl.style.borderLeftColor = "#48bb78";
+                feedbackEl.innerHTML = `<strong>正解！⭕</strong>`;
+            } else {
+                if (!quizState.wrongItems.includes(correctItem)) {
+                    quizState.wrongItems.push(correctItem);
+                }
+
+                clickedBtn.classList.add("wrong");
+                // 正解のボタンをハイライト
+                const correctIdx = quizState.options.indexOf(correctItem);
+                document.querySelector(`.quiz-option[data-idx="${correctIdx}"]`).classList.add("correct");
+
+                feedbackEl.style.borderLeftColor = "#f56565";
+                feedbackEl.innerHTML = `<strong>不正解 ❌</strong><br>正解は：<br>`;
+
+                if (quizState.mode === "ja-zh") {
+                    feedbackEl.innerHTML += `${escapeHtml(stripCitation(correctItem.meaning))}`;
+                } else {
+                    let ansText = correctItem.pattern;
+                    let reading = (correctItem.explanation || "").split(" ")[0];
+                    if (reading) ansText += ` (${reading})`;
+                    feedbackEl.innerHTML += `${escapeHtml(ansText)}`;
+                }
+            }
+
+            // 解説があれば追加表示
+            let detail = [
+                correctItem.pattern,
+                correctItem.explanation ? stripCitation(correctItem.explanation) : "",
+                correctItem.meaning ? stripCitation(correctItem.meaning) : ""
+            ].filter(Boolean).join(" / ");
+
+            feedbackEl.innerHTML += `<div style="margin-top: 10px; font-size: 14px; color: #555; background: white; padding: 10px; border-radius: 4px; border: 1px solid #ddd;">
+                <strong>詳細:</strong><br>${escapeHtml(detail)}
+            </div>`;
+
+            feedbackEl.style.display = "block";
+            nextBtnEl.style.display = "block";
+
+            // スコア表示の更新
+            document.querySelector(".quiz-score").textContent = `スコア: ${quizState.score}`;
+        }
+
+        function renderQuizResult(listEl, earlyEnd = false) {
+            // 途中終了の場合は表示済みの問題数を分母にする
+            const answeredCount = earlyEnd ? quizState.currentIndex : quizState.items.length;
+            const score = quizState.score;
+            let percent = answeredCount > 0 ? Math.round((score / answeredCount) * 100) : 0;
+
+            let message = "";
+            if (answeredCount === 0) message = "クイズがキャンセルされました。";
+            else if (percent === 100) message = "完璧です！素晴らしい！🎉";
+            else if (percent >= 80) message = "よくできました！👏";
+            else if (percent >= 60) message = "あと少しですね！がんばれ！👍";
+            else message = "もう一度復習しましょう！💪";
+
+            let summaryHtml = `
+                <div class="quiz-container quiz-result" style="margin-bottom: 30px;">
+                    <h2>クイズ結果${earlyEnd ? " (途中終了)" : ""}</h2>
+                    <div class="score">${score} / ${answeredCount}</div>
+                    <p style="font-size: 18px; margin-bottom: 30px;">正答率: <strong>${percent}%</strong></p>
+                    <p style="font-size: 20px; color: var(--text-main); margin-bottom: 40px;">${message}</p>
+                    <button class="btn-restart" onclick="renderQuizSetup(window.quizRawItems, document.getElementById('listContainer'))">
+                        もう一度クイズを設定する
+                    </button>
+                    <button class="btn-restart" style="margin-left: 10px;" onclick="document.querySelector('[data-section=\\'n2-vocab\\']').click()">
+                        語彙リストを見る
+                    </button>
+                </div>
+            `;
+
+            // 間違えた問題が1つ以上あれば、復習リストを追加描画する
+            if (quizState.wrongItems.length > 0) {
+                summaryHtml += `
+                    <div style="margin-top: 30px;">
+                        <h3 style="color: #e53e3e; margin-bottom: 15px; border-bottom: 2px solid #fc8181; padding-bottom: 5px;">復習が必要な単語 (${quizState.wrongItems.length}個)</h3>
+                        <div id="wrongItemsContainer"></div>
+                    </div>
+                `;
+            }
+
+            listEl.innerHTML = summaryHtml;
+
+            // 通常のカードを描画
+            if (quizState.wrongItems.length > 0) {
+                const container = document.getElementById("wrongItemsContainer");
+                // vocabとしてカードをレンダリングする
+                quizState.wrongItems.forEach((item, index) => {
+                    const card = document.createElement("div");
+                    card.className = "item-card";
+
+                    const title = getItemTitle("vocab", item, index);
+                    const main = getItemMain("vocab", item);
+                    const sub = getItemSub("vocab", item);
+
+                    const metaPieces = [];
+                    if (item.level) metaPieces.push(`レベル: ${stripCitation(item.level)}`);
+                    if (item.label) metaPieces.push(`単元: ${stripCitation(item.label)}`);
+
+                    const metaHtml = metaPieces.length
+                        ? `<span class="item-meta">${metaPieces.join(" / ")}</span>`
+                        : "";
+
+                    card.innerHTML = `
+                        <div class="item-header">
+                            <div class="item-title">${escapeHtml(title)}</div>
+                            ${metaHtml}
+                        </div>
+                        ${main ? `<div class="item-body">${escapeHtml(main)}</div>` : ""}
+                        ${sub ? `<div class="item-sub">${escapeHtml(sub)}</div>` : ""}
+                    `;
+
+                    // 枠線を少し赤みがかるようにして注意を引く
+                    card.style.borderLeft = "4px solid #fc8181";
+                    container.appendChild(card);
+                });
+            }
+        }
     </script>
 </body>
-</html>
 
+</html>
