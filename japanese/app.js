@@ -1,0 +1,1194 @@
+        const SECTION_CONFIG = {
+            "n2-vocab": {
+                label: "N2語彙",
+                file: null,
+                fileFolder: "n2_vocabulary",
+                indexFile: "index.json",
+                type: "vocab",
+                groupByUnit: true
+            },
+            "n2-vocab-quiz": {
+                label: "N2語彙クイズ",
+                file: null,
+                fileFolder: "n2_vocabulary",
+                indexFile: "index.json",
+                type: "quiz"
+            },
+            "kanji-random": {
+                label: "ランダム漢字語彙",
+                file: null,
+                fileFolder: "n2_vocabulary",
+                indexFile: "index.json",
+                type: "kanji-random"
+            },
+            "n2-grammar": {
+                label: "N2文法",
+                file: null,
+                fileFolder: "n2_grammar",
+                indexFile: "index.json",
+                type: "grammar",
+                groupByUnit: true
+            },
+            "n1-vocab": {
+                label: "N1語彙",
+                file: "n1_vocab.json",
+                type: "vocab"
+            },
+            "n1-grammar": {
+                label: "N1文法",
+                file: "n1_grammar.json",
+                type: "grammar"
+            },
+            "reading": {
+                label: "読解",
+                file: "reading.json",
+                type: "reading"
+            },
+            "listening": {
+                label: "聴解",
+                file: "listening.json",
+                type: "listening"
+            }
+        };
+
+        let currentSectionKey = null;
+
+        function setActiveButton(sectionKey) {
+            document.querySelectorAll(".nav-btn").forEach(btn => {
+                if (btn.getAttribute("data-section") === sectionKey) {
+                    btn.classList.add("active");
+                } else {
+                    btn.classList.remove("active");
+                }
+            });
+        }
+
+        function showStatus(messageHtml) {
+            const status = document.getElementById("statusText");
+            status.innerHTML = messageHtml;
+        }
+
+        // N1 試験（2026-07-05）までの残り日数をリアルタイムで表示
+        (function initCountdown() {
+            const target = new Date("2026-07-05T00:00:00+09:00"); // 日本時間基準
+            const statusEl = document.getElementById("statusText");
+
+            function update() {
+                const now = new Date();
+                const diffMs = target.getTime() - now.getTime();
+
+                // ミリ秒を日数に変換（切り上げ：部分の日も1日としてカウント）
+                const dayMs = 1000 * 60 * 60 * 24;
+                const daysLeft = Math.ceil(diffMs / dayMs);
+
+                if (daysLeft > 0) {
+                    statusEl.innerHTML = `
+                        JLPT N1（2026年7月5日）まで <strong>${daysLeft}</strong> 日。
+                    `;
+                } else if (daysLeft === 0) {
+                    statusEl.innerHTML = `
+                        今日は <strong>JLPT N1（2026年7月5日）</strong> の当日です！
+                    `;
+                } else {
+                    statusEl.innerHTML = `
+                        2026年7月5日の JLPT N1 は終了しました（${Math.abs(daysLeft)} 日前）。
+                    `;
+                }
+            }
+
+            update();
+            // 日が変わったときも自然に更新されるよう、1時間ごとに再計算
+            setInterval(update, 60 * 60 * 1000);
+        })();
+
+        function showLoading(show) {
+            document.getElementById("loadingState").style.display = show ? "block" : "none";
+        }
+
+        function showError(message) {
+            const el = document.getElementById("errorState");
+            el.textContent = message;
+            el.style.display = message ? "block" : "none";
+        }
+
+        function showList(show) {
+            document.getElementById("listContainer").style.display = show ? "block" : "none";
+        }
+
+        function loadSection(sectionKey) {
+            const config = SECTION_CONFIG[sectionKey];
+            if (!config) return;
+
+            currentSectionKey = sectionKey;
+            setActiveButton(sectionKey);
+
+            if (config.fileFolder) {
+                showStatus(
+                    `${config.label}（フォルダ: <strong>${config.fileFolder}</strong>）を読み込み中です。` +
+                    `<br>フォルダ内の JSON をまとめて結合して表示します。`
+                );
+            } else {
+                showStatus(
+                    `${config.label}（ファイル: <strong>${config.file}</strong>）を表示中です。` +
+                    `<br>JSON が存在しない場合は、後でファイルを作成してください。`
+                );
+            }
+            showError("");
+            showList(false);
+            showLoading(true);
+
+            // フォルダ読み込み（複数 JSON を結合）
+            if (config.fileFolder) {
+                loadFromFolder(config);
+                return;
+            }
+
+            // 通常の単一ファイル読み込み
+            fetch(config.file)
+                .then(res => {
+                    if (!res.ok) {
+                        throw new Error(`HTTP ${res.status}`);
+                    }
+                    return res.json();
+                })
+                .then(data => {
+                    showLoading(false);
+                    renderSection(config, data);
+                })
+                .catch(err => {
+                    showLoading(false);
+                    console.error("JSON 読み込みエラー:", err);
+                    showError(`「${config.file}」を読み込めませんでした。ファイルの場所と内容を確認してください。`);
+                });
+        }
+
+        // フォルダ内の JSON を一括読み込み（N2語彙など）
+        function loadFromFolder(config) {
+            const folder = config.fileFolder;
+            const indexFile = config.indexFile || "index.json";
+
+            // 1. index.json から各単元ファイル名のリストを取得
+            fetch(`${folder}/${indexFile}?t=${Date.now()}`)
+                .then(res => {
+                    if (!res.ok) {
+                        throw new Error(`index not found: HTTP ${res.status}`);
+                    }
+                    return res.json();
+                })
+                .then(list => {
+                    let files = [];
+                    if (Array.isArray(list)) {
+                        // 文字列配列 or {file: "..."} 配列を想定
+                        files = list.map(entry => {
+                            if (typeof entry === "string") return entry;
+                            if (entry && typeof entry === "object" && entry.file) return entry.file;
+                            return null;
+                        }).filter(Boolean);
+                    }
+                    if (!files.length) {
+                        throw new Error("index.json に有効なファイル名がありません。");
+                    }
+
+                    return Promise.all(
+                        files.map(name =>
+                            fetch(`${folder}/${name}?t=${Date.now()}`)
+                                .then(res => {
+                                    if (!res.ok) {
+                                        console.warn(`ファイル読み込み失敗: ${name}`, res.status);
+                                        return [];
+                                    }
+                                    return res.json();
+                                })
+                                .catch(err => {
+                                    console.warn(`ファイル読み込みエラー: ${name}`, err);
+                                    return [];
+                                })
+                        )
+                    );
+                })
+                .then(dataArrays => {
+                    showLoading(false);
+                    const merged = dataArrays
+                        .map(arr => normalizeToArray(arr))
+                        .flat()
+                        .filter(Boolean);
+                    if (!merged.length) {
+                        showError("データが読み込めませんでした。各 JSON を確認してください。");
+                        showList(false);
+                        return;
+                    }
+
+                    const listEl = document.getElementById("listContainer");
+                    listEl.innerHTML = "";
+
+                    // 文法は単元ごとに折りたたみ、クイズはクイズUIを描画、それ以外は通常レンダリング
+                    if (config.type === "grammar") {
+                        renderGrammarUnits(config, merged, listEl);
+                    } else if (config.type === "quiz") {
+                        renderQuizSetup(merged, listEl);
+                    } else if (config.type === "kanji-random") {
+                        renderKanjiRandomSetup(config, merged, listEl);
+                    } else {
+                        renderSection(config, merged);
+                    }
+                    showList(true);
+                })
+                .catch(err => {
+                    showLoading(false);
+                    console.error("フォルダ読み込みエラー:", err);
+                    showError(`「${folder}/${indexFile}」を読み込めませんでした。フォルダと index.json を確認してください。`);
+                });
+        }
+
+        function normalizeToArray(data) {
+            if (Array.isArray(data)) return data;
+            if (data && typeof data === "object") {
+                // オブジェクトの場合は value を配列として扱う
+                return Object.keys(data).map(key => {
+                    const value = data[key];
+                    if (value && typeof value === "object") {
+                        return Object.assign({ id: key }, value);
+                    }
+                    return { id: key, value };
+                });
+            }
+            return [];
+        }
+
+        function renderSection(config, rawData) {
+            const listEl = document.getElementById("listContainer");
+            listEl.innerHTML = "";
+
+            const items = normalizeToArray(rawData);
+
+            if (!items.length) {
+                listEl.innerHTML = '<div class="loading">データが見つかりませんでした。</div>';
+                showList(true);
+                return;
+            }
+
+            // 単元ごとの折りたたみ表示が有効な場合
+            if (config.groupByUnit) {
+                renderGrammarUnits(config, items, listEl);
+                showList(true);
+                return;
+            }
+
+            items.forEach((item, index) => {
+                const card = document.createElement("div");
+                card.className = "item-card";
+
+                const title = getItemTitle(config.type, item, index);
+                const main = getItemMain(config.type, item);
+                const sub = getItemSub(config.type, item);
+
+                const metaPieces = [];
+                if (item.level) metaPieces.push(`レベル: ${item.level}`);
+                if (item.type && config.type === "vocab") metaPieces.push(`品詞: ${item.type}`);
+                if (item.lesson) metaPieces.push(`課: ${item.lesson}`);
+
+                const metaHtml = metaPieces.length
+                    ? `<span class="item-meta">${metaPieces.join(" / ")}</span>`
+                    : "";
+
+                card.innerHTML = `
+                    <div class="item-header">
+                        <div class="item-title">${escapeHtml(title)}</div>
+                        ${metaHtml}
+                    </div>
+                    ${main ? `<div class="item-body">${escapeHtml(main)}</div>` : ""}
+                    ${sub ? `<div class="item-sub">${escapeHtml(sub)}</div>` : ""}
+                `;
+
+                // JSON 構造が想定外のとき用のデバッグ表示
+                if (!main && !sub) {
+                    const raw = document.createElement("div");
+                    raw.className = "json-raw";
+                    raw.textContent = JSON.stringify(item, null, 2);
+                    card.appendChild(raw);
+                }
+
+                // 聴解で audioUrl があれば簡単なプレーヤーを追加
+                if (config.type === "listening" && item.audioUrl) {
+                    const audio = document.createElement("audio");
+                    audio.controls = true;
+                    audio.style.marginTop = "6px";
+                    audio.src = item.audioUrl;
+                    card.appendChild(audio);
+                }
+
+                listEl.appendChild(card);
+            });
+
+            showList(true);
+        }
+
+        function renderGrammarUnits(config, items, listEl) {
+            // 基本の単元名（例: 「第一単元」「第一単元-基礎練習」→「第一単元」）
+            const groups = {};
+            items.forEach((item, index) => {
+                const rawLabel = item.label || item.unit || "その他";
+                // 「-」以降は練習種別など。前後の余分な空白は無視してグルーピング
+                const baseLabel = String(rawLabel).split("-")[0].trim();
+                if (!groups[baseLabel]) groups[baseLabel] = [];
+                groups[baseLabel].push({ item, index });
+            });
+
+            const unitNames = Object.keys(groups);
+
+            // 単元が複数あるときだけツールバーを表示
+            if (unitNames.length > 0) {
+                const toolbar = document.createElement("div");
+                toolbar.className = "unit-toolbar";
+                const toggleAllBtn = document.createElement("button");
+                toggleAllBtn.textContent = "すべて展開";
+                toggleAllBtn.addEventListener("click", () => {
+                    const bodies = listEl.querySelectorAll(".unit-body");
+                    const anyClosed = Array.from(bodies).some(
+                        b => b.style.display === "none" || !b.style.display
+                    );
+                    const expand = anyClosed;
+                    bodies.forEach(b => {
+                        b.style.display = expand ? "block" : "none";
+                    });
+                    listEl.querySelectorAll(".unit-toggle").forEach(t => {
+                        t.textContent = expand ? "－" : "＋";
+                    });
+                    toggleAllBtn.textContent = expand ? "すべて折りたたむ" : "すべて展開";
+                });
+                toolbar.appendChild(toggleAllBtn);
+                listEl.appendChild(toolbar);
+            }
+
+            unitNames.forEach(unitName => {
+                const unitWrapper = document.createElement("div");
+                unitWrapper.className = "grammar-unit";
+
+                const header = document.createElement("div");
+                header.className = "unit-header";
+
+                const titleSpan = document.createElement("span");
+                titleSpan.className = "unit-title";
+                titleSpan.textContent = unitName;
+
+                const countSpan = document.createElement("span");
+                countSpan.className = "unit-count";
+                countSpan.textContent = `${groups[unitName].length}項目`;
+
+                const rightBox = document.createElement("span");
+                rightBox.style.display = "flex";
+                rightBox.style.alignItems = "center";
+                rightBox.style.gap = "6px";
+
+                const toggleSpan = document.createElement("span");
+                toggleSpan.className = "unit-toggle";
+                toggleSpan.textContent = "＋"; // 初期状態は折りたたみ
+
+                rightBox.appendChild(countSpan);
+                rightBox.appendChild(toggleSpan);
+
+                header.appendChild(titleSpan);
+                header.appendChild(rightBox);
+
+                const body = document.createElement("div");
+                body.className = "unit-body";
+                body.style.display = "none"; // デフォルトで折りたたみ
+
+                header.addEventListener("click", () => {
+                    const closed = body.style.display === "none";
+                    body.style.display = closed ? "block" : "none";
+                    toggleSpan.textContent = closed ? "－" : "＋";
+                });
+
+                const unitItems = groups[unitName];
+                const isGrammarMode = config.type === "grammar";
+
+                // 文法モードでは「問題」と「文法情報」を分けて扱う
+                const grammarItems = isGrammarMode
+                    ? unitItems.filter(({ item }) => !item.question)
+                    : unitItems;
+                const exerciseItems = isGrammarMode
+                    ? unitItems.filter(({ item }) => item.question)
+                    : [];
+
+                // 1. 単元内の文法（あるいは語彙）カード
+                grammarItems.forEach(({ item, index }) => {
+                    const card = document.createElement("div");
+                    card.className = "item-card";
+
+                    const title = getItemTitle(config.type, item, index);
+                    const main = getItemMain(config.type, item);
+                    const sub = getItemSub(config.type, item);
+
+                    const metaPieces = [];
+                    if (item.level) metaPieces.push(`レベル: ${stripCitation(item.level)}`);
+                    if (item.type && config.type === "vocab") metaPieces.push(`品詞: ${stripCitation(item.type)}`);
+                    if (item.lesson) metaPieces.push(`課: ${stripCitation(item.lesson)}`);
+
+                    const metaHtml = metaPieces.length
+                        ? `<span class="item-meta">${metaPieces.join(" / ")}</span>`
+                        : "";
+
+                    card.innerHTML = `
+                        <div class="item-header">
+                            <div class="item-title">${escapeHtml(title)}</div>
+                            ${metaHtml}
+                        </div>
+                        ${main ? `<div class="item-body">${escapeHtml(main)}</div>` : ""}
+                        ${sub ? `<div class="item-sub">${escapeHtml(sub)}</div>` : ""}
+                    `;
+
+                    if (!main && !sub) {
+                        const raw = document.createElement("div");
+                        raw.className = "json-raw";
+                        raw.textContent = JSON.stringify(item, null, 2);
+                        card.appendChild(raw);
+                    }
+
+                    body.appendChild(card);
+                });
+
+                // 2. 文法用：練習問題をこの単元の最後にまとめて表示
+                if (isGrammarMode && exerciseItems.length > 0) {
+                    const exHeader = document.createElement("div");
+                    exHeader.style.margin = "10px 4px 4px";
+                    exHeader.style.fontWeight = "600";
+                    exHeader.style.color = "var(--primary-color)";
+                    exHeader.textContent = "練習問題";
+                    body.appendChild(exHeader);
+
+                    exerciseItems.forEach(({ item }, exIndex) => {
+                        const exCard = document.createElement("div");
+                        exCard.className = "item-card";
+
+                        const qTitle = document.createElement("div");
+                        qTitle.className = "item-title";
+                        qTitle.textContent = item.question || "";
+
+                        const optList = document.createElement("ul");
+                        optList.style.paddingLeft = "20px";
+                        optList.style.margin = "8px 0";
+                        (item.options || []).forEach(opt => {
+                            const li = document.createElement("li");
+                            li.textContent = opt;
+                            optList.appendChild(li);
+                        });
+
+                        const answerBox = document.createElement("div");
+                        answerBox.className = "item-sub";
+                        answerBox.style.display = "none";
+
+                        // 答えと解説
+                        const answerCode = String(item.answer || "").trim();
+                        const optionMatch = (item.options || []).find(opt => {
+                            const trimmed = String(opt).trim();
+                            return trimmed.startsWith(answerCode + " ") || trimmed === answerCode;
+                        });
+                        const answerText = optionMatch || answerCode;
+                        const explanation = stripCitation(item.explanation || "");
+                        answerBox.textContent = `【正解】${answerText}\n${explanation ? "【解説】" + explanation : ""}`;
+
+                        const toggleBtn = document.createElement("button");
+                        toggleBtn.type = "button";
+                        toggleBtn.textContent = "答えを表示";
+                        toggleBtn.style.marginTop = "6px";
+                        toggleBtn.style.fontSize = "12px";
+                        toggleBtn.style.padding = "4px 10px";
+                        toggleBtn.style.borderRadius = "999px";
+                        toggleBtn.style.border = "1px solid var(--border-color)";
+                        toggleBtn.style.background = "#f9fafb";
+                        toggleBtn.style.cursor = "pointer";
+
+                        toggleBtn.addEventListener("click", () => {
+                            const visible = answerBox.style.display === "block";
+                            answerBox.style.display = visible ? "none" : "block";
+                            toggleBtn.textContent = visible ? "答えを表示" : "答えを隠す";
+                        });
+
+                        exCard.appendChild(qTitle);
+                        exCard.appendChild(optList);
+                        exCard.appendChild(toggleBtn);
+                        exCard.appendChild(answerBox);
+
+                        body.appendChild(exCard);
+                    });
+                }
+
+                unitWrapper.appendChild(header);
+                unitWrapper.appendChild(body);
+                listEl.appendChild(unitWrapper);
+            });
+        }
+
+        function stripCitation(text) {
+            if (text == null) return "";
+            return String(text).replace(/\s*\[cite:[^\]]*]/g, "");
+        }
+
+        function getItemTitle(type, item, index) {
+            // 共通で title 優先
+            if (item.title) return item.title;
+
+            if (type === "vocab") {
+                // 新スタイル: pattern を見出しとして使う
+                if (item.pattern) return item.pattern;
+                // 旧スタイル: word / reading
+                if (item.word && item.reading) return `${item.word}（${item.reading}）`;
+                if (item.word) return item.word;
+            }
+
+            if (type === "grammar") {
+                if (item.pattern) return item.pattern;
+            }
+            if (type === "reading" || type === "listening") {
+                if (item.topic) return item.topic;
+            }
+            return `${index + 1}`;
+        }
+
+        function getItemMain(type, item) {
+            if (type === "vocab") {
+                // N2 語彙の新スタイル: 説明＋意味をまとめて表示
+                const parts = [];
+                if (item.explanation) parts.push(stripCitation(item.explanation));
+                if (item.meaning) parts.push(stripCitation(item.meaning));
+
+                // 旧スタイルのフォールバック
+                if (!parts.length) {
+                    if (item.meaning) parts.push(stripCitation(item.meaning));
+                    else if (item.translation) parts.push(stripCitation(item.translation));
+                }
+                return parts.join("\n");
+            } else if (type === "grammar") {
+                const parts = [];
+                if (item.explanation) parts.push(stripCitation(item.explanation));
+                if (item.meaning) parts.push(stripCitation(item.meaning));
+                return parts.join("\n");
+            } else if (type === "reading" || type === "listening") {
+                if (item.text) return stripCitation(item.text);
+                if (item.passage) return stripCitation(item.passage);
+            }
+            return "";
+        }
+
+        function getItemSub(type, item) {
+            if (type === "vocab") {
+                const parts = [];
+
+                // 新结构: examples 配列
+                if (Array.isArray(item.examples) && item.examples.length > 0) {
+                    const lines = item.examples.map(ex => {
+                        const s = stripCitation(ex.sentence || "");
+                        const t = stripCitation(ex.translation || "");
+                        if (s && t) return `${s}\n  → ${t}`;
+                        if (s) return s;
+                        if (t) return t;
+                        return "";
+                    }).filter(Boolean);
+                    if (lines.length) {
+                        parts.push("例文:\n" + lines.join("\n"));
+                    }
+                }
+
+                // 兼容旧结构: example / note
+                if (item.example) {
+                    parts.push(`例文: ${stripCitation(item.example)}`);
+                }
+                if (item.note) {
+                    parts.push(`メモ: ${stripCitation(item.note)}`);
+                }
+
+                // 相关词: related_items 配列
+                if (Array.isArray(item.related_items) && item.related_items.length > 0) {
+                    const relLines = item.related_items.map(r => {
+                        const w = stripCitation(r.word || "");
+                        const e = stripCitation(r.explanation || "");
+                        const m = stripCitation(r.meaning || "");
+                        const detail = [e, m].filter(Boolean).join(" / ");
+                        return detail ? `${w}: ${detail}` : w;
+                    }).filter(Boolean);
+                    if (relLines.length) {
+                        parts.push("関連語:\n" + relLines.join("\n"));
+                    }
+                }
+
+                return parts.join("\n\n");
+            } else if (type === "grammar") {
+                const parts = [];
+
+                // 新结构: examples 配列
+                if (Array.isArray(item.examples) && item.examples.length > 0) {
+                    const lines = item.examples.map(ex => {
+                        const s = stripCitation(ex.sentence || "");
+                        const t = stripCitation(ex.translation || "");
+                        if (s && t) return `${s}\n  → ${t}`;
+                        if (s) return s;
+                        if (t) return t;
+                        return "";
+                    }).filter(Boolean);
+                    if (lines.length) {
+                        parts.push("例文:\n" + lines.join("\n"));
+                    }
+                }
+
+                // 兼容旧结构: example / exampleTranslation
+                if (item.example) {
+                    parts.push(`例文: ${stripCitation(item.example)}`);
+                }
+                if (item.exampleTranslation) {
+                    parts.push(`訳: ${stripCitation(item.exampleTranslation)}`);
+                }
+
+                // 相关词: related_items 配列
+                if (Array.isArray(item.related_items) && item.related_items.length > 0) {
+                    const relLines = item.related_items.map(r => {
+                        const w = stripCitation(r.word || "");
+                        const e = stripCitation(r.explanation || "");
+                        const m = stripCitation(r.meaning || "");
+                        const detail = [e, m].filter(Boolean).join(" / ");
+                        return detail ? `${w}: ${detail}` : w;
+                    }).filter(Boolean);
+                    if (relLines.length) {
+                        parts.push("関連語:\n" + relLines.join("\n"));
+                    }
+                }
+
+                return parts.join("\n\n");
+            } else if (type === "reading" || type === "listening") {
+                const parts = [];
+                if (item.translation) parts.push(`訳: ${stripCitation(item.translation)}`);
+                if (item.question) parts.push(`質問: ${stripCitation(item.question)}`);
+                return parts.join("\n");
+            }
+            return "";
+        }
+
+        function escapeHtml(str) {
+            if (str == null) return "";
+            return String(str)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#39;");
+        }
+
+        // --- クイズ機能 ---
+        let quizState = {
+            items: [],
+            currentIndex: 0,
+            score: 0,
+            mode: "ja-zh", // "ja-zh" (日→中) or "zh-ja" (中→日)
+            options: [],
+            wrongItems: []
+        };
+
+        function renderQuizSetup(items, listEl) {
+            // 単元の一覧を抽出
+            const units = Array.from(new Set(items.map(item => {
+                let label = item.label || item.unit || "その他";
+                return String(label).split("-")[0].trim();
+            })));
+
+            // クイズ開始用のUIを作成
+            listEl.innerHTML = `
+                <div class="quiz-setup">
+                    <h3>N2語彙クイズ設定</h3>
+                    <div class="form-group">
+                        <label>学習ユニット選択:</label>
+                        <select id="quizUnitSelect">
+                            <option value="all">すべてのユニット</option>
+                            ${units.map(u => `<option value="${escapeHtml(u)}">${escapeHtml(u)}</option>`).join("")}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>出題形式:</label>
+                        <select id="quizModeSelect">
+                            <option value="ja-zh">語彙選択（日本語 → 中国語）</option>
+                            <option value="zh-ja">語彙選択（中国語 → 日本語）</option>
+                            <option value="spell-zh-ja">綴り入力（中国語 → 日本語）</option>
+                        </select>
+                    </div>
+                    <button class="btn-start" id="btnStartQuiz">クイズを始める</button>
+                </div>
+            `;
+
+            // 設定用データ保持（イベントリスナーのため）
+            window.quizRawItems = items;
+
+            document.getElementById("btnStartQuiz").addEventListener("click", () => {
+                const selectedUnit = document.getElementById("quizUnitSelect").value;
+                const selectedMode = document.getElementById("quizModeSelect").value;
+
+                let targetItems = items;
+                if (selectedUnit !== "all") {
+                    targetItems = items.filter(item => {
+                        let label = item.label || item.unit || "その他";
+                        return String(label).split("-")[0].trim() === selectedUnit;
+                    });
+                }
+
+                // 意味やパターンがないデータは除外する
+                targetItems = targetItems.filter(i => i.pattern && i.meaning);
+
+                if (targetItems.length < 3) {
+                    alert("このユニットにはクイズを行うための十分な単語データ（最低3つ）がありません。");
+                    return;
+                }
+
+                startQuiz(targetItems, selectedMode, listEl);
+            });
+        }
+
+        function shuffleArray(array) {
+            const newArr = [...array];
+            for (let i = newArr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+            }
+            return newArr;
+        }
+
+        function startQuiz(items, mode, listEl) {
+            // シャッフルして準備
+            quizState.items = shuffleArray(items);
+            quizState.currentIndex = 0;
+            quizState.score = 0;
+            quizState.wrongItems = [];
+            quizState.mode = mode;
+
+            renderQuizQuestion(listEl);
+        }
+
+        function renderQuizQuestion(listEl) {
+            if (quizState.currentIndex >= quizState.items.length) {
+                renderQuizResult(listEl);
+                return;
+            }
+
+            const currentItem = quizState.items[quizState.currentIndex];
+            const allItems = quizState.items;
+
+            // 選択肢を生成 (正解1 + 不正解2) - 選択モードのみ
+            if (quizState.mode !== "spell-zh-ja") {
+                const options = [currentItem];
+                const distractors = allItems.filter(i => i !== currentItem);
+                const shuffledDistractors = shuffleArray(distractors);
+                options.push(shuffledDistractors[0], shuffledDistractors[1]);
+
+                quizState.options = shuffleArray(options);
+            }
+
+            // 問題と選択肢のテキストを決定
+            let questionText = "";
+            let getOptionText = null;
+
+            if (quizState.mode === "ja-zh") {
+                questionText = currentItem.pattern;
+                // 読みがなをヒントとして追加する場合
+                // if(currentItem.explanation && currentItem.explanation.split(" ")[0]) {
+                //    questionText += ` (${currentItem.explanation.split(" ")[0]})`;
+                // }
+                getOptionText = (item) => stripCitation(item.meaning);
+            } else if (quizState.mode === "zh-ja" || quizState.mode === "spell-zh-ja") {
+                questionText = stripCitation(currentItem.meaning);
+                getOptionText = (item) => {
+                    let text = item.pattern;
+                    let reading = (item.explanation || "").split(" ")[0];
+                    if (reading && text !== reading && !reading.includes("⓪") && !reading.includes("①")) {
+                        text += ` (${reading})`;
+                    }
+                    return text;
+                };
+            }
+
+            let interactiveHtml = "";
+            if (quizState.mode === "spell-zh-ja") {
+                interactiveHtml = `
+                    <div class="quiz-input-container">
+                        <input type="text" id="quizSpellInput" class="quiz-input" placeholder="日本語を入力..." autocomplete="off">
+                        <div class="quiz-input-actions">
+                            <button id="quizSpellSubmit" class="quiz-submit-btn">決定</button>
+                            <button id="quizSpellSkip" class="quiz-skip-btn">分からない</button>
+                        </div>
+                    </div>
+                `;
+            } else {
+                interactiveHtml = `
+                    <div class="quiz-options" id="quizOptions">
+                        ${quizState.options.map((opt, i) => `
+                            <button class="quiz-option" data-idx="${i}">${escapeHtml(getOptionText(opt))}</button>
+                        `).join("")}
+                    </div>
+                `;
+            }
+
+            listEl.innerHTML = `
+                <div class="quiz-container">
+                    <div class="quiz-header">
+                        <span class="quiz-progress">問題 ${quizState.currentIndex + 1} / ${quizState.items.length}</span>
+                        <div>
+                            <span class="quiz-score" style="margin-right: 15px;">スコア: ${quizState.score}</span>
+                            <button id="quizEndEarlyBtn" class="quiz-end-btn">終了して結果を見る</button>
+                        </div>
+                    </div>
+                    <div class="quiz-question">${escapeHtml(questionText)}</div>
+                    ${interactiveHtml}
+                    <div id="quizFeedback" class="quiz-feedback"></div>
+                    <button id="quizNextBtn" class="quiz-next-btn">次の問題へ ➔</button>
+                    <div class="clearfix"></div>
+                </div>
+            `;
+
+            // 終了ボタン
+            document.getElementById("quizEndEarlyBtn").addEventListener("click", () => {
+                renderQuizResult(listEl, true);
+            });
+
+            // イベントリスナーの追加
+            if (quizState.mode === "spell-zh-ja") {
+                const submitBtn = document.getElementById("quizSpellSubmit");
+                const skipBtn = document.getElementById("quizSpellSkip");
+                const inputEl = document.getElementById("quizSpellInput");
+
+                inputEl.focus();
+
+                const checkSpellAnswer = (isSkip = false) => {
+                    if (inputEl.disabled) return;
+                    const answer = isSkip ? "" : inputEl.value.trim();
+                    if (!isSkip && !answer) return;
+                    handleQuizSpellAnswer(answer, inputEl, submitBtn, skipBtn, isSkip);
+                };
+
+                submitBtn.addEventListener("click", () => checkSpellAnswer(false));
+                skipBtn.addEventListener("click", () => checkSpellAnswer(true));
+                inputEl.addEventListener("keypress", (e) => {
+                    if (e.key === "Enter") checkSpellAnswer(false);
+                });
+            } else {
+                const optionBtns = document.querySelectorAll(".quiz-option");
+                optionBtns.forEach(btn => {
+                    btn.addEventListener("click", function () {
+                        handleQuizAnswer(parseInt(this.getAttribute("data-idx")), this, optionBtns);
+                    });
+                });
+            }
+
+            document.getElementById("quizNextBtn").addEventListener("click", () => {
+                quizState.currentIndex++;
+                renderQuizQuestion(listEl);
+            });
+        }
+
+        function handleQuizSpellAnswer(userAnswer, inputEl, submitBtn, skipBtn, isSkip) {
+            inputEl.disabled = true;
+            submitBtn.disabled = true;
+            if (skipBtn) skipBtn.disabled = true;
+
+            const correctItem = quizState.items[quizState.currentIndex];
+            const feedbackEl = document.getElementById("quizFeedback");
+            const nextBtnEl = document.getElementById("quizNextBtn");
+
+            // 正解判定ロジック: パターンまたは読みと一致するか
+            let isCorrect = false;
+            if (!isSkip) {
+                if (userAnswer === correctItem.pattern) {
+                    isCorrect = true;
+                } else if (correctItem.explanation) {
+                    const reading = correctItem.explanation.split(" ")[0];
+                    if (userAnswer === reading) {
+                        isCorrect = true;
+                    }
+                }
+            }
+
+            if (isCorrect) {
+                quizState.score++;
+                inputEl.style.borderColor = "#48bb78";
+                inputEl.style.backgroundColor = "#c6f6d5";
+                feedbackEl.style.borderLeftColor = "#48bb78";
+                feedbackEl.innerHTML = `<strong>正解！⭕</strong>`;
+            } else {
+                if (!quizState.wrongItems.includes(correctItem)) {
+                    quizState.wrongItems.push(correctItem);
+                }
+
+                inputEl.style.borderColor = "#f56565";
+                inputEl.style.backgroundColor = "#fed7d7";
+                feedbackEl.style.borderLeftColor = "#f56565";
+                feedbackEl.innerHTML = isSkip ? `<strong>スキップしました ⏭️</strong><br>正解は：<br>` : `<strong>不正解 ❌</strong><br>正解は：<br>`;
+
+                let ansText = correctItem.pattern;
+                let reading = (correctItem.explanation || "").split(" ")[0];
+                if (reading && ansText !== reading) ansText += ` (${reading})`;
+                feedbackEl.innerHTML += `${escapeHtml(ansText)}`;
+            }
+
+            // 解説があれば追加表示
+            let detail = [
+                correctItem.pattern,
+                correctItem.explanation ? stripCitation(correctItem.explanation) : "",
+                correctItem.meaning ? stripCitation(correctItem.meaning) : ""
+            ].filter(Boolean).join(" / ");
+
+            feedbackEl.innerHTML += `<div style="margin-top: 10px; font-size: 14px; color: #555; background: white; padding: 10px; border-radius: 4px; border: 1px solid #ddd;">
+                <strong>詳細:</strong><br>${escapeHtml(detail)}
+            </div>`;
+
+            feedbackEl.style.display = "block";
+            nextBtnEl.style.display = "block";
+            nextBtnEl.focus(); // Enterで次へ進めるように
+
+            // スコア表示の更新
+            document.querySelector(".quiz-score").textContent = `スコア: ${quizState.score}`;
+        }
+
+        function handleQuizAnswer(selectedIndex, clickedBtn, allBtns) {
+            // すべてのボタンを無効化
+            allBtns.forEach(btn => btn.disabled = true);
+
+            const selectedItem = quizState.options[selectedIndex];
+            const correctItem = quizState.items[quizState.currentIndex];
+            const feedbackEl = document.getElementById("quizFeedback");
+            const nextBtnEl = document.getElementById("quizNextBtn");
+
+            const isCorrect = selectedItem === correctItem;
+
+            if (isCorrect) {
+                quizState.score++;
+                clickedBtn.classList.add("correct");
+                feedbackEl.style.borderLeftColor = "#48bb78";
+                feedbackEl.innerHTML = `<strong>正解！⭕</strong>`;
+            } else {
+                if (!quizState.wrongItems.includes(correctItem)) {
+                    quizState.wrongItems.push(correctItem);
+                }
+
+                clickedBtn.classList.add("wrong");
+                // 正解のボタンをハイライト
+                const correctIdx = quizState.options.indexOf(correctItem);
+                document.querySelector(`.quiz-option[data-idx="${correctIdx}"]`).classList.add("correct");
+
+                feedbackEl.style.borderLeftColor = "#f56565";
+                feedbackEl.innerHTML = `<strong>不正解 ❌</strong><br>正解は：<br>`;
+
+                if (quizState.mode === "ja-zh") {
+                    feedbackEl.innerHTML += `${escapeHtml(stripCitation(correctItem.meaning))}`;
+                } else {
+                    let ansText = correctItem.pattern;
+                    let reading = (correctItem.explanation || "").split(" ")[0];
+                    if (reading) ansText += ` (${reading})`;
+                    feedbackEl.innerHTML += `${escapeHtml(ansText)}`;
+                }
+            }
+
+            // 解説があれば追加表示
+            let detail = [
+                correctItem.pattern,
+                correctItem.explanation ? stripCitation(correctItem.explanation) : "",
+                correctItem.meaning ? stripCitation(correctItem.meaning) : ""
+            ].filter(Boolean).join(" / ");
+
+            feedbackEl.innerHTML += `<div style="margin-top: 10px; font-size: 14px; color: #555; background: white; padding: 10px; border-radius: 4px; border: 1px solid #ddd;">
+                <strong>詳細:</strong><br>${escapeHtml(detail)}
+            </div>`;
+
+            feedbackEl.style.display = "block";
+            nextBtnEl.style.display = "block";
+
+            // スコア表示の更新
+            document.querySelector(".quiz-score").textContent = `スコア: ${quizState.score}`;
+        }
+
+        function renderQuizResult(listEl, earlyEnd = false) {
+            // 途中終了の場合は表示済みの問題数を分母にする
+            const answeredCount = earlyEnd ? quizState.currentIndex : quizState.items.length;
+            const score = quizState.score;
+            let percent = answeredCount > 0 ? Math.round((score / answeredCount) * 100) : 0;
+
+            let message = "";
+            if (answeredCount === 0) message = "クイズがキャンセルされました。";
+            else if (percent === 100) message = "完璧です！素晴らしい！🎉";
+            else if (percent >= 80) message = "よくできました！👏";
+            else if (percent >= 60) message = "あと少しですね！がんばれ！👍";
+            else message = "もう一度復習しましょう！💪";
+
+            let summaryHtml = `
+                <div class="quiz-container quiz-result" style="margin-bottom: 30px;">
+                    <h2>クイズ結果${earlyEnd ? " (途中終了)" : ""}</h2>
+                    <div class="score">${score} / ${answeredCount}</div>
+                    <p style="font-size: 18px; margin-bottom: 30px;">正答率: <strong>${percent}%</strong></p>
+                    <p style="font-size: 20px; color: var(--text-main); margin-bottom: 40px;">${message}</p>
+                    <button class="btn-restart" onclick="renderQuizSetup(window.quizRawItems, document.getElementById('listContainer'))">
+                        もう一度クイズを設定する
+                    </button>
+                    <button class="btn-restart" style="margin-left: 10px;" onclick="document.querySelector('[data-section=\\'n2-vocab\\']').click()">
+                        語彙リストを見る
+                    </button>
+                </div>
+            `;
+
+            // 間違えた問題が1つ以上あれば、復習リストを追加描画する
+            if (quizState.wrongItems.length > 0) {
+                summaryHtml += `
+                    <div style="margin-top: 30px;">
+                        <h3 style="color: #e53e3e; margin-bottom: 15px; border-bottom: 2px solid #fc8181; padding-bottom: 5px;">復習が必要な単語 (${quizState.wrongItems.length}個)</h3>
+                        <div id="wrongItemsContainer"></div>
+                    </div>
+                `;
+            }
+
+            listEl.innerHTML = summaryHtml;
+
+            // 通常のカードを描画
+            if (quizState.wrongItems.length > 0) {
+                const container = document.getElementById("wrongItemsContainer");
+                // vocabとしてカードをレンダリングする
+                quizState.wrongItems.forEach((item, index) => {
+                    const card = document.createElement("div");
+                    card.className = "item-card";
+
+                    const title = getItemTitle("vocab", item, index);
+                    const main = getItemMain("vocab", item);
+                    const sub = getItemSub("vocab", item);
+
+                    const metaPieces = [];
+                    if (item.level) metaPieces.push(`レベル: ${stripCitation(item.level)}`);
+                    if (item.label) metaPieces.push(`単元: ${stripCitation(item.label)}`);
+
+                    const metaHtml = metaPieces.length
+                        ? `<span class="item-meta">${metaPieces.join(" / ")}</span>`
+                        : "";
+
+                    card.innerHTML = `
+                        <div class="item-header">
+                            <div class="item-title">${escapeHtml(title)}</div>
+                            ${metaHtml}
+                        </div>
+                        ${main ? `<div class="item-body">${escapeHtml(main)}</div>` : ""}
+                        ${sub ? `<div class="item-sub">${escapeHtml(sub)}</div>` : ""}
+                    `;
+
+                    // 枠線を少し赤みがかるようにして注意を引く
+                    card.style.borderLeft = "4px solid #fc8181";
+                    container.appendChild(card);
+                });
+            }
+        }
+
+        // --- ランダム漢字語彙機能 ---
+        function renderKanjiRandomSetup(config, items, listEl) {
+            // 単元の一覧を抽出
+            const units = Array.from(new Set(items.map(item => {
+                let label = item.label || item.unit || "その他";
+                return String(label).split("-")[0].trim();
+            })));
+
+            listEl.innerHTML = `
+                <div class="quiz-setup">
+                    <h3>ランダム漢字語彙設定</h3>
+                    <div class="form-group">
+                        <label>学習ユニット選択:</label>
+                        <select id="kanjiUnitSelect">
+                            <option value="all">すべてのユニット</option>
+                            ${units.map(u => `<option value="${escapeHtml(u)}">${escapeHtml(u)}</option>`).join("")}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>生成する単語数:</label>
+                        <input type="number" id="kanjiCountInput" class="quiz-input" style="width: 100%; max-width: none;" value="10" min="1" max="100">
+                    </div>
+                    <button class="btn-start" id="btnStartKanjiRandom">生成する</button>
+                </div>
+            `;
+
+            document.getElementById("btnStartKanjiRandom").addEventListener("click", () => {
+                const selectedUnit = document.getElementById("kanjiUnitSelect").value;
+                const count = parseInt(document.getElementById("kanjiCountInput").value, 10);
+
+                if (isNaN(count) || count < 1) {
+                    alert("1以上の正しい数値を入力してください。");
+                    return;
+                }
+
+                let targetItems = items;
+                if (selectedUnit !== "all") {
+                    targetItems = items.filter(item => {
+                        let label = item.label || item.unit || "その他";
+                        return String(label).split("-")[0].trim() === selectedUnit;
+                    });
+                }
+
+                startKanjiRandom(targetItems, count, listEl, config);
+            });
+        }
+
+        function startKanjiRandom(items, count, listEl, config) {
+            // 漢字を含む単語のみを抽出
+            const kanjiItems = items.filter(item => {
+                const title = getItemTitle("vocab", item, 0);
+                return /[一-龠]/.test(title);
+            });
+
+            if (kanjiItems.length === 0) {
+                alert("指定されたユニットには漢字を含む単語がありません。");
+                return;
+            }
+
+            const actualCount = Math.min(count, kanjiItems.length);
+            const shuffledItems = shuffleArray(kanjiItems).slice(0, actualCount);
+
+            listEl.innerHTML = `
+                <div style="margin-bottom: 20px; text-align: right;">
+                    <button class="btn-restart" id="btnKanjiBackToSetup" style="padding: 6px 14px; font-size: 14px;">設定へ戻る</button>
+                </div>
+                <div id="kanjiRandomCards"></div>
+            `;
+
+            document.getElementById("btnKanjiBackToSetup").addEventListener("click", () => {
+                renderKanjiRandomSetup(config, items, listEl);
+            });
+
+            const cardsContainer = document.getElementById("kanjiRandomCards");
+
+            shuffledItems.forEach((item, index) => {
+                const card = document.createElement("div");
+                card.className = "item-card";
+                card.style.cursor = "pointer";
+
+                const title = getItemTitle("vocab", item, index);
+                const main = getItemMain("vocab", item);
+                const sub = getItemSub("vocab", item);
+
+                const metaPieces = [];
+                if (item.level) metaPieces.push(`レベル: ${stripCitation(item.level)}`);
+                if (item.lesson) metaPieces.push(`課: ${stripCitation(item.lesson)}`);
+
+                const metaHtml = metaPieces.length
+                    ? `<span class="item-meta">${metaPieces.join(" / ")}</span>`
+                    : "";
+
+                card.innerHTML = `
+                    <div class="item-header">
+                        <div class="item-title" style="font-size: 24px; color: var(--text-main);">${escapeHtml(title)}</div>
+                        ${metaHtml}
+                    </div>
+                    ${main ? `<div class="item-body kanji-details" style="display: none; margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 10px;">${escapeHtml(main)}</div>` : ""}
+                    ${sub ? `<div class="item-sub kanji-details" style="display: none;">${escapeHtml(sub)}</div>` : ""}
+                `;
+
+                card.addEventListener("click", () => {
+                    const details = card.querySelectorAll(".kanji-details");
+                    let isHidden = true;
+                    details.forEach(detail => {
+                        if (detail.style.display !== "none") isHidden = false;
+                    });
+
+                    details.forEach(detail => {
+                        detail.style.display = isHidden ? "block" : "none";
+                    });
+                });
+
+                cardsContainer.appendChild(card);
+            });
+        }
