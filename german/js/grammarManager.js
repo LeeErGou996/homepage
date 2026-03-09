@@ -54,7 +54,7 @@ const GrammarManager = {
         document.getElementById('grammarContainer').style.display = 'block';
     },
 
-    // 渲染 A1 内容
+    // 渲染语法内容 (已支持混合等级)
     async renderA1Content() {
         if (!this.grammarData) {
             console.error('语法数据未加载');
@@ -62,13 +62,32 @@ const GrammarManager = {
         }
 
         const a1Content = document.getElementById('a1Content');
+        if (!a1Content) return;
         a1Content.innerHTML = ''; // 清空现有内容
-        const topics = this.grammarData.A1.topics;
+        
+        const categories = this.grammarData.categories;
+        if (!categories) return;
 
-        // 渲染每个主题
-        topics.forEach(topic => {
-            const topicElement = this.createTopicElement(topic);
-            a1Content.appendChild(topicElement);
+        // 渲染每个分类及分类下的主题
+        categories.forEach(category => {
+            if (!category.topics || category.topics.length === 0) return;
+            
+            // 创建分类标题
+            const catHeader = document.createElement('h4');
+            catHeader.style.color = '#000';
+            catHeader.style.fontSize = '18px';
+            catHeader.style.marginTop = '25px';
+            catHeader.style.marginBottom = '15px';
+            catHeader.style.borderBottom = '2px solid #ccc';
+            catHeader.style.paddingBottom = '8px';
+            catHeader.textContent = category.name;
+            a1Content.appendChild(catHeader);
+
+            // 渲染分类下的主题
+            category.topics.forEach(topic => {
+                const topicElement = this.createTopicElement(topic);
+                a1Content.appendChild(topicElement);
+            });
         });
     },
 
@@ -93,11 +112,31 @@ const GrammarManager = {
         header.onclick = () => this.toggleTopicContent(div);
 
         // 添加标题
+        const titleContainer = document.createElement('div');
+        titleContainer.style.display = 'flex';
+        titleContainer.style.alignItems = 'center';
+        
         const title = document.createElement('h3');
         title.style.margin = '0';
         title.style.color = '#1e40af';
         title.textContent = topic.title;
-        header.appendChild(title);
+        titleContainer.appendChild(title);
+        
+        if (topic.level) {
+            const badge = document.createElement('span');
+            badge.textContent = topic.level;
+            badge.style.fontSize = '12px';
+            badge.style.background = topic.level === 'A1' ? '#dcfce7' : '#dbeafe';
+            badge.style.color = topic.level === 'A1' ? '#166534' : '#1e40af';
+            badge.style.border = `1px solid ${topic.level === 'A1' ? '#bbf7d0' : '#bfdbfe'}`;
+            badge.style.padding = '2px 8px';
+            badge.style.borderRadius = '12px';
+            badge.style.marginLeft = '10px';
+            badge.style.fontWeight = 'normal';
+            titleContainer.appendChild(badge);
+        }
+        
+        header.appendChild(titleContainer);
 
         // 添加展开/收起图标
         const icon = document.createElement('span');

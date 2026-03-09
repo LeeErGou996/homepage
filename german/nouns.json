@@ -1895,14 +1895,6 @@
     "meaning": "叉子"
   },
   {
-    "word": "die Zutat (die Zutaten)",
-    "category": "主题",
-    "subCategory": "餐饮",
-    "type": "名词",
-    "example": "Die Zutaten für den Kuchen stehen auf dem Tisch.",
-    "meaning": "配料"
-  },
-  {
     "word": "die Zubereitung (die Zubereitungen)",
     "category": "主题",
     "subCategory": "餐饮",
@@ -5171,7 +5163,7 @@
     "meaning": "火车站"
   },
   {
-    "word": "das Ereignis (die, -se)",
+    "word": "das Ereignis (die, Ereignisse)",
     "category": "主题",
     "subCategory": "抽象",
     "type": "名词",

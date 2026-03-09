@@ -796,8 +796,13 @@
             header.style.cursor = 'pointer';
             header.style.padding = '15px';
             header.style.backgroundColor = '#f8f9fa';
+            const levelBadge = topic.level ? `<span style="font-size: 12px; background: ${topic.level === 'A1' ? '#dcfce7' : '#dbeafe'}; color: ${topic.level === 'A1' ? '#166534' : '#1e40af'}; border: 1px solid ${topic.level === 'A1' ? '#bbf7d0' : '#bfdbfe'}; padding: 2px 8px; border-radius: 12px; margin-left: 10px; font-weight: normal;">${topic.level}</span>` : '';
+            
             header.innerHTML = `
-                <h3 style="margin: 0; color: var(--primary-color); font-size: 18px;">${topic.title}</h3>
+                <h3 style="margin: 0; color: var(--primary-color); font-size: 18px; display: flex; align-items: center;">
+                    ${topic.title}
+                    ${levelBadge}
+                </h3>
                 <button class="toggle-btn" style="background: none; border: none; font-size: 24px; color: var(--primary-color); cursor: pointer;">+</button>
             `;
 
@@ -944,30 +949,38 @@
         function renderGrammarContent(data, searchText, categoriesEl, searchHintEl) {
             categoriesEl.innerHTML = '';
 
-            const levels = ['A1', 'A2'];
+            const categories = data && data.categories ? data.categories : [];
             let totalShown = 0;
-
-            levels.forEach(level => {
-                const levelData = data && data[level] && data[level].topics;
-                const topics = Array.isArray(levelData) ? levelData : [];
+            let levelHTML = document.createElement('div');
+            let levelMatches = 0;
+            
+            categories.forEach(category => {
+                const topics = Array.isArray(category.topics) ? category.topics : [];
                 const filtered = searchText ? topics.filter(t => topicMatchesSearch(t, searchText)) : topics;
-                if (filtered.length === 0 && topics.length > 0 && searchText) return;
-
-                const levelTitle = document.createElement('h3');
-                levelTitle.className = 'grammar-level-title';
-                levelTitle.style.margin = '20px 0 12px 0';
-                levelTitle.style.paddingBottom = '8px';
-                levelTitle.style.borderBottom = '2px solid var(--primary-color)';
-                levelTitle.style.color = 'var(--primary-color)';
-                levelTitle.textContent = level + (filtered.length < topics.length ? `（匹配 ${filtered.length}/${topics.length}）` : `（${topics.length} 条）`);
-                if (totalShown > 0 || level === 'A1') levelTitle.style.marginTop = level === 'A1' ? '0' : '24px';
-                categoriesEl.appendChild(levelTitle);
-
-                filtered.forEach(topic => {
-                    categoriesEl.appendChild(buildOneTopicEl(topic));
-                    totalShown++;
-                });
+                
+                if (filtered.length > 0 || (topics.length === 0 && !searchText)) {
+                    // Create a category header
+                    const catHeader = document.createElement('h4');
+                    catHeader.style.color = '#000'; // Make category title stand out
+                    catHeader.style.fontSize = '18px';
+                    catHeader.style.marginTop = '25px';
+                    catHeader.style.marginBottom = '15px';
+                    catHeader.style.borderBottom = '2px solid #ccc';
+                    catHeader.style.paddingBottom = '8px';
+                    catHeader.textContent = category.name;
+                    levelHTML.appendChild(catHeader);
+                    
+                    filtered.forEach(topic => {
+                        levelHTML.appendChild(buildOneTopicEl(topic));
+                        totalShown++;
+                        levelMatches++;
+                    });
+                }
             });
+
+            if (levelMatches > 0 || (!searchText && categories.length > 0)) {
+                categoriesEl.appendChild(levelHTML);
+            }
 
             if (searchHintEl) {
                 if (searchText && totalShown === 0)
