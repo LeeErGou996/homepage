@@ -680,7 +680,8 @@
             score: 0,
             mode: "ja-zh", // "ja-zh" (日→中) or "zh-ja" (中→日)
             options: [],
-            wrongItems: []
+            wrongItems: [],
+            learnedItems: []
         };
 
         function renderQuizSetup(items, listEl) {
@@ -755,6 +756,7 @@
             quizState.currentIndex = 0;
             quizState.score = 0;
             quizState.wrongItems = [];
+            quizState.learnedItems = [];
             quizState.mode = mode;
 
             renderQuizQuestion(listEl);
@@ -837,8 +839,17 @@
                     <div id="quizFeedback" class="quiz-feedback"></div>
                     <button id="quizNextBtn" class="quiz-next-btn">次の問題へ ➔</button>
                     <div class="clearfix"></div>
+                    
+                    <!-- 既習語彙リストを表示するコンテナ -->
+                    <div id="learnedVocabContainer" class="learned-vocab-container" style="display: none;">
+                        <div class="learned-vocab-title">学習した語彙</div>
+                        <div id="learnedVocabList" class="learned-vocab-list"></div>
+                    </div>
                 </div>
             `;
+            
+            // 既に学んだ語彙があれば表示
+            updateLearnedListUI();
 
             // 終了ボタン
             document.getElementById("quizEndEarlyBtn").addEventListener("click", () => {
@@ -908,6 +919,9 @@
                 inputEl.style.backgroundColor = "#c6f6d5";
                 feedbackEl.style.borderLeftColor = "#48bb78";
                 feedbackEl.innerHTML = `<strong>正解！⭕</strong>`;
+                
+                // 既習リストに追加
+                quizState.learnedItems.unshift({ item: correctItem, isCorrect: true });
             } else {
                 if (!quizState.wrongItems.includes(correctItem)) {
                     quizState.wrongItems.push(correctItem);
@@ -917,6 +931,9 @@
                 inputEl.style.backgroundColor = "#fed7d7";
                 feedbackEl.style.borderLeftColor = "#f56565";
                 feedbackEl.innerHTML = isSkip ? `<strong>スキップしました ⏭️</strong><br>正解は：<br>` : `<strong>不正解 ❌</strong><br>正解は：<br>`;
+                
+                // 既習リストに追加
+                quizState.learnedItems.unshift({ item: correctItem, isCorrect: false });
 
                 let ansText = correctItem.pattern;
                 let reading = (correctItem.explanation || "").split(" ")[0];
@@ -939,6 +956,9 @@
             nextBtnEl.style.display = "block";
             nextBtnEl.focus(); // Enterで次へ進めるように
 
+            // リストUIを更新
+            updateLearnedListUI();
+
             // スコア表示の更新
             document.querySelector(".quiz-score").textContent = `スコア: ${quizState.score}`;
         }
@@ -959,10 +979,16 @@
                 clickedBtn.classList.add("correct");
                 feedbackEl.style.borderLeftColor = "#48bb78";
                 feedbackEl.innerHTML = `<strong>正解！⭕</strong>`;
+                
+                // 既習リストに追加
+                quizState.learnedItems.unshift({ item: correctItem, isCorrect: true });
             } else {
                 if (!quizState.wrongItems.includes(correctItem)) {
                     quizState.wrongItems.push(correctItem);
                 }
+                
+                // 既習リストに追加
+                quizState.learnedItems.unshift({ item: correctItem, isCorrect: false });
 
                 clickedBtn.classList.add("wrong");
                 // 正解のボタンをハイライト
@@ -996,8 +1022,40 @@
             feedbackEl.style.display = "block";
             nextBtnEl.style.display = "block";
 
+            // リストUIを更新
+            updateLearnedListUI();
+
             // スコア表示の更新
             document.querySelector(".quiz-score").textContent = `スコア: ${quizState.score}`;
+        }
+
+        function updateLearnedListUI() {
+            const container = document.getElementById("learnedVocabContainer");
+            const listEl = document.getElementById("learnedVocabList");
+            if (!container || !listEl) return;
+
+            if (quizState.learnedItems.length === 0) {
+                container.style.display = "none";
+                return;
+            }
+
+            container.style.display = "block";
+            listEl.innerHTML = quizState.learnedItems.map(entry => {
+                const item = entry.item;
+                const statusClass = entry.isCorrect ? "correct" : "wrong";
+                const reading = (item.explanation || "").split(" ")[0];
+                let wordText = item.pattern;
+                if (reading && wordText !== reading && !reading.includes("⓪") && !reading.includes("①")) {
+                    wordText += ` （${reading}）`;
+                }
+                
+                return `
+                    <div class="learned-vocab-item ${statusClass}">
+                        <div class="learned-vocab-word">${escapeHtml(wordText)}</div>
+                        <div class="learned-vocab-meaning">${escapeHtml(stripCitation(item.meaning))}</div>
+                    </div>
+                `;
+            }).join("");
         }
 
         function renderQuizResult(listEl, earlyEnd = false) {
