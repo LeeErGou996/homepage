@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munich & Bavaria Travel Log</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #050505;
+            --surface-color: rgba(20, 20, 25, 0.85);
+            --primary-color: #00f3ff;
+            --secondary-color: #0066ff;
+            --text-color: #e0e0e0;
+            --text-muted: #888;
+            --border-color: rgba(0, 243, 255, 0.3);
+            --glass-blur: blur(10px);
+            --transition-speed: 0.2s ease-out;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            height: 100vh;
+            overflow: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 243, 255, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(0, 102, 255, 0.05) 0%, transparent 20%);
+        }
+
+        header {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            pointer-events: none;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 2em;
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 30px;
+            border: 1px solid var(--border-color);
+            backdrop-filter: var(--glass-blur);
+            clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+        }
+
+        #map { width: 100%; height: 100vh; z-index: 1; }
+
+        .controls-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .top-right-controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        button {
+            background: var(--surface-color);
+            color: var(--primary-color);
+            border: 1px solid var(--border-color);
+            padding: 10px 20px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all var(--transition-speed);
+            backdrop-filter: var(--glass-blur);
+            box-shadow: 0 0 5px rgba(0, 243, 255, 0.1);
+        }
+
+        button:hover {
+            background: rgba(0, 243, 255, 0.1);
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.4);
+            border-color: var(--primary-color);
+        }
+
+        button.active {
+            background: var(--primary-color);
+            color: #000;
+            font-weight: bold;
+        }
+
+        .leaflet-popup-content-wrapper {
+            background: rgba(10, 10, 15, 0.95);
+            color: var(--text-color);
+            border: 1px solid var(--primary-color);
+            border-radius: 0;
+        }
+        
+        .city-info h3 { color: var(--primary-color); font-family: 'Orbitron', sans-serif; margin-bottom: 5px; }
+
+        #photo-modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        #photo-modal.active { opacity: 1; }
+
+        #photo-modal-content {
+            background: var(--surface-color);
+            width: 90%; height: 90vh;
+            border: 1px solid var(--primary-color);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .gallery-scroll-area { width: 100%; height: 100%; overflow-y: auto; padding: 20px; }
+        
+        #photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        #photo-gallery img {
+            width: 100%; height: 200px;
+            object-fit: cover;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s;
+        }
+
+        #photo-gallery img:hover { transform: scale(1.02); border-color: var(--primary-color); }
+
+        #close-btn {
+            position: absolute; top: -20px; right: -20px;
+            background: #000; color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+            width: 40px; height: 40px; font-size: 24px; cursor: pointer;
+        }
+
+        .loading {
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            width: 80px; height: 80px; border-radius: 50%;
+            border: 2px solid rgba(0, 243, 255, 0.2);
+            display: none; z-index: 3000;
+        }
+
+        .loading::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            border-radius: 50%; border-top: 2px solid var(--primary-color);
+            animation: spin 1.5s linear infinite;
+        }
+
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.2em; width: 80%; }
+            #photo-modal-content { width: 95%; height: 80vh; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="main-title">Munich Travel Log</h1>
+    </header>
+
+    <div id="map"></div>
+
+    <div class="controls-container">
+        <div class="language-group" style="display: flex; gap: 5px;">
+            <button class="language-btn active" data-lang="en">ENG</button>
+            <button class="language-btn" data-lang="zh">中文</button>
+            <button class="language-btn" data-lang="de">DE</button>
+        </div>
+    </div>
+
+    <div class="top-right-controls">
+        <button id="reset-btn">RESET VIEW</button>
+    </div>
+
+    <div id="photo-modal">
+        <div id="photo-modal-content">
+            <button id="close-btn">×</button>
+            <div class="gallery-scroll-area">
+                <div id="photo-gallery"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading"></div>
+
+    <script>
+        const translations = {
+            en: { title: "Munich & Bavaria Log", resetView: "RESET VIEW", viewPhotos: "VIEW PHOTOS", loadingError: "ERROR LOADING DATA", empty: "NO PHOTOS." },
+            zh: { title: "慕尼黑 & 巴伐利亚", resetView: "重置视图", viewPhotos: "查看照片", loadingError: "加载失败", empty: "暂无照片" },
+            de: { title: "München & Bayern", resetView: "ANSICHT ZURÜCKSETZEN", viewPhotos: "FOTOS ANSEHEN", loadingError: "FEHLER BEIM LADEN", empty: "KEINE FOTOS." }
+        };
+
+        let currentLang = 'en';
+
+        const GH_USER = 'LeeErGou996';
+        const GH_REPO = 'leeergou.github.io';
+
+        const map = L.map('map', { zoomControl: false, attributionControl: false }).setView([47.8, 11.5], 9);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 19 }).addTo(map);
+
+        const points = [
+            { name: {en: 'Munich', zh: '慕尼黑', de: 'München'}, lat: 48.1351, lon: 11.5820, folder: 'munich' },
+            { name: {en: 'Garmisch-Partenkirchen', zh: '加米施', de: 'Garmisch-P.'}, lat: 47.4921, lon: 11.0958, folder: 'garmisch' },
+            { name: {en: 'Eibsee', zh: '艾布湖', de: 'Eibsee'}, lat: 47.4578, lon: 10.9922, folder: 'eibsee' },
+            { name: {en: 'Kochel am See', zh: '科赫尔湖', de: 'Kochel am See'}, lat: 47.6534, lon: 11.3686, folder: 'kochel' },
+            { name: {en: 'Herzogstand', zh: '赫希斯坦德山', de: 'Herzogstand'}, lat: 47.6106, lon: 11.3142, folder: 'herzogstand' }
+        ];
+
+        function getMarkerIcon() {
+            return L.divIcon({
+                className: 'custom-div-icon',
+                html: `<div style="background-color: #00f3ff; width: 12px; height: 12px; border-radius: 50%; box-shadow: 0 0 10px #00f3ff; border: 2px solid #fff;"></div>`,
+                iconSize: [12, 12],
+                iconAnchor: [6, 6]
+            });
+        }
+
+        const markersLayer = L.layerGroup().addTo(map);
+
+        function renderMarkers() {
+            markersLayer.clearLayers();
+            points.forEach(p => {
+                const marker = L.marker([p.lat, p.lon], { icon: getMarkerIcon() }).addTo(markersLayer);
+                marker.bindPopup(`<div class="city-info"><h3>${p.name[currentLang]}</h3><p>> ${translations[currentLang].viewPhotos}</p></div>`);
+                marker.on('click', () => { loadGallery(p.folder); });
+            });
+        }
+
+        function updateLang(lang) {
+            currentLang = lang;
+            document.getElementById('main-title').textContent = translations[lang].title;
+            document.getElementById('reset-btn').textContent = translations[lang].resetView;
+            document.querySelectorAll('.language-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+            renderMarkers();
+        }
+
+        document.querySelectorAll('.language-btn').forEach(btn => btn.addEventListener('click', () => updateLang(btn.dataset.lang)));
+
+        async function loadGallery(folder) {
+            document.querySelector('.loading').style.display = 'block';
+            const gallery = document.getElementById('photo-gallery');
+            gallery.innerHTML = '';
+            
+            const apiPath = `travel/Munich_travel/${folder}`;
+            const apiUrl = `https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${apiPath}`;
+
+            try {
+                const res = await fetch(apiUrl);
+                if (!res.ok) throw new Error("GitHub API 404");
+                const data = await res.json();
+                if (Array.isArray(data)) {
+                    data.filter(f => /\.(jpg|jpeg|png|webp|JPG)$/i.test(f.name)).forEach(f => {
+                        const img = document.createElement('img');
+                        img.src = `https://wsrv.nl/?url=${encodeURIComponent(f.download_url)}&w=400&q=75&output=webp`;
+                        img.loading = 'lazy';
+                        img.onclick = () => window.open(f.download_url, '_blank');
+                        gallery.appendChild(img);
+                    });
+                }
+            } catch (e) {
+                gallery.innerHTML = `<div style="text-align:center; padding:20px; color:#888;">
+                    <p style="color:var(--primary-color); font-weight:bold;">${translations[currentLang].loadingError}</p>
+                    <p style="font-size:0.8em; margin-top:10px;">If testing locally, please push your changes to GitHub to see the photos.</p>
+                </div>`;
+            } finally {
+                const modal = document.getElementById('photo-modal');
+                modal.style.display = 'flex';
+                modal.offsetHeight;
+                modal.classList.add('active');
+                document.querySelector('.loading').style.display = 'none';
+            }
+        }
+
+        document.getElementById('close-btn').addEventListener('click', () => {
+            const modal = document.getElementById('photo-modal');
+            modal.classList.remove('active');
+            setTimeout(() => modal.style.display = 'none', 300);
+        });
+
+        document.getElementById('reset-btn').addEventListener('click', () => map.flyTo([47.8, 11.5], 9));
+
+        renderMarkers();
+    </script>
+</body>
+</html>
+

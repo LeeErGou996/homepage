@@ -80,7 +80,8 @@
                         "du 形式：动词词干，无词尾（如 komm, mach）",
                         "ihr 形式：动词词干 + t（如 kommt, macht）",
                         "Sie 形式：动词原形 + Sie（如 Kommen Sie!）",
-                        "du 形式中，词干以 -d, -t, -n 等结尾时需加 -e，如 arbeite"
+                        "sein 的命令式：Sei! (du), Seid! (ihr), Seien Sie! (Sie)",
+                        "词尾加 -e 规则：词干以 -t 或 -d 结尾的动词，在 du 形式下必须加 -e。例如：Warte! (等!), Arbeite nicht so viel! (别工作那么多了!)"
                     ],
                     "level": "A1"
                 },
@@ -123,6 +124,7 @@
                     ],
                     "tips": [
                         "变位动词雷打不动，永远在第2位！",
+                        "和一般/特殊疑问句一样，如果有 不定式 (Infinitiv)、过去分词 (Partizip II) 或 可分前缀 (Präfix)，它们都必须被踢到句子的绝对末尾 (Satzende)，形成“框形结构 (Satzklammer)”。",
                         "如果把强调的内容（时间、地点）放在句首，别忘了主语要跑到动词后面。"
                     ]
                 },
@@ -156,7 +158,8 @@
                         }
                     ],
                     "tips": [
-                        "和陈述句一样，变位动词依然坚守第2位的位置！"
+                        "和陈述句一样，变位动词依然坚守第2位的位置！",
+                        "句末规则：如果有可分前缀或第二个动词，它依然必须放在句子的绝对末尾。"
                     ]
                 }
             ]
@@ -203,7 +206,9 @@
                         "weil：动词踢到句末，语气更正式。",
                         "denn：动词位置（第2位）保持不变，结构较简单，常用于口语。",
                         "记忆口诀：weil 后动词最后跑，denn 后动词二位保。",
-                        "注意：weil 引导的从句可以放在句首（如：Weil er arbeiten muss, fährt Marvin später），但 denn 不可以。"
+                        "注意：weil 引导的从句可以放在句首（如：Weil er arbeiten muss, fährt Marvin später），但 denn 不可以。",
+                        "Akkusativ 并不总是一个“物品 (Sache)”，它也可以是“人”。",
+                        "例句：Ich stelle dir meine Freunde vor. (我向你介绍我的朋友们。) 这里 dir 是 Dativ（人），meine Freunde 是 Akkusativ（还是人）。"
                     ],
                     "level": "A2"
                 },
@@ -457,7 +462,8 @@
                         }
                     ],
                     "tips": [
-                        "关系从句紧挨着它所修饰的名词放置。",
+                        "关系从句通常紧挨着它所修饰的名词放置。",
+                        "例外情况：为了句子平衡，关系从句不一定非要死贴着名词，它可以被谓语动词隔开（nahe beim Bezugswort）。例：Ich habe das Bild gekauft, das hier steht. (那个画我买了，就是放在这儿的那个。)",
                         "判断性数看前面，判断格看后面缺什么！"
                     ]
                 }
@@ -1803,6 +1809,20 @@
                                     ]
                                 ]
                             }
+                        },
+                        {
+                            "title": "werde + 年龄 (常用搭配)",
+                            "explanation": "表示“快满...岁”或“将要...岁”。",
+                            "examples": [
+                                {
+                                    "question": "Sie wird 45.",
+                                    "answer": "成为，变成 (年龄)",
+                                    "translation": {
+                                        "question": "她快 45 岁了。",
+                                        "answer": ""
+                                    }
+                                }
+                            ]
                         }
                     ],
                     "tips": [
@@ -1849,6 +1869,20 @@
                                     "translation": {
                                         "question": "乘车",
                                         "answer": ""
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "title": "wissen (特殊不规则)",
+                            "explanation": "wissen 在单数时不仅元音改变，而且第一、第三人称没有词尾。",
+                            "examples": [
+                                {
+                                    "question": "wissen: ich weiß, du weißt, er weiß",
+                                    "answer": "wir wissen, ihr wisst, sie wissen",
+                                    "translation": {
+                                        "question": "知道 (单数无词尾)",
+                                        "answer": "复数正常变位"
                                     }
                                 }
                             ]
@@ -2618,10 +2652,25 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "title": "viel 的不规则变化",
+                            "explanation": "作为最高频的量词，其变形完全不规则。",
+                            "examples": [
+                                {
+                                    "question": "viel -> mehr -> am meisten",
+                                    "answer": "Er arbeitet viel. -> Sie arbeitet mehr. -> Ich arbeite am meisten.",
+                                    "translation": {
+                                        "question": "多 -> 更多 -> 最多",
+                                        "answer": ""
+                                    }
+                                }
+                            ]
                         }
                     ],
                     "tips": [
                         "形容词作表语时，最高级前面必须加 'am'（如：Er ist am besten）。",
+                        "以 d, t, s, ss, ß 或 z 结尾的形容词，最高级必须加 -esten (如: kurz -> am kürzesten)。",
                         "短形容词加变音是非常普遍的规律（如 alt -> älter, kalt -> kälter）。",
                         "teuer 的比较级去 'e' 是考点：teurer。"
                     ],
@@ -2987,69 +3036,68 @@
                 },
                 {
                     "id": "praeposition_akkusativ_dativ_richtung_ort",
-                    "title": "介词 + Akkusativ（方向）与 + Dativ（位置）的区别",
-                    "description": "同一介词如 in 可搭配第四格（Akkusativ）表示方向（Wohin?），或搭配第三格（Dativ）表示位置（Wo?）。",
+                    "title": "静三动四介词 (Wechselpräpositionen mit Akkusativ oder Dativ)",
+                    "description": "有9个介词既可以加第三格 (Dativ) 也可以加第四格 (Akkusativ)。这取决于询问的是静态位置 (Wo?) 还是动态方向 (Wohin?)。",
+                    "level": "A1",
                     "sections": [
                         {
-                            "title": "介词 + Akkusativ 表示方向（Wohin?）",
-                            "explanation": "当询问“去哪里”时，介词后使用第四格（Akkusativ），表示移动的方向或目标。",
+                            "title": "1. 核心规则与9个介词",
+                            "explanation": "这9个介词是：an, auf, hinter, in, neben, über, unter, vor, zwischen。回答 Wo? 用 Präposition + Dativ；回答 Wohin? 用 Präposition + Akkusativ。",
+                            "table": {
+                                "headings": ["介词", "Wo? (静态: Dativ)", "Wohin? (动态: Akkusativ)"],
+                                "rows": [
+                                    ["unter", "unter dem Tisch", "unter den Tisch"],
+                                    ["in (缩写: im / ins)", "im Haus", "ins Haus"],
+                                    ["vor", "vor der Garage", "vor die Garage"],
+                                    ["zwischen", "zwischen den Stühlen", "zwischen die Stühle"]
+                                ]
+                            }
+                        },
+                        {
+                            "title": "2. 位置动词 vs. 方向动词 (Positionsverben vs. Richtungsverben)",
+                            "explanation": "不同的动词决定了是静态还是动态。",
                             "examples": [
                                 {
-                                    "question": "Wohin?（去哪？）",
-                                    "answer": "Wohin stellen wir den Stuhl?",
+                                    "question": "stehen (立/站着 - Wo?) vs. stellen (竖放 - Wohin?)",
+                                    "answer": "Der Müll steht neben der Garage. (Wo) -> Sie stellen das Fahrrad in die Garage. (Wohin)",
                                     "translation": {
-                                        "question": "我们去哪？/ 我们把……放哪里？",
-                                        "answer": "我们把椅子放哪里？"
+                                        "question": "立着放",
+                                        "answer": "垃圾在车库旁边。 -> 他们把自行车放进车库。"
                                     }
                                 },
                                 {
-                                    "question": "der Flur → in den Flur",
-                                    "answer": "Wir stellen den Stuhl in den Flur.",
+                                    "question": "liegen (平躺/放着 - Wo?) vs. legen (平放 - Wohin?)",
+                                    "answer": "Das Kissen liegt unter dem Stuhl. (Wo) -> Sie legen das Kissen auf den Stuhl. (Wohin)",
                                     "translation": {
-                                        "question": "走廊 → 到走廊",
-                                        "answer": "我们把椅子放到走廊。"
+                                        "question": "平着放",
+                                        "answer": "靠垫在椅子下面。 -> 他们把靠垫放到椅子上。"
+                                    }
+                                },
+                                {
+                                    "question": "hängen (挂着 - Wo?) vs. hängen (挂起 - Wohin?)",
+                                    "answer": "Ein Poster hängt am Gartenhaus. (Wo) -> Sie hängen die Lampions in den Baum. (Wohin)",
+                                    "translation": {
+                                        "question": "挂",
+                                        "answer": "一张海报挂在花园小屋上。 -> 他们把灯笼挂到树上。"
                                     }
                                 }
                             ]
                         },
                         {
-                            "title": "介词 + Dativ 表示位置（Wo?）",
-                            "explanation": "当询问“在哪里”时，介词后使用第三格（Dativ），表示静态的位置。",
-                            "examples": [
-                                {
-                                    "question": "Wo?（在哪里？）",
-                                    "answer": "Wo steht/ist der Schrank?",
-                                    "translation": {
-                                        "question": "在哪里？",
-                                        "answer": "衣柜在哪里？"
-                                    }
-                                },
-                                {
-                                    "question": "der Flur → im Flur",
-                                    "answer": "Der Schrank steht im Flur.",
-                                    "translation": {
-                                        "question": "走廊 → 在走廊",
-                                        "answer": "衣柜在走廊。"
-                                    }
-                                },
-                                {
-                                    "question": "das Bad → im Bad",
-                                    "answer": "Ich bin im Bad.",
-                                    "translation": {
-                                        "question": "浴室 → 在浴室",
-                                        "answer": "我在浴室。"
-                                    }
-                                }
-                            ]
+                            "title": "3. 介词缩写形式 (Kurzformen)",
+                            "explanation": "in 与定冠词连用时的固定缩写。",
+                            "table": {
+                                "headings": ["完整形式", "缩写形式"],
+                                "rows": [
+                                    ["in + dem (Dativ)", "im"],
+                                    ["in + das (Akkusativ)", "ins"]
+                                ]
+                            }
                         }
                     ],
                     "tips": [
-                        "Wohin?（去哪？）→ 介词 + Akkusativ（第四格）",
-                        "Wo?（在哪里？）→ 介词 + Dativ（第三格）",
-                        "例：in den Flur（到走廊）vs im Flur（在走廊）",
-                        "例：in das Bad（到浴室）vs im Bad（在浴室）"
-                    ],
-                    "level": "A1"
+                        "hängen 既可以是静态动词也可以是动态动词，形态不变，只能通过格位来判断含义。"
+                    ]
                 },
                 {
                     "id": "praepositionen_ohne_mit",
@@ -3126,6 +3174,44 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "title": "Dativ 时间介词 (ab, seit, in, vor, nach)",
+                            "explanation": "这些常用的时间介词强制要求接第三格 (Dativ)。",
+                            "examples": [
+                                {
+                                    "question": "ab dem Moment / ab Montag",
+                                    "answer": "ab + Dativ",
+                                    "translation": {
+                                        "question": "从那一刻起 / 从周一起",
+                                        "answer": ""
+                                    }
+                                },
+                                {
+                                    "question": "seit einer Woche / seit einem Jahr",
+                                    "answer": "seit + Dativ",
+                                    "translation": {
+                                        "question": "自从一周前 / 自从一年前",
+                                        "answer": ""
+                                    }
+                                },
+                                {
+                                    "question": "vor der Reise / nach dem Urlaub",
+                                    "answer": "vor/nach + Dativ",
+                                    "translation": {
+                                        "question": "旅行前 / 假期后",
+                                        "answer": ""
+                                    }
+                                },
+                                {
+                                    "question": "im August / in der Nacht",
+                                    "answer": "in + Dativ",
+                                    "translation": {
+                                        "question": "在八月 / 在夜里",
+                                        "answer": ""
+                                    }
+                                }
+                            ]
                         }
                     ],
                     "tips": [
@@ -3134,55 +3220,108 @@
                 },
                 {
                     "id": "ortsangaben_praepositionen",
-                    "title": "地点与方向介词详解",
-                    "description": "去某地、从某地来到底用哪个介词？在A2阶段这些必须烂熟于心。",
+                    "title": "地点与方向介词详解 (Ortsangaben: Präpositionen)",
+                    "description": "德语中表达“去某处”、“在某处”或“从某处来”时，特定的介词会要求特定的格位。",
                     "level": "A2",
                     "sections": [
                         {
-                            "title": "去往某处 (Wohin?)",
-                            "explanation": "zu(+Dat)去人/机构处； nach(+Dat)去城市国家； in(+Akk)进入无冠词国家或空间内。",
+                            "title": "1. 去往某处 (Wohin?)",
+                            "explanation": "表达前往目的地或穿过某地。",
                             "examples": [
                                 {
-                                    "question": "Ich gehe zum Arzt. / Wir fahren nach Berlin. / Ich gehe ins Kino.",
-                                    "answer": "三种区分",
+                                    "question": "zu (+ Dativ)",
+                                    "answer": "Sie geht zur Bank.",
                                     "translation": {
-                                        "question": "我去医生那儿 / 我们去柏林 / 我去电影院。",
-                                        "answer": ""
+                                        "question": "前往（机构、人）",
+                                        "answer": "她去银行。"
+                                    }
+                                },
+                                {
+                                    "question": "bis zu ... (+ Dativ)",
+                                    "answer": "Geh bis zum Kaufhaus und dann links.",
+                                    "translation": {
+                                        "question": "直到...",
+                                        "answer": "走到百货大楼然后左转。"
+                                    }
+                                },
+                                {
+                                    "question": "durch (+ Akkusativ)",
+                                    "answer": "Sie geht durch den Park.",
+                                    "translation": {
+                                        "question": "穿过、通过",
+                                        "answer": "她穿过公园。"
                                     }
                                 }
                             ]
                         },
                         {
-                            "title": "从某处来 (Woher?)",
-                            "explanation": "aus(+Dat)从空间内或者城市里出来； von(+Dat)从活动、机构或某人那儿回来。",
+                            "title": "2. 在某处或经过某处 (Wo?)",
+                            "explanation": "表达所处位置或从旁边经过。",
                             "examples": [
                                 {
-                                    "question": "Ich komme aus China. / Er kommt vom Arzt.",
-                                    "answer": "两种区分",
+                                    "question": "bei (+ Dativ)",
+                                    "answer": "Sie ist beim Chef.",
                                     "translation": {
-                                        "question": "我来自中国 / 他从医生那儿回来。",
-                                        "answer": ""
+                                        "question": "在...（某人/机构）处",
+                                        "answer": "她在老板那儿。"
+                                    }
+                                },
+                                {
+                                    "question": "gegenüber von (+ Dativ)",
+                                    "answer": "Das Haus ist gegenüber vom Park.",
+                                    "translation": {
+                                        "question": "在...对面",
+                                        "answer": "这栋房子在公园对面。"
+                                    }
+                                },
+                                {
+                                    "question": "an ... vorbei (+ Dativ)",
+                                    "answer": "Sie geht am Kaufhaus vorbei.",
+                                    "translation": {
+                                        "question": "从...旁边经过",
+                                        "answer": "她从百货大楼旁走过。"
                                     }
                                 }
                             ]
                         },
                         {
-                            "title": "在某处，经过某处",
-                            "explanation": "bei(+Dat)在某人某机构那； durch(+Akk)穿透/穿过某地； gegenüber(+Dat)在...对面",
+                            "title": "3. 从某处来 (Woher?)",
+                            "explanation": "表达离开某地或从某人处回来。",
                             "examples": [
                                 {
-                                    "question": "Ich bin bei Tom. / Er geht durch den Park.",
-                                    "answer": "bei 和 durch",
+                                    "question": "aus (+ Dativ)",
+                                    "answer": "Er kommt aus dem Haus.",
                                     "translation": {
-                                        "question": "我在汤姆家 / 他穿过公园。",
-                                        "answer": ""
+                                        "question": "从...（空间/城市/国家）里面出来",
+                                        "answer": "他从房子里出来。"
+                                    }
+                                },
+                                {
+                                    "question": "von (+ Dativ)",
+                                    "answer": "Sie kommt von der Chefin.",
+                                    "translation": {
+                                        "question": "从...（人/活动/机构）那儿回来",
+                                        "answer": "她从女老板那儿回来。"
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "title": "4. 介词缩写形式 (Kurzformen)",
+                            "explanation": "介词与定冠词 Dativ 连用时的固定缩写。",
+                            "table": {
+                                "headings": ["完整形式", "缩写形式"],
+                                "rows": [
+                                    ["zu + der", "zur"],
+                                    ["zu + dem", "zum"],
+                                    ["bei + dem", "beim"],
+                                    ["von + dem", "vom"]
+                                ]
+                            }
                         }
                     ],
                     "tips": [
-                        "国家城市名词：去用 nach，来用 aus！无一例外（除非带有定冠词）。"
+                        "注意 durch 是支配第四格 (Akkusativ) 的介词，而从旁边经过的 an ... vorbei 要求第三格 (Dativ)。"
                     ]
                 },
                 {
