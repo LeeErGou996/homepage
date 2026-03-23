@@ -344,7 +344,8 @@
         </div>
     </div>
 
-    <div class="top-right-controls">
+    <div class="top-right-controls" style="display: flex; gap: 10px;">
+        <button id="toggle-view-btn">SHOW ALL CITIES</button>
         <button id="reset-btn">RESET VIEW</button>
     </div>
 
@@ -362,9 +363,9 @@
     <script>
 // --- 配置与数据 ---
     const translations = {
-        en: { title: "TRAVEL LOG", resetView: "RESET VIEW", exploreCities: "ACCESS DATA", viewPhotos: "VIEW ARCHIVE", loadingError: "DATA CORRUPTED. RETRY.", empty: "NO DATA FOUND." },
-        zh: { title: "旅行日志", resetView: "重置视图", exploreCities: "访问数据", viewPhotos: "查看档案", loadingError: "数据损坏，请重试。", empty: "暂无照片数据。" },
-        ja: { title: "旅行ログ", resetView: "視点リセット", exploreCities: "データアクセス", viewPhotos: "アーカイブ", loadingError: "データエラー。", empty: "データなし。" }
+        en: { title: "TRAVEL LOG", resetView: "RESET VIEW", exploreCities: "ACCESS DATA", viewPhotos: "VIEW ARCHIVE", loadingError: "DATA CORRUPTED. RETRY.", empty: "NO DATA FOUND.", showCities: "SHOW ALL CITIES", showCountries: "SHOW COUNTRIES" },
+        zh: { title: "旅行日志", resetView: "重置视图", exploreCities: "访问数据", viewPhotos: "查看档案", loadingError: "数据损坏，请重试。", empty: "暂无照片数据。", showCities: "显示所有城市", showCountries: "显示国家标记" },
+        ja: { title: "旅行ログ", resetView: "視点リセット", exploreCities: "データアクセス", viewPhotos: "アーカイブ", loadingError: "データエラー。", empty: "データなし。", showCities: "全都市表示", showCountries: "国表示" }
     };
 
     let currentLang = 'en';
@@ -383,7 +384,10 @@
     function updateUILanguage(lang) {
         document.querySelector('h1').textContent = translations[lang].title;
         document.getElementById('reset-btn').textContent = translations[lang].resetView;
+        const toggleBtn = document.getElementById('toggle-view-btn');
+        toggleBtn.textContent = isCountryView ? translations[lang].showCities : translations[lang].showCountries;
         document.querySelectorAll('.language-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+        createCountryMarkers();
         resetMapView(); 
     }
     document.querySelectorAll('.language-btn').forEach(btn => btn.addEventListener('click', () => {
@@ -400,7 +404,9 @@
         'Austria': { lat: 47.5162, lon: 14.5501, cities: [{ name: 'Wien', lat: 48.2082, lon: 16.3738 }] },
         'Italy': { lat: 41.8719, lon: 12.5674, cities: [{ name: 'Rome', lat: 41.9028, lon: 12.4964 }] },
         'Czech': { lat: 49.8175, lon: 15.4730, cities: [{ name: 'Prague', lat: 50.0755, lon: 14.4378 }] },
-        'France': { lat: 46.2276, lon: 2.2137, cities: [{ name: 'Strasbourg', lat: 48.5734, lon: 7.7521 }, { name: 'Colmar', lat: 48.0794, lon: 7.3586 }] }
+        'France': { lat: 46.2276, lon: 2.2137, cities: [{ name: 'Strasbourg', lat: 48.5734, lon: 7.7521 }, { name: 'Colmar', lat: 48.0794, lon: 7.3586 }] },
+        'Netherlands': { lat: 52.1326, lon: 5.2913, cities: [{ name: 'Amsterdam', lat: 52.3676, lon: 4.9041 }, { name: 'Rotterdam', lat: 51.9225, lon: 4.47917 }] },
+        'Belgium': { lat: 50.8503, lon: 4.3517, cities: [{ name: 'Brussels', lat: 50.8503, lon: 4.3517 }, { name: 'Antwerp', lat: 51.2194, lon: 4.4025 }] }
     };
 
     // 样式生成器
@@ -415,17 +421,29 @@
         });
     }
 
-    let currentCountryMarker = null;
+    let countryLayer = L.layerGroup().addTo(map);
+    let allCitiesLayer = L.layerGroup();
     let currentCityLayer = null;
+    let isCountryView = true;
 
     function createCountryMarkers() {
+        countryLayer.clearLayers();
+        allCitiesLayer.clearLayers();
         Object.keys(countries).forEach(countryName => {
             const country = countries[countryName];
-            const marker = L.marker([country.lat, country.lon], { icon: getCustomMarker(true) }).addTo(map);
+            
+            const marker = L.marker([country.lat, country.lon], { icon: getCustomMarker(true) }).addTo(countryLayer);
             marker.bindPopup(`<div class="city-info"><h3>${countryName}</h3><p>> ${translations[currentLang].exploreCities}</p></div>`);
             marker.on('click', function() {
+                if (!isCountryView) return;
                 map.flyTo([country.lat, country.lon], 5, { duration: 0.5 });
                 loadCityMarkers(countryName, country.cities);
+            });
+
+            country.cities.forEach(city => {
+                const cityMarker = L.marker([city.lat, city.lon], { icon: getCustomMarker(false) }).addTo(allCitiesLayer);
+                cityMarker.bindPopup(`<div class="city-info"><h3>${city.name}</h3><p>> ${translations[currentLang].viewPhotos}</p></div>`);
+                cityMarker.on('click', () => { loadCityPhotos(countryName, city.name); });
             });
         });
     }
@@ -440,6 +458,25 @@
             cityMarker.bindPopup(`<div class="city-info"><h3>${city.name}</h3><p>> ${translations[currentLang].viewPhotos}</p></div>`);
             cityMarker.on('click', () => { loadCityPhotos(countryName, city.name); });
         });
+    }
+
+    function toggleViewMode() {
+        isCountryView = !isCountryView;
+        const toggleBtn = document.getElementById('toggle-view-btn');
+        
+        if (isCountryView) {
+            map.removeLayer(allCitiesLayer);
+            countryLayer.addTo(map);
+            toggleBtn.textContent = translations[currentLang].showCities;
+            resetMapView();
+        } else {
+            if (currentCityLayer) map.removeLayer(currentCityLayer);
+            map.removeLayer(countryLayer);
+            allCitiesLayer.addTo(map);
+            toggleBtn.textContent = translations[currentLang].showCountries;
+            map.flyTo([30, 0], 3, { duration: 0.5 });
+            map.closePopup();
+        }
     }
 
     // --- 核心优化逻辑开始 ---
@@ -576,12 +613,19 @@
 
     function resetMapView() {
         if (currentCityLayer) { map.removeLayer(currentCityLayer); currentCityLayer = null; }
+        if (!isCountryView) {
+            isCountryView = true;
+            map.removeLayer(allCitiesLayer);
+            countryLayer.addTo(map);
+            document.getElementById('toggle-view-btn').textContent = translations[currentLang].showCities;
+        }
         map.flyTo([20, 0], 2, { duration: 0.5 });
         map.closePopup();
     }
 
     document.getElementById('close-btn').addEventListener('click', closePhotoModal);
     document.getElementById('reset-btn').addEventListener('click', resetMapView);
+    document.getElementById('toggle-view-btn').addEventListener('click', toggleViewMode);
     document.getElementById('photo-modal').addEventListener('click', (e) => {
         if (e.target === document.getElementById('photo-modal')) closePhotoModal();
     });
