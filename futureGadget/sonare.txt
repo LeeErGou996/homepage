@@ -1,0 +1,35 @@
+<p><strong>作詞：</strong>TOMOO</p>
+<p><strong>作曲：</strong>TOMOO</p>
+
+<div class="stanza">
+    <p>眠<span class="furigana">ねむ</span>りから目覚<span class="furigana">めざ</span>めたら</p>
+    <p>ひらかれたページの上<span class="furigana">うえ</span>にひとり</p>
+    <p>見回<span class="furigana">みまわ</span>せど見<span class="furigana">み</span>えない</p>
+    <p>あても 出口<span class="furigana">でぐち</span>も</p>
+
+    <p>そして聞<span class="furigana">き</span>こえたのは</p>
+    <p>名前<span class="furigana">なまえ</span>を呼<span class="furigana">よ</span>んでるあなたの声<span class="furigana">こえ</span></p>
+    <p>手探<span class="furigana">てさぐ</span>りの言葉<span class="furigana">ことば</span>と歩<span class="furigana">ある</span>き出<span class="furigana">だ</span>した</p>
+    <p>ばらばらのリズムで</p>
+    <p>口<span class="furigana">くち</span>ずさめたら きいて</p>
+    <p>世界<span class="furigana">せかい</span>がほどける音<span class="furigana">おと</span>がかけてくる かけてくる 朝<span class="furigana">あさ</span>がくる</p>
+    <p>綺麗<span class="furigana">きれい</span>な目<span class="furigana">め</span>をしたあなたも見<span class="furigana">み</span>てるだろう</p>
+    <p>朝<span class="furigana">あさ</span>がくる 朝<span class="furigana">あさ</span>がくる</p>
+
+    <p>壁越<span class="furigana">かべご</span>しに届<span class="furigana">とど</span>くような</p>
+    <p>あなたの話<span class="furigana">はなし</span>にもたれる夜<span class="furigana">よる</span></p>
+    <p>さわれないのにどうして</p>
+    <p>あたたかいんだろう</p>
+    <p>不揃<span class="furigana">ふぞろ</span>いなマグカップと</p>
+    <p>向<span class="furigana">む</span>かい合<span class="furigana">あ</span>うテーブルの岸辺<span class="furigana">きしべ</span>で</p>
+    <p>知<span class="furigana">し</span>らない言葉<span class="furigana">ことば</span>だって 繋<span class="furigana">つな</span>ぎたいよ</p>
+    <p>ばらばらの景色<span class="furigana">けしき</span>で</p>
+    <p>隣<span class="furigana">となり</span>合<span class="furigana">あ</span>うこと 知<span class="furigana">し</span>った今日<span class="furigana">きょう</span>は</p>
+    <p>世界<span class="furigana">せかい</span>がほどける音<span class="furigana">おと</span>と息<span class="furigana">いき</span>をする</p>
+    <p>綺麗<span class="furigana">きれい</span>な目<span class="furigana">め</span>をしたあなたも見<span class="furigana">み</span>てるだろう</p>
+    <p>世界<span class="furigana">せかい</span>がほどける音<span class="furigana">おと</span>がかけてくる かけてくる 朝<span class="furigana">あさ</span>がくる</p>
+    <p>未来<span class="furigana">みらい</span>で振<span class="furigana">ふ</span>り向<span class="furigana">む</span>くあなたに手<span class="furigana">て</span>を振<span class="furigana">ふ</span>って</p>
+    <p>漕<span class="furigana">こ</span>いで行<span class="furigana">い</span>く 漕<span class="furigana">こ</span>いで行<span class="furigana">い</span>く</p>
+    <p>どこへ行<span class="furigana">い</span>こう?</p>
+    <p>どこへでも</p>
+</div>

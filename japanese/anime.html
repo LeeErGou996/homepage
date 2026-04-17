@@ -351,6 +351,9 @@
             contentDiv.innerHTML = `
                 <h1>概要</h1>
                 <div class="scrollable-textarea readonly">
+
+                    <p>📺 2026.4: アニメ<a href="javascript:void(0);" onclick="renderAnimePage('カナン様はあくまでチョロい', '', 'kananLink')">「カナン様はあくまでチョロい」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('マリッジトキシン', '', 'maritokiLink')">「マリッジトキシン」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('日本三國', '', 'nihonsangokuLink')">「日本三國」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('春夏秋冬代行者 春の舞', '', 'shunkaLink')">「春夏秋冬代行者 春の舞」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('レプリカだって、恋をする。', '', 'replicaLink')">「レプリカだって、恋をする。」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('淡島百景', '', 'awashimaLink')">「淡島百景」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('上伊那ぼたん、酔へる姿は百合の花', '', 'botanLink')">「上伊那ぼたん、酔へる姿は百合の花」</a>を追加しました </p>
+
                     <p>📺 2026.3: アニメ<a href="javascript:void(0);" onclick="renderAnimePage('超かぐや姫！', 'chokaguyaHtml', 'chokaguyaLink')">「超かぐや姫！」</a>を追加しました </p>
 
                     <p>📺 2026.2: アニメ<a href="javascript:void(0);" onclick="renderAnimePage('推しの子第3期', '', 'oshinoko3Link')">「推しの子第3期」</a>を追加しました </p>
@@ -461,6 +464,13 @@
         // 2026 年番剧
         year2026.addEventListener('click', () => {
             const entries = [
+                { id: 'kananLink', text: '😈 カナン様はあくまでチョロい', handler: () => renderAnimePage('カナン様はあくまでチョロい', '', 'kananLink') },
+                { id: 'maritokiLink', text: '💍 マリッジトキシン', handler: () => renderAnimePage('マリッジトキシン', '', 'maritokiLink') },
+                { id: 'nihonsangokuLink', text: '🗾 日本三國', handler: () => renderAnimePage('日本三國', '', 'nihonsangokuLink') },
+                { id: 'shunkaLink', text: '🌸 春夏秋冬代行者 春の舞', handler: () => renderAnimePage('春夏秋冬代行者 春の舞', '', 'shunkaLink') },
+                { id: 'replicaLink', text: '🤖 レプリカだって、恋をする。', handler: () => renderAnimePage('レプリカだって、恋をする。', '', 'replicaLink') },
+                { id: 'awashimaLink', text: '🏫 淡島百景', handler: () => renderAnimePage('淡島百景', '', 'awashimaLink') },
+                { id: 'botanLink', text: '🌸 上伊那ぼたん、酔へる姿は百合の花', handler: () => renderAnimePage('上伊那ぼたん、酔へる姿は百合の花', '', 'botanLink') },
                 { id: 'ikokuniLink', text: '📖 違国日記', handler: () => renderAnimePage('違国日記', ikokuniHtml, 'ikokuniLink') },
                 { id: 'oshinoko3Link', text: '🌟 推しの子第3期', handler: () => renderAnimePage('推しの子第3期', '', 'oshinoko3Link') },
                 { id: 'chokaguyaLink', text: '👸 超かぐや姫！', handler: () => renderAnimePage('超かぐや姫！', chokaguyaHtml, 'chokaguyaLink') }

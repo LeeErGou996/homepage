@@ -1,0 +1,36 @@
+<p><strong>作詞：</strong>甫木元空・菊池剛</p>
+<p><strong>作曲：</strong>菊池剛</p>
+
+<div class="stanza">
+    <p>いつか見<span class="furigana">み</span>た風景<span class="furigana">ふうけい</span> 呆然<span class="furigana">ぼうぜん</span>と いずれ見<span class="furigana">み</span>える流星<span class="furigana">りゅうせい</span></p>
+    <p>いつも見<span class="furigana">み</span>ていたい</p>
+    <p>いつか見<span class="furigana">み</span>た終演<span class="furigana">しゅうえん</span> 当然<span class="furigana">とうぜん</span>と いずれ見<span class="furigana">み</span>える運命<span class="furigana">うんめい</span></p>
+    <p>いつも見<span class="furigana">み</span>えていない</p>
+
+    <p>過去<span class="furigana">かこ</span>をつかみ捨<span class="furigana">す</span>てて未来<span class="furigana">みらい</span> 出会<span class="furigana">であ</span>いし続<span class="furigana">つづ</span>けて目<span class="furigana">め</span>を逸<span class="furigana">そ</span>らしたい</p>
+    <p>あの自分<span class="furigana">じぶん</span>よりも時空<span class="furigana">じくう</span>よりも</p>
+
+    <p>闇<span class="furigana">やみ</span>に日<span class="furigana">ひ</span>が差<span class="furigana">さ</span>して手<span class="furigana">て</span>を伸<span class="furigana">の</span>ばしたい あなたと今<span class="furigana">いま</span>話<span class="furigana">はな</span>したい</p>
+    <p>朝日<span class="furigana">あさひ</span>を見<span class="furigana">み</span>て染<span class="furigana">そ</span>まりだす もう自由<span class="furigana">じゆう</span>に もう自由<span class="furigana">じゆう</span>に</p>
+    <p>わたしは今<span class="furigana">いま</span>目<span class="furigana">め</span>を覚<span class="furigana">さ</span>ました あなたと今<span class="furigana">いま</span>話<span class="furigana">はな</span>したい</p>
+    <p>愛<span class="furigana">あい</span>すべき日<span class="furigana">ひ</span>が染<span class="furigana">そ</span>まりだす もう自由<span class="furigana">じゆう</span>に もう自由<span class="furigana">じゆう</span>に飛<span class="furigana">と</span>ぶ</p>
+
+    <p>いつかいた高原<span class="furigana">こうげん</span> 悠然<span class="furigana">ゆうぜん</span>と 滲<span class="furigana">にじ</span>んで消<span class="furigana">き</span>える情景<span class="furigana">じょうけい</span></p>
+    <p>いつも見<span class="furigana">み</span>ていたい</p>
+
+    <p>過去<span class="furigana">かこ</span>を掴<span class="furigana">つか</span>み捨<span class="furigana">す</span>てて未来<span class="furigana">みらい</span> まやかしばかり目<span class="furigana">め</span>を逸<span class="furigana">そ</span>らしたい</p>
+    <p>あの自分<span class="furigana">じぶん</span>よりも時空<span class="furigana">じくう</span>よりも</p>
+
+    <p>手<span class="furigana">て</span>を伸<span class="furigana">の</span>ばしたい あなたと今<span class="furigana">いま</span>話<span class="furigana">はな</span>したい</p>
+    <p>朝日<span class="furigana">あさひ</span>を見<span class="furigana">み</span>て染<span class="furigana">そ</span>まりだす もう自由<span class="furigana">じゆう</span>に もう自由<span class="furigana">じゆう</span>に</p>
+    <p>わたしは今<span class="furigana">いま</span>目<span class="furigana">め</span>を覚<span class="furigana">さ</span>ました あなたと今<span class="furigana">いま</span>話<span class="furigana">はな</span>したい</p>
+    <p>愛<span class="furigana">あい</span>すべき日<span class="furigana">ひ</span>が染<span class="furigana">そ</span>まり出<span class="furigana">だ</span>す もう自由<span class="furigana">じゆう</span>に もう自由<span class="furigana">じゆう</span>に</p>
+
+    <p>手<span class="furigana">て</span>を伸<span class="furigana">の</span>ばしたい あなたと今<span class="furigana">いま</span>話<span class="furigana">はな</span>したい</p>
+    <p>朝日<span class="furigana">あさひ</span>を見<span class="furigana">み</span>て染<span class="furigana">そ</span>まりだす もう自由<span class="furigana">じゆう</span>に もう自由<span class="furigana">じゆう</span>に</p>
+
+    <p>わたしは今<span class="furigana">いま</span>目<span class="furigana">め</span>を覚<span class="furigana">さ</span>ましたい あなたと今<span class="furigana">いま</span>話<span class="furigana">はな</span>したい</p>
+    <p>愛<span class="furigana">あい</span>すべき日<span class="furigana">ひ</span>が染<span class="furigana">そ</span>まり出す もう自由<span class="furigana">じゆう</span>に もう自由<span class="furigana">じゆう</span>に</p>
+    <p>自由<span class="furigana">じゆう</span>に もう自由<span class="furigana">じゆう</span>に</p>
+    <p>自由<span class="furigana">じゆう</span>に 自由<span class="furigana">じゆう</span>に 自由<span class="furigana">じゆう</span>に もう自由<span class="furigana">じゆう</span>に飛<span class="furigana">と</span>ぶ</p>
+</div>
