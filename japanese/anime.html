@@ -269,6 +269,11 @@
                 'images/euphonium/euphonium2.jpg',
                 'images/euphonium/euphonium3.jpg',
             ],
+            'botanLink': [
+                'images/botan/botan1.jpg',
+                'images/botan/botan2.jpg',
+                'images/botan/botan3.jpg',
+            ],
         };
 
         // 触发淡入动画的函数
@@ -344,6 +349,30 @@
             </p>
         `;
                                 
+        const botanHtml = `
+            <h3>Einleitung & Gesamteindruck</h3>
+            <p>„Kamiina Botan, Yoeru Sugata wa Yuri no Hana“ ist mein absoluter Favorit unter den Anime der April-Saison und der einzige, den ich in Rekordzeit durchgeschaut habe. Ich weiß gar nicht mehr genau, wann das anfing, aber ich habe ein starkes Interesse an Anime aus dem Yuri-Genre – oder wie man heute oft sagt: „Beziehungen zwischen Frauen“ – entwickelt.</p>
+            <p>Für mich gehört dieser Anime definitiv in die höchste Bewertungsstufe (irgendwo zwischen Steins;Gate und Euphonium). Da die Serie gerade erst zu Ende gegangen ist, möchte ich meine Eindrücke und Gefühle beim Schauen so gut wie möglich festhalten.</p>
+
+            <h3>Lieblingscharaktere & Pairing: Gujo × Chinlan</h3>
+            <p>Am meisten gefällt mir das Pairing Gujo × Chinlan. Gujo ist mein absoluter Lieblingscharakter in der gesamten Serie, nicht nur, weil sie ebenfalls Masterstudentin und Softwareentwicklerin ist sowie eine aufmerksame und fürsorgliche Persönlichkeit besitzt. Ich mag sie auch wegen ihrer „Failed Heroine“-Eigenschaft (verlierende Heldin) in der ersten Hälfte der Serie: Gujo war eifersüchtig, als sie bemerkte, wie rasant sich die Beziehung zwischen Ibuki und Botan entwickelte. Nachdem sie Ibuki ihre Liebe gestanden hatte und abgewiesen wurde, konnte sie Ibuki auch in der späteren Hälfte der Serie nicht wirklich loslassen. Ich fange an, den Spaß daran zu verstehen, solche „Verlierer-Heldinnen“ ein wenig leiden zu sehen.</p>
+            <p>Aber das Auftauchen von Chinlan hat Gujos Handlungslinie zweifellos komplett gewendet. Im Gegensatz zur eher introvertierten Gujo startete Chinlan, nachdem sie Gefühle für ihre Senpai entwickelt hatte (obwohl das meiner Erinnerung nach gar nicht so ausführlich dargestellt wurde), direkt mehrere Offensiven. Als Charakter, der erst in der Mitte der Serie auftaucht, erreicht sie am Ende eine so intime Beziehung zu Gujo, dass sie Geschenke austauschen und sich beim Vornamen nennen.</p>
+
+            <h3>Audiovisuelle Gestaltung (OP & ED)</h3>
+            <p>Das OP und ED stecken voller raffinierter Ideen. Jedes ED erzählt eine eigenständige kleine Geschichte. Obwohl diese Anime-Original sind, finde ich, dass sie die Gesamthandlung wunderbar bereichern. Auch wenn es an manchen Stellen vielleicht etwas übertrieben wirkt, ist das Gesamtdesign extrem liebenswert. Das OP ist sowohl musikalisch als auch visuell unglaublich ansprechend; ich habe es nicht ein einziges Mal übersprungen.</p>
+
+            <h3>Gedanken zur Kritik aus der Community</h3>
+            <p>Ich habe in der Community einige Kommentare gelesen, die der Serie „Kleinbürgerlichkeit“ (petit bourgeois) und ein „prätentiöses Zurschaustellen von Kunstverständnis“ vorwerfen. Ersteres erinnert mich an meine erste Begegnung mit dem Konzept des „Kleinbürgerlichen“, als ich Kommentare zum 12. Detektiv Conan-Film las, in denen dieses Werk ebenfalls so bezeichnet wurde. Letzteres bezieht sich wahrscheinlich auf das gemeinsame Hobby von Gujo und Chinlan für alte Filme und Bücher oder darauf, dass Akane Schallplatten hört.</p>
+            <p>Ehrlich gesagt kenne ich die allermeisten der in der Serie erwähnten Werke überhaupt nicht und habe vermutlich nur „Die Legende vom Ozeanpianisten“ gesehen. Beim ersten Anschauen schoss mir vielleicht auch kurz der Gedanke durch den Kopf: „Was murmeln die beiden da eigentlich für ein Zeug?“ Aber wenn ich das jetzt rückblickend bewerte, finde ich nicht, dass die Schöpfer hier absichtlich etwas vortäuschen oder angeben. Ich verstehe diese Hobbys zwar auch nicht, sehe das aber absolut nicht als negativen Einfluss.</p>
+
+            <h3>Einfluss auf den Alltag & Reisepläne</h3>
+            <p>Das Werk enthält zahlreiche Darstellungen von Alkohol und lokalen Schauplätzen, was aus kommerzieller Sicht zweifellos ein riesiger Erfolg ist. Für Fans von Seichi Junrei (Anime-Pilgerreisen) und Merchandise-Sammler ist dieser Anime ein absolutes Fest. Bei meiner nächsten Japanreise werde ich definitiv nach dem in der Serie erwähnten Sake, japanischen Whisky und Bier Ausschau halten, nach Chichibu pilgern, mir die Original-Manga kaufen und – falls ich das nötige Kleingeld habe – die geplanten Figuren von Gujo und Chinlan erwerben.</p>
+            <p>Auch wegen der Vorstellung von Alkohol in der Serie habe ich nun angefangen, hier in Deutschland verschiedene Spirituosen zu probieren. Im Supermarkt habe ich den in der Serie gezeigten The Glenlivet 12 Jahre gefunden. Er kostet zwar über 30 Euro, aber ich habe mir fest vorgenommen, vor meinem Abschluss eine Flasche davon zu kaufen und zu trinken.</p>
+
+            <h3>Ein kleiner Kritikpunkt zum Schluss</h3>
+            <p>Mein Lieblingscharakter Gujo ist zudem eine starke Raucherin, was bei mir tatsächlich ein kleines Interesse am Rauchen geweckt hat (obwohl ich mir natürlich vollkommen bewusst bin, dass Rauchen schädlich ist). Sollte ich im Supermarkt die Winston-Zigaretten finden, die Gujo raucht, kaufe ich vielleicht wirklich eine Schachtel als Sammlerstück. Aber ich befürchte, wenn ich Zigaretten griffbereit habe, könnte mich eines Tages doch die Neugier überkommen. Man kann sagen, dass dies einer der wenigen negativen Kritikpunkte ist, die ich an dieser Serie habe.</p>
+        `;
+        
         // ==========================================
         // 页面点击逻辑 (概要页面)
         // ==========================================
@@ -352,7 +381,7 @@
                 <h1>概要</h1>
                 <div class="scrollable-textarea readonly">
 
-                    <p>📺 2026.4: アニメ<a href="javascript:void(0);" onclick="renderAnimePage('カナン様はあくまでチョロい', '', 'kananLink')">「カナン様はあくまでチョロい」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('マリッジトキシン', '', 'maritokiLink')">「マリッジトキシン」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('日本三國', '', 'nihonsangokuLink')">「日本三國」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('春夏秋冬代行者 春の舞', '', 'shunkaLink')">「春夏秋冬代行者 春の舞」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('レプリカだって、恋をする。', '', 'replicaLink')">「レプリカだって、恋をする。」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('淡島百景', '', 'awashimaLink')">「淡島百景」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('上伊那ぼたん、酔へる姿は百合の花', '', 'botanLink')">「上伊那ぼたん、酔へる姿は百合の花」</a>を追加しました </p>
+                    <p>📺 2026.4: アニメ<a href="javascript:void(0);" onclick="renderAnimePage('カナン様はあくまでチョロい', '', 'kananLink')">「カナン様はあくまでチョロい」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('マリッジトキシン', '', 'maritokiLink')">「マリッジトキシン」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('日本三國', '', 'nihonsangokuLink')">「日本三國」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('春夏秋冬代行者 春の舞', '', 'shunkaLink')">「春夏秋冬代行者 春の舞」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('レプリカだって、恋をする。', '', 'replicaLink')">「レプリカだって、恋をする。」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('淡島百景', '', 'awashimaLink')">「淡島百景」</a>、<a href="javascript:void(0);" onclick="renderAnimePage('上伊那ぼたん、酔へる姿は百合の花', botanHtml, 'botanLink')">「上伊那ぼたん、酔へる姿は百合の花」</a>を追加しました </p>
 
                     <p>📺 2026.3: アニメ<a href="javascript:void(0);" onclick="renderAnimePage('超かぐや姫！', 'chokaguyaHtml', 'chokaguyaLink')">「超かぐや姫！」</a>を追加しました </p>
 
@@ -470,7 +499,7 @@
                 { id: 'shunkaLink', text: '🌸 春夏秋冬代行者 春の舞', handler: () => renderAnimePage('春夏秋冬代行者 春の舞', '', 'shunkaLink') },
                 { id: 'replicaLink', text: '🤖 レプリカだって、恋をする。', handler: () => renderAnimePage('レプリカだって、恋をする。', '', 'replicaLink') },
                 { id: 'awashimaLink', text: '🏫 淡島百景', handler: () => renderAnimePage('淡島百景', '', 'awashimaLink') },
-                { id: 'botanLink', text: '🌸 上伊那ぼたん、酔へる姿は百合の花', handler: () => renderAnimePage('上伊那ぼたん、酔へる姿は百合の花', '', 'botanLink') },
+                { id: 'botanLink', text: '🌸 上伊那ぼたん、酔へる姿は百合の花', handler: () => renderAnimePage('上伊那ぼたん、酔へる姿は百合の花', botanHtml, 'botanLink') },
                 { id: 'ikokuniLink', text: '📖 違国日記', handler: () => renderAnimePage('違国日記', ikokuniHtml, 'ikokuniLink') },
                 { id: 'oshinoko3Link', text: '🌟 推しの子第3期', handler: () => renderAnimePage('推しの子第3期', '', 'oshinoko3Link') },
                 { id: 'chokaguyaLink', text: '👸 超かぐや姫！', handler: () => renderAnimePage('超かぐや姫！', chokaguyaHtml, 'chokaguyaLink') }
