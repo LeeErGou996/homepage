@@ -1,310 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Travel Album</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', serif;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            color: blue; /* 设置标题颜色为蓝色 */
-        }
-        h2 {
-            color: blue; /* 设置标题颜色为蓝色 */
-        }
-        .sidebar {
-            width: 200px;
-            height: 100vh;
-            background-color: #f1f1f1;
-            position: fixed;
-            padding: 20px;
-            box-sizing: border-box;
-            color: blue; /* 设置标题颜色为蓝色 */
-        }
-
-        .sidebar h2 {
-            margin-top: 0;
-            color: blue; /* 设置标题颜色为蓝色 */
-        }
-
-        .sidebar ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .sidebar li {
-            margin-bottom: 10px;
-            cursor: pointer;
-            color: blue; /* 设置标题颜色为蓝色 */
-        }
-
-        .content {
-            margin-left: 220px;
-            padding: 20px;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .gallery img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            margin: 10px;
-            border: 1px solid #ddd;
-            padding: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-        }
-
-        .slideshow {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 999;
-        }
-
-        .slideshow img {
-            max-width: 80%;
-            max-height: 80%;
-        }
-
-        .thumbnail-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .thumbnail-container img {
-            width: 100px;
-            height: 75px;
-            object-fit: cover;
-            margin: 5px;
-            border: 1px solid #ddd;
-            padding: 2px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-        }
-    </style>
-    <!-- 引入 heic2any 库 -->
-    <script src="https://cdn.jsdelivr.net/npm/heic2any@0.0.3/bundled/heic2any.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Journal</title>
+  <meta name="description" content="A growing archive of cities, trips and photos.">
+  <meta name="theme-color" content="#0a0f1c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="travel-assets/travel.css">
 </head>
-<body>
-    <div class="sidebar">
-        <h2>Travel</h2>
-        <ul id="sidebarMenu">
-            <li><a href="http://leeergou996.github.io/homepage/" target="_blank" style="color: blue; text-decoration: none;">My Homepage</a></li> <!-- 新增主页链接 -->
-            <li><a href="https://leeergou996.github.io/homepage/travel1.html" target="_blank" style="color: blue; text-decoration: none;">My Travel <Map></Map></a></li> <!-- 新增主页链接 -->
+<body class="page-journal">
+  <div id="site-header"></div>
 
-            <li id="homeLink">Overview</li>
-            <!-- 动态生成的城市列表将附着在这里 -->
-        </ul>
-    </div>
+  <main class="wrap">
+    <section class="hero">
+      <p class="kicker" id="h-kicker"></p>
+      <h1 class="display" id="h-title"></h1>
+      <p class="hero__sub" id="h-sub"></p>
+      <div class="hero__row">
+        <dl class="stats" id="h-stats"></dl>
+        <a class="btn btn--primary" href="travel1.html" id="h-map"></a>
+      </div>
+    </section>
 
-    <div class="content">
-        <div class="gallery" id="galleryContainer">
-            <!-- Travel photos will be displayed here -->
-        </div>
-        <div id="travelThoughts" style="display: block;">
-            <h2>Japan 2024.4.28-2024.5.7</h2>
-            It was my first abroad travel and also my first travel to Japan. 
-            I have been to Tokyo, Kyoto, Uji, Osaka, and Kamakura (Fujisawa) within one week. 
-            I met my alumnus, my professor, and my fellow countryman in Tokyo. 
-            The travel was smooth and wonderful. I bought many souvenirs and many anime goods. 
-            I went to many landmarks (famous in the real world and anime). I shall keep the memory in my mind for a long time. 
-            I am positively looking forward to my second travel to Japan. 
-            
-            <p>I include the plan, schedule, and cost in this <a href="https://github.com/LeeErGou996/leeergou.github.io/raw/main/travel/japan_travel/japan_travel.pdf" target="_blank">file</a> (Chinese)</p>
-            
-			<h2>Germany 2024.9.26-2025.8.22</h2>
-  				<p>Currently, I am studying in Munich, Germany. Although the studies are not easy, I explore the city and the country during my free time.</p>
-				<p>Munich is a big city, and the weather is often cloudy. When it is sunny, my mood feels better.</p>
-            <h2>China 2025.8.26-2025.9.23</h2>
-                <p>I'm returning home for a break. On my way back, I stopped by Wien and Budapest.</p>
-            <h2>Czech 2025.11.15-2025.11.16</h2>
-                <p>Travel to Prague, Czech Republic.</p>
-                <!-- Photos will be added here -->
-            <h2>Italy & Vatican City 2025.12.6-2025.12.8</h2>
-                <p>Travel to Rome and Vatican City.</p>
-                <!-- Photos will be added here -->
-            <h2>France 2025.12.24-2025.12.25</h2>
-                <p>Travel to Strasbourg and Colmar, France for seichi junrei.</p>
-                <!-- Photos will be added here -->
-            <h2>Netherlands 2026.3.14-2026.3.15</h2>
-                <p>Travel to Amsterdam and Rotterdam, Netherlands.</p>
-                <!-- Photos will be added here -->
-            <h2>Belgium 2026.3.16-2026.3.18</h2>
-                <p>Travel to Brussels and Antwerp, Belgium.</p>
-                <!-- Photos will be added here -->
-            <h2>Germany 2026.6.27-2026.6.28</h2>
-                <p>Travel to Frankfurt, Heidelberg, Mannheim, and Stuttgart, Germany. The temperature was ~40 degrees. It was really hot. I like ICE (free WIFI and air-conditioning). </p>
-                <!-- Photos will be added here -->
-            <h2>Germany 2026.7.4-2026.7.6</h2>
-                <p>Travel to Düsseldorf and Köln, Germany. I like ICE but the return was delayed for 2 hours.</p>
-                <!-- Photos will be added here -->
-        </div>
+    <div class="strip" id="strip" aria-hidden="true"></div>
 
-        <div class="slideshow">
-            <img src="" alt="Slideshow Image">
-        </div>
+    <section class="section">
+      <h2 class="section__title display" id="t-title"></h2>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
 
-        <div class="thumbnail-container">
-            <!-- Thumbnails will be added here -->
-        </div>
-    </div>
+    <section class="section">
+      <h2 class="section__title display" id="a-title"></h2>
+      <div class="atlas" id="atlas"></div>
+    </section>
 
-    <script>
-        const galleryContainer = document.getElementById('galleryContainer');
-        const travelThoughts = document.getElementById('travelThoughts');
-        const slideshow = document.querySelector('.slideshow');
-        const slideshowImage = slideshow.querySelector('img');
-        const thumbnailContainer = document.querySelector('.thumbnail-container');
-        const homeLink = document.getElementById('homeLink');
+    <footer class="foot" id="foot"></footer>
+  </main>
 
-        // 旅行地数据配置 (在此数组中添加新城市)
-        const travelDestinations = [
-            { name: 'Japan Travel', folder: 'japan_travel' },
-            { name: 'Hong Kong Travel', folder: 'hongkong_travel' },
-            { name: 'Hungary Travel', folder: 'hungary_travel' },
-            { name: 'Austria Travel', folder: 'austria_travel' },
-            { name: 'Germany Travel', folder: 'germany_travel' },
-            { name: 'Czech Travel', folder: 'czech_travel' },
-            { name: 'Italy Travel', folder: 'italy_travel' },
-            { name: 'France Travel', folder: 'france_travel' },
-            { name: 'Netherlands Travel', folder: 'netherlands_travel' },
-            { name: 'Belgium Travel', folder: 'belgium_travel' }
-        ];
+  <noscript><p style="padding:24px">This page needs JavaScript to show the photo archive.</p></noscript>
 
-        // 动态生成侧边栏城市链接
-        const sidebarMenu = document.getElementById('sidebarMenu');
-        travelDestinations.forEach(dest => {
-            const li = document.createElement('li');
-            li.textContent = dest.name;
-            li.addEventListener('click', () => {
-                loadTravelPhotos(dest.folder, dest.name);
-            });
-            sidebarMenu.appendChild(li);
-        });
+  <script src="travel-assets/travel-data.js"></script>
+  <script src="travel-assets/manifest.js"></script>
+  <script src="travel-assets/travel-core.js"></script>
+  <script>
+  (function () {
+    var C = window.TravelCore, D = window.TRAVEL;
+    var $ = function (id) { return document.getElementById(id); };
 
-        // 将图片 URL 转换为 blob 对象
-        function urlToBlob(url) {
-            return fetch(url, { mode: 'cors' })
-                .then(response => response.blob())
-                .catch(error => console.error(error));
+    function dateParts(trip) {
+      if (!trip.from) return { year: '', dates: C.ui('dateTba'), tba: true };
+      var a = trip.from.split('-').map(Number), b = trip.to.split('-').map(Number);
+      var year = a[0] === b[0] ? String(a[0]) : a[0] + '–' + b[0];
+      return { year: year, dates: trip.from === trip.to ? a[1] + '.' + a[2] : a[1] + '.' + a[2] + ' – ' + b[1] + '.' + b[2] };
+    }
+
+    function cover(country) {
+      var list = C.manifest[country.folder] || [];
+      if (!list.length) return '';
+      return C.thumb(list[Math.floor(list.length / 3)].p, 560);
+    }
+
+    function render() {
+      document.title = C.ui('journalKicker') + ' · ' + C.ui('brand');
+      $('h-kicker').textContent = C.ui('journalKicker');
+      $('h-title').textContent = C.ui('journalTitle');
+      $('h-sub').textContent = C.ui('journalSub');
+      $('h-map').textContent = C.ui('openMap') + ' →';
+      $('t-title').textContent = C.ui('timeline');
+      $('a-title').textContent = C.ui('atlas');
+      $('foot').textContent = C.ui('credit');
+
+      var s = C.stats();
+      $('h-stats').innerHTML = [
+        [s.countries, 'statCountries'], [s.cities, 'statCities'], [s.photos, 'statPhotos']
+      ].map(function (x) { return '<div class="stat"><dt>' + C.esc(C.ui(x[1])) + '</dt><dd>' + x[0] + '</dd></div>'; }).join('');
+
+      /* photo strip: one picture per country that already has photos */
+      $('strip').innerHTML = D.countries.filter(function (c) { return C.countryCount(c) > 0 && cover(c); })
+        .slice(0, 12).map(function (c) {
+          return '<div class="strip__item"><img loading="lazy" alt="" src="' + cover(c) + '"></div>';
+        }).join('');
+
+      /* timeline */
+      $('timeline').innerHTML = D.trips.map(function (t) {
+        var d = dateParts(t);
+        var chips = t.places.map(function (p) {
+          var country = C.getCountry(p[0]), city = C.getCity(country, p[1]);
+          var n = C.cityCount(country, city);
+          var label = C.swatch(country) + C.esc(C.tr(city.name)) + (n && city.folder ? ' <small>' + n + '</small>' : '');
+          return n
+            ? '<button type="button" class="chip" data-open="' + p[0] + ':' + p[1] + '">' + label + '</button>'
+            : '<span class="chip is-static">' + label + '</span>';
+        }).join('');
+        var note = t.note ? (t.note[C.lang()] || t.note.en) : '';
+        var actions = '';
+        if (t.pdf) actions += '<a class="btn" href="' + t.pdf + '" target="_blank" rel="noopener">' + C.esc(C.ui('pdf')) + '</a>';
+        if (t.link) actions += '<a class="btn" href="' + t.link + '">' + C.esc(C.ui('bavariaLog')) + ' →</a>';
+        return '<li class="trip"><div class="trip__when"><span class="trip__year">' + d.year + '</span><span class="trip__dates' + (d.tba ? ' is-tba' : '') + '">' + C.esc(d.dates) + '</span></div>' +
+          '<article class="trip__card"><h3 class="display">' + C.esc(C.tr(t.title)) + '</h3><div class="chips">' + chips + '</div>' +
+          (note ? '<p class="trip__note">' + C.esc(note) + '</p>' : '') +
+          (actions ? '<div class="trip__actions">' + actions + '</div>' : '') + '</article></li>';
+      }).join('');
+
+      /* atlas: countries with photos first, reserved ones last */
+      var sorted = D.countries.slice().sort(function (a, b) { return (C.countryCount(b) > 0) - (C.countryCount(a) > 0); });
+      $('atlas').innerHTML = sorted.map(function (c) {
+        var n = C.countryCount(c), cv = cover(c);
+        var names = c.cities.map(function (ci) { return C.tr(ci.name); }).join(' · ');
+        if (!n) {
+          return '<div class="dest is-pending" style="' + C.colorStyle(c) + '"><span class="dest__cover"></span><span class="dest__body"><strong>' + C.swatch(c) + C.esc(C.tr(c.name)) +
+            '</strong><small>' + C.esc(names) + '</small><small>' + C.esc(C.ui('soon')) + '</small></span></div>';
         }
+        return '<button type="button" class="dest" style="' + C.colorStyle(c) + '" data-open="' + c.id + '"><span class="dest__cover"' +
+          (cv ? ' style="background-image:url(\'' + cv + '\')"' : '') + '></span><span class="dest__body"><strong>' + C.swatch(c) + C.esc(C.tr(c.name)) +
+          '</strong><small>' + C.esc(C.ui('nPhotos')(n)) + ' · ' + C.esc(C.ui('nCities')(c.cities.length)) + '</small></span></button>';
+      }).join('');
+    }
 
-        // 解码 HEIC 图像
-        function decodeHEICImage(imageBlob, callback) {
-            const heic2any = new HeicConvert({
-                to: 'image/jpeg',
-                quality: 1
-            });
-            heic2any.convert(imageBlob)
-                .then(result => callback(result))
-                .catch(error => console.error(error));
-        }
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-open]');
+      if (!b) return;
+      var parts = b.getAttribute('data-open').split(':');
+      var country = C.getCountry(parts[0]);
+      C.openCountryGallery(country, parts[1] ? C.getCity(country, parts[1]) : null);
+    });
 
-        // 将 blob 对象转换为 img 支持的格式
-        function blobToImageUrl(blob) {
-            return URL.createObjectURL(blob);
-        }
-
-        // 通用函数：递归加载文件夹中的所有图片
-        function loadTravelPhotos(folderPath, photoLabel) {
-            galleryContainer.innerHTML = '';
-            thumbnailContainer.innerHTML = '';
-            travelThoughts.style.display = 'none';
-
-            // 显示加载提示
-            galleryContainer.innerHTML = '<p>Loading photos...</p>';
-
-            // 递归获取所有图片文件
-            function getAllImages(path, allImages = []) {
-                return fetch(`https://api.github.com/repos/LeeErGou996/leeergou.github.io/contents/travel/${path}`)
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error(`Failed to load: ${path}`);
-                        }
-                        return response.json();
-                    })
-                    .then(data => {
-                        const promises = [];
-                        
-                        data.forEach(item => {
-                            if (item.type === 'file' && /\.(jpg|jpeg|png|gif|webp|heic)$/i.test(item.name)) {
-                                allImages.push(item);
-                            } else if (item.type === 'dir') {
-                                // 递归处理子文件夹
-                                promises.push(getAllImages(`${path}/${item.name}`, allImages));
-                            }
-                        });
-                        
-                        return Promise.all(promises).then(() => allImages);
-                    });
-            }
-
-            getAllImages(folderPath)
-                .then(allImages => {
-                    if (allImages.length === 0) {
-                        galleryContainer.innerHTML = '<p>No photos found in this folder.</p>';
-                        return;
-                    }
-
-                    galleryContainer.innerHTML = '';
-
-                    allImages.forEach((file, index) => {
-                        const img = document.createElement('img');
-                        img.src = file.download_url;
-                        img.alt = `${photoLabel} Photo ${index + 1}`;
-                        galleryContainer.appendChild(img);
-
-                        img.addEventListener('click', () => {
-                            slideshow.style.display = 'flex';
-                            slideshowImage.src = file.download_url;
-                        });
-
-                        const thumbnail = document.createElement('img');
-                        thumbnail.src = file.download_url;
-                        thumbnail.alt = `Thumbnail ${index + 1}`;
-                        thumbnail.addEventListener('click', () => {
-                            slideshow.style.display = 'flex';
-                            slideshowImage.src = file.download_url;
-                        });
-                        thumbnailContainer.appendChild(thumbnail);
-                    });
-                })
-                .catch(error => {
-                    console.error(`Error loading ${photoLabel} photos:`, error);
-                    galleryContainer.innerHTML = `<p>Error loading ${photoLabel} photos. Please try again later.</p>`;
-                });
-        }
-
-        // 显示 travel 感悟
-        function showTravelThoughts() {
-            galleryContainer.innerHTML = '';
-            thumbnailContainer.innerHTML = '';
-            travelThoughts.style.display = 'block';
-        }
-
-        homeLink.addEventListener('click', showTravelThoughts);
-        slideshow.addEventListener('click', () => {
-            slideshow.style.display = 'none';
-        });
-
-        // 初始显示 travel 感悟
-        showTravelThoughts();
-    </script>
+    C.init({ active: 'journal', onLang: render });
+    render();
+    C.hydrate(D.countries).then(render);   // picks up photos not yet listed in manifest.js
+  })();
+  </script>
 </body>
 </html>
