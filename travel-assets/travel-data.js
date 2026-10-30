@@ -131,7 +131,8 @@ window.TRAVEL = {
       name: { en: 'Sweden', zh: '瑞典', ja: 'スウェーデン', de: 'Schweden' },
       cities: [
         { id: 'stockholm', folder: 'stockholm', lat: 59.3293, lon: 18.0686, name: { en: 'Stockholm', zh: '斯德哥尔摩', ja: 'ストックホルム', de: 'Stockholm' } },
-        { id: 'gothenburg', folder: 'gothenburg', lat: 57.7089, lon: 11.9746, name: { en: 'Gothenburg', zh: '哥德堡', ja: 'ヨーテボリ', de: 'Göteborg' } }
+        { id: 'gothenburg', folder: 'gothenburg', lat: 57.7089, lon: 11.9746, name: { en: 'Gothenburg', zh: '哥德堡', ja: 'ヨーテボリ', de: 'Göteborg' } },
+        { id: 'helsingborg', folder: 'helsingborg', lat: 56.0465, lon: 12.6945, name: { en: 'Helsingborg', zh: '赫尔辛堡', ja: 'ヘルシンボリ', de: 'Helsingborg' } }
       ]
     },
     /* ---- reserved: folders already exist (with a placeholder.txt) ---- */
@@ -280,6 +281,32 @@ window.TRAVEL = {
       id: 'finland', from: '2026-10-22', to: '2026-10-24',
       title: { en: 'Finland & Estonia: Helsinki and Tallinn', zh: '芬兰与爱沙尼亚:赫尔辛基和塔林', ja: 'フィンランドとエストニア:ヘルシンキとタリン', de: 'Finnland & Estland: Helsinki und Tallinn' },
       places: [['finland', 'helsinki'], ['estonia', 'tallinn']]
+    },
+    /* Add  note: { en: '…', zh: '…' }  to any entry to show a story. */
+    {
+      id: 'baltics', from: '2026-10-25', to: '2026-10-26',
+      title: { en: 'Latvia & Lithuania: Riga and Vilnius', zh: '拉脱维亚与立陶宛:里加和维尔纽斯', ja: 'ラトビアとリトアニア:リガとヴィリニュス', de: 'Lettland & Litauen: Riga und Vilnius' },
+      places: [['latvia', 'riga'], ['lithuania', 'vilnius']]
+    },
+    {
+      id: 'norway', from: '2026-10-27', to: '2026-10-27',
+      title: { en: 'Norway: Oslo', zh: '挪威:奥斯陆', ja: 'ノルウェー:オスロ', de: 'Norwegen: Oslo' },
+      places: [['norway', 'oslo']]
+    },
+    {
+      id: 'denmark', from: '2026-10-28', to: '2026-10-28',
+      title: { en: 'Denmark: Copenhagen', zh: '丹麦:哥本哈根', ja: 'デンマーク:コペンハーゲン', de: 'Dänemark: Kopenhagen' },
+      places: [['denmark', 'copenhagen']]
+    },
+    {
+      id: 'helsingborg', from: '2026-10-29', to: '2026-10-29',
+      title: { en: 'Sweden: Helsingborg', zh: '瑞典:赫尔辛堡', ja: 'スウェーデン:ヘルシンボリ', de: 'Schweden: Helsingborg' },
+      places: [['sweden', 'helsingborg']]
+    },
+    {
+      id: 'gothenburg', from: '2026-10-30', to: '2026-10-31',
+      title: { en: 'Sweden: Gothenburg', zh: '瑞典:哥德堡', ja: 'スウェーデン:ヨーテボリ', de: 'Schweden: Göteborg' },
+      places: [['sweden', 'gothenburg']]
     }
   ]
 };
